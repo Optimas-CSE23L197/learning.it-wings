@@ -22,6 +22,10 @@
       "php": {
         "title": "PHP Tutorial",
         "file": "backend/php.json"
+      },
+      "c": {
+        "title": "C Tutorial",
+        "file": "backend/c.json"
       }
     }
   }

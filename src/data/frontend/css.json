@@ -1,0 +1,96 @@
+{
+  "course": {
+    "id": "css",
+    "title": "CSS Tutorial"
+  },
+
+  "sections": [
+    {
+      "title": "CSS Basics",
+      "lessons": [
+        { "id": "introduction", "title": "CSS Introduction" },
+        { "id": "syntax", "title": "CSS Syntax" },
+        { "id": "selectors", "title": "CSS Selectors" },
+        { "id": "how-to", "title": "CSS How To" },
+        { "id": "comments", "title": "CSS Comments" },
+        { "id": "errors", "title": "CSS Errors" },
+        { "id": "colors", "title": "CSS Colors" }
+      ]
+    }
+  ],
+
+  "content": {
+    "introduction": {
+      "title": "CSS Introduction",
+      "description": [
+        "CSS is the language used to style a web page and control the visual presentation of HTML documents."
+      ],
+      "core_concepts": {
+        "definition": "CSS stands for Cascading Style Sheets and is used to describe how HTML elements are displayed.",
+        "purpose": [
+          "Style web pages",
+          "Control layout and design",
+          "Adapt designs for different devices and screen sizes"
+        ],
+        "stylesheet_types": [
+          "External stylesheets",
+          "Internal stylesheets",
+          "Inline styles"
+        ]
+      },
+      "key_points": [
+        "CSS stands for Cascading Style Sheets.",
+        "CSS controls layout and visual presentation."
+      ]
+    },
+
+    "syntax": {
+      "title": "CSS Syntax",
+      "description": [
+        "CSS syntax defines how CSS rules are written to style HTML elements."
+      ],
+      "core_concepts": {
+        "rule_format": "selector { property: value; }"
+      },
+      "examples": [
+        {
+          "code": "p { color: red; text-align: center; }",
+          "explanation": "Styles all paragraph elements"
+        }
+      ]
+    },
+
+    "selectors": {
+      "title": "CSS Selectors",
+      "description": ["CSS selectors define which HTML elements are styled."],
+      "examples": [
+        {
+          "code": ".class { color: red; }",
+          "explanation": "Class selector"
+        }
+      ]
+    },
+
+    "how-to": {
+      "title": "How to Add CSS",
+      "description": ["CSS can be added to HTML documents in different ways."]
+    },
+
+    "comments": {
+      "title": "CSS Comments",
+      "description": ["CSS comments explain code and are ignored by browsers."]
+    },
+
+    "errors": {
+      "title": "CSS Errors",
+      "description": [
+        "CSS errors occur due to incorrect syntax or invalid properties."
+      ]
+    },
+
+    "colors": {
+      "title": "CSS Colors",
+      "description": ["CSS colors define the visual color of elements."]
+    }
+  }
+}

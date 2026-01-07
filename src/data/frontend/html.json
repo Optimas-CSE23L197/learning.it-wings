@@ -1,0 +1,310 @@
+{
+  "course": {
+    "id": "html",
+    "title": "HTML Tutorial"
+  },
+  "sections": [
+    {
+      "title": "HTML Basics",
+      "lessons": [
+        { "id": "home", "title": "HTML Home" },
+        { "id": "introduction", "title": "HTML Introduction" },
+        { "id": "editors", "title": "HTML Editors" },
+        { "id": "basic", "title": "HTML Basic" },
+        { "id": "elements", "title": "HTML Elements" },
+        { "id": "attributes", "title": "HTML Attributes" },
+        { "id": "headings", "title": "HTML Headings" },
+        { "id": "paragraphs", "title": "HTML Paragraphs" },
+        { "id": "styles", "title": "HTML Styles" },
+        { "id": "formatting", "title": "HTML Formatting" },
+        { "id": "quotations", "title": "HTML Quotations" },
+        { "id": "comments", "title": "HTML Comments" },
+        { "id": "colors", "title": "HTML Colors" },
+        { "id": "css", "title": "HTML CSS" },
+        { "id": "links", "title": "HTML Links" },
+        { "id": "images", "title": "HTML Images" },
+        { "id": "favicon", "title": "HTML Favicon" },
+        { "id": "page-title", "title": "HTML Page Title" }
+      ]
+    },
+    {
+      "title": "HTML Structure",
+      "lessons": [
+        { "id": "tables", "title": "HTML Tables" },
+        { "id": "lists", "title": "HTML Lists" },
+        { "id": "block-inline", "title": "HTML Block & Inline" },
+        { "id": "div", "title": "HTML Div" },
+        { "id": "classes", "title": "HTML Classes" },
+        { "id": "id", "title": "HTML Id" },
+        { "id": "layout", "title": "HTML Layout" },
+        { "id": "responsive", "title": "HTML Responsive" },
+        { "id": "semantics", "title": "HTML Semantics" },
+        { "id": "style-guide", "title": "HTML Style Guide" }
+      ]
+    },
+    {
+      "title": "HTML Forms",
+      "lessons": [
+        { "id": "forms", "title": "HTML Forms" },
+        { "id": "form-attributes", "title": "HTML Form Attributes" },
+        { "id": "form-elements", "title": "HTML Form Elements" },
+        { "id": "input-types", "title": "HTML Input Types" },
+        { "id": "input-attributes", "title": "HTML Input Attributes" },
+        { "id": "input-form-attributes", "title": "Input Form Attributes" }
+      ]
+    },
+    {
+      "title": "HTML Media & Graphics",
+      "lessons": [
+        { "id": "canvas", "title": "HTML Canvas" },
+        { "id": "svg", "title": "HTML SVG" },
+        { "id": "media", "title": "HTML Media" },
+        { "id": "video", "title": "HTML Video" },
+        { "id": "audio", "title": "HTML Audio" },
+        { "id": "plugins", "title": "HTML Plug-ins" },
+        { "id": "youtube", "title": "HTML YouTube" }
+      ]
+    },
+    {
+      "title": "HTML APIs",
+      "lessons": [
+        { "id": "web-apis", "title": "HTML Web APIs" },
+        { "id": "geolocation", "title": "HTML Geolocation" },
+        { "id": "drag-drop", "title": "HTML Drag and Drop" },
+        { "id": "web-storage", "title": "HTML Web Storage" },
+        { "id": "web-workers", "title": "HTML Web Workers" },
+        { "id": "sse", "title": "HTML SSE" }
+      ]
+    },
+    {
+      "title": "HTML Advanced",
+      "lessons": [
+        { "id": "iframes", "title": "HTML Iframes" },
+        { "id": "javascript", "title": "HTML JavaScript" },
+        { "id": "file-paths", "title": "HTML File Paths" },
+        { "id": "head", "title": "HTML Head" },
+        { "id": "computer-code", "title": "HTML Computercode" },
+        { "id": "entities", "title": "HTML Entities" },
+        { "id": "symbols", "title": "HTML Symbols" },
+        { "id": "emojis", "title": "HTML Emojis" },
+        { "id": "charsets", "title": "HTML Charsets" },
+        { "id": "url-encode", "title": "HTML URL Encode" },
+        { "id": "xhtml", "title": "HTML vs. XHTML" }
+      ]
+    },
+    {
+      "title": "HTML Learning & Certification",
+      "lessons": [
+        { "id": "examples", "title": "HTML Examples" },
+        { "id": "editor", "title": "HTML Editor" },
+        { "id": "quiz", "title": "HTML Quiz" },
+        { "id": "exercises", "title": "HTML Exercises" },
+        { "id": "website", "title": "HTML Website" },
+        { "id": "syllabus", "title": "HTML Syllabus" },
+        { "id": "study-plan", "title": "HTML Study Plan" },
+        { "id": "interview-prep", "title": "HTML Interview Prep" },
+        { "id": "bootcamp", "title": "HTML Bootcamp" },
+        { "id": "certificate", "title": "HTML Certificate" },
+        { "id": "summary", "title": "HTML Summary" },
+        { "id": "accessibility", "title": "HTML Accessibility" }
+      ]
+    },
+    {
+      "title": "HTML References",
+      "lessons": [
+        { "id": "tag-list", "title": "HTML Tag List" },
+        { "id": "attributes-ref", "title": "HTML Attributes" },
+        { "id": "global-attributes", "title": "HTML Global Attributes" },
+        { "id": "browser-support", "title": "HTML Browser Support" },
+        { "id": "events", "title": "HTML Events" },
+        { "id": "colors-ref", "title": "HTML Colors" },
+        { "id": "canvas-ref", "title": "HTML Canvas" },
+        { "id": "audio-video", "title": "HTML Audio/Video" },
+        { "id": "doctypes", "title": "HTML Doctypes" },
+        { "id": "character-sets", "title": "HTML Character Sets" },
+        { "id": "url-encode-ref", "title": "HTML URL Encode" },
+        { "id": "lang-codes", "title": "HTML Lang Codes" },
+        { "id": "http-messages", "title": "HTTP Messages" },
+        { "id": "http-methods", "title": "HTTP Methods" },
+        { "id": "px-to-em", "title": "PX to EM Converter" },
+        { "id": "keyboard-shortcuts", "title": "Keyboard Shortcuts" }
+      ]
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "HTML Tutorial",
+      "paragraphs": [
+        "HTML is the standard markup language for Web pages.",
+        "HTML is easy to learn."
+      ]
+    },
+    "introduction": {
+      "title": "HTML Introduction",
+      "paragraphs": [
+        "HTML stands for Hyper Text Markup Language.",
+        "HTML describes the structure of a Web page."
+      ]
+    },
+    "elements": {
+      "title": "HTML Elements",
+      "sections": [
+        {
+          "heading": "What is an HTML Element?",
+          "paragraphs": [
+            "An HTML element is defined by a start tag, some content, and an end tag.",
+            "The HTML element is everything from the start tag to the end tag."
+          ],
+          "example": "<tagname>Content goes here...</tagname>"
+        },
+        {
+          "heading": "Examples of HTML Elements",
+          "examples": [
+            "<h1>My First Heading</h1>",
+            "<p>My first paragraph.</p>"
+          ],
+          "table": {
+            "headers": ["Start tag", "Element content", "End tag"],
+            "rows": [
+              ["<h1>", "My First Heading", "</h1>"],
+              ["<p>", "My first paragraph.", "</p>"],
+              ["<br>", "none", "none"]
+            ]
+          },
+          "note": "Some HTML elements have no content (like the <br> element). These are called empty elements and they do not have an end tag."
+        },
+        {
+          "heading": "Nested HTML Elements",
+          "paragraphs": [
+            "HTML elements can be nested, meaning elements can contain other elements.",
+            "All HTML documents consist of nested HTML elements."
+          ],
+          "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n\n</body>\n</html>"
+        },
+        {
+          "heading": "Example Explained",
+          "paragraphs": [
+            "The <html> element is the root element that defines the whole HTML document.",
+            "Inside the <html> element is the <body> element, which defines the document's body.",
+            "Inside the <body> element are other elements such as <h1> and <p>."
+          ],
+          "examples": [
+            "<html>...</html>",
+            "<body>...</body>",
+            "<h1>My First Heading</h1>",
+            "<p>My first paragraph.</p>"
+          ]
+        },
+        {
+          "heading": "Never Skip the End Tag",
+          "paragraphs": [
+            "Some HTML elements may display correctly even if you forget the end tag.",
+            "However, you should never rely on this because it can cause unexpected results or errors."
+          ],
+          "code": "<html>\n<body>\n\n<p>This is a paragraph\n<p>This is a paragraph\n\n</body>\n</html>"
+        },
+        {
+          "heading": "Empty HTML Elements",
+          "paragraphs": [
+            "HTML elements with no content are called empty elements.",
+            "The <br> tag defines a line break and is an empty element without a closing tag."
+          ],
+          "example": "<p>This is a <br> paragraph with a line break.</p>"
+        },
+        {
+          "heading": "HTML is Not Case Sensitive",
+          "paragraphs": [
+            "HTML tags are not case sensitive: <P> means the same as <p>.",
+            "The HTML standard does not require lowercase tags, but W3C recommends lowercase and requires it for XHTML.",
+            "In this tutorial, lowercase tag names are used."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "True or False: Empty elements must have a closing tag.",
+            "options": ["True", "False"],
+            "answer": "False"
+          }
+        },
+        {
+          "heading": "HTML Tag Reference",
+          "paragraphs": [
+            "HTML tag references provide additional information about tags and their attributes."
+          ],
+          "table": {
+            "headers": ["Tag", "Description"],
+            "rows": [
+              ["<html>", "Defines the root of an HTML document"],
+              ["<body>", "Defines the document's body"],
+              ["<h1> to <h6>", "Defines HTML headings"]
+            ]
+          }
+        }
+      ]
+    },
+    "attributes": {
+      "title": "HTML Attributes",
+      "sections": [
+        {
+          "heading": "HTML Attributes",
+          "paragraphs": [
+            "HTML attributes provide additional information about HTML elements.",
+            "All HTML elements can have attributes.",
+            "Attributes are always specified in the start tag.",
+            "Attributes usually come in name/value pairs like: name=\"value\"."
+          ]
+        },
+        {
+          "heading": "The href Attribute",
+          "paragraphs": [
+            "The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to."
+          ],
+          "examples": [
+            "<a href=\"https://www.w3schools.com\">Visit W3Schools</a>"
+          ]
+        },
+        {
+          "heading": "The src Attribute",
+          "paragraphs": [
+            "The <img> tag is used to embed an image in an HTML page.",
+            "The src attribute specifies the path to the image to be displayed."
+          ],
+          "examples": [
+            "<img src=\"img_girl.jpg\">",
+            "<img src=\"img_girl.jpg\" width=\"500\" height=\"600\">"
+          ],
+          "note": "It is almost always best to use relative URLs."
+        },
+        {
+          "heading": "The alt Attribute",
+          "paragraphs": [
+            "The alt attribute specifies alternate text for an image if it cannot be displayed."
+          ],
+          "examples": ["<img src=\"img_girl.jpg\" alt=\"Girl with a jacket\">"]
+        },
+        {
+          "heading": "Chapter Summary",
+          "paragraphs": [
+            "All HTML elements can have attributes.",
+            "The href attribute specifies the URL of a link.",
+            "The src attribute specifies the image path.",
+            "The alt attribute provides alternate text."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Which of the following is a correct syntax for using an HTML attribute?",
+            "options": [
+              "<img src='img_girl.jpg'>",
+              "<img src('img_girl.jpg')>",
+              "<img src:'img_girl.jpg'>"
+            ],
+            "answer": "<img src='img_girl.jpg'>"
+          }
+        }
+      ]
+    }
+  }
+}

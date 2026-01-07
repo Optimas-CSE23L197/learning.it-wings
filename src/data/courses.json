@@ -1,0 +1,28 @@
+{
+  "frontend": {
+    "title": "Frontend Development",
+    "courses": {
+      "html": {
+        "title": "HTML Tutorial",
+        "file": "frontend/html.json"
+      },
+      "css": {
+        "title": "CSS Tutorial",
+        "file": "frontend/css.json"
+      }
+    }
+  },
+  "backend": {
+    "title": "Backend Development",
+    "courses": {
+      "node": {
+        "title": "Node.js Tutorial",
+        "file": "backend/node.json"
+      },
+      "php": {
+        "title": "PHP Tutorial",
+        "file": "backend/php.json"
+      }
+    }
+  }
+}

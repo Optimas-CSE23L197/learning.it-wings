@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  /* ===== Blue Theme ===== */
+  --blue-dark: #0c2b4e;
+  --blue-medium: #1a3d64;
+  --blue-teal: #1d546c;
+  --blue-light: #f4f4f4; /* ===== Purple Theme ===== */
+  --purple-dark: #540863;
+  --purple-medium: #92487a;
+  --purple-light: #e49ba6;
+  --purple-soft: #ffd3d5; /* ===== Neutral Colors ===== */
+  --white: #ffffff;
+  --gray-light: #f8f9fa;
+  --gray-dark: #222222; /* ===== Accent Colors ===== */
+  --accent: #ffb703; /* warm gold accent for hover or buttons */ /* ===== Banner Height ===== */
+  --banner-height: 80vh; /* ===== font size ===== */
+  --heading-h1: 50px;
+  --subheading-p: 25px;
+}
+
+/* Hide scrollbar but keep scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

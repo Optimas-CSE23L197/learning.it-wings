@@ -1,0 +1,53 @@
+const allCourses = [
+  { id: 1, title: "HTML", path: "/html" },
+  { id: 2, title: "CSS", path: "/css" },
+  { id: 3, title: "JavaScript", path: "/javascript" },
+  { id: 4, title: "Graphics", path: "/graphics" },
+  { id: 5, title: "Canvas", path: "/canvas" },
+  { id: 6, title: "Color Theory", path: "/color-theory" },
+
+  { id: 7, title: "React", path: "/react" },
+  { id: 8, title: "jQuery", path: "/jquery" },
+  { id: 9, title: "Angular", path: "/angular" },
+  { id: 10, title: "AngularJS", path: "/angularjs" },
+
+  { id: 11, title: "JSON", path: "/json" },
+  { id: 12, title: "AJAX", path: "/ajax" },
+
+  { id: 13, title: "DSA", path: "/dsa" },
+
+  { id: 14, title: "NumPy", path: "/numpy" },
+  { id: 15, title: "Data Science", path: "/data-science" },
+  { id: 16, title: "Google Sheets", path: "/google-sheets" },
+
+  { id: 17, title: "Python", path: "/python" },
+  { id: 18, title: "SQL", path: "/sql" },
+  { id: 19, title: "MySQL", path: "/mysql" },
+  { id: 20, title: "PHP", path: "/php" },
+
+  { id: 21, title: "Java", path: "/java" },
+  { id: 22, title: "C", path: "/c" },
+  { id: 23, title: "C++", path: "/c-plus-plus" },
+  { id: 24, title: "C#", path: "/c-sharp" },
+
+  { id: 25, title: "R", path: "/r" },
+  { id: 26, title: "Kotlin", path: "/kotlin" },
+  { id: 27, title: "Rust", path: "/rust" },
+  { id: 28, title: "Go", path: "/go" },
+  { id: 29, title: "Swift", path: "/swift" },
+
+  { id: 30, title: "Django", path: "/django" },
+  { id: 31, title: "TypeScript", path: "/typescript" },
+  { id: 32, title: "ASP.NET", path: "/asp-net" },
+  { id: 33, title: "Node.js", path: "/node-js" },
+
+  { id: 34, title: "Git", path: "/git" },
+  { id: 35, title: "MongoDB", path: "/mongodb" },
+
+  { id: 36, title: "AWS", path: "/aws" },
+  { id: 37, title: "Cloud Computing", path: "/cloud-computing" },
+
+  { id: 38, title: "XML", path: "/xml" },
+];
+
+export default allCourses;

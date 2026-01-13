@@ -45,9 +45,6 @@ const allCourses = [
   { id: 35, title: "MongoDB", path: "/mongodb" },
 
   { id: 36, title: "AWS", path: "/aws" },
-  { id: 37, title: "Cloud Computing", path: "/cloud-computing" },
-
-  { id: 38, title: "XML", path: "/xml" },
 ];
 
 export default allCourses;

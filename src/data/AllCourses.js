@@ -27,7 +27,7 @@ const allCourses = [
 
   { id: 21, title: "Java", path: "/java" },
   { id: 22, title: "C", path: "/c" },
-  { id: 23, title: "C++", path: "/c-plus-plus" },
+  { id: 23, title: "C++", path: "/cpp" },
   { id: 24, title: "C#", path: "/c-sharp" },
 
   { id: 25, title: "R", path: "/r" },

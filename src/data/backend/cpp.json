@@ -1,0 +1,1020 @@
+{
+  "course": {
+    "id": "cpp",
+    "title": "C++ Tutorial"
+  },
+  "sections": [
+    {
+      "title": "C++ Tutorial",
+      "lessons": [
+        { "id": "home", "title": "C++ HOME" },
+        { "id": "intro", "title": "C++ Intro" },
+        { "id": "get-started", "title": "C++ Get Started" },
+        { "id": "syntax", "title": "C++ Syntax" },
+        { "id": "output", "title": "C++ Output" },
+        { "id": "comments", "title": "C++ Comments" },
+        { "id": "variables", "title": "C++ Variables" },
+        { "id": "user-input", "title": "C++ User Input" },
+        { "id": "data-types", "title": "C++ Data Types" },
+        { "id": "operators", "title": "C++ Operators" },
+        { "id": "strings", "title": "C++ Strings" },
+        { "id": "math", "title": "C++ Math" },
+        { "id": "booleans", "title": "C++ Booleans" },
+        { "id": "if-else", "title": "C++ If...Else" },
+        { "id": "switch", "title": "C++ Switch" },
+        { "id": "while-loop", "title": "C++ While Loop" },
+        { "id": "for-loop", "title": "C++ For Loop" },
+        { "id": "break-continue", "title": "C++ Break/Continue" },
+        { "id": "arrays", "title": "C++ Arrays" },
+        { "id": "structures", "title": "C++ Structures" },
+        { "id": "enums", "title": "C++ Enums" },
+        { "id": "references", "title": "C++ References" },
+        { "id": "pointers", "title": "C++ Pointers" },
+        { "id": "memory-management", "title": "C++ Memory Management" }
+      ]
+    },
+    {
+      "title": "C++ Functions",
+      "lessons": [
+        { "id": "functions", "title": "C++ Functions" },
+        { "id": "function-parameters", "title": "C++ Function Parameters" },
+        { "id": "function-overloading", "title": "C++ Function Overloading" },
+        { "id": "scope", "title": "C++ Scope" },
+        { "id": "recursion", "title": "C++ Recursion" },
+        { "id": "lambda", "title": "C++ Lambda" }
+      ]
+    },
+    {
+      "title": "C++ Classes",
+      "lessons": [
+        { "id": "oop", "title": "C++ OOP" },
+        { "id": "classes-objects", "title": "C++ Classes/Objects" },
+        { "id": "class-methods", "title": "C++ Class Methods" },
+        { "id": "constructors", "title": "C++ Constructors" },
+        { "id": "access-specifiers", "title": "C++ Access Specifiers" },
+        { "id": "encapsulation", "title": "C++ Encapsulation" },
+        { "id": "friend-functions", "title": "C++ Friend Functions" },
+        { "id": "inheritance", "title": "C++ Inheritance" },
+        { "id": "polymorphism", "title": "C++ Polymorphism" },
+        { "id": "templates", "title": "C++ Templates" },
+        { "id": "files", "title": "C++ Files" },
+        { "id": "date", "title": "C++ Date" }
+      ]
+    },
+    {
+      "title": "C++ Errors",
+      "lessons": [
+        { "id": "errors", "title": "C++ Errors" },
+        { "id": "debugging", "title": "C++ Debugging" },
+        { "id": "exceptions", "title": "C++ Exceptions" },
+        { "id": "input-validation", "title": "C++ Input Validation" }
+      ]
+    },
+    {
+      "title": "C++ Data Structures",
+      "lessons": [
+        { "id": "data-structures-stl", "title": "C++ Data Structures & STL" },
+        { "id": "vectors", "title": "C++ Vectors" },
+        { "id": "list", "title": "C++ List" },
+        { "id": "stacks", "title": "C++ Stacks" },
+        { "id": "queues", "title": "C++ Queues" },
+        { "id": "deque", "title": "C++ Deque" },
+        { "id": "sets", "title": "C++ Sets" },
+        { "id": "maps", "title": "C++ Maps" },
+        { "id": "iterators", "title": "C++ Iterators" },
+        { "id": "algorithms", "title": "C++ Algorithms" }
+      ]
+    },
+    {
+      "title": "C++ Namespaces",
+      "lessons": [{ "id": "namespaces", "title": "C++ Namespaces" }]
+    },
+    {
+      "title": "C++ Projects",
+      "lessons": [{ "id": "projects", "title": "C++ Projects" }]
+    },
+    {
+      "title": "C++ How To",
+      "lessons": [
+        { "id": "add-two-numbers", "title": "C++ Add Two Numbers" },
+        { "id": "random-numbers", "title": "C++ Random Numbers" }
+      ]
+    },
+    {
+      "title": "C++ Reference",
+      "lessons": [
+        { "id": "reference", "title": "C++ Reference" },
+        { "id": "keywords", "title": "C++ Keywords" },
+        { "id": "iostream", "title": "C++ <iostream>" },
+        { "id": "fstream", "title": "C++ <fstream>" },
+        { "id": "cmath", "title": "C++ <cmath>" },
+        { "id": "string", "title": "C++ <string>" },
+        { "id": "cstring", "title": "C++ <cstring>" },
+        { "id": "ctime", "title": "C++ <ctime>" },
+        { "id": "vector", "title": "C++ <vector>" },
+        { "id": "algorithm", "title": "C++ <algorithm>" }
+      ]
+    },
+    {
+      "title": "C++ Examples",
+      "lessons": [
+        { "id": "examples", "title": "C++ Examples" },
+        { "id": "real-life-examples", "title": "C++ Real-Life Examples" },
+        { "id": "compiler", "title": "C++ Compiler" },
+        { "id": "exercises", "title": "C++ Exercises" },
+        { "id": "quiz", "title": "C++ Quiz" },
+        { "id": "syllabus", "title": "C++ Syllabus" },
+        { "id": "study-plan", "title": "C++ Study Plan" },
+        { "id": "certificate", "title": "C++ Certificate" }
+      ]
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "Learn C++",
+      "paragraphs": [
+        "C++ is a popular programming language.",
+        "C++ is used to create computer programs, and is one of the most used language in game development.",
+        "C++ was developed as an extension of C, and both languages have almost the same syntax.",
+        "Start learning C++ now »"
+      ],
+      "sections": [
+        {
+          "heading": "Tip",
+          "paragraphs": ["Tip: Sign in to track your progress."]
+        },
+        {
+          "heading": "Examples in Each Chapter",
+          "paragraphs": [
+            "Our \"Try it Yourself\" editor makes it easy to learn C++. You can edit C++ code and view the result in your browser."
+          ],
+          "example": {
+            "title": "Example",
+            "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << \"Hello World!\";\n  return 0;\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Reading Order",
+          "paragraphs": [
+            "We recommend reading this tutorial, in the sequence listed in the left menu.",
+            "C++ is an object oriented language and some concepts may be new. Take breaks when needed, and go over the examples as many times as needed."
+          ]
+        },
+        {
+          "heading": "C++ Exercises",
+          "paragraphs": [
+            "Many chapters in this tutorial end with an exercise where you can check your level of knowledge."
+          ],
+          "exercise": {
+            "question": "Drag and drop the correct data type to create a variable that stores an integer value.\n myNum = 15;\ncout << myNum;",
+            "options": ["num", "int", "double", "string", "integer"],
+            "answer": "int",
+            "cta": "See all C++ Exercises"
+          }
+        },
+        {
+          "heading": "C++ Quiz",
+          "paragraphs": [
+            "Learn by taking a quiz! The quiz will give you a signal of how much you know, or do not know, about C++."
+          ],
+          "cta": "Start C++ Quiz"
+        },
+        {
+          "heading": "Learn by Examples",
+          "paragraphs": [
+            "Learn by examples! This tutorial supplements all explanations with clarifying examples."
+          ],
+          "cta": "See All C++ Examples"
+        },
+        {
+          "heading": "Track Your Progress",
+          "paragraphs": [
+            "Create a W3Schools account and get access to more features and learning materials:"
+          ],
+          "list": [
+            "View your completed tutorials, exercises, and quizzes",
+            "Keep an eye on your progress and daily streaks",
+            "Join the leaderboard and compete with others",
+            "Get your own avatar and unlock new skins",
+            "Create your own personal website"
+          ],
+          "note": "Note: This is an optional feature. You can study at W3Schools without creating an account.",
+          "cta": "Sign Up »"
+        },
+        {
+          "heading": "C++ Reference",
+          "paragraphs": [
+            "You will also find references for different libraries, keywords and functions:"
+          ],
+          "list": [
+            "Reference Overview",
+            "C++ Keywords",
+            "C++ <iostream> Objects",
+            "C++ <fstream> Classes",
+            "C++ <cmath> Functions",
+            "C++ <string> Functions",
+            "C++ <cstring> Functions",
+            "C++ <ctime> Functions",
+            "C++ <vector> Functions",
+            "C++ <algorithm> Functions"
+          ]
+        },
+        {
+          "heading": "Kickstart your career",
+          "paragraphs": ["Get certified by completing the C++ course"],
+          "cta": "Get certified"
+        }
+      ]
+    },
+    "introduction": {
+      "title": "C++ Introduction",
+      "sections": [
+        {
+          "heading": "What is C++?",
+          "paragraphs": [
+            "C++ is a cross-platform language that can be used to create high-performance applications.",
+            "C++ was developed by Bjarne Stroustrup, as an extension to the C language.",
+            "C++ gives programmers a high level of control over system resources and memory.",
+            "The language was updated 5 major times in 2011, 2014, 2017, 2020, and 2023 to C++11, C++14, C++17, C++20, and C++23."
+          ]
+        },
+        {
+          "heading": "Why Use C++",
+          "paragraphs": [
+            "C++ is one of the world's most popular programming languages.",
+            "C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.",
+            "C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.",
+            "C++ is portable and can be used to develop applications that can be adapted to multiple platforms.",
+            "C++ is fun and easy to learn!",
+            "As C++ is close to C, C# and Java, it makes it easy for programmers to switch to C++ or vice versa."
+          ]
+        },
+        {
+          "heading": "Difference between C and C++",
+          "paragraphs": [
+            "C++ was developed as an extension of C, and both languages have almost the same syntax.",
+            "The main difference between C and C++ is that C++ supports classes and objects, while C does not."
+          ]
+        },
+        {
+          "heading": "Get Started",
+          "paragraphs": [
+            "When you are finished with this tutorial, you will be able to write C++ programs and create real-life examples.",
+            "It is not necessary to have any prior programming experience."
+          ],
+          "cta": "Get Started »"
+        }
+      ]
+    },
+    "get-started": {
+      "title": "C++ Getting Started",
+      "sections": [
+        {
+          "heading": "Get Started With C++",
+          "paragraphs": [
+            "At W3Schools, you can try C++ without installing anything.",
+            "Our Online C++ Editor runs directly in your browser, and shows both the code and the result:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << \"Hello World!\";\n  return 0;\n}\n",
+            "result": "Hello World!",
+            "cta": "Try it Yourself »"
+          },
+          "note": "This editor will be used in the entire tutorial to demonstrate the different aspects of C++."
+        },
+        {
+          "heading": "Install C++",
+          "paragraphs": [
+            "If you want to run C++ on your own computer, you need two things:"
+          ],
+          "list": [
+            "A text editor, like Notepad, to write C++ code",
+            "A compiler, like GCC, to translate the C++ code into a language that the computer will understand"
+          ],
+          "note": "There are many text editors and compilers to choose from. In the next steps, we will show you how to use an IDE that includes both."
+        },
+        {
+          "heading": "Install C++ IDE",
+          "paragraphs": [
+            "An IDE (Integrated Development Environment) is used to edit AND compile the code.",
+            "Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C++ code."
+          ],
+          "note": "Web-based IDE's can work as well, but functionality is limited."
+        },
+        {
+          "heading": "Code::Blocks",
+          "paragraphs": [
+            "We will use Code::Blocks in our tutorial, which we believe is a good place to start.",
+            "Download the mingw-setup.exe file, which will install the text editor with a compiler."
+          ]
+        },
+        {
+          "heading": "C++ Quickstart",
+          "paragraphs": [
+            "Let's create our first C++ file.",
+            "Open Codeblocks and go to File > New > Empty File.",
+            "Write the following C++ code and save the file as myfirstprogram.cpp (File > Save File as):"
+          ],
+          "example": {
+            "title": "myfirstprogram.cpp",
+            "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << \"Hello World!\";\n  return 0;\n}\n"
+          },
+          "note": "Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on how to run the code."
+        },
+        {
+          "heading": "Run the Program",
+          "paragraphs": [
+            "Go to Build > Build and Run to run (execute) the program.",
+            "Congratulations! You have now written and executed your first C++ program."
+          ],
+          "example": {
+            "title": "Output",
+            "code": "Hello World!\nProcess returned 0 (0x0) execution time : 0.011 s\nPress any key to continue."
+          }
+        }
+      ]
+    },
+    "syntax": {
+      "title": "C++ Syntax",
+      "sections": [
+        {
+          "heading": "C++ Syntax",
+          "paragraphs": [
+            "Let's break up the following code to understand it better:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << \"Hello World!\";\n  return 0;\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Example explained",
+          "paragraphs": [
+            "Line 1: #include <iostream> is a header file library that lets us work with input and output objects, such as cout (used in line 5). Header files add functionality to C++ programs.",
+            "Line 2: using namespace std means that we can use names for objects and variables from the standard library.",
+            "Don't worry if you don't understand how #include <iostream> and using namespace std works. Just think of it as something that (almost) always appears in your program.",
+            "Line 3: A blank line. C++ ignores white space. But we use it to make the code more readable.",
+            "Line 4: Another thing that always appear in a C++ program is int main(). This is called a function. Any code inside its curly brackets {} will be executed.",
+            "Line 5: cout (pronounced \"see-out\") is an object used together with the insertion operator (<<) to output/print text. In our example, it will output \"Hello World!\"."
+          ],
+          "notes": [
+            "C++ is case-sensitive: \"cout\" and \"Cout\" has different meaning.",
+            "Every C++ statement ends with a semicolon ;.",
+            "The body of int main() could also been written as: int main () { cout << \"Hello World! \"; return 0; }",
+            "The compiler ignores white spaces. However, multiple lines makes the code more readable."
+          ]
+        },
+        {
+          "heading": "Return Statement",
+          "paragraphs": [
+            "Line 6: return 0; ends the main function.",
+            "Line 7: Do not forget to add the closing curly bracket } to actually end the main function."
+          ]
+        },
+        {
+          "heading": "Omitting Namespace",
+          "paragraphs": [
+            "You might see some C++ programs that runs without the standard namespace library.",
+            "The using namespace std line can be omitted and replaced with the std keyword, followed by the :: operator for some objects:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "#include <iostream>\n\nint main() {\n  std::cout << \"Hello World!\";\n  return 0;\n}\n",
+            "cta": "Try it Yourself »"
+          },
+          "note": "It is up to you if you want to include the standard namespace library or not."
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the missing piece to include the iostream header file.\n <iostream>",
+            "answer": "#include",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    },
+    "output": {
+      "title": "C++ Output (Print Text)",
+      "sections": [
+        {
+          "heading": "C++ Output (Print Text)",
+          "paragraphs": [
+            "The cout object, together with the << operator, is used to output values and print text.",
+            "Just remember to surround the text with double quotes (\"\"):"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << \"Hello World!\";\n  return 0;\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Multiple cout Statements",
+          "paragraphs": [
+            "You can add as many cout objects as you want.",
+            "However, note that it does not insert a new line at the end of the output:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << \"Hello World!\";\n  cout << \"I am learning C++\";\n  return 0;\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Tip",
+          "paragraphs": [
+            "Tip: You will learn how to add new lines in the C++ New Lines chapter."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct object used to print text in C++.\nint main() {\n   ___ << \"Hello World!\";\n  return 0;\n}",
+            "options": ["printf", "cout", "cin", "print"],
+            "answer": "cout",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    },
+    "comments": {
+      "title": "C++ Comments",
+      "sections": [
+        {
+          "heading": "C++ Comments",
+          "paragraphs": [
+            "Comments can be used to explain C++ code, and to make it more readable.",
+            "It can also be used to prevent execution when testing alternative code.",
+            "Comments can be singled-lined or multi-lined."
+          ]
+        },
+        {
+          "heading": "Single-line Comments",
+          "paragraphs": [
+            "Single-line comments start with two forward slashes (//).",
+            "Any text between // and the end of the line is ignored by the compiler (will not be executed).",
+            "This example uses a single-line comment before a line of code:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "// This is a comment\ncout << \"Hello World!\";\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Single-line Comment at End of Line",
+          "paragraphs": [
+            "This example uses a single-line comment at the end of a line of code:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "cout << \"Hello World!\"; // This is a comment\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "C++ Multi-line Comments",
+          "paragraphs": [
+            "Multi-line comments start with /* and ends with */.",
+            "Any text between /* and */ will be ignored by the compiler:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "/* The code below will print the words Hello World!\nto the screen, and it is amazing */\ncout << \"Hello World!\";\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Single or multi-line comments?",
+          "paragraphs": [
+            "It is up to you which you want to use.",
+            "Normally, we use // for short comments, and /* */ for longer."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct syntax to start a single-line comment in C++.\n___ This is a comment\ncout << \"Hello World!\";",
+            "options": ["//", "/*", "#"],
+            "answer": "//",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    },
+    "variables": {
+      "title": "C++ Variables",
+      "sections": [
+        {
+          "heading": "C++ Variables",
+          "paragraphs": [
+            "Variables are containers for storing data values.",
+            "In C++, there are different types of variables (defined with different keywords), for example:"
+          ],
+          "list": [
+            "int - stores integers (whole numbers), without decimals, such as 123 or -123",
+            "double - stores floating point numbers, with decimals, such as 19.99 or -19.99",
+            "char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes",
+            "string - stores text, such as \"Hello World\". String values are surrounded by double quotes",
+            "bool - stores values with two states: true or false"
+          ]
+        },
+        {
+          "heading": "Declaring (Creating) Variables",
+          "paragraphs": [
+            "To create a variable, specify the type and assign it a value:"
+          ],
+          "code": "type variableName = value;",
+          "note": "Where type is one of C++ types (such as int), and variableName is the name of the variable (such as x or myName). The equal sign is used to assign values to the variable.",
+          "example": {
+            "title": "Example",
+            "note": "Create a variable called myNum of type int and assign it the value 15:",
+            "code": "int myNum = 15;\ncout << myNum;\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Declare Without Assigning",
+          "paragraphs": [
+            "You can also declare a variable without assigning the value, and assign the value later:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int myNum;\nmyNum = 15;\ncout << myNum;\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Changing Variable Values",
+          "paragraphs": [
+            "If you assign a new value to an existing variable, it will overwrite the previous value:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int myNum = 15;  // myNum is 15\nmyNum = 10;      // Now myNum is 10\ncout << myNum;   // Outputs 10\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Other Types",
+          "paragraphs": ["A demonstration of other data types:"],
+          "example": {
+            "title": "Example",
+            "code": "int myNum = 5;             // Integer (whole number without decimals)\ndouble myFloatNum = 5.99;  // Floating point number (with decimals)\nchar myLetter = 'D';       // Character\nstring myText = \"Hello\";   // String (text)\nbool myBoolean = true;     // Boolean (true or false)\n",
+            "cta": "Try it Yourself »"
+          },
+          "note": "You will learn more about the individual types in the Data Types chapter."
+        },
+        {
+          "heading": "Display Variables",
+          "paragraphs": [
+            "The cout object is used together with the << operator to display variables.",
+            "To combine both text and a variable, separate them with the << operator:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int myAge = 35;\ncout << \"I am \" << myAge << \" years old.\";\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Combine Different Types",
+          "paragraphs": [
+            "You can also combine different types, which you will learn more about in a later chapter."
+          ],
+          "example": {
+            "title": "Example",
+            "code": "string name = \"John\";\nint age = 35;\ndouble height = 6.1;\n\ncout << name << \" is \" << age << \" years old and \" << height << \" feet tall.\";\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Add Variables Together",
+          "paragraphs": [
+            "To add a variable to another variable, you can use the + operator:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int x = 5;\nint y = 6;\nint sum = x + y;\ncout << sum;\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct data type to create a variable that stores an integer value.\n myNum = 15;\ncout << myNum;",
+            "options": ["num", "int", "double", "string", "integer"],
+            "answer": "int",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    },
+    "user-input": {
+      "title": "C++ User Input",
+      "sections": [
+        {
+          "heading": "C++ User Input",
+          "paragraphs": [
+            "You have already learned that cout is used to output (print) values. Now we will use cin to get user input.",
+            "cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).",
+            "In the following example, the user can input a number, which is stored in the variable x. Then we print the value of x:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int x;\ncout << \"Type a number: \"; // Type a number and press enter\ncin >> x; // Get user input from the keyboard\ncout << \"Your number is: \" << x; // Display the input value\n",
+            "cta": "Run example »"
+          }
+        },
+        {
+          "heading": "Good To Know",
+          "list": [
+            "cout is pronounced \"see-out\". Used for output, and uses the insertion operator (<<)",
+            "cin is pronounced \"see-in\". Used for input, and uses the extraction operator (>>)"
+          ]
+        },
+        {
+          "heading": "Creating a Simple Calculator",
+          "paragraphs": [
+            "In this example, the user must input two numbers. Then we print the sum by calculating (adding) the two numbers:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int x, y;\nint sum;\ncout << \"Type a number: \";\ncin >> x;\ncout << \"Type another number: \";\ncin >> y;\nsum = x + y;\ncout << \"Sum is: \" << sum;\n",
+            "cta": "Run example »"
+          },
+          "note": "There you go! You just built a basic calculator!"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct type, input object, and operator to declare a string and read it from the user.\n___ name;\n___ ___ name;",
+            "options": ["string", "cin", ">>", "cout", "int"],
+            "answer": "string cin >>",
+            "cta": "Submit Answer »"
+          }
+        },
+        {
+          "heading": "Complete <iostream> Reference",
+          "paragraphs": [
+            "Tip: Both cin and cout belongs to the <iostream> library, which is short for standard input / output streams.",
+            "For a complete reference of <iostream> objects along with detailed information, go to our C++ iostream Reference."
+          ]
+        }
+      ]
+    },
+    "data-types": {
+      "title": "C++ Data Types",
+      "sections": [
+        {
+          "heading": "C++ Data Types",
+          "paragraphs": [
+            "As explained in the Variables chapter, a variable in C++ must be a specified data type:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int myNum = 5;             // Integer (whole number)\nfloat myFloatNum = 5.99;   // Floating point number\ndouble myDoubleNum = 9.98; // Floating point number\nchar myLetter = 'D';       // Character\nbool myBoolean = true;     // Boolean\nstring myText = \"Hello\";   // String\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Basic Data Types",
+          "paragraphs": [
+            "The data type specifies the size and type of information the variable will store:"
+          ],
+          "table": [
+            {
+              "dataType": "boolean",
+              "size": "1 byte",
+              "description": "Stores true or false values"
+            },
+            {
+              "dataType": "char",
+              "size": "1 byte",
+              "description": "Stores a single character/letter/number, or ASCII values"
+            },
+            {
+              "dataType": "int",
+              "size": "2 or 4 bytes",
+              "description": "Stores whole numbers, without decimals"
+            },
+            {
+              "dataType": "float",
+              "size": "4 bytes",
+              "description": "Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits"
+            },
+            {
+              "dataType": "double",
+              "size": "8 bytes",
+              "description": "Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits"
+            }
+          ],
+          "note": "You will learn more about the individual data types in the next chapters."
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct type and value to store and display the character A.\n___ myLetter = ___;\ncout << myLetter;",
+            "options": ["char", "'A'", "\"A\"", "string", "A"],
+            "answer": "char 'A'",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    },
+    "operators": {
+      "title": "C++ Operators",
+      "sections": [
+        {
+          "heading": "Operators",
+          "paragraphs": [
+            "Operators are used to perform operations on variables and values.",
+            "In the example below, we use the + operator to add together two values:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int x = 100 + 50;\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Using + With Variables",
+          "paragraphs": [
+            "Although the + operator is often used to add together two values, it can also be used to add together a variable and a value, or a variable and another variable:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int sum1 = 100 + 50;        // 150 (100 + 50)\nint sum2 = sum1 + 250;      // 400 (150 + 250)\nint sum3 = sum2 + sum2;     // 800 (400 + 400)\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Operator Groups",
+          "paragraphs": [
+            "C++ divides the operators into the following groups:"
+          ],
+          "list": [
+            "Arithmetic operators",
+            "Assignment operators",
+            "Comparison operators",
+            "Logical operators",
+            "Bitwise operators"
+          ]
+        }
+      ]
+    },
+    "strings": {
+      "title": "C++ Strings",
+      "sections": [
+        {
+          "heading": "C++ Strings",
+          "paragraphs": [
+            "Strings are used for storing text/characters.",
+            "For example, \"Hello World\" is a string.",
+            "A string variable contains a collection of characters surrounded by double quotes (\"\"):"
+          ],
+          "example": {
+            "title": "Example",
+            "note": "Create a variable of type string and assign it a value:",
+            "code": "string greeting = \"Hello\";\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "The <string> Library",
+          "paragraphs": [
+            "To use strings, you must include an additional header file in the source code, the <string> library:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "// Include the string library\n#include <string>\n\n// Create a string variable\nstring greeting = \"Hello\";\n\n// Print the string\ncout << greeting;\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Strings Can Contain More Than One Word",
+          "paragraphs": [
+            "Strings can contain multiple words, spaces, and punctuation:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "string greeting = \"Hello and welcome!\";\ncout << greeting;\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct type and value to store the text Hello.\n___ greeting = ___;\ncout << greeting;",
+            "options": ["string", "\"Hello\"", "'Hello'", "char", "Hello"],
+            "answer": "string \"Hello\"",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    },
+    "math": {
+      "title": "C++ Math",
+      "sections": [
+        {
+          "heading": "C++ Math",
+          "paragraphs": [
+            "C++ has many functions that allows you to perform mathematical tasks on numbers."
+          ]
+        },
+        {
+          "heading": "Max and min",
+          "paragraphs": [
+            "The max(x,y) function can be used to find the highest value of x and y:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "cout << max(5, 10);\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Min Function",
+          "paragraphs": [
+            "The min(x,y) function can be used to find the lowest value of x and y:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "cout << min(5, 10);\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "C++ <cmath> Library",
+          "paragraphs": [
+            "Other functions, such as sqrt (square root), round (rounds a number) and log (natural logarithm), can be found in the <cmath> header file:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "// Include the cmath library\n#include <cmath>\n\ncout << sqrt(64);\ncout << round(2.6);\ncout << log(2);\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Complete Math Reference",
+          "paragraphs": [
+            "For a complete reference of Math functions, go to our C++ Math Reference."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct header file name to use the log() function.\n#include <___>\n\nint main() {\n  cout << log(2);\n}",
+            "options": ["match", "iostream", "string", "cmath"],
+            "answer": "cmath",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    },
+    "booleans": {
+      "title": "C++ Booleans",
+      "sections": [
+        {
+          "heading": "C++ Booleans",
+          "paragraphs": [
+            "Very often, in programming, you will need a data type that can only have one of two values, like:",
+            "YES / NO",
+            "ON / OFF",
+            "TRUE / FALSE",
+            "For this, C++ has a bool data type, which can take the values true (1) or false (0)."
+          ]
+        },
+        {
+          "heading": "Boolean Values",
+          "paragraphs": [
+            "A boolean variable is declared with the bool keyword and can take the values true or false:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "bool isCodingFun = true;\nbool isFishTasty = false;\n\ncout << isCodingFun << \"\\n\";  // Outputs 1 (true)\ncout << isFishTasty << \"\\n\"; // Outputs 0 (false)\n",
+            "cta": "Try it Yourself »"
+          },
+          "note": "A true value returns 1, and false returns 0."
+        },
+        {
+          "heading": "Printing true/false With boolalpha",
+          "paragraphs": [
+            "If you prefer to print true and false as words instead of 1 and 0, you can use the boolalpha manipulator:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "bool isCodingFun = true;\nbool isFishTasty = false;\n\ncout << boolalpha; // enable printing \"true\"/\"false\"\n\ncout << isCodingFun << \"\\n\";   // Outputs true\ncout << isFishTasty << \"\\n\";  // Outputs false\n",
+            "cta": "Try it Yourself »"
+          },
+          "note": "boolalpha is not a data type. It is an I/O manipulator - a setting that changes how cout displays boolean values."
+        },
+        {
+          "heading": "Resetting Back With noboolalpha",
+          "paragraphs": [
+            "If you want to go back to the default behavior (printing 1 and 0), you can use noboolalpha:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "bool isCodingFun = true;\n\ncout << boolalpha;   // print as true/false\ncout << isCodingFun << \"\\n\";  // Outputs true\n\ncout << noboolalpha; // reset to 1/0\ncout << isCodingFun << \"\\n\";  // Outputs 1\n",
+            "cta": "Try it Yourself »"
+          },
+          "note": "You can switch between them using boolalpha and noboolalpha."
+        },
+        {
+          "heading": "Tip",
+          "paragraphs": [
+            "Tip: You can read more about cout and its manipulators in our C++ cout object reference.",
+            "In real programs, boolean values are usually the result of comparing values or variables."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct type and value to store true in isCodingFun.\n___ isCodingFun = ___;\ncout << isCodingFun;",
+            "options": ["1", "true", "false", "boolean", "bool"],
+            "answer": "bool true",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    },
+    "if-else": {
+      "title": "C++ If ... Else",
+      "sections": [
+        {
+          "heading": "C++ Conditions and If Statements",
+          "paragraphs": [
+            "You already know that C++ supports familiar comparison conditions from mathematics, such as:"
+          ],
+          "list": [
+            "Less than: a < b",
+            "Less than or equal to: a <= b",
+            "Greater than: a > b",
+            "Greater than or equal to: a >= b",
+            "Equal to: a == b",
+            "Not Equal to: a != b"
+          ],
+          "paragraphs2": [
+            "You can use these conditions to perform different actions for different decisions.",
+            "C++ has the following conditional statements:"
+          ],
+          "list2": [
+            "Use if to specify a block of code to be executed, if a specified condition is true",
+            "Use else to specify a block of code to be executed, if the same condition is false",
+            "Use else if to specify a new condition to test, if the first condition is false",
+            "Use switch to specify many alternative blocks of code to be executed"
+          ]
+        },
+        {
+          "heading": "The if Statement",
+          "paragraphs": [
+            "Use the if statement to specify a block of C++ code to be executed if a condition is true."
+          ],
+          "syntax": "if (condition) {\n  // block of code to be executed if the condition is true\n}",
+          "note": "Note that if is in lowercase letters. Uppercase letters (If or IF) will generate an error."
+        },
+        {
+          "heading": "Example",
+          "paragraphs": [
+            "In the example below, we test two values to find out if 20 is greater than 18. If the condition is true, print some text:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "if (20 > 18) {\n  cout << \"20 is greater than 18\";\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Using Variables",
+          "paragraphs": ["We can also test variables:"],
+          "example": {
+            "title": "Example",
+            "code": "int x = 20;\nint y = 18;\nif (x > y) {\n  cout << \"x is greater than y\";\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Example explained",
+          "paragraphs": [
+            "In the example above we use two variables, x and y, to test whether x is greater than y (using the > operator).",
+            "As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that \"x is greater than y\"."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword to start an if statement.\nint x = 10;\n___ (x > 5) {\n  cout << \"x is greater than 5\";\n}",
+            "options": ["else", "start", "if", "while", "for", "switch"],
+            "answer": "if",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    }
+  }
+}

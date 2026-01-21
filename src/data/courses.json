@@ -92,7 +92,7 @@
       },
       "c-sharp": {
         "title": "C# Tutorial",
-        "file": "backend/c-sharp.json"
+        "file": "backend/csharp.json"
       },
       "r": {
         "title": "R Tutorial",

@@ -1,0 +1,994 @@
+{
+  "course": {
+    "id": "csharp",
+    "title": "C# Tutorial"
+  },
+  "sections": [
+    {
+      "title": "C# Tutorial",
+      "lessons": [
+        { "id": "home", "title": "C# HOME" },
+        { "id": "intro", "title": "C# Intro" },
+        { "id": "get-started", "title": "C# Get Started" },
+        { "id": "syntax", "title": "C# Syntax" },
+        { "id": "output", "title": "C# Output" },
+        { "id": "comments", "title": "C# Comments" },
+        { "id": "variables", "title": "C# Variables" },
+        { "id": "data-types", "title": "C# Data Types" },
+        { "id": "type-casting", "title": "C# Type Casting" },
+        { "id": "user-input", "title": "C# User Input" },
+        { "id": "operators", "title": "C# Operators" },
+        { "id": "math", "title": "C# Math" },
+        { "id": "strings", "title": "C# Strings" },
+        { "id": "booleans", "title": "C# Booleans" },
+        { "id": "if-else", "title": "C# If...Else" },
+        { "id": "switch", "title": "C# Switch" },
+        { "id": "while-loop", "title": "C# While Loop" },
+        { "id": "for-loop", "title": "C# For Loop" },
+        { "id": "break-continue", "title": "C# Break/Continue" },
+        { "id": "arrays", "title": "C# Arrays" }
+      ]
+    },
+    {
+      "title": "C# Methods",
+      "lessons": [
+        { "id": "methods", "title": "C# Methods" },
+        { "id": "method-parameters", "title": "C# Method Parameters" },
+        { "id": "method-overloading", "title": "C# Method Overloading" }
+      ]
+    },
+    {
+      "title": "C# Classes",
+      "lessons": [
+        { "id": "oop", "title": "C# OOP" },
+        { "id": "classes-objects", "title": "C# Classes/Objects" },
+        { "id": "class-members", "title": "C# Class Members" },
+        { "id": "constructors", "title": "C# Constructors" },
+        { "id": "access-modifiers", "title": "C# Access Modifiers" },
+        { "id": "properties", "title": "C# Properties" },
+        { "id": "inheritance", "title": "C# Inheritance" },
+        { "id": "polymorphism", "title": "C# Polymorphism" },
+        { "id": "abstraction", "title": "C# Abstraction" },
+        { "id": "interface", "title": "C# Interface" },
+        { "id": "enums", "title": "C# Enums" },
+        { "id": "files", "title": "C# Files" },
+        { "id": "exceptions", "title": "C# Exceptions" }
+      ]
+    },
+    {
+      "title": "C# How To",
+      "lessons": [{ "id": "add-two-numbers", "title": "Add Two Numbers" }]
+    },
+    {
+      "title": "C# Examples",
+      "lessons": [
+        { "id": "examples", "title": "C# Examples" },
+        { "id": "compiler", "title": "C# Compiler" },
+        { "id": "exercises", "title": "C# Exercises" },
+        { "id": "quiz", "title": "C# Quiz" },
+        { "id": "server", "title": "C# Server" },
+        { "id": "syllabus", "title": "C# Syllabus" },
+        { "id": "study-plan", "title": "C# Study Plan" },
+        { "id": "certificate", "title": "C# Certificate" }
+      ]
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "C# Tutorial",
+      "paragraphs": [
+        "Learn C#",
+        "C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.",
+        "C# is used to develop web apps, desktop apps, mobile apps, games and much more.",
+        "We recommend reading this tutorial, in the sequence listed in the left menu."
+      ],
+      "sections": [
+        {
+          "heading": "Start Learning C#",
+          "paragraphs": ["Start learning C# now »"]
+        },
+        {
+          "heading": "Tip",
+          "paragraphs": ["Tip: Sign in to track your progress."]
+        },
+        {
+          "heading": "Examples in Each Chapter",
+          "paragraphs": [
+            "Our \"Try it Yourself\" editor makes it easy to learn C#.",
+            "You can edit C# code and view the result in your browser."
+          ],
+          "example": "using System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      Console.WriteLine(\"Hello World!\");\n    }\n  }\n}"
+        },
+        {
+          "heading": "C# Exercises",
+          "paragraphs": [
+            "Many chapters in this tutorial end with an exercise where you can check your level of knowledge."
+          ],
+          "exercise": {
+            "question": "Drag and drop the correct method name to complete the code for outputting some text in C#.",
+            "code": "Console. (\"Hello World!\");",
+            "options": ["WriteLine", "PrintLn", "Output", "Print", "WriteLn"],
+            "answer": "WriteLine"
+          }
+        },
+        {
+          "heading": "C# Quiz",
+          "paragraphs": [
+            "Learn by taking a quiz! The quiz will give you a signal of how much you know, or do not know, about C#.",
+            "Start C# Quiz"
+          ]
+        },
+        {
+          "heading": "Learn by Examples",
+          "paragraphs": [
+            "Learn by examples! This tutorial supplements all explanations with clarifying examples.",
+            "See All C# Examples"
+          ]
+        },
+        {
+          "heading": "Track Your Progress",
+          "paragraphs": [
+            "Create a W3Schools account and get access to more features and learning materials:"
+          ],
+          "list": [
+            "View your completed tutorials, exercises, and quizzes",
+            "Keep an eye on your progress and daily streaks",
+            "Join the leaderboard and compete with others",
+            "Get your own avatar and unlock new skins",
+            "Create your own personal website"
+          ],
+          "note": "Note: This is an optional feature. You can study at W3Schools without creating an account."
+        },
+        {
+          "heading": "Kickstart your career",
+          "paragraphs": [
+            "Get certified by completing the C# course",
+            "Get certified"
+          ]
+        }
+      ]
+    },
+    "introduction": {
+      "title": "C# Introduction",
+      "paragraphs": [
+        "What is C#?",
+        "C# is pronounced \"C-Sharp\".",
+        "It is an object-oriented programming language created by Microsoft that runs on the .NET Framework.",
+        "C# has roots from the C family, and the language is close to other popular languages like C++ and Java.",
+        "The first version was released in year 2002.",
+        "The latest version, C# 13, was released in November 2024."
+      ],
+      "sections": [
+        {
+          "name": "uses",
+          "heading": "C# is used for:",
+          "list": [
+            "Mobile applications",
+            "Desktop applications",
+            "Web applications",
+            "Web services",
+            "Web sites",
+            "Games",
+            "VR",
+            "Database applications",
+            "And much, much more!"
+          ]
+        },
+        {
+          "name": "why-use",
+          "heading": "Why Use C#?",
+          "list": [
+            "It is one of the most popular programming languages in the world",
+            "It is easy to learn and simple to use",
+            "It has huge community support",
+            "C# is an object-oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs",
+            "As C# is close to C, C++ and Java, it makes it easy for programmers to switch to C# or vice versa"
+          ]
+        },
+        {
+          "name": "get-started",
+          "heading": "Get Started",
+          "paragraphs": [
+            "This tutorial will teach you the basics of C#.",
+            "It is not necessary to have any prior programming experience.",
+            "Get Started »"
+          ]
+        }
+      ]
+    },
+    "get-started": {
+      "title": "C# Get Started",
+      "paragraphs": [
+        "C# IDE",
+        "The easiest way to get started with C# is to use an IDE.",
+        "An IDE (Integrated Development Environment) is used to edit and compile code."
+      ],
+      "sections": [
+        {
+          "name": "ide",
+          "heading": "C# IDE",
+          "paragraphs": [
+            "In our tutorial, we will use Visual Studio Community, which is free to download from https://visualstudio.microsoft.com/vs/community/.",
+            "Applications written in C# use the .NET Framework, so it makes sense to use Visual Studio, as the program, the framework, and the language, are all created by Microsoft."
+          ]
+        },
+        {
+          "name": "install",
+          "heading": "C# Install",
+          "paragraphs": [
+            "Once the Visual Studio Installer is downloaded and installed, choose the .NET workload and click on the Modify/Install button.",
+            "After the installation is complete, click on the Launch button to get started with Visual Studio."
+          ]
+        },
+        {
+          "name": "create-project",
+          "heading": "Create a New Project",
+          "paragraphs": [
+            "On the start window, choose Create a new project.",
+            "Then click on the \"Install more tools and features\" link.",
+            "Choose \"Console App (.NET Core)\" from the list and click on the Next button.",
+            "Enter a name for your project, and click on the Create button.",
+            "Visual Studio will automatically generate some code for your project."
+          ]
+        },
+        {
+          "name": "first-program",
+          "heading": "Your First C# Program",
+          "paragraphs": ["The code should look something like this:"],
+          "example": "Program.cs\nusing System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      Console.WriteLine(\"Hello World!\");\n    }\n  }\n}"
+        },
+        {
+          "name": "run",
+          "heading": "Run the Program",
+          "paragraphs": [
+            "Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on how to run the code.",
+            "Run the program by pressing the F5 button on your keyboard (or click on \"Debug\" -> \"Start Debugging\").",
+            "This will compile and execute your code."
+          ],
+          "output": [
+            "Hello World!",
+            "C:\\\\Users\\\\Username\\\\source\\\\repos\\\\HelloWorld\\\\HelloWorld\\\\bin\\\\Debug\\\\netcoreapp3.0\\\\HelloWorld.exe (process 13784) exited with code 0.",
+            "To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.",
+            "Press any key to close this window . . ."
+          ]
+        },
+        {
+          "name": "congrats",
+          "heading": "Congratulations",
+          "paragraphs": [
+            "Congratulations! You have now written and executed your first C# program."
+          ]
+        },
+        {
+          "name": "w3schools",
+          "heading": "Learning C# At W3Schools",
+          "paragraphs": [
+            "When learning C# at W3Schools.com, you can use our \"Try it Yourself\" tool, which shows both the code and the result.",
+            "This will make it easier for you to understand every part as we move forward:"
+          ],
+          "example": "Program.cs\nusing System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      Console.WriteLine(\"Hello World!\");\n    }\n  }\n}\n\nResult:\n\nHello World!"
+        }
+      ]
+    },
+    "syntax": {
+      "title": "C# Syntax",
+      "paragraphs": [
+        "C# Syntax",
+        "In the previous chapter, we created a C# file called Program.cs, and we used the following code to print \"Hello World\" to the screen:"
+      ],
+      "sections": [
+        {
+          "name": "example",
+          "heading": "Example",
+          "example": "Program.cs\nusing System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      Console.WriteLine(\"Hello World!\");\n    }\n  }\n}\n\nResult:\n\nHello World!"
+        },
+        {
+          "name": "explained",
+          "heading": "Example explained",
+          "paragraphs": [
+            "Line 1: using System means that we can use classes from the System namespace.",
+            "Line 2: A blank line. C# ignores white space. However, multiple lines makes the code more readable.",
+            "Line 3: namespace is used to organize your code, and it is a container for classes and other namespaces.",
+            "Line 4: The curly braces {} marks the beginning and the end of a block of code.",
+            "Line 5: class is a container for data and methods, which brings functionality to your program. Every line of code that runs in C# must be inside a class. In our example, we named the class Program.",
+            "Don't worry if you don't understand how using System, namespace and class works. Just think of it as something that (almost) always appears in your program, and that you will learn more about them in a later chapter.",
+            "Line 7: Another thing that always appear in a C# program is the Main method. Any code inside its curly brackets {} will be executed. You don't have to understand the keywords before and after Main. You will get to know them bit by bit while reading this tutorial.",
+            "Line 9: Console is a class of the System namespace, which has a WriteLine() method that is used to output/print text. In our example, it will output \"Hello World!\".",
+            "If you omit the using System line, you would have to write System.Console.WriteLine() to print/output text."
+          ]
+        },
+        {
+          "name": "notes",
+          "heading": "Notes",
+          "list": [
+            "Every C# statement ends with a semicolon ;.",
+            "C# is case-sensitive; \"MyClass\" and \"myclass\" have different meaning.",
+            "Unlike Java, the name of the C# file does not have to match the class name, but they often do (for better organization)."
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "True or False: C# is case-sensitive; MyClass and myclass have different meaning.",
+            "options": ["True", "False"],
+            "answer": "True"
+          }
+        }
+      ]
+    },
+    "output": {
+      "title": "C# Output",
+      "paragraphs": [
+        "C# Output",
+        "To output values or print text in C#, you can use the WriteLine() method:"
+      ],
+      "sections": [
+        {
+          "name": "writeline",
+          "heading": "WriteLine()",
+          "paragraphs": [
+            "To output values or print text in C#, you can use the WriteLine() method."
+          ],
+          "example": "Console.WriteLine(\"Hello World!\");"
+        },
+        {
+          "name": "multiple-lines",
+          "heading": "Multiple WriteLine()",
+          "paragraphs": [
+            "You can add as many WriteLine() methods as you want.",
+            "It will add a new line for each method."
+          ],
+          "example": "Console.WriteLine(\"Hello World!\");\nConsole.WriteLine(\"I am Learning C#\");\nConsole.WriteLine(\"It is awesome!\");"
+        },
+        {
+          "name": "numbers",
+          "heading": "Output Numbers",
+          "paragraphs": [
+            "You can also output numbers, and perform mathematical calculations:"
+          ],
+          "example": "Console.WriteLine(3 + 3);"
+        },
+        {
+          "name": "write-method",
+          "heading": "The Write Method",
+          "paragraphs": [
+            "There is also a Write() method, which is similar to WriteLine().",
+            "The only difference is that it does not insert a new line at the end of the output."
+          ],
+          "example": "Console.Write(\"Hello World! \");\nConsole.Write(\"I will print on the same line.\");",
+          "note": "We add an extra space when needed (after \"Hello World!\" in the example above), for better readability."
+        },
+        {
+          "name": "tutorial-note",
+          "heading": "Note",
+          "paragraphs": [
+            "In this tutorial, we will only use WriteLine() as it makes it easier to read the output of code."
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct method name to complete the code for outputting some text in C#.",
+            "code": "Console. (\"Hello World!\");",
+            "options": ["WriteLine", "PrintLn", "Output", "Print", "WriteLn"],
+            "answer": "WriteLine"
+          }
+        }
+      ]
+    },
+    "comments": {
+      "title": "C# Comments",
+      "paragraphs": [
+        "C# Comments",
+        "Comments can be used to explain C# code, and to make it more readable.",
+        "It can also be used to prevent execution when testing alternative code."
+      ],
+      "sections": [
+        {
+          "name": "single-line",
+          "heading": "Single-line Comments",
+          "paragraphs": [
+            "Single-line comments start with two forward slashes (//).",
+            "Any text between // and the end of the line is ignored by C# (will not be executed).",
+            "This example uses a single-line comment before a line of code:"
+          ],
+          "example": "// This is a comment\nConsole.WriteLine(\"Hello World!\");"
+        },
+        {
+          "name": "single-line-end",
+          "heading": "Single-line Comment at the End of a Line",
+          "paragraphs": [
+            "This example uses a single-line comment at the end of a line of code:"
+          ],
+          "example": "Console.WriteLine(\"Hello World!\");  // This is a comment"
+        },
+        {
+          "name": "multi-line",
+          "heading": "C# Multi-line Comments",
+          "paragraphs": [
+            "Multi-line comments start with /* and ends with */.",
+            "Any text between /* and */ will be ignored by C#.",
+            "This example uses a multi-line comment (a comment block) to explain the code:"
+          ],
+          "example": "/* The code below will print the words Hello World\nto the screen, and it is amazing */\nConsole.WriteLine(\"Hello World!\");"
+        },
+        {
+          "name": "single-vs-multi",
+          "heading": "Single or multi-line comments?",
+          "paragraphs": [
+            "It is up to you which you want to use.",
+            "Normally, we use // for short comments, and /* */ for longer."
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What symbol is used to start a single-line comment in C#?",
+            "options": ["#", "//", "/*", "--"],
+            "answer": "//"
+          }
+        }
+      ]
+    },
+    "variables": {
+      "title": "C# Variables",
+      "paragraphs": [
+        "C# Variables",
+        "Variables are containers for storing data values.",
+        "In C#, there are different types of variables (defined with different keywords)."
+      ],
+      "sections": [
+        {
+          "name": "types",
+          "heading": "Variable Types",
+          "paragraphs": ["Examples of variable types in C#:"],
+          "list": [
+            "int - stores integers (whole numbers), without decimals, such as 123 or -123",
+            "double - stores floating point numbers, with decimals, such as 19.99 or -19.99",
+            "char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes",
+            "string - stores text, such as \"Hello World\". String values are surrounded by double quotes",
+            "bool - stores values with two states: true or false"
+          ]
+        },
+        {
+          "name": "declare",
+          "heading": "Declaring (Creating) Variables",
+          "paragraphs": [
+            "To create a variable, specify the type and assign it a value:"
+          ],
+          "code": "type variableName = value;",
+          "paragraphs2": [
+            "Where type is a C# type (such as int or string), and variableName is the name of the variable (such as x or name).",
+            "The equal sign is used to assign values to the variable."
+          ]
+        },
+        {
+          "name": "string-example",
+          "heading": "Example: Store Text",
+          "paragraphs": [
+            "Create a variable called name of type string and assign it the value \"John\":"
+          ],
+          "example": "string name = \"John\";\nConsole.WriteLine(name);"
+        },
+        {
+          "name": "number-example",
+          "heading": "Example: Store a Number",
+          "paragraphs": [
+            "Create a variable called myNum of type int and assign it the value 15:"
+          ],
+          "example": "int myNum = 15;\nConsole.WriteLine(myNum);"
+        },
+        {
+          "name": "declare-later",
+          "heading": "Declare First, Assign Later",
+          "paragraphs": [
+            "You can also declare a variable without assigning the value, and assign the value later:"
+          ],
+          "example": "int myNum;\nmyNum = 15;\nConsole.WriteLine(myNum);"
+        },
+        {
+          "name": "overwrite",
+          "heading": "Overwrite a Variable Value",
+          "paragraphs": [
+            "If you assign a new value to an existing variable, it will overwrite the previous value:"
+          ],
+          "example": "int myNum = 15;\nmyNum = 20; // myNum is now 20\nConsole.WriteLine(myNum);"
+        },
+        {
+          "name": "other-types",
+          "heading": "Other Types",
+          "paragraphs": [
+            "A demonstration of how to declare variables of other types:"
+          ],
+          "example": "int myNum = 5;\ndouble myDoubleNum = 5.99D;\nchar myLetter = 'D';\nbool myBool = true;\nstring myText = \"Hello\";",
+          "note": "You will learn more about data types in a later chapter."
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct data type to store the number 15.",
+            "code": "___ myNum = 15;",
+            "options": ["float", "string", "int", "double", "bool"],
+            "answer": "int"
+          }
+        }
+      ]
+    },
+    "data-types": {
+      "title": "C# Data Types",
+      "paragraphs": [
+        "C# Data Types",
+        "As explained in the variables chapter, a variable in C# must be a specified data type."
+      ],
+      "sections": [
+        {
+          "name": "example",
+          "heading": "Example",
+          "example": "int myNum = 5;               // Integer (whole number)\ndouble myDoubleNum = 5.99D;  // Floating point number\nchar myLetter = 'D';         // Character\nbool myBool = true;          // Boolean\nstring myText = \"Hello\";     // String"
+        },
+        {
+          "name": "about",
+          "heading": "What is a Data Type?",
+          "paragraphs": [
+            "A data type specifies the size and type of variable values.",
+            "It is important to use the correct data type for the corresponding variable; to avoid errors, to save time and memory, but it will also make your code more maintainable and readable."
+          ]
+        },
+        {
+          "name": "common-types",
+          "heading": "Most Common Data Types",
+          "table": {
+            "headers": ["Data Type", "Size", "Description"],
+            "rows": [
+              [
+                "int",
+                "4 bytes",
+                "Stores whole numbers from -2,147,483,648 to 2,147,483,647"
+              ],
+              [
+                "long",
+                "8 bytes",
+                "Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807"
+              ],
+              [
+                "float",
+                "4 bytes",
+                "Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits"
+              ],
+              [
+                "double",
+                "8 bytes",
+                "Stores fractional numbers. Sufficient for storing 15 decimal digits"
+              ],
+              ["bool", "1 byte", "Stores true or false values"],
+              [
+                "char",
+                "2 bytes",
+                "Stores a single character/letter, surrounded by single quotes"
+              ],
+              [
+                "string",
+                "2 bytes per character",
+                "Stores a sequence of characters, surrounded by double quotes"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "numbers",
+          "heading": "Numbers",
+          "paragraphs": [
+            "Number types are divided into two groups:",
+            "Integer types stores whole numbers, positive or negative (such as 123 or -456), without decimals. Valid types are int and long.",
+            "Floating point types represents numbers with a fractional part, containing one or more decimals. Valid types are float and double.",
+            "The most used for numbers are int (for whole numbers) and double (for floating point numbers)."
+          ]
+        },
+        {
+          "name": "integer-types",
+          "heading": "Integer Types",
+          "sections": [
+            {
+              "name": "int",
+              "heading": "Int",
+              "paragraphs": [
+                "The int data type can store whole numbers from -2147483648 to 2147483647.",
+                "In general, the int data type is the preferred data type when we create variables with a numeric value."
+              ],
+              "example": "int myNum = 100000;\nConsole.WriteLine(myNum);"
+            },
+            {
+              "name": "long",
+              "heading": "Long",
+              "paragraphs": [
+                "The long data type can store whole numbers from -9223372036854775808 to 9223372036854775807.",
+                "This is used when int is not large enough to store the value.",
+                "You should end the value with an \"L\"."
+              ],
+              "example": "long myNum = 15000000000L;\nConsole.WriteLine(myNum);"
+            }
+          ]
+        },
+        {
+          "name": "floating-point",
+          "heading": "Floating Point Types",
+          "paragraphs": [
+            "You should use a floating point type whenever you need a number with a decimal, such as 9.99 or 3.14515.",
+            "The float and double data types can store fractional numbers.",
+            "End the value with an \"F\" for floats and \"D\" for doubles."
+          ],
+          "examples": [
+            "float myNum = 5.75F;\nConsole.WriteLine(myNum);",
+            "double myNum = 19.99D;\nConsole.WriteLine(myNum);"
+          ]
+        },
+        {
+          "name": "float-vs-double",
+          "heading": "Use float or double?",
+          "paragraphs": [
+            "The precision of a floating point value indicates how many digits the value can have after the decimal point.",
+            "The precision of float is only six or seven decimal digits, while double variables have a precision of about 15 digits.",
+            "Therefore it is safer to use double for most calculations."
+          ]
+        },
+        {
+          "name": "scientific",
+          "heading": "Scientific Numbers",
+          "paragraphs": [
+            "A floating point number can also be a scientific number with an \"e\" to indicate the power of 10:"
+          ],
+          "example": "float f1 = 35e3F;\ndouble d1 = 12E4D;\nConsole.WriteLine(f1);\nConsole.WriteLine(d1);"
+        },
+        {
+          "name": "booleans",
+          "heading": "Booleans",
+          "paragraphs": [
+            "A boolean data type is declared with the bool keyword and can only take the values true or false:"
+          ],
+          "example": "bool isCSharpFun = true;\nbool isFishTasty = false;\nConsole.WriteLine(isCSharpFun);   // Outputs True\nConsole.WriteLine(isFishTasty);   // Outputs False",
+          "note": "Boolean values are mostly used for conditional testing."
+        },
+        {
+          "name": "characters",
+          "heading": "Characters",
+          "paragraphs": [
+            "The char data type is used to store a single character.",
+            "The character must be surrounded by single quotes, like 'A' or 'c':"
+          ],
+          "example": "char myGrade = 'B';\nConsole.WriteLine(myGrade);"
+        },
+        {
+          "name": "strings",
+          "heading": "Strings",
+          "paragraphs": [
+            "The string data type is used to store a sequence of characters (text).",
+            "String values must be surrounded by double quotes:"
+          ],
+          "example": "string greeting = \"Hello World\";\nConsole.WriteLine(greeting);"
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Which C# data type is used to store a single character?",
+            "options": ["string", "int", "char", "bool"],
+            "answer": "char"
+          }
+        }
+      ]
+    },
+    "type-casting": {
+      "title": "C# Type Casting",
+      "paragraphs": [
+        "C# Type Casting",
+        "Type casting is when you assign a value of one data type to another type.",
+        "In C#, there are two types of casting:"
+      ],
+      "sections": [
+        {
+          "name": "types",
+          "heading": "Types of Casting",
+          "list": [
+            "Implicit Casting (automatically) - converting a smaller type to a larger type size",
+            "char -> int -> long -> float -> double",
+            "Explicit Casting (manually) - converting a larger type to a smaller size type",
+            "double -> float -> long -> int -> char"
+          ]
+        },
+        {
+          "name": "implicit",
+          "heading": "Implicit Casting",
+          "paragraphs": [
+            "Implicit casting is done automatically when passing a smaller size type to a larger size type:"
+          ],
+          "example": "int myInt = 9;\ndouble myDouble = myInt;       // Automatic casting: int to double\n\nConsole.WriteLine(myInt);      // Outputs 9\nConsole.WriteLine(myDouble);   // Outputs 9"
+        },
+        {
+          "name": "explicit",
+          "heading": "Explicit Casting",
+          "paragraphs": [
+            "Explicit casting must be done manually by placing the type in parentheses in front of the value:"
+          ],
+          "example": "double myDouble = 9.78;\nint myInt = (int) myDouble;    // Manual casting: double to int\n\nConsole.WriteLine(myDouble);   // Outputs 9.78\nConsole.WriteLine(myInt);      // Outputs 9"
+        },
+        {
+          "name": "conversion-methods",
+          "heading": "Type Conversion Methods",
+          "paragraphs": [
+            "It is also possible to convert data types explicitly by using built-in methods, such as Convert.ToBoolean, Convert.ToDouble, Convert.ToString, Convert.ToInt32 (int) and Convert.ToInt64 (long):"
+          ],
+          "example": "int myInt = 10;\ndouble myDouble = 5.25;\nbool myBool = true;\n\nConsole.WriteLine(Convert.ToString(myInt));    // convert int to string\nConsole.WriteLine(Convert.ToDouble(myInt));    // convert int to double\nConsole.WriteLine(Convert.ToInt32(myDouble));  // convert double to int\nConsole.WriteLine(Convert.ToString(myBool));   // convert bool to string"
+        },
+        {
+          "name": "why",
+          "heading": "Why Conversion?",
+          "paragraphs": [
+            "Many times, there's no need for type conversion.",
+            "But sometimes you have to.",
+            "Take a look at the next chapter, when working with user input, to see an example of this."
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is implicit casting in C#?",
+            "options": [
+              "Manually converting one type to another.",
+              "Automatically converting a smaller type to a larger type size."
+            ],
+            "answer": "Automatically converting a smaller type to a larger type size."
+          }
+        }
+      ]
+    },
+    "user-input": {
+      "title": "C# User Input",
+      "paragraphs": [
+        "Get User Input",
+        "You have already learned that Console.WriteLine() is used to output (print) values.",
+        "Now we will use Console.ReadLine() to get user input."
+      ],
+      "sections": [
+        {
+          "name": "readline",
+          "heading": "Console.ReadLine()",
+          "paragraphs": [
+            "In the following example, the user can input his or hers username, which is stored in the variable userName.",
+            "Then we print the value of userName:"
+          ],
+          "example": "// Type your username and press enter\nConsole.WriteLine(\"Enter username:\");\n\n// Create a string variable and get user input from the keyboard and store it in the variable\nstring userName = Console.ReadLine();\n\n// Print the value of the variable (userName), which will display the input value\nConsole.WriteLine(\"Username is: \" + userName);"
+        },
+        {
+          "name": "numbers",
+          "heading": "User Input and Numbers",
+          "paragraphs": [
+            "The Console.ReadLine() method returns a string.",
+            "Therefore, you cannot get information from another data type, such as int.",
+            "The following program will cause an error:"
+          ],
+          "example": "Console.WriteLine(\"Enter your age:\");\nint age = Console.ReadLine();\nConsole.WriteLine(\"Your age is: \" + age);"
+        },
+        {
+          "name": "error",
+          "heading": "Error Message",
+          "paragraphs": ["The error message will be something like this:"],
+          "code": "Cannot implicitly convert type 'string' to 'int'",
+          "paragraphs2": [
+            "Like the error message says, you cannot implicitly convert type 'string' to 'int'."
+          ]
+        },
+        {
+          "name": "convert",
+          "heading": "Convert Input to Number",
+          "paragraphs": [
+            "You can convert any type explicitly, by using one of the Convert.To methods:"
+          ],
+          "example": "Console.WriteLine(\"Enter your age:\");\nint age = Convert.ToInt32(Console.ReadLine());\nConsole.WriteLine(\"Your age is: \" + age);"
+        },
+        {
+          "name": "note",
+          "heading": "Note",
+          "paragraphs": [
+            "If you enter wrong input (e.g. text in a numerical input), you will get an exception/error message (like System.FormatException: 'Input string was not in a correct format.').",
+            "You will learn more about Exceptions and how to handle errors in a later chapter."
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Which method can be used in C# to get user input from the console?",
+            "options": [
+              "Console.WriteLine()",
+              "Console.ReadLine()",
+              "Console.Input()",
+              "Console.GetInput()"
+            ],
+            "answer": "Console.ReadLine()"
+          }
+        }
+      ]
+    },
+    "operators": {
+      "title": "C# Operators",
+      "paragraphs": [
+        "Operators",
+        "Operators are used to perform operations on variables and values.",
+        "In the example below, we use the + operator to add together two values:"
+      ],
+      "sections": [
+        {
+          "name": "basic-example",
+          "heading": "Example",
+          "example": "int x = 100 + 50;"
+        },
+        {
+          "name": "more-examples",
+          "heading": "More Examples",
+          "paragraphs": [
+            "The + operator can also be used to add together a variable and a value, or a variable and another variable:"
+          ],
+          "example": "int sum1 = 100 + 50;        // 150 (100 + 50)\nint sum2 = sum1 + 250;      // 400 (150 + 250)\nint sum3 = sum2 + sum2;     // 800 (400 + 400)"
+        },
+        {
+          "name": "arithmetic",
+          "heading": "Arithmetic Operators",
+          "paragraphs": [
+            "Arithmetic operators are used to perform common mathematical operations:"
+          ],
+          "table": {
+            "headers": ["Operator", "Name", "Description", "Example"],
+            "rows": [
+              ["+", "Addition", "Adds together two values", "x + y"],
+              ["-", "Subtraction", "Subtracts one value from another", "x - y"],
+              ["*", "Multiplication", "Multiplies two values", "x * y"],
+              ["/", "Division", "Divides one value by another", "x / y"],
+              ["%", "Modulus", "Returns the division remainder", "x % y"],
+              [
+                "++",
+                "Increment",
+                "Increases the value of a variable by 1",
+                "x++"
+              ],
+              [
+                "--",
+                "Decrement",
+                "Decreases the value of a variable by 1",
+                "x--"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct operator to add 100 and 50.",
+            "code": "int sum = 100  50;",
+            "options": ["+", "-", "*", "/"],
+            "answer": "+"
+          }
+        }
+      ]
+    },
+    "math": {
+      "title": "C# Math",
+      "paragraphs": [
+        "C# Math",
+        "The C# Math class has many methods that allows you to perform mathematical tasks on numbers."
+      ],
+      "sections": [
+        {
+          "name": "max",
+          "heading": "Math.Max(x,y)",
+          "paragraphs": [
+            "The Math.Max(x,y) method can be used to find the highest value of x and y:"
+          ],
+          "example": "Math.Max(5, 10);"
+        },
+        {
+          "name": "min",
+          "heading": "Math.Min(x,y)",
+          "paragraphs": [
+            "The Math.Min(x,y) method can be used to find the lowest value of of x and y:"
+          ],
+          "example": "Math.Min(5, 10);"
+        },
+        {
+          "name": "sqrt",
+          "heading": "Math.Sqrt(x)",
+          "paragraphs": [
+            "The Math.Sqrt(x) method returns the square root of x:"
+          ],
+          "example": "Math.Sqrt(64);"
+        },
+        {
+          "name": "abs",
+          "heading": "Math.Abs(x)",
+          "paragraphs": [
+            "The Math.Abs(x) method returns the absolute (positive) value of x:"
+          ],
+          "example": "Math.Abs(-4.7);"
+        },
+        {
+          "name": "round",
+          "heading": "Math.Round()",
+          "paragraphs": [
+            "Math.Round() rounds a number to the nearest whole number:"
+          ],
+          "example": "Math.Round(9.99);"
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct method to find the smallest value between 5 and 10.",
+            "code": "double result = Math.(5, 10);",
+            "options": ["Min", "Max", "Sqrt", "Abs"],
+            "answer": "Min"
+          }
+        }
+      ]
+    },
+    "strings": {
+      "title": "C# Strings",
+      "paragraphs": [
+        "C# Strings",
+        "Strings are used for storing text.",
+        "A string variable contains a collection of characters surrounded by double quotes:"
+      ],
+      "sections": [
+        {
+          "name": "create-string",
+          "heading": "Create a String",
+          "paragraphs": [
+            "Create a variable of type string and assign it a value:"
+          ],
+          "example": "string greeting = \"Hello\";"
+        },
+        {
+          "name": "many-words",
+          "heading": "String with Many Words",
+          "paragraphs": [
+            "A string variable can contain many words, if you want:"
+          ],
+          "example": "string greeting2 = \"Nice to meet you!\";"
+        },
+        {
+          "name": "length",
+          "heading": "String Length",
+          "paragraphs": [
+            "A string in C# is actually an object, which contain properties and methods that can perform certain operations on strings.",
+            "The length of a string can be found with the Length property:"
+          ],
+          "example": "string txt = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\nConsole.WriteLine(\"The length of the txt string is: \" + txt.Length);"
+        },
+        {
+          "name": "methods",
+          "heading": "Other Methods",
+          "paragraphs": [
+            "There are many string methods available, for example ToUpper() and ToLower().",
+            "These methods return a copy of the string converted to uppercase or lowercase:"
+          ],
+          "example": "string txt = \"Hello World\";\nConsole.WriteLine(txt.ToUpper());   // Outputs \"HELLO WORLD\"\nConsole.WriteLine(txt.ToLower());   // Outputs \"hello world\""
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct method to convert the string to uppercase.",
+            "code": "string txt = \"Hello World\";\nConsole.WriteLine(txt.());",
+            "options": ["ToUpper", "ToLower", "Length", "Trim"],
+            "answer": "ToUpper"
+          }
+        }
+      ]
+    }
+
+  }
+}

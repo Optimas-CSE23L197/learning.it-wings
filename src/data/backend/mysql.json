@@ -1,0 +1,3874 @@
+{
+  "course": {
+    "id": "mysql",
+    "title": "MySQL Tutorial"
+  },
+  "sections": [
+    {
+      "title": "MySQL Basics",
+      "lessons": [
+        { "id": "home", "title": "MySQL Home" },
+        { "id": "introduction", "title": "MySQL Introduction" },
+        { "id": "rdbms", "title": "MySQL RDBMS" }
+      ]
+    },
+    {
+      "title": "MySQL SQL",
+      "lessons": [
+        { "id": "sql", "title": "MySQL SQL" },
+        { "id": "select", "title": "MySQL SELECT" },
+        { "id": "where", "title": "MySQL WHERE" },
+        { "id": "and-or-not", "title": "MySQL AND, OR, NOT" },
+        { "id": "order-by", "title": "MySQL ORDER BY" },
+        { "id": "insert-into", "title": "MySQL INSERT INTO" },
+        { "id": "null-values", "title": "MySQL NULL Values" },
+        { "id": "update", "title": "MySQL UPDATE" },
+        { "id": "delete", "title": "MySQL DELETE" },
+        { "id": "limit", "title": "MySQL LIMIT" },
+        { "id": "min-max", "title": "MySQL MIN and MAX" },
+        { "id": "count-avg-sum", "title": "MySQL COUNT, AVG, SUM" },
+        { "id": "like", "title": "MySQL LIKE" },
+        { "id": "wildcards", "title": "MySQL Wildcards" },
+        { "id": "in", "title": "MySQL IN" },
+        { "id": "between", "title": "MySQL BETWEEN" },
+        { "id": "aliases", "title": "MySQL Aliases" },
+        { "id": "joins", "title": "MySQL Joins" },
+        { "id": "inner-join", "title": "MySQL INNER JOIN" },
+        { "id": "left-join", "title": "MySQL LEFT JOIN" },
+        { "id": "right-join", "title": "MySQL RIGHT JOIN" },
+        { "id": "cross-join", "title": "MySQL CROSS JOIN" },
+        { "id": "self-join", "title": "MySQL Self Join" },
+        { "id": "union", "title": "MySQL UNION" },
+        { "id": "union-all", "title": "MySQL UNION ALL" },
+        { "id": "group-by", "title": "MySQL GROUP BY" },
+        { "id": "having", "title": "MySQL HAVING" },
+        { "id": "exists", "title": "MySQL EXISTS" },
+        { "id": "any-all", "title": "MySQL ANY, ALL" },
+        { "id": "insert-select", "title": "MySQL INSERT SELECT" },
+        { "id": "case", "title": "MySQL CASE" },
+        { "id": "null-functions", "title": "MySQL Null Functions" },
+        { "id": "comments", "title": "MySQL Comments" },
+        { "id": "operators", "title": "MySQL Operators" }
+      ]
+    },
+    {
+      "title": "MySQL Database",
+      "lessons": [
+        { "id": "create-db", "title": "MySQL Create DB" },
+        { "id": "drop-db", "title": "MySQL Drop DB" },
+        { "id": "create-table", "title": "MySQL Create Table" },
+        { "id": "drop-table", "title": "MySQL Drop Table" },
+        { "id": "alter-table", "title": "MySQL Alter Table" },
+        { "id": "constraints", "title": "MySQL Constraints" },
+        { "id": "not-null", "title": "MySQL NOT NULL" },
+        { "id": "unique", "title": "MySQL UNIQUE" },
+        { "id": "primary-key", "title": "MySQL PRIMARY KEY" },
+        { "id": "foreign-key", "title": "MySQL FOREIGN KEY" },
+        { "id": "check", "title": "MySQL CHECK" },
+        { "id": "default", "title": "MySQL DEFAULT" },
+        { "id": "create-index", "title": "MySQL Create Index" },
+        { "id": "auto-increment", "title": "MySQL AUTO INCREMENT" },
+        { "id": "dates", "title": "MySQL Dates" },
+        { "id": "views", "title": "MySQL Views" }
+      ]
+    }
+  ],
+  "content": {
+    "introduction": {
+      "title": "Introduction to MySQL",
+      "paragraphs": [
+        "MySQL is a very popular open-source relational database management system (RDBMS)."
+      ],
+      "sections": [
+        {
+          "heading": "What is MySQL?",
+          "paragraphs": [
+            "MySQL is a relational database management system.",
+            "MySQL is open-source and free to use.",
+            "MySQL is ideal for both small and large applications.",
+            "MySQL is very fast, reliable, scalable, and easy to use.",
+            "MySQL is cross-platform.",
+            "MySQL is compliant with the ANSI SQL standard.",
+            "MySQL was first released in 1995.",
+            "MySQL is developed, distributed, and supported by Oracle Corporation.",
+            "MySQL is named after co-founder Ulf Michael \"Monty\" Widenius's daughter: My."
+          ]
+        },
+        {
+          "heading": "Who Uses MySQL?",
+          "paragraphs": [
+            "Huge websites like Facebook, Twitter, Airbnb, Booking.com, Uber, GitHub, and YouTube use MySQL.",
+            "Content Management Systems such as WordPress, Drupal, Joomla!, and Contao use MySQL.",
+            "A very large number of web developers around the world use MySQL."
+          ]
+        },
+        {
+          "heading": "Show Data on Your Web Site",
+          "paragraphs": [
+            "To build a website that shows data from a database, you will need:"
+          ],
+          "list": [
+            "An RDBMS database program (like MySQL)",
+            "A server-side scripting language, such as PHP",
+            "SQL to retrieve the required data",
+            "HTML and CSS to style the web pages"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is true about MySQL?",
+            "options": [
+              "MySQL is free",
+              "MySQL is open-source",
+              "MySQL is developed, distributed, and supported by Oracle",
+              "MySQL is a Microsoft product"
+            ],
+            "answer": [
+              "MySQL is free",
+              "MySQL is open-source",
+              "MySQL is developed, distributed, and supported by Oracle"
+            ]
+          }
+        }
+      ]
+    },
+    "rdbms": {
+      "title": "MySQL RDBMS",
+      "sections": [
+        {
+          "heading": "What is RDBMS?",
+          "paragraphs": [
+            "RDBMS stands for Relational Database Management System.",
+            "An RDBMS is a program used to maintain a relational database.",
+            "RDBMS is the basis for modern database systems such as MySQL, Microsoft SQL Server, Oracle, and Microsoft Access.",
+            "RDBMS uses SQL queries to access and manage data stored in databases."
+          ]
+        },
+        {
+          "heading": "What is a Database Table?",
+          "paragraphs": [
+            "A table is a collection of related data entries, organized in rows and columns.",
+            "A column holds specific information about every record in the table.",
+            "A record, also called a row, represents one individual data entry in a table."
+          ]
+        },
+        {
+          "heading": "Example: Customers Table",
+          "paragraphs": [
+            "The Customers table contains information about customers.",
+            "Each column stores a specific type of data such as CustomerID, CustomerName, ContactName, Address, City, PostalCode, and Country.",
+            "The example table contains multiple records, where each record represents one customer."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "What is a Relational Database?",
+          "paragraphs": [
+            "A relational database organizes data into tables that are related to each other.",
+            "Relationships are created using columns that contain common data between tables."
+          ]
+        },
+        {
+          "heading": "Table Relationships",
+          "paragraphs": [
+            "The relationship between the Customers table and the Orders table is based on the CustomerID column.",
+            "The relationship between the Orders table and the Shippers table is based on the ShipperID column.",
+            "These relationships allow data to be combined and queried across multiple tables."
+          ]
+        },
+        {
+          "heading": "Example: Orders Table",
+          "table": {
+            "headers": [
+              "OrderID",
+              "CustomerID",
+              "EmployeeID",
+              "OrderDate",
+              "ShipperID"
+            ],
+            "rows": [
+              ["10278", "5", "8", "1996-08-12", "2"],
+              ["10280", "5", "2", "1996-08-14", "1"],
+              ["10308", "2", "7", "1996-09-18", "3"]
+            ]
+          }
+        },
+        {
+          "heading": "Example: Shippers Table",
+          "table": {
+            "headers": ["ShipperID", "ShipperName", "Phone"],
+            "rows": [
+              ["1", "Speedy Express", "(503) 555-9831"],
+              ["2", "United Package", "(503) 555-3199"],
+              ["3", "Federal Shipping", "(503) 555-9931"]
+            ]
+          }
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What does RDBMS stand for?",
+            "options": [
+              "Relational Database Management System",
+              "Rational Database Management System",
+              "Relative Database Monitoring System",
+              "Multimedia Database Management System"
+            ],
+            "answer": "Relational Database Management System"
+          }
+        }
+      ]
+    },
+    "sql": {
+      "title": "MySQL SQL",
+      "sections": [
+        {
+          "heading": "What is SQL?",
+          "paragraphs": [
+            "SQL stands for Structured Query Language.",
+            "SQL is the standard language for dealing with relational databases.",
+            "SQL is used to insert, search, update, and delete records in a database."
+          ]
+        },
+        {
+          "heading": "How to Use SQL",
+          "paragraphs": [
+            "The following SQL statement selects all records from the Customers table."
+          ],
+          "example": "SELECT * FROM Customers;"
+        },
+        {
+          "heading": "Keep in Mind That...",
+          "paragraphs": [
+            "SQL keywords are not case sensitive: select is the same as SELECT.",
+            "In this tutorial, all SQL keywords are written in upper-case for better readability."
+          ]
+        },
+        {
+          "heading": "Semicolon After SQL Statements",
+          "paragraphs": [
+            "Some database systems require a semicolon at the end of each SQL statement.",
+            "The semicolon is the standard way to separate SQL statements when multiple statements are executed in a single call.",
+            "In this tutorial, a semicolon is used at the end of each SQL statement."
+          ]
+        },
+        {
+          "heading": "Some of the Most Important SQL Commands",
+          "list": [
+            "SELECT – extracts data from a database",
+            "UPDATE – updates data in a database",
+            "DELETE – deletes data from a database",
+            "INSERT INTO – inserts new data into a database",
+            "CREATE DATABASE – creates a new database",
+            "ALTER DATABASE – modifies a database",
+            "CREATE TABLE – creates a new table",
+            "ALTER TABLE – modifies a table",
+            "DROP TABLE – deletes a table",
+            "CREATE INDEX – creates an index (search key)",
+            "DROP INDEX – deletes an index"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Which one of the following is a typical SQL statement?",
+            "options": [
+              "Customers(ID, CustomerName, City);",
+              "SELECT * FROM Customers;",
+              "{table: 'Customers', fields: 'ID CustomerName, City'}"
+            ],
+            "answer": "SELECT * FROM Customers;"
+          }
+        }
+      ]
+    },
+    "select": {
+      "title": "MySQL SELECT Statement",
+      "sections": [
+        {
+          "heading": "The MySQL SELECT Statement",
+          "paragraphs": [
+            "The SELECT statement is used to select data from a database.",
+            "The data returned from a SELECT statement is stored in a result table, called the result-set."
+          ]
+        },
+        {
+          "heading": "SELECT Syntax",
+          "code": "SELECT column1, column2, ...\nFROM table_name;",
+          "paragraphs": [
+            "Here, column1, column2, and so on are the field names of the table you want to retrieve data from.",
+            "If you want to select all columns from a table, use the asterisk (*) symbol."
+          ],
+          "example": "SELECT * FROM table_name;"
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the well-known Northwind sample database.",
+            "Below is a selection from the Customers table in the Northwind database."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ],
+              [
+                "5",
+                "Berglunds snabbköp",
+                "Christina Berglund",
+                "Berguvsvägen 8",
+                "Luleå",
+                "S-958 22",
+                "Sweden"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "SELECT Columns Example",
+          "paragraphs": [
+            "The following SQL statement selects specific columns from the Customers table."
+          ],
+          "example": "SELECT CustomerName, City, Country FROM Customers;"
+        },
+        {
+          "heading": "SELECT * Example",
+          "paragraphs": [
+            "The following SQL statement selects all columns from the Customers table."
+          ],
+          "example": "SELECT * FROM Customers;"
+        },
+        {
+          "heading": "The MySQL SELECT DISTINCT Statement",
+          "paragraphs": [
+            "The SELECT DISTINCT statement is used to return only distinct (different) values.",
+            "A column in a table often contains duplicate values, and DISTINCT removes these duplicates."
+          ]
+        },
+        {
+          "heading": "SELECT DISTINCT Syntax",
+          "code": "SELECT DISTINCT column1, column2, ...\nFROM table_name;"
+        },
+        {
+          "heading": "SELECT Example Without DISTINCT",
+          "paragraphs": [
+            "The following SQL statement returns all values, including duplicates, from the Country column."
+          ],
+          "example": "SELECT Country FROM Customers;"
+        },
+        {
+          "heading": "SELECT DISTINCT Examples",
+          "paragraphs": [
+            "The following SQL statement returns only unique values from the Country column."
+          ],
+          "example": "SELECT DISTINCT Country FROM Customers;"
+        },
+        {
+          "heading": "COUNT DISTINCT Example",
+          "paragraphs": [
+            "The following SQL statement counts the number of different countries in the Customers table."
+          ],
+          "example": "SELECT COUNT(DISTINCT Country) FROM Customers;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct parts to form a legal SQL statement:",
+            "answer": "SELECT * FROM Customers;"
+          }
+        }
+      ]
+    },
+    "where": {
+      "title": "MySQL WHERE Clause",
+      "sections": [
+        {
+          "heading": "The MySQL WHERE Clause",
+          "paragraphs": [
+            "The WHERE clause is used to filter records.",
+            "It is used to extract only those records that fulfill a specified condition."
+          ]
+        },
+        {
+          "heading": "WHERE Syntax",
+          "code": "SELECT column1, column2, ...\nFROM table_name\nWHERE condition;",
+          "paragraphs": [
+            "The WHERE clause can be used with SELECT, UPDATE, DELETE, and other SQL statements."
+          ],
+          "note": "The WHERE clause is not only used in SELECT statements, it is also used in UPDATE, DELETE, and other SQL statements."
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Customers table."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ],
+              [
+                "5",
+                "Berglunds snabbköp",
+                "Christina Berglund",
+                "Berguvsvägen 8",
+                "Luleå",
+                "S-958 22",
+                "Sweden"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "WHERE Clause Example",
+          "paragraphs": [
+            "The following SQL statement selects all customers from Mexico."
+          ],
+          "example": "SELECT * FROM Customers\nWHERE Country = 'Mexico';"
+        },
+        {
+          "heading": "Text Fields vs. Numeric Fields",
+          "paragraphs": [
+            "SQL requires single quotes around text values.",
+            "Numeric values should not be enclosed in quotes."
+          ],
+          "examples": [
+            "SELECT * FROM Customers\nWHERE Country = 'Mexico';",
+            "SELECT * FROM Customers\nWHERE CustomerID = 1;"
+          ]
+        },
+        {
+          "heading": "Operators in the WHERE Clause",
+          "table": {
+            "headers": ["Operator", "Description"],
+            "rows": [
+              ["=", "Equal"],
+              [">", "Greater than"],
+              ["<", "Less than"],
+              [">=", "Greater than or equal"],
+              ["<=", "Less than or equal"],
+              ["<>", "Not equal (sometimes written as !=)"],
+              ["BETWEEN", "Between a certain range"],
+              ["LIKE", "Search for a pattern"],
+              ["IN", "Specify multiple possible values for a column"]
+            ]
+          }
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct parts to form a legal SQL statement with a WHERE clause:",
+            "answer": "SELECT * FROM Customers WHERE Country = 'Norway';"
+          }
+        }
+      ]
+    },
+    "and-or-not": {
+      "title": "MySQL AND, OR and NOT Operators",
+      "sections": [
+        {
+          "heading": "The MySQL AND, OR and NOT Operators",
+          "paragraphs": [
+            "The WHERE clause can be combined with the AND, OR, and NOT operators.",
+            "These operators are used to filter records based on more than one condition."
+          ]
+        },
+        {
+          "heading": "AND Operator",
+          "paragraphs": [
+            "The AND operator displays a record if all the conditions separated by AND are TRUE."
+          ],
+          "code": "SELECT column1, column2, ...\nFROM table_name\nWHERE condition1 AND condition2 AND condition3;",
+          "example": "SELECT * FROM Customers\nWHERE Country = 'Germany' AND City = 'Berlin';"
+        },
+        {
+          "heading": "OR Operator",
+          "paragraphs": [
+            "The OR operator displays a record if any of the conditions separated by OR is TRUE."
+          ],
+          "code": "SELECT column1, column2, ...\nFROM table_name\nWHERE condition1 OR condition2 OR condition3;",
+          "examples": [
+            "SELECT * FROM Customers\nWHERE City = 'Berlin' OR City = 'Stuttgart';",
+            "SELECT * FROM Customers\nWHERE Country = 'Germany' OR Country = 'Spain';"
+          ]
+        },
+        {
+          "heading": "NOT Operator",
+          "paragraphs": [
+            "The NOT operator displays a record if the condition is NOT TRUE."
+          ],
+          "code": "SELECT column1, column2, ...\nFROM table_name\nWHERE NOT condition;",
+          "example": "SELECT * FROM Customers\nWHERE NOT Country = 'Germany';"
+        },
+        {
+          "heading": "Combining AND, OR and NOT",
+          "paragraphs": [
+            "You can combine the AND, OR, and NOT operators to create complex conditions.",
+            "Parentheses are used to control the order of evaluation."
+          ],
+          "examples": [
+            "SELECT * FROM Customers\nWHERE Country = 'Germany' AND (City = 'Berlin' OR City = 'Stuttgart');",
+            "SELECT * FROM Customers\nWHERE NOT Country = 'Germany' AND NOT Country = 'USA';"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Consider the following SQL statement:\nSELECT * FROM Customers\nWHERE Country = 'Mexico' AND PostalCode = 115112\nWhat will be returned?",
+            "options": [
+              "All records that have Country = 'Mexico' OR PostalCode = 115112",
+              "All records that have Country = 'Mexico' AND PostalCode = 115112"
+            ],
+            "answer": "All records that have Country = 'Mexico' AND PostalCode = 115112"
+          }
+        }
+      ]
+    },
+    "order-by": {
+      "title": "MySQL ORDER BY Keyword",
+      "sections": [
+        {
+          "heading": "The MySQL ORDER BY Keyword",
+          "paragraphs": [
+            "The ORDER BY keyword is used to sort the result-set in ascending or descending order.",
+            "By default, the ORDER BY keyword sorts records in ascending order.",
+            "To sort records in descending order, the DESC keyword is used."
+          ]
+        },
+        {
+          "heading": "ORDER BY Syntax",
+          "code": "SELECT column1, column2, ...\nFROM table_name\nORDER BY column1, column2, ... ASC|DESC;"
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Customers table."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ],
+              [
+                "5",
+                "Berglunds snabbköp",
+                "Christina Berglund",
+                "Berguvsvägen 8",
+                "Luleå",
+                "S-958 22",
+                "Sweden"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "ORDER BY Example",
+          "paragraphs": [
+            "The following SQL statement selects all customers from the Customers table, sorted by the Country column."
+          ],
+          "example": "SELECT * FROM Customers\nORDER BY Country;"
+        },
+        {
+          "heading": "ORDER BY DESC Example",
+          "paragraphs": [
+            "The following SQL statement selects all customers sorted in descending order by the Country column."
+          ],
+          "example": "SELECT * FROM Customers\nORDER BY Country DESC;"
+        },
+        {
+          "heading": "ORDER BY Multiple Columns",
+          "paragraphs": [
+            "You can sort the result-set by more than one column.",
+            "If multiple rows have the same value in the first column, they are sorted by the next column."
+          ],
+          "examples": [
+            "SELECT * FROM Customers\nORDER BY Country, CustomerName;",
+            "SELECT * FROM Customers\nORDER BY Country ASC, CustomerName DESC;"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Insert the correct keyword to sort the result by Country:\nSELECT * FROM Customers ___ Country;",
+            "answer": "ORDER BY"
+          }
+        }
+      ]
+    },
+    "insert-into": {
+      "title": "MySQL INSERT INTO Statement",
+      "sections": [
+        {
+          "heading": "The MySQL INSERT INTO Statement",
+          "paragraphs": [
+            "The INSERT INTO statement is used to insert new records into a table."
+          ]
+        },
+        {
+          "heading": "INSERT INTO Syntax",
+          "paragraphs": [
+            "You can write the INSERT INTO statement in two different ways."
+          ],
+          "code": "INSERT INTO table_name (column1, column2, column3, ...)\nVALUES (value1, value2, value3, ...);"
+        },
+        {
+          "heading": "INSERT INTO Without Column Names",
+          "paragraphs": [
+            "If you are inserting values for all columns in a table, you do not need to specify the column names.",
+            "The order of the values must match the order of the columns in the table."
+          ],
+          "code": "INSERT INTO table_name\nVALUES (value1, value2, value3, ...);"
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Customers table before inserting a new record."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "89",
+                "White Clover Markets",
+                "Karl Jablonski",
+                "305 - 14th Ave. S. Suite 3B",
+                "Seattle",
+                "98128",
+                "USA"
+              ],
+              [
+                "90",
+                "Wilman Kala",
+                "Matti Karttunen",
+                "Keskuskatu 45",
+                "Helsinki",
+                "21240",
+                "Finland"
+              ],
+              [
+                "91",
+                "Wolski",
+                "Zbyszek",
+                "ul. Filtrowa 68",
+                "Walla",
+                "01-012",
+                "Poland"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "INSERT INTO Example",
+          "paragraphs": [
+            "The following SQL statement inserts a new record into the Customers table."
+          ],
+          "example": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\nVALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');"
+        },
+        {
+          "heading": "Auto Increment Field",
+          "paragraphs": [
+            "The CustomerID column is an auto-increment field.",
+            "A value for an auto-increment column is generated automatically when a new record is inserted."
+          ]
+        },
+        {
+          "heading": "Insert Data Only in Specified Columns",
+          "paragraphs": [
+            "You can insert data into only specific columns of a table.",
+            "Columns not listed in the INSERT statement will get NULL values or default values."
+          ],
+          "example": "INSERT INTO Customers (CustomerName, City, Country)\nVALUES ('Cardinal', 'Stavanger', 'Norway');"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Insert the correct keyword to make a legal INSERT statement:\nPlanets (PlanetName, Size) VALUES ('Jupiter', 69911);",
+            "answer": "INSERT INTO"
+          }
+        }
+      ]
+    },
+    "null-values": {
+      "title": "MySQL NULL Values",
+      "sections": [
+        {
+          "heading": "What is a NULL Value?",
+          "paragraphs": [
+            "A field with a NULL value is a field with no value.",
+            "If a field in a table is optional, it is possible to insert or update a record without adding a value to this field.",
+            "When no value is provided, the field will be stored with a NULL value."
+          ],
+          "note": "A NULL value is different from a zero value or a field that contains spaces. A field with a NULL value has been left completely blank."
+        },
+        {
+          "heading": "How to Test for NULL Values",
+          "paragraphs": [
+            "You cannot test for NULL values using comparison operators such as =, <, or <>.",
+            "Instead, you must use the IS NULL and IS NOT NULL operators."
+          ]
+        },
+        {
+          "heading": "IS NULL Syntax",
+          "code": "SELECT column_names\nFROM table_name\nWHERE column_name IS NULL;"
+        },
+        {
+          "heading": "IS NOT NULL Syntax",
+          "code": "SELECT column_names\nFROM table_name\nWHERE column_name IS NOT NULL;"
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Customers table."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ],
+              [
+                "5",
+                "Berglunds snabbköp",
+                "Christina Berglund",
+                "Berguvsvägen 8",
+                "Luleå",
+                "S-958 22",
+                "Sweden"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "The IS NULL Operator",
+          "paragraphs": [
+            "The IS NULL operator is used to test for empty (NULL) values."
+          ],
+          "example": "SELECT CustomerName, ContactName, Address\nFROM Customers\nWHERE Address IS NULL;",
+          "tip": "Always use IS NULL when searching for NULL values."
+        },
+        {
+          "heading": "The IS NOT NULL Operator",
+          "paragraphs": [
+            "The IS NOT NULL operator is used to test for non-empty (NOT NULL) values."
+          ],
+          "example": "SELECT CustomerName, ContactName, Address\nFROM Customers\nWHERE Address IS NOT NULL;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "True or False: NULL is the same as 0 for integer fields and an empty string for text fields.",
+            "options": ["True", "False"],
+            "answer": "False"
+          }
+        }
+      ]
+    },
+    "update": {
+      "title": "MySQL UPDATE Statement",
+      "sections": [
+        {
+          "heading": "The MySQL UPDATE Statement",
+          "paragraphs": [
+            "The UPDATE statement is used to modify existing records in a table."
+          ]
+        },
+        {
+          "heading": "UPDATE Syntax",
+          "code": "UPDATE table_name\nSET column1 = value1, column2 = value2, ...\nWHERE condition;",
+          "note": "Be careful when updating records. The WHERE clause specifies which records should be updated. If you omit the WHERE clause, all records in the table will be updated."
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Customers table before updating records."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "UPDATE Table Example",
+          "paragraphs": [
+            "The following SQL statement updates the contact name and city for the customer with CustomerID = 1."
+          ],
+          "example": "UPDATE Customers\nSET ContactName = 'Alfred Schmidt', City = 'Frankfurt'\nWHERE CustomerID = 1;"
+        },
+        {
+          "heading": "UPDATE Multiple Records",
+          "paragraphs": [
+            "The WHERE clause determines how many records will be updated.",
+            "The following SQL statement updates the PostalCode for all customers from Mexico."
+          ],
+          "example": "UPDATE Customers\nSET PostalCode = 00000\nWHERE Country = 'Mexico';"
+        },
+        {
+          "heading": "Update Warning",
+          "paragraphs": [
+            "If you omit the WHERE clause, all records in the table will be updated."
+          ],
+          "example": "UPDATE Customers\nSET PostalCode = 00000;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Select the correct keywords to insert the value 'Oslo' in all the City fields:\nCustomers ___ City = 'Oslo';",
+            "answer": "UPDATE"
+          }
+        }
+      ]
+    },
+    "delete": {
+      "title": "MySQL DELETE Statement",
+      "sections": [
+        {
+          "heading": "The MySQL DELETE Statement",
+          "paragraphs": [
+            "The DELETE statement is used to delete existing records from a table."
+          ]
+        },
+        {
+          "heading": "DELETE Syntax",
+          "code": "DELETE FROM table_name\nWHERE condition;",
+          "note": "Be careful when deleting records. The WHERE clause specifies which records should be deleted. If you omit the WHERE clause, all records in the table will be deleted."
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Customers table before deleting records."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ],
+              [
+                "5",
+                "Berglunds snabbköp",
+                "Christina Berglund",
+                "Berguvsvägen 8",
+                "Luleå",
+                "S-958 22",
+                "Sweden"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "DELETE Example",
+          "paragraphs": [
+            "The following SQL statement deletes a specific customer from the Customers table."
+          ],
+          "example": "DELETE FROM Customers\nWHERE CustomerName = 'Alfreds Futterkiste';"
+        },
+        {
+          "heading": "Delete All Records",
+          "paragraphs": [
+            "You can delete all rows in a table without deleting the table itself.",
+            "The table structure, attributes, and indexes will remain intact."
+          ],
+          "code": "DELETE FROM table_name;",
+          "example": "DELETE FROM Customers;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What happens if you forget the WHERE clause in a DELETE statement?",
+            "options": [
+              "All records in the table will be deleted",
+              "Nothing will happen; an error will occur",
+              "Only the first record will be deleted"
+            ],
+            "answer": "All records in the table will be deleted"
+          }
+        }
+      ]
+    },
+    "limit": {
+      "title": "MySQL LIMIT Clause",
+      "sections": [
+        {
+          "heading": "The MySQL LIMIT Clause",
+          "paragraphs": [
+            "The LIMIT clause is used to specify the number of records to return.",
+            "LIMIT is especially useful when working with large tables, as returning many records can impact performance."
+          ]
+        },
+        {
+          "heading": "LIMIT Syntax",
+          "code": "SELECT column_name(s)\nFROM table_name\nWHERE condition\nLIMIT number;"
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Customers table."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ],
+              [
+                "5",
+                "Berglunds snabbköp",
+                "Christina Berglund",
+                "Berguvsvägen 8",
+                "Luleå",
+                "S-958 22",
+                "Sweden"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "LIMIT Examples",
+          "paragraphs": [
+            "The following SQL statement selects the first three records from the Customers table."
+          ],
+          "example": "SELECT * FROM Customers\nLIMIT 3;"
+        },
+        {
+          "heading": "LIMIT with OFFSET",
+          "paragraphs": [
+            "You can use OFFSET to specify where the result set should start.",
+            "The following query returns three records, starting from the fourth record."
+          ],
+          "example": "SELECT * FROM Customers\nLIMIT 3 OFFSET 3;"
+        },
+        {
+          "heading": "LIMIT with WHERE Clause",
+          "paragraphs": [
+            "The LIMIT clause can be combined with a WHERE clause to filter records."
+          ],
+          "example": "SELECT * FROM Customers\nWHERE Country = 'Germany'\nLIMIT 3;"
+        },
+        {
+          "heading": "LIMIT with ORDER BY Clause",
+          "paragraphs": [
+            "You can sort the result set before applying the LIMIT clause."
+          ],
+          "example": "SELECT * FROM Customers\nORDER BY Country\nLIMIT 3;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Which one of the following is a correct SQL statement?",
+            "options": [
+              "SELECT * FROM Customers LIMIT 5;",
+              "LIMIT 5; SELECT * FROM Customers;",
+              "SELECT LIMT 5 * FROM Customers;"
+            ],
+            "answer": "SELECT * FROM Customers LIMIT 5;"
+          }
+        }
+      ]
+    },
+    "min-max": {
+      "title": "MySQL MIN() and MAX() Functions",
+      "sections": [
+        {
+          "heading": "MySQL MIN() and MAX() Functions",
+          "paragraphs": [
+            "The MIN() function returns the smallest value in a selected column.",
+            "The MAX() function returns the largest value in a selected column."
+          ]
+        },
+        {
+          "heading": "MIN() Syntax",
+          "code": "SELECT MIN(column_name)\nFROM table_name\nWHERE condition;"
+        },
+        {
+          "heading": "MAX() Syntax",
+          "code": "SELECT MAX(column_name)\nFROM table_name\nWHERE condition;"
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Products table."
+          ],
+          "table": {
+            "headers": [
+              "ProductID",
+              "ProductName",
+              "SupplierID",
+              "CategoryID",
+              "Unit",
+              "Price"
+            ],
+            "rows": [
+              ["1", "Chais", "1", "1", "10 boxes x 20 bags", "18"],
+              ["2", "Chang", "1", "1", "24 - 12 oz bottles", "19"],
+              ["3", "Aniseed Syrup", "1", "2", "12 - 550 ml bottles", "10"],
+              [
+                "4",
+                "Chef Anton's Cajun Seasoning",
+                "2",
+                "2",
+                "48 - 6 oz jars",
+                "22"
+              ],
+              ["5", "Chef Anton's Gumbo Mix", "2", "2", "36 boxes", "21.35"]
+            ]
+          }
+        },
+        {
+          "heading": "MIN() Example",
+          "paragraphs": [
+            "The following SQL statement finds the price of the cheapest product."
+          ],
+          "example": "SELECT MIN(Price) AS SmallestPrice\nFROM Products;"
+        },
+        {
+          "heading": "MAX() Example",
+          "paragraphs": [
+            "The following SQL statement finds the price of the most expensive product."
+          ],
+          "example": "SELECT MAX(Price) AS LargestPrice\nFROM Products;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Which one of the following is a correct SQL statement?",
+            "options": [
+              "SELECT Price(MAX) FROM Products;",
+              "SELECT * FROM Products MAX(Price);",
+              "SELECT MAX(Price) FROM Products;"
+            ],
+            "answer": "SELECT MAX(Price) FROM Products;"
+          }
+        }
+      ]
+    },
+    "count-avg-sum": {
+      "title": "MySQL COUNT(), AVG() and SUM() Functions",
+      "sections": [
+        {
+          "heading": "MySQL COUNT(), AVG() and SUM() Functions",
+          "paragraphs": [
+            "The COUNT() function returns the number of rows that match a specified condition.",
+            "The AVG() function returns the average value of a numeric column.",
+            "The SUM() function returns the total sum of a numeric column."
+          ]
+        },
+        {
+          "heading": "COUNT() Syntax",
+          "code": "SELECT COUNT(column_name)\nFROM table_name\nWHERE condition;"
+        },
+        {
+          "heading": "AVG() Syntax",
+          "code": "SELECT AVG(column_name)\nFROM table_name\nWHERE condition;"
+        },
+        {
+          "heading": "SUM() Syntax",
+          "code": "SELECT SUM(column_name)\nFROM table_name\nWHERE condition;"
+        },
+        {
+          "heading": "Demo Database (Products)",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Products table."
+          ],
+          "table": {
+            "headers": [
+              "ProductID",
+              "ProductName",
+              "SupplierID",
+              "CategoryID",
+              "Unit",
+              "Price"
+            ],
+            "rows": [
+              ["1", "Chais", "1", "1", "10 boxes x 20 bags", "18"],
+              ["2", "Chang", "1", "1", "24 - 12 oz bottles", "19"],
+              ["3", "Aniseed Syrup", "1", "2", "12 - 550 ml bottles", "10"],
+              [
+                "4",
+                "Chef Anton's Cajun Seasoning",
+                "2",
+                "2",
+                "48 - 6 oz jars",
+                "22"
+              ],
+              ["5", "Chef Anton's Gumbo Mix", "2", "2", "36 boxes", "21.35"]
+            ]
+          }
+        },
+        {
+          "heading": "COUNT() Example",
+          "paragraphs": [
+            "The following SQL statement returns the total number of products.",
+            "NULL values are not counted."
+          ],
+          "example": "SELECT COUNT(ProductID)\nFROM Products;"
+        },
+        {
+          "heading": "AVG() Example",
+          "paragraphs": [
+            "The following SQL statement returns the average price of all products.",
+            "NULL values are ignored."
+          ],
+          "example": "SELECT AVG(Price)\nFROM Products;"
+        },
+        {
+          "heading": "Demo Database (OrderDetails)",
+          "paragraphs": ["Below is a selection from the OrderDetails table."],
+          "table": {
+            "headers": ["OrderDetailID", "OrderID", "ProductID", "Quantity"],
+            "rows": [
+              ["1", "10248", "11", "12"],
+              ["2", "10248", "42", "10"],
+              ["3", "10248", "72", "5"],
+              ["4", "10249", "14", "9"],
+              ["5", "10249", "51", "40"]
+            ]
+          }
+        },
+        {
+          "heading": "SUM() Example",
+          "paragraphs": [
+            "The following SQL statement returns the total quantity from the OrderDetails table.",
+            "NULL values are ignored."
+          ],
+          "example": "SELECT SUM(Quantity)\nFROM OrderDetails;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Use all of the drag-and-drop items to create a legal SQL statement.",
+            "answer": "SELECT COUNT(ProductID) FROM Products;"
+          }
+        }
+      ]
+    },
+    "like": {
+      "title": "MySQL LIKE Operator",
+      "sections": [
+        {
+          "heading": "The MySQL LIKE Operator",
+          "paragraphs": [
+            "The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.",
+            "The LIKE operator is commonly used with wildcard characters to match patterns in text data."
+          ]
+        },
+        {
+          "heading": "Wildcards Used with LIKE",
+          "paragraphs": [
+            "The percent sign (%) represents zero, one, or multiple characters.",
+            "The underscore sign (_) represents exactly one single character.",
+            "Wildcards can also be combined to create complex patterns."
+          ]
+        },
+        {
+          "heading": "LIKE Syntax",
+          "code": "SELECT column1, column2, ...\nFROM table_name\nWHERE columnN LIKE pattern;",
+          "tip": "You can combine multiple conditions using AND or OR operators."
+        },
+        {
+          "heading": "LIKE Pattern Examples",
+          "table": {
+            "headers": ["Pattern", "Description"],
+            "rows": [
+              ["CustomerName LIKE 'a%'", "Finds values that start with 'a'"],
+              ["CustomerName LIKE '%a'", "Finds values that end with 'a'"],
+              ["CustomerName LIKE '%or%'", "Finds values containing 'or'"],
+              [
+                "CustomerName LIKE '_r%'",
+                "Finds values with 'r' in the second position"
+              ],
+              [
+                "CustomerName LIKE 'a_%'",
+                "Finds values starting with 'a' and at least 2 characters long"
+              ],
+              [
+                "CustomerName LIKE 'a__%'",
+                "Finds values starting with 'a' and at least 3 characters long"
+              ],
+              [
+                "ContactName LIKE 'a%o'",
+                "Finds values starting with 'a' and ending with 'o'"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Customers table."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ],
+              [
+                "5",
+                "Berglunds snabbköp",
+                "Christina Berglund",
+                "Berguvsvägen 8",
+                "Luleå",
+                "S-958 22",
+                "Sweden"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "SQL LIKE Examples",
+          "examples": [
+            "SELECT * FROM Customers\nWHERE CustomerName LIKE 'a%';",
+            "SELECT * FROM Customers\nWHERE CustomerName LIKE '%a';",
+            "SELECT * FROM Customers\nWHERE CustomerName LIKE '%or%';",
+            "SELECT * FROM Customers\nWHERE CustomerName LIKE '_r%';",
+            "SELECT * FROM Customers\nWHERE CustomerName LIKE 'a__%';",
+            "SELECT * FROM Customers\nWHERE ContactName LIKE 'a%o';",
+            "SELECT * FROM Customers\nWHERE CustomerName NOT LIKE 'a%';"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Insert the missing parts to return all customers that start with the letter 'A':\nSELECT * FROM Customers ___ CustomerName ___ 'A%';",
+            "answer": "WHERE LIKE"
+          }
+        }
+      ]
+    },
+    "wildcards": {
+      "title": "MySQL Wildcards",
+      "sections": [
+        {
+          "heading": "MySQL Wildcard Characters",
+          "paragraphs": [
+            "A wildcard character is used to substitute one or more characters in a string.",
+            "Wildcard characters are used together with the LIKE operator in a WHERE clause to search for a specified pattern in a column."
+          ]
+        },
+        {
+          "heading": "Wildcard Characters in MySQL",
+          "table": {
+            "headers": ["Symbol", "Description", "Example"],
+            "rows": [
+              [
+                "%",
+                "Represents zero or more characters",
+                "bl% finds bl, black, blue, and blob"
+              ],
+              [
+                "_",
+                "Represents a single character",
+                "h_t finds hot, hat, and hit"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Using Wildcards with LIKE",
+          "paragraphs": [
+            "The percent (%) and underscore (_) wildcards can also be used in combinations to form complex search patterns."
+          ]
+        },
+        {
+          "heading": "LIKE Pattern Examples",
+          "table": {
+            "headers": ["LIKE Pattern", "Description"],
+            "rows": [
+              ["CustomerName LIKE 'a%'", "Finds values that start with 'a'"],
+              ["CustomerName LIKE '%a'", "Finds values that end with 'a'"],
+              ["CustomerName LIKE '%or%'", "Finds values that contain 'or'"],
+              [
+                "CustomerName LIKE '_r%'",
+                "Finds values that have 'r' in the second position"
+              ],
+              [
+                "CustomerName LIKE 'a_%_%'",
+                "Finds values that start with 'a' and are at least 3 characters long"
+              ],
+              [
+                "ContactName LIKE 'a%o'",
+                "Finds values that start with 'a' and end with 'o'"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Customers table."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ],
+              [
+                "5",
+                "Berglunds snabbköp",
+                "Christina Berglund",
+                "Berguvsvägen 8",
+                "Luleå",
+                "S-958 22",
+                "Sweden"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Using the % Wildcard",
+          "examples": [
+            "SELECT * FROM Customers\nWHERE City LIKE 'ber%';",
+            "SELECT * FROM Customers\nWHERE City LIKE '%es%';"
+          ]
+        },
+        {
+          "heading": "Using the _ Wildcard",
+          "examples": [
+            "SELECT * FROM Customers\nWHERE City LIKE '_ondon';",
+            "SELECT * FROM Customers\nWHERE City LIKE 'L_n_on';"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Only one of the following is a wildcard character in MySQL. Which one?",
+            "options": ["()", "#", "{}", "%"],
+            "answer": "%"
+          }
+        }
+      ]
+    },
+    "in": {
+      "title": "MySQL IN Operator",
+      "sections": [
+        {
+          "heading": "The MySQL IN Operator",
+          "paragraphs": [
+            "The IN operator allows you to specify multiple values in a WHERE clause.",
+            "The IN operator is a shorthand for multiple OR conditions."
+          ]
+        },
+        {
+          "heading": "IN Syntax",
+          "code": "SELECT column_name(s)\nFROM table_name\nWHERE column_name IN (value1, value2, ...);",
+          "alternative": "SELECT column_name(s)\nFROM table_name\nWHERE column_name IN (SELECT statement);"
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Customers table."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ],
+              [
+                "5",
+                "Berglunds snabbköp",
+                "Christina Berglund",
+                "Berguvsvägen 8",
+                "Luleå",
+                "S-958 22",
+                "Sweden"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "IN Operator Examples",
+          "examples": [
+            "SELECT * FROM Customers\nWHERE Country IN ('Germany', 'France', 'UK');",
+            "SELECT * FROM Customers\nWHERE Country NOT IN ('Germany', 'France', 'UK');",
+            "SELECT * FROM Customers\nWHERE Country IN (SELECT Country FROM Suppliers);"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop all the keywords to form a legal SQL statement:\n* Customers\nCountry ('Norway', 'Sweden', 'Denmark');",
+            "keywords": ["SELECT", "FROM", "WHERE", "IN"],
+            "answer": "SELECT * FROM Customers WHERE Country IN ('Norway', 'Sweden', 'Denmark');"
+          }
+        }
+      ]
+    },
+    "between": {
+      "title": "MySQL BETWEEN Operator",
+      "sections": [
+        {
+          "heading": "The MySQL BETWEEN Operator",
+          "paragraphs": [
+            "The BETWEEN operator selects values within a given range.",
+            "The values can be numbers, text, or dates.",
+            "The BETWEEN operator is inclusive, meaning the begin and end values are included."
+          ]
+        },
+        {
+          "heading": "BETWEEN Syntax",
+          "code": "SELECT column_name(s)\nFROM table_name\nWHERE column_name BETWEEN value1 AND value2;"
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Products table."
+          ],
+          "table": {
+            "headers": [
+              "ProductID",
+              "ProductName",
+              "SupplierID",
+              "CategoryID",
+              "Unit",
+              "Price"
+            ],
+            "rows": [
+              ["1", "Chais", "1", "1", "10 boxes x 20 bags", "18"],
+              ["2", "Chang", "1", "1", "24 - 12 oz bottles", "19"],
+              ["3", "Aniseed Syrup", "1", "2", "12 - 550 ml bottles", "10"],
+              [
+                "4",
+                "Chef Anton's Cajun Seasoning",
+                "1",
+                "2",
+                "48 - 6 oz jars",
+                "22"
+              ],
+              ["5", "Chef Anton's Gumbo Mix", "1", "2", "36 boxes", "21.35"]
+            ]
+          }
+        },
+        {
+          "heading": "BETWEEN Examples",
+          "examples": [
+            "SELECT * FROM Products\nWHERE Price BETWEEN 10 AND 20;",
+            "SELECT * FROM Products\nWHERE Price NOT BETWEEN 10 AND 20;",
+            "SELECT * FROM Products\nWHERE Price BETWEEN 10 AND 20\nAND CategoryID NOT IN (1,2,3);"
+          ]
+        },
+        {
+          "heading": "BETWEEN with Text Values",
+          "examples": [
+            "SELECT * FROM Products\nWHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'\nORDER BY ProductName;",
+            "SELECT * FROM Products\nWHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Chef Anton''s Cajun Seasoning'\nORDER BY ProductName;",
+            "SELECT * FROM Products\nWHERE ProductName NOT BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'\nORDER BY ProductName;"
+          ]
+        },
+        {
+          "heading": "BETWEEN Dates Example",
+          "paragraphs": ["BETWEEN can also be used with date values."],
+          "code": "SELECT * FROM Orders\nWHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the keywords to select all records where the ProductName is alphabetically between 'Geitost' and 'Pavlova':\n* Products ProductName 'Geitost' 'Pavlova';",
+            "keywords": ["SELECT", "FROM", "WHERE", "BETWEEN", "AND"],
+            "answer": "SELECT * FROM Products WHERE ProductName BETWEEN 'Geitost' AND 'Pavlova';"
+          }
+        }
+      ]
+    },
+    "aliases": {
+      "title": "MySQL Aliases",
+      "sections": [
+        {
+          "heading": "MySQL Aliases",
+          "paragraphs": [
+            "Aliases are used to give a table or a column in a table a temporary name.",
+            "Aliases are often used to make column names more readable.",
+            "An alias only exists for the duration of the query.",
+            "An alias is created with the AS keyword."
+          ]
+        },
+        {
+          "heading": "Alias Column Syntax",
+          "code": "SELECT column_name AS alias_name\nFROM table_name;"
+        },
+        {
+          "heading": "Alias Table Syntax",
+          "code": "SELECT column_name(s)\nFROM table_name AS alias_name;"
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the Northwind sample database.",
+            "Below is a selection from the Customers table."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Alias for Columns Examples",
+          "examples": [
+            "SELECT CustomerID AS ID, CustomerName AS Customer\nFROM Customers;",
+            "SELECT CustomerName AS Customer, ContactName AS \"Contact Person\"\nFROM Customers;",
+            "SELECT CustomerName, CONCAT_WS(', ', Address, PostalCode, City, Country) AS Address\nFROM Customers;"
+          ]
+        },
+        {
+          "heading": "Alias for Tables Example",
+          "examples": [
+            "SELECT o.OrderID, o.OrderDate, c.CustomerName\nFROM Customers AS c, Orders AS o\nWHERE c.CustomerName = 'Around the Horn' AND c.CustomerID = o.CustomerID;",
+            "SELECT Orders.OrderID, Orders.OrderDate, Customers.CustomerName\nFROM Customers, Orders\nWHERE Customers.CustomerName = 'Around the Horn' AND Customers.CustomerID = Orders.CustomerID;"
+          ]
+        },
+        {
+          "heading": "When Aliases Are Useful",
+          "list": [
+            "When more than one table is involved in a query",
+            "When functions are used in the query",
+            "When column names are long or not very readable",
+            "When two or more columns are combined together"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "If an alias contains spaces, which characters must be used to surround the alias?\nSELECT CustomerName AS Name of Customer FROM Customers;",
+            "options": ["()", "[]", "''", "\"\""],
+            "answer": "\"\""
+          }
+        }
+      ]
+    },
+    "joins": {
+      "title": "MySQL Joins",
+      "sections": [
+        {
+          "heading": "MySQL Joining Tables",
+          "paragraphs": [
+            "A JOIN clause is used to combine rows from two or more tables, based on a related column between them.",
+            "The relationship between tables is usually defined using a common column such as an ID."
+          ]
+        },
+        {
+          "heading": "Understanding Table Relationships",
+          "paragraphs": [
+            "The CustomerID column in the Orders table refers to the CustomerID column in the Customers table.",
+            "This relationship allows MySQL to match rows from both tables using JOIN operations."
+          ]
+        },
+        {
+          "heading": "Demo Tables",
+          "subsections": [
+            {
+              "title": "Orders Table",
+              "table": {
+                "headers": ["OrderID", "CustomerID", "OrderDate"],
+                "rows": [
+                  ["10308", "2", "1996-09-18"],
+                  ["10309", "37", "1996-09-19"],
+                  ["10310", "77", "1996-09-20"]
+                ]
+              }
+            },
+            {
+              "title": "Customers Table",
+              "table": {
+                "headers": [
+                  "CustomerID",
+                  "CustomerName",
+                  "ContactName",
+                  "Country"
+                ],
+                "rows": [
+                  ["1", "Alfreds Futterkiste", "Maria Anders", "Germany"],
+                  [
+                    "2",
+                    "Ana Trujillo Emparedados y helados",
+                    "Ana Trujillo",
+                    "Mexico"
+                  ],
+                  ["3", "Antonio Moreno Taquería", "Antonio Moreno", "Mexico"]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "heading": "INNER JOIN Example",
+          "code": "SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate\nFROM Orders\nINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;",
+          "paragraphs": [
+            "The INNER JOIN returns only the rows that have matching values in both tables."
+          ]
+        },
+        {
+          "heading": "Result of INNER JOIN",
+          "table": {
+            "headers": ["OrderID", "CustomerName", "OrderDate"],
+            "rows": [
+              ["10308", "Ana Trujillo Emparedados y helados", "1996-09-18"],
+              ["10365", "Antonio Moreno Taquería", "1996-11-27"],
+              ["10383", "Around the Horn", "1996-12-16"],
+              ["10355", "Around the Horn", "1996-11-15"],
+              ["10278", "Berglunds snabbköp", "1996-08-12"]
+            ]
+          }
+        },
+        {
+          "heading": "Supported Types of Joins in MySQL",
+          "list": [
+            "INNER JOIN: Returns records that have matching values in both tables",
+            "LEFT JOIN: Returns all records from the left table and the matched records from the right table",
+            "RIGHT JOIN: Returns all records from the right table and the matched records from the left table",
+            "CROSS JOIN: Returns all records from both tables"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop all keywords to make a legal SQL statement:",
+            "query": "___ Orders.OrderID, Customers.CustomerName\n___ Orders\n___ Customers ___ Orders.CustomerID = Customers.CustomerID;",
+            "answer": "SELECT FROM LEFT JOIN ON"
+          }
+        }
+      ]
+    },
+    "inner_join": {
+      "title": "MySQL INNER JOIN",
+      "sections": [
+        {
+          "heading": "MySQL INNER JOIN Keyword",
+          "paragraphs": [
+            "The INNER JOIN keyword selects records that have matching values in both tables.",
+            "Only rows with matching values in both tables are returned in the result set."
+          ]
+        },
+        {
+          "heading": "INNER JOIN Syntax",
+          "code": "SELECT column_name(s)\nFROM table1\nINNER JOIN table2\nON table1.column_name = table2.column_name;"
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the well-known Northwind sample database.",
+            "Below are example rows from the Orders and Customers tables."
+          ],
+          "subsections": [
+            {
+              "title": "Orders Table",
+              "table": {
+                "headers": [
+                  "OrderID",
+                  "CustomerID",
+                  "EmployeeID",
+                  "OrderDate",
+                  "ShipperID"
+                ],
+                "rows": [
+                  ["10308", "2", "7", "1996-09-18", "3"],
+                  ["10309", "37", "3", "1996-09-19", "1"],
+                  ["10310", "77", "8", "1996-09-20", "2"]
+                ]
+              }
+            },
+            {
+              "title": "Customers Table",
+              "table": {
+                "headers": [
+                  "CustomerID",
+                  "CustomerName",
+                  "ContactName",
+                  "Address",
+                  "City",
+                  "PostalCode",
+                  "Country"
+                ],
+                "rows": [
+                  [
+                    "1",
+                    "Alfreds Futterkiste",
+                    "Maria Anders",
+                    "Obere Str. 57",
+                    "Berlin",
+                    "12209",
+                    "Germany"
+                  ],
+                  [
+                    "2",
+                    "Ana Trujillo Emparedados y helados",
+                    "Ana Trujillo",
+                    "Avda. de la Constitución 2222",
+                    "México D.F.",
+                    "05021",
+                    "Mexico"
+                  ],
+                  [
+                    "3",
+                    "Antonio Moreno Taquería",
+                    "Antonio Moreno",
+                    "Mataderos 2312",
+                    "México D.F.",
+                    "05023",
+                    "Mexico"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "heading": "MySQL INNER JOIN Example",
+          "paragraphs": [
+            "The following SQL statement selects all orders together with their customer information."
+          ],
+          "code": "SELECT Orders.OrderID, Customers.CustomerName\nFROM Orders\nINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;"
+        },
+        {
+          "heading": "Important Note",
+          "paragraphs": [
+            "INNER JOIN returns rows only when there is a match in both tables.",
+            "Rows without matching values in either table are excluded from the result."
+          ]
+        },
+        {
+          "heading": "JOIN Three Tables",
+          "paragraphs": [
+            "INNER JOIN can also be used to join more than two tables in a single query."
+          ],
+          "code": "SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName\nFROM ((Orders\nINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)\nINNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "True or False: When using the INNER JOIN keyword, you must have a match in both tables to return a result.",
+            "options": ["True", "False"],
+            "answer": "True"
+          }
+        }
+      ]
+    },
+    "left_join": {
+      "title": "MySQL LEFT JOIN",
+      "sections": [
+        {
+          "heading": "MySQL LEFT JOIN Keyword",
+          "paragraphs": [
+            "The LEFT JOIN keyword returns all records from the left table, and the matching records from the right table.",
+            "If there is no match in the right table, the result will contain NULL values for the right table columns."
+          ]
+        },
+        {
+          "heading": "LEFT JOIN Syntax",
+          "code": "SELECT column_name(s)\nFROM table1\nLEFT JOIN table2\nON table1.column_name = table2.column_name;"
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the well-known Northwind sample database.",
+            "Below are example rows from the Customers and Orders tables."
+          ],
+          "subsections": [
+            {
+              "title": "Customers Table",
+              "table": {
+                "headers": [
+                  "CustomerID",
+                  "CustomerName",
+                  "ContactName",
+                  "Address",
+                  "City",
+                  "PostalCode",
+                  "Country"
+                ],
+                "rows": [
+                  [
+                    "1",
+                    "Alfreds Futterkiste",
+                    "Maria Anders",
+                    "Obere Str. 57",
+                    "Berlin",
+                    "12209",
+                    "Germany"
+                  ],
+                  [
+                    "2",
+                    "Ana Trujillo Emparedados y helados",
+                    "Ana Trujillo",
+                    "Avda. de la Constitución 2222",
+                    "México D.F.",
+                    "05021",
+                    "Mexico"
+                  ],
+                  [
+                    "3",
+                    "Antonio Moreno Taquería",
+                    "Antonio Moreno",
+                    "Mataderos 2312",
+                    "México D.F.",
+                    "05023",
+                    "Mexico"
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "Orders Table",
+              "table": {
+                "headers": [
+                  "OrderID",
+                  "CustomerID",
+                  "EmployeeID",
+                  "OrderDate",
+                  "ShipperID"
+                ],
+                "rows": [
+                  ["10308", "2", "7", "1996-09-18", "3"],
+                  ["10309", "37", "3", "1996-09-19", "1"],
+                  ["10310", "77", "8", "1996-09-20", "2"]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "heading": "MySQL LEFT JOIN Example",
+          "paragraphs": [
+            "The following SQL statement selects all customers and any orders they might have."
+          ],
+          "code": "SELECT Customers.CustomerName, Orders.OrderID\nFROM Customers\nLEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID\nORDER BY Customers.CustomerName;"
+        },
+        {
+          "heading": "Important Note",
+          "paragraphs": [
+            "LEFT JOIN returns all rows from the left table even if there are no matching rows in the right table.",
+            "When no match exists, NULL values are returned for the right table columns."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop all keywords to make a legal SQL statement:\nSELECT Orders.OrderID, Customers.CustomerName ___ Customers ___ Orders ___ Customers.CustomerID = Orders.CustomerID;",
+            "answer": "FROM LEFT JOIN ON"
+          }
+        }
+      ]
+    },
+    "right-join": {
+      "title": "MySQL RIGHT JOIN",
+      "sections": [
+        {
+          "heading": "MySQL RIGHT JOIN Keyword",
+          "paragraphs": [
+            "The RIGHT JOIN keyword returns all records from the right table (table2), and the matching records (if any) from the left table (table1)."
+          ]
+        },
+        {
+          "heading": "RIGHT JOIN Syntax",
+          "code": "SELECT column_name(s)\nFROM table1\nRIGHT JOIN table2\nON table1.column_name = table2.column_name;"
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the well-known Northwind sample database.",
+            "Below is a selection from the Orders table."
+          ],
+          "table": {
+            "headers": [
+              "OrderID",
+              "CustomerID",
+              "EmployeeID",
+              "OrderDate",
+              "ShipperID"
+            ],
+            "rows": [
+              ["10308", "2", "7", "1996-09-18", "3"],
+              ["10309", "37", "3", "1996-09-19", "1"],
+              ["10310", "77", "8", "1996-09-20", "2"]
+            ]
+          }
+        },
+        {
+          "heading": "Employees Table",
+          "table": {
+            "headers": [
+              "EmployeeID",
+              "LastName",
+              "FirstName",
+              "BirthDate",
+              "Photo"
+            ],
+            "rows": [
+              ["1", "Davolio", "Nancy", "1968-12-08", "EmpID1.pic"],
+              ["2", "Fuller", "Andrew", "1952-02-19", "EmpID2.pic"],
+              ["3", "Leverling", "Janet", "1963-08-30", "EmpID3.pic"]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL RIGHT JOIN Example",
+          "paragraphs": [
+            "The following SQL statement returns all employees and any orders they might have placed."
+          ],
+          "example": "SELECT Orders.OrderID, Employees.LastName, Employees.FirstName\nFROM Orders\nRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\nORDER BY Orders.OrderID;"
+        },
+        {
+          "heading": "Note",
+          "note": "The RIGHT JOIN keyword returns all records from the right table (Employees), even if there are no matches in the left table (Orders)."
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop all keywords to make a legal SQL statement.",
+            "query": "___ Orders.OrderID, Customers.CustomerName\n___ Orders\n___ Customers ___ Orders.CustomerID = Customers.CustomerID;",
+            "keywords": ["SELECT", "FROM", "RIGHT JOIN", "ON"],
+            "answer": "SELECT Orders.OrderID, Customers.CustomerName FROM Orders RIGHT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;"
+          }
+        }
+      ]
+    },
+    "cross-join": {
+      "title": "MySQL CROSS JOIN",
+      "sections": [
+        {
+          "heading": "MySQL CROSS JOIN Keyword",
+          "paragraphs": [
+            "The CROSS JOIN keyword returns all records from both tables (table1 and table2)."
+          ]
+        },
+        {
+          "heading": "CROSS JOIN Syntax",
+          "code": "SELECT column_name(s)\nFROM table1\nCROSS JOIN table2;",
+          "note": "CROSS JOIN can potentially return very large result-sets."
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the well-known Northwind sample database.",
+            "Below is a selection from the Customers table."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Orders Table",
+          "table": {
+            "headers": [
+              "OrderID",
+              "CustomerID",
+              "EmployeeID",
+              "OrderDate",
+              "ShipperID"
+            ],
+            "rows": [
+              ["10308", "2", "7", "1996-09-18", "3"],
+              ["10309", "37", "3", "1996-09-19", "1"],
+              ["10310", "77", "8", "1996-09-20", "2"]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL CROSS JOIN Example",
+          "paragraphs": [
+            "The following SQL statement selects all customers and all orders."
+          ],
+          "example": "SELECT Customers.CustomerName, Orders.OrderID\nFROM Customers\nCROSS JOIN Orders;"
+        },
+        {
+          "heading": "Note",
+          "note": "The CROSS JOIN keyword returns all records from both tables whether the other table matches or not. Rows without matching counterparts are still included in the result."
+        },
+        {
+          "heading": "CROSS JOIN with WHERE Clause",
+          "paragraphs": [
+            "If a WHERE clause is added and the tables have a relationship, the CROSS JOIN produces the same result as an INNER JOIN."
+          ],
+          "example": "SELECT Customers.CustomerName, Orders.OrderID\nFROM Customers\nCROSS JOIN Orders\nWHERE Customers.CustomerID = Orders.CustomerID;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "How many records will be returned if Orders has 20 records and Customers has 10 records?",
+            "options": ["10", "20", "30", "200"],
+            "answer": "200"
+          }
+        }
+      ]
+    },
+    "self-join": {
+      "title": "MySQL Self Join",
+      "sections": [
+        {
+          "heading": "MySQL Self Join",
+          "paragraphs": [
+            "A self join is a regular join, but the table is joined with itself."
+          ]
+        },
+        {
+          "heading": "Self Join Syntax",
+          "code": "SELECT column_name(s)\nFROM table1 T1, table1 T2\nWHERE condition;",
+          "paragraphs": [
+            "T1 and T2 are different table aliases for the same table."
+          ]
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the well-known Northwind sample database.",
+            "Below is a selection from the Customers table."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL Self Join Example",
+          "paragraphs": [
+            "The following SQL statement matches customers that are from the same city."
+          ],
+          "example": "SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City\nFROM Customers A, Customers B\nWHERE A.CustomerID <> B.CustomerID\nAND A.City = B.City\nORDER BY A.City;"
+        }
+      ]
+    },
+    "union": {
+      "title": "MySQL UNION",
+      "sections": [
+        {
+          "heading": "MySQL UNION Operator",
+          "paragraphs": [
+            "The UNION operator is used to combine the result-set of two or more SELECT statements.",
+            "The UNION operator automatically removes duplicate rows from the result set."
+          ]
+        },
+        {
+          "heading": "Requirements for UNION",
+          "list": [
+            "Every SELECT statement within UNION must have the same number of columns",
+            "The columns must have similar data types",
+            "The columns in every SELECT statement must be in the same order"
+          ]
+        },
+        {
+          "heading": "UNION Syntax",
+          "code": "SELECT column_name(s) FROM table1\nUNION\nSELECT column_name(s) FROM table2;",
+          "note": "The column names in the result-set are usually taken from the first SELECT statement."
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the well-known Northwind sample database.",
+            "Below is a selection from the Customers table."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Suppliers Table",
+          "table": {
+            "headers": [
+              "SupplierID",
+              "SupplierName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Exotic Liquid",
+                "Charlotte Cooper",
+                "49 Gilbert St.",
+                "London",
+                "EC1 4SD",
+                "UK"
+              ],
+              [
+                "2",
+                "New Orleans Cajun Delights",
+                "Shelley Burke",
+                "P.O. Box 78934",
+                "New Orleans",
+                "70117",
+                "USA"
+              ],
+              [
+                "3",
+                "Grandma Kelly's Homestead",
+                "Regina Murphy",
+                "707 Oxford Rd.",
+                "Ann Arbor",
+                "48104",
+                "USA"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "SQL UNION Example",
+          "paragraphs": [
+            "The following SQL statement returns only distinct city values from both Customers and Suppliers."
+          ],
+          "example": "SELECT City FROM Customers\nUNION\nSELECT City FROM Suppliers\nORDER BY City;"
+        },
+        {
+          "heading": "Note",
+          "note": "If customers and suppliers share the same city, it will appear only once. Use UNION ALL to include duplicate values."
+        },
+        {
+          "heading": "SQL UNION with WHERE Clause",
+          "paragraphs": [
+            "The following SQL statement returns only German cities from both tables."
+          ],
+          "example": "SELECT City, Country FROM Customers\nWHERE Country = 'Germany'\nUNION\nSELECT City, Country FROM Suppliers\nWHERE Country = 'Germany'\nORDER BY City;"
+        },
+        {
+          "heading": "Another UNION Example",
+          "paragraphs": [
+            "The following SQL statement lists all customers and suppliers using an alias column."
+          ],
+          "example": "SELECT 'Customer' AS Type, ContactName, City, Country\nFROM Customers\nUNION\nSELECT 'Supplier', ContactName, City, Country\nFROM Suppliers;"
+        }
+      ]
+    },
+    "union-all": {
+      "title": "MySQL UNION ALL",
+      "sections": [
+        {
+          "heading": "MySQL UNION ALL Operator",
+          "paragraphs": [
+            "The UNION ALL operator is used to combine the result-set of two or more SELECT statements.",
+            "The UNION ALL operator includes all rows from each SELECT statement, including duplicate values."
+          ]
+        },
+        {
+          "heading": "Requirements for UNION ALL",
+          "list": [
+            "Every SELECT statement within UNION ALL must have the same number of columns",
+            "The columns must have similar data types",
+            "The columns in every SELECT statement must be in the same order"
+          ]
+        },
+        {
+          "heading": "UNION ALL Syntax",
+          "paragraphs": [
+            "Unlike UNION, which removes duplicates, UNION ALL keeps duplicate values."
+          ],
+          "code": "SELECT column_name(s) FROM table1\nUNION ALL\nSELECT column_name(s) FROM table2;",
+          "note": "The column names in the result-set are usually taken from the first SELECT statement."
+        },
+        {
+          "heading": "Demo Database",
+          "paragraphs": [
+            "This tutorial uses the well-known Northwind sample database.",
+            "Below is a selection from the Customers table."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Suppliers Table",
+          "table": {
+            "headers": [
+              "SupplierID",
+              "SupplierName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Exotic Liquid",
+                "Charlotte Cooper",
+                "49 Gilbert St.",
+                "London",
+                "EC1 4SD",
+                "UK"
+              ],
+              [
+                "2",
+                "New Orleans Cajun Delights",
+                "Shelley Burke",
+                "P.O. Box 78934",
+                "New Orleans",
+                "70117",
+                "USA"
+              ],
+              [
+                "3",
+                "Grandma Kelly's Homestead",
+                "Regina Murphy",
+                "707 Oxford Rd.",
+                "Ann Arbor",
+                "48104",
+                "USA"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "SQL UNION ALL Example",
+          "paragraphs": [
+            "The following SQL statement returns all city values, including duplicates, from both Customers and Suppliers."
+          ],
+          "example": "SELECT City FROM Customers\nUNION ALL\nSELECT City FROM Suppliers\nORDER BY City;"
+        },
+        {
+          "heading": "SQL UNION ALL with WHERE Clause",
+          "paragraphs": [
+            "The following SQL statement returns all German cities, including duplicates, from both tables."
+          ],
+          "example": "SELECT City, Country FROM Customers\nWHERE Country = 'Germany'\nUNION ALL\nSELECT City, Country FROM Suppliers\nWHERE Country = 'Germany'\nORDER BY City;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop all keywords to make a legal SQL statement.",
+            "query": "___ City ___ Customers\n___ City ___ Suppliers\n___ City;",
+            "keywords": ["SELECT", "FROM", "UNION ALL", "ORDER BY"],
+            "answer": "SELECT City FROM Customers UNION ALL SELECT City FROM Suppliers ORDER BY City;"
+          }
+        }
+      ]
+    },
+    "group-by": {
+      "title": "MySQL GROUP BY",
+      "sections": [
+        {
+          "heading": "MySQL GROUP BY Statement",
+          "paragraphs": [
+            "The GROUP BY statement groups rows that have the same values into summary rows.",
+            "The GROUP BY statement is often used with aggregate functions such as COUNT(), MAX(), MIN(), SUM(), and AVG()."
+          ]
+        },
+        {
+          "heading": "GROUP BY Syntax",
+          "code": "SELECT column_name(s)\nFROM table_name\nWHERE condition\nGROUP BY column_name(s)\nORDER BY column_name(s);"
+        },
+        {
+          "heading": "Demo Database (Customers)",
+          "paragraphs": [
+            "Below is a selection from the Customers table in the Northwind sample database."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ],
+              [
+                "5",
+                "Berglunds snabbköp",
+                "Christina Berglund",
+                "Berguvsvägen 8",
+                "Luleå",
+                "S-958 22",
+                "Sweden"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL GROUP BY Examples",
+          "paragraphs": [
+            "The following SQL statement lists the number of customers in each country."
+          ],
+          "example": "SELECT COUNT(CustomerID), Country\nFROM Customers\nGROUP BY Country;"
+        },
+        {
+          "heading": "GROUP BY with ORDER BY",
+          "paragraphs": [
+            "The following SQL statement lists the number of customers in each country, sorted from highest to lowest."
+          ],
+          "example": "SELECT COUNT(CustomerID), Country\nFROM Customers\nGROUP BY Country\nORDER BY COUNT(CustomerID) DESC;"
+        },
+        {
+          "heading": "Demo Database (Orders and Shippers)",
+          "table": {
+            "headers": [
+              "OrderID",
+              "CustomerID",
+              "EmployeeID",
+              "OrderDate",
+              "ShipperID"
+            ],
+            "rows": [
+              ["10248", "90", "5", "1996-07-04", "3"],
+              ["10249", "81", "6", "1996-07-05", "1"],
+              ["10250", "34", "4", "1996-07-08", "2"]
+            ]
+          }
+        },
+        {
+          "heading": "Shippers Table",
+          "table": {
+            "headers": ["ShipperID", "ShipperName"],
+            "rows": [
+              ["1", "Speedy Express"],
+              ["2", "United Package"],
+              ["3", "Federal Shipping"]
+            ]
+          }
+        },
+        {
+          "heading": "GROUP BY with JOIN Example",
+          "paragraphs": [
+            "The following SQL statement lists the number of orders sent by each shipper."
+          ],
+          "example": "SELECT Shippers.ShipperName, COUNT(Orders.OrderID) AS NumberOfOrders\nFROM Orders\nLEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID\nGROUP BY ShipperName;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Which aggregate functions are commonly used with the GROUP BY statement?",
+            "options": [
+              "COUNT(), MAX(), MIN(), SUM(), AVG()",
+              "SELECT(), INSERT(), UPDATE(), DELETE()",
+              "JOIN(), UNION(), INTERSECT(), EXCEPT()",
+              "HAVING(), WHERE(), ORDER BY(), DISTINCT()"
+            ],
+            "answer": "COUNT(), MAX(), MIN(), SUM(), AVG()"
+          }
+        }
+      ]
+    },
+    "having": {
+      "title": "MySQL HAVING",
+      "sections": [
+        {
+          "heading": "MySQL HAVING Clause",
+          "paragraphs": [
+            "The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions."
+          ]
+        },
+        {
+          "heading": "HAVING Syntax",
+          "code": "SELECT column_name(s)\nFROM table_name\nWHERE condition\nGROUP BY column_name(s)\nHAVING condition\nORDER BY column_name(s);"
+        },
+        {
+          "heading": "Demo Database (Customers)",
+          "paragraphs": [
+            "Below is a selection from the Customers table in the Northwind sample database."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ],
+              [
+                "4",
+                "Around the Horn",
+                "Thomas Hardy",
+                "120 Hanover Sq.",
+                "London",
+                "WA1 1DP",
+                "UK"
+              ],
+              [
+                "5",
+                "Berglunds snabbköp",
+                "Christina Berglund",
+                "Berguvsvägen 8",
+                "Luleå",
+                "S-958 22",
+                "Sweden"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL HAVING Examples",
+          "paragraphs": [
+            "The following SQL statement lists the number of customers in each country, including only countries with more than 5 customers."
+          ],
+          "example": "SELECT COUNT(CustomerID), Country\nFROM Customers\nGROUP BY Country\nHAVING COUNT(CustomerID) > 5;"
+        },
+        {
+          "heading": "HAVING with ORDER BY",
+          "paragraphs": [
+            "The following SQL statement lists the number of customers in each country with more than 5 customers, sorted from highest to lowest."
+          ],
+          "example": "SELECT COUNT(CustomerID), Country\nFROM Customers\nGROUP BY Country\nHAVING COUNT(CustomerID) > 5\nORDER BY COUNT(CustomerID) DESC;"
+        },
+        {
+          "heading": "Demo Database (Orders and Employees)",
+          "table": {
+            "headers": [
+              "OrderID",
+              "CustomerID",
+              "EmployeeID",
+              "OrderDate",
+              "ShipperID"
+            ],
+            "rows": [
+              ["10248", "90", "5", "1996-07-04", "3"],
+              ["10249", "81", "6", "1996-07-05", "1"],
+              ["10250", "34", "4", "1996-07-08", "2"]
+            ]
+          }
+        },
+        {
+          "heading": "Employees Table",
+          "table": {
+            "headers": [
+              "EmployeeID",
+              "LastName",
+              "FirstName",
+              "BirthDate",
+              "Photo",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "1",
+                "Davolio",
+                "Nancy",
+                "1968-12-08",
+                "EmpID1.pic",
+                "Education includes a BA...."
+              ],
+              [
+                "2",
+                "Fuller",
+                "Andrew",
+                "1952-02-19",
+                "EmpID2.pic",
+                "Andrew received his BTS...."
+              ],
+              [
+                "3",
+                "Leverling",
+                "Janet",
+                "1963-08-30",
+                "EmpID3.pic",
+                "Janet has a BS degree...."
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "More HAVING Examples",
+          "paragraphs": [
+            "The following SQL statement lists employees who have registered more than 10 orders."
+          ],
+          "example": "SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders\nFROM Orders\nINNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\nGROUP BY LastName\nHAVING COUNT(Orders.OrderID) > 10;"
+        },
+        {
+          "heading": "HAVING with WHERE Example",
+          "paragraphs": [
+            "The following SQL statement checks whether specific employees have registered more than 25 orders."
+          ],
+          "example": "SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders\nFROM Orders\nINNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\nWHERE LastName = 'Davolio' OR LastName = 'Fuller'\nGROUP BY LastName\nHAVING COUNT(Orders.OrderID) > 25;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct syntax to list employees that have registered more than 10 orders.",
+            "query": "SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders\n___ (Orders INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID)\nGROUP BY LastName\n___ COUNT(Orders.OrderID) > ___;",
+            "keywords": ["FROM", "HAVING", "10"],
+            "answer": "SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders FROM Orders INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID GROUP BY LastName HAVING COUNT(Orders.OrderID) > 10;"
+          }
+        }
+      ]
+    },
+    "exists": {
+      "title": "MySQL EXISTS",
+      "sections": [
+        {
+          "heading": "MySQL EXISTS Operator",
+          "paragraphs": [
+            "The EXISTS operator is used to test for the existence of any record in a subquery.",
+            "The EXISTS operator returns TRUE if the subquery returns one or more records."
+          ]
+        },
+        {
+          "heading": "EXISTS Syntax",
+          "code": "SELECT column_name(s)\nFROM table_name\nWHERE EXISTS\n(SELECT column_name FROM table_name WHERE condition);"
+        },
+        {
+          "heading": "Demo Database (Products)",
+          "paragraphs": [
+            "Below is a selection from the Products table in the Northwind sample database."
+          ],
+          "table": {
+            "headers": [
+              "ProductID",
+              "ProductName",
+              "SupplierID",
+              "CategoryID",
+              "Unit",
+              "Price"
+            ],
+            "rows": [
+              ["1", "Chais", "1", "1", "10 boxes x 20 bags", "18"],
+              ["2", "Chang", "1", "1", "24 - 12 oz bottles", "19"],
+              ["3", "Aniseed Syrup", "1", "2", "12 - 550 ml bottles", "10"],
+              [
+                "4",
+                "Chef Anton's Cajun Seasoning",
+                "2",
+                "2",
+                "48 - 6 oz jars",
+                "22"
+              ],
+              ["5", "Chef Anton's Gumbo Mix", "2", "2", "36 boxes", "21.35"]
+            ]
+          }
+        },
+        {
+          "heading": "Suppliers Table",
+          "table": {
+            "headers": [
+              "SupplierID",
+              "SupplierName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Exotic Liquid",
+                "Charlotte Cooper",
+                "49 Gilbert St.",
+                "London",
+                "EC1 4SD",
+                "UK"
+              ],
+              [
+                "2",
+                "New Orleans Cajun Delights",
+                "Shelley Burke",
+                "P.O. Box 78934",
+                "New Orleans",
+                "70117",
+                "USA"
+              ],
+              [
+                "3",
+                "Grandma Kelly's Homestead",
+                "Regina Murphy",
+                "707 Oxford Rd.",
+                "Ann Arbor",
+                "48104",
+                "USA"
+              ],
+              [
+                "4",
+                "Tokyo Traders",
+                "Yoshi Nagase",
+                "9-8 Sekimai Musashino-shi",
+                "Tokyo",
+                "100",
+                "Japan"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL EXISTS Examples",
+          "paragraphs": [
+            "The following SQL statement lists suppliers that have at least one product priced under 20."
+          ],
+          "example": "SELECT SupplierName\nFROM Suppliers\nWHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.SupplierID AND Price < 20);"
+        },
+        {
+          "heading": "Another EXISTS Example",
+          "paragraphs": [
+            "The following SQL statement lists suppliers that have a product priced exactly at 22."
+          ],
+          "example": "SELECT SupplierName\nFROM Suppliers\nWHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.SupplierID AND Price = 22);"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct syntax to list suppliers with products priced under 20.",
+            "query": "SELECT SupplierName\n___ Suppliers\n___ (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.SupplierID AND Price < 20);",
+            "keywords": ["FROM", "WHERE EXISTS"],
+            "answer": "SELECT SupplierName FROM Suppliers WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.SupplierID AND Price < 20);"
+          }
+        }
+      ]
+    },
+    "any-all": {
+      "title": "MySQL ANY and ALL",
+      "sections": [
+        {
+          "heading": "MySQL ANY and ALL Operators",
+          "paragraphs": [
+            "The ANY and ALL operators allow you to perform a comparison between a single column value and a range of other values."
+          ]
+        },
+        {
+          "heading": "The ANY Operator",
+          "paragraphs": [
+            "The ANY operator returns a boolean value as a result.",
+            "The ANY operator returns TRUE if ANY of the subquery values meet the condition.",
+            "ANY means that the condition will be true if the operation is true for any value in the range."
+          ]
+        },
+        {
+          "heading": "ANY Syntax",
+          "code": "SELECT column_name(s)\nFROM table_name\nWHERE column_name operator ANY\n  (SELECT column_name\n   FROM table_name\n   WHERE condition);",
+          "note": "The operator must be a standard comparison operator (=, <>, !=, >, >=, <, or <=)."
+        },
+        {
+          "heading": "The ALL Operator",
+          "paragraphs": [
+            "The ALL operator returns a boolean value as a result.",
+            "The ALL operator returns TRUE if ALL of the subquery values meet the condition.",
+            "The ALL operator is used with SELECT, WHERE, and HAVING statements.",
+            "ALL means that the condition will be true only if the operation is true for all values in the range."
+          ]
+        },
+        {
+          "heading": "ALL Syntax with SELECT",
+          "code": "SELECT ALL column_name(s)\nFROM table_name\nWHERE condition;"
+        },
+        {
+          "heading": "ALL Syntax with WHERE or HAVING",
+          "code": "SELECT column_name(s)\nFROM table_name\nWHERE column_name operator ALL\n  (SELECT column_name\n   FROM table_name\n   WHERE condition);",
+          "note": "The operator must be a standard comparison operator (=, <>, !=, >, >=, <, or <=)."
+        },
+        {
+          "heading": "Demo Database (Products)",
+          "table": {
+            "headers": [
+              "ProductID",
+              "ProductName",
+              "SupplierID",
+              "CategoryID",
+              "Unit",
+              "Price"
+            ],
+            "rows": [
+              ["1", "Chais", "1", "1", "10 boxes x 20 bags", "18"],
+              ["2", "Chang", "1", "1", "24 - 12 oz bottles", "19"],
+              ["3", "Aniseed Syrup", "1", "2", "12 - 550 ml bottles", "10"],
+              [
+                "4",
+                "Chef Anton's Cajun Seasoning",
+                "2",
+                "2",
+                "48 - 6 oz jars",
+                "22"
+              ],
+              ["5", "Chef Anton's Gumbo Mix", "2", "2", "36 boxes", "21.35"],
+              [
+                "6",
+                "Grandma's Boysenberry Spread",
+                "3",
+                "2",
+                "12 - 8 oz jars",
+                "25"
+              ],
+              [
+                "7",
+                "Uncle Bob's Organic Dried Pears",
+                "3",
+                "7",
+                "12 - 1 lb pkgs.",
+                "30"
+              ],
+              [
+                "8",
+                "Northwoods Cranberry Sauce",
+                "3",
+                "2",
+                "12 - 12 oz jars",
+                "40"
+              ],
+              ["9", "Mishi Kobe Niku", "4", "6", "18 - 500 g pkgs.", "97"]
+            ]
+          }
+        },
+        {
+          "heading": "OrderDetails Table",
+          "table": {
+            "headers": ["OrderDetailID", "OrderID", "ProductID", "Quantity"],
+            "rows": [
+              ["1", "10248", "11", "12"],
+              ["2", "10248", "42", "10"],
+              ["3", "10248", "72", "5"],
+              ["4", "10249", "14", "9"],
+              ["5", "10249", "51", "40"],
+              ["6", "10250", "41", "10"],
+              ["7", "10250", "51", "35"],
+              ["8", "10250", "65", "15"],
+              ["9", "10251", "22", "6"],
+              ["10", "10251", "57", "15"]
+            ]
+          }
+        },
+        {
+          "heading": "SQL ANY Examples",
+          "paragraphs": [
+            "The following SQL statement lists product names if ANY records in OrderDetails have a quantity equal to 10."
+          ],
+          "example": "SELECT ProductName\nFROM Products\nWHERE ProductID = ANY\n  (SELECT ProductID\n   FROM OrderDetails\n   WHERE Quantity = 10);"
+        },
+        {
+          "heading": "SQL ALL Examples",
+          "paragraphs": [
+            "The following SQL statement lists the product name only if ALL records in OrderDetails have a quantity equal to 10."
+          ],
+          "example": "SELECT ProductName\nFROM Products\nWHERE ProductID = ALL\n  (SELECT ProductID\n   FROM OrderDetails\n   WHERE Quantity = 10);"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct SQL keyword to complete the query using the ANY operator.",
+            "query": "SELECT ProductName\nFROM Products\nWHERE ProductID ___\n(SELECT ProductID\nFROM OrderDetails\nWHERE Quantity > 10);",
+            "keywords": ["= ANY"],
+            "answer": "SELECT ProductName FROM Products WHERE ProductID = ANY (SELECT ProductID FROM OrderDetails WHERE Quantity > 10);"
+          }
+        }
+      ]
+    },
+    "insert-into-select": {
+      "title": "MySQL INSERT INTO SELECT",
+      "sections": [
+        {
+          "heading": "MySQL INSERT INTO SELECT Statement",
+          "paragraphs": [
+            "The INSERT INTO SELECT statement copies data from one table and inserts it into another table.",
+            "The INSERT INTO SELECT statement requires that the data types in the source and target tables match.",
+            "Existing records in the target table are not affected."
+          ]
+        },
+        {
+          "heading": "INSERT INTO SELECT Syntax",
+          "paragraphs": ["Copy all columns from one table into another table."],
+          "code": "INSERT INTO table2\nSELECT * FROM table1\nWHERE condition;"
+        },
+        {
+          "heading": "INSERT INTO SELECT with Specific Columns",
+          "paragraphs": [
+            "Copy only selected columns from one table into another table."
+          ],
+          "code": "INSERT INTO table2 (column1, column2, column3)\nSELECT column1, column2, column3\nFROM table1\nWHERE condition;"
+        },
+        {
+          "heading": "Demo Database (Customers)",
+          "paragraphs": [
+            "Below is a selection from the Customers table in the Northwind sample database."
+          ],
+          "table": {
+            "headers": [
+              "CustomerID",
+              "CustomerName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Alfreds Futterkiste",
+                "Maria Anders",
+                "Obere Str. 57",
+                "Berlin",
+                "12209",
+                "Germany"
+              ],
+              [
+                "2",
+                "Ana Trujillo Emparedados y helados",
+                "Ana Trujillo",
+                "Avda. de la Constitución 2222",
+                "México D.F.",
+                "05021",
+                "Mexico"
+              ],
+              [
+                "3",
+                "Antonio Moreno Taquería",
+                "Antonio Moreno",
+                "Mataderos 2312",
+                "México D.F.",
+                "05023",
+                "Mexico"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Suppliers Table",
+          "table": {
+            "headers": [
+              "SupplierID",
+              "SupplierName",
+              "ContactName",
+              "Address",
+              "City",
+              "PostalCode",
+              "Country"
+            ],
+            "rows": [
+              [
+                "1",
+                "Exotic Liquid",
+                "Charlotte Cooper",
+                "49 Gilbert St.",
+                "Londona",
+                "EC1 4SD",
+                "UK"
+              ],
+              [
+                "2",
+                "New Orleans Cajun Delights",
+                "Shelley Burke",
+                "P.O. Box 78934",
+                "New Orleans",
+                "70117",
+                "USA"
+              ],
+              [
+                "3",
+                "Grandma Kelly's Homestead",
+                "Regina Murphy",
+                "707 Oxford Rd.",
+                "Ann Arbor",
+                "48104",
+                "USA"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL INSERT INTO SELECT Examples",
+          "paragraphs": [
+            "The following SQL statement copies suppliers into customers, leaving unmatched columns as NULL."
+          ],
+          "example": "INSERT INTO Customers (CustomerName, City, Country)\nSELECT SupplierName, City, Country FROM Suppliers;"
+        },
+        {
+          "heading": "INSERT INTO SELECT with All Columns",
+          "paragraphs": [
+            "The following SQL statement copies all supplier data into customers."
+          ],
+          "example": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\nSELECT SupplierName, ContactName, Address, City, PostalCode, Country FROM Suppliers;"
+        },
+        {
+          "heading": "INSERT INTO SELECT with WHERE Clause",
+          "paragraphs": [
+            "The following SQL statement copies only German suppliers into customers."
+          ],
+          "example": "INSERT INTO Customers (CustomerName, City, Country)\nSELECT SupplierName, City, Country FROM Suppliers\nWHERE Country = 'Germany';"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the purpose of the SQL INSERT INTO SELECT statement?",
+            "options": [
+              "To copy data from one table and insert it into another table",
+              "To delete rows from one table and insert them into another",
+              "To test for the existence of any record in a subquery",
+              "To combine rows from two or more tables based on a related column"
+            ],
+            "answer": "To copy data from one table and insert it into another table"
+          }
+        }
+      ]
+    },
+    "case": {
+      "title": "MySQL CASE",
+      "sections": [
+        {
+          "heading": "MySQL CASE Statement",
+          "paragraphs": [
+            "The CASE statement goes through conditions and returns a value when the first condition is met.",
+            "Once a condition is true, it stops reading and returns the result.",
+            "If no conditions are true, the value in the ELSE clause is returned.",
+            "If there is no ELSE part and no conditions are true, NULL is returned."
+          ]
+        },
+        {
+          "heading": "CASE Syntax",
+          "code": "CASE\n  WHEN condition1 THEN result1\n  WHEN condition2 THEN result2\n  WHEN conditionN THEN resultN\n  ELSE result\nEND;"
+        },
+        {
+          "heading": "Demo Database (OrderDetails)",
+          "paragraphs": [
+            "Below is a selection from the OrderDetails table in the Northwind sample database."
+          ],
+          "table": {
+            "headers": ["OrderDetailID", "OrderID", "ProductID", "Quantity"],
+            "rows": [
+              ["1", "10248", "11", "12"],
+              ["2", "10248", "42", "10"],
+              ["3", "10248", "72", "5"],
+              ["4", "10249", "14", "9"],
+              ["5", "10249", "51", "40"]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL CASE Example",
+          "paragraphs": [
+            "The following SQL statement evaluates conditions and returns a text value based on quantity."
+          ],
+          "example": "SELECT OrderID, Quantity,\nCASE\n  WHEN Quantity > 30 THEN 'The quantity is greater than 30'\n  WHEN Quantity = 30 THEN 'The quantity is 30'\n  ELSE 'The quantity is under 30'\nEND AS QuantityText\nFROM OrderDetails;"
+        },
+        {
+          "heading": "CASE with ORDER BY Example",
+          "paragraphs": [
+            "The following SQL statement orders customers by City, but uses Country when City is NULL."
+          ],
+          "example": "SELECT CustomerName, City, Country\nFROM Customers\nORDER BY\n(CASE\n  WHEN City IS NULL THEN Country\n  ELSE City\nEND);"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keywords to complete the SQL CASE expression.",
+            "query": "___\n  WHEN Quantity > 50 THEN 'High'\n  WHEN Quantity <= 50 THEN 'Low'\n  ___ 'Unknown'\n___ AS QuantityCategory\n___",
+            "keywords": ["CASE", "ELSE", "END"],
+            "answer": "CASE WHEN Quantity > 50 THEN 'High' WHEN Quantity <= 50 THEN 'Low' ELSE 'Unknown' END AS QuantityCategory"
+          }
+        }
+      ]
+    },
+    "null-functions": {
+      "title": "MySQL NULL Functions",
+      "sections": [
+        {
+          "heading": "MySQL IFNULL() and COALESCE() Functions",
+          "paragraphs": [
+            "NULL values can cause unexpected results in calculations.",
+            "If an expression contains a NULL value, the result of the expression will be NULL."
+          ]
+        },
+        {
+          "heading": "Demo Table (Products)",
+          "paragraphs": [
+            "The UnitsOnOrder column is optional and may contain NULL values."
+          ],
+          "table": {
+            "headers": [
+              "P_Id",
+              "ProductName",
+              "UnitPrice",
+              "UnitsInStock",
+              "UnitsOnOrder"
+            ],
+            "rows": [
+              ["1", "Jarlsberg", "10.45", "16", "15"],
+              ["2", "Mascarpone", "32.56", "23", null],
+              ["3", "Gorgonzola", "15.67", "9", "20"]
+            ]
+          }
+        },
+        {
+          "heading": "Problem with NULL Values",
+          "paragraphs": [
+            "If any value in an arithmetic expression is NULL, the result will also be NULL."
+          ],
+          "example": "SELECT ProductName, UnitPrice * (UnitsInStock + UnitsOnOrder)\nFROM Products;"
+        },
+        {
+          "heading": "MySQL IFNULL() Function",
+          "paragraphs": [
+            "The IFNULL() function returns an alternative value if an expression is NULL."
+          ],
+          "example": "SELECT ProductName, UnitPrice * (UnitsInStock + IFNULL(UnitsOnOrder, 0))\nFROM Products;"
+        },
+        {
+          "heading": "MySQL COALESCE() Function",
+          "paragraphs": [
+            "The COALESCE() function returns the first non-NULL value in a list."
+          ],
+          "example": "SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0))\nFROM Products;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Which function in MySQL is used to handle NULL values by providing an alternative value?",
+            "options": ["NULL()", "ISNULL()", "IFNULL()", "NVL()"],
+            "answer": "IFNULL()"
+          }
+        }
+      ]
+    },
+    "comments": {
+      "title": "MySQL Comments",
+      "sections": [
+        {
+          "heading": "MySQL Comments",
+          "paragraphs": [
+            "Comments are used to explain sections of SQL statements or to prevent execution of SQL statements."
+          ]
+        },
+        {
+          "heading": "Single Line Comments",
+          "paragraphs": [
+            "Single-line comments start with --.",
+            "Any text between -- and the end of the line will be ignored and not executed."
+          ],
+          "examples": [
+            "-- Select all:\nSELECT * FROM Customers;",
+            "SELECT * FROM Customers -- WHERE City='Berlin';",
+            "-- SELECT * FROM Customers;\nSELECT * FROM Products;"
+          ]
+        },
+        {
+          "heading": "Multi-line Comments",
+          "paragraphs": [
+            "Multi-line comments start with /* and end with */.",
+            "Any text between /* and */ will be ignored."
+          ],
+          "examples": [
+            "/*Select all the columns\nof all the records\nin the Customers table:*/\nSELECT * FROM Customers;",
+            "/*SELECT * FROM Customers;\nSELECT * FROM Products;\nSELECT * FROM Orders;\nSELECT * FROM Categories;*/\nSELECT * FROM Suppliers;"
+          ]
+        },
+        {
+          "heading": "Using Comments in Statements",
+          "paragraphs": [
+            "Multi-line comments can also be used to ignore part of a statement."
+          ],
+          "examples": [
+            "SELECT CustomerName, /*City,*/ Country FROM Customers;",
+            "SELECT * FROM Customers WHERE (CustomerName LIKE 'L%'\nOR CustomerName LIKE 'R%' /*OR CustomerName LIKE 'S%'\nOR CustomerName LIKE 'T%'*/ OR CustomerName LIKE 'W%')\nAND Country='USA'\nORDER BY CustomerName;"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop to make the WHERE clause a single-line comment.",
+            "query": "SELECT * FROM Customers\n ___ WHERE City = 'Berlin';",
+            "keywords": ["--"],
+            "answer": "SELECT * FROM Customers\n-- WHERE City = 'Berlin';"
+          }
+        }
+      ]
+    },
+    "operators": {
+      "title": "MySQL Operators",
+      "sections": [
+        {
+          "heading": "MySQL Arithmetic Operators",
+          "table": {
+            "headers": ["Operator", "Description"],
+            "rows": [
+              ["+", "Add"],
+              ["-", "Subtract"],
+              ["*", "Multiply"],
+              ["/", "Divide"],
+              ["%", "Modulo"]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL Bitwise Operators",
+          "table": {
+            "headers": ["Operator", "Description"],
+            "rows": [
+              ["&", "Bitwise AND"],
+              ["|", "Bitwise OR"],
+              ["^", "Bitwise exclusive OR"]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL Comparison Operators",
+          "table": {
+            "headers": ["Operator", "Description"],
+            "rows": [
+              ["=", "Equal to"],
+              [">", "Greater than"],
+              ["<", "Less than"],
+              [">=", "Greater than or equal to"],
+              ["<=", "Less than or equal to"],
+              ["<>", "Not equal to"]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL Compound Operators",
+          "table": {
+            "headers": ["Operator", "Description"],
+            "rows": [
+              ["+=", "Add equals"],
+              ["-=", "Subtract equals"],
+              ["*=", "Multiply equals"],
+              ["/=", "Divide equals"],
+              ["%=", "Modulo equals"],
+              ["&=", "Bitwise AND equals"],
+              ["^-=", "Bitwise exclusive OR equals"],
+              ["|*=", "Bitwise OR equals"]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL Logical Operators",
+          "table": {
+            "headers": ["Operator", "Description"],
+            "rows": [
+              ["ALL", "TRUE if all subquery values meet the condition"],
+              ["AND", "TRUE if all conditions separated by AND are TRUE"],
+              ["ANY", "TRUE if any subquery values meet the condition"],
+              ["BETWEEN", "TRUE if the operand is within a range"],
+              ["EXISTS", "TRUE if the subquery returns one or more records"],
+              ["IN", "TRUE if the operand matches one of a list of values"],
+              ["LIKE", "TRUE if the operand matches a pattern"],
+              ["NOT", "TRUE if the condition is NOT TRUE"],
+              ["OR", "TRUE if any condition separated by OR is TRUE"],
+              ["SOME", "TRUE if any subquery values meet the condition"]
+            ]
+          }
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct SQL operators to complete the query.",
+            "query": "SELECT * FROM Customers\nWHERE City = 'Berlin' ___ Age ___ 30;",
+            "keywords": ["AND", "<"],
+            "answer": "SELECT * FROM Customers WHERE City = 'Berlin' AND Age < 30;"
+          }
+        }
+      ]
+    }
+  }
+}

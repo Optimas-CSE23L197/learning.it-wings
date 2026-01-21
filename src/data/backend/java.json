@@ -1,0 +1,899 @@
+{
+  "course": {
+    "id": "java",
+    "title": "Java Tutorial"
+  },
+  "sections": [
+    {
+      "title": "Java Tutorial",
+      "lessons": [
+        { "id": "home", "title": "Java HOME" },
+        { "id": "intro", "title": "Java Intro" },
+        { "id": "get-started", "title": "Java Get Started" },
+        { "id": "syntax", "title": "Java Syntax" },
+        { "id": "output", "title": "Java Output" },
+        { "id": "comments", "title": "Java Comments" },
+        { "id": "variables", "title": "Java Variables" },
+        { "id": "data-types", "title": "Java Data Types" },
+        { "id": "type-casting", "title": "Java Type Casting" },
+        { "id": "operators", "title": "Java Operators" },
+        { "id": "strings", "title": "Java Strings" },
+        { "id": "math", "title": "Java Math" },
+        { "id": "booleans", "title": "Java Booleans" },
+        { "id": "if-else", "title": "Java If...Else" },
+        { "id": "switch", "title": "Java Switch" },
+        { "id": "while-loop", "title": "Java While Loop" },
+        { "id": "for-loop", "title": "Java For Loop" },
+        { "id": "break-continue", "title": "Java Break/Continue" },
+        { "id": "arrays", "title": "Java Arrays" }
+      ]
+    },
+    {
+      "title": "Java Methods",
+      "lessons": [
+        { "id": "methods", "title": "Java Methods" },
+        { "id": "method-parameters", "title": "Java Method Parameters" },
+        { "id": "method-overloading", "title": "Java Method Overloading" },
+        { "id": "scope", "title": "Java Scope" },
+        { "id": "recursion", "title": "Java Recursion" }
+      ]
+    },
+    {
+      "title": "Java Classes",
+      "lessons": [
+        { "id": "oop", "title": "Java OOP" },
+        { "id": "classes-objects", "title": "Java Classes/Objects" },
+        { "id": "class-attributes", "title": "Java Class Attributes" },
+        { "id": "class-methods", "title": "Java Class Methods" },
+        { "id": "constructors", "title": "Java Constructors" },
+        { "id": "this-keyword", "title": "Java this Keyword" },
+        { "id": "modifiers", "title": "Java Modifiers" },
+        { "id": "encapsulation", "title": "Java Encapsulation" },
+        { "id": "packages-api", "title": "Java Packages / API" },
+        { "id": "inheritance", "title": "Java Inheritance" },
+        { "id": "polymorphism", "title": "Java Polymorphism" },
+        { "id": "super-keyword", "title": "Java super Keyword" },
+        { "id": "inner-classes", "title": "Java Inner Classes" },
+        { "id": "abstraction", "title": "Java Abstraction" },
+        { "id": "interface", "title": "Java Interface" },
+        { "id": "anonymous", "title": "Java Anonymous" },
+        { "id": "enum", "title": "Java Enum" },
+        { "id": "user-input", "title": "Java User Input" },
+        { "id": "date", "title": "Java Date" }
+      ]
+    },
+    {
+      "title": "Java Errors",
+      "lessons": [
+        { "id": "errors", "title": "Java Errors" },
+        { "id": "debugging", "title": "Java Debugging" },
+        { "id": "exceptions", "title": "Java Exceptions" },
+        { "id": "multiple-exceptions", "title": "Java Multiple Exceptions" },
+        { "id": "try-with-resources", "title": "Java try-with-resources" }
+      ]
+    },
+    {
+      "title": "Java File Handling",
+      "lessons": [
+        { "id": "files", "title": "Java Files" },
+        { "id": "create-files", "title": "Java Create Files" },
+        { "id": "write-files", "title": "Java Write Files" },
+        { "id": "read-files", "title": "Java Read Files" },
+        { "id": "delete-files", "title": "Java Delete Files" }
+      ]
+    },
+    {
+      "title": "Java I/O Streams",
+      "lessons": [
+        { "id": "io-streams", "title": "Java I/O Streams" },
+        { "id": "fileinputstream", "title": "Java FileInputStream" },
+        { "id": "fileoutputstream", "title": "Java FileOutputStream" },
+        { "id": "bufferedreader", "title": "Java BufferedReader" },
+        { "id": "bufferedwriter", "title": "Java BufferedWriter" }
+      ]
+    },
+    {
+      "title": "Java Data Structures",
+      "lessons": [
+        { "id": "data-structures", "title": "Java Data Structures" },
+        { "id": "collections", "title": "Java Collections" },
+        { "id": "list", "title": "Java List" },
+        { "id": "arraylist", "title": "Java ArrayList" },
+        { "id": "linkedlist", "title": "Java LinkedList" },
+        { "id": "list-sorting", "title": "Java List Sorting" },
+        { "id": "set", "title": "Java Set" },
+        { "id": "hashset", "title": "Java HashSet" },
+        { "id": "treeset", "title": "Java TreeSet" },
+        { "id": "linkedhashset", "title": "Java LinkedHashSet" },
+        { "id": "map", "title": "Java Map" },
+        { "id": "hashmap", "title": "Java HashMap" },
+        { "id": "treemap", "title": "Java TreeMap" },
+        { "id": "linkedhashmap", "title": "Java LinkedHashMap" },
+        { "id": "iterator", "title": "Java Iterator" },
+        { "id": "algorithms", "title": "Java Algorithms" }
+      ]
+    },
+    {
+      "title": "Java Advanced",
+      "lessons": [
+        { "id": "wrapper-classes", "title": "Java Wrapper Classes" },
+        { "id": "generics", "title": "Java Generics" },
+        { "id": "annotations", "title": "Java Annotations" },
+        { "id": "regex", "title": "Java RegEx" },
+        { "id": "threads", "title": "Java Threads" },
+        { "id": "lambda", "title": "Java Lambda" },
+        { "id": "advanced-sorting", "title": "Java Advanced Sorting" }
+      ]
+    },
+    {
+      "title": "Java Projects",
+      "lessons": [{ "id": "projects", "title": "Java Projects" }]
+    },
+    {
+      "title": "Java How To's",
+      "lessons": [{ "id": "how-tos", "title": "Java How Tos" }]
+    },
+    {
+      "title": "Java Reference",
+      "lessons": [
+        { "id": "reference", "title": "Java Reference" },
+        { "id": "keywords", "title": "Java Keywords" },
+        { "id": "string-methods", "title": "Java String Methods" },
+        { "id": "math-methods", "title": "Java Math Methods" },
+        { "id": "output-methods", "title": "Java Output Methods" },
+        { "id": "arrays-methods", "title": "Java Arrays Methods" },
+        { "id": "arraylist-methods", "title": "Java ArrayList Methods" },
+        { "id": "linkedlist-methods", "title": "Java LinkedList Methods" },
+        { "id": "hashmap-methods", "title": "Java HashMap Methods" },
+        { "id": "scanner-methods", "title": "Java Scanner Methods" },
+        { "id": "file-methods", "title": "Java File Methods" },
+        { "id": "fileinputstream-ref", "title": "Java FileInputStream" },
+        { "id": "fileoutputstream-ref", "title": "Java FileOutputStream" },
+        { "id": "bufferedreader-ref", "title": "Java BufferedReader" },
+        { "id": "bufferedwriter-ref", "title": "Java BufferedWriter" },
+        { "id": "iterator-methods", "title": "Java Iterator Methods" },
+        { "id": "collections-methods", "title": "Java Collections Methods" },
+        { "id": "system-methods", "title": "Java System Methods" },
+        { "id": "errors-exceptions", "title": "Java Errors & Exceptions" }
+      ]
+    },
+    {
+      "title": "Java Examples",
+      "lessons": [
+        { "id": "examples", "title": "Java Examples" },
+        { "id": "videos", "title": "Java Videos" },
+        { "id": "compiler", "title": "Java Compiler" },
+        { "id": "exercises", "title": "Java Exercises" },
+        { "id": "quiz", "title": "Java Quiz" },
+        { "id": "server", "title": "Java Server" },
+        { "id": "syllabus", "title": "Java Syllabus" },
+        { "id": "study-plan", "title": "Java Study Plan" },
+        { "id": "interview-qa", "title": "Java Interview Q&A" },
+        { "id": "certificate", "title": "Java Certificate" }
+      ]
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "Learn Java",
+      "paragraphs": [
+        "Java is a popular programming language.",
+        "Java is used to develop mobile apps, web apps, desktop apps, games and much more.",
+        "Start learning Java now »"
+      ],
+      "sections": [
+        {
+          "heading": "Tip",
+          "paragraphs": ["Tip: Sign in to track your progress."]
+        },
+        {
+          "heading": "Examples in Each Chapter",
+          "paragraphs": [
+            "Our \"Try it Yourself\" editor makes it easy to learn Java. You can edit Java code and view the result in your browser."
+          ],
+          "example": {
+            "title": "Example",
+            "note": "Get your own Java Server",
+            "code": "public class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello World\");\n  }\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Reading Order",
+          "paragraphs": [
+            "We recommend reading this tutorial, in the sequence listed in the left menu.",
+            "Java is an object oriented language and some concepts may be new. Take breaks when needed, and go over the examples as many times as needed."
+          ]
+        },
+        {
+          "heading": "Java Exercises",
+          "paragraphs": [
+            "Many chapters in this tutorial end with an exercise where you can check your level of knowledge."
+          ],
+          "exercise": {
+            "question": "Drag and drop the correct method to print Hello World in Java.\nSystem.out. (\"Hello World\");",
+            "options": ["prntl", "println", "echo", "printline"],
+            "answer": "println",
+            "cta": "See all Java Exercises"
+          }
+        },
+        {
+          "heading": "Java Quiz",
+          "paragraphs": ["Test your Java skills with a quiz."],
+          "cta": "Start Java Quiz"
+        },
+        {
+          "heading": "Learn by Examples",
+          "paragraphs": [
+            "Learn by examples! This tutorial supplements all explanations with clarifying examples."
+          ],
+          "cta": "See All Java Examples"
+        },
+        {
+          "heading": "Track Your Progress",
+          "paragraphs": [
+            "Create a W3Schools account and get access to more features and learning materials:"
+          ],
+          "list": [
+            "View your completed tutorials, exercises, and quizzes",
+            "Keep an eye on your progress and daily streaks",
+            "Join the leaderboard and compete with others",
+            "Get your own avatar and unlock new skins",
+            "Create your own personal website"
+          ],
+          "note": "Note: This is an optional feature. You can study at W3Schools without creating an account.",
+          "cta": "Sign Up »"
+        },
+        {
+          "heading": "Java Reference",
+          "paragraphs": [
+            "You will also find complete keyword and method references:"
+          ],
+          "list": [
+            "Reference Overview",
+            "Java Keywords",
+            "String Methods",
+            "Math Methods",
+            "Output Methods",
+            "Arrays Methods",
+            "ArrayList Methods",
+            "LinkedList Methods",
+            "HashMap Methods",
+            "Scanner Methods",
+            "File Methods",
+            "FileInputStream",
+            "FileOutputStream",
+            "BufferedReader",
+            "BufferedWriter",
+            "Iterator Methods",
+            "Collections Methods",
+            "System Methods",
+            "Errors & Exceptions"
+          ]
+        },
+        {
+          "heading": "Kickstart your career",
+          "paragraphs": ["Get certified by completing the JAVA course"],
+          "cta": "Get certified"
+        }
+      ]
+    },
+    "intro": {
+      "title": "Java Introduction",
+      "sections": [
+        {
+          "heading": "What is Java?",
+          "paragraphs": [
+            "Java is a popular and powerful programming language, created in 1995.",
+            "It is owned by Oracle, and more than 3 billion devices run Java."
+          ]
+        },
+        {
+          "heading": "It is used for:",
+          "list": [
+            "Mobile applications (specially Android apps)",
+            "Desktop applications",
+            "Web applications",
+            "Web servers and application servers",
+            "Games",
+            "Database connection",
+            "And much, much more!"
+          ]
+        },
+        {
+          "heading": "Why Use Java?",
+          "list": [
+            "Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)",
+            "It is one of the most popular programming languages in the world",
+            "It has a large demand in the current job market",
+            "It is easy to learn and simple to use",
+            "It is open-source and free",
+            "It is secure, fast and powerful",
+            "It has huge community support (tens of millions of developers)",
+            "Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs",
+            "As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa"
+          ]
+        },
+        {
+          "heading": "Java Example",
+          "paragraphs": [
+            "Java is often used in everyday programming tasks, like saying hello to a user:"
+          ],
+          "example": {
+            "title": "Example",
+            "note": "Get your own Java Server",
+            "code": "public class Main {\n  public static void main(String[] args) {\n    String name = \"John\";\n    System.out.println(\"Hello \" + name);\n  }\n}\n",
+            "result": "Hello John",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Get Started",
+          "paragraphs": [
+            "By the end of this tutorial, you will know how to write basic Java programs and apply your skills to real-life examples.",
+            "You don't need any prior programming experience - just curiosity and practice!"
+          ],
+          "cta": "Get Started »"
+        },
+        {
+          "heading": "Video",
+          "paragraphs": ["Video: Java Introduction"]
+        }
+      ]
+    },
+    "get-started": {
+      "title": "Java Getting Started",
+      "sections": [
+        {
+          "heading": "Get Started With Java",
+          "paragraphs": [
+            "At W3Schools, you can try Java without installing anything.",
+            "Our Online Java Editor runs directly in your browser, and shows both the code and the result:"
+          ],
+          "example": {
+            "label": "Code",
+            "code": "public class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello World\");\n  }\n}\n",
+            "resultLabel": "Result",
+            "result": "Hello World",
+            "cta": "Try it Yourself »"
+          },
+          "paragraphsAfterExample": [
+            "This editor will be used in the entire tutorial to demonstrate the different aspects of Java."
+          ]
+        },
+        {
+          "heading": "Java Install",
+          "paragraphs": [
+            "However, if you want to run Java on your own computer, follow the instructions below.",
+            "Some PCs might have Java already installed.",
+            "To check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe):"
+          ],
+          "code": "C:\\Users\\Your Name>java -version",
+          "paragraphsAfterCode": [
+            "If Java is installed, you will see something like this (depending on version):"
+          ],
+          "outputExample": "java version \"22.0.0\" 2024-08-21 LTS\nJava(TM) SE Runtime Environment 22.9 (build 22.0.0+13-LTS)\nJava HotSpot(TM) 64-Bit Server VM 22.9 (build 22.0.0+13-LTS, mixed mode)",
+          "paragraphsAfterOutput": [
+            "If you do not have Java installed on your computer, you can download it at oracle.com.",
+            "Note: In this tutorial, we will write Java code in a text editor. However, it is possible to write Java in an Integrated Development Environment, such as IntelliJ IDEA, Netbeans or Eclipse, which are particularly useful when managing larger collections of Java files."
+          ]
+        },
+        {
+          "heading": "Java Quickstart",
+          "paragraphs": [
+            "In Java, every application begins with a class name, and that class must match the filename.",
+            "Let's create our first Java file, called Main.java, which can be done in any text editor (like Notepad).",
+            "The file should contain a \"Hello World\" message, which is written with the following code:"
+          ],
+          "example": {
+            "label": "Main.java",
+            "code": "public class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello World\");\n  }\n}\n",
+            "cta": "Try it Yourself »"
+          },
+          "paragraphsAfterExample": [
+            "Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on how to run the code above.",
+            "Save the code in Notepad as \"Main.java\". Open Command Prompt (cmd.exe), navigate to the directory where you saved your file, and type \"javac Main.java\":"
+          ],
+          "codeSteps": [
+            "C:\\Users\\Your Name>javac Main.java",
+            "C:\\Users\\Your Name>java Main"
+          ],
+          "paragraphsAfterSteps": [
+            "This will compile your code. If there are no errors in the code, the command prompt will take you to the next line. Now, type \"java Main\" to run the file:",
+            "The output should read:",
+            "Hello World",
+            "Try it Yourself »",
+            "Congratulations! You have written and executed your first Java program."
+          ]
+        },
+        {
+          "heading": "Video",
+          "paragraphs": ["Video: Java Get Started"]
+        }
+      ]
+    },
+    "syntax": {
+      "title": "Java Syntax",
+      "sections": [
+        {
+          "heading": "Java Syntax",
+          "paragraphs": [
+            "In the previous chapter, we created a Java file called Main.java, and we used the following code to print \"Hello World\" to the screen:"
+          ],
+          "example": {
+            "title": "Example",
+            "note": "Get your own Java Server",
+            "label": "Main.java",
+            "code": "public class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello World\");\n  }\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Example explained",
+          "paragraphs": [
+            "Every line of code that runs in Java must be inside a class. The class name should always start with an uppercase first letter. In our example, we named the class Main.",
+            "Note: Java is case-sensitive. MyClass and myclass would be treated as two completely different names.",
+            "The name of the Java file must match the class name. So if your class is called Main, the file must be saved as Main.java. This is because Java uses the class name to find and run your code. If the names don't match, Java will give an error and the program will not run.",
+            "When saving the file, save it using the class name and add .java to the end of the filename.",
+            "To run the example above on your computer, make sure that Java is properly installed: Go to the Get Started Chapter for how to install Java.",
+            "The output should be:",
+            "Hello World"
+          ]
+        },
+        {
+          "heading": "The main Method",
+          "paragraphs": [
+            "The main() method is required in every Java program. It is where the program starts running:"
+          ],
+          "code": "public static void main(String[] args)",
+          "paragraphsAfterCode": [
+            "Any code placed inside the main() method will be executed.",
+            "For now, you don't need to understand the keywords public, static, and void. You will learn about them later in this tutorial.",
+            "Just remember: main() is the starting point of every Java program."
+          ]
+        },
+        {
+          "heading": "System.out.println()",
+          "paragraphs": [
+            "Inside the main() method, we can use the println() method to print a line of text to the screen:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "public static void main(String[] args) {\n  System.out.println(\"Hello World\");\n}\n",
+            "cta": "Try it Yourself »"
+          },
+          "note": "Note: The curly braces {} mark the beginning and the end of a block of code.",
+          "paragraphsAfterExample": [
+            "System.out.println() may look long, but you can think of it as a single command that means: \"Send this text to the screen.\"",
+            "Here's what each part means (you will learn the details later):"
+          ],
+          "list": [
+            "System is a built-in Java class.",
+            "out is a member of System, short for \"output\".",
+            "println() is a method, short for \"print line\"."
+          ],
+          "paragraphsAfterList": [
+            "Finally, remember that each Java statement must end with a semicolon (;)."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct class name to match the file name Main.java.",
+            "snippet": "public class  {\n  public static void main(String[] args) {\n    System.out.println(\"Hello\");\n  }\n}",
+            "options": ["main", "Main", "class", "JavaClass"],
+            "answer": "Main"
+          }
+        },
+        {
+          "heading": "Video",
+          "paragraphs": ["Video: Java Syntax"]
+        }
+      ]
+    },
+    "output": {
+      "title": "Java Output / Print",
+      "sections": [
+        {
+          "heading": "Print Text",
+          "paragraphs": [
+            "You learned from the previous chapter that you can use the println() method to output values or print text in Java:"
+          ],
+          "example": {
+            "title": "Example",
+            "note": "Get your own Java Server",
+            "code": "System.out.println(\"Hello World!\");\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Multiple println()",
+          "paragraphs": [
+            "You can add as many println() methods as you want. Note that it will add a new line for each method:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "System.out.println(\"Hello World!\");\nSystem.out.println(\"I am learning Java.\");\nSystem.out.println(\"It is awesome!\");\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Double Quotes",
+          "paragraphs": [
+            "Text must be wrapped inside double quotations marks \"\".",
+            "If you forget the double quotes, an error occurs:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "System.out.println(\"This sentence will work!\");\nSystem.out.println(This sentence will produce an error);\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "The print() Method",
+          "paragraphs": [
+            "There is also a print() method, which is similar to println().",
+            "The only difference is that it does not insert a new line at the end of the output:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "System.out.print(\"Hello World! \");\nSystem.out.print(\"I will print on the same line.\");\n",
+            "cta": "Try it Yourself »"
+          },
+          "paragraphsAfterExample": [
+            "Note that we add an extra space (after \"Hello World!\" in the example above) for better readability.",
+            "In this tutorial, we will only use println() as it makes the code output easier to read."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct method to print Hello World in Java.\nSystem.out.(\"Hello World\");",
+            "options": ["prntl", "println", "echo", "printline"],
+            "answer": "println"
+          }
+        },
+        {
+          "heading": "Video",
+          "paragraphs": ["Video: Java Output / Print"]
+        }
+      ]
+    },
+    "comments": {
+      "title": "Java Comments",
+      "sections": [
+        {
+          "heading": "Java Comments",
+          "paragraphs": [
+            "Comments can be used to explain Java code, and to make it more readable.",
+            "It can also be used to prevent execution when testing alternative code."
+          ]
+        },
+        {
+          "heading": "Single-line Comments",
+          "paragraphs": [
+            "Single-line comments start with two forward slashes (//).",
+            "Any text between // and the end of the line is ignored by Java (will not be executed).",
+            "This example uses a single-line comment before a line of code:"
+          ],
+          "example": {
+            "title": "Example",
+            "note": "Get your own Java Server",
+            "code": "// This is a comment\nSystem.out.println(\"Hello World\");\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Single-line Comment at End of Line",
+          "paragraphs": [
+            "This example uses a single-line comment at the end of a line of code:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "System.out.println(\"Hello World\"); // This is a comment\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Java Multi-line Comments",
+          "paragraphs": [
+            "Multi-line comments start with /* and ends with */.",
+            "Any text between /* and */ will be ignored by Java.",
+            "This example uses a multi-line comment (a comment block) to explain the code:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "/* The code below will print the words Hello World\nto the screen, and it is amazing */\nSystem.out.println(\"Hello World\");\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Single or multi-line comments?",
+          "paragraphs": [
+            "It's up to you which one you use.",
+            "Normally, we use // for short comments, and /* */ for longer."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct syntax for a single-line comment in Java.",
+            "options": ["#", "/**/", "//"],
+            "answer": "//"
+          }
+        },
+        {
+          "heading": "Video",
+          "paragraphs": ["Video: Java Comments"]
+        }
+      ]
+    },
+    "variables": {
+      "title": "Java Variables",
+      "sections": [
+        {
+          "heading": "Java Variables",
+          "paragraphs": ["Variables are containers for storing data values."]
+        },
+        {
+          "heading": "Variable Types",
+          "paragraphs": [
+            "In Java, there are different types of variables, for example:"
+          ],
+          "list": [
+            "String - stores text, such as \"Hello\". String values are surrounded by double quotes",
+            "int - stores integers (whole numbers), without decimals, such as 123 or -123",
+            "float - stores floating point numbers, with decimals, such as 19.99 or -19.99",
+            "char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes",
+            "boolean - stores values with two states: true or false"
+          ]
+        },
+        {
+          "heading": "Declaring (Creating) Variables",
+          "paragraphs": ["To create a variable in Java, you need to:"],
+          "list": [
+            "Choose a type (like int or String)",
+            "Give the variable a name (like x, age, or name)",
+            "Optionally assign it a value using ="
+          ],
+          "code": "type variableName = value;"
+        },
+        {
+          "heading": "String Example",
+          "paragraphs": [
+            "Create a variable called name of type String and assign it the value \"John\".",
+            "Then we use println() to print the name variable:"
+          ],
+          "example": {
+            "code": "String name = \"John\";\nSystem.out.println(name);\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "int Example",
+          "paragraphs": [
+            "Create a variable called myNum of type int and assign it the value 15:"
+          ],
+          "example": {
+            "code": "int myNum = 15;\nSystem.out.println(myNum);\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Declare Then Assign",
+          "paragraphs": [
+            "You can also declare a variable without assigning the value, and assign the value later:"
+          ],
+          "example": {
+            "code": "int myNum;\nmyNum = 15;\nSystem.out.println(myNum);\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Overwrite Value",
+          "paragraphs": [
+            "Note that if you assign a new value to an existing variable, it will overwrite the previous value:"
+          ],
+          "example": {
+            "code": "int myNum = 15;\nmyNum = 20;  // myNum is now 20\nSystem.out.println(myNum);\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Final Variables",
+          "paragraphs": [
+            "If you don't want others (or yourself) to overwrite existing values, use the final keyword (this will declare the variable as \"final\" or \"constant\", which means unchangeable and read-only):"
+          ],
+          "example": {
+            "code": "final int myNum = 15;\nmyNum = 20;  // will generate an error: cannot assign a value to a final variable\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Other Types",
+          "paragraphs": [
+            "A demonstration of how to declare variables of other types:"
+          ],
+          "example": {
+            "code": "int myNum = 5;\nfloat myFloatNum = 5.99f;\nchar myLetter = 'D';\nboolean myBool = true;\nString myText = \"Hello\";\n"
+          },
+          "paragraphsAfterExample": [
+            "You will learn more about data types in the next section."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct data type to declare an integer variable.",
+            "snippet": " myNum = 15;\nSystem.out.println(myNum);",
+            "options": ["integer", "string", "dbl", "int"],
+            "answer": "int"
+          }
+        },
+        {
+          "heading": "Video",
+          "paragraphs": ["Video: Java Variables"]
+        }
+      ]
+    },
+    "data-types": {
+      "title": "Java Data Types",
+      "sections": [
+        {
+          "heading": "Java Data Types",
+          "paragraphs": [
+            "As explained in the previous chapter, a variable in Java must be a specified data type:"
+          ],
+          "example": {
+            "title": "Example",
+            "note": "Get your own Java Server",
+            "code": "int myNum = 5;               // Integer (whole number)\nfloat myFloatNum = 5.99f;    // Floating point number\nchar myLetter = 'D';         // Character\nboolean myBool = true;       // Boolean\nString myText = \"Hello\";     // String\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Data Types Groups",
+          "paragraphs": ["Data types are divided into two groups:"],
+          "list": [
+            "Primitive data types - includes byte, short, int, long, float, double, boolean and char",
+            "Non-primitive data types - such as String, Arrays and Classes (you will learn more about these in a later chapter)"
+          ]
+        },
+        {
+          "heading": "Primitive Data Types",
+          "paragraphs": [
+            "A primitive data type specifies the type of a variable and the kind of values it can hold.",
+            "There are eight primitive data types in Java:"
+          ],
+          "table": [
+            {
+              "type": "byte",
+              "description": "Stores whole numbers from -128 to 127"
+            },
+            {
+              "type": "short",
+              "description": "Stores whole numbers from -32,768 to 32,767"
+            },
+            {
+              "type": "int",
+              "description": "Stores whole numbers from -2,147,483,648 to 2,147,483,647"
+            },
+            {
+              "type": "long",
+              "description": "Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807"
+            },
+            {
+              "type": "float",
+              "description": "Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits"
+            },
+            {
+              "type": "double",
+              "description": "Stores fractional numbers. Sufficient for storing 15 to 16 decimal digits"
+            },
+            { "type": "boolean", "description": "Stores true or false values" },
+            {
+              "type": "char",
+              "description": "Stores a single character/letter or ASCII values"
+            }
+          ]
+        },
+        {
+          "heading": "You Cannot Change the Type",
+          "paragraphs": [
+            "Once a variable is declared with a type, it cannot change to another type later in the program:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int myNum = 5;       // myNum is an int\n// myNum = \"Hello\";  // Error: cannot assign a String to an int\n\nString myText = \"Hi\"; // myText is a String\n// myText = 123;      // Error: cannot assign a number to a String\n",
+            "cta": "Try it Yourself »"
+          },
+          "note": "Note: This rule makes Java safer, because the compiler will stop you if you try to mix up types by mistake.",
+          "paragraphsAfterNote": [
+            "If you really need to change between types, you must use type casting or conversion methods (for example, turning an int into a double)."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct integer value to complete the code.",
+            "snippet": "int myNum = ;\nSystem.out.println(myNum);",
+            "options": ["\"10\"", "10", "10.5", "true"],
+            "answer": "10"
+          }
+        },
+        {
+          "heading": "Video",
+          "paragraphs": ["Video: Java Data Types"]
+        }
+      ]
+    },
+    "type-casting": {
+      "title": "Java Type Casting",
+      "sections": [
+        {
+          "heading": "Java Type Casting",
+          "paragraphs": [
+            "Type casting means converting one data type into another. For example, turning an int into a double.",
+            "In Java, there are two main types of casting:"
+          ],
+          "list": [
+            "Widening Casting (automatic) - converting a smaller type to a larger type size",
+            "byte -> short -> char -> int -> long -> float -> double",
+            "Narrowing Casting (manual) - converting a larger type to a smaller type size",
+            "double -> float -> long -> int -> char -> short -> byte"
+          ]
+        },
+        {
+          "heading": "Widening Casting",
+          "paragraphs": [
+            "Widening casting is done automatically when passing a smaller size type into a larger size type.",
+            "This works because there is no risk of losing information. For example, an int value can safely fit inside a double:"
+          ],
+          "example": {
+            "title": "Example",
+            "note": "Get your own Java Server",
+            "code": "int myInt = 9;\ndouble myDouble = myInt; // Automatic casting: int to double\n\nSystem.out.println(myInt);    // Outputs 9\nSystem.out.println(myDouble); // Outputs 9.0\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Narrowing Casting",
+          "paragraphs": [
+            "Narrowing casting must be done manually by placing the type in parentheses () in front of the value.",
+            "This is required because narrowing may result in data loss (for example, dropping decimals when converting a double to an int):"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "double myDouble = 9.78d;\nint myInt = (int) myDouble; // Manual casting: double to int\n\nSystem.out.println(myDouble); // Outputs 9.78\nSystem.out.println(myInt);    // Outputs 9\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Real-Life Example",
+          "paragraphs": [
+            "Here is a real-life example of type casting. We calculate the percentage of a user's score in relation to the maximum score in a game.",
+            "We use type casting to make sure that the result is a floating-point value, rather than an integer:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "// Set the maximum possible score in the game to 500\nint maxScore = 500;\n\n// The actual score of the user\nint userScore = 423;\n\n/* Calculate the percentage of the user's score in relation to the maximum available score.\nConvert userScore to double to make sure that the division is accurate */\ndouble percentage = (double) userScore / maxScore * 100.0d;\n\nSystem.out.println(\"User's percentage is \" + percentage);\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct value to show widening casting (automatic type conversion).",
+            "snippet": "int myInt = 9;\ndouble myDouble = ;",
+            "options": ["myInt", "(int) myInt", "double", "String"],
+            "answer": "myInt"
+          }
+        },
+        {
+          "heading": "Video",
+          "paragraphs": ["Video: Java Type Casting"]
+        }
+      ]
+    }
+  }
+}

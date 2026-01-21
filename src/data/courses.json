@@ -1,6 +1,6 @@
 {
   "frontend": {
-    "title": "HTML and CSS",
+    "title": "Frontend Development",
     "courses": {
       "html": {
         "title": "HTML Tutorial",
@@ -10,155 +10,26 @@
         "title": "CSS Tutorial",
         "file": "frontend/css.json"
       },
-      "graphics": {
-        "title": "Graphics Tutorial",
-        "file": "frontend/graphics.json"
-      },
-      "canvas": {
-        "title": "Canvas Tutorial",
-        "file": "frontend/canvas.json"
-      },
-      "color-theory": {
-        "title": "Color Theory Tutorial",
-        "file": "frontend/color-theory.json"
-      }
-    }
-  },
-
-  "js": {
-    "title": "JavaScript",
-    "courses": {
-      "javascript": {
-        "title": "JavaScript Tutorial",
-        "file": "js/javascript.json"
-      },
       "react": {
-        "title": "React Tutorial",
-        "file": "js/react.json"
+        "title": "react Tutorial",
+        "file": "frontend/react.json"
       },
-      "jquery": {
-        "title": "jQuery Tutorial",
-        "file": "js/jquery.json"
-      },
-      "angular": {
-        "title": "Angular Tutorial",
-        "file": "js/angular.json"
-      },
-      "angularjs": {
-        "title": "AngularJS Tutorial",
-        "file": "js/angularjs.json"
-      },
-      "json": {
-        "title": "JSON Tutorial",
-        "file": "js/json.json"
-      },
-      "ajax": {
-        "title": "AJAX Tutorial",
-        "file": "js/ajax.json"
+       "javascript": {
+        "title": "javascript Tutorial",
+        "file": "frontend/javascript.json"
       }
     }
   },
-
   "backend": {
-    "title": "Backend",
+    "title": "Backend Development",
     "courses": {
-      "python": {
-        "title": "Python Tutorial",
-        "file": "backend/python.json"
-      },
-      "sql": {
-        "title": "SQL Tutorial",
-        "file": "backend/sql.json"
-      },
-      "mysql": {
-        "title": "MySQL Tutorial",
-        "file": "backend/mysql.json"
+      "node": {
+        "title": "Node.js Tutorial",
+        "file": "backend/node.json"
       },
       "php": {
         "title": "PHP Tutorial",
         "file": "backend/php.json"
-      },
-      "java": {
-        "title": "Java Tutorial",
-        "file": "backend/java.json"
-      },
-      "c": {
-        "title": "C Tutorial",
-        "file": "backend/c.json"
-      },
-      "cpp": {
-        "title": "C++ Tutorial",
-        "file": "backend/cpp.json"
-      },
-      "c-sharp": {
-        "title": "C# Tutorial",
-        "file": "backend/csharp.json"
-      },
-      "r": {
-        "title": "R Tutorial",
-        "file": "backend/r.json"
-      },
-      "kotlin": {
-        "title": "Kotlin Tutorial",
-        "file": "backend/kotlin.json"
-      },
-      "rust": {
-        "title": "Rust Tutorial",
-        "file": "backend/rust.json"
-      },
-      "go": {
-        "title": "Go Tutorial",
-        "file": "backend/go.json"
-      },
-      "django": {
-        "title": "Django Tutorial",
-        "file": "backend/django.json"
-      },
-      "typescript": {
-        "title": "TypeScript Tutorial",
-        "file": "backend/typescript.json"
-      },
-      "asp-net": {
-        "title": "ASP.NET Tutorial",
-        "file": "backend/asp-net.json"
-      },
-      "node-js": {
-        "title": "Node.js Tutorial",
-        "file": "backend/node-js.json"
-      },
-      "git": {
-        "title": "Git Tutorial",
-        "file": "backend/git.json"
-      },
-      "mongodb": {
-        "title": "MongoDB Tutorial",
-        "file": "backend/mongodb.json"
-      },
-      "aws": {
-        "title": "AWS Tutorial",
-        "file": "backend/aws.json"
-      }
-    }
-  },
-
-  "ai": {
-    "title": "Data Analytics",
-    "courses": {
-      "dsa": {
-        "title": "DSA Tutorial",
-        "file": "ai/dsa.json"
-      },
-      "numpy": {
-        "title": "NumPy Tutorial",
-        "file": "ai/numpy.json"
-      },
-      "data-science": {
-        "title": "Data Science Tutorial",
-        "file": "ai/data-science.json"
-      },
-      "google-sheets": {
-        "title": "Google Sheets Tutorial",
-        "file": "ai/google-sheets.json"
       }
     }
   }

@@ -1,0 +1,1625 @@
+{
+  "course": {
+    "id": "php",
+    "title": "PHP Tutorial"
+  },
+  "sections": [
+    {
+      "title": "PHP Tutorial",
+      "lessons": [
+        { "id": "home", "title": "PHP HOME" },
+        { "id": "intro", "title": "PHP Intro" },
+        { "id": "install", "title": "PHP Install" },
+        { "id": "syntax", "title": "PHP Syntax" },
+        { "id": "comments", "title": "PHP Comments" },
+        { "id": "variables", "title": "PHP Variables" },
+        { "id": "echo-print", "title": "PHP Echo / Print" },
+        { "id": "data-types", "title": "PHP Data Types" },
+        { "id": "strings", "title": "PHP Strings" },
+        { "id": "numbers", "title": "PHP Numbers" },
+        { "id": "casting", "title": "PHP Casting" },
+        { "id": "math", "title": "PHP Math" },
+        { "id": "constants", "title": "PHP Constants" },
+        { "id": "magic-constants", "title": "PHP Magic Constants" },
+        { "id": "operators", "title": "PHP Operators" },
+        { "id": "if-else-elseif", "title": "PHP If...Else...Elseif" },
+        { "id": "switch", "title": "PHP Switch" },
+        { "id": "loops", "title": "PHP Loops" },
+        { "id": "functions", "title": "PHP Functions" },
+        { "id": "arrays", "title": "PHP Arrays" },
+        { "id": "superglobals", "title": "PHP Superglobals" },
+        { "id": "regex", "title": "PHP RegEx" },
+        { "id": "regex-functions", "title": "PHP RegEx Functions" }
+      ]
+    },
+    {
+      "title": "PHP Forms",
+      "lessons": [
+        { "id": "form-handling", "title": "PHP Form Handling" },
+        { "id": "form-validation", "title": "PHP Form Validation" },
+        { "id": "form-required", "title": "PHP Form Required" },
+        { "id": "form-url-email", "title": "PHP Form URL/E-mail" },
+        { "id": "form-complete", "title": "PHP Form Complete" }
+      ]
+    },
+    {
+      "title": "PHP Advanced",
+      "lessons": [
+        { "id": "date-and-time", "title": "PHP Date and Time" },
+        { "id": "include", "title": "PHP Include" },
+        { "id": "file-handling", "title": "PHP File Handling" },
+        { "id": "file-open-read", "title": "PHP File Open/Read" },
+        { "id": "file-create-write", "title": "PHP File Create/Write" },
+        { "id": "file-upload", "title": "PHP File Upload" },
+        { "id": "cookies", "title": "PHP Cookies" },
+        { "id": "sessions", "title": "PHP Sessions" },
+        { "id": "filters", "title": "PHP Filters" },
+        { "id": "filters-advanced", "title": "PHP Filters Advanced" },
+        { "id": "callback-functions", "title": "PHP Callback Functions" },
+        { "id": "json", "title": "PHP JSON" },
+        { "id": "exceptions", "title": "PHP Exceptions" }
+      ]
+    },
+    {
+      "title": "PHP OOP",
+      "lessons": [
+        { "id": "what-is-oop", "title": "PHP What is OOP" },
+        { "id": "classes-objects", "title": "PHP Classes/Objects" },
+        { "id": "constructor", "title": "PHP Constructor" },
+        { "id": "destructor", "title": "PHP Destructor" },
+        { "id": "access-modifiers", "title": "PHP Access Modifiers" },
+        { "id": "inheritance", "title": "PHP Inheritance" },
+        { "id": "oop-constants", "title": "PHP Constants" },
+        { "id": "abstract-classes", "title": "PHP Abstract Classes" },
+        { "id": "interfaces", "title": "PHP Interfaces" },
+        { "id": "traits", "title": "PHP Traits" },
+        { "id": "static-methods", "title": "PHP Static Methods" },
+        { "id": "static-properties", "title": "PHP Static Properties" },
+        { "id": "namespaces", "title": "PHP Namespaces" },
+        { "id": "iterables", "title": "PHP Iterables" }
+      ]
+    },
+    {
+      "title": "MySQL Database",
+      "lessons": [
+        { "id": "mysql-database", "title": "MySQL Database" },
+        { "id": "mysql-connect", "title": "MySQL Connect" },
+        { "id": "mysql-create-db", "title": "MySQL Create DB" },
+        { "id": "mysql-create-table", "title": "MySQL Create Table" },
+        { "id": "mysql-insert-data", "title": "MySQL Insert Data" },
+        { "id": "mysql-get-last-id", "title": "MySQL Get Last ID" },
+        { "id": "mysql-insert-multiple", "title": "MySQL Insert Multiple" },
+        { "id": "mysql-prepared", "title": "MySQL Prepared" },
+        { "id": "mysql-select-data", "title": "MySQL Select Data" },
+        { "id": "mysql-where", "title": "MySQL Where" },
+        { "id": "mysql-order-by", "title": "MySQL Order By" },
+        { "id": "mysql-delete-data", "title": "MySQL Delete Data" },
+        { "id": "mysql-update-data", "title": "MySQL Update Data" },
+        { "id": "mysql-limit-data", "title": "MySQL Limit Data" }
+      ]
+    },
+    {
+      "title": "PHP XML",
+      "lessons": [
+        { "id": "xml-parsers", "title": "PHP XML Parsers" },
+        { "id": "simplexml-parser", "title": "PHP SimpleXML Parser" },
+        { "id": "simplexml-get", "title": "PHP SimpleXML - Get" },
+        { "id": "xml-expat", "title": "PHP XML Expat" },
+        { "id": "xml-dom", "title": "PHP XML DOM" }
+      ]
+    },
+    {
+      "title": "PHP - AJAX",
+      "lessons": [
+        { "id": "ajax-intro", "title": "AJAX Intro" },
+        { "id": "ajax-php", "title": "AJAX PHP" },
+        { "id": "ajax-database", "title": "AJAX Database" },
+        { "id": "ajax-xml", "title": "AJAX XML" },
+        { "id": "ajax-live-search", "title": "AJAX Live Search" },
+        { "id": "ajax-poll", "title": "AJAX Poll" }
+      ]
+    },
+    {
+      "title": "PHP Examples",
+      "lessons": [
+        { "id": "examples", "title": "PHP Examples" },
+        { "id": "compiler", "title": "PHP Compiler" },
+        { "id": "quiz", "title": "PHP Quiz" },
+        { "id": "exercises", "title": "PHP Exercises" },
+        { "id": "server", "title": "PHP Server" },
+        { "id": "syllabus", "title": "PHP Syllabus" },
+        { "id": "study-plan", "title": "PHP Study Plan" },
+        { "id": "certificate", "title": "PHP Certificate" }
+      ]
+    },
+    {
+      "title": "PHP Reference",
+      "lessons": [
+        { "id": "overview", "title": "PHP Overview" },
+        { "id": "array", "title": "PHP Array" },
+        { "id": "calendar", "title": "PHP Calendar" },
+        { "id": "date", "title": "PHP Date" },
+        { "id": "directory", "title": "PHP Directory" },
+        { "id": "error", "title": "PHP Error" },
+        { "id": "exception", "title": "PHP Exception" },
+        { "id": "filesystem", "title": "PHP Filesystem" },
+        { "id": "filter", "title": "PHP Filter" },
+        { "id": "ftp", "title": "PHP FTP" },
+        { "id": "json-reference", "title": "PHP JSON" },
+        { "id": "keywords", "title": "PHP Keywords" },
+        { "id": "libxml", "title": "PHP Libxml" },
+        { "id": "mail", "title": "PHP Mail" },
+        { "id": "math-reference", "title": "PHP Math" },
+        { "id": "misc", "title": "PHP Misc" },
+        { "id": "mysqli", "title": "PHP MySQLi" },
+        { "id": "network", "title": "PHP Network" },
+        { "id": "output-control", "title": "PHP Output Control" },
+        { "id": "regex-reference", "title": "PHP RegEx" },
+        { "id": "simplexml", "title": "PHP SimpleXML" },
+        { "id": "stream", "title": "PHP Stream" },
+        { "id": "string", "title": "PHP String" },
+        { "id": "variable-handling", "title": "PHP Variable Handling" },
+        { "id": "xml-parser", "title": "PHP XML Parser" },
+        { "id": "zip", "title": "PHP Zip" },
+        { "id": "timezones", "title": "PHP Timezones" }
+      ]
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "Learn PHP",
+      "paragraphs": [
+        "PHP is a powerful server-side scripting language for making dynamic and interactive Web pages.",
+        "PHP is widely-used, open-source and free.",
+        "Start learning PHP now »",
+        "Tip: Sign in to track your progress."
+      ],
+      "sections": [
+        {
+          "heading": "Easy Learning with \"PHP Tryit\"",
+          "paragraphs": [
+            "With our online \"PHP Tryit\" editor, you can edit the PHP code, and click on a button to view the result.",
+            "Click on the \"Try it Yourself\" button to see how it works."
+          ],
+          "example": "<!DOCTYPE html>\n<html>\n<body>\n \n<?php\necho 'My first PHP script!';\n?>\n\n</body>\n</html>"
+        },
+        {
+          "heading": "PHP Exercises",
+          "paragraphs": [
+            "Most chapters in this tutorial end with exercises where you can check your knowledge."
+          ],
+          "exercise": {
+            "question": "What does PHP stand for?",
+            "options": [
+              "PHP: Hyperspeed Performance",
+              "PHP: Hyperformat Programming",
+              "PHP: Hypertext Preprocessor",
+              "PHP: Hyperlink Pages"
+            ],
+            "answer": "PHP: Hypertext Preprocessor"
+          }
+        },
+        {
+          "heading": "PHP Examples",
+          "paragraphs": [
+            "Learn by examples! This tutorial supplements all explanations with clarifying examples."
+          ]
+        },
+        {
+          "heading": "PHP Quiz Test",
+          "paragraphs": [
+            "Learn by taking a quiz! This quiz will give you a signal of how much you know, or do not know, about PHP."
+          ]
+        },
+        {
+          "heading": "Track Your Progress",
+          "paragraphs": [
+            "Create a W3Schools account and get access to more features and learning materials:",
+            "Note: This is an optional feature. You can study at W3Schools without creating an account."
+          ],
+          "list": [
+            "View your completed tutorials, exercises, and quizzes",
+            "Keep an eye on your progress and daily streaks",
+            "Join the leaderboard and compete with others",
+            "Get your own avatar and unlock new skins",
+            "Create your own personal website"
+          ]
+        },
+        {
+          "heading": "PHP References",
+          "paragraphs": [
+            "W3Schools' PHP reference contains different categories of all PHP functions, keywords and constants, along with examples."
+          ],
+          "list": [
+            "Array",
+            "Calendar",
+            "Date",
+            "Directory",
+            "Error",
+            "Exception",
+            "Filesystem",
+            "Filter",
+            "FTP",
+            "JSON",
+            "Keywords",
+            "Libxml",
+            "Mail",
+            "Math",
+            "Misc",
+            "MySQLi",
+            "Network",
+            "Output Control",
+            "RegEx",
+            "SimpleXML",
+            "Stream",
+            "String",
+            "Var Handling",
+            "XML Parser",
+            "Zip",
+            "Timezones"
+          ]
+        },
+        {
+          "heading": "Get Certified",
+          "paragraphs": [
+            "Kickstart your career",
+            "Get certified by completing the PHP course"
+          ]
+        }
+      ]
+    },
+    "intro": {
+      "title": "PHP Introduction",
+      "sections": [
+        {
+          "heading": "What is PHP?",
+          "list": [
+            "PHP is an acronym for \"PHP: Hypertext Preprocessor\"",
+            "PHP is a widely-used, open source server-side scripting language",
+            "PHP scripts are executed on the server",
+            "PHP is free to download and use"
+          ],
+          "paragraphs": [
+            "PHP is an amazing and popular language!",
+            "PHP is powerful enough to be at the core of the biggest blogging system on the web!",
+            "PHP is deep enough to run large social networks!",
+            "PHP is easy enough to be a beginner's first server-side scripting language!"
+          ]
+        },
+        {
+          "heading": "Why PHP?",
+          "list": [
+            "PHP runs on all major platforms (Windows, Linux, Unix, Mac OS X, etc.)",
+            "PHP is compatible with all leading web servers (Nginx, Apache, Cloudflare, Microsoft IIS, etc.)",
+            "PHP supports a wide range of databases (MySQL, PostgreSQL, MS SQL, db2, Oracle Database, MongoDB, etc.)",
+            "PHP is free. Download it from the official PHP resource: www.php.net",
+            "PHP is easy to learn and runs efficiently on the server side"
+          ]
+        },
+        {
+          "heading": "What You Should Already Know",
+          "paragraphs": [
+            "Before you continue you should have a basic understanding of the following:"
+          ],
+          "list": ["HTML", "CSS", "JavaScript"],
+          "note": "If you want to study these subjects first, find the tutorials on our Home page."
+        },
+        {
+          "heading": "What is a PHP File?",
+          "list": [
+            "PHP files have the file extension .php",
+            "PHP files can contain text, HTML, CSS, JavaScript, and PHP code",
+            "PHP code is executed on the server, and the result is returned to the browser as HTML"
+          ]
+        },
+        {
+          "heading": "What Can PHP Do?",
+          "list": [
+            "PHP can generate dynamic page content",
+            "PHP can create, open, read, write, delete, and close files on the server",
+            "PHP can collect form data",
+            "PHP can send and receive cookies",
+            "PHP can add, delete, modify data in your database",
+            "PHP can be used to control user-access",
+            "PHP can encrypt data"
+          ],
+          "paragraphs": [
+            "With PHP you are not limited to output HTML. You can output images or PDF files. You can also output any text, such as XHTML and XML."
+          ]
+        },
+        {
+          "heading": "What is new in PHP 8?",
+          "list": [
+            "Just-In-Time (JIT) Compiler - for faster execution times and improved performance",
+            "Union Types - allow variables and function return types to accept multiple types",
+            "Named Arguments - allows to pass arguments to functions or methods by their name",
+            "Match Expressions - a more powerful and concise alternative to the traditional switch statement",
+            "Nullsafe Operator (?->) - an easy way to access the properties and methods of an object when it may be null",
+            "Attributes - allows you to add metadata to your code",
+            "Improved Error Handling",
+            "New Functions - like str_contains(), str_starts_with(), str_ends_with(), str_ends_with(), and get_debug_type()"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What does PHP stand for?",
+            "options": [
+              "PHP: Hyperspeed Performance",
+              "PHP: Hyperformat Programming",
+              "PHP: Hypertext Preprocessor",
+              "PHP: Hyperlink Pages"
+            ],
+            "answer": "PHP: Hypertext Preprocessor"
+          }
+        }
+      ]
+    },
+    "install": {
+      "title": "PHP Installation",
+      "sections": [
+        {
+          "heading": "How to Start Using PHP?",
+          "paragraphs": ["To start using PHP, you can:"],
+          "list": [
+            "Use a web host with PHP and database support",
+            "Install a web server on your own PC, and then install PHP and a database"
+          ]
+        },
+        {
+          "heading": "1. Use a Web Host With PHP Support",
+          "paragraphs": [
+            "If your web host already has support for PHP, you do not need to do anything.",
+            "Just create some .php files, place them in your web directory, and the server will automatically parse them for you.",
+            "You do not need to compile anything or install any extra tools.",
+            "Because PHP is free, most web hosts offer PHP support."
+          ]
+        },
+        {
+          "heading": "2. Set Up PHP on Your Own PC",
+          "paragraphs": [
+            "However, if your web server does not support PHP, you must:"
+          ],
+          "list": [
+            "install a web server",
+            "install PHP",
+            "install a database, such as MySQL"
+          ],
+          "note": "The official PHP website (PHP.net) has installation instructions for PHP: http://php.net/manual/en/install.php"
+        },
+        {
+          "heading": "PHP Version",
+          "paragraphs": [
+            "To check your php version you can use the phpversion() function:"
+          ],
+          "example": "echo phpversion();"
+        }
+      ]
+    },
+    "syntax": {
+      "title": "PHP Syntax",
+      "sections": [
+        {
+          "heading": "Basic PHP Syntax",
+          "paragraphs": [
+            "A PHP script is executed on the server, and the plain HTML result is sent back to the browser.",
+            "A PHP script can be placed anywhere in the document.",
+            "A PHP script starts with <?php and ends with ?>:"
+          ],
+          "code": "<?php\n// PHP code goes here\n?>",
+          "notes": [
+            "The default file extension for PHP files is .php.",
+            "A PHP file normally contains some HTML tags and some PHP scripting code."
+          ]
+        },
+        {
+          "heading": "Example",
+          "paragraphs": [
+            "Below, we have an example of a simple PHP file, with a PHP script that uses the PHP echo function to output some text on a web page:"
+          ],
+          "example": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My first PHP page</h1>\n\n<?php\necho 'Hello World!';\n?>\n\n</body>\n</html>",
+          "note": "All PHP statements end with a semicolon (;)."
+        },
+        {
+          "heading": "PHP Case Sensitivity",
+          "paragraphs": [
+            "PHP keywords (e.g. if, else, echo, etc.), classes, functions, and user-defined functions are not case-sensitive.",
+            "In the example below, both echo statements are legal:"
+          ],
+          "example": "<!DOCTYPE html>\n<html>\n<body>\n\n<?php\nECHO 'Hello World!<br>';\necho 'Hello World!<br>';\n?>\n\n</body>\n</html>",
+          "note": "However; all variable names are case-sensitive!"
+        },
+        {
+          "heading": "Variable Name Case Sensitivity",
+          "paragraphs": [
+            "Only the first statement will display the value of the $color variable.",
+            "This is because $color and $COLOR are treated as two different variables:"
+          ],
+          "example": "<!DOCTYPE html>\n<html>\n<body>\n\n<?php\n$color = \"red\";\necho \"My car is $color<br>\";\necho \"My house is $COLOR\";\n?>\n\n</body>\n</html>"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "A PHP script starts and ends with:",
+            "options": [
+              "<?\n//PHP code\n?>",
+              "<?php\n//PHP code\n?>",
+              "<?php\n//PHP code\n?php>"
+            ],
+            "answer": "<?php\n//PHP code\n?>"
+          }
+        }
+      ]
+    },
+    "comments": {
+      "title": "PHP Comments",
+      "sections": [
+        {
+          "heading": "Comments in PHP",
+          "paragraphs": [
+            "PHP comments are not executed as a part of the code. Their only purpose are to be read by someone who is looking at the code."
+          ]
+        },
+        {
+          "heading": "PHP comments are used for",
+          "list": [
+            "Let others understand your code",
+            "Remind yourself of what you did - Most programmers have experienced coming back to their own work a year or two later and having to re-figure out what they did",
+            "Leave out some parts of your code - for testing code"
+          ]
+        },
+        {
+          "heading": "PHP supports two types of comments",
+          "list": ["Single-line comments", "Multi-line comments"]
+        },
+        {
+          "heading": "Syntax for PHP comments",
+          "code": "// This is a single-line comment\n# This is also a single-line comment\n\n/* This is a\nmulti-line\ncomment */"
+        },
+        {
+          "heading": "PHP Single-line Comments",
+          "paragraphs": [
+            "Single line comments start with // or #.",
+            "Any text after the // or # - and to the end of line, will be ignored.",
+            "The following examples uses a single-line comment as an explanation:"
+          ],
+          "examples": [
+            {
+              "title": "A comment before a code line",
+              "code": "// Output welcome message\necho 'Welcome Home!';"
+            },
+            {
+              "title": "A comment at the end of a code line",
+              "code": "echo 'Welcome Home!'; // Output welcome message"
+            }
+          ]
+        },
+        {
+          "heading": "Comments to Ignore Code",
+          "paragraphs": [
+            "We can also use comments to prevent code lines from being executed:"
+          ],
+          "example": "// echo 'Welcome Home!';"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Which one is NOT a legal PHP comment:",
+            "options": [
+              "# comment goes here",
+              "// comment goes here",
+              "'' comment goes here",
+              "/* comment goes here */"
+            ],
+            "answer": "'' comment goes here"
+          }
+        }
+      ]
+    },
+    "variables": {
+      "title": "PHP Variables",
+      "sections": [
+        {
+          "heading": "PHP Variables",
+          "paragraphs": [
+            "Variables are \"containers\" for storing information.",
+            "A variable can have a short name (like $x and $y) or a more descriptive name ($age, $carname, $total_volume)."
+          ]
+        },
+        {
+          "heading": "Rules for PHP variables",
+          "list": [
+            "A variable must start with the $ sign, followed by the name of the variable",
+            "A variable name must start with a letter or the underscore character",
+            "A variable name cannot start with a number",
+            "A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )",
+            "Variable names are case-sensitive ($age and $AGE are two different variables)"
+          ],
+          "note": "Remember that PHP variable names are case-sensitive!"
+        },
+        {
+          "heading": "Create PHP Variables",
+          "paragraphs": [
+            "In PHP, a variable starts with the $ sign, followed by the name of the variable:"
+          ],
+          "example": "$x = 5;\n$y = \"John\";",
+          "notes": [
+            "In the example above, the variable $x will hold the value 5, and the variable $y will hold the value \"John\".",
+            "When you assign a text value to a variable, put quotes around the value.",
+            "Unlike other programming languages, PHP has no command for declaring a variable. It is created the moment you assign a value to it."
+          ]
+        },
+        {
+          "heading": "Output Variables",
+          "paragraphs": [
+            "The PHP echo keyword is often used to output data to the screen.",
+            "The following example will show how to output some text and the value of a variable:"
+          ],
+          "examples": [
+            {
+              "code": "$txt = \"W3Schools.com\";\necho \"I love $txt!\";"
+            },
+            {
+              "code": "$txt = \"W3Schools.com\";\necho 'I love ' . $txt . '!';"
+            },
+            {
+              "code": "$x = 5;\n$y = 4;\necho $x + $y;"
+            }
+          ],
+          "note": "You will learn more about the echo keyword and how to output data in the PHP Echo/Print chapter."
+        },
+        {
+          "heading": "PHP is a Loosely Typed Language",
+          "paragraphs": [
+            "In the example above, notice that we did not have to tell PHP which data type the variable is.",
+            "PHP automatically associates a data type to the variable, depending on its value.",
+            "Since the data types are not set in a strict sense, you can do things like adding a string to an integer without causing an error.",
+            "In PHP 7, type declarations were added. This gives an option to specify the data type expected when declaring a function, and by enabling the strict requirement, which will throw a \"Fatal Error\" on a type mismatch.",
+            "You will learn more about strict and non-strict requirements, and data type declarations in the PHP Functions chapter."
+          ]
+        },
+        {
+          "heading": "PHP Variables and Data Types",
+          "paragraphs": [
+            "In PHP, the data type depends on the value of the variable."
+          ],
+          "example": "$x = 5;      // $x is an integer\n$y = \"John\"; // $y is a string\necho $x;\necho $y;",
+          "list": [
+            "string (text values)",
+            "int (whole numbers)",
+            "float (decimal numbers)",
+            "bool (true or false)",
+            "array (multiple values)",
+            "object (stores data as objects)",
+            "null (empty variable)",
+            "resource (references external resources)",
+            "mixed (any value)"
+          ]
+        },
+        {
+          "heading": "Use var_dump() to Get the Data Type",
+          "paragraphs": [
+            "To get the data type and the value of a variable, use the var_dump() function.",
+            "The var_dump() function returns the data type and the value:"
+          ],
+          "example": "var_dump(5);\nvar_dump(\"John\");\nvar_dump(3.14);\nvar_dump(true);\nvar_dump([2, 3, 56]);\nvar_dump(NULL);"
+        },
+        {
+          "heading": "Assign Multiple Values",
+          "paragraphs": [
+            "You can assign the same value to multiple variables in one line:",
+            "Here, all three variables get the value \"Fruit\":"
+          ],
+          "example": "$x = $y = $z = \"Fruit\";"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Which one is NOT a legal PHP variable name:",
+            "options": ["myVar = 3", "my_Var = 3", "myvar = 3", "my-var = 3"],
+            "answer": "my-var = 3"
+          }
+        }
+      ]
+    },
+    "echo-print": {
+      "title": "PHP echo and print Functions",
+      "sections": [
+        {
+          "heading": "PHP echo and print",
+          "paragraphs": [
+            "With PHP, there are two basic ways to output data to the screen: echo and print.",
+            "The differences are small:"
+          ],
+          "list": [
+            "echo has no return value, while print has a return value of 1 so it can be used in expressions",
+            "echo can take multiple parameters, while print can take only one argument",
+            "echo is marginally faster than print"
+          ]
+        },
+        {
+          "heading": "The PHP echo Function",
+          "paragraphs": [
+            "The echo function can be used with or without parentheses: echo or echo()."
+          ],
+          "examples": [
+            {
+              "code": "echo \"Hello\";\necho(\"Hello\");"
+            }
+          ]
+        },
+        {
+          "heading": "Output Text (echo)",
+          "paragraphs": [
+            "The following example shows how to output text with the echo command (notice that the text can contain HTML markup):"
+          ],
+          "example": "echo \"<h2>PHP is Fun!</h2>\";\necho \"Hello world!<br>\";\necho \"I'm about to learn PHP!<br>\";\necho \"This \", \"string \", \"was \", \"made \", \"with multiple parameters.\";"
+        },
+        {
+          "heading": "Output Variables (echo)",
+          "paragraphs": [
+            "The following example shows how to output text and variables with the echo statement:"
+          ],
+          "example": "$txt1 = \"Learn PHP\";\n$txt2 = \"W3Schools.com\";\n\necho \"<h2>$txt1</h2>\";\necho \"<p>Study PHP at $txt2</p>\";"
+        },
+        {
+          "heading": "Single or Double Quotes? (echo)",
+          "paragraphs": [
+            "Strings are surrounded by quotes, but there is a difference between single and double quotes in PHP.",
+            "When using double quotes, variables can be inserted to the string as in the example above.",
+            "When using single quotes, variables have to be inserted using the . operator, like this:"
+          ],
+          "example": "$txt1 = \"Learn PHP\";\n$txt2 = \"W3Schools.com\";\n\necho '<h2>' . $txt1 . '</h2>';\necho '<p>Study PHP at ' . $txt2 . '</p>';"
+        },
+        {
+          "heading": "The PHP print Function",
+          "paragraphs": [
+            "The print function can be used with or without parentheses: print or print()."
+          ],
+          "examples": [
+            {
+              "code": "print \"Hello\";\nprint(\"Hello\");"
+            }
+          ]
+        },
+        {
+          "heading": "Output Text (print)",
+          "paragraphs": [
+            "The following example shows how to output text with the print command (notice that the text can contain HTML markup):"
+          ],
+          "example": "print \"<h2>PHP is Fun!</h2>\";\nprint \"Hello world!<br>\";\nprint \"I'm about to learn PHP!\";"
+        },
+        {
+          "heading": "Display Variables (print)",
+          "paragraphs": [
+            "The following example shows how to output text and variables with the print statement:"
+          ],
+          "example": "$txt1 = \"Learn PHP\";\n$txt2 = \"W3Schools.com\";\n\nprint \"<h2>$txt1</h2>\";\nprint \"<p>Study PHP at $txt2</p>\";"
+        },
+        {
+          "heading": "Single or Double Quotes? (print)",
+          "paragraphs": [
+            "Strings are surrounded by quotes, but there is a difference between single and double quotes in PHP.",
+            "When using double quotes, variables can be inserted to the string as in the example above.",
+            "When using single quotes, variables have to be inserted using the . operator, like this:"
+          ],
+          "example": "$txt1 = \"Learn PHP\";\n$txt2 = \"W3Schools.com\";\n\nprint '<h2>' . $txt1 . '</h2>';\nprint '<p>Study PHP at ' . $txt2 . '</p>';"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "The two echo statements below will produce the same result:\n$name = 'Linus';\necho '<h1>Hello $name</h1>';\necho \"<h1>Hello $name</h1>\";",
+            "options": ["True", "False"],
+            "answer": "False"
+          }
+        }
+      ]
+    },
+    "data-types": {
+      "title": "PHP Data Types",
+      "sections": [
+        {
+          "heading": "PHP Data Types",
+          "paragraphs": [
+            "Variables can store data of different types, and different data types can do different things.",
+            "PHP supports the following data types:"
+          ],
+          "list": [
+            "string (text values)",
+            "int (whole numbers)",
+            "float (decimal numbers)",
+            "bool (true or false)",
+            "array (multiple values)",
+            "object (stores data as objects)",
+            "null (empty variable)",
+            "resource (references external resources)"
+          ]
+        },
+        {
+          "heading": "Use var_dump() to Get the Data Type",
+          "paragraphs": [
+            "To get the data type and the value of a variable, use the var_dump() function.",
+            "The var_dump() function dumps the data type and the value:"
+          ],
+          "example": "$x = 5;\nvar_dump($x); // dumps int(5)"
+        },
+        {
+          "heading": "PHP String Data Type",
+          "paragraphs": [
+            "A string is a sequence of characters, like \"Hello world!\"."
+          ],
+          "example": "$x = 'Hello world!';\nvar_dump($x);"
+        },
+        {
+          "heading": "PHP Int Data Type",
+          "paragraphs": [
+            "An integer data type is a non-decimal number between -2,147,483,648 and 2,147,483,647.",
+            "Rules for integers:"
+          ],
+          "list": [
+            "An integer must have at least one digit",
+            "An integer must not have a decimal point",
+            "An integer can be either positive or negative",
+            "Integers can be specified in: decimal (base 10), hexadecimal (base 16), octal (base 8), or binary (base 2) notation"
+          ],
+          "example": "$x = 5985;\nvar_dump($x);"
+        },
+        {
+          "heading": "PHP Float Data Type",
+          "paragraphs": [
+            "A float (floating point number) is a number with a decimal point or a number in exponential form."
+          ],
+          "example": "$x = 10.365;\nvar_dump($x);"
+        },
+        {
+          "heading": "PHP Bool Data Type",
+          "paragraphs": [
+            "A Boolean data type represents two possible states: TRUE or FALSE.",
+            "Booleans are often used in conditional testing.",
+            "You will learn more about conditional testing in the PHP If...Else chapter."
+          ],
+          "example": "$x = true;\nvar_dump($x);"
+        },
+        {
+          "heading": "PHP Array Data Type",
+          "paragraphs": [
+            "An array data type stores multiple values in one single variable.",
+            "In the following example $cars is an array:",
+            "You will learn more about arrays later in this tutorial."
+          ],
+          "example": "$cars = array(\"Volvo\",\"BMW\",\"Toyota\");\nvar_dump($cars);"
+        },
+        {
+          "heading": "PHP Object Data Type",
+          "paragraphs": [
+            "An object data type holds an instance of a programmer-defined class.",
+            "Check the data type of $myCar:",
+            "Do not worry if you do not understand the PHP Object syntax, you will learn more about that in the PHP Classes/Objects chapter."
+          ],
+          "example": "class Car {\n  public $color;\n  public $model;\n  public function __construct($color, $model) {\n    $this->color = $color;\n    $this->model = $model;\n  }\n  public function message() {\n    return \"My car is a \" . $this->color . \" \" . $this->model . \"!\";\n  }\n}\n\n$myCar = new Car(\"red\", \"Volvo\");\nvar_dump($myCar);"
+        },
+        {
+          "heading": "PHP NULL Data Type",
+          "paragraphs": [
+            "Null is a special data type which can have only one value: NULL.",
+            "A variable of data type NULL is a variable that has no value assigned to it.",
+            "Tip: If a variable is created without a value, it is automatically assigned a value of NULL.",
+            "Variables can also be emptied by setting the value to NULL:"
+          ],
+          "example": "$x = \"Hello world!\";\n$x = null;\nvar_dump($x);"
+        },
+        {
+          "heading": "Changing Data Type",
+          "paragraphs": [
+            "If you assign an integer value to a variable, the data type will automatically be an integer.",
+            "If you assign a string to the same variable, the data type will change to a string:"
+          ],
+          "examples": [
+            {
+              "code": "$x = 5;\nvar_dump($x);\n\n$x = \"Hello\";\nvar_dump($x);"
+            },
+            {
+              "code": "$x = 5;\n$x = (string) $x;\nvar_dump($x);"
+            }
+          ],
+          "note": "You will learn more about casting in the PHP Casting Chapter."
+        },
+        {
+          "heading": "PHP Resource Data Type",
+          "paragraphs": [
+            "The special resource data type is not an actual data type. It holds a reference to an external resource, such as a database connection or a file handler.",
+            "We will not talk about the resource data type here, since it is an advanced topic."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What data type is the $x variable below:\n$x = true;",
+            "options": ["Integer", "Boolean", "Float", "String"],
+            "answer": "Boolean"
+          }
+        }
+      ]
+    },
+    "strings": {
+      "title": "PHP Strings",
+      "sections": [
+        {
+          "heading": "PHP Strings",
+          "paragraphs": [
+            "A string is a sequence of characters, like \"Hello world!\".",
+            "In PHP, strings are surrounded by either double quotes, or single quotes."
+          ],
+          "example": "echo \"Hello\";\necho 'Hello';",
+          "note": "There is a difference between double quotes and single quotes in PHP."
+        },
+        {
+          "heading": "Double or Single Quotes?",
+          "paragraphs": [
+            "You can use double or single quotes, but you should be aware of the differences between the two.",
+            "A double quoted string will substitute the value of variables, and accepts many special characters, like \\n, \\r, \\t by escaping them."
+          ]
+        },
+        {
+          "heading": "Example (Double Quotes)",
+          "paragraphs": [
+            "A double quoted string will substitute the value of variables:"
+          ],
+          "example": "$x = \"John\";\necho \"Hello $x\"; // Returns Hello John"
+        },
+        {
+          "heading": "Example (Single Quotes)",
+          "paragraphs": [
+            "A single quoted string does not substitute the value of variables, and will output the string as it was written:",
+            "A single quoted string outputs the string as it is:"
+          ],
+          "example": "$x = \"John\";\necho 'Hello $x'; // Returns Hello $x"
+        },
+        {
+          "heading": "Differences between Single and Double Quotes",
+          "table": {
+            "headers": ["Feature", "Single Quotes", "Double Quotes"],
+            "rows": [
+              [
+                "Variable interpolation",
+                "No - variables like $x are output literally",
+                "Yes - variables are replaced with their values"
+              ],
+              [
+                "Escape sequences",
+                "Only \\' and \\\\ are supported",
+                "Supports many, like: \\n, \\t, \\r, \\$, \\\""
+              ],
+              [
+                "Performance",
+                "Slightly faster (PHP does not need to parse the content)",
+                "Slightly slower (PHP must scan for variables and escape sequences)"
+              ],
+              [
+                "Readability",
+                "Cleaner for simple, constant strings",
+                "More readable for strings with many variables (do not need to use the concatenation operator (.))"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Example (Differences)",
+          "paragraphs": [
+            "See some differences beween double and single quotes:"
+          ],
+          "example": "// Using double quotes\n$x = \"John\";\necho \"Hello $x\\n\";\necho \"\\tHow are you?\\n\";\n\n// Using single quotes\n$x = 'John';\necho 'Hello $x\\n';\necho '\\tHow are you?\\n';"
+        },
+        {
+          "heading": "Complete PHP String Reference",
+          "paragraphs": [
+            "For a complete reference of all string functions, go to our complete PHP String Reference."
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "title": "PHP Numbers",
+      "sections": [
+        {
+          "heading": "PHP Numbers",
+          "paragraphs": ["There are three main numeric types in PHP:"],
+          "list": ["Integer", "Float", "Numeric Strings"]
+        },
+        {
+          "heading": "Additional Number Data Types",
+          "paragraphs": [
+            "In addition, PHP has two more data types used for numbers:"
+          ],
+          "list": ["Infinity", "NaN"]
+        },
+        {
+          "heading": "Example (Numeric Variables)",
+          "paragraphs": [
+            "Variables of numeric types are created when you assign a value to them:"
+          ],
+          "example": "$a = 5;\n$b = 5.34;\n$c = \"25\";"
+        },
+        {
+          "heading": "Use var_dump() to Verify Data Type",
+          "paragraphs": [
+            "To verify the data type of any variable/object in PHP, use the var_dump() function:"
+          ],
+          "example": "var_dump($a);\nvar_dump($b);\nvar_dump($c);"
+        },
+        {
+          "heading": "The PHP is_int() Function",
+          "paragraphs": [
+            "The is_int() function checks if the type of a variable is integer.",
+            "An integer is a number without any decimal part: 2, 256, -256, 10358, -179567 are all integers."
+          ],
+          "example": "$x = 5985;\nvar_dump(is_int($x));\n\n$y = 59.85;\nvar_dump(is_int($y));",
+          "notes": [
+            "An integer data type is a non-decimal number between -2147483648 and 2147483647 in 32 bit systems, and between -9223372036854775808 and 9223372036854775807 in 64 bit systems.",
+            "A value greater (or lower) than this, will be stored as float, because it exceeds the limit of an integer.",
+            "Even if 4 * 2.5 is 10, the result is stored as float, because one of the operands is a float (2.5)."
+          ]
+        },
+        {
+          "heading": "Rules for Integers",
+          "list": [
+            "An integer must have at least one digit",
+            "An integer must NOT have a decimal point",
+            "An integer can be either positive or negative",
+            "Integers can be specified in three formats: decimal (base 10), hexadecimal (base 16 - prefixed with 0x), octal (base 8 - prefixed with 0) or binary (base 2 - prefixed with 0b)"
+          ]
+        },
+        {
+          "heading": "Predefined Integer Constants",
+          "list": [
+            "PHP_INT_MAX - The largest integer supported",
+            "PHP_INT_MIN - The smallest integer supported",
+            "PHP_INT_SIZE - The size of an integer in bytes"
+          ]
+        },
+        {
+          "heading": "The PHP is_float() Function",
+          "paragraphs": [
+            "The is_float() function checks if the type of a variable is float.",
+            "A float is a number with a decimal point or a number in exponential form: 2.0, 256.4, 10.358, 7.64E+5, 5.56E-5 are all floats."
+          ],
+          "example": "$x = 10.365;\nvar_dump(is_float($x));",
+          "notes": [
+            "The float data type can commonly store a value up to 1.7976931348623E+308 (platform dependent), and have a maximum precision of 14 digits."
+          ]
+        },
+        {
+          "heading": "Predefined Float Constants (PHP 7.2+)",
+          "list": [
+            "PHP_FLOAT_MAX - The largest representable floating point number",
+            "PHP_FLOAT_MIN - The smallest representable positive floating point number",
+            "PHP_FLOAT_DIG - The number of decimal digits that can be rounded into a float and back without precision loss",
+            "PHP_FLOAT_EPSILON - The smallest representable positive number x, so that x + 1.0 != 1.0"
+          ]
+        },
+        {
+          "heading": "PHP Infinity",
+          "paragraphs": [
+            "The PHP is_finite() function checks whether a value is finite or not.",
+            "A value is finite if it is within the allowed range for a PHP float on this platform.",
+            "The PHP is_infinite() function checks whether a value is infinite or not.",
+            "A value is infinite if it is outside the allowed range for a PHP float on this platform."
+          ],
+          "example": "$x = 1.9e411;\nvar_dump(is_infinite($x));"
+        },
+        {
+          "heading": "PHP NAN and is_nan() Function",
+          "paragraphs": [
+            "NAN stands for \"Not A Number\".",
+            "NAN is returned for invalid mathematical operations.",
+            "The is_nan() function is used to check if a value is \"Not A Number\" (NAN)."
+          ],
+          "example": "$x = acos(8);\nvar_dump($x);\n\n// Check if value is not a number (NaN)\nvar_dump(is_nan($x));"
+        },
+        {
+          "heading": "PHP Number and Numerical Strings",
+          "paragraphs": [
+            "The is_numeric() function is used to check whether a variable is a number or a numeric string.",
+            "This function returns true if the variable is a number or a numeric string, false otherwise."
+          ],
+          "example": "$x = 5985;\nvar_dump(is_numeric($x));\n\n$x = \"5985\";\nvar_dump(is_numeric($x));\n$x = \"59.85\" + 100;\nvar_dump(is_numeric($x));\n\n$x = \"Hello\";\nvar_dump(is_numeric($x));"
+        },
+        {
+          "heading": "PHP Get The Integer Value of a Variable",
+          "paragraphs": [
+            "The intval() function is used to get the integer value of a variable.",
+            "Get the integer value of a float and a string:"
+          ],
+          "example": "$x = 23465.768;\necho intval($x);\n\necho \"<br>\";\n\n$x = \"23465.768\";\necho intval($x);"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is a correct function to use to check if a variable is an integer?",
+            "options": ["isnumeric()", "typeisint()", "is_int()"],
+            "answer": "is_int()"
+          }
+        }
+      ]
+    },
+    "casting": {
+      "title": "PHP Type Casting",
+      "sections": [
+        {
+          "heading": "PHP Type Casting",
+          "paragraphs": [
+            "PHP type casting is an explicit process of converting a value from one data type to another, such as from a float to an integer.",
+            "This gives the developer direct control over the data type of a variable.",
+            "You cast a variable by placing the cast type within parentheses before the variable or value you want to convert."
+          ]
+        },
+        {
+          "heading": "The PHP casting operators are",
+          "list": [
+            "(string) - Converts to data type String",
+            "(int) - Converts to data type Integer",
+            "(float) - Converts to data type Float",
+            "(bool) - Converts to data type Boolean",
+            "(array) - Converts to data type Array",
+            "(object) - Converts to data type Object",
+            "(unset) - Deprecated. Converts to data type NULL"
+          ]
+        },
+        {
+          "heading": "Cast to String",
+          "paragraphs": [
+            "To cast to data type string: Use (string) before the variable or value to convert:"
+          ],
+          "example": "$a = 5;       // Integer\n$b = 5.34;    // Float\n$c = \"hello\"; // String\n$d = true;    // Boolean\n$e = NULL;    // NULL\n\n$a = (string) $a;\n$b = (string) $b;\n$c = (string) $c;\n$d = (string) $d;\n$e = (string) $e;\n\n// Use var_dump() to verify the data type\nvar_dump($a);\nvar_dump($b);\nvar_dump($c);\nvar_dump($d);\nvar_dump($e);"
+        },
+        {
+          "heading": "Cast to Integer",
+          "paragraphs": [
+            "To cast to data type integer: Use (int) before the variable or value to convert:"
+          ],
+          "example": "$a = 5;       // Integer\n$b = 5.34;    // Float\n$c = \"25 km\"; // String\n$d = \"km 25\"; // String\n$e = \"hello\"; // String\n$f = true;    // Boolean\n$g = NULL;    // NULL\n\n$a = (int) $a;\n$b = (int) $b;\n$c = (int) $c;\n$d = (int) $d;\n$e = (int) $e;\n$f = (int) $f;\n$g = (int) $g;"
+        },
+        {
+          "heading": "Cast to Float",
+          "paragraphs": [
+            "To cast to data type float: Use (float) before the variable or value to convert:"
+          ],
+          "example": "$a = 5;       // Integer\n$b = 5.34;    // Float\n$c = \"25 km\"; // String\n$d = \"km 25\"; // String\n$e = \"hello\"; // String\n$f = true;    // Boolean\n$g = NULL;    // NULL\n\n$a = (float) $a;\n$b = (float) $b;\n$c = (float) $c;\n$d = (float) $d;\n$e = (float) $e;\n$f = (float) $f;\n$g = (float) $g;"
+        },
+        {
+          "heading": "Cast to Boolean",
+          "paragraphs": [
+            "To cast to data type boolean: Use (bool) before the variable or value to convert:",
+            "If a value is 0, NULL, false, or empty, (bool) converts it to false, otherwise true. Even -1 converts to true."
+          ],
+          "example": "$a = 5;       // Integer\n$b = 5.34;    // Float\n$c = 0;       // Integer\n$d = -1;      // Integer\n$e = 0.1;     // Float\n$f = \"hello\"; // String\n$g = \"\";      // String\n$h = true;    // Boolean\n$i = NULL;    // NULL\n\n$a = (bool) $a;\n$b = (bool) $b;\n$c = (bool) $c;\n$d = (bool) $d;\n$e = (bool) $e;\n$f = (bool) $f;\n$g = (bool) $g;\n$h = (bool) $h;\n$i = (bool) $i;"
+        },
+        {
+          "heading": "Cast to Array",
+          "paragraphs": [
+            "To cast to data type array: Use (array) before the variable or value to convert:",
+            "When casting to array, most data types converts into an indexed array with one element.",
+            "NULL values converts into an empty array object.",
+            "An object converts into an associative array where the property names becomes the keys and the property values becomes the values:"
+          ],
+          "example": "$a = 5;       // Integer\n$b = 5.34;    // Float\n$c = \"hello\"; // String\n$d = true;    // Boolean\n$e = NULL;    // NULL\n\n$a = (array) $a;\n$b = (array) $b;\n$c = (array) $c;\n$d = (array) $d;\n$e = (array) $e;",
+          "examples": [
+            {
+              "code": "class Car {\n  public $color;\n  public $model;\n  public function __construct($color, $model) {\n    $this->color = $color;\n    $this->model = $model;\n  }\n  public function message() {\n    return \"My car is a \" . $this->color . \" \" . $this->model . \"!\";\n  }\n}\n\n$myCar = new Car(\"red\", \"Volvo\");\n$myCar = (array) $myCar;\nvar_dump($myCar);"
+            }
+          ]
+        },
+        {
+          "heading": "Cast to Object",
+          "paragraphs": [
+            "To cast to data type object: Use (object) before the variable or value to convert:",
+            "When casting to object, most data types converts into an object with one property, named \"scalar\", with the corresponding value.",
+            "NULL values converts to an empty object.",
+            "Indexed arrays converts to objects with the index number as property name and the value as property value.",
+            "Associative arrays converts into objects with the keys as property names and values as property values."
+          ],
+          "example": "$a = 5;       // Integer\n$b = 5.34;    // Float\n$c = \"hello\"; // String\n$d = true;    // Boolean\n$e = NULL;    // NULL\n\n$a = (object) $a;\n$b = (object) $b;\n$c = (object) $c;\n$d = (object) $d;\n$e = (object) $e;",
+          "examples": [
+            {
+              "code": "$a = array(\"Volvo\", \"BMW\", \"Toyota\"); // indexed array\n$b = array(\"Peter\"=>\"35\", \"Ben\"=>\"37\", \"Joe\"=>\"43\"); // associative array\n\n$a = (object) $a;\n$b = (object) $b;"
+            }
+          ]
+        },
+        {
+          "heading": "Cast to NULL",
+          "paragraphs": [
+            "Note: The (unset) statement was deprecated in PHP 7.2.0, and removed in PHP 8.0.0.",
+            "To cast to NULL, set the variable to NULL:"
+          ],
+          "example": "$a = 5;       // Integer\n$b = 5.34;    // Float\n$c = \"hello\"; // String\n$d = true;    // Boolean\n$e = NULL;    // NULL\n\n$a = NULL;\n$b = NULL;\n$c = NULL;\n$d = NULL;\n$e = NULL;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is a correct syntax to cast a float into a string?",
+            "options": [
+              "$x = (string) 5.6;",
+              "$x = tostring(5.6);",
+              "$x = (5.6).tostr();"
+            ],
+            "answer": "$x = (string) 5.6;"
+          }
+        }
+      ]
+    },
+    "math": {
+      "title": "PHP Math Functions",
+      "sections": [
+        {
+          "heading": "PHP Math Functions",
+          "paragraphs": [
+            "PHP has a set of math functions that allows you to perform mathematical tasks on numbers."
+          ]
+        },
+        {
+          "heading": "PHP pi() Function",
+          "paragraphs": ["The pi() function returns the value of PI:"],
+          "example": "echo(pi());"
+        },
+        {
+          "heading": "PHP min() and max() Functions",
+          "paragraphs": [
+            "The min() and max() functions can be used to find the lowest or highest value in a list of arguments:"
+          ],
+          "example": "echo(min(0, 150, -8, -200));\necho(max(0, 150, -8, -200));"
+        },
+        {
+          "heading": "PHP abs() Function",
+          "paragraphs": [
+            "The abs() function returns the absolute (positive) value of a number:"
+          ],
+          "example": "echo(abs(-6.7));"
+        },
+        {
+          "heading": "PHP sqrt() Function",
+          "paragraphs": [
+            "The sqrt() function returns the square root of a number:"
+          ],
+          "example": "echo(sqrt(64));"
+        },
+        {
+          "heading": "PHP round() Function",
+          "paragraphs": [
+            "The round() function rounds a floating-point number to its nearest integer:"
+          ],
+          "example": "echo(round(3.60));\necho(round(0.49));"
+        },
+        {
+          "heading": "Random Numbers",
+          "paragraphs": [
+            "The PHP rand() function generates a random number:",
+            "To get more control over the random number, you can add the optional min and max parameters to specify the lowest integer and the highest integer to be returned.",
+            "For example, if you want a random integer between 10 and 100 (inclusive), use rand(10, 100):"
+          ],
+          "examples": [
+            {
+              "code": "echo(rand());"
+            },
+            {
+              "code": "echo(rand(10, 100));"
+            }
+          ]
+        },
+        {
+          "heading": "Complete PHP Math Reference",
+          "paragraphs": [
+            "For a complete reference of all math functions, go to our complete PHP Math Reference.",
+            "The PHP math reference contains description and example of use, for each function."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is a correct function to return Pi?",
+            "options": ["echo(pi());", "echo(Math.pi());", "echo(Math(pi));"],
+            "answer": "echo(pi());"
+          }
+        }
+      ]
+    },
+    "constants": {
+      "title": "PHP Constants",
+      "sections": [
+        {
+          "heading": "PHP Constants",
+          "paragraphs": [
+            "Constants are like variables, except that once they are defined they cannot be changed or undefined.",
+            "PHP constants can be defined with the define() function or the const keyword.",
+            "A valid constant name starts with a letter or underscore (no $ sign before the constant name)."
+          ]
+        },
+        {
+          "heading": "PHP define() Function",
+          "paragraphs": [
+            "The define() function defines a constant at run-time.",
+            "The define() function always define constants in the global scope, and can be declared inside conditional blocks (if/else, loops, functions), but they cannot be used to define class constants."
+          ],
+          "syntax": "define(CONSTANT_NAME, value);",
+          "parameters": [
+            "CONSTANT_NAME - Specifies the name of the constant (the name is case-sensitive)",
+            "value - Specifies the value of the constant"
+          ]
+        },
+        {
+          "heading": "Example (define)",
+          "paragraphs": ["Create a constant named \"GREETING\" with define():"],
+          "example": "define(\"GREETING\", \"Welcome to W3Schools.com!\");\necho GREETING;"
+        },
+        {
+          "heading": "Example (define inside function)",
+          "paragraphs": [
+            "This example declares a constant inside a function, and output it outside the function:"
+          ],
+          "example": "function myTest() {\n  define(\"GREETING\", \"Welcome to W3Schools.com!\");\n}\n\nmyTest();\n\necho GREETING;"
+        },
+        {
+          "heading": "PHP const Keyword",
+          "paragraphs": [
+            "The const keyword defines a constant at compile-time.",
+            "Constants defined with the const keyword must be declared at the top-level scope because they are defined at compile-time. This means that they cannot be declared inside functions, loops, if/else statements or try/catch blocks.",
+            "Constants defined with the const keyword can be used to define class constants.",
+            "Constants defined with the const keyword are case-sensitive."
+          ],
+          "syntax": "const CONSTANT_NAME = value;"
+        },
+        {
+          "heading": "Example (const)",
+          "paragraphs": ["Create a constant named \"GREETING\" with const:"],
+          "example": "const GREETING = \"Welcome to W3Schools.com!\";\necho GREETING;"
+        },
+        {
+          "heading": "PHP Array Constants",
+          "paragraphs": [
+            "You can also create Array constants with define() or const:"
+          ],
+          "example": "// Using define()\ndefine(\"CARS\", array(\"Volvo\", \"BMW\", \"Toyota\"));\necho CARS[0];\n\n// Using const\nconst ANIMALS = array(\"Cat\", \"Dog\", \"Horse\");\necho ANIMALS[1];"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is a correct syntax to define a constant?",
+            "options": [
+              "constant(\"MESSAGE\", \"Welcome to my home\");",
+              "constant \"MESSAGE\" = \"Welcome to my home\";",
+              "define(\"MESSAGE\", \"Welcome to my home\");"
+            ],
+            "answer": "define(\"MESSAGE\", \"Welcome to my home\");"
+          }
+        }
+      ]
+    },
+    "magic-constants": {
+      "title": "PHP Magic Constants",
+      "sections": [
+        {
+          "heading": "PHP Magic Constants",
+          "paragraphs": [
+            "PHP has nine predefined constants that change value depending on where they are used, also called the \"magic constants\".",
+            "The magic constants provide information about the current state of the script, such as the file name, directory name, line number, function name, class name, and more.",
+            "The magic constants always start and end with double underscores (__), except for the ClassName::class constant.",
+            "The magic constants are not case-sensitive, meaning __LINE__ returns the same as __line__.",
+            "The following table lists the magic constants, with descriptions and examples:"
+          ]
+        },
+        {
+          "heading": "Magic Constants Table",
+          "table": {
+            "headers": ["Constant", "Description"],
+            "rows": [
+              [
+                "__CLASS__",
+                "If used inside a class, the class name is returned."
+              ],
+              ["__DIR__", "The directory of the file."],
+              ["__FILE__", "The file name including the full path."],
+              [
+                "__FUNCTION__",
+                "If inside a function, the function name is returned."
+              ],
+              ["__LINE__", "The current line number of the file."],
+              [
+                "__METHOD__",
+                "If used inside a function that belongs to a class, both class and function name is returned."
+              ],
+              [
+                "__NAMESPACE__",
+                "If used inside a namespace, the name of the namespace is returned."
+              ],
+              [
+                "__TRAIT__",
+                "If used inside a trait, the trait name is returned."
+              ],
+              [
+                "ClassName::class",
+                "Returns the name of the specified class and the name of the namespace, if any."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "operators": {
+      "title": "PHP Operators",
+      "sections": [
+        {
+          "heading": "PHP Operators",
+          "paragraphs": [
+            "Operators are special symbols used to perform operations on variables and values.",
+            "PHP divides the operators in the following groups:"
+          ],
+          "list": [
+            "Arithmetic operators",
+            "Assignment operators",
+            "Comparison operators",
+            "Increment/Decrement operators",
+            "Logical operators",
+            "String operators",
+            "Array operators",
+            "Conditional operators"
+          ]
+        },
+        {
+          "heading": "PHP Arithmetic Operators",
+          "paragraphs": [
+            "The arithmetic operators are used with numeric values to perform common mathematical operations, such as addition, subtraction, multiplication etc."
+          ],
+          "table": {
+            "headers": ["Operator", "Name", "Example", "Result"],
+            "rows": [
+              ["+", "Addition", "$x + $y", "Sum of $x and $y"],
+              ["-", "Subtraction", "$x - $y", "Difference of $x and $y"],
+              ["*", "Multiplication", "$x * $y", "Product of $x and $y"],
+              ["/", "Division", "$x / $y", "Quotient of $x and $y"],
+              ["%", "Modulus", "$x % $y", "Remainder of $x divided by $y"],
+              [
+                "**",
+                "Exponentiation",
+                "$x ** $y",
+                "Result of raising $x to the $y's power"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "PHP Assignment Operators",
+          "paragraphs": [
+            "The assignment operators are used with numeric values to assign values to variables."
+          ],
+          "table": {
+            "headers": ["Assignment", "Same as...", "Description"],
+            "rows": [
+              [
+                "$x = $y",
+                "$x = $y",
+                "Assign (the left operand is set to the value of the expression on the right)"
+              ],
+              ["$x += $y", "$x = $x + $y", "Add and assign"],
+              ["$x -= $y", "$x = $x - $y", "Subtract and assign"],
+              ["$x *= $y", "$x = $x * $y", "Multiply and assign"],
+              ["$x /= $y", "$x = $x / $y", "Divide and assign"],
+              ["$x %= $y", "$x = $x % $y", "Modulus and assign"]
+            ]
+          }
+        },
+        {
+          "heading": "PHP Comparison Operators",
+          "paragraphs": [
+            "The comparison operators are used to compare two values (number or string) and return a boolean result."
+          ],
+          "table": {
+            "headers": ["Operator", "Name", "Example", "Result"],
+            "rows": [
+              ["==", "Equal", "$x == $y", "Returns true if $x is equal to $y"],
+              [
+                "===",
+                "Identical",
+                "$x === $y",
+                "Returns true if $x is equal to $y, and they are of the same type"
+              ],
+              [
+                "!=",
+                "Not equal",
+                "$x != $y",
+                "Returns true if $x is not equal to $y"
+              ],
+              [
+                "<>",
+                "Not equal",
+                "$x <> $y",
+                "Returns true if $x is not equal to $y"
+              ],
+              [
+                "!==",
+                "Not identical",
+                "$x !== $y",
+                "Returns true if $x is not equal to $y, or they are not of the same type"
+              ],
+              [
+                ">",
+                "Greater than",
+                "$x > $y",
+                "Returns true if $x is greater than $y"
+              ],
+              [
+                "<",
+                "Less than",
+                "$x < $y",
+                "Returns true if $x is less than $y"
+              ],
+              [
+                ">=",
+                "Greater than or equal to",
+                "$x >= $y",
+                "Returns true if $x is greater than or equal to $y"
+              ],
+              [
+                "<=",
+                "Less than or equal to",
+                "$x <= $y",
+                "Returns true if $x is less than or equal to $y"
+              ],
+              [
+                "<=>",
+                "Spaceship",
+                "$x <=> $y",
+                "Returns an integer less than, equal to, or greater than zero, depending on if $x is less than, equal to, or greater than $y. Introduced in PHP 7."
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "PHP Increment / Decrement Operators",
+          "paragraphs": [
+            "The increment/decrement operators are used to increment or decrement a variable's value by one."
+          ],
+          "table": {
+            "headers": ["Operator", "Same as...", "Description"],
+            "rows": [
+              [
+                "++$x",
+                "Pre-increment",
+                "Increments $x by one, then returns $x"
+              ],
+              [
+                "$x++",
+                "Post-increment",
+                "Returns $x, then increments $x by one"
+              ],
+              [
+                "--$x",
+                "Pre-decrement",
+                "Decrements $x by one, then returns $x"
+              ],
+              [
+                "$x--",
+                "Post-decrement",
+                "Returns $x, then decrements $x by one"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "PHP Logical Operators",
+          "paragraphs": [
+            "The logical operators are used to combine conditional statements and return a boolean result."
+          ],
+          "table": {
+            "headers": ["Operator", "Name", "Example", "Result"],
+            "rows": [
+              ["and", "And", "$x and $y", "True if both $x and $y are true"],
+              ["or", "Or", "$x or $y", "True if either $x or $y is true"],
+              [
+                "xor",
+                "Xor",
+                "$x xor $y",
+                "True if either $x or $y is true, but not both"
+              ],
+              ["&&", "And", "$x && $y", "True if both $x and $y are true"],
+              ["||", "Or", "$x || $y", "True if either $x or $y is true"],
+              ["!", "Not", "!$x", "True if $x is not true"]
+            ]
+          }
+        },
+        {
+          "heading": "PHP String Operators",
+          "paragraphs": [
+            "The string operators are used to concatenate strings."
+          ],
+          "table": {
+            "headers": ["Operator", "Name", "Example", "Result"],
+            "rows": [
+              [
+                ".",
+                "Concatenation",
+                "$txt1 . $txt2",
+                "Concatenation of $txt1 and $txt2"
+              ],
+              [
+                ".=",
+                "Concatenation assignment",
+                "$txt1 .= $txt2",
+                "Appends $txt2 to $txt1"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "PHP Array Operators",
+          "paragraphs": ["The array operators are used to compare arrays."],
+          "table": {
+            "headers": ["Operator", "Name", "Example", "Result"],
+            "rows": [
+              ["+", "Union", "$x + $y", "Union of $x and $y"],
+              [
+                "==",
+                "Equality",
+                "$x == $y",
+                "Returns true if $x and $y have the same key/value pairs"
+              ],
+              [
+                "===",
+                "Identity",
+                "$x === $y",
+                "Returns true if $x and $y have the same key/value pairs in the same order and of the same types"
+              ],
+              [
+                "!=",
+                "Inequality",
+                "$x != $y",
+                "Returns true if $x is not equal to $y"
+              ],
+              [
+                "<>",
+                "Inequality",
+                "$x <> $y",
+                "Returns true if $x is not equal to $y"
+              ],
+              [
+                "!==",
+                "Non-identity",
+                "$x !== $y",
+                "Returns true if $x is not identical to $y"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "PHP Conditional Operators",
+          "paragraphs": [
+            "The conditional operators are used to set a value depending on conditions (shorthand for if...else):"
+          ],
+          "table": {
+            "headers": ["Operator", "Name", "Example", "Result"],
+            "rows": [
+              [
+                "?:",
+                "Ternary",
+                "$x = expr1 ? expr2 : expr3",
+                "Returns the value of $x. The value of $x is expr2 if expr1 = TRUE. The value of $x is expr3 if expr1 = FALSE"
+              ],
+              [
+                "??",
+                "Null coalescing",
+                "$x = expr1 ?? expr2",
+                "Returns the value of $x. The value of $x is expr1 if expr1 exists, and is not NULL. If expr1 does not exist, or is NULL, the value of $x is expr2. Introduced in PHP 7"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Which one is a correct syntax for incrementing $x by 1:",
+            "options": ["$x + 1;", "$x++;", "1 + $x;"],
+            "answer": "$x++;"
+          }
+        }
+      ]
+    }
+  }
+}

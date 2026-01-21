@@ -1,0 +1,1423 @@
+{
+    "course": {
+      "id": "canvas",
+      "title": "HTML Canvas Tutorial",
+      "description": "Learn how to draw graphics, animations, and games using HTML Canvas."
+    },
+  
+    "sections": [
+      {
+        "title": "HTML Canvas Tutorial",
+        "lessons": [
+          { "id": "canvas-intro", "title": "Canvas Intro" },
+          { "id": "canvas-drawing", "title": "Canvas Drawing" },
+          { "id": "canvas-coordinates", "title": "Canvas Coordinates" },
+          { "id": "canvas-lines", "title": "Canvas Lines" },
+          { "id": "canvas-fill-stroke", "title": "Canvas Fill and Stroke" },
+          { "id": "canvas-shapes", "title": "Canvas Shapes" },
+          { "id": "canvas-rectangles", "title": "Canvas Rectangles" },
+          { "id": "canvas-clearrect", "title": "Canvas clearRect()" },
+          { "id": "canvas-circles", "title": "Canvas Circles" },
+          { "id": "canvas-curves", "title": "Canvas Curves" },
+          { "id": "canvas-linear-gradient", "title": "Canvas Linear Gradient" },
+          { "id": "canvas-radial-gradient", "title": "Canvas Radial Gradient" },
+          { "id": "canvas-text", "title": "Canvas Text" },
+          { "id": "canvas-text-color", "title": "Canvas Text Color" },
+          { "id": "canvas-text-alignment", "title": "Canvas Text Alignment" },
+          { "id": "canvas-shadows", "title": "Canvas Shadows" },
+          { "id": "canvas-images", "title": "Canvas Images" },
+          { "id": "canvas-transformations", "title": "Canvas Transformations" },
+          { "id": "canvas-clipping", "title": "Canvas Clipping" },
+          { "id": "canvas-compositing", "title": "Canvas Compositing" },
+          { "id": "canvas-examples", "title": "Canvas Examples" }
+        ]
+      }
+    ],
+  
+    "content": {
+            "canvas-intro": {
+              "title": "Canvas Intro",
+              "sections": [
+                {
+                  "heading": "Learn Canvas",
+                  "paragraphs": [
+                    "The HTML <canvas> element is used to draw graphics on a web page.",
+                    "The <canvas> element is only a container for graphics. You must use JavaScript to draw graphics.",
+                    "Canvas supports drawing paths, boxes, circles, text, and images.",
+                    "Canvas is supported by all major browsers."
+                  ]
+                },
+                {
+                  "heading": "What You Should Already Know",
+                  "points": [
+                    "HTML",
+                    "Basic JavaScript"
+                  ]
+                },
+                {
+                  "heading": "What is HTML Canvas?",
+                  "paragraphs": [
+                    "The HTML <canvas> element is used to draw graphics dynamically using JavaScript.",
+                    "Canvas itself does not draw anything. JavaScript is required.",
+                    "Canvas supports drawing shapes, text, images, and animations."
+                  ]
+                },
+                {
+                  "heading": "Canvas Capabilities",
+                  "points": [
+                    "Draw text with or without animation",
+                    "Draw shapes and graphics",
+                    "Create charts and visualizations",
+                    "Support animations",
+                    "Respond to user interactions",
+                    "Used for games and graphical applications"
+                  ]
+                },
+                {
+                  "heading": "Canvas Example",
+                  "paragraphs": [
+                    "A basic canvas element looks like this:"
+                  ],
+                  "code": "<canvas id=\"myCanvas\" width=\"200\" height=\"100\"></canvas>"
+                },
+                {
+                  "heading": "Canvas Explanation",
+                  "points": [
+                    "The id attribute is required to access the canvas using JavaScript",
+                    "Width and height define the canvas size",
+                    "Default canvas size is 300px × 150px",
+                    "Multiple canvas elements can exist on one page",
+                    "Canvas has no border by default"
+                  ]
+                },
+                {
+                  "heading": "Canvas with Border Example",
+                  "code": "<canvas id=\"myCanvas\" width=\"200\" height=\"100\" style=\"border:1px solid #000000;\"></canvas>"
+                },
+                {
+                  "heading": "Important Notes",
+                  "points": [
+                    "Canvas must be controlled using JavaScript",
+                    "Canvas is ideal for animations and games",
+                    "Canvas supports user interaction",
+                    "Canvas graphics do not retain object structure after drawing"
+                  ]
+                }
+              ]
+            },
+          
+            "canvas-drawing": {
+              "title": "Canvas Drawing",
+              "sections": [
+                {
+                  "heading": "Draw on the Canvas With JavaScript",
+                  "paragraphs": [
+                    "Drawing on the canvas is done using JavaScript.",
+                    "The canvas is initially blank and requires a script to draw graphics.",
+                    "To draw, you must access the rendering context of the canvas."
+                  ]
+                },
+                {
+                  "heading": "Canvas Example",
+                  "paragraphs": [
+                    "The following example draws a red rectangle on the canvas:"
+                  ],
+                  "code": "<canvas id=\"myCanvas\" width=\"200\" height=\"100\" style=\"border:1px solid black;\"></canvas>\n\n<script>\nconst canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\nctx.fillStyle = \"red\";\nctx.fillRect(0, 0, 150, 75);\n</script>"
+                },
+                {
+                  "heading": "Step 1: Find the Canvas Element",
+                  "paragraphs": [
+                    "First, you must find the canvas element in the HTML document.",
+                    "This is done using the getElementById() method."
+                  ],
+                  "code": "const canvas = document.getElementById(\"myCanvas\");"
+                },
+                {
+                  "heading": "Step 2: Create a Drawing Object",
+                  "paragraphs": [
+                    "Next, you need a drawing object.",
+                    "The getContext() method returns an object with drawing methods."
+                  ],
+                  "code": "const ctx = canvas.getContext(\"2d\");"
+                },
+                {
+                  "heading": "Step 3: Draw on the Canvas",
+                  "paragraphs": [
+                    "You can now draw on the canvas using JavaScript methods.",
+                    "The fillStyle property sets the color.",
+                    "The fillRect() method draws a filled rectangle."
+                  ],
+                  "code": "ctx.fillStyle = \"red\";\nctx.fillRect(0, 0, 150, 75);"
+                },
+                {
+                  "heading": "Important Notes",
+                  "points": [
+                    "Canvas is empty by default",
+                    "JavaScript is required to draw graphics",
+                    "fillStyle can be a color, gradient, or pattern",
+                    "Default fill color is black",
+                    "Canvas is commonly used for games and animations"
+                  ]
+                }
+              ]
+            },
+            
+                "canvas-coordinates": { 
+                  "title": "Canvas Coordinates",
+                  "sections": [
+                    {
+                      "heading": "Canvas Coordinates",
+                      "paragraphs": [
+                        "The HTML canvas is a two-dimensional grid.",
+                        "The upper-left corner of the canvas has the coordinates (0,0).",
+                        "All drawings are positioned relative to this coordinate system."
+                      ]
+                    },
+                    {
+                      "heading": "Draw a Rectangle",
+                      "paragraphs": [
+                        "To draw a rectangle on the canvas, use the fillRect() method.",
+                        "The method defines the starting point, width, and height."
+                      ],
+                      "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.fillRect(0, 0, 150, 75);"
+                    },
+                    {
+                      "heading": "Draw a Line",
+                      "paragraphs": [
+                        "To draw a straight line, use moveTo() and lineTo() methods.",
+                        "The stroke() method is used to make the line visible."
+                      ],
+                      "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.moveTo(0, 0);\nctx.lineTo(200, 100);\nctx.stroke();"
+                    },
+                    {
+                      "heading": "Draw a Circle",
+                      "paragraphs": [
+                        "To draw a circle, use the arc() method.",
+                        "The beginPath() method starts a new drawing path.",
+                        "The arc() method defines the center, radius, and angle."
+                      ],
+                      "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\nctx.arc(95, 50, 40, 0, 2 * Math.PI);\nctx.stroke();"
+                    },
+                    {
+                      "heading": "Important Notes",
+                      "points": [
+                        "Canvas uses a 2D coordinate system",
+                        "Top-left corner starts at (0,0)",
+                        "x-axis moves right, y-axis moves down",
+                        "stroke() is required to display lines and shapes",
+                        "arc() uses radians, not degrees"
+                      ]
+                    }
+                  ]
+                },
+                "canvas-lines": {
+                      "title": "Canvas Lines",
+                      "sections": [
+                        {
+                          "heading": "Canvas Line Drawing",
+                          "paragraphs": [
+                            "To draw a line in canvas, several methods are used together.",
+                            "The line is not drawn until the stroke() method is called."
+                          ]
+                        },
+                        {
+                          "heading": "Line Drawing Methods",
+                          "table": [
+                            {
+                              "method": "beginPath()",
+                              "description": "Declares a new path",
+                              "draws": "No"
+                            },
+                            {
+                              "method": "moveTo(x, y)",
+                              "description": "Sets the starting point",
+                              "draws": "No"
+                            },
+                            {
+                              "method": "lineTo(x, y)",
+                              "description": "Sets the ending point",
+                              "draws": "No"
+                            },
+                            {
+                              "method": "stroke()",
+                              "description": "Draws the line",
+                              "draws": "Yes"
+                            }
+                          ]
+                        },
+                        {
+                          "heading": "Draw a Line Example",
+                          "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\nctx.moveTo(0, 0);\nctx.lineTo(200, 100);\nctx.stroke();"
+                        },
+                        {
+                          "heading": "lineWidth Property",
+                          "paragraphs": [
+                            "The lineWidth property defines the thickness of the line.",
+                            "It must be set before calling stroke()."
+                          ],
+                          "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\nctx.moveTo(0, 0);\nctx.lineTo(200, 100);\nctx.lineWidth = 10;\nctx.stroke();"
+                        },
+                        {
+                          "heading": "strokeStyle Property",
+                          "paragraphs": [
+                            "The strokeStyle property defines the color of the line.",
+                            "It must be set before calling stroke()."
+                          ],
+                          "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\nctx.moveTo(0, 0);\nctx.lineTo(200, 100);\nctx.lineWidth = 10;\nctx.strokeStyle = \"red\";\nctx.stroke();"
+                        },
+                        {
+                          "heading": "lineCap Property",
+                          "paragraphs": [
+                            "The lineCap property defines how the end of a line looks.",
+                            "Possible values: butt, round, square.",
+                            "Default value is butt."
+                          ],
+                          "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\nctx.moveTo(0, 0);\nctx.lineTo(175, 75);\nctx.lineWidth = 10;\nctx.lineCap = \"round\";\nctx.stroke();"
+                        },
+                        {
+                          "heading": "Important Notes",
+                          "points": [
+                            "stroke() must be called to display the line",
+                            "lineWidth controls thickness",
+                            "strokeStyle controls color",
+                            "lineCap controls line ending style",
+                            "beginPath() should be used before drawing a new line"
+                          ]
+                        }
+                      ]
+                    },
+                    
+                        "canvas-fill-stroke": {
+                          "title": "Canvas Fill and Stroke",
+                          "sections": [
+                            {
+                              "heading": "Canvas Fill and Stroke",
+                              "paragraphs": [
+                                "To define fill-color and outline-color for shapes or objects in canvas, we use the fillStyle and strokeStyle properties."
+                              ]
+                            },
+                            {
+                              "heading": "Canvas Properties",
+                              "table": [
+                                {
+                                  "property": "fillStyle",
+                                  "description": "Defines the fill color of the object or shape"
+                                },
+                                {
+                                  "property": "strokeStyle",
+                                  "description": "Defines the outline color of the object or shape"
+                                }
+                              ]
+                            },
+                            {
+                              "heading": "fillStyle Property",
+                              "paragraphs": [
+                                "The fillStyle property defines the fill color of an object.",
+                                "The value can be a color name, RGB, HEX, HSL, gradient, or pattern."
+                              ],
+                              "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.fillStyle = \"green\";\nctx.fillRect(10, 10, 100, 100);"
+                            },
+                            {
+                              "heading": "strokeStyle Property",
+                              "paragraphs": [
+                                "The strokeStyle property defines the outline color.",
+                                "It can use colors, gradients, or patterns."
+                              ],
+                              "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.strokeStyle = \"blue\";\nctx.lineWidth = 5;\nctx.strokeRect(10, 10, 100, 100);"
+                            },
+                            {
+                              "heading": "Combining fillStyle and strokeStyle",
+                              "paragraphs": [
+                                "Both fill and stroke can be applied together on the same shape."
+                              ],
+                              "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.fillStyle = \"green\";\nctx.fillRect(10, 10, 100, 100);\n\nctx.strokeStyle = \"blue\";\nctx.lineWidth = 5;\nctx.strokeRect(10, 10, 100, 100);"
+                            },
+                            {
+                              "heading": "Using Alpha Channel (Opacity)",
+                              "paragraphs": [
+                                "Opacity can be added using RGB values with alpha channel.",
+                                "Alpha values range from 0 (transparent) to 1 (opaque)."
+                              ],
+                              "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.fillStyle = \"rgb(0 255 0 / 50%)\";\nctx.fillRect(10, 10, 100, 100);\n\nctx.strokeStyle = \"rgb(0 0 255 / 50%)\";\nctx.lineWidth = 5;\nctx.strokeRect(10, 10, 100, 100);"
+                            },
+                            {
+                              "heading": "Important Notes",
+                              "points": [
+                                "fillStyle sets the inside color of shapes",
+                                "strokeStyle sets the border color",
+                                "lineWidth controls border thickness",
+                                "Alpha channel controls transparency",
+                                "Both properties can be used together"
+                              ]
+                            }
+                          ]
+                        },
+                        
+                            "canvas-shapes": {
+                              "title": "Canvas Shapes",
+                              "sections": [
+                                {
+                                  "heading": "Canvas Shapes",
+                                  "paragraphs": [
+                                    "To draw different shapes that consist of straight lines in canvas, we use several path methods.",
+                                    "These methods allow us to create custom shapes by defining points and connecting them."
+                                  ]
+                                },
+                                {
+                                  "heading": "Canvas Shape Methods",
+                                  "table": [
+                                    {
+                                      "method": "beginPath()",
+                                      "description": "Declares that a new path is about to be drawn",
+                                      "draws": "No"
+                                    },
+                                    {
+                                      "method": "moveTo(x, y)",
+                                      "description": "Sets the starting point of the shape",
+                                      "draws": "No"
+                                    },
+                                    {
+                                      "method": "lineTo(x, y)",
+                                      "description": "Sets the next point of the shape",
+                                      "draws": "No"
+                                    },
+                                    {
+                                      "method": "stroke()",
+                                      "description": "Draws the shape using the defined path",
+                                      "draws": "Yes"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "heading": "Draw a Shape Example",
+                                  "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\n\n// Start point\nctx.moveTo(20, 20);\n\n// Draw lines\nctx.lineTo(100, 20);\nctx.lineTo(175, 100);\nctx.lineTo(20, 100);\n\n// Close shape\nctx.lineTo(20, 20);\n\nctx.stroke();"
+                                },
+                                {
+                                  "heading": "Another Shape Example",
+                                  "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\nctx.moveTo(100, 20);\nctx.lineTo(180, 100);\nctx.lineTo(20, 100);\nctx.lineTo(100, 20);\nctx.stroke();"
+                                },
+                                {
+                                  "heading": "strokeStyle Property",
+                                  "paragraphs": [
+                                    "The strokeStyle property defines the color of the shape outline.",
+                                    "It must be set before calling the stroke() method."
+                                  ]
+                                },
+                                {
+                                  "heading": "Shape with strokeStyle",
+                                  "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\n\n// Rectangle\nctx.moveTo(20, 20);\nctx.lineTo(180, 20);\nctx.lineTo(180, 100);\nctx.lineTo(20, 100);\nctx.lineTo(20, 20);\n\n// Triangle\nctx.moveTo(100, 20);\nctx.lineTo(180, 100);\nctx.lineTo(20, 100);\nctx.lineTo(100, 20);\n\nctx.strokeStyle = \"red\";\nctx.stroke();"
+                                },
+                                {
+                                  "heading": "Important Notes",
+                                  "points": [
+                                    "beginPath() must be called before drawing a new shape",
+                                    "moveTo() sets the starting point",
+                                    "lineTo() creates lines",
+                                    "stroke() actually draws the shape",
+                                    "strokeStyle controls the line color"
+                                  ]
+                                }
+                              ]
+                            },
+                                "canvas-rectangles": {
+                                  "title": "Canvas Rectangles",
+                                  "sections": [
+                                    {
+                                      "heading": "Canvas Rectangles",
+                                      "paragraphs": [
+                                        "The HTML canvas provides three main methods to draw rectangles.",
+                                        "These methods allow you to draw filled, outlined, or defined rectangles."
+                                      ]
+                                    },
+                                    {
+                                      "heading": "Rectangle Methods",
+                                      "list": [
+                                        "rect() – Defines a rectangle path",
+                                        "fillRect() – Draws a filled rectangle",
+                                        "strokeRect() – Draws an outlined rectangle"
+                                      ]
+                                    },
+                                    {
+                                      "heading": "rect() Method",
+                                      "description": "The rect() method defines a rectangle but does not draw it until stroke() or fill() is used.",
+                                      "parameters": [
+                                        { "name": "x", "description": "X-coordinate of top-left corner" },
+                                        { "name": "y", "description": "Y-coordinate of top-left corner" },
+                                        { "name": "width", "description": "Width of rectangle" },
+                                        { "name": "height", "description": "Height of rectangle" }
+                                      ],
+                                      "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.rect(10, 10, 150, 100);\nctx.stroke();"
+                                    },
+                                    {
+                                      "heading": "fillRect() Method",
+                                      "description": "The fillRect() method draws a filled rectangle.",
+                                      "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.fillRect(10, 10, 150, 100);"
+                                    },
+                                    {
+                                      "heading": "fillRect() with Color",
+                                      "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.fillStyle = \"pink\";\nctx.fillRect(10, 10, 150, 100);"
+                                    },
+                                    {
+                                      "heading": "strokeRect() Method",
+                                      "description": "The strokeRect() method draws an outlined rectangle.",
+                                      "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.strokeRect(10, 10, 150, 100);"
+                                    },
+                                    {
+                                      "heading": "strokeRect() with Color",
+                                      "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.strokeStyle = \"blue\";\nctx.strokeRect(10, 10, 150, 100);"
+                                    },
+                                    {
+                                      "heading": "Multiple Rectangles Example",
+                                      "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\n// Red rectangle\nctx.lineWidth = 6;\nctx.strokeStyle = \"red\";\nctx.strokeRect(5, 5, 290, 140);\n\n// Green rectangle\nctx.lineWidth = 4;\nctx.strokeStyle = \"green\";\nctx.strokeRect(30, 30, 50, 50);\n\n// Blue rectangle\nctx.lineWidth = 10;\nctx.strokeStyle = \"blue\";\nctx.strokeRect(50, 50, 150, 80);"
+                                    },
+                                    {
+                                      "heading": "Important Notes",
+                                      "points": [
+                                        "rect() only defines a shape, it does not draw it",
+                                        "fillRect() draws a filled rectangle",
+                                        "strokeRect() draws an outlined rectangle",
+                                        "fillStyle controls fill color",
+                                        "strokeStyle controls border color",
+                                        "lineWidth controls border thickness"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                
+                                    "canvas-clearRect": {
+                                      "title": "Canvas clearRect()",
+                                      "sections": [
+                                        {
+                                          "heading": "clearRect() Method",
+                                          "paragraphs": [
+                                            "The clearRect() method is used to clear a rectangular area of the canvas.",
+                                            "The cleared area becomes fully transparent."
+                                          ]
+                                        },
+                                        {
+                                          "heading": "Method Parameters",
+                                          "parameters": [
+                                            { "name": "x", "description": "X-coordinate of the upper-left corner" },
+                                            { "name": "y", "description": "Y-coordinate of the upper-left corner" },
+                                            { "name": "width", "description": "Width of the rectangle" },
+                                            { "name": "height", "description": "Height of the rectangle" }
+                                          ]
+                                        },
+                                        {
+                                          "heading": "Basic Example",
+                                          "description": "Draw a filled rectangle and clear a part of it.",
+                                          "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.fillStyle = \"pink\";\nctx.fillRect(10, 10, 150, 100);\n\nctx.clearRect(60, 35, 50, 50);"
+                                        },
+                                        {
+                                          "heading": "Clear Area Outside the Shape",
+                                          "description": "The cleared area can extend outside the drawn rectangle.",
+                                          "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.fillStyle = \"pink\";\nctx.fillRect(10, 10, 150, 100);\n\nctx.clearRect(60, 35, 150, 50);"
+                                        },
+                                        {
+                                          "heading": "clearRect() with Stroke Rectangle",
+                                          "description": "clearRect() can also clear part of a stroked rectangle.",
+                                          "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.strokeStyle = \"blue\";\nctx.strokeRect(10, 10, 150, 100);\n\nctx.clearRect(60, 35, 150, 50);"
+                                        },
+                                        {
+                                          "heading": "Important Notes",
+                                          "points": [
+                                            "clearRect() removes pixels and makes them transparent",
+                                            "It does not change canvas size",
+                                            "It works on both filled and stroked shapes",
+                                            "Coordinates are relative to the canvas"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    
+                                        "canvas-circles": {
+                                          "title": "Canvas Circles",
+                                          "sections": [
+                                            {
+                                              "heading": "The arc() Method",
+                                              "paragraphs": [
+                                                "The arc() method is used to define a circle.",
+                                                "It draws an arc or a complete circle depending on the angle values."
+                                              ]
+                                            },
+                                            {
+                                              "heading": "arc() Parameters",
+                                              "parameters": [
+                                                { "name": "x", "description": "X-coordinate of the center" },
+                                                { "name": "y", "description": "Y-coordinate of the center" },
+                                                { "name": "radius", "description": "Radius of the circle" },
+                                                { "name": "startAngle", "description": "Starting angle in radians" },
+                                                { "name": "endAngle", "description": "Ending angle in radians" },
+                                                { "name": "counterclockwise", "description": "Optional. Draws arc counter-clockwise if true" }
+                                              ]
+                                            },
+                                            {
+                                              "heading": "Draw a Full Circle",
+                                              "description": "Use startAngle = 0 and endAngle = 2 × Math.PI to draw a full circle.",
+                                              "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\nctx.arc(95, 50, 40, 0, 2 * Math.PI);\nctx.stroke();"
+                                            },
+                                            {
+                                              "heading": "Draw a Circle with Fill and Stroke",
+                                              "description": "Add fill and stroke colors to the circle.",
+                                              "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\nctx.arc(95, 50, 40, 0, 2 * Math.PI);\nctx.fillStyle = \"red\";\nctx.fill();\nctx.lineWidth = 4;\nctx.strokeStyle = \"blue\";\nctx.stroke();"
+                                            },
+                                            {
+                                              "heading": "Draw a Half Circle",
+                                              "description": "Use Math.PI as the ending angle to draw a half circle.",
+                                              "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\nctx.arc(95, 50, 40, 0, Math.PI);\nctx.fillStyle = \"red\";\nctx.fill();\nctx.stroke();"
+                                            },
+                                            {
+                                              "heading": "Arc Angles",
+                                              "points": [
+                                                "0 radians = right side",
+                                                "π radians = half circle",
+                                                "2π radians = full circle",
+                                                "Angles are measured clockwise by default"
+                                              ]
+                                            },
+                                            {
+                                              "heading": "Arc with Counterclockwise Direction",
+                                              "description": "Set the last parameter to true to draw counterclockwise.",
+                                              "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\nctx.arc(95, 50, 40, 0, 0.5 * Math.PI, true);\nctx.stroke();"
+                                            },
+                                            {
+                                              "heading": "Important Notes",
+                                              "points": [
+                                                "arc() only defines the path",
+                                                "stroke() or fill() is required to display it",
+                                                "Angles must be in radians",
+                                                "Use Math.PI for angle calculations"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        
+                                            "canvas-curves": {
+                                              "title": "Canvas Curves",
+                                              "sections": [
+                                                {
+                                                  "heading": "Introduction",
+                                                  "paragraphs": [
+                                                    "Canvas provides methods to draw curved lines.",
+                                                    "The most commonly used curve methods are:",
+                                                    "arc(), quadraticCurveTo(), and bezierCurveTo()."
+                                                  ]
+                                                },
+                                                {
+                                                  "heading": "Quadratic Curve",
+                                                  "description": "The quadraticCurveTo() method is used to draw a quadratic Bézier curve.",
+                                                  "parameters": [
+                                                    { "name": "cpx", "description": "X-coordinate of the control point" },
+                                                    { "name": "cpy", "description": "Y-coordinate of the control point" },
+                                                    { "name": "x", "description": "X-coordinate of the end point" },
+                                                    { "name": "y", "description": "Y-coordinate of the end point" }
+                                                  ]
+                                                },
+                                                {
+                                                  "heading": "Drawing a Quadratic Curve",
+                                                  "steps": [
+                                                    "beginPath() – starts a new path",
+                                                    "moveTo() – sets the starting point",
+                                                    "quadraticCurveTo() – defines the curve",
+                                                    "stroke() – draws the curve"
+                                                  ],
+                                                  "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\nctx.moveTo(10, 100);\nctx.quadraticCurveTo(250, 170, 230, 20);\nctx.stroke();"
+                                                },
+                                                {
+                                                  "heading": "Bezier Curve",
+                                                  "description": "The bezierCurveTo() method is used to draw a cubic Bézier curve using two control points.",
+                                                  "parameters": [
+                                                    { "name": "cp1x", "description": "X-coordinate of the first control point" },
+                                                    { "name": "cp1y", "description": "Y-coordinate of the first control point" },
+                                                    { "name": "cp2x", "description": "X-coordinate of the second control point" },
+                                                    { "name": "cp2y", "description": "Y-coordinate of the second control point" },
+                                                    { "name": "x", "description": "X-coordinate of the end point" },
+                                                    { "name": "y", "description": "Y-coordinate of the end point" }
+                                                  ]
+                                                },
+                                                {
+                                                  "heading": "Drawing a Bezier Curve",
+                                                  "steps": [
+                                                    "beginPath() – starts a new path",
+                                                    "moveTo() – sets starting point",
+                                                    "bezierCurveTo() – defines curve shape",
+                                                    "stroke() – renders the curve"
+                                                  ],
+                                                  "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.beginPath();\nctx.moveTo(20, 20);\nctx.bezierCurveTo(110, 150, 180, 10, 210, 140);\nctx.stroke();"
+                                                },
+                                                {
+                                                  "heading": "Key Points",
+                                                  "points": [
+                                                    "quadraticCurveTo() uses one control point",
+                                                    "bezierCurveTo() uses two control points",
+                                                    "moveTo() sets the starting point",
+                                                    "stroke() is required to draw the curve"
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            
+                                                "canvas-gradients": {
+                                                  "title": "Canvas Gradients",
+                                                  "sections": [
+                                                    {
+                                                      "heading": "Introduction",
+                                                      "paragraphs": [
+                                                        "Gradients allow smooth color transitions in canvas.",
+                                                        "Gradients can be applied to shapes, text, and strokes.",
+                                                        "Canvas supports two types of gradients: Linear and Radial."
+                                                      ]
+                                                    },
+                                                    {
+                                                      "heading": "Gradient Types",
+                                                      "list": [
+                                                        "createLinearGradient() – creates a linear gradient",
+                                                        "createRadialGradient() – creates a circular gradient"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "heading": "createLinearGradient() Method",
+                                                      "description": "Defines a linear gradient between two points.",
+                                                      "parameters": [
+                                                        { "name": "x0", "description": "Start x-coordinate" },
+                                                        { "name": "y0", "description": "Start y-coordinate" },
+                                                        { "name": "x1", "description": "End x-coordinate" },
+                                                        { "name": "y1", "description": "End y-coordinate" }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "heading": "Linear Gradient Example",
+                                                      "code": "const c = document.getElementById(\"myCanvas\");\nconst ctx = c.getContext(\"2d\");\n\nconst grad = ctx.createLinearGradient(0,0,280,0);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(1, \"darkblue\");\n\nctx.fillStyle = grad;\nctx.fillRect(10,10,280,130);"
+                                                    },
+                                                    {
+                                                      "heading": "Vertical Linear Gradient",
+                                                      "description": "Created by changing y-axis values.",
+                                                      "code": "const grad = ctx.createLinearGradient(0,0,0,130);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(1, \"darkblue\");\nctx.fillStyle = grad;\nctx.fillRect(10,10,280,130);"
+                                                    },
+                                                    {
+                                                      "heading": "Diagonal Linear Gradient",
+                                                      "description": "Created by changing both x and y values.",
+                                                      "code": "const grad = ctx.createLinearGradient(0,0,280,130);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(1, \"darkblue\");\nctx.fillStyle = grad;\nctx.fillRect(10,10,280,130);"
+                                                    },
+                                                    {
+                                                      "heading": "Gradient with Multiple Colors",
+                                                      "code": "const grad = ctx.createLinearGradient(0,0,280,0);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(0.5, \"purple\");\ngrad.addColorStop(1, \"darkblue\");\nctx.fillStyle = grad;\nctx.fillRect(10,10,280,130);"
+                                                    },
+                                                    {
+                                                      "heading": "Fill Circle with Gradient",
+                                                      "code": "const grad = ctx.createLinearGradient(0,0,280,0);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(1, \"darkblue\");\n\nctx.beginPath();\nctx.arc(145, 75, 65, 0, 2 * Math.PI);\nctx.fillStyle = grad;\nctx.fill();"
+                                                    },
+                                                    {
+                                                      "heading": "Fill Text with Gradient",
+                                                      "code": "const grad = ctx.createLinearGradient(0,0,280,0);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(1, \"darkblue\");\n\nctx.font = \"50px Arial\";\nctx.fillStyle = grad;\nctx.fillText(\"Hello World\", 10, 80);"
+                                                    },
+                                                    {
+                                                      "heading": "Stroke Text with Gradient",
+                                                      "code": "const grad = ctx.createLinearGradient(0,0,280,0);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(1, \"darkblue\");\n\nctx.font = \"50px Arial\";\nctx.strokeStyle = grad;\nctx.strokeText(\"Hello World\", 10, 80);"
+                                                    },
+                                                    {
+                                                      "heading": "Key Points",
+                                                      "points": [
+                                                        "Gradients require color stops",
+                                                        "Color stops range from 0 to 1",
+                                                        "Gradients can be applied to shapes and text",
+                                                        "Linear gradients can be horizontal, vertical, or diagonal"
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                    "canvas-radial-gradients": {
+                                                      "title": "Canvas Radial Gradients",
+                                                      "sections": [
+                                                        {
+                                                          "heading": "Introduction",
+                                                          "paragraphs": [
+                                                            "The createRadialGradient() method is used to define a radial (circular) gradient.",
+                                                            "A radial gradient is defined by two circles: a start circle and an end circle.",
+                                                            "The gradient spreads from the start circle to the end circle."
+                                                          ]
+                                                        },
+                                                        {
+                                                          "heading": "createRadialGradient() Method",
+                                                          "parameters": [
+                                                            { "name": "x0", "description": "X-coordinate of the start circle" },
+                                                            { "name": "y0", "description": "Y-coordinate of the start circle" },
+                                                            { "name": "r0", "description": "Radius of the start circle" },
+                                                            { "name": "x1", "description": "X-coordinate of the end circle" },
+                                                            { "name": "y1", "description": "Y-coordinate of the end circle" },
+                                                            { "name": "r1", "description": "Radius of the end circle" }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "heading": "Basic Radial Gradient Example",
+                                                          "description": "Creates a radial gradient with a small inner circle and a large outer circle.",
+                                                          "code": "const c = document.getElementById(\"myCanvas\");\nconst ctx = c.getContext(\"2d\");\n\nconst grad = ctx.createRadialGradient(150,75,15,150,75,150);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(1, \"darkblue\");\n\nctx.fillStyle = grad;\nctx.fillRect(10,10,280,130);"
+                                                        },
+                                                        {
+                                                          "heading": "Smaller Radius Gradient",
+                                                          "description": "Reducing the radius of the end circle makes the gradient smaller.",
+                                                          "code": "const grad = ctx.createRadialGradient(150,75,15,150,75,100);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(1, \"darkblue\");\nctx.fillStyle = grad;\nctx.fillRect(10,10,280,130);"
+                                                        },
+                                                        {
+                                                          "heading": "Moving the Gradient Center",
+                                                          "description": "Changing the center of the end circle alters the gradient direction.",
+                                                          "code": "const grad = ctx.createRadialGradient(150,75,15,180,95,100);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(1, \"darkblue\");\nctx.fillStyle = grad;\nctx.fillRect(10,10,280,130);"
+                                                        },
+                                                        {
+                                                          "heading": "Multiple Color Stops",
+                                                          "description": "You can add multiple colors using addColorStop().",
+                                                          "code": "const grad = ctx.createRadialGradient(150,75,15,150,75,150);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(0.3, \"pink\");\ngrad.addColorStop(1, \"darkblue\");\nctx.fillStyle = grad;\nctx.fillRect(10,10,280,130);"
+                                                        },
+                                                        {
+                                                          "heading": "Key Points",
+                                                          "points": [
+                                                            "Radial gradients use two circles",
+                                                            "Color stops range from 0 to 1",
+                                                            "Multiple color stops can be used",
+                                                            "Gradients can be applied to shapes and text",
+                                                            "createRadialGradient() works with fillStyle and strokeStyle"
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                        "canvas-text": {
+                                                          "title": "Canvas Text",
+                                                          "sections": [
+                                                            {
+                                                              "heading": "Introduction",
+                                                              "paragraphs": [
+                                                                "Canvas allows drawing text using JavaScript.",
+                                                                "The most important properties and methods used for text are:",
+                                                                "font – defines font style and size",
+                                                                "fillText() – draws filled text",
+                                                                "strokeText() – draws outlined text"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "heading": "font Property",
+                                                              "description": "The font property defines the font size and style used for text.",
+                                                              "default": "10px sans-serif"
+                                                            },
+                                                            {
+                                                              "heading": "fillText() Method",
+                                                              "description": "The fillText() method draws filled text on the canvas.",
+                                                              "parameters": [
+                                                                { "name": "text", "description": "Text to be drawn" },
+                                                                { "name": "x", "description": "X-coordinate of text" },
+                                                                { "name": "y", "description": "Y-coordinate of text" },
+                                                                { "name": "maxWidth", "description": "Optional maximum width" }
+                                                              ],
+                                                              "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.font = \"50px Arial\";\nctx.fillText(\"Hello World\", 10, 80);"
+                                                            },
+                                                            {
+                                                              "heading": "strokeText() Method",
+                                                              "description": "The strokeText() method draws outlined text.",
+                                                              "parameters": [
+                                                                { "name": "text", "description": "Text to be drawn" },
+                                                                { "name": "x", "description": "X-coordinate of text" },
+                                                                { "name": "y", "description": "Y-coordinate of text" },
+                                                                { "name": "maxWidth", "description": "Optional maximum width" }
+                                                              ],
+                                                              "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.font = \"50px Arial\";\nctx.strokeText(\"Hello World\", 10, 80);"
+                                                            },
+                                                            {
+                                                              "heading": "Bold and Italic Text",
+                                                              "description": "Font styles like bold and italic can be added using the font property.",
+                                                              "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.font = \"bold italic 50px Arial\";\nctx.strokeText(\"Hello World\", 10, 80);"
+                                                            },
+                                                            {
+                                                              "heading": "Key Points",
+                                                              "points": [
+                                                                "fillText() draws filled text",
+                                                                "strokeText() draws outlined text",
+                                                                "font property controls size and style",
+                                                                "Text can be bold, italic, or both",
+                                                                "Canvas text supports colors and gradients"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                            "canvas-text-color": {
+                                                              "title": "Canvas Text Color",
+                                                              "sections": [
+                                                                {
+                                                                  "heading": "Introduction",
+                                                                  "paragraphs": [
+                                                                    "Canvas allows text coloring using two properties:",
+                                                                    "fillStyle – sets the fill color of text",
+                                                                    "strokeStyle – sets the outline color of text"
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "heading": "fillStyle Property",
+                                                                  "description": "The fillStyle property defines the fill color of the text.",
+                                                                  "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.font = \"50px Arial\";\nctx.fillStyle = \"purple\";\nctx.fillText(\"Hello World\", 10, 80);"
+                                                                },
+                                                                {
+                                                                  "heading": "strokeStyle Property",
+                                                                  "description": "The strokeStyle property defines the outline color of the text.",
+                                                                  "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.font = \"50px Arial\";\nctx.strokeStyle = \"purple\";\nctx.strokeText(\"Hello World\", 10, 80);"
+                                                                },
+                                                                {
+                                                                  "heading": "Fill Text with Gradient",
+                                                                  "description": "Text can be filled with a linear gradient using createLinearGradient().",
+                                                                  "example": "const c = document.getElementById(\"myCanvas\");\nconst ctx = c.getContext(\"2d\");\n\nconst grad = ctx.createLinearGradient(0, 0, 280, 0);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(1, \"darkblue\");\n\nctx.font = \"50px Arial\";\nctx.fillStyle = grad;\nctx.fillText(\"Hello World\", 10, 80);"
+                                                                },
+                                                                {
+                                                                  "heading": "Outlined Text with Gradient",
+                                                                  "description": "Gradient can also be applied to outlined text using strokeStyle.",
+                                                                  "example": "const c = document.getElementById(\"myCanvas\");\nconst ctx = c.getContext(\"2d\");\n\nconst grad = ctx.createLinearGradient(0, 0, 280, 0);\ngrad.addColorStop(0, \"lightblue\");\ngrad.addColorStop(1, \"darkblue\");\n\nctx.font = \"50px Arial\";\nctx.strokeStyle = grad;\nctx.strokeText(\"Hello World\", 10, 80);"
+                                                                },
+                                                                {
+                                                                  "heading": "Key Points",
+                                                                  "points": [
+                                                                    "fillStyle sets text fill color",
+                                                                    "strokeStyle sets text outline color",
+                                                                    "Gradients can be used as text colors",
+                                                                    "Works with both fillText() and strokeText()",
+                                                                    "Supports RGB, HEX, HSL, and gradients"
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            },
+                                                                "canvas-text-alignment": {
+                                                                  "title": "Canvas Text Alignment",
+                                                                  "sections": [
+                                                                    {
+                                                                      "heading": "Introduction",
+                                                                      "paragraphs": [
+                                                                        "Canvas text alignment is controlled using two properties:",
+                                                                        "textBaseline – controls vertical alignment of text",
+                                                                        "textAlign – controls horizontal alignment of text"
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "heading": "textBaseline Property",
+                                                                      "description": "The textBaseline property defines the vertical alignment of the text.",
+                                                                      "values": [
+                                                                        "top",
+                                                                        "hanging",
+                                                                        "middle",
+                                                                        "alphabetic (default)",
+                                                                        "ideographic",
+                                                                        "bottom"
+                                                                      ],
+                                                                      "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.strokeStyle = \"black\";\nctx.beginPath();\nctx.moveTo(0, 75);\nctx.lineTo(500, 75);\nctx.stroke();\n\nctx.font = \"20px Arial\";\nctx.fillStyle = \"purple\";\n\nctx.textBaseline = \"top\";\nctx.fillText(\"top\", 5, 75);\n\nctx.textBaseline = \"hanging\";\nctx.fillText(\"hanging\", 40, 75);\n\nctx.textBaseline = \"middle\";\nctx.fillText(\"middle\", 120, 75);\n\nctx.textBaseline = \"alphabetic\";\nctx.fillText(\"alphabetic\", 190, 75);\n\nctx.textBaseline = \"ideographic\";\nctx.fillText(\"ideographic\", 295, 75);\n\nctx.textBaseline = \"bottom\";\nctx.fillText(\"bottom\", 410, 75);"
+                                                                    },
+                                                                    {
+                                                                      "heading": "textAlign Property",
+                                                                      "description": "The textAlign property defines the horizontal alignment of text.",
+                                                                      "values": [
+                                                                        "left",
+                                                                        "right",
+                                                                        "center",
+                                                                        "start (default)",
+                                                                        "end"
+                                                                      ],
+                                                                      "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.strokeStyle = \"black\";\nctx.beginPath();\nctx.moveTo(250, 0);\nctx.lineTo(250, 250);\nctx.stroke();\n\nctx.font = \"20px Arial\";\nctx.fillStyle = \"purple\";\n\nctx.textAlign = \"center\";\nctx.fillText(\"center\", 250, 20);\n\nctx.textAlign = \"start\";\nctx.fillText(\"start\", 250, 50);\n\nctx.textAlign = \"end\";\nctx.fillText(\"end\", 250, 80);\n\nctx.textAlign = \"left\";\nctx.fillText(\"left\", 250, 110);\n\nctx.textAlign = \"right\";\nctx.fillText(\"right\", 250, 135);"
+                                                                    },
+                                                                    {
+                                                                      "heading": "Center Text Example",
+                                                                      "description": "This example centers text both vertically and horizontally.",
+                                                                      "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.font = \"30px Verdana\";\nctx.fillStyle = \"red\";\nctx.textAlign = \"center\";\nctx.textBaseline = \"middle\";\nctx.fillText(\"Hello World\", canvas.width / 2, canvas.height / 2);"
+                                                                    },
+                                                                    {
+                                                                      "heading": "Key Points",
+                                                                      "points": [
+                                                                        "textBaseline controls vertical alignment",
+                                                                        "textAlign controls horizontal alignment",
+                                                                        "Default textBaseline is 'alphabetic'",
+                                                                        "Default textAlign is 'start'",
+                                                                        "Both properties must be set before drawing text",
+                                                                        "Useful for centering text precisely on canvas"
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                
+                                                                    "canvas-shadows": {
+                                                                      "title": "Canvas Shadows",
+                                                                      "sections": [
+                                                                        {
+                                                                          "heading": "Introduction",
+                                                                          "description": "Canvas shadows are created using four properties.",
+                                                                          "properties": [
+                                                                            "shadowColor – defines the shadow color",
+                                                                            "shadowBlur – defines the blur amount",
+                                                                            "shadowOffsetX – horizontal shadow distance",
+                                                                            "shadowOffsetY – vertical shadow distance"
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "heading": "shadowColor Property",
+                                                                          "description": "Defines the color of the shadow. Default is transparent black.",
+                                                                          "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.shadowColor = \"lightblue\";\nctx.shadowOffsetX = 10;\nctx.shadowOffsetY = 10;\n\nctx.fillStyle = \"blue\";\nctx.fillRect(20, 20, 100, 100);\n\nctx.lineWidth = 4;\nctx.strokeStyle = \"blue\";\nctx.strokeRect(170, 20, 100, 100);"
+                                                                        },
+                                                                        {
+                                                                          "heading": "Shadow on Text",
+                                                                          "description": "Shadow applied to filled and stroked text.",
+                                                                          "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.shadowColor = \"lightblue\";\nctx.shadowOffsetX = 5;\nctx.shadowOffsetY = 5;\n\nctx.font = \"50px Arial\";\nctx.fillStyle = \"purple\";\nctx.fillText(\"Hello World\", 10, 60);\n\nctx.strokeStyle = \"purple\";\nctx.strokeText(\"Hello World\", 10, 120);"
+                                                                        },
+                                                                        {
+                                                                          "heading": "shadowBlur Property",
+                                                                          "description": "Defines the amount of blur applied to the shadow.",
+                                                                          "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.shadowColor = \"lightblue\";\nctx.shadowBlur = 8;\nctx.shadowOffsetX = 10;\nctx.shadowOffsetY = 10;\n\nctx.fillStyle = \"blue\";\nctx.fillRect(20, 20, 100, 100);\n\nctx.lineWidth = 4;\nctx.strokeStyle = \"blue\";\nctx.strokeRect(170, 20, 100, 100);"
+                                                                        },
+                                                                        {
+                                                                          "heading": "shadowOffsetX Property",
+                                                                          "description": "Controls horizontal distance of shadow.",
+                                                                          "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.shadowColor = \"lightblue\";\nctx.fillStyle = \"blue\";\n\nctx.shadowOffsetX = 5;\nctx.fillRect(20, 20, 100, 100);\n\nctx.shadowOffsetX = 15;\nctx.fillRect(170, 20, 100, 100);\n\nctx.shadowOffsetX = -10;\nctx.fillRect(320, 20, 100, 100);"
+                                                                        },
+                                                                        {
+                                                                          "heading": "shadowOffsetY Property",
+                                                                          "description": "Controls vertical distance of shadow.",
+                                                                          "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.shadowColor = \"lightblue\";\nctx.fillStyle = \"blue\";\n\nctx.shadowOffsetY = 5;\nctx.fillRect(20, 20, 100, 100);\n\nctx.shadowOffsetY = 15;\nctx.fillRect(170, 20, 100, 100);\n\nctx.shadowOffsetY = -10;\nctx.fillRect(320, 20, 100, 100);"
+                                                                        },
+                                                                        {
+                                                                          "heading": "Key Notes",
+                                                                          "points": [
+                                                                            "Shadows work on shapes, text, and strokes",
+                                                                            "Shadow properties must be set before drawing",
+                                                                            "shadowBlur controls softness",
+                                                                            "shadowOffsetX and shadowOffsetY control direction",
+                                                                            "Negative values move shadow left or upward"
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    
+                                                                        "canvas-images": {
+                                                                          "title": "Canvas Images",
+                                                                          "sections": [
+                                                                            {
+                                                                              "heading": "Introduction",
+                                                                              "description": "The drawImage() method is used to draw images onto the canvas.",
+                                                                              "methods": [
+                                                                                "drawImage(image, dx, dy)",
+                                                                                "drawImage(image, dx, dy, dwidth, dheight)",
+                                                                                "drawImage(image, sx, sy, swidth, sheight, dx, dy, dwidth, dheight)"
+                                                                              ]
+                                                                            },
+                                                                            {
+                                                                              "heading": "drawImage(image, dx, dy)",
+                                                                              "description": "Draws an image at a specific position on the canvas.",
+                                                                              "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\nconst image = document.getElementById(\"scream\");\n\nimage.addEventListener(\"load\", () => {\n  ctx.drawImage(image, 10, 10);\n});"
+                                                                            },
+                                                                            {
+                                                                              "heading": "drawImage(image, dx, dy, dwidth, dheight)",
+                                                                              "description": "Draws and scales the image to a specified width and height.",
+                                                                              "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\nconst image = document.getElementById(\"scream\");\n\nimage.addEventListener(\"load\", () => {\n  ctx.drawImage(image, 10, 10, 80, 80);\n});"
+                                                                            },
+                                                                            {
+                                                                              "heading": "drawImage(image, sx, sy, swidth, sheight, dx, dy, dwidth, dheight)",
+                                                                              "description": "Clips a portion of the source image and draws it on the canvas.",
+                                                                              "example": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\nconst image = document.getElementById(\"scream\");\n\nimage.addEventListener(\"load\", () => {\n  ctx.drawImage(image, 90, 130, 50, 60, 10, 10, 150, 160);\n});"
+                                                                            },
+                                                                            {
+                                                                              "heading": "drawImage Parameters",
+                                                                              "parameters": [
+                                                                                { "name": "image", "description": "Image object to draw" },
+                                                                                { "name": "sx", "description": "Source x-coordinate (optional)" },
+                                                                                { "name": "sy", "description": "Source y-coordinate (optional)" },
+                                                                                { "name": "swidth", "description": "Width of clipped area" },
+                                                                                { "name": "sheight", "description": "Height of clipped area" },
+                                                                                { "name": "dx", "description": "Destination x-coordinate" },
+                                                                                { "name": "dy", "description": "Destination y-coordinate" },
+                                                                                { "name": "dwidth", "description": "Width to draw image" },
+                                                                                { "name": "dheight", "description": "Height to draw image" }
+                                                                              ]
+                                                                            },
+                                                                            {
+                                                                              "heading": "Key Notes",
+                                                                              "points": [
+                                                                                "Image must be fully loaded before drawing",
+                                                                                "drawImage() supports scaling and cropping",
+                                                                                "Used for games, image editors, and animations",
+                                                                                "Works with <img>, video, or another canvas"
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                            "canvas-transformations": {
+                                                                              "title": "Canvas Transformations",
+                                                                              "description": "Canvas transformations allow you to move, rotate, scale, and skew drawings on the canvas.",
+                                                                              "methods": [
+                                                                                "translate()",
+                                                                                "rotate()",
+                                                                                "scale()",
+                                                                                "transform()",
+                                                                                "resetTransform()",
+                                                                                "setTransform()"
+                                                                              ],
+                                                                              "sections": [
+                                                                                {
+                                                                                  "heading": "translate()",
+                                                                                  "description": "Moves the canvas origin to a new position.",
+                                                                                  "parameters": {
+                                                                                    "x": "Horizontal movement",
+                                                                                    "y": "Vertical movement"
+                                                                                  },
+                                                                                  "example": "ctx.fillStyle = \"red\";\nctx.fillRect(10, 10, 100, 50);\n\nctx.translate(70, 70);\nctx.fillStyle = \"blue\";\nctx.fillRect(10, 10, 100, 50);"
+                                                                                },
+                                                                                {
+                                                                                  "heading": "rotate()",
+                                                                                  "description": "Rotates the canvas by an angle in radians.",
+                                                                                  "note": "Use (Math.PI / 180) * degrees to convert degrees to radians.",
+                                                                                  "example": "ctx.rotate((Math.PI / 180) * 20);\nctx.fillStyle = \"red\";\nctx.fillRect(50, 10, 100, 50);"
+                                                                                },
+                                                                                {
+                                                                                  "heading": "scale()",
+                                                                                  "description": "Scales objects horizontally and vertically.",
+                                                                                  "parameters": {
+                                                                                    "x": "Horizontal scaling",
+                                                                                    "y": "Vertical scaling"
+                                                                                  },
+                                                                                  "examples": [
+                                                                                    "ctx.scale(2, 2);",
+                                                                                    "ctx.scale(0.5, 0.5);",
+                                                                                    "ctx.scale(2, 3);"
+                                                                                  ]
+                                                                                },
+                                                                                {
+                                                                                  "heading": "transform()",
+                                                                                  "description": "Applies transformation using a matrix.",
+                                                                                  "parameters": {
+                                                                                    "a": "Horizontal scaling",
+                                                                                    "b": "Horizontal skewing",
+                                                                                    "c": "Vertical skewing",
+                                                                                    "d": "Vertical scaling",
+                                                                                    "e": "Horizontal movement",
+                                                                                    "f": "Vertical movement"
+                                                                                  },
+                                                                                  "example": "ctx.fillStyle = \"yellow\";\nctx.fillRect(10, 10, 200, 100);\n\nctx.transform(1, 0.5, -0.5, 1, 30, 10);\nctx.fillStyle = \"red\";\nctx.fillRect(10, 10, 200, 100);"
+                                                                                },
+                                                                                {
+                                                                                  "heading": "resetTransform()",
+                                                                                  "description": "Resets the transformation matrix to default.",
+                                                                                  "equivalent": "ctx.setTransform(1, 0, 0, 1, 0, 0)"
+                                                                                },
+                                                                                {
+                                                                                  "heading": "setTransform()",
+                                                                                  "description": "Resets transformation and applies a new one.",
+                                                                                  "example": "ctx.fillStyle = \"yellow\";\nctx.fillRect(10, 10, 200, 100);\n\nctx.setTransform(1, 0.5, -0.5, 1, 30, 10);\nctx.fillStyle = \"blue\";\nctx.fillRect(10, 10, 200, 100);"
+                                                                                }
+                                                                              ],
+                                                                              "notes": [
+                                                                                "Transformations are cumulative unless reset",
+                                                                                "Order of transformations matters",
+                                                                                "Use resetTransform() to clear transformations",
+                                                                                "Useful for animations and graphics manipulation"
+                                                                              ]
+                                                                            },
+                                                                            
+                                                                                "canvas-clipping": {
+                                                                                  "title": "Canvas Clipping",
+                                                                                  "description": "The clip() method is used to limit the drawing area of the canvas. Anything drawn outside the clipping region will not be visible.",
+                                                                                  "method": "clip()",
+                                                                                  "parameters": {
+                                                                                    "fillRule": "Defines how to determine inside and outside areas (nonzero | evenodd)",
+                                                                                    "path": "A path used as the clipping region"
+                                                                                  },
+                                                                                  "sections": [
+                                                                                    {
+                                                                                      "heading": "Basic Clipping",
+                                                                                      "description": "Creates a circular clipping region and draws shapes inside it.",
+                                                                                      "example": "ctx.beginPath();\nctx.arc(100, 75, 70, 0, Math.PI * 2);\nctx.clip();\n\nctx.fillStyle = \"blue\";\nctx.fillRect(0, 0, 300, 150);\nctx.fillStyle = \"red\";\nctx.fillRect(0, 0, 90, 90);"
+                                                                                    },
+                                                                                    {
+                                                                                      "heading": "Triangle Clipping",
+                                                                                      "description": "Creates a triangular clipping region.",
+                                                                                      "example": "ctx.beginPath();\nctx.moveTo(100,20);\nctx.lineTo(180,100);\nctx.lineTo(20,100);\nctx.closePath();\nctx.clip();\n\nctx.fillStyle = \"blue\";\nctx.fillRect(0, 0, 300, 150);\nctx.fillStyle = \"red\";\nctx.fillRect(0, 0, 90, 90);"
+                                                                                    },
+                                                                                    {
+                                                                                      "heading": "Image Clipping",
+                                                                                      "description": "Clips an image inside a circular region.",
+                                                                                      "example": "const image = document.getElementById(\"scream\");\nimage.onload = () => {\n  ctx.beginPath();\n  ctx.arc(110, 145, 75, 0, Math.PI * 2);\n  ctx.clip();\n  ctx.drawImage(image, 0, 0);\n};"
+                                                                                    },
+                                                                                    {
+                                                                                      "heading": "Clipping with Path2D (evenodd)",
+                                                                                      "description": "Creates a hole using evenodd rule.",
+                                                                                      "example": "let r = new Path2D();\nr.rect(80,10,45,130);\nr.rect(40,50,120,50);\nctx.clip(r, \"evenodd\");\n\nctx.fillStyle = \"red\";\nctx.fillRect(0, 0, 300, 150);"
+                                                                                    },
+                                                                                    {
+                                                                                      "heading": "Clipping with Path2D (nonzero)",
+                                                                                      "description": "Uses default nonzero rule without hole.",
+                                                                                      "example": "let r = new Path2D();\nr.rect(80,10,45,130);\nr.rect(40,50,120,50);\nctx.clip(r, \"nonzero\");\n\nctx.fillStyle = \"red\";\nctx.fillRect(0, 0, 300, 150);"
+                                                                                    }
+                                                                                  ],
+                                                                                  "notes": [
+                                                                                    "Clipping affects everything drawn after clip()",
+                                                                                    "Clipping region cannot be undone unless canvas is reset",
+                                                                                    "Use save() and restore() to control clipping",
+                                                                                    "evenodd rule creates holes inside clipping paths"
+                                                                                  ]
+                                                                                },
+                                                                                    "canvas-compositing": {
+                                                                                      "title": "Canvas Compositing",
+                                                                                      "description": "The globalCompositeOperation property controls how new drawings are combined with existing canvas content.",
+                                                                                      "property": "globalCompositeOperation",
+                                                                                      "default": "source-over",
+                                                                                      "modes": [
+                                                                                        {
+                                                                                          "name": "source-over",
+                                                                                          "description": "Draws new shapes on top of existing content (default behavior)."
+                                                                                        },
+                                                                                        {
+                                                                                          "name": "source-out",
+                                                                                          "description": "Draws new shapes only where they do NOT overlap existing content."
+                                                                                        },
+                                                                                        {
+                                                                                          "name": "destination-over",
+                                                                                          "description": "Draws new shapes behind the existing content."
+                                                                                        },
+                                                                                        {
+                                                                                          "name": "destination-atop",
+                                                                                          "description": "Keeps existing content where it overlaps new shapes."
+                                                                                        },
+                                                                                        {
+                                                                                          "name": "lighter",
+                                                                                          "description": "Overlapping areas become brighter."
+                                                                                        },
+                                                                                        {
+                                                                                          "name": "copy",
+                                                                                          "description": "Only the new shape is visible; old content is removed."
+                                                                                        },
+                                                                                        {
+                                                                                          "name": "xor",
+                                                                                          "description": "Overlapping areas become transparent."
+                                                                                        },
+                                                                                        {
+                                                                                          "name": "multiply",
+                                                                                          "description": "Multiplies pixel colors to create a darker effect."
+                                                                                        }
+                                                                                      ],
+                                                                                      "example": {
+                                                                                        "description": "Draw overlapping rectangles using compositing",
+                                                                                        "code": "const canvas = document.getElementById(\"myCanvas\");\nconst ctx = canvas.getContext(\"2d\");\n\nctx.globalCompositeOperation = \"source-over\";\n\nctx.fillStyle = \"blue\";\nctx.fillRect(10, 10, 100, 100);\n\nctx.fillStyle = \"red\";\nctx.fillRect(40, 40, 100, 100);"
+                                                                                      },
+                                                                                      "notes": [
+                                                                                        "Default mode is 'source-over'",
+                                                                                        "Compositing affects how colors blend",
+                                                                                        "Useful for masking, blending, and visual effects",
+                                                                                        "Works best with overlapping drawings",
+                                                                                        "Reset by setting globalCompositeOperation back to 'source-over'"
+                                                                                      ]
+                                                                                    },
+                                                                                    
+                                                                                        "canvas-examples": {
+                                                                                          "title": "Canvas Examples",
+                                                                                          "description": "Collection of practical examples demonstrating how to use HTML Canvas features.",
+                                                                                          "sections": [
+                                                                                            {
+                                                                                              "title": "Canvas Basics",
+                                                                                              "topics": [
+                                                                                                "Canvas Intro",
+                                                                                                "Empty Canvas",
+                                                                                                "First Drawing on Canvas",
+                                                                                                "Canvas Coordinates"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Lines",
+                                                                                              "topics": [
+                                                                                                "Draw a line",
+                                                                                                "lineWidth – Set width of line",
+                                                                                                "strokeStyle – Set color of line",
+                                                                                                "lineCap – Set cap style of line"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Fill and Stroke",
+                                                                                              "topics": [
+                                                                                                "fillStyle – Set fill color",
+                                                                                                "strokeStyle – Set outline color",
+                                                                                                "Fill and stroke combined",
+                                                                                                "Fill and stroke with alpha (opacity)"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Shapes",
+                                                                                              "topics": [
+                                                                                                "Create shapes using lines",
+                                                                                                "Create triangle",
+                                                                                                "Apply strokeStyle to shapes"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Rectangles",
+                                                                                              "topics": [
+                                                                                                "rect() method",
+                                                                                                "fillRect() method",
+                                                                                                "strokeRect() method",
+                                                                                                "Multiple rectangles with rect()",
+                                                                                                "Multiple rectangles with strokeRect()"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas clearRect()",
+                                                                                              "topics": [
+                                                                                                "Clear part of filled rectangle",
+                                                                                                "Clear inside and outside area",
+                                                                                                "Clear part of stroked rectangle"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Circles",
+                                                                                              "topics": [
+                                                                                                "Draw full circle",
+                                                                                                "Draw colored circle",
+                                                                                                "Draw half circle",
+                                                                                                "Arc with angles",
+                                                                                                "Counter-clockwise arc"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Curves",
+                                                                                              "topics": [
+                                                                                                "quadraticCurveTo()",
+                                                                                                "bezierCurveTo()"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Linear Gradients",
+                                                                                              "topics": [
+                                                                                                "Two color gradient",
+                                                                                                "Three color gradient",
+                                                                                                "Vertical gradient",
+                                                                                                "Diagonal gradient",
+                                                                                                "Fill shapes with gradient",
+                                                                                                "Fill text with gradient"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Radial Gradients",
+                                                                                              "topics": [
+                                                                                                "Basic radial gradient",
+                                                                                                "Smaller end circle",
+                                                                                                "Move center point",
+                                                                                                "Multiple color stops"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Text",
+                                                                                              "topics": [
+                                                                                                "fillText()",
+                                                                                                "strokeText()",
+                                                                                                "Bold and italic fonts"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Text Color",
+                                                                                              "topics": [
+                                                                                                "fillStyle for text",
+                                                                                                "strokeStyle for text",
+                                                                                                "Gradient text",
+                                                                                                "Outlined gradient text"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Text Alignment",
+                                                                                              "topics": [
+                                                                                                "textBaseline",
+                                                                                                "textAlign",
+                                                                                                "Center aligned text"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Shadows",
+                                                                                              "topics": [
+                                                                                                "shadowColor",
+                                                                                                "shadowBlur",
+                                                                                                "shadowOffsetX",
+                                                                                                "shadowOffsetY"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Images",
+                                                                                              "topics": [
+                                                                                                "drawImage(image, x, y)",
+                                                                                                "drawImage(image, x, y, width, height)",
+                                                                                                "drawImage() with clipping"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Transformations",
+                                                                                              "topics": [
+                                                                                                "translate()",
+                                                                                                "rotate()",
+                                                                                                "scale()",
+                                                                                                "transform()",
+                                                                                                "setTransform()"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Clipping",
+                                                                                              "topics": [
+                                                                                                "Circular clipping",
+                                                                                                "Triangle clipping",
+                                                                                                "Image clipping",
+                                                                                                "evenodd rule",
+                                                                                                "nonzero rule"
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Canvas Compositing",
+                                                                                              "topics": [
+                                                                                                "source-over",
+                                                                                                "source-out",
+                                                                                                "destination-over",
+                                                                                                "destination-atop",
+                                                                                                "lighter",
+                                                                                                "copy",
+                                                                                                "xor",
+                                                                                                "multiply",
+                                                                                                "screen",
+                                                                                                "darken",
+                                                                                                "lighten",
+                                                                                                "hue",
+                                                                                                "luminosity"
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      }
+                                                                                      
+                                                                                  }
+                                                                                  
+                                                                              
+                                                                              
+                                                                          
+                                                                          
+                                                                      
+                                                                      
+                                                                
+                                                                  
+                                                              
+                                                              
+                                                          
+                                                          
+                                                      
+                                                      
+                                                  
+                                                  
+                                              
+                                              
+                                          
+                                          
+                                      
+                                      
+                                  
+                                  
+                              
+                              
+                          
+                          
+                      
+
+                  
+            
+          
+          
+          
+        
+          

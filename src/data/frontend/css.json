@@ -1,0 +1,1004 @@
+{
+    "course": {
+      "id": "css",
+      "title": "CSS Tutorial"
+    },
+    "sections": [
+      {
+        "title": "CSS Basics",
+        "lessons": [
+          { "id": "css-intro", "title": "CSS Introduction" },
+          { "id": "css-syntax", "title": "CSS Syntax" },
+          { "id": "css-selectors", "title": "CSS Selectors" },
+          { "id": "css-how-to-add-css", "title": "CSS How to Add CSS" },
+          { "id": "css-comments", "title": "CSS Comments" },
+          { "id": "css-errors", "title": "CSS Errors" },
+          { "id": "css-height-width", "title": "CSS Height-Width" },
+          { "id": "css-padding", "title": "CSS Padding" },
+          { "id": "css-box-model", "title": "CSS Box Model" }
+        ]
+      },
+      {
+        "title": "CSS Advanced",
+        "lessons": [
+          { "id": "css-flexbox", "title": "CSS Flexbox" },
+          { "id": "css-grid", "title": "CSS Grid" },
+          { "id": "css-animations", "title": "CSS Animations" },
+          { "id": "css-transitions", "title": "CSS Transitions" },
+          { "id": "css-media-queries", "title": "CSS Media Queries" }
+        ]
+      },
+      {
+        "title": "CSS Practice",
+        "lessons": [
+          { "id": "css-examples", "title": "CSS Examples" },
+          { "id": "css-exercises", "title": "CSS Exercises" },
+          { "id": "css-quiz", "title": "CSS Quiz" }
+        ]
+      }
+    ],
+  
+    "content": {
+      "css-intro": {
+        "title": "CSS Introduction",
+        "sections": [
+          {
+            "heading": "What is CSS?",
+            "paragraphs": [
+              "CSS stands for Cascading Style Sheets.",
+              "CSS is used to style and layout web pages.",
+              "It controls colors, fonts, spacing, and layout."
+            ]
+          },
+          {
+            "heading": "Why Use CSS?",
+            "paragraphs": [
+              "CSS saves time by controlling multiple pages at once.",
+              "It improves website appearance.",
+              "It makes web pages responsive."
+            ]
+          },
+          {
+            "heading": "CSS Example",
+            "code": "body {\n  background-color: lightblue;\n}\n\nh1 {\n  color: white;\n  text-align: center;\n}"
+          }
+        ]
+      },
+  
+      "css-syntax": {
+        "title": "CSS Syntax",
+        "sections": [
+          {
+            "heading": "CSS Syntax Structure",
+            "paragraphs": [
+              "A CSS rule consists of a selector and a declaration block."
+            ],
+            "code": "selector {\n  property: value;\n}"
+          },
+          {
+            "heading": "Example",
+            "code": "p {\n  color: red;\n  font-size: 20px;\n}"
+          }
+        ]
+      },
+  
+      "css-selectors": {
+        "title": "CSS Selectors",
+        "sections": [
+          {
+            "heading": "Types of Selectors",
+            "paragraphs": [
+              "Element Selector",
+              "ID Selector",
+              "Class Selector",
+              "Universal Selector"
+            ]
+          },
+          {
+            "heading": "Example",
+            "code": "#title { color: blue; }\n.box { border: 1px solid black; }"
+          }
+        ]
+      },
+  
+     
+  
+      "css-flexbox": {
+        "title": "CSS Flexbox",
+        "sections": [
+          {
+            "heading": "Flexbox Introduction",
+            "paragraphs": [
+              "Flexbox is used to design flexible layouts.",
+              "It works in one dimension (row or column)."
+            ]
+          },
+          {
+            "heading": "Example",
+            "code": ".container {\n  display: flex;\n  justify-content: center;\n}"
+          }
+        ]
+      },
+  
+      "css-grid": {
+        "title": "CSS Grid",
+        "sections": [
+          {
+            "heading": "Grid System",
+            "paragraphs": [
+              "CSS Grid is a two-dimensional layout system.",
+              "It works with rows and columns."
+            ]
+          },
+          {
+            "heading": "Example",
+            "code": ".grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n}"
+          }
+        ]
+      },
+  
+      "css-media-queries": {
+        "title": "CSS Media Queries",
+        "sections": [
+          {
+            "heading": "Responsive Design",
+            "paragraphs": [
+              "Media queries make websites responsive.",
+              "They adapt layout based on screen size."
+            ]
+          },
+          {
+            "heading": "Example",
+            "code": "@media (max-width: 600px) {\n  body { background: lightgray; }\n}"
+          }
+        ]
+      },
+  
+      "css-examples": {
+        "title": "CSS Examples",
+        "sections": [
+          {
+            "heading": "Button Style",
+            "code": "button {\n  background: blue;\n  color: white;\n  padding: 10px;\n}"
+          }
+        ]
+      },
+  
+      "css-quiz": {
+        "title": "CSS Quiz",
+        "sections": [
+          {
+            "heading": "Question",
+            "exercise": {
+              "question": "Which property is used to change text color?",
+              "options": ["font-style", "color", "background"],
+              "answer": "color"
+            }
+          }
+        ]
+      },
+    "syntax": {
+      "title": "CSS Syntax",
+      "sections": [
+        {
+          "heading": "CSS Syntax",
+          "paragraphs": [
+            "A CSS rule consists of a selector and a declaration block.",
+            "The selector points to the HTML element you want to style.",
+            "The declaration block contains one or more declarations separated by semicolons.",
+            "Each declaration includes a CSS property name and a value, separated by a colon.",
+            "Declaration blocks are surrounded by curly braces."
+          ]
+        },
+        {
+          "heading": "CSS Example",
+          "paragraphs": [
+            "In this example all <p> elements will be center-aligned with a red text color."
+          ],
+          "code": "p {\n  color: red;\n  text-align: center;\n}"
+        },
+        {
+          "heading": "Example Explained",
+          "paragraphs": [
+            "p is a selector in CSS (it points to the HTML element you want to style).",
+            "color is a property, and red is the property value.",
+            "text-align is a property, and center is the property value."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "In the following example, which part is the selector?\n\np { color: red; }",
+            "options": [
+              "p",
+              "{ color: red; }",
+              "color",
+              "red"
+            ],
+            "answer": "p"
+          }
+        }
+      ]
+    },
+        "selectors": {
+          "title": "CSS Selectors",
+          "sections": [
+            {
+              "heading": "CSS Selectors",
+              "paragraphs": [
+                "CSS selectors are used to select the HTML elements you want to style.",
+                "Selectors can target elements based on name, id, class, attributes, and relationships.",
+                "There are five main categories of CSS selectors."
+              ],
+              "list": [
+                "Simple selectors",
+                "Combinator selectors",
+                "Pseudo-class selectors",
+                "Pseudo-element selectors",
+                "Attribute selectors"
+              ]
+            },
+            {
+              "heading": "Element Selector",
+              "paragraphs": [
+                "The element selector selects HTML elements based on the element name."
+              ],
+              "code": "p {\n  text-align: center;\n  color: red;\n}"
+            },
+            {
+              "heading": "ID Selector",
+              "paragraphs": [
+                "The id selector uses the id attribute of an HTML element.",
+                "An id must be unique within a page."
+              ],
+              "code": "#para1 {\n  text-align: center;\n  color: red;\n}",
+              "note": "An id name cannot start with a number."
+            },
+            {
+              "heading": "Class Selector",
+              "paragraphs": [
+                "The class selector selects elements with a specific class.",
+                "Multiple elements can share the same class."
+              ],
+              "code": ".center {\n  text-align: center;\n  color: red;\n}"
+            },
+            {
+              "heading": "Multiple Classes",
+              "paragraphs": [
+                "HTML elements can have more than one class."
+              ],
+              "code": "<p class=\"center large\">This paragraph uses two classes.</p>"
+            },
+            {
+              "heading": "Universal Selector",
+              "paragraphs": [
+                "The universal selector selects all elements on the page."
+              ],
+              "code": "* {\n  text-align: center;\n  color: blue;\n}"
+            },
+            {
+              "heading": "Grouping Selector",
+              "paragraphs": [
+                "The grouping selector is used to apply the same style to multiple elements.",
+                "Selectors are separated by commas."
+              ],
+              "code": "h1, h2, p {\n  text-align: center;\n  color: red;\n}"
+            },
+            {
+              "heading": "Exercise",
+              "exercise": {
+                "question": "Which CSS selector is used to select an element with a specific id?",
+                "options": [
+                  "*",
+                  ".",
+                  "#",
+                  "%"
+                ],
+                "answer": "#"
+              }
+            },
+            {
+              "heading": "CSS Simple Selectors Reference",
+              "table": {
+                "headers": ["Selector", "Example", "Description"],
+                "rows": [
+                  ["#id", "#firstname", "Selects element with id='firstname'"],
+                  [".class", ".intro", "Selects all elements with class='intro'"],
+                  ["*", "*", "Selects all elements"],
+                  ["element", "p", "Selects all <p> elements"],
+                  ["element, element", "div, p", "Selects all <div> and <p> elements"]
+                ]
+              }
+            }
+          ]
+        
+      
+    },
+        "css-how-to-add-css": {
+          "title": "How to Add CSS",
+          "sections": [
+            {
+              "heading": "How to Add CSS",
+              "paragraphs": [
+                "When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.",
+                "There are three ways of inserting a style sheet:",
+                "External CSS, Internal CSS, and Inline CSS."
+              ]
+            },
+            {
+              "heading": "External CSS",
+              "paragraphs": [
+                "With an external style sheet, you can change the look of an entire website by changing just one file.",
+                "Each HTML page must include a reference to the external style sheet file inside the <link> element.",
+                "External style sheets must be saved with a .css extension."
+              ],
+              "code": "<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"stylesheet\" href=\"mystyle.css\">\n</head>\n<body>\n\n<h1>This is a heading</h1>\n<p>This is a paragraph.</p>\n\n</body>\n</html>"
+            },
+            {
+              "heading": "External CSS File",
+              "code": "body {\n  background-color: lightblue;\n}\n\nh1 {\n  color: navy;\n  margin-left: 20px;\n}",
+              "note": "Do not add space between value and unit. Example: use 20px, not 20 px."
+            },
+            {
+              "heading": "Internal CSS",
+              "paragraphs": [
+                "An internal style sheet is used when a single page has a unique style.",
+                "The internal CSS is defined inside the <style> tag within the <head> section."
+              ],
+              "code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody {\n  background-color: linen;\n}\n\nh1 {\n  color: maroon;\n  margin-left: 40px;\n}\n</style>\n</head>\n<body>\n\n<h1>This is a heading</h1>\n<p>This is a paragraph.</p>\n\n</body>\n</html>"
+            },
+            {
+              "heading": "Inline CSS",
+              "paragraphs": [
+                "Inline CSS is used to apply a unique style to a single element.",
+                "The style attribute is added directly inside the HTML tag."
+              ],
+              "code": "<h1 style=\"color:blue;text-align:center;\">This is a heading</h1>\n<p style=\"color:red;\">This is a paragraph.</p>",
+              "note": "Inline styles should be used sparingly because they mix content with design."
+            },
+            {
+              "heading": "Multiple Style Sheets",
+              "paragraphs": [
+                "If multiple styles are defined for the same element, the last defined style will be applied.",
+                "This is based on the cascading order of CSS."
+              ]
+            },
+            {
+              "heading": "Cascading Order",
+              "paragraphs": [
+                "When multiple styles apply to the same element, the following priority is used:",
+                "1. Inline style",
+                "2. External and internal styles",
+                "3. Browser default styles"
+              ]
+            },
+            {
+              "heading": "Exercise",
+              "exercise": {
+                "question": "Which tag is used to include an external CSS file?",
+                "options": [
+                  "style",
+                  "link",
+                  "script",
+                  "meta"
+                ],
+                "answer": "link"
+              }
+            }
+          ]
+        },
+        
+          "css-comments": {
+            "title": "CSS Comments",
+            "sections": [
+              {
+                "heading": "CSS Comments",
+                "paragraphs": [
+                  "Comments are used to explain the CSS code and make it easier to understand.",
+                  "They are also used to temporarily disable code.",
+                  "Comments are ignored by browsers."
+                ]
+              },
+              {
+                "heading": "CSS Comment Syntax",
+                "paragraphs": [
+                  "A CSS comment starts with /* and ends with */.",
+                  "CSS comments can be placed anywhere in the code."
+                ],
+                "code": "/* This is a single-line comment */\np {\n  color: red;\n}"
+              },
+              {
+                "heading": "Inline Comments",
+                "paragraphs": [
+                  "Comments can be placed at the end of a line."
+                ],
+                "code": "p {\n  color: red; /* Set text color to red */\n}"
+              },
+              {
+                "heading": "Comments in the Middle of Code",
+                "paragraphs": [
+                  "Comments can also be written inside a line of code."
+                ],
+                "code": "p {\n  color: /* red */ blue;\n}"
+              },
+              {
+                "heading": "Multi-line Comments",
+                "paragraphs": [
+                  "CSS comments can span multiple lines."
+                ],
+                "code": "/* This is\n   a multi-line\n   comment */\n\np {\n  color: red;\n}"
+              },
+              {
+                "heading": "HTML and CSS Comments",
+                "paragraphs": [
+                  "HTML comments use <!-- --> syntax.",
+                  "CSS comments use /* */ syntax.",
+                  "Both can be used together in HTML files."
+                ],
+                "code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\np {\n  color: red; /* CSS comment */\n}\n</style>\n</head>\n<body>\n\n<!-- HTML comment -->\n<p>Hello World!</p>\n\n</body>\n</html>"
+              },
+              {
+                "heading": "Exercise",
+                "exercise": {
+                  "question": "What is the correct syntax for a CSS comment?",
+                  "options": [
+                    "<!-- This is a comment -->",
+                    "// This is a comment",
+                    "/* This is a comment */",
+                    "# This is a comment"
+                  ],
+                  "answer": "/* This is a comment */"
+                }
+              }
+            ]
+          },
+          
+            "css-errors": {
+              "title": "CSS Errors",
+              "sections": [
+                {
+                  "heading": "CSS Errors",
+                  "paragraphs": [
+                    "Errors in CSS can lead to unexpected behavior or styles not being applied correctly.",
+                    "This section explains common CSS mistakes and how to avoid them."
+                  ]
+                },
+                {
+                  "heading": "Missing Semicolons",
+                  "paragraphs": [
+                    "Forgetting a semicolon at the end of a property declaration can break the style rule."
+                  ],
+                  "code": ".bad {\n  color: red\n  background-color: yellow;\n}"
+                },
+                {
+                  "heading": "Invalid Property Names",
+                  "paragraphs": [
+                    "Using a property name that does not exist will be ignored by the browser."
+                  ],
+                  "code": ".bad {\n  colr: blue;\n  font-size: 16px;\n}"
+                },
+                {
+                  "heading": "Invalid Values",
+                  "paragraphs": [
+                    "Correct properties with invalid values will not be applied."
+                  ],
+                  "code": ".bad {\n  width: -100px;\n  color: green;\n}"
+                },
+                {
+                  "heading": "Unclosed Braces",
+                  "paragraphs": [
+                    "If a closing brace is missing, the browser may ignore the entire rule."
+                  ],
+                  "code": ".bad {\n  padding: 20px;\n  margin: 10px;\n"
+                },
+                {
+                  "heading": "Extra Colons or Braces",
+                  "paragraphs": [
+                    "Extra colons or misplaced braces can cause CSS rules to fail."
+                  ],
+                  "code": ".bad {\n  color:: blue;\n}"
+                },
+                {
+                  "heading": "Tips to Avoid CSS Errors",
+                  "paragraphs": [
+                    "Use a code editor with syntax highlighting.",
+                    "Validate CSS using a CSS validator.",
+                    "Write CSS in small sections and test frequently."
+                  ]
+                }
+              ]
+            },
+            "css-padding": {
+                "title": "CSS Padding",
+                "sections": [
+                  {
+                    "heading": "CSS Padding",
+                    "paragraphs": [
+                      "The CSS padding properties are used to generate space around an element's content, inside of any defined borders.",
+                      "Padding creates space inside the element, between the content and the border."
+                    ]
+                  },
+                  {
+                    "heading": "Padding - Individual Sides",
+                    "paragraphs": [
+                      "CSS allows you to control padding on each side of an element.",
+                      "You can set padding for top, right, bottom, and left separately."
+                    ],
+                    "list": [
+                      "padding-top",
+                      "padding-right",
+                      "padding-bottom",
+                      "padding-left"
+                    ],
+                    "code": "div {\n  padding-top: 50px;\n  padding-right: 30px;\n  padding-bottom: 50px;\n  padding-left: 80px;\n}"
+                  },
+                  {
+                    "heading": "Padding Values",
+                    "paragraphs": [
+                      "Padding values can be specified in different units.",
+                      "Negative values are not allowed."
+                    ],
+                    "list": [
+                      "length (px, em, rem, etc.)",
+                      "percentage (%)",
+                      "inherit"
+                    ]
+                  },
+                  {
+                    "heading": "Padding Shorthand Property",
+                    "paragraphs": [
+                      "The padding property is a shorthand for setting all padding sides at once."
+                    ]
+                  },
+                  {
+                    "heading": "Four Values",
+                    "paragraphs": [
+                      "When four values are provided, padding is applied clockwise."
+                    ],
+                    "code": "div {\n  padding: 25px 50px 75px 100px;\n}"
+                  },
+                  {
+                    "heading": "Three Values",
+                    "paragraphs": [
+                      "Top, left & right, and bottom padding are set."
+                    ],
+                    "code": "div {\n  padding: 25px 50px 75px;\n}"
+                  },
+                  {
+                    "heading": "Two Values",
+                    "paragraphs": [
+                      "First value sets top & bottom padding.",
+                      "Second value sets left & right padding."
+                    ],
+                    "code": "div {\n  padding: 25px 50px;\n}"
+                  },
+                  {
+                    "heading": "One Value",
+                    "paragraphs": [
+                      "All sides receive the same padding."
+                    ],
+                    "code": "div {\n  padding: 25px;\n}"
+                  },
+                  {
+                    "heading": "Padding and Element Width",
+                    "paragraphs": [
+                      "Padding increases the total size of an element.",
+                      "The width property does not include padding by default."
+                    ],
+                    "code": "div {\n  width: 300px;\n  padding: 25px;\n}"
+                  },
+                  {
+                    "heading": "Padding and box-sizing",
+                    "paragraphs": [
+                      "The box-sizing property controls how width and height are calculated.",
+                      "Using border-box keeps the total width fixed."
+                    ],
+                    "code": "div {\n  width: 300px;\n  padding: 25px;\n  box-sizing: border-box;\n}"
+                  },
+                  {
+                    "heading": "Exercise",
+                    "exercise": {
+                      "question": "Set top padding to 20px, right to 40px, bottom to 30px, and left to 50px.",
+                      "options": [
+                        "padding: 20px 40px 30px 50px;",
+                        "padding: 50px 40px 30px 20px;",
+                        "padding: 20px 30px 40px 50px;",
+                        "padding: 40px 30px 20px 50px;"
+                      ],
+                      "answer": "padding: 20px 40px 30px 50px;"
+                    }
+                  },
+                  {
+                    "heading": "CSS Padding Properties",
+                    "table": {
+                      "headers": ["Property", "Description"],
+                      "rows": [
+                        ["padding", "Sets all padding properties in one declaration"],
+                        ["padding-top", "Sets the top padding"],
+                        ["padding-right", "Sets the right padding"],
+                        ["padding-bottom", "Sets the bottom padding"],
+                        ["padding-left", "Sets the left padding"]
+                      ]
+                    }
+                  }
+                ]
+              },
+                "css-height-width": {
+                  "title": "CSS Height, Width and Max-Width",
+                  "sections": [
+                    {
+                      "heading": "CSS Height and Width",
+                      "paragraphs": [
+                        "The CSS height and width properties are used to set the height and width of an element.",
+                        "These properties define the size of the content area.",
+                        "Padding, border, and margin are not included in the width and height."
+                      ]
+                    },
+                    {
+                      "heading": "Height and Width Values",
+                      "paragraphs": [
+                        "The height and width properties can have the following values:"
+                      ],
+                      "list": [
+                        "auto – default value",
+                        "length – px, cm, em, etc.",
+                        "% – percentage of parent element",
+                        "initial – default value",
+                        "inherit – inherits value from parent"
+                      ]
+                    },
+                    {
+                      "heading": "Height and Width Example",
+                      "paragraphs": [
+                        "Set the height and width of a div element."
+                      ],
+                      "code": "div {\n  height: 200px;\n  width: 50%;\n  background-color: powderblue;\n}"
+                    },
+                    {
+                      "heading": "Fixed Width Example",
+                      "paragraphs": [
+                        "This example sets a fixed height and width."
+                      ],
+                      "code": "div {\n  height: 100px;\n  width: 500px;\n  background-color: powderblue;\n}"
+                    },
+                    {
+                      "heading": "CSS Max-Width",
+                      "paragraphs": [
+                        "The max-width property defines the maximum width of an element.",
+                        "It prevents the element from becoming wider than the specified value.",
+                        "It improves responsiveness on smaller screens."
+                      ]
+                    },
+                    {
+                      "heading": "Max-Width Example",
+                      "code": ".div1 {\n  max-width: 500px;\n  background-color: powderblue;\n}\n\n.div2 {\n  width: 500px;\n  background-color: powderblue;\n}"
+                    },
+                    {
+                      "heading": "Width vs Max-Width",
+                      "paragraphs": [
+                        "If both width and max-width are set, the max-width value takes priority.",
+                        "This helps prevent horizontal scrolling."
+                      ],
+                      "code": ".div1 {\n  width: 100%;\n  max-width: 900px;\n  background-color: powderblue;\n}"
+                    },
+                    {
+                      "heading": "Min and Max Height / Width",
+                      "paragraphs": [
+                        "CSS also allows setting minimum and maximum dimensions.",
+                        "This helps control layout responsiveness."
+                      ],
+                      "list": [
+                        "min-width",
+                        "max-width",
+                        "min-height",
+                        "max-height"
+                      ]
+                    },
+                    {
+                      "heading": "Exercise",
+                      "exercise": {
+                        "question": "Set the maximum width of the div to 500px.",
+                        "options": [
+                          "width: 500px;",
+                          "max-width: 500px;",
+                          "min-width: 500px;",
+                          "height: 500px;"
+                        ],
+                        "answer": "max-width: 500px;"
+                      }
+                    },
+                    {
+                      "heading": "CSS Dimension Properties",
+                      "table": {
+                        "headers": ["Property", "Description"],
+                        "rows": [
+                          ["height", "Sets the height of an element"],
+                          ["width", "Sets the width of an element"],
+                          ["max-height", "Sets the maximum height"],
+                          ["max-width", "Sets the maximum width"],
+                          ["min-height", "Sets the minimum height"],
+                          ["min-width", "Sets the minimum width"]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "css-box-model": {
+                    "title": "CSS Box Model",
+                    "sections": [
+                      {
+                        "heading": "CSS Box Model",
+                        "paragraphs": [
+                          "The CSS box model is used when talking about design and layout.",
+                          "Every HTML element is treated as a box.",
+                          "The box model consists of content, padding, border, and margin."
+                        ]
+                      },
+                      {
+                        "heading": "Parts of the Box Model",
+                        "paragraphs": [
+                          "Content – The actual content of the box such as text or images.",
+                          "Padding – Clears an area around the content. It is transparent.",
+                          "Border – A border that surrounds the padding and content.",
+                          "Margin – Clears space outside the border and is also transparent."
+                        ]
+                      },
+                      {
+                        "heading": "Box Model Example",
+                        "paragraphs": [
+                          "The following example demonstrates the CSS box model."
+                        ],
+                        "code": "div {\n  width: 300px;\n  border: 15px solid green;\n  padding: 50px;\n  margin: 20px;\n}"
+                      },
+                      {
+                        "heading": "Width and Height of an Element",
+                        "paragraphs": [
+                          "The width and height properties define only the content area.",
+                          "Padding and border are added to calculate the total size."
+                        ]
+                      },
+                      {
+                        "heading": "Total Width Calculation",
+                        "paragraphs": [
+                          "Total width = width + left padding + right padding + left border + right border"
+                        ],
+                        "code": "div {\n  width: 320px;\n  padding: 10px;\n  border: 5px solid gray;\n}"
+                      },
+                      {
+                        "heading": "Total Height Calculation",
+                        "paragraphs": [
+                          "Total height = height + top padding + bottom padding + top border + bottom border"
+                        ]
+                      },
+                      {
+                        "heading": "Important Note",
+                        "paragraphs": [
+                          "Margins are not included in the total size of the element.",
+                          "Margins only affect spacing between elements."
+                        ]
+                      },
+                      {
+                        "heading": "Exercise",
+                        "exercise": {
+                          "question": "Set width to 300px, padding to 20px, and a 10px green border.",
+                          "options": [
+                            "width: 300px; padding: 20px; border: 10px solid green;",
+                            "width: 20px; padding: 300px; border: 10px solid green;",
+                            "width: 300px; padding: 10px; border: 20px solid green;",
+                            "width: 300px; padding: 20px; border: solid green;"
+                          ],
+                          "answer": "width: 300px; padding: 20px; border: 10px solid green;"
+                        }
+                      }
+                    ]
+                  },
+                    "css-animations": {
+                      "title": "CSS Animations",
+                      "sections": [
+                        {
+                          "heading": "CSS Animations",
+                          "paragraphs": [
+                            "CSS allows animation of HTML elements without using JavaScript.",
+                            "An animation lets an element gradually change from one style to another.",
+                            "You can change as many CSS properties as you want."
+                          ]
+                        },
+                        {
+                          "heading": "What are CSS Animations?",
+                          "paragraphs": [
+                            "To create animations, you must define keyframes.",
+                            "Keyframes describe how the element should appear at different times."
+                          ]
+                        },
+                        {
+                          "heading": "Animation Name and Duration",
+                          "paragraphs": [
+                            "The animation-name property defines the name of the animation.",
+                            "The animation-duration property defines how long the animation runs.",
+                            "If duration is not specified, the animation will not run."
+                          ]
+                        },
+                        {
+                          "heading": "CSS @keyframes Rule",
+                          "paragraphs": [
+                            "The @keyframes rule defines the animation steps.",
+                            "You can use from and to or percentage values."
+                          ],
+                          "code": "@keyframes myAnimation {\n  from { background-color: red; }\n  to { background-color: yellow; }\n}\n\n.div {\n  width: 100px;\n  height: 100px;\n  background-color: red;\n  animation-name: myAnimation;\n  animation-duration: 4s;\n}"
+                        },
+                        {
+                          "heading": "Using Percentage Values",
+                          "paragraphs": [
+                            "You can define multiple stages in an animation using percentages."
+                          ],
+                          "code": "@keyframes myAnimation {\n  0%   { background-color: red; }\n  25%  { background-color: yellow; }\n  50%  { background-color: blue; }\n  100% { background-color: green; }\n}"
+                        },
+                        {
+                          "heading": "Animating Position",
+                          "paragraphs": [
+                            "Animations can change both color and position of elements."
+                          ],
+                          "code": "@keyframes myAnimation {\n  0%   { left: 0px; top: 0px; }\n  25%  { left: 200px; top: 0px; }\n  50%  { left: 200px; top: 200px; }\n  75%  { left: 0px; top: 200px; }\n  100% { left: 0px; top: 0px; }\n}\n\n.div {\n  position: relative;\n  width: 100px;\n  height: 100px;\n  background-color: red;\n  animation-name: myAnimation;\n  animation-duration: 4s;\n}"
+                        },
+                        {
+                          "heading": "Animation Delay",
+                          "paragraphs": [
+                            "The animation-delay property specifies when the animation should start.",
+                            "Negative values start the animation as if it has already played."
+                          ],
+                          "code": "div {\n  animation-name: myAnimation;\n  animation-duration: 4s;\n  animation-delay: 2s;\n}"
+                        },
+                        {
+                          "heading": "Animation Iteration Count",
+                          "paragraphs": [
+                            "The animation-iteration-count property specifies how many times an animation runs.",
+                            "The value infinite makes the animation run forever."
+                          ],
+                          "code": "div {\n  animation-name: myAnimation;\n  animation-duration: 4s;\n  animation-iteration-count: infinite;\n}"
+                        },
+                        {
+                          "heading": "Exercise",
+                          "exercise": {
+                            "question": "Which property controls how many times an animation runs?",
+                            "options": [
+                              "animation-delay",
+                              "animation-duration",
+                              "animation-iteration-count",
+                              "animation-name"
+                            ],
+                            "answer": "animation-iteration-count"
+                          }
+                        }
+                      ]
+                    },
+                      "css-transitions": {
+                        "title": "CSS Transitions",
+                        "sections": [
+                          {
+                            "heading": "CSS Transitions",
+                            "paragraphs": [
+                              "CSS transitions allow property values to change smoothly over a given duration.",
+                              "They help create smooth animations without using JavaScript."
+                            ]
+                          },
+                          {
+                            "heading": "The CSS Transition Property",
+                            "paragraphs": [
+                              "To create a transition effect, you must specify the property and duration.",
+                              "The transition property is a shorthand for multiple transition settings."
+                            ],
+                            "list": [
+                              "transition-property",
+                              "transition-duration",
+                              "transition-timing-function",
+                              "transition-delay"
+                            ]
+                          },
+                          {
+                            "heading": "Basic Transition Example",
+                            "paragraphs": [
+                              "This example adds a transition effect to the width of a div."
+                            ],
+                            "code": "div {\n  width: 100px;\n  height: 100px;\n  background-color: red;\n  transition: width 2s;\n}"
+                          },
+                          {
+                            "heading": "Triggering the Transition",
+                            "paragraphs": [
+                              "Transitions are triggered when a property value changes.",
+                              "This commonly happens using pseudo-classes like :hover."
+                            ],
+                            "code": "div:hover {\n  width: 300px;\n}"
+                          },
+                          {
+                            "heading": "Multiple Property Transitions",
+                            "paragraphs": [
+                              "Multiple CSS properties can be animated at the same time."
+                            ],
+                            "code": "div {\n  transition: width 2s, height 4s, background-color 3s;\n}"
+                          },
+                          {
+                            "heading": "Transition Timing Function",
+                            "paragraphs": [
+                              "The transition-timing-function controls the speed curve of the animation."
+                            ],
+                            "list": [
+                              "ease (default)",
+                              "linear",
+                              "ease-in",
+                              "ease-out",
+                              "ease-in-out",
+                              "cubic-bezier(n,n,n,n)"
+                            ],
+                            "code": "#div1 { transition-timing-function: linear; }\n#div2 { transition-timing-function: ease; }\n#div3 { transition-timing-function: ease-in; }\n#div4 { transition-timing-function: ease-out; }\n#div5 { transition-timing-function: ease-in-out; }"
+                          },
+                          {
+                            "heading": "Transition Delay",
+                            "paragraphs": [
+                              "The transition-delay property specifies when the transition should start."
+                            ],
+                            "code": "div {\n  transition-delay: 1s;\n}"
+                          },
+                          {
+                            "heading": "Transition with Transform",
+                            "paragraphs": [
+                              "Transitions can be combined with transforms for animation effects."
+                            ],
+                            "code": "div {\n  transition: width 2s, height 2s, background-color 2s, transform 2s;\n}"
+                          },
+                          {
+                            "heading": "Shorthand Transition Property",
+                            "paragraphs": [
+                              "All transition properties can be written using shorthand syntax."
+                            ],
+                            "code": "div {\n  transition: width 2s linear 1s;\n}"
+                          },
+                          {
+                            "heading": "Exercise",
+                            "exercise": {
+                              "question": "Which property sets the duration of a transition?",
+                              "options": [
+                                "transition-property",
+                                "transition-duration",
+                                "transition-delay",
+                                "transition-timing-function"
+                              ],
+                              "answer": "transition-duration"
+                            }
+                          },
+                          {
+                            "heading": "CSS Transition Properties",
+                            "table": {
+                              "headers": ["Property", "Description"],
+                              "rows": [
+                                ["transition", "Shorthand for all transition properties"],
+                                ["transition-property", "Specifies the CSS property to animate"],
+                                ["transition-duration", "Defines how long the transition takes"],
+                                ["transition-delay", "Specifies delay before transition starts"],
+                                ["transition-timing-function", "Controls animation speed curve"]
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                    
+                  }
+                  
+                
+                
+              
+              
+            
+            
+          
+          
+        
+      
+        
+
+
+
+
+    
+
+  

@@ -1,0 +1,1116 @@
+{
+    "course": {
+      "id": "svg",
+      "title": "SVG Tutorial",
+      "description": "Learn Scalable Vector Graphics step by step"
+    },
+  
+    "sections": [
+      {
+        "title": "SVG Tutorial",
+        "lessons": [
+          { "id": "svg-intro", "title": "SVG Intro" },
+          { "id": "svg-in-html", "title": "SVG in HTML" },
+          { "id": "svg-rectangle", "title": "SVG Rectangle" },
+          { "id": "svg-circle", "title": "SVG Circle" },
+          { "id": "svg-ellipse", "title": "SVG Ellipse" },
+          { "id": "svg-line", "title": "SVG Line" },
+          { "id": "svg-polygon", "title": "SVG Polygon" },
+          { "id": "svg-polyline", "title": "SVG Polyline" },
+          { "id": "svg-path", "title": "SVG Path" },
+          { "id": "svg-text", "title": "SVG Text / tspan" },
+          { "id": "svg-textpath", "title": "SVG TextPath" },
+          { "id": "svg-links", "title": "SVG Links" },
+          { "id": "svg-image", "title": "SVG Image" },
+          { "id": "svg-marker", "title": "SVG Marker" },
+          { "id": "svg-fill", "title": "SVG Fill" },
+          { "id": "svg-stroke", "title": "SVG Stroke" },
+          { "id": "svg-filters", "title": "SVG Filters Intro" },
+          { "id": "svg-blur", "title": "SVG Blur Effects" },
+          { "id": "svg-shadow1", "title": "SVG Drop Shadow 1" },
+          { "id": "svg-shadow2", "title": "SVG Drop Shadow 2" },
+          { "id": "svg-linear-gradient", "title": "SVG Linear Gradient" },
+          { "id": "svg-radial-gradient", "title": "SVG Radial Gradient" },
+          { "id": "svg-patterns", "title": "SVG Patterns" },
+          { "id": "svg-transform", "title": "SVG Transformations" },
+          { "id": "svg-clip-mask", "title": "SVG Clip / Mask" },
+          { "id": "svg-animation", "title": "SVG Animation" },
+          { "id": "svg-scripting", "title": "SVG Scripting" },
+          { "id": "svg-examples", "title": "SVG Examples" },
+          { "id": "svg-quiz", "title": "SVG Quiz" },
+          { "id": "svg-reference", "title": "SVG Reference" }
+        ]
+      }
+    ],
+  
+    "content": {
+        
+            "svg-intro": {
+              "title": "SVG Intro",
+              "sections": [
+                {
+                  "heading": "Learn SVG",
+                  "paragraphs": [
+                    "SVG stands for Scalable Vector Graphics.",
+                    "SVG defines vector-based graphics in XML format.",
+                    "SVG graphics are scalable and do not lose quality when zoomed or resized.",
+                    "SVG is supported by all major browsers."
+                  ]
+                },
+                {
+                  "heading": "SVG Example",
+                  "paragraphs": [
+                    "Below is a simple example of an SVG graphic."
+                  ],
+                  "code": "<html>\n<body>\n\n<h1>My first SVG</h1>\n\n<svg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" stroke-width=\"4\" fill=\"yellow\" />\n</svg>\n\n</body>\n</html>"
+                },
+                {
+                  "heading": "What You Should Already Know",
+                  "paragraphs": [
+                    "Before learning SVG, you should understand:",
+                    "HTML",
+                    "Basic XML"
+                  ]
+                },
+                {
+                  "heading": "What is SVG?",
+                  "paragraphs": [
+                    "SVG stands for Scalable Vector Graphics.",
+                    "SVG is used to define vector-based graphics for the Web.",
+                    "SVG graphics are written in XML.",
+                    "Each SVG element and attribute can be animated.",
+                    "SVG is a W3C recommendation.",
+                    "SVG works with CSS, DOM, XSL, and JavaScript."
+                  ]
+                },
+                {
+                  "heading": "SVG Versions",
+                  "paragraphs": [
+                    "SVG 1.0 became a W3C Recommendation in 2001.",
+                    "SVG 1.1 became a Recommendation in 2003.",
+                    "SVG 1.1 Second Edition became a Recommendation in 2011."
+                  ]
+                },
+                {
+                  "heading": "Advantages of SVG",
+                  "paragraphs": [
+                    "SVG images can be created and edited using any text editor.",
+                    "SVG images are scalable and do not lose quality.",
+                    "SVG images are searchable, indexable, and scriptable.",
+                    "SVG graphics are resolution-independent.",
+                    "SVG is an open standard.",
+                    "SVG files are pure XML."
+                  ]
+                },
+                {
+                  "heading": "How SVG Works",
+                  "paragraphs": [
+                    "SVG uses elements and attributes to draw shapes.",
+                    "It supports shapes like rectangles, circles, ellipses, lines, and polygons.",
+                    "SVG also supports animations, filters, gradients, and JavaScript interaction."
+                  ]
+                },
+                {
+                  "heading": "Creating SVG Images",
+                  "paragraphs": [
+                    "SVG images can be created using any text editor.",
+                    "They can also be created using graphic tools like Inkscape.",
+                    "This tutorial focuses on writing SVG code manually."
+                  ]
+                }
+              ]
+            },
+            
+                "svg-in-html": {
+                  "title": "SVG in HTML",
+                  "sections": [
+                    {
+                      "heading": "SVG in HTML",
+                      "paragraphs": [
+                        "SVG elements can be embedded directly inside HTML pages.",
+                        "SVG graphics are written in XML and displayed directly in the browser."
+                      ]
+                    },
+                    {
+                      "heading": "Embedding SVG in HTML",
+                      "paragraphs": [
+                        "You can embed SVG directly into HTML using the <svg> tag.",
+                        "SVG elements work like normal HTML elements."
+                      ]
+                    },
+                    {
+                      "heading": "Basic SVG Example",
+                      "paragraphs": [
+                        "Below is an example of an SVG embedded inside an HTML document."
+                      ],
+                      "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My first SVG</h1>\n\n<svg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" stroke-width=\"4\" fill=\"yellow\" />\n</svg>\n\n</body>\n</html>"
+                    },
+                    {
+                      "heading": "SVG Code Explanation",
+                      "paragraphs": [
+                        "The <svg> element defines the SVG container.",
+                        "The width and height attributes define the size of the SVG.",
+                        "The xmlns attribute defines the SVG namespace.",
+                        "The <circle> element draws a circle.",
+                        "cx and cy define the center of the circle.",
+                        "r defines the radius of the circle.",
+                        "stroke and stroke-width define the border.",
+                        "fill defines the inside color."
+                      ]
+                    },
+                    {
+                      "heading": "Important SVG Rules",
+                      "paragraphs": [
+                        "SVG elements must always be closed.",
+                        "SVG is case-sensitive.",
+                        "All attribute values must be written inside quotes.",
+                        "Lowercase element names are recommended."
+                      ]
+                    },
+                    {
+                      "heading": "Another SVG Example",
+                      "paragraphs": [
+                        "This example shows multiple SVG elements inside one graphic."
+                      ],
+                      "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<svg width=\"150\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"100%\" height=\"100%\" fill=\"green\" />\n  <circle cx=\"75\" cy=\"50\" r=\"40\" fill=\"yellow\" />\n  <text x=\"75\" y=\"60\" font-size=\"30\" text-anchor=\"middle\" fill=\"red\">SVG</text>\n</svg>\n\n</body>\n</html>"
+                    },
+                    {
+                      "heading": "SVG Element Explanation",
+                      "paragraphs": [
+                        "<rect> draws a rectangle.",
+                        "<circle> draws a circle.",
+                        "<text> displays text inside the SVG.",
+                        "x and y define text position.",
+                        "text-anchor controls text alignment."
+                      ]
+                    }
+                  ]
+                },
+                
+                    "svg-rectangle": {
+                      "title": "SVG Rectangle",
+                      "sections": [
+                        {
+                          "heading": "SVG Shapes",
+                          "paragraphs": [
+                            "SVG provides several predefined shape elements.",
+                            "These include rectangle, circle, ellipse, line, polyline, polygon, and path."
+                          ],
+                          "list": [
+                            "Rectangle <rect>",
+                            "Circle <circle>",
+                            "Ellipse <ellipse>",
+                            "Line <line>",
+                            "Polyline <polyline>",
+                            "Polygon <polygon>",
+                            "Path <path>"
+                          ]
+                        },
+                        {
+                          "heading": "SVG Rectangle (<rect>)",
+                          "paragraphs": [
+                            "The <rect> element is used to create rectangles.",
+                            "It can also be used to create rounded rectangles."
+                          ]
+                        },
+                        {
+                          "heading": "Rectangle Attributes",
+                          "table": {
+                            "headers": ["Attribute", "Description"],
+                            "rows": [
+                              ["width", "Required. Width of the rectangle"],
+                              ["height", "Required. Height of the rectangle"],
+                              ["x", "X position of the rectangle"],
+                              ["y", "Y position of the rectangle"],
+                              ["rx", "Rounds the x-axis corners"],
+                              ["ry", "Rounds the y-axis corners"]
+                            ]
+                          }
+                        },
+                        {
+                          "heading": "Basic Rectangle Example",
+                          "paragraphs": [
+                            "This example creates a rectangle with width, height and color."
+                          ],
+                          "code": "<svg width=\"300\" height=\"130\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"100\" x=\"10\" y=\"10\" rx=\"20\" ry=\"20\" fill=\"blue\" />\n</svg>"
+                        },
+                        {
+                          "heading": "Rectangle with Border",
+                          "paragraphs": [
+                            "This example adds a stroke (border) to the rectangle."
+                          ],
+                          "code": "<svg width=\"320\" height=\"130\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"300\" height=\"100\" x=\"10\" y=\"10\"\n    style=\"fill:rgb(0,0,255); stroke-width:3; stroke:red\" />\n</svg>"
+                        },
+                        {
+                          "heading": "Rectangle with Opacity",
+                          "paragraphs": [
+                            "The fill-opacity and stroke-opacity properties control transparency."
+                          ],
+                          "code": "<svg width=\"300\" height=\"170\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"150\" height=\"150\" x=\"10\" y=\"10\"\n    style=\"fill:blue; stroke:pink; stroke-width:5; fill-opacity:0.1; stroke-opacity:0.9\" />\n</svg>"
+                        },
+                        {
+                          "heading": "Rectangle with Overall Opacity",
+                          "paragraphs": [
+                            "The opacity property affects the entire element."
+                          ],
+                          "code": "<svg width=\"300\" height=\"170\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"150\" height=\"150\" x=\"10\" y=\"10\"\n    style=\"fill:blue; stroke:pink; stroke-width:5; opacity:0.5\" />\n</svg>"
+                        },
+                        {
+                          "heading": "Rounded Rectangle",
+                          "paragraphs": [
+                            "Rounded corners can be created using rx and ry attributes."
+                          ],
+                          "code": "<svg width=\"300\" height=\"170\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"150\" height=\"150\" x=\"10\" y=\"10\" rx=\"20\" ry=\"20\"\n    style=\"fill:red; stroke:black; stroke-width:5; opacity:0.5\" />\n</svg>"
+                        }
+                      ]
+                    },
+                    
+                        "svg-circle": {
+                          "title": "SVG Circle",
+                          "sections": [
+                            {
+                              "heading": "SVG Circle",
+                              "paragraphs": [
+                                "The <circle> element is used to create circles in SVG.",
+                                "It is one of the basic SVG shape elements."
+                              ]
+                            },
+                            {
+                              "heading": "Circle Attributes",
+                              "table": {
+                                "headers": ["Attribute", "Description"],
+                                "rows": [
+                                  ["r", "Required. Radius of the circle"],
+                                  ["cx", "X-axis center of the circle (default 0)"],
+                                  ["cy", "Y-axis center of the circle (default 0)"]
+                                ]
+                              }
+                            },
+                            {
+                              "heading": "Basic Circle Example",
+                              "paragraphs": [
+                                "This example creates a simple circle using SVG."
+                              ],
+                              "code": "<svg height=\"100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle r=\"45\" cx=\"50\" cy=\"50\" fill=\"red\" />\n</svg>"
+                            },
+                            {
+                              "heading": "Circle Code Explanation",
+                              "paragraphs": [
+                                "The r attribute defines the radius of the circle.",
+                                "The cx and cy attributes define the center position.",
+                                "The fill attribute defines the color of the circle."
+                              ]
+                            },
+                            {
+                              "heading": "Circle with Border",
+                              "paragraphs": [
+                                "This example adds a border around the circle."
+                              ],
+                              "code": "<svg height=\"100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle r=\"45\" cx=\"50\" cy=\"50\" fill=\"red\" stroke=\"green\" stroke-width=\"3\" />\n</svg>"
+                            },
+                            {
+                              "heading": "Border Explanation",
+                              "paragraphs": [
+                                "The stroke attribute defines the border color.",
+                                "The stroke-width attribute defines the border thickness."
+                              ]
+                            },
+                            {
+                              "heading": "Circle with Opacity",
+                              "paragraphs": [
+                                "The opacity attribute controls the transparency of the circle."
+                              ],
+                              "code": "<svg height=\"100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle r=\"45\" cx=\"50\" cy=\"50\" fill=\"red\" stroke=\"green\" stroke-width=\"3\" opacity=\"0.5\" />\n</svg>"
+                            },
+                            {
+                              "heading": "Opacity Explanation",
+                              "paragraphs": [
+                                "Opacity values range from 0 to 1.",
+                                "Lower values make the shape more transparent."
+                              ]
+                            }
+                          ]
+                        },
+                        
+                            "svg-ellipse": {
+                              "title": "SVG Ellipse",
+                              "sections": [
+                                {
+                                  "heading": "SVG Ellipse",
+                                  "paragraphs": [
+                                    "The <ellipse> element is used to create an ellipse.",
+                                    "An ellipse is similar to a circle, but it has different x and y radii."
+                                  ]
+                                },
+                                {
+                                  "heading": "Ellipse Attributes",
+                                  "table": {
+                                    "headers": ["Attribute", "Description"],
+                                    "rows": [
+                                      ["rx", "Required. X-axis radius of the ellipse"],
+                                      ["ry", "Required. Y-axis radius of the ellipse"],
+                                      ["cx", "X-axis center of the ellipse (default 0)"],
+                                      ["cy", "Y-axis center of the ellipse (default 0)"]
+                                    ]
+                                  }
+                                },
+                                {
+                                  "heading": "Basic Ellipse Example",
+                                  "paragraphs": [
+                                    "This example creates a simple ellipse using SVG."
+                                  ],
+                                  "code": "<svg height=\"140\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\">\n  <ellipse rx=\"100\" ry=\"50\" cx=\"120\" cy=\"80\"\n    style=\"fill:yellow; stroke:green; stroke-width:3\" />\n</svg>"
+                                },
+                                {
+                                  "heading": "Ellipse Code Explanation",
+                                  "paragraphs": [
+                                    "The rx attribute defines the horizontal radius.",
+                                    "The ry attribute defines the vertical radius.",
+                                    "The cx and cy attributes define the center position of the ellipse."
+                                  ]
+                                },
+                                {
+                                  "heading": "Multiple Ellipses",
+                                  "paragraphs": [
+                                    "Multiple ellipses can be layered to create visual effects."
+                                  ],
+                                  "code": "<svg height=\"150\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\">\n  <ellipse cx=\"240\" cy=\"100\" rx=\"220\" ry=\"30\" fill=\"purple\" />\n  <ellipse cx=\"220\" cy=\"70\" rx=\"190\" ry=\"20\" fill=\"lime\" />\n  <ellipse cx=\"210\" cy=\"45\" rx=\"170\" ry=\"15\" fill=\"yellow\" />\n</svg>"
+                                },
+                                {
+                                  "heading": "Two Ellipses Example",
+                                  "paragraphs": [
+                                    "This example shows two overlapping ellipses."
+                                  ],
+                                  "code": "<svg height=\"100\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\">\n  <ellipse cx=\"240\" cy=\"50\" rx=\"220\" ry=\"30\" fill=\"yellow\" />\n  <ellipse cx=\"220\" cy=\"50\" rx=\"190\" ry=\"20\" fill=\"white\" />\n</svg>"
+                                }
+                              ]
+                            },
+                            
+                                "svg-line": {
+                                  "title": "SVG Line",
+                                  "sections": [
+                                    {
+                                      "heading": "SVG Line",
+                                      "paragraphs": [
+                                        "The <line> element is used to create straight lines in SVG.",
+                                        "A line is drawn between two points defined by x and y coordinates."
+                                      ]
+                                    },
+                                    {
+                                      "heading": "Line Attributes",
+                                      "table": {
+                                        "headers": ["Attribute", "Description"],
+                                        "rows": [
+                                          ["x1", "Starting point on the x-axis"],
+                                          ["y1", "Starting point on the y-axis"],
+                                          ["x2", "Ending point on the x-axis"],
+                                          ["y2", "Ending point on the y-axis"]
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "heading": "Basic Line Example",
+                                      "paragraphs": [
+                                        "This example creates a line from (0,0) to (300,200)."
+                                      ],
+                                      "code": "<svg height=\"200\" width=\"300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"0\" y1=\"0\" x2=\"300\" y2=\"200\" style=\"stroke:red; stroke-width:2\" />\n</svg>"
+                                    },
+                                    {
+                                      "heading": "Line Code Explanation",
+                                      "paragraphs": [
+                                        "x1 and y1 define the starting point of the line.",
+                                        "x2 and y2 define the ending point of the line.",
+                                        "stroke defines the color of the line.",
+                                        "stroke-width defines the thickness of the line."
+                                      ]
+                                    },
+                                    {
+                                      "heading": "Horizontal Line Example",
+                                      "paragraphs": [
+                                        "This example creates a horizontal line."
+                                      ],
+                                      "code": "<svg height=\"50\" width=\"300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"0\" y1=\"10\" x2=\"250\" y2=\"10\" style=\"stroke:red; stroke-width:12\" />\n</svg>"
+                                    },
+                                    {
+                                      "heading": "Vertical Line Example",
+                                      "paragraphs": [
+                                        "This example creates a vertical line."
+                                      ],
+                                      "code": "<svg height=\"210\" width=\"300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"200\" style=\"stroke:red; stroke-width:14\" />\n</svg>"
+                                    }
+                                  ]
+                                },
+                                
+                                    "svg-polygon": {
+                                      "title": "SVG Polygon",
+                                      "sections": [
+                                        {
+                                          "heading": "SVG Polygon",
+                                          "paragraphs": [
+                                            "The <polygon> element is used to create a graphic that contains at least three sides.",
+                                            "Polygons are made of straight lines and the shape is automatically closed."
+                                          ]
+                                        },
+                                        {
+                                          "heading": "Polygon Attributes",
+                                          "table": {
+                                            "headers": ["Attribute", "Description"],
+                                            "rows": [
+                                              [
+                                                "points",
+                                                "Required. Defines the list of x and y coordinates for the polygon"
+                                              ]
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "heading": "Polygon With Three Sides",
+                                          "paragraphs": [
+                                            "This example creates a triangle using three coordinate points."
+                                          ],
+                                          "code": "<svg height=\"220\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"100,10 150,190 50,190\" style=\"fill:lime;stroke:purple;stroke-width:3\" />\n</svg>"
+                                        },
+                                        {
+                                          "heading": "Polygon With Four Sides",
+                                          "paragraphs": [
+                                            "This example creates a polygon with four sides."
+                                          ],
+                                          "code": "<svg height=\"260\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"220,10 300,210 170,250 123,234\" style=\"fill:lime;stroke:purple;stroke-width:3\" />\n</svg>"
+                                        },
+                                        {
+                                          "heading": "Polygon With Six Sides",
+                                          "paragraphs": [
+                                            "This example creates a polygon with six sides."
+                                          ],
+                                          "code": "<svg height=\"280\" width=\"360\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"150,15 258,77 258,202 150,265 42,202 42,77\" style=\"fill:lime;stroke:purple;stroke-width:3\" />\n</svg>"
+                                        },
+                                        {
+                                          "heading": "Polygon Star",
+                                          "paragraphs": [
+                                            "The polygon element can be used to create star shapes."
+                                          ],
+                                          "code": "<svg height=\"210\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"100,10 40,198 190,78 10,78 160,198\" style=\"fill:lime;stroke:purple;stroke-width:5\" />\n</svg>"
+                                        },
+                                        {
+                                          "heading": "Polygon with fill-rule",
+                                          "paragraphs": [
+                                            "The fill-rule property specifies how the inside of a shape is filled."
+                                          ],
+                                          "code": "<svg height=\"210\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"100,10 40,198 190,78 10,78 160,198\" style=\"fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd\" />\n</svg>"
+                                        },
+                                        {
+                                          "heading": "Explanation",
+                                          "paragraphs": [
+                                            "The points attribute defines the corners of the polygon.",
+                                            "Each point consists of an x and y coordinate.",
+                                            "The fill-rule property controls how overlapping areas are filled."
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    
+                                        "svg-polyline": {
+                                          "title": "SVG Polyline",
+                                          "sections": [
+                                            {
+                                              "heading": "SVG Polyline",
+                                              "paragraphs": [
+                                                "The <polyline> element is used to create any shape that consists of only straight lines.",
+                                                "A polyline is similar to a polygon, but it does not automatically close the shape."
+                                              ]
+                                            },
+                                            {
+                                              "heading": "Polyline Attribute",
+                                              "table": {
+                                                "headers": ["Attribute", "Description"],
+                                                "rows": [
+                                                  [
+                                                    "points",
+                                                    "Required. Defines the list of x and y coordinates for the polyline"
+                                                  ]
+                                                ]
+                                              }
+                                            },
+                                            {
+                                              "heading": "Polyline Example",
+                                              "paragraphs": [
+                                                "The following example creates a polyline using multiple coordinate points."
+                                              ],
+                                              "code": "<svg height=\"210\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polyline points=\"0,0 50,150 100,75 150,50 200,140 250,140\"\n  style=\"fill:none;stroke:green;stroke-width:3\" />\n</svg>"
+                                            },
+                                            {
+                                              "heading": "Code Explanation",
+                                              "paragraphs": [
+                                                "The points attribute defines the list of coordinates for the polyline.",
+                                                "Each pair of numbers represents an x and y position.",
+                                                "The fill is set to none so only the outline is visible.",
+                                                "The stroke property defines the color of the line.",
+                                                "The stroke-width property defines the thickness of the line."
+                                              ]
+                                            },
+                                            {
+                                              "heading": "Another Polyline Example",
+                                              "paragraphs": [
+                                                "This example shows a polyline created using only straight horizontal and vertical lines."
+                                              ],
+                                              "code": "<svg height=\"180\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polyline points=\"0,40 40,40 40,80 80,80 80,120 120,120\"\n  style=\"fill:yellow;stroke:red;stroke-width:4\" />\n</svg>"
+                                            }
+                                          ]
+                                        },
+                                        
+                                            "svg-path": {
+                                              "title": "SVG Path",
+                                              "sections": [
+                                                {
+                                                  "heading": "SVG Path",
+                                                  "paragraphs": [
+                                                    "The <path> element is used to define a path.",
+                                                    "Paths are used to create simple or complex shapes using straight lines and curves."
+                                                  ]
+                                                },
+                                                {
+                                                  "heading": "Path Attribute",
+                                                  "table": {
+                                                    "headers": ["Attribute", "Description"],
+                                                    "rows": [
+                                                      [
+                                                        "d",
+                                                        "Required. Defines the path commands and coordinates"
+                                                      ]
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "heading": "Path Commands",
+                                                  "paragraphs": [
+                                                    "The following commands are used inside the path data:",
+                                                    "M = moveto",
+                                                    "L = lineto",
+                                                    "H = horizontal lineto",
+                                                    "V = vertical lineto",
+                                                    "C = curveto",
+                                                    "S = smooth curveto",
+                                                    "Q = quadratic Bézier curve",
+                                                    "T = smooth quadratic Bézier curve",
+                                                    "A = elliptical arc",
+                                                    "Z = close path",
+                                                    "Uppercase letters represent absolute positions, lowercase letters represent relative positions."
+                                                  ]
+                                                },
+                                                {
+                                                  "heading": "Simple Path Example",
+                                                  "paragraphs": [
+                                                    "This example creates a triangular path using straight lines."
+                                                  ],
+                                                  "code": "<svg height=\"210\" width=\"400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M150 5 L75 200 L225 200 Z\"\n  style=\"fill:none;stroke:green;stroke-width:3\" />\n</svg>"
+                                                },
+                                                {
+                                                  "heading": "Bezier Curve",
+                                                  "paragraphs": [
+                                                    "Bezier curves are used to create smooth curved lines.",
+                                                    "A quadratic Bézier curve uses one control point.",
+                                                    "The curve is drawn between two points using a control point."
+                                                  ]
+                                                },
+                                                {
+                                                  "heading": "Bezier Curve Example",
+                                                  "code": "<svg height=\"400\" width=\"450\" xmlns=\"http://www.w3.org/2000/svg\">\n\n<path d=\"M 100 350 q 150 -300 300 0\" stroke=\"blue\" stroke-width=\"4\" fill=\"none\" />\n\n<circle cx=\"100\" cy=\"350\" r=\"4\" fill=\"black\" />\n<circle cx=\"250\" cy=\"50\" r=\"4\" fill=\"black\" />\n<circle cx=\"400\" cy=\"350\" r=\"4\" fill=\"black\" />\n\n</svg>"
+                                                },
+                                                {
+                                                  "heading": "Important Note",
+                                                  "paragraphs": [
+                                                    "SVG paths can be complex and difficult to write manually.",
+                                                    "It is recommended to use an SVG editor for complex shapes.",
+                                                    "Paths are very powerful and used in icons, animations, and vector graphics."
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                                "svg-text": {
+                                                  "title": "SVG Text and Tspan",
+                                                  "sections": [
+                                                    {
+                                                      "heading": "SVG Text",
+                                                      "paragraphs": [
+                                                        "The <text> element is used to define text in SVG.",
+                                                        "It allows positioning, rotation, and styling of text.",
+                                                        "Text in SVG is scalable and does not lose quality."
+                                                      ]
+                                                    },
+                                                    {
+                                                      "heading": "Text Attributes",
+                                                      "table": {
+                                                        "headers": ["Attribute", "Description"],
+                                                        "rows": [
+                                                          ["x", "X position of the text"],
+                                                          ["y", "Y position of the text"],
+                                                          ["dx", "Horizontal shift from previous position"],
+                                                          ["dy", "Vertical shift from previous position"],
+                                                          ["rotate", "Rotation angle of each character"],
+                                                          ["textLength", "Total width the text should fit into"],
+                                                          ["lengthAdjust", "Controls spacing or glyph scaling"]
+                                                        ]
+                                                      }
+                                                    },
+                                                    {
+                                                      "heading": "Simple Text Example",
+                                                      "code": "<svg height=\"30\" width=\"200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <text x=\"5\" y=\"15\" fill=\"red\">I love SVG!</text>\n</svg>"
+                                                    },
+                                                    {
+                                                      "heading": "Text With Stroke",
+                                                      "code": "<svg height=\"40\" width=\"200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <text x=\"5\" y=\"30\" fill=\"none\" stroke=\"red\" font-size=\"35\">I love SVG!</text>\n</svg>"
+                                                    },
+                                                    {
+                                                      "heading": "Text With Fill and Stroke",
+                                                      "code": "<svg height=\"40\" width=\"200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <text x=\"5\" y=\"30\" fill=\"pink\" stroke=\"blue\" font-size=\"35\">I love SVG!</text>\n</svg>"
+                                                    },
+                                                    {
+                                                      "heading": "Rotate Individual Letters",
+                                                      "code": "<svg height=\"40\" width=\"200\">\n  <text x=\"5\" y=\"30\" fill=\"red\" font-size=\"35\" rotate=\"30\">I love SVG!</text>\n</svg>"
+                                                    },
+                                                    {
+                                                      "heading": "Rotate Whole Text",
+                                                      "code": "<svg height=\"100\" width=\"200\">\n  <text x=\"5\" y=\"30\" fill=\"red\" font-size=\"25\" transform=\"rotate(30 20,40)\">I love SVG!</text>\n</svg>"
+                                                    },
+                                                    {
+                                                      "heading": "SVG Tspan",
+                                                      "paragraphs": [
+                                                        "The <tspan> element is used to style or position part of a text.",
+                                                        "It must be inside a <text> element.",
+                                                        "It works similar to the HTML <span> tag."
+                                                      ]
+                                                    },
+                                                    {
+                                                      "heading": "Tspan Attributes",
+                                                      "table": {
+                                                        "headers": ["Attribute", "Description"],
+                                                        "rows": [
+                                                          ["x", "New x position"],
+                                                          ["y", "New y position"],
+                                                          ["dx", "Horizontal offset"],
+                                                          ["dy", "Vertical offset"],
+                                                          ["rotate", "Rotation angle"],
+                                                          ["textLength", "Controls width of text"]
+                                                        ]
+                                                      }
+                                                    },
+                                                    {
+                                                      "heading": "Tspan Example",
+                                                      "code": "<svg height=\"40\" width=\"250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <text x=\"5\" y=\"30\" fill=\"red\" font-size=\"35\">\n    I Love <tspan fill=\"none\" stroke=\"green\">SVG</tspan>!\n  </text>\n</svg>"
+                                                    }
+                                                  ]
+                                                },
+                                                
+                                                    "svg-textpath": {
+                                                      "title": "SVG TextPath",
+                                                      "sections": [
+                                                        {
+                                                          "heading": "SVG TextPath",
+                                                          "paragraphs": [
+                                                            "The <textPath> element is used to render text along the shape of a path.",
+                                                            "It allows text to follow curves or custom shapes defined using SVG paths."
+                                                          ]
+                                                        },
+                                                        {
+                                                          "heading": "TextPath Attributes",
+                                                          "table": {
+                                                            "headers": ["Attribute", "Description"],
+                                                            "rows": [
+                                                              ["href", "Specifies the path the text follows"],
+                                                              ["lengthAdjust", "Controls how text is stretched or compressed"],
+                                                              ["method", "Defines how glyphs are rendered along the path"],
+                                                              ["spacing", "Controls spacing between characters"],
+                                                              ["startOffset", "Defines where the text begins along the path"],
+                                                              ["textLength", "Specifies the total length of the text"]
+                                                            ]
+                                                          }
+                                                        },
+                                                        {
+                                                          "heading": "Text Along a Path",
+                                                          "paragraphs": [
+                                                            "The <textPath> element is placed inside a <text> element.",
+                                                            "The text follows the shape of the referenced path."
+                                                          ],
+                                                          "code": "<svg height=\"200\" width=\"350\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path id=\"lineAC\" d=\"M 30 180 q 150 -250 300 0\" stroke=\"blue\" stroke-width=\"2\" fill=\"none\" />\n  <text style=\"fill:red;font-size:25px;\">\n    <textPath href=\"#lineAC\" startOffset=\"80\">\n      I love SVG! I love SVG!\n    </textPath>\n  </text>\n</svg>"
+                                                        },
+                                                        {
+                                                          "heading": "Text Along a Path Using textLength",
+                                                          "paragraphs": [
+                                                            "The textLength attribute controls how much of the path the text should occupy.",
+                                                            "This allows stretching or compressing the text along the path."
+                                                          ],
+                                                          "code": "<svg height=\"200\" width=\"350\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path id=\"lineAC\" d=\"M 30 180 q 150 -250 300 0\" stroke=\"blue\" stroke-width=\"2\" fill=\"none\" />\n  <text style=\"fill:red;font-size:25px;\">\n    <textPath href=\"#lineAC\" textLength=\"100%\" startOffset=\"20\">\n      I love SVG! I love SVG!\n    </textPath>\n  </text>\n</svg>"
+                                                        }
+                                                      ]
+                                                    },
+                                                    
+                                                        "svg-links": {
+                                                          "title": "SVG Links",
+                                                          "sections": [
+                                                            {
+                                                              "heading": "SVG Links",
+                                                              "paragraphs": [
+                                                                "The <a> element is used to create links in SVG.",
+                                                                "The <a> element can be used with both text and graphics."
+                                                              ]
+                                                            },
+                                                            {
+                                                              "heading": "SVG Link Attributes",
+                                                              "table": {
+                                                                "headers": ["Attribute", "Description"],
+                                                                "rows": [
+                                                                  ["href", "The URL to navigate to"],
+                                                                  ["download", "Forces the browser to download the file"],
+                                                                  ["hreflang", "Specifies the language of the linked document"],
+                                                                  ["referrerpolicy", "Controls what referrer information is sent"],
+                                                                  ["rel", "Defines the relationship between the current and target document"],
+                                                                  ["target", "Specifies where to open the link"],
+                                                                  ["type", "Specifies the MIME type of the linked resource"]
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "heading": "Text as a Hyperlink",
+                                                              "paragraphs": [
+                                                                "SVG text can be wrapped inside an <a> element to create a clickable link.",
+                                                                "The link behaves like a normal HTML hyperlink."
+                                                              ],
+                                                              "code": "<svg height=\"30\" width=\"200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <a href=\"https://www.w3schools.com/graphics/\" target=\"_blank\">\n    <text x=\"5\" y=\"15\" fill=\"red\">I love SVG!</text>\n  </a>\n</svg>"
+                                                            },
+                                                            {
+                                                              "heading": "Graphic as a Hyperlink",
+                                                              "paragraphs": [
+                                                                "SVG graphics such as circles, rectangles, or images can also be clickable.",
+                                                                "The <a> element wraps the graphical object."
+                                                              ],
+                                                              "code": "<svg height=\"100\" width=\"200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <a href=\"https://www.w3schools.com/graphics/\" target=\"_blank\">\n    <circle r=\"45\" cx=\"50\" cy=\"50\" fill=\"red\" />\n  </a>\n</svg>"
+                                                            }
+                                                          ]
+                                                        },
+                                                        
+                                                            "svg-image": {
+                                                              "title": "SVG Image",
+                                                              "sections": [
+                                                                {
+                                                                  "heading": "SVG Image",
+                                                                  "paragraphs": [
+                                                                    "The <image> element is used to insert an image into an SVG.",
+                                                                    "SVG supports image formats like JPEG, PNG, and SVG.",
+                                                                    "The <image> element allows positioning and resizing of images inside SVG."
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "heading": "SVG Image Attributes",
+                                                                  "table": {
+                                                                    "headers": ["Attribute", "Description"],
+                                                                    "rows": [
+                                                                      ["width", "Required. The width of the image"],
+                                                                      ["height", "Required. The height of the image"],
+                                                                      ["href", "Required. The URL of the image"],
+                                                                      ["x", "The x-position of the image"],
+                                                                      ["y", "The y-position of the image"]
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "heading": "Insert an Image",
+                                                                  "paragraphs": [
+                                                                    "You can insert an image inside SVG using the <image> element.",
+                                                                    "The image file can be a JPG, PNG, or another SVG."
+                                                                  ],
+                                                                  "code": "<svg height=\"200\" width=\"300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <image height=\"200\" width=\"300\" href=\"pulpitrock.jpg\" />\n</svg>"
+                                                                },
+                                                                {
+                                                                  "heading": "Add Image with Graphics",
+                                                                  "paragraphs": [
+                                                                    "SVG images can be combined with other shapes like circles and text.",
+                                                                    "This example shows an image placed over a circle with text."
+                                                                  ],
+                                                                  "code": "<svg height=\"250\" width=\"300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle r=\"105\" cx=\"150\" cy=\"120\" fill=\"lightblue\" />\n  <image x=\"0\" y=\"60\" width=\"300\" height=\"100\" href=\"pulpitrock.jpg\" />\n  <text x=\"84\" y=\"180\" fill=\"black\">Pulpit Rock, Norway</text>\n</svg>"
+                                                                }
+                                                              ]
+                                                            },
+                                                            
+                                                                "svg-marker": {
+                                                                  "title": "SVG Marker",
+                                                                  "sections": [
+                                                                    {
+                                                                      "heading": "SVG Marker",
+                                                                      "paragraphs": [
+                                                                        "The <marker> element is used to create markers for the start, middle, or end of SVG shapes.",
+                                                                        "Markers can be applied to lines, paths, polylines, and polygons.",
+                                                                        "Markers are defined inside the <defs> element."
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "heading": "Marker Attributes",
+                                                                      "table": {
+                                                                        "headers": ["Attribute", "Description"],
+                                                                        "rows": [
+                                                                          ["id", "Unique identifier for the marker"],
+                                                                          ["markerWidth", "Width of the marker"],
+                                                                          ["markerHeight", "Height of the marker"],
+                                                                          ["refX", "X coordinate where the marker connects"],
+                                                                          ["refY", "Y coordinate where the marker connects"],
+                                                                          ["orient", "Orientation of the marker (auto, auto-start-reverse)"]
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "heading": "Line with Start and End Marker",
+                                                                      "paragraphs": [
+                                                                        "Markers can be added to the start and end of a line.",
+                                                                        "Markers are referenced using marker-start and marker-end."
+                                                                      ],
+                                                                      "code": "<svg height=\"250\" width=\"350\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <marker id=\"circle\" markerWidth=\"8\" markerHeight=\"8\" refX=\"5\" refY=\"5\">\n      <circle cx=\"5\" cy=\"5\" r=\"3\" fill=\"black\" />\n    </marker>\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"5\" refY=\"5\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"black\" />\n    </marker>\n  </defs>\n\n  <line x1=\"10\" y1=\"10\" x2=\"300\" y2=\"200\" stroke=\"red\" stroke-width=\"3\"\n        marker-start=\"url(#circle)\" marker-end=\"url(#arrow)\" />\n</svg>"
+                                                                    },
+                                                                    {
+                                                                      "heading": "Using Mid Marker",
+                                                                      "paragraphs": [
+                                                                        "Markers can also be placed in the middle of a path using marker-mid.",
+                                                                        "The same marker can be reused multiple times."
+                                                                      ],
+                                                                      "code": "<svg height=\"250\" width=\"350\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <marker id=\"circle\" markerWidth=\"8\" markerHeight=\"8\" refX=\"5\" refY=\"5\">\n      <circle cx=\"5\" cy=\"5\" r=\"2\" fill=\"black\" />\n    </marker>\n    <marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"5\" refY=\"5\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"black\" />\n    </marker>\n  </defs>\n\n  <polyline points=\"15,40 15,170 200,170\"\n            stroke=\"red\"\n            stroke-width=\"3\"\n            fill=\"none\"\n            marker-start=\"url(#circle)\"\n            marker-mid=\"url(#circle)\"\n            marker-end=\"url(#arrow)\" />\n</svg>"
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                
+                                                                    "svg-fill": {
+                                                                      "title": "SVG Fill ",
+                                                                      "sections": [
+                                                                        {
+                                                                          "heading": "SVG Fill Attributes",
+                                                                          "paragraphs": [
+                                                                            "The fill attribute defines the color inside an SVG shape.",
+                                                                            "SVG provides three fill-related attributes: fill, fill-opacity, and fill-rule."
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "heading": "Fill Attribute",
+                                                                          "paragraphs": [
+                                                                            "The fill attribute sets the color of the inside of an SVG element.",
+                                                                            "It can be used with elements such as circle, rect, polygon, polyline, path, text, and others.",
+                                                                            "The value of fill can be a color name, RGB value, or hex value."
+                                                                          ],
+                                                                          "code": "<svg width=\"600\" height=\"220\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"50,10 0,190 100,190\" fill=\"lime\" />\n  <rect width=\"150\" height=\"100\" x=\"120\" y=\"50\" fill=\"blue\" />\n  <circle r=\"45\" cx=\"350\" cy=\"100\" fill=\"red\" />\n  <text x=\"420\" y=\"100\" fill=\"red\">I love SVG!</text>\n</svg>"
+                                                                        },
+                                                                        {
+                                                                          "heading": "Fill Opacity",
+                                                                          "paragraphs": [
+                                                                            "The fill-opacity attribute controls the transparency of the fill color.",
+                                                                            "Its value ranges from 0 (transparent) to 1 (opaque).",
+                                                                            "It can also be expressed in percentages."
+                                                                          ],
+                                                                          "code": "<svg width=\"600\" height=\"220\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"50,10 0,190 100,190\" fill=\"lime\" fill-opacity=\"0.5\" />\n  <rect width=\"150\" height=\"100\" x=\"120\" y=\"50\" fill=\"blue\" fill-opacity=\"50%\" />\n  <circle r=\"45\" cx=\"350\" cy=\"100\" fill=\"red\" fill-opacity=\"0.6\" />\n  <text x=\"420\" y=\"100\" fill=\"red\" fill-opacity=\"70%\">I love SVG!</text>\n</svg>"
+                                                                        },
+                                                                        {
+                                                                          "heading": "Fill Rule",
+                                                                          "paragraphs": [
+                                                                            "The fill-rule attribute determines how the inside of a shape is calculated.",
+                                                                            "It is mainly used with complex shapes such as polygons and paths.",
+                                                                            "The two possible values are: nonzero and evenodd."
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "heading": "Fill Rule Example (evenodd)",
+                                                                          "code": "<svg height=\"210\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"100,10 40,198 190,78 10,78 160,198\" fill=\"lime\" fill-rule=\"evenodd\" />\n</svg>"
+                                                                        },
+                                                                        {
+                                                                          "heading": "Fill Rule Example (nonzero)",
+                                                                          "code": "<svg height=\"210\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"100,10 40,198 190,78 10,78 160,198\" fill=\"lime\" fill-rule=\"nonzero\" />\n</svg>"
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    
+                                                                        "svg-stroke": {
+                                                                          "title": "SVG Stroke ",
+                                                                          "sections": [
+                                                                            {
+                                                                              "heading": "SVG Stroke Attribute",
+                                                                              "paragraphs": [
+                                                                                "The stroke attribute defines the color of the outline of an SVG shape.",
+                                                                                "It can be used with elements such as circle, rect, path, polygon, polyline, and text."
+                                                                              ],
+                                                                              "code": "<svg width=\"600\" height=\"220\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle r=\"45\" cx=\"350\" cy=\"100\" fill=\"pink\" stroke=\"blue\" />\n  <text x=\"420\" y=\"100\" fill=\"red\" stroke=\"blue\">I love SVG!</text>\n</svg>"
+                                                                            },
+                                                                            {
+                                                                              "heading": "Stroke Example (Multiple Lines)",
+                                                                              "paragraphs": [
+                                                                                "The stroke attribute can be used to define different stroke colors for multiple lines."
+                                                                              ],
+                                                                              "code": "<svg height=\"80\" width=\"300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g fill=\"none\">\n    <path stroke=\"red\" d=\"M5 20 l215 0\" />\n    <path stroke=\"green\" d=\"M5 40 l215 0\" />\n    <path stroke=\"blue\" d=\"M5 60 l215 0\" />\n  </g>\n</svg>"
+                                                                            },
+                                                                            {
+                                                                              "heading": "SVG stroke-width Attribute",
+                                                                              "paragraphs": [
+                                                                                "The stroke-width attribute defines the thickness of the outline.",
+                                                                                "It works with shapes such as circle, rectangle, polygon, text, and path."
+                                                                              ],
+                                                                              "code": "<svg width=\"600\" height=\"220\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"55,10 10,190 110,190\" fill=\"lime\" stroke=\"red\" stroke-width=\"4\" />\n  <rect width=\"150\" height=\"100\" x=\"120\" y=\"50\" fill=\"yellow\" stroke=\"red\" stroke-width=\"4\" />\n  <circle r=\"45\" cx=\"350\" cy=\"100\" fill=\"pink\" stroke=\"blue\" stroke-width=\"4\" />\n  <text x=\"420\" y=\"100\" fill=\"red\" stroke=\"blue\" stroke-width=\"4\">I love SVG!</text>\n</svg>"
+                                                                            },
+                                                                            {
+                                                                              "heading": "Stroke Width Example (Lines)",
+                                                                              "code": "<svg height=\"80\" width=\"300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g fill=\"none\" stroke=\"red\">\n    <path stroke-width=\"2\" d=\"M5 20 l215 0\" />\n    <path stroke-width=\"4\" d=\"M5 40 l215 0\" />\n    <path stroke-width=\"6\" d=\"M5 60 l215 0\" />\n  </g>\n</svg>"
+                                                                            },
+                                                                            {
+                                                                              "heading": "SVG stroke-opacity Attribute",
+                                                                              "paragraphs": [
+                                                                                "The stroke-opacity attribute controls the transparency of the stroke.",
+                                                                                "Its value ranges from 0 (transparent) to 1 (opaque)."
+                                                                              ],
+                                                                              "code": "<svg width=\"600\" height=\"220\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"55,10 10,190 110,190\" fill=\"lime\" stroke=\"red\" stroke-width=\"4\" stroke-opacity=\"0.4\" />\n  <rect width=\"150\" height=\"100\" x=\"120\" y=\"50\" fill=\"yellow\" stroke=\"red\" stroke-width=\"4\" stroke-opacity=\"0.4\" />\n  <circle r=\"45\" cx=\"350\" cy=\"100\" fill=\"pink\" stroke=\"blue\" stroke-width=\"4\" stroke-opacity=\"0.4\" />\n  <text x=\"420\" y=\"100\" fill=\"red\" stroke=\"blue\" stroke-width=\"4\" stroke-opacity=\"0.4\">I love SVG!</text>\n</svg>"
+                                                                            },
+                                                                            {
+                                                                              "heading": "Stroke Opacity Example (Lines)",
+                                                                              "code": "<svg height=\"80\" width=\"300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g fill=\"none\" stroke=\"red\">\n    <path stroke-width=\"2\" stroke-opacity=\"0.4\" d=\"M5 20 l215 0\" />\n    <path stroke-width=\"4\" stroke-opacity=\"0.4\" d=\"M5 40 l215 0\" />\n    <path stroke-width=\"6\" stroke-opacity=\"0.4\" d=\"M5 60 l215 0\" />\n  </g>\n</svg>"
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        
+                                                                            "svg-filters": {
+                                                                              "title": "SVG Filters",
+                                                                              "sections": [
+                                                                                {
+                                                                                  "heading": "SVG Filters Introduction",
+                                                                                  "paragraphs": [
+                                                                                    "SVG filters are used to add special visual effects to SVG graphics.",
+                                                                                    "All SVG filters are defined inside a <defs> element.",
+                                                                                    "The <filter> element defines the filter and must have an id attribute.",
+                                                                                    "SVG elements reference the filter using the filter attribute."
+                                                                                  ]
+                                                                                },
+                                                                                {
+                                                                                  "heading": "Basic SVG Filter Example",
+                                                                                  "paragraphs": [
+                                                                                    "This example uses the feGaussianBlur filter to blur an SVG rectangle."
+                                                                                  ],
+                                                                                  "code": "<svg height=\"100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <filter id=\"f1\" x=\"0\" y=\"0\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"15\" />\n    </filter>\n  </defs>\n  <rect width=\"90\" height=\"90\" fill=\"red\" filter=\"url(#f1)\" />\n</svg>"
+                                                                                },
+                                                                                {
+                                                                                  "heading": "SVG Filter Elements",
+                                                                                  "paragraphs": [
+                                                                                    "SVG provides many built-in filter effects that can be combined together."
+                                                                                  ],
+                                                                                  "table": {
+                                                                                    "headers": ["Filter Element", "Description"],
+                                                                                    "rows": [
+                                                                                      ["feBlend", "Blends two images together"],
+                                                                                      ["feColorMatrix", "Applies color transformations"],
+                                                                                      ["feComponentTransfer", "Adjusts brightness and contrast"],
+                                                                                      ["feComposite", "Combines two images using a mathematical operation"],
+                                                                                      ["feConvolveMatrix", "Applies convolution effects like blur or sharpen"],
+                                                                                      ["feDiffuseLighting", "Adds lighting effects"],
+                                                                                      ["feDisplacementMap", "Displaces pixels using another image"],
+                                                                                      ["feDistantLight", "Defines distant light source"],
+                                                                                      ["feDropShadow", "Creates a shadow effect"],
+                                                                                      ["feFlood", "Fills an area with a color"],
+                                                                                      ["feGaussianBlur", "Applies blur effect"],
+                                                                                      ["feImage", "Loads external image"],
+                                                                                      ["feMerge", "Combines multiple filter layers"],
+                                                                                      ["feMergeNode", "Defines input for feMerge"],
+                                                                                      ["feMorphology", "Erodes or dilates the image"],
+                                                                                      ["feOffset", "Moves the image"],
+                                                                                      ["fePointLight", "Creates point lighting"],
+                                                                                      ["feSpecularLighting", "Creates shiny lighting effect"],
+                                                                                      ["feSpotLight", "Creates spotlight effect"],
+                                                                                      ["feTile", "Repeats an image pattern"],
+                                                                                      ["feTurbulence", "Generates noise or texture"]
+                                                                                    ]
+                                                                                  }
+                                                                                },
+                                                                                {
+                                                                                  "heading": "Important Notes",
+                                                                                  "paragraphs": [
+                                                                                    "SVG filters must be defined inside the <defs> element.",
+                                                                                    "Multiple filter effects can be combined in one filter.",
+                                                                                    "Filters can be applied to shapes, text, and images.",
+                                                                                    "Filters may impact performance when overused."
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            },
+                                                                            
+                                                                                "svg-blur": {
+                                                                                  "title": "SVG Blur ",
+                                                                                  "sections": [
+                                                                                    {
+                                                                                      "heading": "SVG <feGaussianBlur>",
+                                                                                      "paragraphs": [
+                                                                                        "The <feGaussianBlur> filter is used to create blur effects in SVG graphics.",
+                                                                                        "It applies a Gaussian blur to the input image.",
+                                                                                        "The blur effect is defined inside a <filter> element."
+                                                                                      ]
+                                                                                    },
+                                                                                    {
+                                                                                      "heading": "Basic Blur Example",
+                                                                                      "paragraphs": [
+                                                                                        "This example applies a blur effect to a rectangle using feGaussianBlur."
+                                                                                      ],
+                                                                                      "code": "<svg height=\"100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <filter id=\"f1\" x=\"0\" y=\"0\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"15\" />\n    </filter>\n  </defs>\n  <rect width=\"90\" height=\"90\" fill=\"yellow\" filter=\"url(#f1)\" />\n</svg>"
+                                                                                    },
+                                                                                    {
+                                                                                      "heading": "Code Explanation",
+                                                                                      "points": [
+                                                                                        "The id attribute identifies the filter.",
+                                                                                        "The <feGaussianBlur> element applies the blur effect.",
+                                                                                        "The in=\"SourceGraphic\" attribute means the effect is applied to the original element.",
+                                                                                        "The stdDeviation attribute controls the blur strength.",
+                                                                                        "The filter attribute links the SVG element to the filter."
+                                                                                      ]
+                                                                                    },
+                                                                                    {
+                                                                                      "heading": "Higher Blur Example",
+                                                                                      "paragraphs": [
+                                                                                        "Increasing the stdDeviation value increases the blur intensity."
+                                                                                      ],
+                                                                                      "code": "<svg height=\"100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <filter id=\"f2\" x=\"0\" y=\"0\">\n      <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"55\" />\n    </filter>\n  </defs>\n  <rect width=\"90\" height=\"90\" fill=\"yellow\" filter=\"url(#f2)\" />\n</svg>"
+                                                                                    },
+                                                                                    {
+                                                                                      "heading": "Important Notes",
+                                                                                      "points": [
+                                                                                        "Higher stdDeviation values produce more blur.",
+                                                                                        "Blur filters must be defined inside <defs>.",
+                                                                                        "The filter is applied using the filter attribute.",
+                                                                                        "SVG blur effects can be combined with other filters."
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              }
+                                                                              
+                                                                          
+                                                                          
+                                                                      }
+                                                                      
+                                                                  
+                                                                  
+                                                              
+                                                             
+                                                          
+                                                          
+                                                      
+                                                      
+                                                  
+                                                  
+                                              
+                                              
+                                          
+                                          
+                                          
+                                      
+                                  
+                                  
+                              
+                            
+                          
+                          
+                      
+                      
+                  
+                  
+              
+              
+        
+         
+          
+  

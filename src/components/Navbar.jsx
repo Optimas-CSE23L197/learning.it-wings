@@ -34,7 +34,7 @@ function Navbar() {
 
                     {/* Navigation */}
                     <ul className="hidden md:flex items-center gap-8">
-                        {["Frontend", "JavaScript", "Backend", "AI"].map((item) => (
+                        {["All", "Frontend", "JavaScript", "Backend", "AI"].map((item) => (
                             <li key={item}>
                                 <Link
                                     to="/"

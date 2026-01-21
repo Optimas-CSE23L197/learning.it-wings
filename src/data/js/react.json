@@ -1,0 +1,926 @@
+{
+  "course": {
+    "id": "react",
+    "title": "React Tutorial"
+  },
+  "sections": [
+    {
+      "title": "React Basics",
+      "lessons": [
+        { "id": "home", "title": "React Home" },
+        { "id": "intro", "title": "React Intro" },
+        { "id": "get-started", "title": "React Get Started" },
+        { "id": "first-app", "title": "React First App" },
+        { "id": "render-html", "title": "React Render HTML" },
+        { "id": "upgrade", "title": "React Upgrade" },
+        { "id": "es6", "title": "React ES6" },
+
+        { "id": "jsx-intro", "title": "React JSX Intro" },
+        { "id": "jsx-expressions", "title": "React JSX Expressions" },
+        { "id": "jsx-attributes", "title": "React JSX Attributes" },
+        { "id": "jsx-if", "title": "React JSX If Statements" },
+
+        { "id": "components", "title": "React Components" },
+        { "id": "class-components", "title": "React Class" },
+
+        { "id": "props", "title": "React Props" },
+        { "id": "props-destructuring", "title": "React Props Destructuring" },
+        { "id": "props-children", "title": "React Props Children" },
+
+        { "id": "events", "title": "React Events" },
+        { "id": "conditionals", "title": "React Conditionals" },
+        { "id": "lists", "title": "React Lists" },
+
+        { "id": "forms", "title": "React Forms" },
+        { "id": "forms-submit", "title": "React Forms Submit" },
+        { "id": "textarea", "title": "React Textarea" },
+        { "id": "select", "title": "React Select" },
+        { "id": "multiple-inputs", "title": "React Multiple Inputs" },
+        { "id": "checkbox", "title": "React Checkbox" },
+        { "id": "radio", "title": "React Radio" },
+
+        { "id": "portals", "title": "React Portals" },
+        { "id": "suspense", "title": "React Suspense" },
+
+        { "id": "css-styling", "title": "React CSS Styling" },
+        { "id": "css-modules", "title": "React CSS Modules" },
+        { "id": "css-in-js", "title": "React CSS-in-JS" },
+        { "id": "router", "title": "React Router" },
+        { "id": "transitions", "title": "React Transitions" },
+        { "id": "forward-ref", "title": "React Forward Ref" },
+        { "id": "hoc", "title": "React HOC" },
+        { "id": "sass", "title": "React Sass" },
+
+        { "id": "hooks-intro", "title": "What is Hooks?" },
+        { "id": "use-state", "title": "React useState" },
+        { "id": "use-effect", "title": "React useEffect" },
+        { "id": "use-context", "title": "React useContext" },
+        { "id": "use-ref", "title": "React useRef" },
+        { "id": "use-reducer", "title": "React useReducer" },
+        { "id": "use-callback", "title": "React useCallback" },
+        { "id": "use-memo", "title": "React useMemo" },
+        { "id": "custom-hooks", "title": "React Custom Hooks" },
+
+        { "id": "exercises", "title": "React Exercises" },
+        { "id": "compiler", "title": "React Compiler" },
+        { "id": "quiz", "title": "React Quiz" },
+        { "id": "syllabus", "title": "React Syllabus" },
+        { "id": "study-plan", "title": "React Study Plan" },
+        { "id": "server", "title": "React Server" },
+        { "id": "interview-prep", "title": "React Interview Prep" },
+        { "id": "bootcamp", "title": "React Bootcamp" },
+        { "id": "certificate", "title": "React Certificate" }
+      ]
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "Learn React",
+      "sections": [
+        {
+          "heading": "What is React?",
+          "paragraphs": [
+            "React is a JavaScript library for building user interfaces.",
+            "React is used to build single-page applications.",
+            "React allows developers to create reusable UI components."
+          ]
+        },
+        {
+          "heading": "Learning by Examples",
+          "paragraphs": [
+            "The React examples show both the code and the result.",
+            "This helps you understand how React works in real applications."
+          ],
+          "code": "import { createRoot } from 'react-dom/client';\n\nfunction Hello() {\n  return (\n    <h1>Hello World!</h1>\n  );\n}\n\ncreateRoot(document.getElementById('root')).render(\n  <Hello />\n);"
+        },
+        {
+          "heading": "Learning by Exercises",
+          "paragraphs": [
+            "Many chapters include exercises to test your React knowledge."
+          ],
+          "exercise": {
+            "question": "Complete the code to create a JSX expression.",
+            "options": [
+              "{power * 1.36}",
+              "{power + 1.36}",
+              "power * 1.36",
+              "{{power * 1.36}}"
+            ],
+            "answer": "{power * 1.36}"
+          }
+        },
+        {
+          "heading": "Track Your Progress",
+          "paragraphs": [
+            "Create an account to track completed tutorials, exercises, and quizzes.",
+            "You can also earn badges and maintain learning streaks."
+          ],
+          "note": "Creating an account is optional. You can learn React without signing in."
+        },
+        {
+          "heading": "What You Should Already Know",
+          "paragraphs": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Basic knowledge of ES6 features is recommended."
+          ]
+        },
+        {
+          "heading": "Get Certified",
+          "paragraphs": [
+            "You can get certified by completing the React course.",
+            "Certification helps validate your React skills."
+          ]
+        }
+      ]
+    }
+  },
+  "react-intro": {
+    "title": "React Introduction",
+    "sections": [
+      {
+        "heading": "What is React?",
+        "paragraphs": [
+          "React is a front-end JavaScript library.",
+          "React was developed by Facebook Software Engineer Jordan Walke.",
+          "React is also known as React.js or ReactJS.",
+          "React is used to build user interface components."
+        ]
+      },
+      {
+        "heading": "How Does React Work?",
+        "paragraphs": [
+          "React creates a Virtual DOM in memory.",
+          "Instead of manipulating the browser DOM directly, React updates a virtual DOM first.",
+          "React compares changes and updates only what needs to be changed in the real DOM.",
+          "This process improves performance and efficiency."
+        ]
+      },
+      {
+        "heading": "What You Should Already Know",
+        "paragraphs": [
+          "Before learning React, you should have a basic understanding of the following:",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      {
+        "heading": "React.JS History",
+        "paragraphs": [
+          "The latest version of React is 19.0.0 (December 2024).",
+          "React was first released to the public in July 2013.",
+          "React was initially used in 2011 for Facebook's News Feed.",
+          "Jordan Walke, a Facebook Software Engineer, created React."
+        ]
+      }
+    ]
+  },
+  "react-getting-started": {
+    "title": "React Getting Started",
+    "sections": [
+      {
+        "heading": "Prerequisites",
+        "paragraphs": [
+          "To use React in production, you need npm which is included with Node.js.",
+          "You also need to set up a React environment and choose a build tool."
+        ]
+      },
+      {
+        "heading": "Setting Up a React Environment",
+        "paragraphs": [
+          "First, make sure you have Node.js installed.",
+          "You can check the installation by running the following command in your terminal:",
+          "node -v",
+          "If Node.js is installed, the version number will be displayed.",
+          "If Node.js is not installed, you need to install it before continuing."
+        ]
+      },
+      {
+        "heading": "Install a Build Tool (Vite)",
+        "paragraphs": [
+          "After installing Node.js, you can create a React application using a build tool.",
+          "In this tutorial, the Vite build tool is used.",
+          "Install Vite globally using the following command:",
+          "npm install -g create-vite",
+          "If the installation is successful, a confirmation message will be shown."
+        ]
+      },
+      {
+        "heading": "Create a React Application",
+        "paragraphs": [
+          "Run the following command to create a React application named my-react-app:",
+          "npm create vite@latest my-react-app -- --template react",
+          "If prompted to install additional packages, press y and Enter to continue.",
+          "Once completed, instructions to navigate and run the project will be displayed."
+        ]
+      },
+      {
+        "heading": "Install Dependencies",
+        "paragraphs": [
+          "Navigate to the project directory:",
+          "cd my-react-app",
+          "Install the required dependencies using:",
+          "npm install",
+          "This will install all necessary packages for the React application."
+        ]
+      },
+      {
+        "heading": "Run the React Application",
+        "paragraphs": [
+          "Start the development server using the following command:",
+          "npm run dev",
+          "The terminal will display a local development URL.",
+          "Open your browser and navigate to the displayed URL to see your React application running."
+        ]
+      },
+      {
+        "heading": "Exercise",
+        "paragraphs": [
+          "What command can you use to check if Node.js is installed on your system?",
+          "Correct answer: node -v"
+        ]
+      }
+    ]
+  },
+  "your-first-react-app": {
+    "title": "Your First React App",
+    "sections": [
+      {
+        "heading": "Introduction",
+        "paragraphs": [
+          "Now that your development environment is set up, you can modify the default React app.",
+          "The goal is to display a simple Hello World message."
+        ]
+      },
+      {
+        "heading": "Modify the React App",
+        "paragraphs": [
+          "Open the my-react-app directory.",
+          "Inside it, locate the src folder.",
+          "In the src folder, open the App.jsx file."
+        ]
+      },
+      {
+        "heading": "Default App.jsx File",
+        "paragraphs": [
+          "The App.jsx file initially contains default Vite and React boilerplate code.",
+          "This code includes logos, a counter example, and hot module replacement support."
+        ]
+      },
+      {
+        "heading": "Replace App.jsx Content",
+        "paragraphs": [
+          "Replace the entire content of the App.jsx file with the following code:",
+          "function App() { return ( <div className=\"App\"> <h1>Hello World!</h1> </div> ); } export default App;",
+          "Save the file after replacing the code."
+        ]
+      },
+      {
+        "heading": "View the Result",
+        "paragraphs": [
+          "After saving the file, the browser will update automatically.",
+          "You do not need to reload the page manually.",
+          "You should now see Hello World displayed in the browser."
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "paragraphs": [
+          "Congratulations! You have successfully modified your first React application."
+        ]
+      },
+      {
+        "heading": "Exercise",
+        "paragraphs": [
+          "In which directory can you find the App.jsx file?",
+          "Correct answer: my-react-app/src"
+        ]
+      }
+    ]
+  },
+  "react-render-html": {
+    "title": "React Render HTML",
+    "sections": [
+      {
+        "heading": "Introduction",
+        "paragraphs": [
+          "React's goal is to render HTML in a web page.",
+          "React renders HTML through a container using the createRoot() function."
+        ]
+      },
+      {
+        "heading": "The Container",
+        "paragraphs": [
+          "React uses a container element to render HTML.",
+          "Usually, this container is a <div id=\"root\"></div> in the index.html file.",
+          "The container defines where the React content will be displayed."
+        ]
+      },
+      {
+        "heading": "index.html File",
+        "paragraphs": [
+          "The index.html file contains the root container for the React application.",
+          "Unnecessary code can be removed to simplify learning React.",
+          "The minimal index.html includes only the root element and the script reference."
+        ]
+      },
+      {
+        "heading": "The createRoot Function",
+        "paragraphs": [
+          "The createRoot function is located in the src/main.jsx file.",
+          "It is used to create a root node for the React application.",
+          "The function takes an HTML element as its argument."
+        ]
+      },
+      {
+        "heading": "Rendering Content",
+        "paragraphs": [
+          "The render method defines what content should be displayed.",
+          "The rendered content appears inside the container element.",
+          "You can render headings, paragraphs, or any JSX element."
+        ]
+      },
+      {
+        "heading": "JSX and HTML Code",
+        "paragraphs": [
+          "React uses JSX, which allows HTML-like syntax in JavaScript.",
+          "JSX elements can be stored in variables and rendered.",
+          "Complex HTML structures like tables can be rendered using JSX."
+        ]
+      },
+      {
+        "heading": "The Root Node",
+        "paragraphs": [
+          "The root node is the container managed by React.",
+          "It does not have to be a div element.",
+          "It does not have to use the id 'root', although it is the common convention."
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "paragraphs": [
+          "React renders HTML efficiently using a virtual DOM.",
+          "The createRoot and render methods control how and where content appears."
+        ]
+      },
+      {
+        "heading": "Exercise",
+        "paragraphs": [
+          "What is true about the container element for React rendering?",
+          "Correct answer: It can have any ID, but 'root' is a common convention."
+        ]
+      }
+    ]
+  },
+  "upgrade-react": {
+    "title": "Upgrade React",
+    "sections": [
+      {
+        "heading": "Introduction",
+        "paragraphs": [
+          "This section explains how to upgrade an existing React application to React version 19.",
+          "If you are already using the latest version of React, you can skip this section."
+        ]
+      },
+      {
+        "heading": "Upgrade to React 19",
+        "paragraphs": [
+          "Upgrading to React 19 requires only two simple steps.",
+          "These steps ensure your application can use the latest React features."
+        ]
+      },
+      {
+        "heading": "Step 1: Install React 19",
+        "paragraphs": [
+          "Navigate to your project folder.",
+          "Run the following command in the terminal to install the latest React and React DOM versions:",
+          "npm i react@latest react-dom@latest"
+        ]
+      },
+      {
+        "heading": "Step 2: Use the New Root API",
+        "paragraphs": [
+          "React 19 introduces a new root API for client rendering.",
+          "Using the new API enables concurrent features in React."
+        ]
+      },
+      {
+        "heading": "Before Upgrade",
+        "paragraphs": [
+          "Older React versions use ReactDOM.render for rendering components.",
+          "This approach behaves like React 17 even when using newer versions."
+        ]
+      },
+      {
+        "heading": "After Upgrade",
+        "paragraphs": [
+          "The new approach uses createRoot from react-dom/client.",
+          "The createRoot method replaces ReactDOM.render for modern React applications."
+        ]
+      },
+      {
+        "heading": "Important Note",
+        "paragraphs": [
+          "Your application will still work if you continue using ReactDOM.render.",
+          "However, it will not benefit from React 19's concurrent features unless you use the new root API."
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "paragraphs": [
+          "Upgrading React is simple and improves future compatibility.",
+          "Using the new root API ensures your application behaves as expected in React 19."
+        ]
+      }
+    ]
+  },
+  "react-es6": {
+    "title": "React ES6",
+    "sections": [
+      {
+        "heading": "What is ES6?",
+        "paragraphs": [
+          "ES6 stands for ECMAScript 6.",
+          "ECMAScript was created to standardize JavaScript.",
+          "ES6 is the 6th version of ECMAScript, published in 2015.",
+          "ES6 is also known as ECMAScript 2015."
+        ]
+      },
+      {
+        "heading": "Why Should I Learn ES6?",
+        "paragraphs": [
+          "React uses ES6 syntax and features extensively.",
+          "Understanding ES6 makes React code easier to read and write.",
+          "Learning ES6 is essential for modern JavaScript and React development."
+        ]
+      },
+      {
+        "heading": "Important ES6 Features Used in React",
+        "lists": [
+          "Classes",
+          "Arrow Functions",
+          "Variables (let, const, var)",
+          "Array Methods like .map()",
+          "Destructuring",
+          "Modules",
+          "Ternary Operator",
+          "Spread Operator"
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "paragraphs": [
+          "ES6 introduced powerful features that simplify JavaScript coding.",
+          "React applications heavily rely on ES6 features.",
+          "Mastering ES6 will help you become a better React developer."
+        ]
+      }
+    ]
+  },
+  "react-jsx": {
+    "title": "React JSX",
+    "sections": [
+      {
+        "heading": "What is JSX?",
+        "paragraphs": [
+          "JSX stands for JavaScript XML.",
+          "JSX allows developers to write HTML inside JavaScript code.",
+          "JSX makes it easier to write and add HTML in React applications."
+        ]
+      },
+      {
+        "heading": "Coding JSX",
+        "paragraphs": [
+          "JSX lets you write HTML elements directly in JavaScript without using createElement() or appendChild().",
+          "JSX converts HTML tags into React elements.",
+          "Using JSX is optional, but it greatly simplifies React development."
+        ]
+      },
+      {
+        "heading": "JSX vs Without JSX",
+        "paragraphs": [
+          "JSX allows HTML to be written directly inside JavaScript.",
+          "Without JSX, React.createElement() must be used.",
+          "JSX is based on ES6 and is compiled into standard JavaScript."
+        ]
+      },
+      {
+        "heading": "Expressions in JSX",
+        "paragraphs": [
+          "JavaScript expressions can be written inside curly braces {} in JSX.",
+          "Expressions can include variables, properties, or any valid JavaScript code.",
+          "JSX evaluates the expression and displays the result."
+        ]
+      },
+      {
+        "heading": "Inserting a Large Block of HTML",
+        "paragraphs": [
+          "Multiple lines of HTML must be wrapped inside parentheses.",
+          "This allows better formatting and readability."
+        ]
+      },
+      {
+        "heading": "One Top Level Element",
+        "paragraphs": [
+          "JSX requires all elements to be wrapped inside a single parent element.",
+          "Fragments can be used to avoid adding extra elements to the DOM."
+        ]
+      },
+      {
+        "heading": "Elements Must Be Closed",
+        "paragraphs": [
+          "JSX follows XML rules.",
+          "All elements must be properly closed, including self-closing tags."
+        ]
+      },
+      {
+        "heading": "class vs className",
+        "paragraphs": [
+          "The class attribute is reserved in JavaScript.",
+          "JSX uses className instead of class.",
+          "JSX converts className into class when rendering HTML."
+        ]
+      },
+      {
+        "heading": "Comments in JSX",
+        "paragraphs": [
+          "Comments in JSX are written using the {/* */} syntax.",
+          "Comments can be embedded inside JSX elements."
+        ]
+      },
+      {
+        "heading": "JSX in React Components",
+        "paragraphs": [
+          "React components are reusable pieces of UI.",
+          "Components return JSX to describe what should appear on the screen.",
+          "JavaScript logic can be written inside components before returning JSX."
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "paragraphs": [
+          "JSX simplifies writing UI code in React.",
+          "It improves readability and maintainability.",
+          "Mastering JSX is essential for building React applications."
+        ]
+      }
+    ]
+  },
+  "react-jsx-expressions": {
+    "title": "React JSX Expressions",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "One of the most powerful features of JSX is the ability to embed JavaScript expressions directly within markup.",
+          "JSX allows dynamic values to be calculated and displayed inside React components."
+        ]
+      },
+      {
+        "heading": "Expressions",
+        "paragraphs": [
+          "Any valid JavaScript expression can be inserted inside JSX using curly braces {}.",
+          "React evaluates the expression and renders the result in the DOM."
+        ]
+      },
+      {
+        "heading": "Variables in JSX",
+        "paragraphs": [
+          "Variables can be used as JSX expressions.",
+          "Wrap variables in curly braces to display their values inside JSX."
+        ]
+      },
+      {
+        "heading": "Function Calls",
+        "paragraphs": [
+          "Functions can be called inside JSX expressions.",
+          "This allows logic to be reused when rendering values dynamically."
+        ]
+      },
+      {
+        "heading": "Object Properties",
+        "paragraphs": [
+          "Object properties can be accessed inside JSX.",
+          "This is useful when displaying structured data in components."
+        ]
+      },
+      {
+        "heading": "Exercise Concept",
+        "paragraphs": [
+          "JSX expressions must be written inside curly braces.",
+          "Mathematical expressions should be evaluated inside JSX using {}."
+        ]
+      },
+      {
+        "heading": "Key Takeaways",
+        "paragraphs": [
+          "JSX expressions make React components dynamic.",
+          "They support variables, function calls, calculations, and object access.",
+          "Understanding JSX expressions is essential for effective React development."
+        ]
+      }
+    ]
+  },
+  "react-jsx-attributes": {
+    "title": "React JSX Attributes",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "JSX allows attributes to be added to HTML elements, similar to HTML.",
+          "However, there are important differences because JSX is written in JavaScript."
+        ]
+      },
+      {
+        "heading": "class vs className",
+        "paragraphs": [
+          "The HTML class attribute cannot be used directly in JSX.",
+          "Since class is a reserved JavaScript keyword, JSX uses className instead.",
+          "JSX converts className into class when rendering to the browser."
+        ]
+      },
+      {
+        "heading": "Expressions as Attributes",
+        "paragraphs": [
+          "JSX allows JavaScript expressions to be used as attribute values.",
+          "Expressions must be written inside curly braces {}.",
+          "When using expressions, attribute values should not be wrapped in quotes."
+        ]
+      },
+      {
+        "heading": "camelCase Event Attributes",
+        "paragraphs": [
+          "Event attributes in JSX use camelCase naming.",
+          "For example, onclick becomes onClick in JSX."
+        ]
+      },
+      {
+        "heading": "Boolean Attributes",
+        "paragraphs": [
+          "If an attribute is written without a value, JSX treats it as true.",
+          "To explicitly set false, the attribute must be assigned a false expression."
+        ]
+      },
+      {
+        "heading": "The style Attribute",
+        "paragraphs": [
+          "The style attribute in JSX accepts a JavaScript object, not a CSS string.",
+          "CSS properties are written in camelCase, such as fontSize instead of font-size.",
+          "Styles are commonly stored in an object and passed using curly braces."
+        ]
+      },
+      {
+        "heading": "Exercise Concept",
+        "paragraphs": [
+          "Correct JSX attribute names include style, className, and onClick.",
+          "Using correct attribute syntax is essential for JSX to work properly."
+        ]
+      },
+      {
+        "heading": "Key Takeaways",
+        "paragraphs": [
+          "JSX attributes differ slightly from HTML attributes.",
+          "camelCase and JavaScript expressions are fundamental to JSX.",
+          "Understanding JSX attributes helps build dynamic and interactive React components."
+        ]
+      }
+    ]
+  },
+  "react-jsx-if-statements": {
+    "title": "React JSX If Statements",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "React supports conditional logic using JavaScript.",
+          "However, traditional if statements cannot be written directly inside JSX."
+        ]
+      },
+      {
+        "heading": "Conditions in React",
+        "paragraphs": [
+          "To use conditions with JSX, logic must be written outside the JSX block.",
+          "Alternatively, conditional expressions such as ternary operators can be used inside JSX."
+        ]
+      },
+      {
+        "heading": "Option 1: If Statements Outside JSX",
+        "paragraphs": [
+          "You can write if statements before the return statement.",
+          "The result can then be rendered using a variable inside JSX."
+        ]
+      },
+      {
+        "heading": "Option 2: Ternary Expressions",
+        "paragraphs": [
+          "Ternary expressions allow conditional rendering inside JSX.",
+          "They follow the format: condition ? valueIfTrue : valueIfFalse."
+        ]
+      },
+      {
+        "heading": "Using Expressions in JSX",
+        "paragraphs": [
+          "Any JavaScript expression inside JSX must be wrapped in curly braces {}.",
+          "This applies to ternary expressions and variable rendering."
+        ]
+      },
+      {
+        "heading": "Exercise Concept",
+        "paragraphs": [
+          "Ternary expressions are commonly used for simple conditional rendering.",
+          "They help display different outputs based on a condition."
+        ]
+      },
+      {
+        "heading": "Key Takeaways",
+        "paragraphs": [
+          "If statements cannot be used directly inside JSX.",
+          "Conditional logic should be handled outside JSX or using ternary expressions.",
+          "Mastering conditional rendering is essential for dynamic React applications."
+        ]
+      }
+    ]
+  },
+  "react-components": {
+    "title": "React Components",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "Components are like JavaScript functions that return HTML elements.",
+          "They are the building blocks of React applications."
+        ]
+      },
+      {
+        "heading": "What Are React Components",
+        "paragraphs": [
+          "React components are independent and reusable pieces of code.",
+          "They work in isolation and return HTML to describe the UI."
+        ]
+      },
+      {
+        "heading": "Types of Components",
+        "paragraphs": [
+          "There are two types of components: Class components and Function components.",
+          "Modern React recommends using Function components with Hooks.",
+          "Class components are still supported but are less commonly used."
+        ]
+      },
+      {
+        "heading": "Creating a Component",
+        "paragraphs": [
+          "A React component name must start with an uppercase letter.",
+          "Function components return JSX (HTML-like syntax)."
+        ]
+      },
+      {
+        "heading": "Rendering a Component",
+        "paragraphs": [
+          "Components are rendered by referring to them like HTML tags.",
+          "Self-closing syntax is used when rendering components."
+        ]
+      },
+      {
+        "heading": "Props (Properties)",
+        "paragraphs": [
+          "Props allow data to be passed into components.",
+          "Props are passed as attributes and accessed inside the component."
+        ]
+      },
+      {
+        "heading": "Components Inside Components",
+        "paragraphs": [
+          "React components can be nested inside other components.",
+          "This helps build complex UIs from small reusable pieces."
+        ]
+      },
+      {
+        "heading": "Rendering Components Multiple Times",
+        "paragraphs": [
+          "A component can be rendered more than once.",
+          "Props can be used to display different data for each instance."
+        ]
+      },
+      {
+        "heading": "Components in Separate Files",
+        "paragraphs": [
+          "Components can be placed in separate .jsx files for better organization.",
+          "The file name must start with an uppercase letter.",
+          "Components must be exported and imported before use."
+        ]
+      },
+      {
+        "heading": "Exercise Concept",
+        "paragraphs": [
+          "Components are rendered using self-closing JSX syntax.",
+          "Correct syntax is required to display a component properly."
+        ]
+      },
+      {
+        "heading": "Key Takeaways",
+        "paragraphs": [
+          "Components are reusable UI elements in React.",
+          "Function components are the modern standard.",
+          "Props make components dynamic and flexible.",
+          "Proper component structure improves maintainability."
+        ]
+      }
+    ]
+  },
+  "react-class-components": {
+    "title": "React Class Components",
+    "sections": [
+      {
+        "heading": "Introduction",
+        "paragraphs": [
+          "Before React 16.8, Class components were the only way to manage state and lifecycle methods.",
+          "Function components were previously considered stateless."
+        ]
+      },
+      {
+        "heading": "Class Components vs Function Components",
+        "paragraphs": [
+          "With the introduction of Hooks, Function components can now manage state and lifecycle features.",
+          "Function components are preferred in modern React development.",
+          "Class components are still supported and not planned for removal."
+        ]
+      },
+      {
+        "heading": "What Are React Class Components",
+        "paragraphs": [
+          "Class components are reusable pieces of code that extend React.Component.",
+          "They return HTML using a render() method."
+        ]
+      },
+      {
+        "heading": "Creating a Class Component",
+        "paragraphs": [
+          "Component names must start with an uppercase letter.",
+          "A class component must extend React.Component.",
+          "The render() method is required and returns JSX."
+        ]
+      },
+      {
+        "heading": "Rendering a Class Component",
+        "paragraphs": [
+          "Class components are rendered using JSX syntax.",
+          "They are used like regular HTML tags."
+        ]
+      },
+      {
+        "heading": "Constructor in Class Components",
+        "paragraphs": [
+          "The constructor() method runs when the component is initialized.",
+          "It is used to initialize state and bind methods.",
+          "The super() method must be called to access React.Component features."
+        ]
+      },
+      {
+        "heading": "State in Class Components",
+        "paragraphs": [
+          "Component data is stored in an object called state.",
+          "State is accessed using this.state inside the component."
+        ]
+      },
+      {
+        "heading": "Using State in Render Method",
+        "paragraphs": [
+          "State values can be displayed inside JSX.",
+          "State makes components dynamic and interactive."
+        ]
+      },
+      {
+        "heading": "Props in Class Components",
+        "paragraphs": [
+          "Props allow data to be passed into components.",
+          "Props are accessed using this.props."
+        ]
+      },
+      {
+        "heading": "Props in the Constructor",
+        "paragraphs": [
+          "Props must be passed to the constructor when used.",
+          "Props are forwarded to React.Component using super(props)."
+        ]
+      },
+      {
+        "heading": "Components Inside Components",
+        "paragraphs": [
+          "Class components can be nested inside other components.",
+          "This allows building complex user interfaces from smaller pieces."
+        ]
+      },
+      {
+        "heading": "Key Takeaways",
+        "paragraphs": [
+          "Class components extend React.Component.",
+          "They use render() to return JSX.",
+          "State and props control component behavior.",
+          "Function components with Hooks are now preferred."
+        ]
+      }
+    ]
+  }
+}

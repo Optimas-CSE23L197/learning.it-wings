@@ -8,7 +8,7 @@
       "title": "C# Tutorial",
       "lessons": [
         { "id": "home", "title": "C# HOME" },
-        { "id": "intro", "title": "C# Intro" },
+        { "id": "introduction", "title": "C# Intro" },
         { "id": "get-started", "title": "C# Get Started" },
         { "id": "syntax", "title": "C# Syntax" },
         { "id": "output", "title": "C# Output" },
@@ -1053,6 +1053,1509 @@
           }
         }
       ]
+<<<<<<< HEAD
+=======
+    },
+    "if-else": {
+      "title": "C# If ... Else",
+      "paragraphs": [
+        "C# Conditions and If Statements",
+        "You already know that C# supports familiar comparison conditions from mathematics.",
+        "You can use these conditions to perform different actions for different decisions."
+      ],
+      "sections": [
+        {
+          "name": "conditions",
+          "heading": "Comparison Conditions",
+          "list": [
+            "Less than: a < b",
+            "Less than or equal to: a <= b",
+            "Greater than: a > b",
+            "Greater than or equal to: a >= b",
+            "Equal to: a == b",
+            "Not Equal to: a != b"
+          ]
+        },
+        {
+          "name": "conditional-statements",
+          "heading": "Conditional Statements in C#",
+          "list": [
+            "Use if to specify a block of code to be executed, if a specified condition is true",
+            "Use else to specify a block of code to be executed, if the same condition is false",
+            "Use else if to specify a new condition to test, if the first condition is false",
+            "Use switch to specify many alternative blocks of code to be executed"
+          ]
+        },
+        {
+          "name": "if-statement",
+          "heading": "The if Statement",
+          "paragraphs": [
+            "Use the if statement to specify a block of C# code to be executed if a condition is True."
+          ],
+          "syntax": "if (condition) \n{\n  // block of code to be executed if the condition is True\n}",
+          "note": "Note that if is in lowercase letters. Uppercase letters (If or IF) will generate an error."
+        },
+        {
+          "name": "example-basic",
+          "heading": "Example",
+          "paragraphs": [
+            "Test two values to find out if 20 is greater than 18. If the condition is True, print some text:"
+          ],
+          "example": "if (20 > 18) \n{\n  Console.WriteLine(\"20 is greater than 18\");\n}"
+        },
+        {
+          "name": "example-variables",
+          "heading": "Example with Variables",
+          "paragraphs": ["We can also test variables:"],
+          "example": "int x = 20;\nint y = 18;\nif (x > y) \n{\n  Console.WriteLine(\"x is greater than y\");\n}"
+        },
+        {
+          "name": "example-explained",
+          "heading": "Example explained",
+          "paragraphs": [
+            "We use two variables, x and y, to test whether x is greater than y (using the > operator).",
+            "As x is 20, and y is 18, we print to the screen that \"x is greater than y\"."
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct operator to check if x is greater than y.",
+            "code": "if (x  y)",
+            "options": [">", "<", "==", "!="],
+            "answer": ">"
+          }
+        }
+      ]
+    },
+    "switch": {
+      "title": "C# Switch",
+      "paragraphs": [
+        "C# Switch Statements",
+        "Use the switch statement to select one of many code blocks to be executed."
+      ],
+      "sections": [
+        {
+          "name": "syntax",
+          "heading": "Syntax",
+          "syntax": "switch(expression) \n{\n  case x:\n    // code block\n    break;\n  case y:\n    // code block\n    break;\n  default:\n    // code block\n    break;\n}"
+        },
+        {
+          "name": "how-it-works",
+          "heading": "How it works",
+          "list": [
+            "The switch expression is evaluated once",
+            "The value of the expression is compared with the values of each case",
+            "If there is a match, the associated block of code is executed",
+            "The break and default keywords will be described later in this chapter"
+          ]
+        },
+        {
+          "name": "weekday-example",
+          "heading": "Example",
+          "paragraphs": [
+            "The example below uses the weekday number to calculate the weekday name:"
+          ],
+          "example": "int day = 4;\nswitch (day) \n{\n  case 1:\n    Console.WriteLine(\"Monday\");\n    break;\n  case 2:\n    Console.WriteLine(\"Tuesday\");\n    break;\n  case 3:\n    Console.WriteLine(\"Wednesday\");\n    break;\n  case 4:\n    Console.WriteLine(\"Thursday\");\n    break;\n  case 5:\n    Console.WriteLine(\"Friday\");\n    break;\n  case 6:\n    Console.WriteLine(\"Saturday\");\n    break;\n  case 7:\n    Console.WriteLine(\"Sunday\");\n    break;\n}\n// Outputs \"Thursday\" (day 4)"
+        },
+        {
+          "name": "break",
+          "heading": "The break Keyword",
+          "paragraphs": [
+            "When C# reaches a break keyword, it breaks out of the switch block.",
+            "This will stop the execution of more code and case testing inside the block.",
+            "When a match is found, and the job is done, it's time for a break. There is no need for more testing.",
+            "A break can save a lot of execution time because it ignores the execution of all the rest of the code in the switch block."
+          ]
+        },
+        {
+          "name": "default",
+          "heading": "The default Keyword",
+          "paragraphs": [
+            "The default keyword is optional and specifies some code to run if there is no case match:"
+          ],
+          "example": "int day = 4;\nswitch (day) \n{\n  case 6:\n    Console.WriteLine(\"Today is Saturday.\");\n    break;\n  case 7:\n    Console.WriteLine(\"Today is Sunday.\");\n    break;\n  default:\n    Console.WriteLine(\"Looking forward to the Weekend.\");\n    break;\n}\n// Outputs \"Looking forward to the Weekend.\""
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the purpose of the switch statement in C#?",
+            "options": [
+              "To execute multiple loops.",
+              "To select one of many code blocks to execute based on a matching condition.",
+              "To iterate through a list of values.",
+              "To handle exceptions in the code."
+            ],
+            "answer": "To select one of many code blocks to execute based on a matching condition."
+          }
+        }
+      ]
+    },
+    "while-loop": {
+      "title": "C# While Loop",
+      "paragraphs": [
+        "Loops",
+        "Loops can execute a block of code as long as a specified condition is reached.",
+        "Loops are handy because they save time, reduce errors, and they make code more readable."
+      ],
+      "sections": [
+        {
+          "name": "while",
+          "heading": "C# While Loop",
+          "paragraphs": [
+            "The while loop loops through a block of code as long as a specified condition is True:"
+          ],
+          "syntax": "while (condition) \n{\n  // code block to be executed\n}",
+          "example": "int i = 0;\nwhile (i < 5) \n{\n  Console.WriteLine(i);\n  i++;\n}",
+          "note": "Do not forget to increase the variable used in the condition, otherwise the loop will never end!"
+        },
+        {
+          "name": "do-while",
+          "heading": "The Do/While Loop",
+          "paragraphs": [
+            "The do/while loop is a variant of the while loop.",
+            "This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true."
+          ],
+          "syntax": "do \n{\n  // code block to be executed\n}\nwhile (condition);",
+          "example": "int i = 0;\ndo \n{\n  Console.WriteLine(i);\n  i++;\n}\nwhile (i < 5);",
+          "note": "The loop will always be executed at least once, even if the condition is false."
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword to complete the loop.",
+            "code": "int i = 0;\n___ (i < 3)\n{\n  Console.WriteLine(i);\n  i++;\n}",
+            "options": ["loop", "do", "for", "while", "if"],
+            "answer": "while"
+          }
+        }
+      ]
+    },
+    "for-loop": {
+      "title": "C# For Loop",
+      "paragraphs": [
+        "C# For Loop",
+        "When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop."
+      ],
+      "sections": [
+        {
+          "name": "syntax",
+          "heading": "Syntax",
+          "syntax": "for (statement 1; statement 2; statement 3) \n{\n  // code block to be executed\n}",
+          "paragraphs": [
+            "Statement 1 is executed (one time) before the execution of the code block.",
+            "Statement 2 defines the condition for executing the code block.",
+            "Statement 3 is executed (every time) after the code block has been executed."
+          ]
+        },
+        {
+          "name": "example-basic",
+          "heading": "Example",
+          "paragraphs": ["The example below will print the numbers 0 to 4:"],
+          "example": "for (int i = 0; i < 5; i++) \n{\n  Console.WriteLine(i);\n}"
+        },
+        {
+          "name": "example-explained",
+          "heading": "Example explained",
+          "list": [
+            "Statement 1 sets a variable before the loop starts (int i = 0).",
+            "Statement 2 defines the condition for the loop to run (i must be less than 5). If the condition is true, the loop will start over again, if it is false, the loop will end.",
+            "Statement 3 increases a value (i++) each time the code block in the loop has been executed."
+          ]
+        },
+        {
+          "name": "example-even",
+          "heading": "Another Example",
+          "paragraphs": [
+            "This example will only print even values between 0 and 10:"
+          ],
+          "example": "for (int i = 0; i <= 10; i = i + 2) \n{\n  Console.WriteLine(i);\n}"
+        },
+        {
+          "name": "nested-loops",
+          "heading": "Nested Loops",
+          "paragraphs": [
+            "It is also possible to place a loop inside another loop. This is called a nested loop.",
+            "The inner loop will be executed one time for each iteration of the outer loop:"
+          ],
+          "example": "// Outer loop\nfor (int i = 1; i <= 2; ++i) \n{\n  Console.WriteLine(\"Outer: \" + i);  // Executes 2 times\n\n  // Inner loop\n  for (int j = 1; j <= 3; j++) \n  {\n    Console.WriteLine(\" Inner: \" + j); // Executes 6 times (2 * 3)\n  }\n}"
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword and condition to ensure the loop runs while i is less than 5.",
+            "code": "___ (int i = 0; ___ ; i++)\n{\n  Console.WriteLine(i);\n}",
+            "options": ["i < 5", "i > 5", "i == 5", "for", "while", "if"],
+            "answer": ["for", "i < 5"]
+          }
+        }
+      ]
+    },
+    "break-continue": {
+      "title": "C# Break and Continue",
+      "paragraphs": [
+        "C# Break and Continue",
+        "You have already seen the break statement used in an earlier chapter of this tutorial.",
+        "It was used to jump out of a switch statement.",
+        "The break statement can also be used to jump out of a loop."
+      ],
+      "sections": [
+        {
+          "name": "break",
+          "heading": "C# Break",
+          "paragraphs": [
+            "This example jumps out of the loop when i is equal to 4:"
+          ],
+          "example": "for (int i = 0; i < 10; i++) \n{\n  if (i == 4) \n  {\n    break;\n  }\n  Console.WriteLine(i);\n}"
+        },
+        {
+          "name": "continue",
+          "heading": "C# Continue",
+          "paragraphs": [
+            "The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.",
+            "This example skips the value of 4:"
+          ],
+          "example": "for (int i = 0; i < 10; i++) \n{\n  if (i == 4) \n  {\n    continue;\n  }\n  Console.WriteLine(i);\n}"
+        },
+        {
+          "name": "while-loop",
+          "heading": "Break and Continue in While Loop",
+          "paragraphs": ["You can also use break and continue in while loops:"],
+          "sections": [
+            {
+              "name": "break-while",
+              "heading": "Break Example",
+              "example": "int i = 0;\nwhile (i < 10) \n{\n  Console.WriteLine(i);\n  i++;\n  if (i == 4) \n  {\n    break;\n  }\n}"
+            },
+            {
+              "name": "continue-while",
+              "heading": "Continue Example",
+              "example": "int i = 0;\nwhile (i < 10) \n{\n  if (i == 4) \n  {\n    i++;\n    continue;\n  }\n  Console.WriteLine(i);\n  i++;\n}"
+            }
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword to exit the loop when i == 4.",
+            "code": "for (int i = 0; i < 10; i++)\n{\n  if (i == 4)\n  {\n    ___;\n  }\n  Console.WriteLine(i);\n}",
+            "options": ["break", "continue", "return", "stop"],
+            "answer": "break"
+          }
+        }
+      ]
+    },
+    "arrays": {
+      "title": "C# Arrays",
+      "paragraphs": [
+        "Create an Array",
+        "Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.",
+        "To declare an array, define the variable type with square brackets:"
+      ],
+      "sections": [
+        {
+          "name": "declare",
+          "heading": "Declare an Array",
+          "example": "string[] cars;"
+        },
+        {
+          "name": "array-literal",
+          "heading": "Insert Values (Array Literal)",
+          "paragraphs": [
+            "To insert values to it, we can use an array literal - place the values in a comma-separated list, inside curly braces:"
+          ],
+          "example": "string[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};"
+        },
+        {
+          "name": "int-array",
+          "heading": "Array of Integers",
+          "paragraphs": ["To create an array of integers, you could write:"],
+          "example": "int[] myNum = {10, 20, 30, 40};"
+        },
+        {
+          "name": "access",
+          "heading": "Access the Elements of an Array",
+          "paragraphs": [
+            "You access an array element by referring to the index number.",
+            "This statement accesses the value of the first element in cars:"
+          ],
+          "example": "string[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\nConsole.WriteLine(cars[0]);\n// Outputs Volvo",
+          "note": "Array indexes start with 0: [0] is the first element. [1] is the second element, etc."
+        },
+        {
+          "name": "change",
+          "heading": "Change an Array Element",
+          "paragraphs": [
+            "To change the value of a specific element, refer to the index number:"
+          ],
+          "examples": [
+            "cars[0] = \"Opel\";",
+            "string[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\ncars[0] = \"Opel\";\nConsole.WriteLine(cars[0]);\n// Now outputs Opel instead of Volvo"
+          ]
+        },
+        {
+          "name": "length",
+          "heading": "Array Length",
+          "paragraphs": [
+            "To find out how many elements an array has, use the Length property:"
+          ],
+          "example": "string[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\nConsole.WriteLine(cars.Length);\n// Outputs 4"
+        },
+        {
+          "name": "other-ways",
+          "heading": "Other Ways to Create an Array",
+          "paragraphs": ["In C#, there are different ways to create an array:"],
+          "example": "// Create an array of four elements, and add values later\nstring[] cars = new string[4];\n\n// Create an array of four elements and add values right away \nstring[] cars = new string[4] {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\n\n// Create an array of four elements without specifying the size \nstring[] cars = new string[] {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\n\n// Create an array of four elements, omitting the new keyword, and without specifying the size\nstring[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};",
+          "note": "If you declare an array and initialize it later, you have to use the new keyword."
+        },
+        {
+          "name": "declare-then-init",
+          "heading": "Declare First, Initialize Later",
+          "paragraphs": [
+            "If you declare an array and initialize it later, you must use the new keyword:"
+          ],
+          "example": "// Declare an array\nstring[] cars;\n\n// Add values, using new\ncars = new string[] {\"Volvo\", \"BMW\", \"Ford\"};\n\n// Add values without using new (this will cause an error)\ncars = {\"Volvo\", \"BMW\", \"Ford\"};"
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct code to access the first element of the array.",
+            "code": "string[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\nConsole.WriteLine(___);",
+            "options": ["cars[0]", "cars[1]", "cars.Length", "cars.First"],
+            "answer": "cars[0]"
+          }
+        }
+      ]
+    },
+    "methods": {
+      "title": "C# Methods",
+      "paragraphs": [
+        "A method is a block of code which only runs when it is called.",
+        "You can pass data, known as parameters, into a method.",
+        "Methods are used to perform certain actions, and they are also known as functions.",
+        "Why use methods? To reuse code: define the code once, and use it many times."
+      ],
+      "sections": [
+        {
+          "name": "create-method",
+          "heading": "Create a Method",
+          "paragraphs": [
+            "A method is defined with the name of the method, followed by parentheses ().",
+            "C# provides some pre-defined methods, such as Main(), but you can also create your own methods."
+          ],
+          "example": "class Program\n{\n  static void MyMethod() \n  {\n    // code to be executed\n  }\n}"
+        },
+        {
+          "name": "example-explained",
+          "heading": "Example Explained",
+          "points": [
+            "MyMethod() is the name of the method",
+            "static means that the method belongs to the Program class and not an object of the Program class",
+            "void means that this method does not have a return value"
+          ],
+          "note": "In C#, it is good practice to start with an uppercase letter when naming methods."
+        },
+        {
+          "name": "call-method",
+          "heading": "Call a Method",
+          "paragraphs": [
+            "To call (execute) a method, write the method's name followed by two parentheses () and a semicolon ;"
+          ],
+          "example": "static void MyMethod() \n{\n  Console.WriteLine(\"I just got executed!\");\n}\n\nstatic void Main(string[] args)\n{\n  MyMethod();\n}\n\n// Outputs \"I just got executed!\""
+        },
+        {
+          "name": "call-multiple-times",
+          "heading": "Call a Method Multiple Times",
+          "paragraphs": ["A method can be called multiple times:"],
+          "example": "static void MyMethod() \n{\n  Console.WriteLine(\"I just got executed!\");\n}\n\nstatic void Main(string[] args)\n{\n  MyMethod();\n  MyMethod();\n  MyMethod();\n}\n\n// I just got executed!\n// I just got executed!\n// I just got executed!"
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct call to execute the MyMethod() method.",
+            "code": "static void MyMethod()\n{\n  Console.WriteLine(\"Executed!\");\n}\n\nstatic void Main(string[] args)\n{\n  ___\n}",
+            "options": [
+              "MyMethod();",
+              "CallMethod();",
+              "Main();",
+              "Execute();"
+            ],
+            "answer": "MyMethod();"
+          }
+        }
+      ]
+    },
+    "method-parameters": {
+      "title": "C# Method Parameters",
+      "sections": [
+        {
+          "name": "parameters-and-arguments",
+          "heading": "Parameters and Arguments",
+          "paragraphs": [
+            "Information can be passed to methods as parameter. Parameters act as variables inside the method.",
+            "They are specified after the method name, inside the parentheses.",
+            "You can add as many parameters as you want, just separate them with a comma."
+          ],
+          "example": "static void MyMethod(string fname) \n{\n  Console.WriteLine(fname + \" Refsnes\");\n}\n\nstatic void Main(string[] args)\n{\n  MyMethod(\"Liam\");\n  MyMethod(\"Jenny\");\n  MyMethod(\"Anja\");\n}\n\n// Liam Refsnes\n// Jenny Refsnes\n// Anja Refsnes"
+        },
+        {
+          "name": "parameter-vs-argument",
+          "heading": "Parameter vs Argument",
+          "paragraphs": [
+            "When a parameter is passed to the method, it is called an argument.",
+            "From the example above: fname is a parameter, while Liam, Jenny and Anja are arguments."
+          ]
+        },
+        {
+          "name": "multiple-parameters",
+          "heading": "Multiple Parameters",
+          "paragraphs": [
+            "You can have as many parameters as you like, just separate them with commas."
+          ],
+          "example": "static void MyMethod(string fname, int age) \n{\n  Console.WriteLine(fname + \" is \" + age);\n}\n\nstatic void Main(string[] args)\n{\n  MyMethod(\"Liam\", 5);\n  MyMethod(\"Jenny\", 8);\n  MyMethod(\"Anja\", 31);\n}\n\n// Liam is 5\n// Jenny is 8\n// Anja is 31"
+        },
+        {
+          "name": "note",
+          "heading": "Note",
+          "note": "When working with multiple parameters, the method call must have the same number of arguments as there are parameters, and the arguments must be passed in the same order."
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "When a parameter is passed to the method, it is called an",
+            "options": ["boolean", "argument", "switch", "array"],
+            "answer": "argument"
+          }
+        }
+      ]
+    },
+    "method-overloading": {
+      "title": "C# Method Overloading",
+      "sections": [
+        {
+          "name": "method-overloading",
+          "heading": "Method Overloading",
+          "paragraphs": [
+            "With method overloading, multiple methods can have the same name with different parameters."
+          ],
+          "example": "int MyMethod(int x)\nfloat MyMethod(float x)\ndouble MyMethod(double x, double y)"
+        },
+        {
+          "name": "different-method-names-example",
+          "heading": "Example (Without Overloading)",
+          "paragraphs": [
+            "Consider the following example, which has two methods that add numbers of different types:"
+          ],
+          "example": "static int PlusMethodInt(int x, int y)\n{\n  return x + y;\n}\n\nstatic double PlusMethodDouble(double x, double y)\n{\n  return x + y;\n}\n\nstatic void Main(string[] args)\n{\n  int myNum1 = PlusMethodInt(8, 5);\n  double myNum2 = PlusMethodDouble(4.3, 6.26);\n  Console.WriteLine(\"Int: \" + myNum1);\n  Console.WriteLine(\"Double: \" + myNum2);\n}"
+        },
+        {
+          "name": "overloaded-method-example",
+          "heading": "Example (With Overloading)",
+          "paragraphs": [
+            "Instead of defining two methods that should do the same thing, it is better to overload one.",
+            "In the example below, we overload the PlusMethod method to work for both int and double:"
+          ],
+          "example": "static int PlusMethod(int x, int y)\n{\n  return x + y;\n}\n\nstatic double PlusMethod(double x, double y)\n{\n  return x + y;\n}\n\nstatic void Main(string[] args)\n{\n  int myNum1 = PlusMethod(8, 5);\n  double myNum2 = PlusMethod(4.3, 6.26);\n  Console.WriteLine(\"Int: \" + myNum1);\n  Console.WriteLine(\"Double: \" + myNum2);\n}"
+        },
+        {
+          "name": "note",
+          "heading": "Note",
+          "note": "Multiple methods can have the same name as long as the number and/or type of parameters are different."
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "True or False: With method overloading, multiple methods can have the same name with different parameters.",
+            "type": "boolean",
+            "options": ["True", "False"],
+            "answer": "True"
+          }
+        }
+      ]
+    },
+    "oop": {
+      "title": "C# OOP",
+      "sections": [
+        {
+          "name": "what-is-oop",
+          "heading": "C# - What is OOP?",
+          "paragraphs": [
+            "OOP stands for Object-Oriented Programming.",
+            "Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.",
+            "Object-oriented programming has several advantages over procedural programming:"
+          ],
+          "list": [
+            "OOP is faster and easier to execute",
+            "OOP provides a clear structure for the programs",
+            "OOP helps to keep the C# code DRY \"Don't Repeat Yourself\", and makes the code easier to maintain, modify and debug",
+            "OOP makes it possible to create full reusable applications with less code and shorter development time"
+          ]
+        },
+        {
+          "name": "tip-dry",
+          "heading": "Tip",
+          "tip": "The \"Don't Repeat Yourself\" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it."
+        },
+        {
+          "name": "classes-and-objects",
+          "heading": "C# - What are Classes and Objects?",
+          "paragraphs": [
+            "Classes and objects are the two main aspects of object-oriented programming.",
+            "A class is a template for objects, and an object is an instance of a class.",
+            "When the individual objects are created, they inherit all the variables and methods from the class.",
+            "You will learn much more about classes and objects in the next chapter."
+          ],
+          "illustrations": [
+            {
+              "class": "Fruit",
+              "objects": ["Apple", "Banana", "Mango"]
+            },
+            {
+              "class": "Car",
+              "objects": ["Volvo", "Audi", "Toyota"]
+            }
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What does OOP stand for?",
+            "options": [
+              "Operation-Oriented Programming",
+              "Object-Organized Programming",
+              "Operational Object Programming",
+              "Object-Oriented Programming"
+            ],
+            "answer": "Object-Oriented Programming"
+          }
+        }
+      ]
+    },
+    "classes-objects": {
+      "title": "C# Classes and Objects",
+      "sections": [
+        {
+          "name": "classes-and-objects",
+          "heading": "Classes and Objects",
+          "paragraphs": [
+            "You learned from the previous chapter that C# is an object-oriented programming language.",
+            "Everything in C# is associated with classes and objects, along with its attributes and methods.",
+            "For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.",
+            "A Class is like an object constructor, or a \"blueprint\" for creating objects."
+          ]
+        },
+        {
+          "name": "create-a-class",
+          "heading": "Create a Class",
+          "paragraphs": [
+            "To create a class, use the class keyword:",
+            "Create a class named \"Car\" with a variable color:"
+          ],
+          "example": "class Car \n{\n  string color = \"red\";\n}"
+        },
+        {
+          "name": "field-note",
+          "heading": "Note",
+          "paragraphs": [
+            "When a variable is declared directly in a class, it is often referred to as a field (or attribute).",
+            "It is not required, but it is a good practice to start with an uppercase first letter when naming classes.",
+            "It is common that the name of the C# file and the class matches, as it makes our code organized.",
+            "However it is not required (like in Java)."
+          ]
+        },
+        {
+          "name": "create-an-object",
+          "heading": "Create an Object",
+          "paragraphs": [
+            "An object is created from a class.",
+            "We have already created the class named Car, so now we can use this to create objects.",
+            "To create an object of Car, specify the class name, followed by the object name, and use the keyword new:",
+            "Create an object called \"myObj\" and use it to print the value of color:"
+          ],
+          "example": "class Car \n{\n  string color = \"red\";\n\n  static void Main(string[] args)\n  {\n    Car myObj = new Car();\n    Console.WriteLine(myObj.color);\n  }\n}"
+        },
+        {
+          "name": "dot-syntax",
+          "heading": "Note",
+          "paragraphs": [
+            "We use the dot syntax (.) to access variables/fields inside a class (myObj.color).",
+            "You will learn more about fields in the next chapter."
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword to define the class.",
+            "code": " Car\n{\n  string color = \"blue\";\n}",
+            "options": ["class", "object", "new", "Car"],
+            "answer": "class"
+          }
+        }
+      ]
+    },
+    "class-members": {
+      "title": "C# Class Members",
+      "sections": [
+        {
+          "name": "class-members",
+          "heading": "Class Members",
+          "paragraphs": [
+            "Fields and methods inside classes are often referred to as \"Class Members\"."
+          ],
+          "example": "class MyClass\n{\n  // Class members\n  string color = \"red\";        // field\n  int maxSpeed = 200;          // field\n  public void fullThrottle()   // method\n  {\n    Console.WriteLine(\"The car is going as fast as it can!\");\n  }\n}"
+        },
+        {
+          "name": "fields",
+          "heading": "Fields",
+          "paragraphs": [
+            "Variables inside a class are called fields.",
+            "You can access them by creating an object of the class, and by using the dot syntax (.).",
+            "The following example creates an object of the Car class and prints the values of the fields color and maxSpeed:"
+          ],
+          "example": "class Car \n{\n  string color = \"red\";\n  int maxSpeed = 200;\n\n  static void Main(string[] args)\n  {\n    Car myObj = new Car();\n    Console.WriteLine(myObj.color);\n    Console.WriteLine(myObj.maxSpeed);\n  }\n}"
+        },
+        {
+          "name": "modify-fields-after-creating-object",
+          "heading": "Modify Fields After Creating Object",
+          "paragraphs": [
+            "You can also leave the fields blank, and modify them when creating the object:"
+          ],
+          "example": "class Car \n{\n  string color;\n  int maxSpeed;\n\n  static void Main(string[] args)\n  {\n    Car myObj = new Car();\n    myObj.color = \"red\";\n    myObj.maxSpeed = 200;\n    Console.WriteLine(myObj.color);\n    Console.WriteLine(myObj.maxSpeed);\n  }\n}"
+        },
+        {
+          "name": "multiple-objects",
+          "heading": "Multiple Objects",
+          "paragraphs": [
+            "This is especially useful when creating multiple objects of one class:"
+          ],
+          "example": "class Car \n{\n  string model;\n  string color;\n  int year;\n\n  static void Main(string[] args)\n  {\n    Car Ford = new Car();\n    Ford.model = \"Mustang\";\n    Ford.color = \"red\";\n    Ford.year = 1969;\n\n    Car Opel = new Car();\n    Opel.model = \"Astra\";\n    Opel.color = \"white\";\n    Opel.year = 2005;\n\n    Console.WriteLine(Ford.model);\n    Console.WriteLine(Opel.model);\n  }\n}"
+        },
+        {
+          "name": "object-methods",
+          "heading": "Object Methods",
+          "paragraphs": [
+            "Methods are used to perform certain actions.",
+            "Methods normally belong to a class, and they define how an object of a class behaves.",
+            "You can access methods with the dot syntax.",
+            "The method must be public.",
+            "Use the name of the method followed by parentheses () and a semicolon ; to call the method:"
+          ],
+          "example": "class Car \n{\n  string color;                 // field\n  int maxSpeed;                 // field\n  public void fullThrottle()    // method\n  {\n    Console.WriteLine(\"The car is going as fast as it can!\"); \n  }\n\n  static void Main(string[] args)\n  {\n    Car myObj = new Car();\n    myObj.fullThrottle();  // Call the method\n  }\n}"
+        },
+        {
+          "name": "public-vs-static",
+          "heading": "Public vs Static",
+          "paragraphs": [
+            "A static method can be accessed without creating an object of the class.",
+            "Public methods can only be accessed by objects."
+          ]
+        },
+        {
+          "name": "use-multiple-classes",
+          "heading": "Use Multiple Classes",
+          "paragraphs": [
+            "You can use multiple classes for better organization (one for fields and methods, and another one for execution).",
+            "This is recommended:"
+          ],
+          "example": "prog2.cs\nclass Car \n{\n  public string model;\n  public string color;\n  public int year;\n  public void fullThrottle()\n  {\n    Console.WriteLine(\"The car is going as fast as it can!\"); \n  }\n}\n\nprog.cs\nclass Program\n{\n  static void Main(string[] args)\n  {\n    Car Ford = new Car();\n    Ford.model = \"Mustang\";\n    Ford.color = \"red\";\n    Ford.year = 1969;\n\n    Car Opel = new Car();\n    Opel.model = \"Astra\";\n    Opel.color = \"white\";\n    Opel.year = 2005;\n\n    Console.WriteLine(Ford.model);\n    Console.WriteLine(Opel.model);\n  }\n}"
+        },
+        {
+          "name": "access-modifier-note",
+          "heading": "Note",
+          "paragraphs": [
+            "The public keyword is called an access modifier.",
+            "It specifies that the fields of Car are accessible for other classes as well, such as Program.",
+            "You will learn more about Access Modifiers in a later chapter."
+          ]
+        },
+        {
+          "name": "tip",
+          "heading": "Tip",
+          "tip": "As you continue to read, you will also learn more about other class members, such as constructors and properties."
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What are class members in C#?",
+            "options": [
+              "Only the fields (variables) inside a class.",
+              "Only the methods inside a class.",
+              "Both fields (variables) and methods inside a class.",
+              "Only the constructors of a class."
+            ],
+            "answer": "Both fields (variables) and methods inside a class."
+          }
+        }
+      ]
+    },
+    "constructors": {
+      "title": "C# Constructors",
+      "sections": [
+        {
+          "name": "constructors",
+          "heading": "Constructors",
+          "paragraphs": [
+            "A constructor is a special method that is used to initialize objects.",
+            "The advantage of a constructor is that it is called when an object of a class is created.",
+            "It can be used to set initial values for fields."
+          ],
+          "example": "// Create a Car class\nclass Car\n{\n  public string model;  // Create a field\n\n  // Create a class constructor for the Car class\n  public Car()\n  {\n    model = \"Mustang\"; // Set the initial value for model\n  }\n\n  static void Main(string[] args)\n  {\n    Car Ford = new Car();  // Create an object of the Car Class (this will call the constructor)\n    Console.WriteLine(Ford.model);  // Print the value of model\n  }\n}\n\n// Outputs \"Mustang\""
+        },
+        {
+          "name": "constructor-rules",
+          "heading": "Constructor Rules",
+          "paragraphs": [
+            "The constructor name must match the class name.",
+            "A constructor cannot have a return type (like void or int).",
+            "The constructor is called when the object is created.",
+            "All classes have constructors by default. If you do not create a class constructor yourself, C# creates one for you.",
+            "Without your own constructor, you cannot set initial values for fields."
+          ]
+        },
+        {
+          "name": "constructor-parameters",
+          "heading": "Constructor Parameters",
+          "paragraphs": [
+            "Constructors can also take parameters, which is used to initialize fields.",
+            "In this example, we add a string modelName parameter to the constructor.",
+            "Inside the constructor we set model to modelName (model=modelName)."
+          ],
+          "example": "class Car\n{\n  public string model;\n\n  // Create a class constructor with a parameter\n  public Car(string modelName)\n  {\n    model = modelName;\n  }\n\n  static void Main(string[] args)\n  {\n    Car Ford = new Car(\"Mustang\");\n    Console.WriteLine(Ford.model);\n  }\n}\n\n// Outputs \"Mustang\""
+        },
+        {
+          "name": "multiple-parameters",
+          "heading": "Multiple Parameters",
+          "paragraphs": ["You can have as many parameters as you want."],
+          "example": "class Car\n{\n  public string model;\n  public string color;\n  public int year;\n\n  // Create a class constructor with multiple parameters\n  public Car(string modelName, string modelColor, int modelYear)\n  {\n    model = modelName;\n    color = modelColor;\n    year = modelYear;\n  }\n\n  static void Main(string[] args)\n  {\n    Car Ford = new Car(\"Mustang\", \"Red\", 1969);\n    Console.WriteLine(Ford.color + \" \" + Ford.year + \" \" + Ford.model);\n  }\n}\n\n// Outputs Red 1969 Mustang"
+        },
+        {
+          "name": "constructor-overloading",
+          "heading": "Tip",
+          "tip": "Just like other methods, constructors can be overloaded by using different numbers of parameters."
+        },
+        {
+          "name": "constructors-save-time",
+          "heading": "Constructors Save Time",
+          "paragraphs": [
+            "Constructors are very useful because they help reduce the amount of code."
+          ],
+          "examples": {
+            "withoutConstructor": "prog.cs\nclass Program\n{\n  static void Main(string[] args)\n  {\n    Car Ford = new Car();\n    Ford.model = \"Mustang\";\n    Ford.color = \"red\";\n    Ford.year = 1969;\n\n    Car Opel = new Car();\n    Opel.model = \"Astra\";\n    Opel.color = \"white\";\n    Opel.year = 2005;\n\n    Console.WriteLine(Ford.model);\n    Console.WriteLine(Opel.model);\n  }\n}",
+            "withConstructor": "prog.cs\nclass Program\n{\n  static void Main(string[] args)\n  {\n    Car Ford = new Car(\"Mustang\", \"Red\", 1969);\n    Car Opel = new Car(\"Astra\", \"White\", 2005);\n\n    Console.WriteLine(Ford.model);\n    Console.WriteLine(Opel.model);\n  }\n}"
+          }
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is a constructor in C#?",
+            "options": [
+              "A method used to destroy objects.",
+              "A method that must return a value.",
+              "A method that can only be called manually.",
+              "A method used to initialize objects when they are created."
+            ],
+            "answer": "A method used to initialize objects when they are created."
+          }
+        }
+      ]
+    },
+    "access-modifiers": {
+      "title": "C# Access Modifiers",
+      "sections": [
+        {
+          "name": "access-modifiers",
+          "heading": "Access Modifiers",
+          "paragraphs": [
+            "The public keyword is an access modifier.",
+            "Access modifiers are used to set the access level/visibility for classes, fields, methods and properties."
+          ],
+          "example": "public string color;"
+        },
+        {
+          "name": "types-of-access-modifiers",
+          "heading": "C# has the following access modifiers",
+          "modifiers": [
+            {
+              "name": "public",
+              "description": "The code is accessible for all classes"
+            },
+            {
+              "name": "private",
+              "description": "The code is only accessible within the same class"
+            },
+            {
+              "name": "protected",
+              "description": "The code is accessible within the same class, or in a class that is inherited from that class"
+            },
+            {
+              "name": "internal",
+              "description": "The code is only accessible within its own assembly, but not from another assembly"
+            }
+          ],
+          "note": "There are also two combinations: protected internal and private protected."
+        },
+        {
+          "name": "private-modifier",
+          "heading": "Private Modifier",
+          "paragraphs": [
+            "If you declare a field with a private access modifier, it can only be accessed within the same class."
+          ],
+          "example": "class Car\n{\n  private string model = \"Mustang\";\n\n  static void Main(string[] args)\n  {\n    Car myObj = new Car();\n    Console.WriteLine(myObj.model);\n  }\n}\n\n// Output: Mustang"
+        },
+        {
+          "name": "private-outside-error",
+          "heading": "Accessing private field outside class",
+          "paragraphs": [
+            "If you try to access a private field outside the class, an error will occur."
+          ],
+          "example": "class Car\n{\n  private string model = \"Mustang\";\n}\n\nclass Program\n{\n  static void Main(string[] args)\n  {\n    Car myObj = new Car();\n    Console.WriteLine(myObj.model);\n  }\n}\n\n// Error: 'Car.model' is inaccessible due to its protection level"
+        },
+        {
+          "name": "public-modifier",
+          "heading": "Public Modifier",
+          "paragraphs": [
+            "If you declare a field with a public access modifier, it is accessible for all classes."
+          ],
+          "example": "class Car\n{\n  public string model = \"Mustang\";\n}\n\nclass Program\n{\n  static void Main(string[] args)\n  {\n    Car myObj = new Car();\n    Console.WriteLine(myObj.model);\n  }\n}\n\n// Output: Mustang"
+        },
+        {
+          "name": "why-access-modifiers",
+          "heading": "Why Access Modifiers?",
+          "points": [
+            "To control the visibility of class members (security level).",
+            "To achieve Encapsulation (hide sensitive data) by declaring fields as private."
+          ]
+        },
+        {
+          "name": "default-private",
+          "heading": "Default Access Modifier",
+          "paragraphs": [
+            "By default, all members of a class are private if you don't specify an access modifier."
+          ],
+          "example": "class Car\n{\n  string model;  // private\n  string year;   // private\n}"
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the purpose of access modifiers in C#?",
+            "options": [
+              "To determine how objects are created.",
+              "To set the visibility and accessibility of classes, fields, and methods.",
+              "To specify the return type of a method.",
+              "To control the execution order of methods."
+            ],
+            "answer": "To set the visibility and accessibility of classes, fields, and methods."
+          }
+        }
+      ]
+    },
+    "properties": {
+      "title": "C# Properties (Get and Set)",
+      "sections": [
+        {
+          "name": "properties-and-encapsulation",
+          "heading": "Properties and Encapsulation",
+          "paragraphs": [
+            "Encapsulation means making sure that sensitive data is hidden from users.",
+            "To achieve encapsulation in C#, you must:",
+            "1) declare fields/variables as private",
+            "2) provide public get and set methods (through properties) to access and update the value of a private field"
+          ]
+        },
+        {
+          "name": "what-is-a-property",
+          "heading": "Properties",
+          "paragraphs": [
+            "Private variables can only be accessed within the same class.",
+            "Sometimes we need to access private variables from outside the class, and we can do that with properties.",
+            "A property is like a combination of a variable and a method, and it has two methods: get and set."
+          ],
+          "example": "class Person\n{\n  private string name; // field\n\n  public string Name   // property\n  {\n    get { return name; }   // get method\n    set { name = value; }  // set method\n  }\n}"
+        },
+        {
+          "name": "example-explained",
+          "heading": "Example explained",
+          "points": [
+            "The Name property is associated with the private field name.",
+            "It is good practice to use the same name for the property and the private field, but with an uppercase first letter for the property.",
+            "The get method returns the value of the field.",
+            "The set method assigns a value to the field.",
+            "The value keyword represents the value being assigned to the property."
+          ]
+        },
+        {
+          "name": "using-the-property",
+          "heading": "Access and update private field using property",
+          "example": "class Person\n{\n  private string name; // field\n  public string Name   // property\n  {\n    get { return name; }\n    set { name = value; }\n  }\n}\n\nclass Program\n{\n  static void Main(string[] args)\n  {\n    Person myObj = new Person();\n    myObj.Name = \"Liam\";\n    Console.WriteLine(myObj.Name);\n  }\n}\n\n// Output: Liam"
+        },
+        {
+          "name": "automatic-properties",
+          "heading": "Automatic Properties (Short Hand)",
+          "paragraphs": [
+            "C# supports automatic properties, where you do not need to define the field explicitly.",
+            "You only write get; and set; inside the property."
+          ],
+          "example": "class Person\n{\n  public string Name  // property\n  { get; set; }\n}\n\nclass Program\n{\n  static void Main(string[] args)\n  {\n    Person myObj = new Person();\n    myObj.Name = \"Liam\";\n    Console.WriteLine(myObj.Name);\n  }\n}\n\n// Output: Liam"
+        },
+        {
+          "name": "why-encapsulation",
+          "heading": "Why Encapsulation?",
+          "benefits": [
+            "Better control of class members (reduces mistakes).",
+            "Fields can be read-only (only get) or write-only (only set).",
+            "Flexible: change one part of the code without affecting other parts.",
+            "Increased security of data."
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the main purpose of encapsulation in C#?",
+            "options": [
+              "To allow all data to be publicly accessible.",
+              "To make sure sensitive data is hidden from unauthorized access.",
+              "To speed up the execution of code."
+            ],
+            "answer": "To make sure sensitive data is hidden from unauthorized access."
+          }
+        }
+      ]
+    },
+    "inheritance": {
+      "title": "C# Inheritance",
+      "sections": [
+        {
+          "name": "inheritance-derived-base",
+          "heading": "Inheritance (Derived and Base Class)",
+          "paragraphs": [
+            "In C#, it is possible to inherit fields and methods from one class to another.",
+            "We group inheritance into two categories:",
+            "Derived Class (child) - the class that inherits from another class",
+            "Base Class (parent) - the class being inherited from",
+            "To inherit from a class, use the : symbol."
+          ]
+        },
+        {
+          "name": "inheritance-example",
+          "heading": "Example",
+          "example": "class Vehicle  // base class (parent)\n{\n  public string brand = \"Ford\";  // Vehicle field\n  public void honk()             // Vehicle method\n  {\n    Console.WriteLine(\"Tuut, tuut!\");\n  }\n}\n\nclass Car : Vehicle  // derived class (child)\n{\n  public string modelName = \"Mustang\";  // Car field\n}\n\nclass Program\n{\n  static void Main(string[] args)\n  {\n    Car myCar = new Car();\n    myCar.honk();\n    Console.WriteLine(myCar.brand + \" \" + myCar.modelName);\n  }\n}\n\n// Output:\n// Tuut, tuut!\n// Ford Mustang"
+        },
+        {
+          "name": "why-use-inheritance",
+          "heading": "Why And When To Use Inheritance?",
+          "points": [
+            "Useful for code reusability.",
+            "Reuse fields and methods of an existing class when you create a new class."
+          ]
+        },
+        {
+          "name": "sealed-keyword",
+          "heading": "The sealed Keyword",
+          "paragraphs": [
+            "If you don't want other classes to inherit from a class, use the sealed keyword.",
+            "If you try to inherit from a sealed class, C# will generate an error."
+          ],
+          "example": "sealed class Vehicle\n{\n  // code here\n}\n\nclass Car : Vehicle\n{\n  // code here\n}\n\n// Error:\n// 'Car': cannot derive from sealed type 'Vehicle'"
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct access modifier to allow model to be accessed in inherited classes.",
+            "code": "class Car\n{\n  ___ string model = \"Mustang\";\n}\n\nclass SportsCar : Car\n{\n  // Inherits from Car\n}",
+            "options": ["protected", "private", "internal", "public"],
+            "answer": "protected"
+          }
+        }
+      ]
+    },
+    "polymorphism": {
+      "title": "C# Polymorphism",
+      "sections": [
+        {
+          "name": "polymorphism-intro",
+          "heading": "Polymorphism and Overriding Methods",
+          "paragraphs": [
+            "Polymorphism means \"many forms\", and it occurs when we have many classes that are related to each other by inheritance.",
+            "Inheritance lets us inherit fields and methods from another class.",
+            "Polymorphism uses those methods to perform different tasks.",
+            "This allows us to perform a single action in different ways."
+          ]
+        },
+        {
+          "name": "polymorphism-example-without-override",
+          "heading": "Example (Without virtual/override)",
+          "example": "class Animal  // Base class (parent)\n{\n  public void animalSound()\n  {\n    Console.WriteLine(\"The animal makes a sound\");\n  }\n}\n\nclass Pig : Animal  // Derived class (child)\n{\n  public void animalSound()\n  {\n    Console.WriteLine(\"The pig says: wee wee\");\n  }\n}\n\nclass Dog : Animal  // Derived class (child)\n{\n  public void animalSound()\n  {\n    Console.WriteLine(\"The dog says: bow wow\");\n  }\n}\n\nclass Program\n{\n  static void Main(string[] args)\n  {\n    Animal myAnimal = new Animal();\n    Animal myPig = new Pig();\n    Animal myDog = new Dog();\n\n    myAnimal.animalSound();\n    myPig.animalSound();\n    myDog.animalSound();\n  }\n}\n\n// Output:\n// The animal makes a sound\n// The animal makes a sound\n// The animal makes a sound"
+        },
+        {
+          "name": "polymorphism-note",
+          "heading": "Not The Output I Was Looking For",
+          "paragraphs": [
+            "The output above is not what you expected.",
+            "That is because the base class method is used when calling through a base class reference.",
+            "To get different outputs, C# allows overriding using virtual and override keywords."
+          ]
+        },
+        {
+          "name": "polymorphism-example-with-override",
+          "heading": "Example (With virtual and override)",
+          "example": "class Animal  // Base class (parent)\n{\n  public virtual void animalSound()\n  {\n    Console.WriteLine(\"The animal makes a sound\");\n  }\n}\n\nclass Pig : Animal  // Derived class (child)\n{\n  public override void animalSound()\n  {\n    Console.WriteLine(\"The pig says: wee wee\");\n  }\n}\n\nclass Dog : Animal  // Derived class (child)\n{\n  public override void animalSound()\n  {\n    Console.WriteLine(\"The dog says: bow wow\");\n  }\n}\n\nclass Program\n{\n  static void Main(string[] args)\n  {\n    Animal myAnimal = new Animal();\n    Animal myPig = new Pig();\n    Animal myDog = new Dog();\n\n    myAnimal.animalSound();\n    myPig.animalSound();\n    myDog.animalSound();\n  }\n}\n\n// Output:\n// The animal makes a sound\n// The pig says: wee wee\n// The dog says: bow wow"
+        },
+        {
+          "name": "why-use-polymorphism",
+          "heading": "Why Use Inheritance and Polymorphism?",
+          "points": [
+            "Useful for code reusability.",
+            "Reuse fields and methods of an existing class when you create a new class."
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword to allow derived classes to override this method.",
+            "code": "class Animal\n{\n  public ___ void animalSound()\n  {\n    Console.WriteLine(\"The animal makes a sound\");\n  }\n}",
+            "options": ["extends", "virtual", "override", "static", "sealed"],
+            "answer": "virtual"
+          }
+        }
+      ]
+    },
+    "abstraction": {
+      "title": "C# Abstraction",
+      "sections": [
+        {
+          "name": "abstraction-intro",
+          "heading": "Abstract Classes and Methods",
+          "paragraphs": [
+            "Data abstraction is the process of hiding certain details and showing only essential information to the user.",
+            "Abstraction can be achieved with either abstract classes or interfaces."
+          ]
+        },
+        {
+          "name": "abstract-keyword",
+          "heading": "The abstract keyword",
+          "paragraphs": [
+            "The abstract keyword is used for classes and methods."
+          ],
+          "points": [
+            "Abstract class: a restricted class that cannot be used to create objects. To access it, it must be inherited from another class.",
+            "Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the derived class."
+          ]
+        },
+        {
+          "name": "abstract-class-example",
+          "heading": "Abstract class with abstract and regular methods",
+          "example": "abstract class Animal\n{\n  public abstract void animalSound();\n\n  public void sleep()\n  {\n    Console.WriteLine(\"Zzz\");\n  }\n}"
+        },
+        {
+          "name": "cannot-create-object",
+          "heading": "Cannot create an object of an abstract class",
+          "example": "Animal myObj = new Animal();\n// Will generate an error:\n// Cannot create an instance of the abstract class or interface 'Animal'"
+        },
+        {
+          "name": "abstraction-full-example",
+          "heading": "Example (Abstract class + Inheritance)",
+          "example": "// Abstract class\nabstract class Animal\n{\n  // Abstract method (does not have a body)\n  public abstract void animalSound();\n\n  // Regular method\n  public void sleep()\n  {\n    Console.WriteLine(\"Zzz\");\n  }\n}\n\n// Derived class (inherit from Animal)\nclass Pig : Animal\n{\n  public override void animalSound()\n  {\n    // The body of animalSound() is provided here\n    Console.WriteLine(\"The pig says: wee wee\");\n  }\n}\n\nclass Program\n{\n  static void Main(string[] args)\n  {\n    Pig myPig = new Pig();\n    myPig.animalSound();\n    myPig.sleep();\n  }\n}"
+        },
+        {
+          "name": "why-use-abstraction",
+          "heading": "Why Use Abstract Classes and Methods?",
+          "points": [
+            "To achieve security (hide certain details and only show important details of an object).",
+            "Abstraction can also be achieved with Interfaces."
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the purpose of abstraction in C#?",
+            "options": [
+              "To allow direct access to all class members.",
+              "To hide certain details and show only the essential information.",
+              "To prevent inheritance in a class.",
+              "To make all methods static."
+            ],
+            "answer": "To hide certain details and show only the essential information."
+          }
+        }
+      ]
+    },
+    "interface": {
+      "title": "C# Interface",
+      "sections": [
+        {
+          "name": "interface-intro",
+          "heading": "Interfaces",
+          "paragraphs": [
+            "Another way to achieve abstraction in C#, is with interfaces.",
+            "An interface is a completely \"abstract class\", which can only contain abstract methods and properties (with empty bodies)."
+          ]
+        },
+        {
+          "name": "interface-basic-example",
+          "heading": "Interface Example",
+          "example": "// interface\ninterface Animal\n{\n  void animalSound(); // interface method (does not have a body)\n  void run();         // interface method (does not have a body)\n}"
+        },
+        {
+          "name": "interface-naming-tip",
+          "heading": "Naming Interfaces",
+          "paragraphs": [
+            "It is considered good practice to start with the letter \"I\" at the beginning of an interface.",
+            "By default, members of an interface are abstract and public."
+          ],
+          "note": "Note: Interfaces can contain properties and methods, but not fields."
+        },
+        {
+          "name": "implement-interface",
+          "heading": "Implement an Interface",
+          "paragraphs": [
+            "To access the interface methods, the interface must be implemented by another class.",
+            "To implement an interface, use the : symbol (just like inheritance).",
+            "The body of the interface method is provided by the implementing class.",
+            "You do not have to use the override keyword when implementing an interface."
+          ],
+          "example": "// Interface\ninterface IAnimal\n{\n  void animalSound();\n}\n\n// Pig \"implements\" the IAnimal interface\nclass Pig : IAnimal\n{\n  public void animalSound()\n  {\n    Console.WriteLine(\"The pig says: wee wee\");\n  }\n}\n\nclass Program\n{\n  static void Main(string[] args)\n  {\n    Pig myPig = new Pig();\n    myPig.animalSound();\n  }\n}"
+        },
+        {
+          "name": "notes-on-interfaces",
+          "heading": "Notes on Interfaces",
+          "list": [
+            "Interfaces cannot be used to create objects.",
+            "Interface methods do not have a body (the body is provided by the implementing class).",
+            "When implementing an interface, you must implement all its methods.",
+            "Interfaces can contain properties and methods, but not fields/variables.",
+            "Interface members are by default abstract and public.",
+            "An interface cannot contain a constructor."
+          ]
+        },
+        {
+          "name": "why-use-interfaces",
+          "heading": "Why And When To Use Interfaces?",
+          "points": [
+            "To achieve security - hide certain details and only show the important details of an object.",
+            "C# does not support multiple inheritance (a class can only inherit from one base class), but it can implement multiple interfaces."
+          ],
+          "note": "To implement multiple interfaces, separate them with a comma."
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is an interface in C#?",
+            "options": [
+              "A class that contains both abstract and concrete methods.",
+              "A completely abstract class that can only contain abstract methods and properties.",
+              "A class that cannot be inherited.",
+              "A class that must have a constructor."
+            ],
+            "answer": "A completely abstract class that can only contain abstract methods and properties."
+          }
+        }
+      ]
+    },
+    "enum": {
+      "title": "C# Enum",
+      "sections": [
+        {
+          "name": "enum-intro",
+          "heading": "C# Enums",
+          "paragraphs": [
+            "An enum is a special \"class\" that represents a group of constants (unchangeable/read-only variables).",
+            "To create an enum, use the enum keyword (instead of class or interface), and separate the enum items with a comma."
+          ]
+        },
+        {
+          "name": "enum-create",
+          "heading": "Create an Enum",
+          "example": "enum Level\n{\n  Low,\n  Medium,\n  High\n}"
+        },
+        {
+          "name": "enum-access",
+          "heading": "Access Enum Items",
+          "paragraphs": ["You can access enum items with the dot syntax:"],
+          "example": "Level myVar = Level.Medium;\nConsole.WriteLine(myVar);"
+        },
+        {
+          "name": "enum-meaning",
+          "heading": "Meaning",
+          "paragraphs": [
+            "Enum is short for \"enumerations\", which means \"specifically listed\"."
+          ]
+        },
+        {
+          "name": "enum-inside-class",
+          "heading": "Enum inside a Class",
+          "example": "class Program\n{\n  enum Level\n  {\n    Low,\n    Medium,\n    High\n  }\n\n  static void Main(string[] args)\n  {\n    Level myVar = Level.Medium;\n    Console.WriteLine(myVar);\n  }\n}"
+        },
+        {
+          "name": "enum-values-default",
+          "heading": "Enum Values (Default)",
+          "paragraphs": [
+            "By default, the first item of an enum has the value 0. The second has the value 1, and so on.",
+            "To get the integer value from an item, you must explicitly convert the item to an int."
+          ],
+          "example": "enum Months\n{\n  January,    // 0\n  February,   // 1\n  March,      // 2\n  April,      // 3\n  May,        // 4\n  June,       // 5\n  July        // 6\n}\n\nstatic void Main(string[] args)\n{\n  int myNum = (int)Months.April;\n  Console.WriteLine(myNum);\n}"
+        },
+        {
+          "name": "enum-values-custom",
+          "heading": "Assign Your Own Enum Values",
+          "paragraphs": [
+            "You can also assign your own enum values, and the next items will update their numbers accordingly:"
+          ],
+          "example": "enum Months\n{\n  January,    // 0\n  February,   // 1\n  March = 6,  // 6\n  April,      // 7\n  May,        // 8\n  June,       // 9\n  July        // 10\n}\n\nstatic void Main(string[] args)\n{\n  int myNum = (int)Months.April;\n  Console.WriteLine(myNum);\n}"
+        },
+        {
+          "name": "enum-switch",
+          "heading": "Enum in a Switch Statement",
+          "paragraphs": [
+            "Enums are often used in switch statements to check for corresponding values:"
+          ],
+          "example": "enum Level\n{\n  Low,\n  Medium,\n  High\n}\n\nstatic void Main(string[] args)\n{\n  Level myVar = Level.Medium;\n\n  switch (myVar)\n  {\n    case Level.Low:\n      Console.WriteLine(\"Low level\");\n      break;\n    case Level.Medium:\n      Console.WriteLine(\"Medium level\");\n      break;\n    case Level.High:\n      Console.WriteLine(\"High level\");\n      break;\n  }\n}"
+        },
+        {
+          "name": "enum-why-use",
+          "heading": "Why And When To Use Enums?",
+          "paragraphs": [
+            "Use enums when you have values that you know aren't going to change, like month days, days, colors, deck of cards, etc."
+          ]
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is an enum in C#?",
+            "options": [
+              "A variable that can store multiple values.",
+              "A special 'class' that represents a group of constants.",
+              "A method that returns multiple values.",
+              "A data type that allows runtime changes."
+            ],
+            "answer": "A special 'class' that represents a group of constants."
+          }
+        }
+      ]
+    },
+    "files": {
+      "title": "C# Files",
+      "sections": [
+        {
+          "name": "files-intro",
+          "heading": "Working With Files",
+          "paragraphs": [
+            "The File class from the System.IO namespace, allows us to work with files."
+          ]
+        },
+        {
+          "name": "files-namespace",
+          "heading": "System.IO Namespace",
+          "paragraphs": [
+            "You must include the System.IO namespace to work with files."
+          ],
+          "example": "using System.IO;  // include the System.IO namespace\n\nFile.SomeFileMethod();  // use the File class with methods"
+        },
+        {
+          "name": "files-methods",
+          "heading": "Common File Methods",
+          "paragraphs": [
+            "The File class has many useful methods for creating and getting information about files."
+          ],
+          "table": [
+            {
+              "method": "AppendText()",
+              "description": "Appends text at the end of an existing file"
+            },
+            { "method": "Copy()", "description": "Copies a file" },
+            {
+              "method": "Create()",
+              "description": "Creates or overwrites a file"
+            },
+            { "method": "Delete()", "description": "Deletes a file" },
+            {
+              "method": "Exists()",
+              "description": "Tests whether the file exists"
+            },
+            {
+              "method": "ReadAllText()",
+              "description": "Reads the contents of a file"
+            },
+            {
+              "method": "Replace()",
+              "description": "Replaces the contents of a file with the contents of another file"
+            },
+            {
+              "method": "WriteAllText()",
+              "description": "Creates a new file and writes the contents to it. If the file already exists, it will be overwritten."
+            }
+          ],
+          "note": "For a full list of File methods, go to Microsoft .NET File Class Reference."
+        },
+        {
+          "name": "files-write-read",
+          "heading": "Write To a File and Read It",
+          "paragraphs": [
+            "In this example, we use WriteAllText() to create a file and write content to it.",
+            "Then we use ReadAllText() to read the contents of the file."
+          ],
+          "example": "using System.IO;  // include the System.IO namespace\n\nstring writeText = \"Hello World!\";  // Create a text string\nFile.WriteAllText(\"filename.txt\", writeText);  // Create a file and write the content of writeText to it\n\nstring readText = File.ReadAllText(\"filename.txt\");  // Read the contents of the file\nConsole.WriteLine(readText);  // Output the content"
+        },
+        {
+          "name": "files-output",
+          "heading": "Output",
+          "output": "Hello World!"
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct namespace to work with files.",
+            "code": "using ; // include the necessary namespace",
+            "options": [
+              "System.IO",
+              "System.FileSystem",
+              "System.Text",
+              "System.Data"
+            ],
+            "answer": "System.IO"
+          }
+        }
+      ]
+    },
+    "exceptions": {
+      "title": "C# Exceptions - Try..Catch",
+      "sections": [
+        {
+          "name": "exceptions-intro",
+          "heading": "C# Exceptions",
+          "paragraphs": [
+            "When executing C# code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.",
+            "When an error occurs, C# will normally stop and generate an error message. The technical term for this is: C# will throw an exception (throw an error)."
+          ]
+        },
+        {
+          "name": "try-catch-intro",
+          "heading": "C# try and catch",
+          "paragraphs": [
+            "The try statement allows you to define a block of code to be tested for errors while it is being executed.",
+            "The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.",
+            "The try and catch keywords come in pairs:"
+          ]
+        },
+        {
+          "name": "try-catch-syntax",
+          "heading": "Syntax",
+          "example": "try\n{\n  // Block of code to try\n}\ncatch (Exception e)\n{\n  // Block of code to handle errors\n}"
+        },
+        {
+          "name": "exception-example-error",
+          "heading": "Example (Error Case)",
+          "paragraphs": [
+            "Consider the following example, where we create an array of three integers.",
+            "This will generate an error, because myNumbers[10] does not exist."
+          ],
+          "example": "int[] myNumbers = {1, 2, 3};\nConsole.WriteLine(myNumbers[10]); // error!"
+        },
+        {
+          "name": "exception-message",
+          "heading": "Exception Message",
+          "paragraphs": ["The error message will be something like this:"],
+          "output": "System.IndexOutOfRangeException: 'Index was outside the bounds of the array.'"
+        },
+        {
+          "name": "try-catch-handle",
+          "heading": "Handle Exception Using try...catch",
+          "paragraphs": [
+            "If an error occurs, we can use try...catch to catch the error and execute some code to handle it.",
+            "In this example, we use the variable inside the catch block (e) together with the built-in Message property, which outputs a message that describes the exception:"
+          ],
+          "example": "try\n{\n  int[] myNumbers = {1, 2, 3};\n  Console.WriteLine(myNumbers[10]);\n}\ncatch (Exception e)\n{\n  Console.WriteLine(e.Message);\n}"
+        },
+        {
+          "name": "try-catch-output",
+          "heading": "Output",
+          "output": "Index was outside the bounds of the array."
+        },
+        {
+          "name": "custom-error-message",
+          "heading": "Custom Error Message",
+          "paragraphs": ["You can also output your own error message:"],
+          "example": "try\n{\n  int[] myNumbers = {1, 2, 3};\n  Console.WriteLine(myNumbers[10]);\n}\ncatch (Exception e)\n{\n  Console.WriteLine(\"Something went wrong.\");\n}",
+          "output": "Something went wrong."
+        },
+        {
+          "name": "finally-block",
+          "heading": "Finally",
+          "paragraphs": [
+            "The finally statement lets you execute code, after try...catch, regardless of the result:"
+          ],
+          "example": "try\n{\n  int[] myNumbers = {1, 2, 3};\n  Console.WriteLine(myNumbers[10]);\n}\ncatch (Exception e)\n{\n  Console.WriteLine(\"Something went wrong.\");\n}\nfinally\n{\n  Console.WriteLine(\"The 'try catch' is finished.\");\n}",
+          "output": "Something went wrong.\nThe 'try catch' is finished."
+        },
+        {
+          "name": "throw-keyword",
+          "heading": "The throw keyword",
+          "paragraphs": [
+            "The throw statement allows you to create a custom error.",
+            "The throw statement is used together with an exception class.",
+            "There are many exception classes available in C#: ArithmeticException, FileNotFoundException, IndexOutOfRangeException, TimeOutException, etc:"
+          ]
+        },
+        {
+          "name": "throw-example",
+          "heading": "Example (throw)",
+          "example": "static void checkAge(int age)\n{\n  if (age < 18)\n  {\n    throw new ArithmeticException(\"Access denied - You must be at least 18 years old.\");\n  }\n  else\n  {\n    Console.WriteLine(\"Access granted - You are old enough!\");\n  }\n}\n\nstatic void Main(string[] args)\n{\n  checkAge(15);\n}",
+          "output": "System.ArithmeticException: 'Access denied - You must be at least 18 years old.'"
+        },
+        {
+          "name": "throw-success",
+          "heading": "Example (No Exception)",
+          "paragraphs": ["If age was 20, you would not get an exception:"],
+          "example": "checkAge(20);",
+          "output": "Access granted - You are old enough!"
+        },
+        {
+          "name": "exercise",
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What will happen if an exception occurs inside a try block and there is no catch block?",
+            "options": [
+              "The program will continue executing the next statement.",
+              "The program will handle the error automatically.",
+              "The program will terminate with an error message.",
+              "The program will ignore the error."
+            ],
+            "answer": "The program will terminate with an error message."
+          }
+        }
+      ]
+    },
+    "add-two-numbers": {
+      "title": "C# How To Add Two Numbers",
+      "sections": [
+        {
+          "name": "add-two-numbers",
+          "heading": "Add Two Numbers",
+          "paragraphs": ["Learn how to add two numbers in C#:"],
+          "example": "int x = 5;\nint y = 6;\nint sum = x + y;\nConsole.WriteLine(sum); // Print the sum of x + y"
+        }
+      ]
+>>>>>>> 1b38eb703025b48918e6eb1480f5d330f84d6554
     }
   }
 }

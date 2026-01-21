@@ -6,7 +6,7 @@ import FooterCourses from "./FooterCourses";
 
 const Footer = () => {
     return (
-        <footer className="bg-[var(--blue-dark)] text-[var(--gray-light)] relative z-50 bottom-0 right-0">
+        <footer className="bg-[var(--blue-medium)] text-[var(--gray-light)] relative z-50 bottom-0 right-0">
 
             {/* ================= TOP FOOTER ================= */}
             <div className="max-w-7xl mx-auto px-6 py-14">

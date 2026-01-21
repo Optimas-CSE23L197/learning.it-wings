@@ -1,0 +1,207 @@
+{
+  "course": {
+    "id": "r",
+    "title": "R Tutorial"
+  },
+  "sections": [
+    {
+      "title": "R Tutorial",
+      "lessons": [
+        { "id": "home", "title": "R HOME" },
+        { "id": "intro", "title": "R Intro" },
+        { "id": "get-started", "title": "R Get Started" },
+        { "id": "syntax", "title": "R Syntax" },
+        { "id": "comments", "title": "R Comments" },
+        { "id": "variables", "title": "R Variables" },
+        { "id": "data-types", "title": "R Data Types" },
+        { "id": "numbers", "title": "R Numbers" },
+        { "id": "math", "title": "R Math" },
+        { "id": "strings", "title": "R Strings" },
+        { "id": "booleans", "title": "R Booleans" },
+        { "id": "operators", "title": "R Operators" },
+        { "id": "if-else", "title": "R If...Else" },
+        { "id": "while-loop", "title": "R While Loop" },
+        { "id": "for-loop", "title": "R For Loop" },
+        { "id": "functions", "title": "R Functions" }
+      ]
+    },
+    {
+      "title": "R Data Structures",
+      "lessons": [
+        { "id": "data-structures", "title": "R Data Structures" },
+        { "id": "vectors", "title": "R Vectors" },
+        { "id": "lists", "title": "R Lists" },
+        { "id": "matrices", "title": "R Matrices" },
+        { "id": "arrays", "title": "R Arrays" },
+        { "id": "data-frames", "title": "R Data Frames" },
+        { "id": "factors", "title": "R Factors" }
+      ]
+    },
+    {
+      "title": "R Graphics",
+      "lessons": [
+        { "id": "plot", "title": "R Plot" },
+        { "id": "line", "title": "R Line" },
+        { "id": "scatterplot", "title": "R Scatterplot" },
+        { "id": "pie-charts", "title": "R Pie Charts" },
+        { "id": "bars", "title": "R Bars" }
+      ]
+    },
+    {
+      "title": "R Statistics",
+      "lessons": [
+        { "id": "statistics-intro", "title": "R Statistics Intro" },
+        { "id": "data-set", "title": "R Data Set" },
+        { "id": "max-min", "title": "R Max and Min" },
+        { "id": "mean-median-mode", "title": "R Mean Median Mode" },
+        { "id": "percentiles", "title": "R Percentiles" }
+      ]
+    },
+    {
+      "title": "R Examples",
+      "lessons": [
+        { "id": "examples", "title": "R Examples" },
+        { "id": "compiler", "title": "R Compiler" },
+        { "id": "exercises", "title": "R Exercises" },
+        { "id": "quiz", "title": "R Quiz" },
+        { "id": "syllabus", "title": "R Syllabus" },
+        { "id": "study-plan", "title": "R Study Plan" },
+        { "id": "certificate", "title": "R Certificate" }
+      ]
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "R Tutorial",
+      "paragraphs": [
+        "Learn R",
+        "R is a programming language.",
+        "R is often used for statistical computing and graphical presentation to analyze and visualize data.",
+        "We recommend reading this tutorial, in the sequence listed in the left menu."
+      ],
+      "sections": [
+        {
+          "heading": "Start Learning R",
+          "paragraphs": ["Start learning R now »"]
+        },
+        {
+          "heading": "Tip",
+          "paragraphs": ["Tip: Sign in to track your progress."]
+        },
+        {
+          "heading": "Examples in Each Chapter",
+          "paragraphs": [
+            "With our \"Try it Yourself\" editor, you can edit R code and view the result."
+          ],
+          "examples": [
+            {
+              "heading": "Example",
+              "description": "How to output some text, and how to do a simple calculation in R:",
+              "code": "\"Hello World!\"\n5 + 5",
+              "result": "[1] \"Hello World!\"\n[1] 10"
+            },
+            {
+              "heading": "Example",
+              "description": "How you can use R to easily create a graph with numbers from 1 to 10 on both the x and y axis:",
+              "code": "plot(1:10)",
+              "result": "Try it Yourself »"
+            }
+          ]
+        },
+        {
+          "heading": "R Exercises",
+          "paragraphs": ["Test Yourself With Exercises"],
+          "exercise": {
+            "question": "Insert the missing part of the code below to output \"Hello World\".",
+            "code": "___(\"Hello World\")",
+            "answer": "print",
+            "note": "Start the Exercise"
+          }
+        },
+        {
+          "heading": "R Quiz",
+          "paragraphs": [
+            "Learn by taking a quiz! This quiz will give you a signal of how much you know about R.",
+            "Take the R Quiz"
+          ]
+        },
+        {
+          "heading": "R Examples",
+          "paragraphs": [
+            "Learn by examples! This tutorial supplements all explanations with clarifying examples.",
+            "See All R Examples"
+          ]
+        },
+        {
+          "heading": "Track Your Progress",
+          "paragraphs": [
+            "Create a W3Schools account and get access to more features and learning materials:"
+          ],
+          "list": [
+            "View your completed tutorials, exercises, and quizzes",
+            "Keep an eye on your progress and daily streaks",
+            "Join the leaderboard and compete with others",
+            "Get your own avatar and unlock new skins",
+            "Create your own personal website"
+          ],
+          "note": "Note: This is an optional feature. You can study at W3Schools without creating an account."
+        }
+      ]
+    },
+    "intro": {
+      "title": "R Introduction",
+      "paragraphs": [
+        "What is R",
+        "R is a popular programming language used for statistical computing and graphical presentation.",
+        "Its most common use is to analyze and visualize data."
+      ],
+      "sections": [
+        {
+          "heading": "Why Use R?",
+          "list": [
+            "It is a great resource for data analysis, data visualization, data science and machine learning",
+            "It provides many statistical techniques (such as statistical tests, classification, clustering and data reduction)",
+            "It is easy to draw graphs in R, like pie charts, histograms, box plot, scatter plot, etc++",
+            "It works on different platforms (Windows, Mac, Linux)",
+            "It is open-source and free",
+            "It has a large community support",
+            "It has many packages (libraries of functions) that can be used to solve different problems"
+          ]
+        },
+        {
+          "heading": "Get Started",
+          "paragraphs": [
+            "This tutorial will teach you the basics of R.",
+            "It is not necessary to have any prior programming experience.",
+            "Get Started Now »"
+          ]
+        }
+      ]
+    },
+    "get-started": {
+      "title": "R Get Started",
+      "paragraphs": [
+        "How to Install R",
+        "To install R, go to https://cloud.r-project.org/ and download the latest version of R for Windows, Mac or Linux.",
+        "When you have downloaded and installed R, you can run R on your computer.",
+        "The screenshot below shows how it may look like when you run R on a Windows PC:",
+        "If you type 5 + 5, and press enter, you will see that R outputs 10."
+      ],
+      "sections": [
+        {
+          "heading": "Learning R at W3Schools",
+          "paragraphs": [
+            "When learning R at W3Schools.com, you can use our \"Try it Yourself\" tool, which shows both the code and the result in your browser.",
+            "This will make it easier for you to test and understand every part as we move forward:"
+          ]
+        },
+        {
+          "heading": "Example",
+          "example": "5 + 5",
+          "result": "[1] 10",
+          "note": "Try it Yourself »"
+        }
+      ]
+    }
+  }
+}

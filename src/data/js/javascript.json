@@ -4,63 +4,63 @@
     "title": "JavaScript Tutorial"
   },
   "sections": [
-  {
-    "title": "JavaScript Basics",
-    "lessons": [
-      { "id": "home", "title": "JS Tutorial" },
-      { "id": "intro", "title": "JS Introduction" },
-      { "id": "where-to", "title": "JS Where To" },
-      { "id": "output", "title": "JS Output" },
-      { "id": "syntax", "title": "JS Syntax" },
-      { "id": "variables", "title": "JS Variables" },
-      { "id": "operators", "title": "JS Operators" },
-      { "id": "if-conditions", "title": "JS If Conditions" },
-      { "id": "loops", "title": "JS Loops" },
-      { "id": "strings", "title": "JS Strings" },
-      { "id": "numbers", "title": "JS Numbers" },
-      { "id": "functions", "title": "JS Functions" },
-      { "id": "objects", "title": "JS Objects" },
-      { "id": "scope", "title": "JS Scope" },
-      { "id": "dates", "title": "JS Dates" },
-      { "id": "arrays", "title": "JS Arrays" },
-      { "id": "sets", "title": "JS Sets" },
-      { "id": "maps", "title": "JS Maps" },
-      { "id": "iterations", "title": "JS Iterations" },
-      { "id": "math", "title": "JS Math" },
-      { "id": "regexp", "title": "JS RegExp" },
-      { "id": "data-types", "title": "JS Data Types" },
-      { "id": "errors", "title": "JS Errors" },
-      { "id": "conventions", "title": "JS Conventions" },
-      { "id": "references", "title": "JS References" },
+    {
+      "title": "JavaScript Basics",
+      "lessons": [
+        { "id": "home", "title": "JS Tutorial" },
+        { "id": "intro", "title": "JS Introduction" },
+        { "id": "where-to", "title": "JS Where To" },
+        { "id": "output", "title": "JS Output" },
+        { "id": "syntax", "title": "JS Syntax" },
+        { "id": "variables", "title": "JS Variables" },
+        { "id": "operators", "title": "JS Operators" },
+        { "id": "if-conditions", "title": "JS If Conditions" },
+        { "id": "loops", "title": "JS Loops" },
+        { "id": "strings", "title": "JS Strings" },
+        { "id": "numbers", "title": "JS Numbers" },
+        { "id": "functions", "title": "JS Functions" },
+        { "id": "objects", "title": "JS Objects" },
+        { "id": "scope", "title": "JS Scope" },
+        { "id": "dates", "title": "JS Dates" },
+        { "id": "arrays", "title": "JS Arrays" },
+        { "id": "sets", "title": "JS Sets" },
+        { "id": "maps", "title": "JS Maps" },
+        { "id": "iterations", "title": "JS Iterations" },
+        { "id": "math", "title": "JS Math" },
+        { "id": "regexp", "title": "JS RegExp" },
+        { "id": "data-types", "title": "JS Data Types" },
+        { "id": "errors", "title": "JS Errors" },
+        { "id": "conventions", "title": "JS Conventions" },
+        { "id": "references", "title": "JS References" },
 
-      { "id": "versions", "title": "JS Versions" },
+        { "id": "versions", "title": "JS Versions" },
 
-      { "id": "html-dom", "title": "JS HTML DOM" },
+        { "id": "html-dom", "title": "JS HTML DOM" },
 
-      { "id": "events", "title": "JS Events" },
+        { "id": "events", "title": "JS Events" },
 
-      { "id": "projects", "title": "JS Projects" },
+        { "id": "projects", "title": "JS Projects" },
 
-      { "id": "advanced", "title": "JS Advanced" },
-      { "id": "adv-functions", "title": "JS Functions" },
-      { "id": "adv-objects", "title": "JS Objects" },
-      { "id": "classes", "title": "JS Classes" },
-      { "id": "async", "title": "JS Asynchronous" },
-      { "id": "modules", "title": "JS Modules" },
-      { "id": "meta-proxy", "title": "JS Meta & Proxy" },
-      { "id": "typed-arrays", "title": "JS Typed Arrays" },
-      { "id": "dom-navigation", "title": "JS DOM Navigation" },
-      { "id": "window", "title": "JS Windows" },
-      { "id": "web-apis", "title": "JS Web APIs" },
-      { "id": "ajax", "title": "JS AJAX" },
-      { "id": "json", "title": "JS JSON" },
-      { "id": "jquery", "title": "JS jQuery" },
-      { "id": "graphics", "title": "JS Graphics" },
-      { "id": "examples", "title": "JS Examples" },
-      { "id": "reference", "title": "JS Reference" }
-    ]
-  }
-],
+        { "id": "advanced", "title": "JS Advanced" },
+        { "id": "adv-functions", "title": "JS Functions" },
+        { "id": "adv-objects", "title": "JS Objects" },
+        { "id": "classes", "title": "JS Classes" },
+        { "id": "async", "title": "JS Asynchronous" },
+        { "id": "modules", "title": "JS Modules" },
+        { "id": "meta-proxy", "title": "JS Meta & Proxy" },
+        { "id": "typed-arrays", "title": "JS Typed Arrays" },
+        { "id": "dom-navigation", "title": "JS DOM Navigation" },
+        { "id": "window", "title": "JS Windows" },
+        { "id": "web-apis", "title": "JS Web APIs" },
+        { "id": "ajax", "title": "JS AJAX" },
+        { "id": "json", "title": "JS JSON" },
+        { "id": "jquery", "title": "JS jQuery" },
+        { "id": "graphics", "title": "JS Graphics" },
+        { "id": "examples", "title": "JS Examples" },
+        { "id": "reference", "title": "JS Reference" }
+      ]
+    }
+  ],
   "content": {
     "home": {
       "title": "Learn JavaScript",
@@ -138,20 +138,13 @@
           ],
           "exercise": {
             "question": "What is the correct syntax for assigning a value to a variable?",
-            "options": [
-              "x : 5",
-              "x = 5",
-              "x == 5",
-              "x -> 5"
-            ],
+            "options": ["x : 5", "x = 5", "x == 5", "x -> 5"],
             "answer": "x = 5"
           }
         },
         {
           "heading": "JavaScript Quiz",
-          "paragraphs": [
-            "Test your JavaScript skills with quizzes."
-          ]
+          "paragraphs": ["Test your JavaScript skills with quizzes."]
         },
         {
           "heading": "Track Your Progress",
@@ -205,12 +198,11 @@
           "Front End Certificate",
           "SQL Certificate"
         ],
-        "copyright":
-          "Copyright 1999-2026 by Refsnes Data. All Rights Reserved."
+        "copyright": "Copyright 1999-2026 by Refsnes Data. All Rights Reserved."
       }
     }
   },
-"page": {
+  "page": {
     "header": {
       "menus": [
         "Tutorials",
@@ -228,15 +220,52 @@
         "Bootcamps"
       ],
       "technologies": [
-        "HTML", "CSS", "JAVASCRIPT", "SQL", "PYTHON", "JAVA", "PHP",
-        "HOW TO", "W3.CSS", "C", "C++", "C#", "BOOTSTRAP", "REACT",
-        "MYSQL", "JQUERY", "EXCEL", "XML", "DJANGO", "NUMPY", "PANDAS",
-        "NODEJS", "DSA", "TYPESCRIPT", "ANGULAR", "ANGULARJS", "GIT",
-        "POSTGRESQL", "MONGODB", "ASP", "AI", "R", "GO", "KOTLIN",
-        "SWIFT", "SASS", "VUE", "GEN AI", "SCIPY", "AWS",
-        "CYBERSECURITY", "DATA SCIENCE",
-        "INTRO TO PROGRAMMING", "INTRO TO HTML & CSS",
-        "BASH", "RUST"
+        "HTML",
+        "CSS",
+        "JAVASCRIPT",
+        "SQL",
+        "PYTHON",
+        "JAVA",
+        "PHP",
+        "HOW TO",
+        "W3.CSS",
+        "C",
+        "C++",
+        "C#",
+        "BOOTSTRAP",
+        "REACT",
+        "MYSQL",
+        "JQUERY",
+        "EXCEL",
+        "XML",
+        "DJANGO",
+        "NUMPY",
+        "PANDAS",
+        "NODEJS",
+        "DSA",
+        "TYPESCRIPT",
+        "ANGULAR",
+        "ANGULARJS",
+        "GIT",
+        "POSTGRESQL",
+        "MONGODB",
+        "ASP",
+        "AI",
+        "R",
+        "GO",
+        "KOTLIN",
+        "SWIFT",
+        "SASS",
+        "VUE",
+        "GEN AI",
+        "SCIPY",
+        "AWS",
+        "CYBERSECURITY",
+        "DATA SCIENCE",
+        "INTRO TO PROGRAMMING",
+        "INTRO TO HTML & CSS",
+        "BASH",
+        "RUST"
       ]
     },
     "content": {
@@ -263,10 +292,7 @@
         {
           "heading": "JavaScript Values",
           "description": "The JavaScript syntax defines two types of values:",
-          "types": [
-            "Literals (Fixed values)",
-            "Variables (Variable values)"
-          ]
+          "types": ["Literals (Fixed values)", "Variables (Variable values)"]
         },
         {
           "heading": "JavaScript Literals",
@@ -274,20 +300,12 @@
             "Numbers are written with or without decimals",
             "Strings are written within double or single quotes"
           ],
-          "examples": [
-            "10.50",
-            "1001",
-            "\"John Doe\"",
-            "'John Doe'"
-          ]
+          "examples": ["10.50", "1001", "\"John Doe\"", "'John Doe'"]
         },
         {
           "heading": "JavaScript Keywords",
           "description": "JavaScript keywords are used to defines actions to be performed.",
-          "examples": [
-            "let x = 5;",
-            "const fname = \"John\";"
-          ],
+          "examples": ["let x = 5;", "const fname = \"John\";"],
           "note": [
             "JavaScript keywords are case-sensitive",
             "LET or Let is not interpreted as let"
@@ -296,13 +314,8 @@
         {
           "heading": "JavaScript Variables",
           "description": "Variables are containers for storing data values.",
-          "rules": [
-            "Variables must be identified with unique names"
-          ],
-          "example": [
-            "let x;",
-            "x = 6;"
-          ]
+          "rules": ["Variables must be identified with unique names"],
+          "example": ["let x;", "x = 6;"]
         },
         {
           "heading": "JavaScript Identifiers",
@@ -316,28 +329,17 @@
         },
         {
           "heading": "JavaScript Operators",
-          "assignmentExample": [
-            "let x = 5;",
-            "let y = 6;",
-            "let sum = x + y;"
-          ],
+          "assignmentExample": ["let x = 5;", "let y = 6;", "let sum = x + y;"],
           "arithmeticOperators": ["+", "-", "*", "/"],
           "example": "5 * 10"
         },
         {
           "heading": "JavaScript Expressions",
-          "examples": [
-            "(5 + 6) * 10",
-            "x * 10",
-            "\"John\" + \" \" + \"Doe\""
-          ]
+          "examples": ["(5 + 6) * 10", "x * 10", "\"John\" + \" \" + \"Doe\""]
         },
         {
           "heading": "JavaScript is Case Sensitive",
-          "example": [
-            "let lastName = \"Doe\";",
-            "let lastname = \"Peterson\";"
-          ]
+          "example": ["let lastName = \"Doe\";", "let lastname = \"Peterson\";"]
         },
         {
           "heading": "JavaScript and Camel Case",
@@ -352,12 +354,7 @@
         {
           "heading": "Exercise",
           "question": "What is a correct syntax for assigning a value to a variable?",
-          "options": [
-            "x : 5",
-            "x = 5",
-            "x == 5",
-            "x -> 5"
-          ],
+          "options": ["x : 5", "x = 5", "x == 5", "x -> 5"],
           "answer": "x = 5"
         }
       ]
@@ -378,7 +375,7 @@
       "poweredBy": "W3.CSS"
     }
   },
-"javascript-variables": {
+  "javascript-variables": {
     "title": "JavaScript Variables",
     "sections": [
       {
@@ -391,14 +388,9 @@
       },
       {
         "heading": "Ways to Declare Variables",
-        "paragraphs": [
-          "JavaScript variables can be declared in four ways."
-        ],
+        "paragraphs": ["JavaScript variables can be declared in four ways."],
         "lists": {
-          "modern": [
-            "Using let",
-            "Using const"
-          ],
+          "modern": ["Using let", "Using const"],
           "older": [
             "Using var (Not Recommended)",
             "Automatically (Not Recommended)"
@@ -436,9 +428,7 @@
       },
       {
         "heading": "JavaScript Underscore (_)",
-        "paragraphs": [
-          "JavaScript treats underscore as a letter."
-        ],
+        "paragraphs": ["JavaScript treats underscore as a letter."],
         "code": "let _lastName = \"Johnson\";\nlet _x = 2;\nlet _100 = 5;"
       },
       {
@@ -519,17 +509,12 @@
       {
         "heading": "Exercise",
         "question": "What is NOT a correct syntax for declaring variables?",
-        "options": [
-          "let x;",
-          "dim x;",
-          "var x;",
-          "const x;"
-        ],
+        "options": ["let x;", "dim x;", "var x;", "const x;"],
         "answer": "dim x;"
       }
     ]
   },
-"javascript-operators": {
+  "javascript-operators": {
     "title": "JavaScript Operators",
     "navigation": {
       "previous": true,
@@ -562,16 +547,12 @@
       },
       {
         "heading": "JavaScript Addition",
-        "paragraphs": [
-          "The Addition Operator (+) adds numbers."
-        ],
+        "paragraphs": ["The Addition Operator (+) adds numbers."],
         "example": "let x = 5;\nlet y = 2;\nlet z = x + y;"
       },
       {
         "heading": "JavaScript Multiplication",
-        "paragraphs": [
-          "The Multiplication Operator (*) multiplies numbers."
-        ],
+        "paragraphs": ["The Multiplication Operator (*) multiplies numbers."],
         "example": "let x = 5;\nlet y = 2;\nlet z = x * y;"
       },
       {
@@ -603,16 +584,12 @@
       },
       {
         "heading": "JavaScript String Addition",
-        "paragraphs": [
-          "The + operator can concatenate strings."
-        ],
+        "paragraphs": ["The + operator can concatenate strings."],
         "example": "let text1 = \"John\";\nlet text2 = \"Doe\";\nlet text3 = text1 + \" \" + text2;"
       },
       {
         "heading": "String Addition Assignment",
-        "paragraphs": [
-          "The += operator can also concatenate strings."
-        ],
+        "paragraphs": ["The += operator can also concatenate strings."],
         "example": "let text1 = \"What a very \";\ntext1 += \"nice day\";",
         "result": "What a very nice day"
       },
@@ -623,11 +600,7 @@
           "Adding a number and a string results in a string."
         ],
         "example": "let x = 5 + 5;\nlet y = \"5\" + 5;\nlet z = \"Hello\" + 5;",
-        "result": [
-          "10",
-          "55",
-          "Hello5"
-        ]
+        "result": ["10", "55", "Hello5"]
       },
       {
         "heading": "JavaScript Assignment Operators",
@@ -654,20 +627,38 @@
         "example": "let x = 5;\nlet result = x > 8;",
         "table": [
           { "operator": "==", "description": "equal to", "example": "x == 5" },
-          { "operator": "===", "description": "equal value and type", "example": "x === 5" },
+          {
+            "operator": "===",
+            "description": "equal value and type",
+            "example": "x === 5"
+          },
           { "operator": "!=", "description": "not equal", "example": "x != 5" },
-          { "operator": "!==", "description": "not equal value or type", "example": "x !== 5" },
-          { "operator": ">", "description": "greater than", "example": "x > 5" },
+          {
+            "operator": "!==",
+            "description": "not equal value or type",
+            "example": "x !== 5"
+          },
+          {
+            "operator": ">",
+            "description": "greater than",
+            "example": "x > 5"
+          },
           { "operator": "<", "description": "less than", "example": "x < 5" },
-          { "operator": ">=", "description": "greater than or equal", "example": "x >= 5" },
-          { "operator": "<=", "description": "less than or equal", "example": "x <= 5" }
+          {
+            "operator": ">=",
+            "description": "greater than or equal",
+            "example": "x >= 5"
+          },
+          {
+            "operator": "<=",
+            "description": "less than or equal",
+            "example": "x <= 5"
+          }
         ]
       },
       {
         "heading": "Comparison on Strings",
-        "paragraphs": [
-          "Strings are compared alphabetically."
-        ],
+        "paragraphs": ["Strings are compared alphabetically."],
         "example": "let text1 = \"A\";\nlet text2 = \"B\";\nlet result = text1 < text2;"
       },
       {
@@ -682,16 +673,12 @@
         "heading": "Exercise",
         "question": "What will be the result of z?",
         "code": "let x = 5;\nlet y = '8';\nlet z = x + y;",
-        "options": [
-          "undefined",
-          "58",
-          "13"
-        ],
+        "options": ["undefined", "58", "13"],
         "answer": "58"
       }
     ]
   },
-"javascript-conditionals": {
+  "javascript-conditionals": {
     "title": "JavaScript Conditionals",
     "navigation": {
       "previous": true,
@@ -755,14 +742,12 @@
       },
       {
         "heading": "Ternary Operator (? :)",
-        "paragraphs": [
-          "Use (? :) (ternary) as a shorthand for if...else."
-        ],
+        "paragraphs": ["Use (? :) (ternary) as a shorthand for if...else."],
         "example": "condition ? expression1 : expression2"
       }
     ]
   },
-"javascript-loops": {
+  "javascript-loops": {
     "title": "JavaScript Loops",
     "navigation": {
       "previous": true,
@@ -778,9 +763,7 @@
       },
       {
         "heading": "Loops and Arrays",
-        "paragraphs": [
-          "Often loops are used when working with arrays."
-        ],
+        "paragraphs": ["Often loops are used when working with arrays."],
         "example_before": [
           "text += cars[0] + \"<br>\";",
           "text += cars[1] + \"<br>\";",
@@ -849,7 +832,7 @@
       }
     ]
   },
-"javascript-strings": {
+  "javascript-strings": {
     "title": "JavaScript Strings",
     "navigation": {
       "previous": true,
@@ -944,9 +927,7 @@
       },
       {
         "heading": "Multiline Template Strings",
-        "paragraphs": [
-          "Template strings allow multiline strings."
-        ],
+        "paragraphs": ["Template strings allow multiline strings."],
         "example": "let text = `The quick\nbrown fox\njumps over\nthe lazy dog`;"
       },
       {
@@ -956,10 +937,7 @@
           "Strings can also be defined as objects using the new keyword.",
           "Do not create String objects."
         ],
-        "examples": [
-          "let x = \"John\";",
-          "let y = new String(\"John\");"
-        ],
+        "examples": ["let x = \"John\";", "let y = new String(\"John\");"],
         "warnings": [
           "The new keyword complicates code and slows execution.",
           "String objects can produce unexpected results."
@@ -982,7 +960,7 @@
       }
     ]
   },
-"javascript-numbers": {
+  "javascript-numbers": {
     "title": "JavaScript Numbers",
     "sections": [
       {
@@ -1009,9 +987,7 @@
         ],
         "table": {
           "columns": ["Value (Mantissa)", "Exponent", "Sign"],
-          "rows": [
-            ["52 bits (0–51)", "11 bits (52–62)", "1 bit (63)"]
-          ]
+          "rows": [["52 bits (0–51)", "11 bits (52–62)", "1 bit (63)"]]
         }
       },
       {
@@ -1151,7 +1127,7 @@
       "answer": "30"
     }
   },
-"javascript-function-learning-path": {
+  "javascript-function-learning-path": {
     "title": "JavaScript Function Learning Path",
     "navigation": {
       "previous": true,
@@ -1272,7 +1248,7 @@
       "sign_in_required": true
     }
   },
- "javascript-objects": {
+  "javascript-objects": {
     "title": "JavaScript Objects",
     "navigation": {
       "previous": true,
@@ -1293,12 +1269,7 @@
         "weight": "850kg",
         "color": "white"
       },
-      "methods": [
-        "start()",
-        "drive()",
-        "brake()",
-        "stop()"
-      ],
+      "methods": ["start()", "drive()", "brake()", "stop()"],
       "notes": [
         "Different objects can have the same properties with different values.",
         "Objects can share methods but execute them at different times."
@@ -1332,14 +1303,8 @@
     },
     "object_properties": {
       "title": "Accessing Object Properties",
-      "methods": [
-        "objectName.propertyName",
-        "objectName[\"propertyName\"]"
-      ],
-      "examples": [
-        "person.lastName",
-        "person[\"lastName\"]"
-      ]
+      "methods": ["objectName.propertyName", "objectName[\"propertyName\"]"],
+      "examples": ["person.lastName", "person[\"lastName\"]"]
     },
     "object_methods": {
       "title": "JavaScript Object Methods",
@@ -1399,7 +1364,7 @@
       "sign_in_required": true
     }
   },
-"javascript-scope": {
+  "javascript-scope": {
     "title": "JavaScript Scope",
     "navigation": {
       "previous": true,
@@ -1450,9 +1415,7 @@
         "{ let x = 2; } // x cannot be used here",
         "{ var y = 2; } // y CAN be used here (not recommended)"
       ],
-      "notes": [
-        "Block scope helps prevent unintended variable overwrites."
-      ]
+      "notes": ["Block scope helps prevent unintended variable overwrites."]
     },
     "automatically_global": {
       "description": [
@@ -1499,7 +1462,7 @@
       "sign_in_required": true
     }
   },
-"javascript-dates": {
+  "javascript-dates": {
     "title": "JavaScript Dates",
     "navigation": {
       "previous": true,
@@ -1577,7 +1540,7 @@
       "sign_in_required": true
     }
   },
-"javascript-arrays": {
+  "javascript-arrays": {
     "title": "JavaScript Arrays",
     "navigation": {
       "previous": true,
@@ -1647,7 +1610,7 @@
       "sign_in_required": true
     }
   },
-"javascript-sets": {
+  "javascript-sets": {
     "title": "JavaScript Sets",
     "navigation": {
       "previous": true,
@@ -1712,7 +1675,7 @@
       "sign_in_required": true
     }
   },
-"javascript-maps": {
+  "javascript-maps": {
     "title": "JavaScript Maps",
     "navigation": {
       "previous": true,
@@ -1808,7 +1771,7 @@
       "sign_in_required": true
     }
   },
-"javascript-math": {
+  "javascript-math": {
     "title": "JavaScript Math Object",
     "navigation": {
       "previous": true,
@@ -1890,7 +1853,7 @@
       "sign_in_required": true
     }
   },
-"javascript-regexp": {
+  "javascript-regexp": {
     "title": "JavaScript RegExp",
     "introduction": {
       "description": [
@@ -1966,7 +1929,7 @@
       "JavaScript RegExp Methods"
     ]
   },
-"javascript-data-types": {
+  "javascript-data-types": {
     "title": "JavaScript Data Types",
     "introduction": {
       "description": "A JavaScript variable can hold 8 types of data: 7 primitive types and 1 object type. The object type can hold many different objects."
@@ -2053,10 +2016,7 @@
       },
       "exponentialNotation": {
         "description": "Extra large or small numbers can be written using exponential notation.",
-        "examples": [
-          "let y = 123e5; // 12300000",
-          "let z = 123e-5; // 0.00123"
-        ]
+        "examples": ["let y = 123e5; // 12300000", "let z = 123e-5; // 0.00123"]
       },
       "note": "JavaScript numbers are always 64-bit floating point (double)."
     },
@@ -2071,7 +2031,7 @@
       "JavaScript BigInt"
     ]
   },
-"javascript-errors": {
+  "javascript-errors": {
     "title": "JavaScript Errors",
     "introduction": {
       "description": "When executing JavaScript code, different errors can occur due to coding mistakes, invalid input, or unforeseen issues. Common error types include Reference, Type, Range, URI, Syntax, and Eval errors."
@@ -2169,16 +2129,13 @@
       "answer": "try"
     }
   },
-"javascript-style-guide": {
+  "javascript-style-guide": {
     "title": "JavaScript Style Guide",
     "introduction": {
       "description": "Always use consistent coding conventions for all your JavaScript projects to improve readability and maintainability."
     },
     "coding-conventions": {
-      "purpose": [
-        "Improve code readability",
-        "Make code maintenance easier"
-      ],
+      "purpose": ["Improve code readability", "Make code maintenance easier"],
       "components": [
         "Naming and declaration rules for variables and functions",
         "Rules for white space, indentation, and comments",
@@ -2190,8 +2147,8 @@
       "examples": {
         "firstName": "\"John\"",
         "lastName": "\"Doe\"",
-        "price": 19.90,
-        "tax": 0.20,
+        "price": 19.9,
+        "tax": 0.2,
         "fullPrice": "price + (price * tax)"
       }
     },
@@ -2262,7 +2219,7 @@
       "note": "Coding conventions improve readability. Indentation and spaces have little effect on performance. Minify production scripts for efficiency."
     }
   },
- "javascript-statements": {
+  "javascript-statements": {
     "title": "JavaScript Statements",
     "introduction": {
       "description": "JavaScript statements start with a statement identifier to indicate the action to be performed. Statement identifiers are reserved words and cannot be used as variable names or for other purposes."
@@ -2271,36 +2228,94 @@
       "revised": "July 2025",
       "statements": [
         { "statement": "{ }", "description": "Creates a block of statements" },
-        { "statement": "async function", "description": "Creates an AsyncFunction object" },
-        { "statement": "async function*", "description": "Creates an AsyncGeneratorFunction object" },
-        { "statement": "await using", "description": "Declares local variables that are asynchronously disposed" },
+        {
+          "statement": "async function",
+          "description": "Creates an AsyncFunction object"
+        },
+        {
+          "statement": "async function*",
+          "description": "Creates an AsyncGeneratorFunction object"
+        },
+        {
+          "statement": "await using",
+          "description": "Declares local variables that are asynchronously disposed"
+        },
         { "statement": "break", "description": "Exits a switch or a loop" },
         { "statement": "class", "description": "Declares a class" },
-        { "statement": "const", "description": "Declares a variable with a constant value" },
-        { "statement": "continue", "description": "Breaks one iteration (in the loop) if a specified condition occurs, and continues with the next iteration in the loop" },
-        { "statement": "debugger", "description": "Stops the execution of JavaScript, and calls (if available) the debugging function" },
-        { "statement": "do...while", "description": "Executes a block of statements and repeats the block while a condition is true" },
-        { "statement": "for", "description": "Loops through a block of code a number of times" },
-        { "statement": "for...in", "description": "Loops through the properties of an object" },
-        { "statement": "for...of", "description": "Loops through the values of an iterable object" },
-        { "statement": "for await...of", "description": "Loops over async iterable objects" },
+        {
+          "statement": "const",
+          "description": "Declares a variable with a constant value"
+        },
+        {
+          "statement": "continue",
+          "description": "Breaks one iteration (in the loop) if a specified condition occurs, and continues with the next iteration in the loop"
+        },
+        {
+          "statement": "debugger",
+          "description": "Stops the execution of JavaScript, and calls (if available) the debugging function"
+        },
+        {
+          "statement": "do...while",
+          "description": "Executes a block of statements and repeats the block while a condition is true"
+        },
+        {
+          "statement": "for",
+          "description": "Loops through a block of code a number of times"
+        },
+        {
+          "statement": "for...in",
+          "description": "Loops through the properties of an object"
+        },
+        {
+          "statement": "for...of",
+          "description": "Loops through the values of an iterable object"
+        },
+        {
+          "statement": "for await...of",
+          "description": "Loops over async iterable objects"
+        },
         { "statement": "function", "description": "Declares a function" },
-        { "statement": "function*", "description": "Creates a GeneratorFunction object" },
-        { "statement": "if...else...else if", "description": "Marks a block of statements to be executed depending on a condition" },
-        { "statement": "import", "description": "Defines a read-only import of a module" },
-        { "statement": "import attributes", "description": "Defines how a module should be loaded" },
+        {
+          "statement": "function*",
+          "description": "Creates a GeneratorFunction object"
+        },
+        {
+          "statement": "if...else...else if",
+          "description": "Marks a block of statements to be executed depending on a condition"
+        },
+        {
+          "statement": "import",
+          "description": "Defines a read-only import of a module"
+        },
+        {
+          "statement": "import attributes",
+          "description": "Defines how a module should be loaded"
+        },
         { "statement": "let", "description": "Declares a variable" },
-        { "statement": "return", "description": "Stops the execution of a function and returns a value" },
-        { "statement": "switch", "description": "Marks a block of statements to be executed depending on different cases" },
+        {
+          "statement": "return",
+          "description": "Stops the execution of a function and returns a value"
+        },
+        {
+          "statement": "switch",
+          "description": "Marks a block of statements to be executed depending on different cases"
+        },
         { "statement": "throw", "description": "Throws (generates) an error" },
-        { "statement": "try...catch...finally", "description": "Marks the block of statements to be executed when an error occurs in a try block, and implements error handling" },
-        { "statement": "using", "description": "Declares local variables that are synchronously disposed" },
+        {
+          "statement": "try...catch...finally",
+          "description": "Marks the block of statements to be executed when an error occurs in a try block, and implements error handling"
+        },
+        {
+          "statement": "using",
+          "description": "Declares local variables that are synchronously disposed"
+        },
         { "statement": "var", "description": "Declares a variable" },
-        { "statement": "while", "description": "Marks a block of statements to be executed while a condition is true" }
+        {
+          "statement": "while",
+          "description": "Marks a block of statements to be executed while a condition is true"
+        }
       ]
     },
     "see-also": ["Tutorial: JavaScript Statements"]
   }
 }
-
-

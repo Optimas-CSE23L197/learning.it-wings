@@ -1,0 +1,1151 @@
+{
+  "course": {
+    "id": "git",
+    "title": "Git Tutorial"
+  },
+  "sections": [
+    {
+      "title": "Git Tutorial",
+      "lessons": [
+        { "id": "home", "title": "Git HOME" },
+        { "id": "intro", "title": "Git Intro" },
+        { "id": "install", "title": "Git Install" },
+        { "id": "config", "title": "Git Config" },
+        { "id": "get-started", "title": "Git Get Started" },
+        { "id": "new-files", "title": "Git New Files" },
+        { "id": "staging", "title": "Git Staging" },
+        { "id": "commit", "title": "Git Commit" },
+        { "id": "tagging", "title": "Git Tagging" },
+        { "id": "stash", "title": "Git Stash" },
+        { "id": "history", "title": "Git History" },
+        { "id": "help", "title": "Git Help" },
+        { "id": "branch", "title": "Git Branch" },
+        { "id": "merge", "title": "Git Merge" },
+        { "id": "workflow", "title": "Git Workflow" },
+        { "id": "best-practices", "title": "Git Best Practices" },
+        { "id": "glossary", "title": "Git Glossary" }
+      ]
+    },
+    {
+      "title": "Git and GitHub",
+      "lessons": [
+        { "id": "github-get-started", "title": "GitHub Get Started" },
+        { "id": "git-ssh-intro", "title": "Git What is SSH?" },
+        { "id": "github-add-ssh", "title": "GitHub Add SSH" },
+        { "id": "github-set-remote", "title": "GitHub Set Remote" },
+        { "id": "github-edit-code", "title": "GitHub Edit Code" },
+        { "id": "pull-from-github", "title": "Pull from GitHub" },
+        { "id": "push-to-github", "title": "Push to GitHub" },
+        { "id": "github-branch", "title": "GitHub Branch" },
+        { "id": "pull-branch-github", "title": "Pull Branch from GitHub" },
+        { "id": "push-branch-github", "title": "Push Branch to GitHub" },
+        { "id": "github-flow", "title": "GitHub Flow" },
+        { "id": "github-pages", "title": "GitHub Pages" },
+        { "id": "git-gui-clients", "title": "Git GUI Clients" }
+      ]
+    },
+    {
+      "title": "Git Advanced",
+      "lessons": [
+        { "id": "gitignore", "title": "Git .gitignore" },
+        { "id": "gitattributes", "title": "Git .gitattributes" },
+        { "id": "git-lfs", "title": "Git Large File Storage (LFS)" },
+        { "id": "git-signing", "title": "Git Signing Commits/Tags" },
+        { "id": "git-cherrypick", "title": "Git Cherrypick & Patch" },
+        { "id": "git-merge-conflicts", "title": "Git Merge Conflicts" },
+        { "id": "git-cicd", "title": "Git CI/CD" },
+        { "id": "git-hooks", "title": "Git Hooks" },
+        { "id": "git-submodules", "title": "Git Submodules" }
+      ]
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "Git HOME",
+      "sections": [
+        {
+          "heading": "Learn Git",
+          "paragraphs": [
+            "Git is a tool that helps you save and manage different versions of your files and code.",
+            "It allows you to work with others, keep track of changes, and undo mistakes."
+          ]
+        },
+        {
+          "heading": "Where to use Git?",
+          "paragraphs": [
+            "Git works on your computer, but you also use it with online services like GitHub, GitLab, or Bitbucket to share your work with others. These are called remote repositories.",
+            "In this tutorial, you'll learn how to use Git for your own projects and how to connect with remote repositories online."
+          ]
+        },
+        {
+          "heading": "Learning by Examples",
+          "paragraphs": [
+            "In this tutorial, we will show you Git commands including the input and the expected output.",
+            "For new users, using the terminal view can seem a bit complicated, but it gives you a good grasp of how Git works."
+          ],
+          "code": "git --version\ngit version 2.30.2.windows.1",
+          "examples": [
+            "Lines with $ in front of it is input. These are the commands you can copy and run in your terminal."
+          ]
+        },
+        {
+          "heading": "Tip for Beginners",
+          "paragraphs": [
+            "Don't worry about making mistakes! When you use Git on your own computer, you can't really break anything important.",
+            "Experimenting is a great way to learn, and you can always undo or redo changes as you go."
+          ]
+        }
+      ]
+    } ,
+    "intro": {
+  "title": "Git Intro",
+  "sections": [
+    {
+      "heading": "What is Git?",
+      "paragraphs": [
+        "Git is a popular version control system.",
+        "It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.",
+        "It is used for tracking code changes, tracking who made changes, and coding collaboration."
+      ]
+    },
+    {
+      "heading": "Key Git Concepts",
+      "paragraphs": [
+        "Repository: A folder where Git tracks your project and its history.",
+        "Clone: Make a copy of a remote repository on your computer.",
+        "Stage: Tell Git which changes you want to save next.",
+        "Commit: Save a snapshot of your staged changes.",
+        "Branch: Work on different versions or features at the same time.",
+        "Merge: Combine changes from different branches.",
+        "Pull: Get the latest changes from a remote repository.",
+        "Push: Send your changes to a remote repository."
+      ]
+    },
+    {
+      "heading": "Working with Git",
+      "paragraphs": [
+        "Initialize Git on a folder to make it a Repository.",
+        "Git creates a hidden folder to keep track of changes.",
+        "When a file is changed, added or deleted, it is considered modified.",
+        "You select the modified files you want to Stage.",
+        "Staged files are Committed, creating a permanent snapshot.",
+        "Git allows you to see the full history and revert back to any previous commit."
+      ]
+    },
+    {
+      "heading": "Why Git?",
+      "paragraphs": [
+        "Over 70% of developers use Git!",
+        "Developers can work together from anywhere in the world and see the full history of the project.",
+        "Developers can revert to earlier versions of a project."
+      ]
+    },
+    {
+      "heading": "What is GitHub?",
+      "paragraphs": [
+        "Git is not the same as GitHub; GitHub makes tools that use Git.",
+        "GitHub is the largest host of source code in the world, and has been owned by Microsoft since 2018."
+      ]
+    }
+  ]
+} ,
+"install": {
+  "title": "Git Install",
+  "sections": [
+    {
+      "heading": "How to Install Git",
+      "paragraphs": [
+        "You can download Git for free from git-scm.com.",
+        "Windows: Download and run the installer. Click 'Next' to accept recommended settings to install Git and Git Bash.",
+        "macOS: Use Homebrew (brew install git) or download the .dmg file.",
+        "Linux: Use your package manager (e.g., sudo apt-get install git on Ubuntu)."
+      ]
+    },
+    {
+      "heading": "Git Bash",
+      "paragraphs": [
+        "Git Bash is a terminal for Windows that lets you use Git commands and extra Unix commands like ls and pwd.",
+        "After installing, you can find it in your Start menu."
+      ],
+      "code": "ls\nDesktop Documents Downloads Pictures"
+    },
+    {
+      "heading": "Verifying Your Installation",
+      "paragraphs": [
+        "Check that Git works by running the following command in your terminal:"
+      ],
+      "code": "git --version\ngit version 2.43.0.windows.1"
+    },
+    {
+      "heading": "Default Editor",
+      "paragraphs": [
+        "During installation, you can pick a default text editor for writing commit messages."
+      ],
+      "code": "git config --global core.editor \"code --wait\"\n# Or for Notepad:\ngit config --global core.editor \"notepad\""
+    },
+    {
+      "heading": "PATH Environment",
+      "paragraphs": [
+        "Adding Git to your PATH is highly recommended so you can use Git commands in any terminal window.",
+        "If 'git is not recognized', you likely need to add Git's bin folder to your system's Environment Variables."
+      ]
+    },
+    {
+      "heading": "Line Endings",
+      "paragraphs": [
+        "On Windows, it is usually best to select 'Checkout Windows-style, commit Unix-style line endings' to prevent cross-platform issues."
+      ]
+    }
+  ]
+} ,
+
+"config": {
+  "title": "Git Config",
+  "sections": [
+    {
+      "heading": "Configure Git",
+      "paragraphs": [
+        "It is important to let Git know who you are so that your name and email can be attached to your commits.",
+        "Configuring Git is safe; you can change these settings at any time, and they only affect how your info appears in future commits."
+      ]
+    },
+    {
+      "heading": "User Name and Email",
+      "paragraphs": [
+        "Set your username and email address globally so they are used for every repository on your computer."
+      ],
+      "code": "git config --global user.name \"Your Name\"\ngit config --global user.email \"you@example.com\""
+    },
+    {
+      "heading": "Viewing Your Configuration",
+      "paragraphs": [
+        "You can list all your Git settings or check a specific value using the following commands:"
+      ],
+      "code": "# List all settings\ngit config --list\n\n# View a specific setting\ngit config user.name"
+    },
+    {
+      "heading": "Configuration Levels",
+      "paragraphs": [
+        "There are three levels of configuration with a specific order of precedence:",
+        "1. Local: Applied only to the current repository.",
+        "2. Global: Applied to the current user across all repositories.",
+        "3. System: Applied to all users on the computer."
+      ],
+      "code": "# Example of setting a local config\ngit config --local user.name \"Project Name\""
+    },
+    {
+      "heading": "Default Branch Name",
+      "paragraphs": [
+        "You can set a custom default branch name (like 'main') for all new repositories you initialize."
+      ],
+      "code": "git config --global init.defaultBranch main"
+    }
+  ]
+} ,
+
+"get-started": {
+  "title": "Git Get Started",
+  "sections": [
+    {
+      "heading": "Get Started with Git",
+      "paragraphs": [
+        "Once Git is installed and configured, you can begin using it by creating your first repository.",
+        "The process involves creating a project folder, navigating to it, and initializing Git."
+      ]
+    },
+    {
+      "heading": "Creating a Project Folder",
+      "paragraphs": [
+        "Start by creating a new directory and moving into it using the terminal."
+      ],
+      "code": "mkdir myproject\ncd myproject"
+    },
+    {
+      "heading": "Initialize Git",
+      "paragraphs": [
+        "Once you are inside the correct folder, initialize Git to start tracking changes."
+      ],
+      "code": "git init\n# Output: Initialized empty Git repository in /path/to/myproject/.git/"
+    },
+    {
+      "heading": "What is a Repository?",
+      "paragraphs": [
+        "A Git repository is a folder that Git tracks for changes, storing all project history and versions."
+      ]
+    },
+    {
+      "heading": "What Happens When You Run git init?",
+      "paragraphs": [
+        "Git creates a hidden folder called .git inside your project. This folder stores all the tracking information and history."
+      ],
+      "code": "# Show hidden folders (Linux/macOS)\nls -a\n# .  ..  .git"
+    }
+  ]
+},
+
+"new-files": {
+  "title": "Git New Files",
+  "sections": [
+    {
+      "heading": "What is a New File?",
+      "paragraphs": [
+        "A new file is a file that you have created or copied into your project folder, but haven't told Git to watch yet.",
+        "The key steps involve creating the file, listing it with 'ls', and checking its status with 'git status'."
+      ]
+    },
+    {
+      "heading": "Create a New File",
+      "paragraphs": [
+        "Add a file to your project folder using a text editor. For this example, we will save a simple HTML file as index.html."
+      ],
+      "code": "<!DOCTYPE html>\n<html>\n<head>\n<title>Hello World!</title>\n</head>\n<body>\n\n<h1>Hello world!</h1>\n<p>This is the first file in my new Git Repo.</p>\n\n</body>\n</html>"
+    },
+    {
+      "heading": "Check File Status",
+      "paragraphs": [
+        "Use 'ls' to list the files in your directory and 'git status' to see if Git is tracking them.",
+        "If a file is listed under 'Untracked files', it means Git sees the file but is not yet watching it for changes."
+      ],
+      "code": "ls\n# index.html\n\ngit status\n# On branch master\n# No commits yet\n# Untracked files:\n#   index.html"
+    },
+    {
+      "heading": "Tracked vs. Untracked Files",
+      "paragraphs": [
+        "Untracked: Files in your folder that Git is not yet watching.",
+        "Tracked: Files that Git is watching for changes. To make a file tracked, you must add it to the staging area."
+      ]
+    }
+  ]
+} ,
+
+"staging": {
+  "title": "Git Staging",
+  "sections": [
+    {
+      "heading": "What is the Staging Environment?",
+      "paragraphs": [
+        "The staging environment (or staging area) acts as a waiting room for your changes.",
+        "It allows you to specify exactly which files you want to include in your next commit, giving you full control over your project history."
+      ]
+    },
+    {
+      "heading": "Staging Files with git add",
+      "paragraphs": [
+        "To add a specific file to the staging area, use the 'git add' command followed by the filename.",
+        "You can stage all changes (new, modified, and deleted files) at once using 'git add --all' or 'git add -A'."
+      ],
+      "code": "# Stage a single file\ngit add index.html\n\n# Stage all changes\ngit add --all"
+    },
+    {
+      "heading": "Check Staged Files",
+      "paragraphs": [
+        "Use 'git status' to see which files are currently in the staging area and ready to be committed."
+      ],
+      "code": "git status\n# On branch master\n# Changes to be committed:\n#   new file: index.html"
+    },
+    {
+      "heading": "How to Unstage a File",
+      "paragraphs": [
+        "If you accidentally stage a file, you can remove it from the staging area without deleting the file itself.",
+        "The primary command for this is 'git restore --staged <file>', though 'git reset HEAD <file>' can also be used."
+      ],
+      "code": "git restore --staged index.html"
+    }
+  ]
+} ,
+
+
+"commit": {
+  "title": "Git Commit",
+  "sections": [
+    {
+      "heading": "What is a Commit?",
+      "paragraphs": [
+        "A commit is like a save point in your project. It records a snapshot of your files at a certain time, with a message describing what changed.",
+        "You can always go back to a previous commit if you need to."
+      ],
+      "code": "git commit -m \"message\" # Commit staged changes\ngit commit -a -m \"message\" # Commit all tracked changes (skip staging)\ngit log # See commit history"
+    },
+    {
+      "heading": "Commit with a Message (-m)",
+      "paragraphs": [
+        "To save your staged changes, use the -m flag followed by a clear message so you and others can understand what changed."
+      ],
+      "code": "git commit -m \"First release of Hello World!\""
+    },
+    {
+      "heading": "Commit All Changes Without Staging (-a)",
+      "paragraphs": [
+        "You can skip the staging step for already tracked files with the -a flag. This commits modified and deleted files, but does not work for new/untracked files.",
+        "Warning: Skipping the staging step can make you include unwanted changes. Use with care."
+      ],
+      "code": "git commit -a -m \"Quick update to README\""
+    },
+    {
+      "heading": "Commit Message Best Practices",
+      "paragraphs": [
+        "Keep the first line short (50 characters or less) and use the imperative mood (e.g., 'Add feature' not 'Added feature').",
+        "Leave a blank line after the summary and describe why the change was made, not just what changed."
+      ]
+    },
+    {
+      "heading": "Troubleshooting and Viewing History",
+      "paragraphs": [
+        "If you make a mistake, use 'git commit --amend' to fix the last message or add forgotten files.",
+        "To view your history, use 'git log'. For a shorter view, use 'git log --oneline'."
+      ],
+      "code": "git log --oneline\n# 09f4acd Updated index.html with a new line\n# 221ec6e First release of Hello World!"
+    }
+  ]
+} ,
+
+"tagging": {
+  "title": "Git Tagging",
+  "sections": [
+    {
+      "heading": "What is a Tag?",
+      "paragraphs": [
+        "A tag in Git acts as a label or bookmark for a specific commit in your project history.",
+        "They are most commonly used to mark important points like releases (e.g., v1.0) or major milestones."
+      ]
+    },
+    {
+      "heading": "Annotated vs. Lightweight Tags",
+      "paragraphs": [
+        "Annotated Tag: These store the author's name, date, and a message. They are recommended for official releases and public sharing.",
+        "Lightweight Tag: These are simple names for a commit that do not store extra information, functioning much like a bookmark."
+      ],
+      "code": "# Create a lightweight tag\ngit tag v1.0\n\n# Create an annotated tag\ngit tag -a v1.0 -m \"Version 1.0 release\""
+    },
+    {
+      "heading": "Tagging Specific Commits and Viewing Tags",
+      "paragraphs": [
+        "You can tag an older commit by providing its unique commit hash.",
+        "Use 'git tag' to see a list of all existing tags, or 'git show' to see the specific details of a tag and the commit it points to."
+      ],
+      "code": "# Tag a specific commit\ngit tag v1.1 1a2b3c4d\n\n# List all tags\ngit tag\n\n# Show tag details\ngit show v1.0"
+    },
+    {
+      "heading": "Pushing and Deleting Tags",
+      "paragraphs": [
+        "By default, tags stay on your local computer. You must explicitly push them to a remote repository for others to see them.",
+        "Note that a standard 'git push' command does not include your tags."
+      ],
+      "code": "# Push a single tag\ngit push origin v1.0\n\n# Push all tags at once\ngit push --tags\n\n# Delete a tag locally\ngit tag -d v1.0\n\n# Delete a tag from the remote\ngit push origin --delete tag v1.0"
+    }
+  ]
+} ,
+"stash": {
+  "title": "Git Stash",
+  "sections": [
+    {
+      "heading": "What is Git Stash?",
+      "paragraphs": [
+        "Git stash allows you to temporarily save your uncommitted changes so you can return to a clean working directory without making a messy commit.",
+        "This is useful for quickly switching branches to fix urgent bugs or handle emergencies."
+      ]
+    },
+    {
+      "heading": "Stashing Your Changes",
+      "paragraphs": [
+        "Use 'git stash' to save tracked files. To include new, untracked files, use the -u flag.",
+        "You can also add a message to your stash to help you remember what you were working on."
+      ],
+      "code": "# Basic stash\ngit stash\n\n# Stash with a message\ngit stash push -m \"WIP: homepage redesign\"\n\n# Include untracked files\ngit stash -u"
+    },
+    {
+      "heading": "Managing the Stash Stack",
+      "paragraphs": [
+        "Each stash is saved on a stack. You can list all stashes to see their IDs (e.g., stash@{0}) and messages.",
+        "You can view a summary of changes in the latest stash using the show command."
+      ],
+      "code": "# List all stashes\ngit stash list\n\n# Show latest stash details\ngit stash show"
+    },
+    {
+      "heading": "Restoring and Deleting Stashes",
+      "paragraphs": [
+        "Use 'apply' to restore changes while keeping the stash in the list, or 'pop' to restore changes and remove the stash from the stack simultaneously.",
+        "If you no longer need a stash, you can drop a specific one or clear the entire list."
+      ],
+      "code": "# Restore latest and keep in list\ngit stash apply\n\n# Restore latest and remove from list\ngit stash pop\n\n# Delete a specific stash\ngit stash drop stash@{0}\n\n# Delete all stashes (Permanent!)\ngit stash clear"
+    },
+    {
+      "heading": "Branching from a Stash",
+      "paragraphs": [
+        "If your stashed work should become its own feature, you can create a new branch and apply the stash to it immediately."
+      ],
+      "code": "git stash branch new-feature stash@{0}"
+    }
+  ]
+} ,
+"history": {
+  "title": "Git History",
+  "sections": [
+    {
+      "heading": "What is Git History?",
+      "paragraphs": [
+        "Git keeps a detailed record of every change made to your project.",
+        "You can use history commands to see what changed, when, and who made the change, which is vital for tracking progress and finding bugs."
+      ]
+    },
+    {
+      "heading": "Viewing the Commit Log",
+      "paragraphs": [
+        "The 'git log' command shows a detailed list of all commits, including the author, date, and message.",
+        "For a quicker overview, 'git log --oneline' displays each commit on a single line."
+      ],
+      "code": "# Show full history\ngit log\n\n# Show summary history\ngit log --oneline"
+    },
+    {
+      "heading": "Comparing Changes with Git Diff",
+      "paragraphs": [
+        "Use 'git diff' to see changes in your working directory that haven't been staged yet.",
+        "Use 'git diff --staged' to see what is ready to be committed compared to the last snapshot."
+      ],
+      "code": "# See unstaged changes\ngit diff\n\n# See staged changes\ngit diff --staged"
+    },
+    {
+      "heading": "Advanced History Filtering",
+      "paragraphs": [
+        "You can filter the log by author, time frame, or even view a text-based graph of your branches."
+      ],
+      "code": "# Filter by author\ngit log --author=\"Alice\"\n\n# Show commits from the last 2 weeks\ngit log --since=\"2 weeks ago\"\n\n# Show branch and merge graph\ngit log --graph --oneline"
+    },
+    {
+      "heading": "Showing Commit Details",
+      "paragraphs": [
+        "To see the specific changes and metadata of a single commit, use 'git show' followed by the commit hash."
+      ],
+      "code": "git show 09f4acd"
+    }
+  ]
+} ,
+"help": {
+  "title": "Git Help",
+  "sections": [
+    {
+      "heading": "Why and When to Use Git Help?",
+      "paragraphs": [
+        "Git has many commands and options. If you forget how a command works or want to learn about its options, you can use Git's built-in help.",
+        "This is the fastest way to get answers without leaving your terminal."
+      ]
+    },
+    {
+      "heading": "Key Commands for Getting Help",
+      "paragraphs": [
+        "Use 'git help <command>' or 'git <command> --help' to see the full manual page for a specific command.",
+        "Use 'git <command> -h' to see a quick summary of options directly in your terminal.",
+        "Use 'git help --all' to list every Git command available on your system.",
+        "Use 'git help -g' to list guides and concept topics for deeper learning."
+      ],
+      "code": "# Full manual for commit\ngit help commit\n\n# Quick summary for add\ngit add -h"
+    },
+    {
+      "heading": "Navigating the Help Viewer",
+      "paragraphs": [
+        "While viewing manual pages, use the arrow keys or Space to scroll, and press 'q' to quit at any time.",
+        "To search for a specific word, type '/' followed by your search term and press Enter."
+      ]
+    },
+    {
+      "heading": "Guides and Concepts",
+      "paragraphs": [
+        "The 'git help -g' command is excellent for learning about advanced concepts such as attributes, glossary terms, and revisions."
+      ],
+      "code": "git help -g"
+    }
+  ]
+} ,
+"branch": {
+  "title": "Git Branch",
+  "sections": [
+    {
+      "heading": "What is a Git Branch?",
+      "paragraphs": [
+        "A branch in Git acts as a separate workspace or 'parallel universe' where you can try new ideas without affecting the main project.",
+        "Branches allow you to develop new features, fix bugs, or experiment without interfering with the stable code on the main branch."
+      ]
+    },
+    {
+      "heading": "Creating and Listing Branches",
+      "paragraphs": [
+        "Use 'git branch' to create a new branch or to list all branches in your repository.",
+        "An asterisk (*) next to a branch name indicates which branch you are currently working on."
+      ],
+      "code": "# Create a new branch\ngit branch hello-world-images\n\n# List all branches\ngit branch"
+    },
+    {
+      "heading": "Switching Between Branches",
+      "paragraphs": [
+        "The 'checkout' command moves you from your current branch to the specified one.",
+        "You can also use the -b flag with checkout to create a new branch and switch to it immediately."
+      ],
+      "code": "# Switch to an existing branch\ngit checkout hello-world-images\n\n# Create and switch to a new branch in one step\ngit checkout -b emergency-fix"
+    },
+    {
+      "heading": "Working with Branches",
+      "paragraphs": [
+        "When you switch branches, Git updates your working directory to match the snapshot of that specific branch.",
+        "Changes made and committed in one branch do not appear in other branches until they are merged."
+      ],
+      "code": "# After switching to a new branch, stage and commit changes\ngit add --all\ngit commit -m \"Added image to Hello World\""
+    },
+    {
+      "heading": "Deleting a Branch",
+      "paragraphs": [
+        "Once work is finished and merged, you can delete the branch to keep your repository clean.",
+        "If a branch is not merged, Git will prevent deletion unless you use the force delete flag (-D)."
+      ],
+      "code": "# Delete a merged branch\ngit branch -d hello-world-images\n\n# Force delete an unmerged branch\ngit branch -D branch-name"
+    }
+  ]
+} ,
+"merge": {
+  "title": "Git Merge",
+  "sections": [
+    {
+      "heading": "What is Merging in Git?",
+      "paragraphs": [
+        "Merging in Git means combining the changes from one branch into another.",
+        "This is how you bring your work together after working separately on different features or bug fixes."
+      ]
+    },
+    {
+      "heading": "Merging Branches (git merge)",
+      "paragraphs": [
+        "To combine changes, first switch to the branch you want to merge into (often main or master), then run the merge command with the branch name you want to combine in.",
+        "If no new commits were made on the base branch, Git performs a 'Fast-forward' merge by simply moving the branch pointer forward."
+      ],
+      "code": "# Switch to the target branch\ngit checkout master\n\n# Merge the feature branch\ngit merge emergency-fix"
+    },
+    {
+      "heading": "Advanced Merge Options",
+      "paragraphs": [
+        "You can use specific flags to control how history is preserved during a merge.",
+        "--no-ff: Always creates a merge commit, even if a fast-forward is possible.",
+        "--squash: Combines all changes from the merged branch into a single new commit.",
+        "--abort: Cancels a merge in progress if you run into trouble."
+      ],
+      "code": "git merge --no-ff feature-branch\ngit merge --squash feature-branch\ngit merge --abort"
+    },
+    {
+      "heading": "What is a Merge Conflict?",
+      "paragraphs": [
+        "A merge conflict happens when changes in two branches touch the same part of a file and Git doesn't know which version to keep.",
+        "Git will mark the conflict in your file using markers like <<<<<<< HEAD and >>>>>>>."
+      ]
+    },
+    {
+      "heading": "How to Resolve a Merge Conflict",
+      "paragraphs": [
+        "1. Open the conflicted file and decide which version of the code to keep.",
+        "2. Remove the conflict markers and save the file.",
+        "3. Stage the resolved file with 'git add' and complete the merge with 'git commit'."
+      ],
+      "code": "# After editing the file to resolve conflicts:\ngit add index.html\ngit commit -m \"merged with hello-world-images after fixing conflicts\""
+    }
+  ]
+} ,
+"workflow": {
+  "title": "Git Workflow",
+  "sections": [
+    {
+      "heading": "Understanding the Git Workflow",
+      "paragraphs": [
+        "Git uses a distributed workflow that allows you to work on your code, stage changes, and commit them to your local repository before sharing with others.",
+        "Understanding this workflow is essential for effective version control."
+      ]
+    },
+    {
+      "heading": "The Three Areas of Git",
+      "paragraphs": [
+        "Working Directory: Where you make changes to your files.",
+        "Staging Area (Index): Where you prepare changes before committing.",
+        "Repository: Where your committed history is stored."
+      ]
+    },
+    {
+      "heading": "Basic Workflow Commands",
+      "paragraphs": [
+        "Stage your changes using 'git add' to move them from the working directory to the staging area.",
+        "Save those changes to your local repository with 'git commit'.",
+        "Share your commits with a remote repository (like GitHub) using 'git push'."
+      ],
+      "code": "# Stage a specific file\ngit add index.html\n\n# Stage all changes\ngit add .\n\n# Commit with a message\ngit commit -m \"Describe your changes\"\n\n# Share with others\ngit push"
+    },
+    {
+      "heading": "Checking Status and Undoing Changes",
+      "paragraphs": [
+        "Use 'git status' to see which files are currently staged, unstaged, or untracked.",
+        "If you make a mistake, you can use 'git restore' to undo changes in your working directory or 'git commit --amend' to fix your last commit."
+      ],
+      "code": "# Check current status\ngit status\n\n# Unstage a file\ngit restore --staged index.html\n\n# Undo last commit (keep changes in working directory)\ngit reset HEAD~"
+    }
+  ]
+} ,
+"best-practices": {
+  "title": "Git Best Practices",
+  "sections": [
+    {
+      "heading": "Summary of Git Best Practices",
+      "paragraphs": [
+        "Adopting good Git habits makes it easier for your team and your future self to understand and build on your work.",
+        "Key practices include committing often, writing clear messages, and using branches to keep your project stable."
+      ]
+    },
+    {
+      "heading": "Commit Often and Clearly",
+      "paragraphs": [
+        "Make small, frequent commits to capture progress, which makes it easier to track changes and find bugs.",
+        "Use descriptive messages in the imperative mood (e.g., 'Add login validation') that explain why a change was made."
+      ],
+      "code": "git add .\ngit commit -m \"Fix bug in user login validation\""
+    },
+    {
+      "heading": "Maintain Stability with Branches",
+      "paragraphs": [
+        "Create separate branches for features, fixes, and experiments to avoid affecting the main codebase.",
+        "Name your branches clearly, such as feature/login-form or bugfix/user-auth."
+      ],
+      "code": "git checkout -b feature/login-form"
+    },
+    {
+      "heading": "Collaborate Safely",
+      "paragraphs": [
+        "Always pull the latest changes before you push to avoid conflicts and ensure your local branch is up-to-date.",
+        "Review your work using 'git status' and 'git diff' before committing to catch mistakes early."
+      ],
+      "code": "git pull origin main\ngit push origin main"
+    },
+    {
+      "heading": "Repository Management",
+      "paragraphs": [
+        "Keep repositories small by avoiding large files or unnecessary dependencies; use Git LFS for heavy assets like videos.",
+        "Use a .gitignore file to exclude build artifacts, logs, or secrets from being tracked.",
+        "Tag releases (e.g., v1.0) to mark important versions and make rollbacks easier."
+      ],
+      "code": "# Example .gitignore\nnode_modules/\n*.log\n.env\n\n# Tagging a release\ngit tag v1.0"
+    }
+  ]
+} ,
+"glossary": {
+  "title": "Git Glossary",
+  "sections": [
+    {
+      "heading": "Git Terms and Concepts",
+      "paragraphs": [
+        "This glossary provides a reference for common Git terms used throughout the tutorial.",
+        "Refer to these definitions whenever you encounter unfamiliar terminology while working with version control."
+      ]
+    },
+    {
+      "heading": "Core Definitions",
+      "paragraphs": [
+        "Repository (Repo): The database where your project's history is stored.",
+        "Index (Staging Area): Where changes are prepared and organized before they are committed.",
+        "Commit: A permanent snapshot of your changes in the repository.",
+        "HEAD: A reference to the current commit your working directory is based on, usually the latest commit on your current branch."
+      ]
+    },
+    {
+      "heading": "Branching and Merging",
+      "paragraphs": [
+        "Branch: A parallel version of your repository used to develop features independently.",
+        "Merge: Combining changes from different branches into one.",
+        "Conflict: Occurs when Git cannot automatically merge changes, requiring manual resolution.",
+        "Checkout: The command used to switch between different branches or commits."
+      ]
+    },
+    {
+      "heading": "Remote Collaboration",
+      "paragraphs": [
+        "Remote: A version of your repository hosted on the internet or a network.",
+        "Clone: Creating a local copy of a remote repository on your computer.",
+        "Push: Uploading your local commits to a remote repository.",
+        "Pull: Fetching and merging changes from a remote repository into your local one.",
+        "Origin: The default name assigned to your main remote repository.",
+        "Upstream: The default remote branch that your local branch tracks."
+      ]
+    },
+    {
+      "heading": "Advanced Utilities",
+      "paragraphs": [
+        "Stash: Temporarily saving uncommitted changes to return to a clean state.",
+        "Tag: Marking a specific commit as important, typically for software releases.",
+        "Fetch: Downloading changes from a remote without automatically merging them.",
+        "Rebase: Moving or combining a sequence of commits to a new base commit."
+      ]
+    }
+  ]
+} ,
+"github-get-started": {
+  "title": "GitHub Get Started",
+  "sections": [
+    {
+      "heading": "Get Started with GitHub",
+      "paragraphs": [
+        "GitHub is a web-based platform used for version control and collaboration, allowing you to host remote repositories online.",
+        "It enables you to back up your code and work with others effectively."
+      ]
+    },
+    {
+      "heading": "1. Sign Up for GitHub",
+      "paragraphs": [
+        "Go to GitHub and create a free account. It is recommended to use the same email address that you use for your local Git configuration."
+      ]
+    },
+    {
+      "heading": "2. Create a Repository",
+      "paragraphs": [
+        "Once signed in, click the 'New' button to start a new project.",
+        "Fill in your repository details, such as the name and description, and choose whether it should be Public or Private before clicking 'Create repository'."
+      ]
+    },
+    {
+      "heading": "3. What is a Remote Repository?",
+      "paragraphs": [
+        "A remote repository is a version of your project hosted on the internet rather than just on your local computer.",
+        "Connecting to a remote repository allows for secure collaboration and off-site backup of your project history."
+      ]
+    }
+  ]
+} ,
+"git-ssh-intro": {
+  "title": "Git What is SSH?",
+  "sections": [
+    {
+      "heading": "What is SSH?",
+      "paragraphs": [
+        "SSH (Secure Shell) is a protocol used to connect securely to remote services like Git repositories.",
+        "It utilizes a pair of public and private keys to ensure that only authorized users can access the code."
+      ]
+    },
+    {
+      "heading": "How SSH Keys Work",
+      "paragraphs": [
+        "SSH keys function in pairs: a public key acts as a lock that you share with servers like GitHub, and a private key acts as your personal key kept safe on your computer.",
+        "Only the person with the private key can access what has been secured by the public key."
+      ]
+    },
+    {
+      "heading": "Generating a New SSH Key Pair",
+      "paragraphs": [
+        "To create a new key pair, use the ssh-keygen command in your terminal.",
+        "It is recommended to set a passphrase for extra security when prompted."
+      ],
+      "code": "ssh-keygen -t rsa -b 4096 -C \"your@email.com\""
+    },
+    {
+      "heading": "Adding Key to the SSH Agent",
+      "paragraphs": [
+        "After generating the key, you must enable the SSH agent and add your private key so Git can use it for authentication."
+      ],
+      "code": "eval $(ssh-agent -s)\nssh-add ~/.ssh/id_rsa"
+    },
+    {
+      "heading": "Copying Your Public Key",
+      "paragraphs": [
+        "To complete the setup, copy your public key to your clipboard and add it to your GitHub account settings."
+      ],
+      "code": "# macOS\npbcopy < ~/.ssh/id_rsa.pub\n\n# Windows (Git Bash)\nclip < ~/.ssh/id_rsa.pub\n\n# Linux\ncat ~/.ssh/id_rsa.pub"
+    },
+    {
+      "heading": "Testing and Troubleshooting",
+      "paragraphs": [
+        "You can check which keys are currently loaded or test your connection to GitHub.",
+        "If you see 'Permission denied,' verify that your public key is in your Git host and your private key is loaded in the agent."
+      ],
+      "code": "# List loaded keys\nssh-add -l\n\n# Test GitHub connection\nssh -T git@github.com"
+    }
+  ]
+} ,
+
+"github-add-ssh": {
+  "title": "GitHub Add SSH",
+  "sections": [
+    {
+      "heading": "Copy Your Public SSH Key",
+      "paragraphs": [
+        "Before adding the key to GitHub, you must copy your public key to your clipboard using the appropriate command for your operating system.",
+        "It is important to complete this step before attempting to push, pull, or clone via SSH."
+      ],
+      "code": "# Windows (Git Bash)\nclip < ~/.ssh/id_rsa.pub\n\n# macOS\npbcopy < ~/.ssh/id_rsa.pub\n\n# Linux\ncat ~/.ssh/id_rsa.pub"
+    },
+    {
+      "heading": "Add the Key to GitHub",
+      "paragraphs": [
+        "1. Log in to GitHub, click your profile icon in the top right, and select 'Settings'.",
+        "2. In the sidebar, select 'SSH and GPG keys' and then click the 'New SSH key' button.",
+        "3. Provide a descriptive title for your key, paste your public key into the 'Key' field, and click 'Add SSH Key'.",
+        "You may be required to confirm the action with your password or two-factor authentication."
+      ]
+    },
+    {
+      "heading": "Verify the Key",
+      "paragraphs": [
+        "Once added, you should see your new SSH key listed in your GitHub account settings.",
+        "The next step is to test your connection and set your GitHub remote origin using SSH."
+      ]
+    }
+  ]
+} ,
+"github-set-remote": {
+  "title": "GitHub Set Remote",
+  "sections": [
+    {
+      "heading": "Set GitHub Remote Origin",
+      "paragraphs": [
+        "After adding your SSH key to GitHub, you can securely connect your local repository to your remote GitHub repository using SSH."
+      ]
+    },
+    {
+      "heading": "Test Your SSH Connection",
+      "paragraphs": [
+        "Before setting the remote, verify that your SSH connection to GitHub is working correctly.",
+        "If you see a message containing your GitHub username, you have successfully authenticated."
+      ],
+      "code": "ssh -T git@github.com\n# Hi your-username! You've successfully authenticated!"
+    },
+    {
+      "heading": "Get Your Repository's SSH Address",
+      "paragraphs": [
+        "Navigate to your repository on GitHub, click the 'Code' button, and ensure 'SSH' is selected.",
+        "Copy the provided URL, which should start with 'git@github.com:'."
+      ]
+    },
+    {
+      "heading": "Add or Update the Remote Origin",
+      "paragraphs": [
+        "Use 'git remote add' if you are connecting the repository for the first time.",
+        "If you already have a remote set up (such as through HTTPS) and want to switch to SSH, use 'git remote set-url'."
+      ],
+      "code": "# Add remote for the first time\ngit remote add origin git@github.com:your-username/your-repo.git\n\n# Update an existing remote to SSH\ngit remote set-url origin git@github.com:your-username/your-repo.git"
+    }
+  ]
+} ,
+"github-edit-code": {
+  "title": "GitHub Edit Code",
+  "sections": [
+    {
+      "heading": "Editing Code Directly in GitHub",
+      "paragraphs": [
+        "GitHub provides a built-in web editor that allows you to modify code and documentation directly from your browser.",
+        "This is highly efficient for performing quick fixes, updating README files, or correcting minor typos without the need to clone the repository to your local machine."
+      ]
+    },
+    {
+      "heading": "The Editing Process",
+      "paragraphs": [
+        "To begin, navigate to the file you wish to modify (such as index.html or README.md) and click the pencil icon located in the file's header.",
+        "The editor provides a standard text interface where you can add, remove, or modify code lines.",
+        "Before finalizing, you can use the 'Preview changes' tab to see a 'diff' view, highlighting exactly what has been added or removed."
+      ]
+    },
+    {
+      "heading": "Committing and Branching Strategy",
+      "paragraphs": [
+        "Every change made in the web editor must be accompanied by a commit message that describes the purpose of the update.",
+        "By default, GitHub suggests committing directly to the main or master branch.",
+        "However, for larger code changes, you should select 'Create a new branch for this commit' to keep the main branch stable.",
+        "Once you commit to a new branch, GitHub will prompt you to open a 'Pull Request' (PR) so your team can review the changes before they are merged."
+      ]
+    }
+  ]
+} ,
+"pull-from-github": {
+  "title": "Pull from GitHub",
+  "sections": [
+    {
+      "heading": "Pulling Changes from a Remote",
+      "paragraphs": [
+        "When collaborating on a project, it is essential that everyone stays up to date.",
+        "The 'pull' command is used to update your local repository with changes made on GitHub.",
+        "It is actually a combination of two distinct Git commands: 'fetch' and 'merge'."
+      ]
+    },
+    {
+      "heading": "Git Fetch",
+      "paragraphs": [
+        "The 'git fetch' command downloads new data from the remote repository but does not modify your local working files.",
+        "This allows you to review what others have done before you commit to merging those changes into your code."
+      ],
+      "code": "git fetch origin\n# Downloads recent changes from the remote called origin"
+    },
+    {
+      "heading": "Reviewing Remote Changes",
+      "paragraphs": [
+        "After fetching, you can check your status to see how many commits you are behind the remote branch.",
+        "You can use 'git log' or 'git diff' to inspect the specific changes made on the remote server before merging them."
+      ],
+      "code": "# See if your branch is behind\ngit status\n\n# View the log of the remote branch\ngit log origin/master\n\n# See specific code differences\ngit diff origin/master"
+    },
+    {
+      "heading": "Git Merge and Git Pull",
+      "paragraphs": [
+        "If you have already fetched the changes, you can use 'git merge' to combine the remote branch into your current local branch.",
+        "If you want to perform both actions in a single step, use 'git pull', which automatically fetches and then merges the remote changes."
+      ],
+      "code": "# Merge already fetched changes\ngit merge origin/master\n\n# Fetch and merge in one step\ngit pull origin"
+    }
+  ]
+} ,
+"push-to-github": {
+  "title": "Push to GitHub",
+  "sections": [
+    {
+      "heading": "Pushing Changes to a Remote",
+      "paragraphs": [
+        "Once you have committed your changes locally, the next step is to update the remote repository on GitHub.",
+        "Transferring these local changes to the remote server is done using the 'push' command."
+      ]
+    },
+    {
+      "heading": "Basic Push Command",
+      "paragraphs": [
+        "The standard push command uploads your local commits from your current branch to the remote repository named 'origin'.",
+        "Note that you must have already finalized your changes using 'git commit' before you can push them."
+      ],
+      "code": "git push origin"
+    },
+    {
+      "heading": "Force Pushing",
+      "paragraphs": [
+        "Sometimes a push is rejected if the remote history has diverged from your local history (for example, after a rebase).",
+        "You can use the --force flag to overwrite the remote history, but this should be used with extreme caution as it can delete work done by others.",
+        "A safer alternative is '--force-with-lease', which only pushes if no one else has updated the remote branch in the meantime."
+      ],
+      "code": "# Force push (Dangerous)\ngit push --force origin feature-branch\n\n# Safer force push\ngit push --force-with-lease origin feature-branch"
+    },
+    {
+      "heading": "Pushing Tags",
+      "paragraphs": [
+        "By default, standard pushes do not include tags. You must push tags explicitly to make them visible on GitHub."
+      ],
+      "code": "# Push a specific tag\ngit push origin v1.0\n\n# Push all local tags\ngit push --tags"
+    },
+    {
+      "heading": "Troubleshooting Push Errors",
+      "paragraphs": [
+        "Non-fast-forward error: This usually means someone else pushed changes to the same branch. Solve this by running 'git pull' to integrate those changes before pushing again.",
+        "Authentication failed: Ensure your SSH keys are correctly set up and added to your GitHub account."
+      ]
+    }
+  ]
+} ,
+"github-branch": {
+  "title": "GitHub Branch",
+  "sections": [
+    {
+      "heading": "Working with Branches on GitHub",
+      "paragraphs": [
+        "GitHub provides a web interface to create, manage, and delete branches directly in your browser.",
+        "This allows you to organize your work into different features or fixes before merging them into the main project."
+      ]
+    },
+    {
+      "heading": "Creating and Switching Branches",
+      "paragraphs": [
+        "To create a branch on GitHub, click the branch selector button (usually labeled 'main' or 'master'), type a new descriptive name, and select 'Create branch'.",
+        "You can switch between branches in the web interface using the same dropdown menu."
+      ],
+      "code": "# Switch branches via command line\ngit switch branch-name"
+    },
+    {
+      "heading": "Editing and Committing in a Branch",
+      "paragraphs": [
+        "Once a branch is active, any files you edit and commit will only change within that specific branch.",
+        "You can use the 'Preview changes' tab to review your edits before finalizing the commit with a descriptive message."
+      ]
+    },
+    {
+      "heading": "Deleting and Renaming Branches",
+      "paragraphs": [
+        "Branches can be deleted through the GitHub 'Branches' page or via the terminal once they are no longer needed.",
+        "Some branches, like 'main', may be protected to prevent accidental deletion or unauthorized force-pushes."
+      ],
+      "code": "# Delete a local branch\ngit branch -d branch-name\n\n# Delete a remote branch on GitHub\ngit push origin --delete branch-name\n\n# Rename a branch locally\ngit branch -m old-name new-name"
+    },
+    {
+      "heading": "Merging Branches",
+      "paragraphs": [
+        "To merge a branch on GitHub, the standard practice is to open a 'Pull Request'. This allows for code review and automated testing before the branches are combined."
+      ],
+      "code": "# Merge a branch locally\ngit merge branch-name"
+    }
+  ]
+} ,
+"pull-branch-from-github": {
+  "title": "Pulling a Branch from GitHub",
+  "sections": [
+    {
+      "heading": "Synchronizing Remote Branches",
+      "paragraphs": [
+        "If a new branch has been created on GitHub by a teammate or via the web interface, you need to update your local Git to recognize it.",
+        "Running 'git pull' on your main branch will fetch information about all new branches available in the remote repository."
+      ],
+      "code": "git pull"
+    },
+    {
+      "heading": "Viewing Remote Branches",
+      "paragraphs": [
+        "By default, 'git branch' only shows your local branches. To see branches that exist on GitHub but not yet on your machine, use the '-a' flag to show all branches (local and remote).",
+        "You can also use 'git branch -r' to view only the remote branches."
+      ],
+      "code": "# Show all local and remote branches\ngit branch -a\n\n# Show only remote branches\ngit branch -r"
+    },
+    {
+      "heading": "Checking Out a Remote Branch",
+      "paragraphs": [
+        "To start working on a branch that currently only exists on GitHub, use the 'checkout' command followed by the branch name.",
+        "Git will automatically create a local version of that branch and set it up to track the remote version."
+      ],
+      "code": "git checkout html-skeleton\n# Switched to a new branch 'html-skeleton'\n# Branch 'html-skeleton' set up to track remote branch 'html-skeleton' from 'origin'."
+    },
+    {
+      "heading": "Verifying the Local Branch",
+      "paragraphs": [
+        "After checking out the branch, you can confirm it is active and up-to-date by running a quick branch and pull check."
+      ],
+      "code": "# Confirm current active branch\ngit branch\n\n# Ensure you have the latest code\ngit pull"
+    }
+  ]
+} ,
+"push-branch-to-github": {
+  "title": "Push Branch to GitHub",
+  "sections": [
+    {
+      "heading": "Pushing a Local Branch to GitHub",
+      "paragraphs": [
+        "When you create a new branch on your local computer, it does not automatically appear on GitHub. You must explicitly push the branch to the remote repository.",
+        "This allows you to share your specific feature or fix with the rest of your team."
+      ],
+      "code": "# Create and switch to a new branch\ngit checkout -b update-readme\n\n# After committing changes, push the branch\ngit push origin update-readme"
+    },
+    {
+      "heading": "Push and Set Upstream",
+      "paragraphs": [
+        "If the branch doesn't exist on GitHub yet, you can use the '--set-upstream' (or -u) flag.",
+        "This links your local branch to the remote branch, so in the future, you can simply use 'git push' or 'git pull' without specifying the branch name."
+      ],
+      "code": "git push --set-upstream origin update-readme"
+    },
+    {
+      "heading": "Managing Remote Branches",
+      "paragraphs": [
+        "You can also perform advanced actions like pushing all local branches at once or deleting a branch from the remote server."
+      ],
+      "code": "# Push all local branches to GitHub\ngit push --all origin\n\n# Remove a branch from GitHub\ngit push origin --delete update-readme"
+    },
+    {
+      "heading": "Force Push and Tags",
+      "paragraphs": [
+        "A force push overwrites the branch on GitHub with your local changes. This is risky and should only be used when you are certain it won't delete a teammate's work.",
+        "To share release markers or milestones, remember to push your tags separately."
+      ],
+      "code": "# Force push (Use with caution!)\ngit push --force origin update-readme\n\n# Push all local tags\ngit push --tags"
+    }
+  ]
+} 
+
+  }
+}

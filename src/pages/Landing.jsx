@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import LowNavbar from "../components/LowNavbar";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const HEADER_HEIGHT = "96px";
 
@@ -84,6 +85,7 @@ export default function Landing() {
                     </div>
                 </section>
             </main>
+            <Footer />
         </div>
     );
 }

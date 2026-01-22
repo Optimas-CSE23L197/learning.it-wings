@@ -26,6 +26,23 @@
       "c": {
         "title": "C Tutorial",
         "file": "backend/c.json"
+      },
+      "go": {
+        "title": "Go Tutorial",
+        "file": "backend/go.json"
+      },
+      "typescript": {
+        "title": "TypeScript Tutorial",
+        "file": "backend/typescript.json"
+      },
+      "git": {
+        "title": "Git Tutorial",
+        "file": "backend/git.json"
+      },
+
+      "aws": {
+        "title": "AWS Cloud Tutorial",
+        "file": "backend/aws.json"
       }
     }
   }

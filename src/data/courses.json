@@ -18,6 +18,10 @@
         "title": "Canvas Tutorial",
         "file": "frontend/canvas.json"
       },
+      "jquery": {
+        "title": "jQuery Tutorial",
+        "file": "frontend/jquery.json"
+      },
       "color-theory": {
         "title": "Color Theory Tutorial",
         "file": "frontend/color-theory.json"
@@ -36,10 +40,7 @@
         "title": "React Tutorial",
         "file": "js/react.json"
       },
-      "jquery": {
-        "title": "jQuery Tutorial",
-        "file": "js/jquery.json"
-      },
+     
       "angular": {
         "title": "Angular Tutorial",
         "file": "js/angular.json"

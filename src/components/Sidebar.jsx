@@ -44,7 +44,7 @@ export default function Sidebar() {
           h-[calc(100vh-96px)]
           bg-[var(--blue-dark)]
           text-[var(--white)]
-          transform transition-transform duration-300 ease-in-out
+          transform transition-transform duration-300 ease-in-out custom-scrollbar
           ${open ? "translate-x-0" : "-translate-x-full"}
           lg:translate-x-0
           overflow-y-auto

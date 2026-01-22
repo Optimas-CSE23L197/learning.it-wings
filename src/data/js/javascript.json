@@ -1,0 +1,2321 @@
+{
+  "course": {
+    "id": "javascript",
+    "title": "JavaScript Tutorial"
+  },
+  "sections": [
+    {
+      "title": "JavaScript Basics",
+      "lessons": [
+        { "id": "home", "title": "JS Tutorial" },
+        { "id": "intro", "title": "JS Introduction" },
+        { "id": "where-to", "title": "JS Where To" },
+        { "id": "output", "title": "JS Output" },
+        { "id": "syntax", "title": "JS Syntax" },
+        { "id": "variables", "title": "JS Variables" },
+        { "id": "operators", "title": "JS Operators" },
+        { "id": "if-conditions", "title": "JS If Conditions" },
+        { "id": "loops", "title": "JS Loops" },
+        { "id": "strings", "title": "JS Strings" },
+        { "id": "numbers", "title": "JS Numbers" },
+        { "id": "functions", "title": "JS Functions" },
+        { "id": "objects", "title": "JS Objects" },
+        { "id": "scope", "title": "JS Scope" },
+        { "id": "dates", "title": "JS Dates" },
+        { "id": "arrays", "title": "JS Arrays" },
+        { "id": "sets", "title": "JS Sets" },
+        { "id": "maps", "title": "JS Maps" },
+        { "id": "iterations", "title": "JS Iterations" },
+        { "id": "math", "title": "JS Math" },
+        { "id": "regexp", "title": "JS RegExp" },
+        { "id": "data-types", "title": "JS Data Types" },
+        { "id": "errors", "title": "JS Errors" },
+        { "id": "conventions", "title": "JS Conventions" },
+        { "id": "references", "title": "JS References" },
+
+        { "id": "versions", "title": "JS Versions" },
+
+        { "id": "html-dom", "title": "JS HTML DOM" },
+
+        { "id": "events", "title": "JS Events" },
+
+        { "id": "projects", "title": "JS Projects" },
+
+        { "id": "advanced", "title": "JS Advanced" },
+        { "id": "adv-functions", "title": "JS Functions" },
+        { "id": "adv-objects", "title": "JS Objects" },
+        { "id": "classes", "title": "JS Classes" },
+        { "id": "async", "title": "JS Asynchronous" },
+        { "id": "modules", "title": "JS Modules" },
+        { "id": "meta-proxy", "title": "JS Meta & Proxy" },
+        { "id": "typed-arrays", "title": "JS Typed Arrays" },
+        { "id": "dom-navigation", "title": "JS DOM Navigation" },
+        { "id": "window", "title": "JS Windows" },
+        { "id": "web-apis", "title": "JS Web APIs" },
+        { "id": "ajax", "title": "JS AJAX" },
+        { "id": "json", "title": "JS JSON" },
+        { "id": "jquery", "title": "JS jQuery" },
+        { "id": "graphics", "title": "JS Graphics" },
+        { "id": "examples", "title": "JS Examples" },
+        { "id": "reference", "title": "JS Reference" }
+      ]
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "Learn JavaScript",
+      "subtitle": "The Programming Language of the Web",
+      "sections": [
+        {
+          "heading": "Introduction",
+          "paragraphs": [
+            "JavaScript is easy to learn.",
+            "This tutorial covers everything from basic JavaScript up to the latest 2025 version.",
+            "Start learning JavaScript now."
+          ]
+        },
+        {
+          "heading": "Examples in Each Chapter",
+          "paragraphs": [
+            "With our Try it Yourself editor, you can edit the source code and view the result."
+          ],
+          "example": {
+            "title": "My First JavaScript",
+            "description": "Click me to display Date and Time"
+          }
+        },
+        {
+          "heading": "Use the Menu",
+          "paragraphs": [
+            "We recommend reading this tutorial in the sequence listed in the menu.",
+            "On large screens, the menu appears on the left.",
+            "On small screens, open the menu using the ☰ icon."
+          ]
+        },
+        {
+          "heading": "Learn by Examples",
+          "paragraphs": [
+            "Examples are better than 1000 words.",
+            "Examples are often easier to understand than text explanations.",
+            "This tutorial includes Try it Yourself examples for every concept."
+          ],
+          "note": "Trying all examples will help you learn JavaScript faster."
+        },
+        {
+          "heading": "Why Study JavaScript?",
+          "paragraphs": [
+            "JavaScript is one of the three core web technologies:",
+            "HTML defines content.",
+            "CSS controls layout.",
+            "JavaScript controls behavior."
+          ]
+        },
+        {
+          "heading": "Learning Speed",
+          "paragraphs": [
+            "You control the learning speed.",
+            "If something feels difficult, take a break and review the examples.",
+            "The best way to learn programming is practice."
+          ]
+        },
+        {
+          "heading": "Commonly Asked Questions",
+          "questions": [
+            "How do I get JavaScript?",
+            "Where can I download JavaScript?",
+            "Is JavaScript free?"
+          ],
+          "answers": [
+            "JavaScript runs directly in your browser.",
+            "No installation is required.",
+            "JavaScript is free for everyone."
+          ]
+        },
+        {
+          "heading": "JavaScript Exercises",
+          "paragraphs": [
+            "Many chapters include exercises to test your knowledge."
+          ],
+          "exercise": {
+            "question": "What is the correct syntax for assigning a value to a variable?",
+            "options": ["x : 5", "x = 5", "x == 5", "x -> 5"],
+            "answer": "x = 5"
+          }
+        },
+        {
+          "heading": "JavaScript Quiz",
+          "paragraphs": ["Test your JavaScript skills with quizzes."]
+        },
+        {
+          "heading": "Track Your Progress",
+          "paragraphs": [
+            "Create an account to track tutorials, exercises, and quizzes.",
+            "Maintain daily streaks and compete on leaderboards.",
+            "Create a personal website and customize your avatar."
+          ],
+          "note": "Account creation is optional."
+        },
+        {
+          "heading": "JavaScript References",
+          "paragraphs": [
+            "Complete JavaScript references are maintained and regularly updated.",
+            "Includes properties, methods, and events."
+          ]
+        },
+        {
+          "heading": "Get Certified",
+          "paragraphs": [
+            "Complete the JavaScript course to earn certification."
+          ]
+        }
+      ],
+      "footer": {
+        "topTutorials": [
+          "HTML Tutorial",
+          "CSS Tutorial",
+          "JavaScript Tutorial",
+          "SQL Tutorial",
+          "Python Tutorial"
+        ],
+        "topReferences": [
+          "HTML Reference",
+          "CSS Reference",
+          "JavaScript Reference",
+          "SQL Reference",
+          "Python Reference"
+        ],
+        "topExamples": [
+          "HTML Examples",
+          "CSS Examples",
+          "JavaScript Examples",
+          "SQL Examples",
+          "Python Examples"
+        ],
+        "certificates": [
+          "HTML Certificate",
+          "CSS Certificate",
+          "JavaScript Certificate",
+          "Front End Certificate",
+          "SQL Certificate"
+        ],
+        "copyright": "Copyright 1999-2026 by Refsnes Data. All Rights Reserved."
+      }
+    }
+  },
+  "page": {
+    "header": {
+      "menus": [
+        "Tutorials",
+        "References",
+        "Exercises",
+        "Certificates",
+        "Search field"
+      ],
+      "userActions": [
+        "Sign In",
+        "Get Certified",
+        "Upgrade",
+        "Teachers",
+        "Spaces",
+        "Bootcamps"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JAVASCRIPT",
+        "SQL",
+        "PYTHON",
+        "JAVA",
+        "PHP",
+        "HOW TO",
+        "W3.CSS",
+        "C",
+        "C++",
+        "C#",
+        "BOOTSTRAP",
+        "REACT",
+        "MYSQL",
+        "JQUERY",
+        "EXCEL",
+        "XML",
+        "DJANGO",
+        "NUMPY",
+        "PANDAS",
+        "NODEJS",
+        "DSA",
+        "TYPESCRIPT",
+        "ANGULAR",
+        "ANGULARJS",
+        "GIT",
+        "POSTGRESQL",
+        "MONGODB",
+        "ASP",
+        "AI",
+        "R",
+        "GO",
+        "KOTLIN",
+        "SWIFT",
+        "SASS",
+        "VUE",
+        "GEN AI",
+        "SCIPY",
+        "AWS",
+        "CYBERSECURITY",
+        "DATA SCIENCE",
+        "INTRO TO PROGRAMMING",
+        "INTRO TO HTML & CSS",
+        "BASH",
+        "RUST"
+      ]
+    },
+    "content": {
+      "title": "JavaScript Syntax",
+      "navigation": {
+        "previous": true,
+        "next": true
+      },
+      "sections": [
+        {
+          "heading": "Syntax Rules",
+          "description": "Syntax are the rules how programs must be constructed.",
+          "code": [
+            "// How to Declare variables:",
+            "let x = 5;",
+            "let y = 6;",
+            "",
+            "// How to Compute values:",
+            "let z = x + y;",
+            "",
+            "// I am a Comment. I do Nothing"
+          ]
+        },
+        {
+          "heading": "JavaScript Values",
+          "description": "The JavaScript syntax defines two types of values:",
+          "types": ["Literals (Fixed values)", "Variables (Variable values)"]
+        },
+        {
+          "heading": "JavaScript Literals",
+          "rules": [
+            "Numbers are written with or without decimals",
+            "Strings are written within double or single quotes"
+          ],
+          "examples": ["10.50", "1001", "\"John Doe\"", "'John Doe'"]
+        },
+        {
+          "heading": "JavaScript Keywords",
+          "description": "JavaScript keywords are used to defines actions to be performed.",
+          "examples": ["let x = 5;", "const fname = \"John\";"],
+          "note": [
+            "JavaScript keywords are case-sensitive",
+            "LET or Let is not interpreted as let"
+          ]
+        },
+        {
+          "heading": "JavaScript Variables",
+          "description": "Variables are containers for storing data values.",
+          "rules": ["Variables must be identified with unique names"],
+          "example": ["let x;", "x = 6;"]
+        },
+        {
+          "heading": "JavaScript Identifiers",
+          "description": "An identifier is the name you give to a variable.",
+          "rules": [
+            "Must start with a letter, _ or $",
+            "Can contain digits after the first character",
+            "Cannot be a reserved keyword",
+            "Are case-sensitive"
+          ]
+        },
+        {
+          "heading": "JavaScript Operators",
+          "assignmentExample": ["let x = 5;", "let y = 6;", "let sum = x + y;"],
+          "arithmeticOperators": ["+", "-", "*", "/"],
+          "example": "5 * 10"
+        },
+        {
+          "heading": "JavaScript Expressions",
+          "examples": ["(5 + 6) * 10", "x * 10", "\"John\" + \" \" + \"Doe\""]
+        },
+        {
+          "heading": "JavaScript is Case Sensitive",
+          "example": ["let lastName = \"Doe\";", "let lastname = \"Peterson\";"]
+        },
+        {
+          "heading": "JavaScript and Camel Case",
+          "styles": {
+            "hyphens": "Not allowed",
+            "underscore": "first_name",
+            "pascalCase": "FirstName",
+            "camelCase": "firstName"
+          },
+          "recommended": "lower camel case"
+        },
+        {
+          "heading": "Exercise",
+          "question": "What is a correct syntax for assigning a value to a variable?",
+          "options": ["x : 5", "x = 5", "x == 5", "x -> 5"],
+          "answer": "x = 5"
+        }
+      ]
+    },
+    "footer": {
+      "features": [
+        "COLOR PICKER",
+        "REMOVE ADS",
+        "PLUS",
+        "SPACES",
+        "GET CERTIFIED",
+        "FOR TEACHERS",
+        "BOOTCAMPS",
+        "CONTACT US"
+      ],
+      "copyright": "Copyright 1999-2026 by Refsnes Data",
+      "note": "W3Schools is optimized for learning and training.",
+      "poweredBy": "W3.CSS"
+    }
+  },
+  "javascript-variables": {
+    "title": "JavaScript Variables",
+    "sections": [
+      {
+        "heading": "Variables = Data Containers",
+        "paragraphs": [
+          "JavaScript variables are containers for data.",
+          "Variables are labels for data values.",
+          "Variables are containers for storing data."
+        ]
+      },
+      {
+        "heading": "Ways to Declare Variables",
+        "paragraphs": ["JavaScript variables can be declared in four ways."],
+        "lists": {
+          "modern": ["Using let", "Using const"],
+          "older": [
+            "Using var (Not Recommended)",
+            "Automatically (Not Recommended)"
+          ]
+        }
+      },
+      {
+        "heading": "Example Using let",
+        "code": "let x = 5;\nlet y = 6;\nlet z = x + y;"
+      },
+      {
+        "heading": "Example Using const",
+        "code": "const x = 5;\nconst y = 6;\nconst z = x + y;"
+      },
+      {
+        "heading": "Understanding Variables",
+        "points": [
+          "x stores the value 5",
+          "y stores the value 6",
+          "z stores the value 11"
+        ]
+      },
+      {
+        "heading": "JavaScript Identifiers",
+        "paragraphs": [
+          "Variables are identified with unique names called identifiers.",
+          "Identifiers can be short or descriptive."
+        ],
+        "rules": [
+          "Names can contain letters, digits, underscores, and dollar signs",
+          "Names must begin with a letter, $ sign, or underscore",
+          "Names are case sensitive",
+          "Reserved words cannot be used"
+        ]
+      },
+      {
+        "heading": "JavaScript Underscore (_)",
+        "paragraphs": ["JavaScript treats underscore as a letter."],
+        "code": "let _lastName = \"Johnson\";\nlet _x = 2;\nlet _100 = 5;"
+      },
+      {
+        "heading": "JavaScript Dollar Sign ($)",
+        "paragraphs": [
+          "JavaScript treats dollar sign as a letter.",
+          "Often used as an alias in JavaScript libraries."
+        ],
+        "code": "let $ = \"Hello World\";\nlet $$$ = 2;\nlet $myMoney = 5;"
+      },
+      {
+        "heading": "Declaring Variables",
+        "paragraphs": [
+          "Creating a variable is called declaring a variable.",
+          "Use let or const keywords."
+        ],
+        "examples": {
+          "let": "let carName = \"Volvo\";",
+          "const": "const carName = \"Volvo\";"
+        }
+      },
+      {
+        "heading": "Mixed Example",
+        "code": "const price1 = 5;\nconst price2 = 6;\nlet total = price1 + price2;"
+      },
+      {
+        "heading": "Automatic Declaration (Not Recommended)",
+        "code": "x = 5;\ny = 6;\nz = x + y;"
+      },
+      {
+        "heading": "Using var (Not Recommended)",
+        "paragraphs": [
+          "var was used before 2015.",
+          "let and const were introduced in 2015."
+        ],
+        "code": "var x = 5;\nvar y = 6;\nvar z = x + y;"
+      },
+      {
+        "heading": "When to Use let, const, or var",
+        "points": [
+          "Always declare variables",
+          "Use const if value should not change",
+          "Use const for arrays and objects",
+          "Use let if const cannot be used",
+          "Avoid var"
+        ]
+      },
+      {
+        "heading": "JavaScript Data Types",
+        "paragraphs": [
+          "JavaScript variables can hold 8 data types.",
+          "Strings are written inside quotes.",
+          "Numbers are written without quotes."
+        ],
+        "code": "const pi = 3.14;\nlet person = \"John Doe\";\nlet answer = 'Yes I am!';"
+      },
+      {
+        "heading": "One Statement, Many Variables",
+        "code": "let person = \"John Doe\", carName = \"Volvo\", price = 200;"
+      },
+      {
+        "heading": "Assignment Operator",
+        "paragraphs": [
+          "The = operator assigns values.",
+          "It is different from == which compares values."
+        ],
+        "example": "x = x + 5;"
+      },
+      {
+        "heading": "JavaScript Arithmetic",
+        "examples": [
+          "let x = 5 + 2 + 3;",
+          "let x = \"John\" + \" \" + \"Doe\";",
+          "let x = \"5\" + 2 + 3;",
+          "let x = 2 + 3 + \"5\";"
+        ]
+      },
+      {
+        "heading": "Exercise",
+        "question": "What is NOT a correct syntax for declaring variables?",
+        "options": ["let x;", "dim x;", "var x;", "const x;"],
+        "answer": "dim x;"
+      }
+    ]
+  },
+  "javascript-operators": {
+    "title": "JavaScript Operators",
+    "navigation": {
+      "previous": true,
+      "next": true
+    },
+    "sections": [
+      {
+        "heading": "Operators for Computation",
+        "paragraphs": [
+          "Operators are for Mathematical and Logical Computations."
+        ],
+        "operators": [
+          { "operator": "=", "description": "Assigns values" },
+          { "operator": "+", "description": "Adds values" },
+          { "operator": "*", "description": "Multiplies values" },
+          { "operator": ">", "description": "Compares values" }
+        ]
+      },
+      {
+        "heading": "JavaScript Assignment",
+        "paragraphs": [
+          "The Assignment Operator (=) assigns a value to a variable."
+        ],
+        "examples": [
+          "let x = 10;",
+          "// Assign the value 5 to x\nlet x = 5;",
+          "// Assign the value 2 to y\nlet y = 2;",
+          "// Assign the value x + y to z\nlet z = x + y;"
+        ]
+      },
+      {
+        "heading": "JavaScript Addition",
+        "paragraphs": ["The Addition Operator (+) adds numbers."],
+        "example": "let x = 5;\nlet y = 2;\nlet z = x + y;"
+      },
+      {
+        "heading": "JavaScript Multiplication",
+        "paragraphs": ["The Multiplication Operator (*) multiplies numbers."],
+        "example": "let x = 5;\nlet y = 2;\nlet z = x * y;"
+      },
+      {
+        "heading": "Types of JavaScript Operators",
+        "lists": [
+          "Arithmetic Operators",
+          "Assignment Operators",
+          "Comparison Operators",
+          "Logical Operators",
+          "And more ..."
+        ]
+      },
+      {
+        "heading": "JavaScript Arithmetic Operators",
+        "paragraphs": [
+          "Arithmetic Operators are used to perform arithmetic on numbers."
+        ],
+        "example": "let a = 3;\nlet x = (100 + 50) * a;",
+        "table": [
+          { "operator": "+", "description": "Addition" },
+          { "operator": "-", "description": "Subtraction" },
+          { "operator": "*", "description": "Multiplication" },
+          { "operator": "**", "description": "Exponentiation" },
+          { "operator": "/", "description": "Division" },
+          { "operator": "%", "description": "Modulus" },
+          { "operator": "++", "description": "Increment" },
+          { "operator": "--", "description": "Decrement" }
+        ]
+      },
+      {
+        "heading": "JavaScript String Addition",
+        "paragraphs": ["The + operator can concatenate strings."],
+        "example": "let text1 = \"John\";\nlet text2 = \"Doe\";\nlet text3 = text1 + \" \" + text2;"
+      },
+      {
+        "heading": "String Addition Assignment",
+        "paragraphs": ["The += operator can also concatenate strings."],
+        "example": "let text1 = \"What a very \";\ntext1 += \"nice day\";",
+        "result": "What a very nice day"
+      },
+      {
+        "heading": "Adding Strings and Numbers",
+        "paragraphs": [
+          "Adding numbers results in numbers.",
+          "Adding a number and a string results in a string."
+        ],
+        "example": "let x = 5 + 5;\nlet y = \"5\" + 5;\nlet z = \"Hello\" + 5;",
+        "result": ["10", "55", "Hello5"]
+      },
+      {
+        "heading": "JavaScript Assignment Operators",
+        "paragraphs": [
+          "Assignment operators assign values to JavaScript variables."
+        ],
+        "example": "let x = 10;\nx += 5;",
+        "table": [
+          { "operator": "=", "example": "x = y", "sameAs": "x = y" },
+          { "operator": "+=", "example": "x += y", "sameAs": "x = x + y" },
+          { "operator": "-=", "example": "x -= y", "sameAs": "x = x - y" },
+          { "operator": "*=", "example": "x *= y", "sameAs": "x = x * y" },
+          { "operator": "/=", "example": "x /= y", "sameAs": "x = x / y" },
+          { "operator": "%=", "example": "x %= y", "sameAs": "x = x % y" },
+          { "operator": "**=", "example": "x **= y", "sameAs": "x = x ** y" }
+        ]
+      },
+      {
+        "heading": "JavaScript Comparison Operators",
+        "paragraphs": [
+          "Comparison operators compare two values.",
+          "They always return true or false."
+        ],
+        "example": "let x = 5;\nlet result = x > 8;",
+        "table": [
+          { "operator": "==", "description": "equal to", "example": "x == 5" },
+          {
+            "operator": "===",
+            "description": "equal value and type",
+            "example": "x === 5"
+          },
+          { "operator": "!=", "description": "not equal", "example": "x != 5" },
+          {
+            "operator": "!==",
+            "description": "not equal value or type",
+            "example": "x !== 5"
+          },
+          {
+            "operator": ">",
+            "description": "greater than",
+            "example": "x > 5"
+          },
+          { "operator": "<", "description": "less than", "example": "x < 5" },
+          {
+            "operator": ">=",
+            "description": "greater than or equal",
+            "example": "x >= 5"
+          },
+          {
+            "operator": "<=",
+            "description": "less than or equal",
+            "example": "x <= 5"
+          }
+        ]
+      },
+      {
+        "heading": "Comparison on Strings",
+        "paragraphs": ["Strings are compared alphabetically."],
+        "example": "let text1 = \"A\";\nlet text2 = \"B\";\nlet result = text1 < text2;"
+      },
+      {
+        "heading": "JavaScript Logical Operators",
+        "table": [
+          { "operator": "&&", "description": "logical and" },
+          { "operator": "||", "description": "logical or" },
+          { "operator": "!", "description": "logical not" }
+        ]
+      },
+      {
+        "heading": "Exercise",
+        "question": "What will be the result of z?",
+        "code": "let x = 5;\nlet y = '8';\nlet z = x + y;",
+        "options": ["undefined", "58", "13"],
+        "answer": "58"
+      }
+    ]
+  },
+  "javascript-conditionals": {
+    "title": "JavaScript Conditionals",
+    "navigation": {
+      "previous": true,
+      "next": true
+    },
+    "sections": [
+      {
+        "heading": "Conditional Statements",
+        "paragraphs": [
+          "Conditional Statements allow us to perform different actions for different conditions.",
+          "Conditional statements run different code depending on true or false conditions."
+        ]
+      },
+      {
+        "heading": "Types of Conditional Statements",
+        "lists": [
+          "if",
+          "if...else",
+          "if...else if...else",
+          "switch",
+          "ternary (? :)"
+        ]
+      },
+      {
+        "heading": "When to Use Conditionals",
+        "lists": [
+          "Use if to specify a code block to be executed, if a specified condition is true",
+          "Use else to specify a code block to be executed, if the same condition is false",
+          "Use else if to specify a new condition to test, if the first condition is false",
+          "Use switch to specify many alternative code blocks to be executed",
+          "Use (? :) (ternary) as a shorthand for if...else"
+        ]
+      },
+      {
+        "heading": "The if Statement",
+        "paragraphs": [
+          "Use if to specify a code block to be executed, if a specified condition is true."
+        ],
+        "syntax": "if (condition) {\n  // code to execute if the condition is true\n}"
+      },
+      {
+        "heading": "The else Statement",
+        "paragraphs": [
+          "Use else to specify a code block to be executed, if the same condition is false."
+        ],
+        "syntax": "if (condition) {\n  // code to execute if the condition is true\n} else {\n  // code to execute if the condition is false\n}"
+      },
+      {
+        "heading": "The else if Statement",
+        "paragraphs": [
+          "Use else if to specify a new condition to test, if the first condition is false."
+        ],
+        "syntax": "if (condition1) {\n  // code to execute if condition1 is true\n} else if (condition2) {\n  // code to execute if condition1 is false and condition2 is true\n} else {\n  // code to execute if condition1 is false and condition2 is false\n}"
+      },
+      {
+        "heading": "The switch Statement",
+        "paragraphs": [
+          "Use switch to specify many alternative code blocks to be executed."
+        ],
+        "syntax": "switch(expression) {\n  case x:\n    // code block\n    break;\n  case y:\n    // code block\n    break;\n  default:\n    // code block\n}"
+      },
+      {
+        "heading": "Ternary Operator (? :)",
+        "paragraphs": ["Use (? :) (ternary) as a shorthand for if...else."],
+        "example": "condition ? expression1 : expression2"
+      }
+    ]
+  },
+  "javascript-loops": {
+    "title": "JavaScript Loops",
+    "navigation": {
+      "previous": true,
+      "next": true
+    },
+    "sections": [
+      {
+        "heading": "Introduction",
+        "paragraphs": [
+          "Loops can execute a block of code a number of times.",
+          "Loops are handy if you want to run the same code over and over again, each time with a different value."
+        ]
+      },
+      {
+        "heading": "Loops and Arrays",
+        "paragraphs": ["Often loops are used when working with arrays."],
+        "example_before": [
+          "text += cars[0] + \"<br>\";",
+          "text += cars[1] + \"<br>\";",
+          "text += cars[2] + \"<br>\";",
+          "text += cars[3] + \"<br>\";",
+          "text += cars[4] + \"<br>\";",
+          "text += cars[5] + \"<br>\";"
+        ],
+        "example_after": "for (let i = 0; i < cars.length; i++) {\n  text += cars[i] + \"<br>\";\n}"
+      },
+      {
+        "heading": "The For Loop",
+        "paragraphs": [
+          "The for statement creates a loop with three optional expressions."
+        ],
+        "syntax": "for (expr1; expr2; expr3) {\n  // code block to be executed\n}",
+        "expressions": [
+          "expr1 is executed one time before the execution of the code block.",
+          "expr2 defines the condition for executing the code block.",
+          "expr3 is executed every time the code block has been executed."
+        ],
+        "example": "for (let i = 0; i < 5; i++) {\n  text += \"The number is \" + i + \"<br>\";\n}",
+        "explanation": [
+          "expr1 sets a variable before the loop starts (let i = 0).",
+          "expr2 defines the condition for the loop to run (i must be less than 5).",
+          "expr3 increases a value (i++) each time the code block has been executed."
+        ]
+      },
+      {
+        "heading": "Loop Scope",
+        "examples": [
+          {
+            "code": "let i = 5;\nfor (i = 0; i < 10; i++) {\n  // some code\n}\n// Here i is 10"
+          },
+          {
+            "code": "let i = 5;\nfor (let i = 0; i < 10; i++) {\n  // some code\n}\n// Here i is 5"
+          }
+        ],
+        "notes": [
+          "In the first example, the variable is declared outside the loop.",
+          "In the second example, the variable is declared inside the loop.",
+          "Variables declared with let or const inside a loop are only visible within the loop."
+        ]
+      },
+      {
+        "heading": "The While Loop",
+        "paragraphs": [
+          "The while loop loops through a block of code as long as a specified condition is true."
+        ],
+        "syntax": "while (condition) {\n  // code block to be executed\n}",
+        "example": "while (i < 10) {\n  text += \"The number is \" + i;\n  i++;\n}",
+        "note": "If you forget to increase the variable used in the condition, the loop will never end and may crash your browser."
+      },
+      {
+        "heading": "The Do While Loop",
+        "paragraphs": [
+          "The do while loop is a variant of the while loop.",
+          "The do while loop executes the code block once before checking the condition."
+        ],
+        "syntax": "do {\n  // code block to be executed\n} while (condition);",
+        "example": "do {\n  text += \"The number is \" + i;\n  i++;\n} while (i < 10);",
+        "notes": [
+          "The do while loop runs at least once, even if the condition is false.",
+          "Always increase the variable used in the condition to avoid infinite loops."
+        ]
+      }
+    ]
+  },
+  "javascript-strings": {
+    "title": "JavaScript Strings",
+    "navigation": {
+      "previous": true,
+      "next": true
+    },
+    "sections": [
+      {
+        "heading": "Introduction",
+        "paragraphs": [
+          "Strings are for storing text.",
+          "Strings are written with quotes."
+        ]
+      },
+      {
+        "heading": "Using Quotes",
+        "paragraphs": [
+          "A JavaScript string is zero or more characters written inside quotes."
+        ],
+        "example": "let text = \"John Doe\";",
+        "notes": [
+          "You can use single or double quotes.",
+          "Strings created with single or double quotes work the same.",
+          "There is no difference between the two."
+        ],
+        "examples": [
+          "let carName1 = \"Volvo XC60\";  // Double quotes",
+          "let carName2 = 'Volvo XC60';   // Single quotes"
+        ]
+      },
+      {
+        "heading": "Quotes Inside Quotes",
+        "paragraphs": [
+          "You can use quotes inside a string as long as they don't match the quotes surrounding the string."
+        ],
+        "examples": [
+          "let answer1 = \"It's alright\";",
+          "let answer2 = \"He is called 'Johnny'\";",
+          "let answer3 = 'He is called \"Johnny\"';"
+        ]
+      },
+      {
+        "heading": "Template Strings",
+        "paragraphs": [
+          "Template strings were introduced in ES6 (JavaScript 2016).",
+          "Templates are strings enclosed in backticks.",
+          "Template strings allow both single and double quotes inside a string."
+        ],
+        "example": "let text = `He's often called \"Johnny\"`;"
+      },
+      {
+        "heading": "String Length",
+        "paragraphs": [
+          "To find the length of a string, use the built-in length property."
+        ],
+        "example": "let text = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\nlet length = text.length;"
+      },
+      {
+        "heading": "Escape Characters",
+        "paragraphs": [
+          "JavaScript uses escape characters to handle special characters inside strings."
+        ],
+        "invalid_example": "let text = \"We are the so-called \"Vikings\" from the north.\";",
+        "escape_table": [
+          { "code": "\\'", "result": "'", "description": "Single quote" },
+          { "code": "\\\"", "result": "\"", "description": "Double quote" },
+          { "code": "\\\\", "result": "\\", "description": "Backslash" }
+        ],
+        "examples": [
+          "let text = \"We are the so-called \\\"Vikings\\\" from the north.\";",
+          "let text = 'It\\'s alright.';",
+          "let text = \"The character \\\\ is called backslash.\";"
+        ],
+        "additional_escape_sequences": [
+          "\\b  Backspace",
+          "\\f  Form Feed",
+          "\\n  New Line",
+          "\\r  Carriage Return",
+          "\\t  Horizontal Tab",
+          "\\v  Vertical Tab"
+        ],
+        "note": "These escape characters were originally designed for typewriters and do not have meaning in HTML."
+      },
+      {
+        "heading": "Breaking Long Lines",
+        "paragraphs": [
+          "For readability, programmers often like to avoid long code lines."
+        ],
+        "examples": [
+          "document.getElementById(\"demo\").innerHTML =\n\"Hello Dolly!\";",
+          "document.getElementById(\"demo\").innerHTML = \"Hello \" +\n\"Dolly!\";"
+        ]
+      },
+      {
+        "heading": "Multiline Template Strings",
+        "paragraphs": ["Template strings allow multiline strings."],
+        "example": "let text = `The quick\nbrown fox\njumps over\nthe lazy dog`;"
+      },
+      {
+        "heading": "JavaScript Strings as Objects",
+        "paragraphs": [
+          "Normally, JavaScript strings are primitive values.",
+          "Strings can also be defined as objects using the new keyword.",
+          "Do not create String objects."
+        ],
+        "examples": ["let x = \"John\";", "let y = new String(\"John\");"],
+        "warnings": [
+          "The new keyword complicates code and slows execution.",
+          "String objects can produce unexpected results."
+        ],
+        "comparisons": [
+          "x == y  // true",
+          "x === y // false",
+          "new String(\"John\") === new String(\"John\") // false"
+        ]
+      },
+      {
+        "heading": "Exercise",
+        "question": "Which one of the following is not a legal JavaScript String?",
+        "options": [
+          "\"Hello world!\"",
+          "\"\"Hello world!\"\"",
+          "'Hello world!'",
+          "`Hello world!`"
+        ]
+      }
+    ]
+  },
+  "javascript-numbers": {
+    "title": "JavaScript Numbers",
+    "sections": [
+      {
+        "heading": "Number Types",
+        "paragraphs": [
+          "JavaScript has only one type of number.",
+          "Numbers can be written with or without decimals."
+        ],
+        "examples": [
+          {
+            "code": "let x = 3.14; // A number with decimals\nlet y = 3; // A number without decimals"
+          },
+          {
+            "description": "Scientific (exponent) notation",
+            "code": "let x = 123e5; // 12300000\nlet y = 123e-5; // 0.00123"
+          }
+        ]
+      },
+      {
+        "heading": "JavaScript Numbers are Always 64-bit Floating Point",
+        "paragraphs": [
+          "JavaScript does not define different types of numbers like integers or floats.",
+          "All numbers are stored as double precision floating point numbers following the IEEE 754 standard."
+        ],
+        "table": {
+          "columns": ["Value (Mantissa)", "Exponent", "Sign"],
+          "rows": [["52 bits (0–51)", "11 bits (52–62)", "1 bit (63)"]]
+        }
+      },
+      {
+        "heading": "Integer Precision",
+        "paragraphs": [
+          "Integers are accurate up to 15 digits.",
+          "The maximum number of decimals is 17."
+        ],
+        "examples": [
+          {
+            "code": "let x = 999999999999999;\nlet y = 9999999999999999;"
+          }
+        ]
+      },
+      {
+        "heading": "Floating Precision",
+        "paragraphs": [
+          "Floating point arithmetic is not always 100% accurate."
+        ],
+        "examples": [
+          {
+            "code": "let x = 0.2 + 0.1;"
+          },
+          {
+            "description": "Solution using multiplication and division",
+            "code": "let x = (0.2 * 10 + 0.1 * 10) / 10;"
+          }
+        ]
+      },
+      {
+        "heading": "Adding Numbers and Strings",
+        "warning": "The + operator is used for both addition and concatenation.",
+        "examples": [
+          {
+            "description": "Number addition",
+            "code": "let x = 10;\nlet y = 20;\nlet z = x + y;"
+          },
+          {
+            "description": "String concatenation",
+            "code": "let x = \"10\";\nlet y = \"20\";\nlet z = x + y;"
+          },
+          {
+            "description": "Number + String",
+            "code": "let x = 10;\nlet y = \"20\";\nlet z = x + y;"
+          }
+        ]
+      },
+      {
+        "heading": "Numeric Strings",
+        "paragraphs": [
+          "JavaScript converts numeric strings to numbers in arithmetic operations.",
+          "The + operator concatenates strings."
+        ],
+        "examples": [
+          {
+            "code": "let x = \"100\";\nlet y = \"10\";\nlet z = x / y;"
+          },
+          {
+            "code": "let x = \"100\";\nlet y = \"10\";\nlet z = x + y;"
+          }
+        ]
+      },
+      {
+        "heading": "NaN (Not a Number)",
+        "paragraphs": [
+          "NaN indicates a value that is not a legal number.",
+          "NaN is of type number."
+        ],
+        "examples": [
+          {
+            "code": "let x = 100 / \"Apple\";"
+          },
+          {
+            "code": "isNaN(x);"
+          },
+          {
+            "code": "typeof NaN;"
+          }
+        ]
+      },
+      {
+        "heading": "Infinity",
+        "paragraphs": [
+          "Infinity is returned when a number exceeds the largest possible value.",
+          "Division by zero generates Infinity."
+        ],
+        "examples": [
+          {
+            "code": "let x = 2 / 0;\nlet y = -2 / 0;"
+          },
+          {
+            "code": "typeof Infinity;"
+          }
+        ]
+      },
+      {
+        "heading": "Hexadecimal Numbers",
+        "paragraphs": [
+          "Hexadecimal numbers start with 0x.",
+          "Avoid leading zeros."
+        ],
+        "examples": [
+          {
+            "code": "let x = 0xFF;"
+          }
+        ]
+      },
+      {
+        "heading": "Number Base Conversion",
+        "examples": [
+          {
+            "code": "let myNumber = 32;\nmyNumber.toString(32);\nmyNumber.toString(16);\nmyNumber.toString(12);\nmyNumber.toString(10);\nmyNumber.toString(8);\nmyNumber.toString(2);"
+          }
+        ]
+      },
+      {
+        "heading": "JavaScript Numbers as Objects",
+        "paragraphs": [
+          "Numbers are normally primitive values.",
+          "Avoid using Number objects created with new."
+        ],
+        "examples": [
+          {
+            "code": "let x = 123;\nlet y = new Number(123);"
+          },
+          {
+            "description": "Comparison behavior",
+            "code": "let x = 500;\nlet y = new Number(500);\nx == y;\nx === y;"
+          }
+        ]
+      }
+    ],
+    "exercise": {
+      "question": "What will be the result of x + y?",
+      "code": "let x = 10;\nlet y = 20;\nlet z = x + y;",
+      "options": ["30", "1020", "30.00"],
+      "answer": "30"
+    }
+  },
+  "javascript-function-learning-path": {
+    "title": "JavaScript Function Learning Path",
+    "navigation": {
+      "previous": true,
+      "next": true
+    },
+    "overview": {
+      "title": "Functions Learning Path",
+      "description": "Learn functions in the right order:",
+      "steps": [
+        "First the idea",
+        "Then how to write them",
+        "Then how they behave"
+      ]
+    },
+    "learning_path": {
+      "beginner": [
+        {
+          "step": 1,
+          "title": "What is a Function?",
+          "description": "Functions are reusable code blocks.",
+          "why_use": "Why use functions?",
+          "level": "Beginner"
+        },
+        {
+          "step": 2,
+          "title": "Calling (Invoking) Functions",
+          "description": "How to run a function and how to use it.",
+          "level": "Beginner"
+        },
+        {
+          "step": 3,
+          "title": "Parameters and Arguments",
+          "description": "How to send values into a function.",
+          "level": "Beginner"
+        },
+        {
+          "step": 4,
+          "title": "Function Return Values",
+          "description": "How a function sends a value back.",
+          "level": "Beginner"
+        }
+      ],
+      "intermediate": [
+        {
+          "title": "Function Expressions",
+          "description": "A function expression is stored in a variable.",
+          "level": "Intermediate"
+        },
+        {
+          "title": "Arrow Functions",
+          "description": "A shorter function syntax, with some important differences.",
+          "level": "Intermediate"
+        },
+        {
+          "title": "IIFE (Advanced)",
+          "description": "Functions that run immediately (mostly historical, still useful sometimes).",
+          "level": "Intermediate"
+        },
+        {
+          "title": "Function Quiz",
+          "description": "Test your knowledge of JavaScript functions.",
+          "level": "Intermediate"
+        }
+      ]
+    },
+    "advanced_learning_path": {
+      "quick_start": [
+        "Understand this",
+        "Understand call()",
+        "Understand apply()",
+        "Understand bind()",
+        "Understand closures",
+        "Function advanced Quiz"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "The this Keyword",
+          "description": [
+            "How this works (especially inside objects).",
+            "How this is decided by how it is called."
+          ],
+          "level": "Advanced"
+        },
+        {
+          "step": 2,
+          "title": "call(): Set this and pass arguments",
+          "description": "Call a function with a chosen this value.",
+          "level": "Advanced"
+        },
+        {
+          "step": 3,
+          "title": "apply(): Like call(), but arguments as an array",
+          "description": "Use apply() when you already have an array of values.",
+          "level": "Advanced"
+        },
+        {
+          "step": 4,
+          "title": "bind(): Create a new function with fixed this",
+          "description": "Use bind() when you need a function to run later with the same this.",
+          "level": "Advanced"
+        },
+        {
+          "step": 5,
+          "title": "Closures: Functions Remember Their Scope",
+          "description": "Learn how functions can remember variables after the outer function finishes.",
+          "level": "Advanced"
+        },
+        {
+          "step": 6,
+          "title": "Function References and Callbacks",
+          "description": "Pass functions as values and avoid common callback mistakes.",
+          "level": "Advanced"
+        }
+      ]
+    },
+    "progress_tracking": {
+      "sign_in_required": true
+    }
+  },
+  "javascript-objects": {
+    "title": "JavaScript Objects",
+    "navigation": {
+      "previous": true,
+      "next": true
+    },
+    "introduction": {
+      "description": [
+        "An object is a variable that can hold many variables.",
+        "Objects are collections of key-value pairs where each key is a property name.",
+        "Objects can describe real-world entities like cars, houses, people, or animals."
+      ]
+    },
+    "object_example": {
+      "title": "Car Object",
+      "properties": {
+        "name": "Fiat",
+        "model": "500",
+        "weight": "850kg",
+        "color": "white"
+      },
+      "methods": ["start()", "drive()", "brake()", "stop()"],
+      "notes": [
+        "Different objects can have the same properties with different values.",
+        "Objects can share methods but execute them at different times."
+      ]
+    },
+    "object_creation": {
+      "title": "Creating JavaScript Objects",
+      "examples": [
+        {
+          "type": "object_literal",
+          "code": "const car = { type: \"Fiat\", model: \"500\", color: \"white\" };"
+        },
+        {
+          "type": "multiline_object_literal",
+          "code": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\"\n};"
+        },
+        {
+          "type": "empty_object",
+          "code": "const person = {};\nperson.firstName = \"John\";\nperson.lastName = \"Doe\";\nperson.age = 50;\nperson.eyeColor = \"blue\";"
+        }
+      ],
+      "notes": [
+        "Use const to declare objects.",
+        "const prevents reassignment but allows property modification."
+      ]
+    },
+    "using_new_keyword": {
+      "title": "Using the new Keyword",
+      "example": "const person = new Object({ firstName: \"John\", lastName: \"Doe\", age: 50, eyeColor: \"blue\" });",
+      "recommendation": "Object literals are preferred for readability, simplicity, and performance."
+    },
+    "object_properties": {
+      "title": "Accessing Object Properties",
+      "methods": ["objectName.propertyName", "objectName[\"propertyName\"]"],
+      "examples": ["person.lastName", "person[\"lastName\"]"]
+    },
+    "object_methods": {
+      "title": "JavaScript Object Methods",
+      "description": "Object methods are functions stored as property values.",
+      "example": {
+        "code": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  id: 5566,\n  fullName: function() {\n    return this.firstName + \" \" + this.lastName;\n  }\n};"
+      },
+      "this_keyword": "The keyword this refers to the current object."
+    },
+    "displaying_objects": {
+      "title": "Displaying JavaScript Objects",
+      "notes": [
+        "Displaying an object directly outputs [object Object].",
+        "Object properties should be accessed individually."
+      ],
+      "example": "let text = person.name + \",\" + person.age + \",\" + person.city;"
+    },
+    "constructor_functions": {
+      "title": "Object Constructor Functions",
+      "description": "Constructor functions allow creation of multiple objects of the same type.",
+      "example": {
+        "constructor": "function Person(first, last, age, eye) {\n  this.firstName = first;\n  this.lastName = last;\n  this.age = age;\n  this.eyeColor = eye;\n}",
+        "usage": [
+          "const myFather = new Person(\"John\", \"Doe\", 50, \"blue\");",
+          "const myMother = new Person(\"Sally\", \"Rally\", 48, \"green\");"
+        ]
+      },
+      "note": "Constructor function names should start with an uppercase letter."
+    },
+    "summary": {
+      "key_points": [
+        "Objects store properties and methods.",
+        "Properties are named values.",
+        "Methods are functions stored as properties.",
+        "Almost everything in JavaScript is an object."
+      ]
+    },
+    "primitives_vs_objects": {
+      "primitive_types": [
+        "string",
+        "number",
+        "boolean",
+        "bigint",
+        "null",
+        "undefined",
+        "symbol"
+      ],
+      "note": "All JavaScript values except primitives are objects."
+    },
+    "exercise": {
+      "question": "How many properties does the following object have?",
+      "code": "const car = { brand: \"Volvo\", model: \"EX90\" };",
+      "options": [0, 1, 2, 3],
+      "correct_answer": 2
+    },
+    "progress_tracking": {
+      "sign_in_required": true
+    }
+  },
+  "javascript-scope": {
+    "title": "JavaScript Scope",
+    "navigation": {
+      "previous": true,
+      "next": true
+    },
+    "introduction": {
+      "description": [
+        "Scope determines the accessibility (visibility) of variables.",
+        "JavaScript variables have three types of scope: Global, Function, and Block."
+      ]
+    },
+    "global_scope": {
+      "description": [
+        "Variables declared outside any block or function have Global Scope.",
+        "Global variables can be accessed from anywhere in the program."
+      ],
+      "examples": [
+        "var x = 1;    // Global scope",
+        "let y = 2;    // Global scope",
+        "const z = 3;  // Global scope",
+        "let carName = 'Volvo';\nfunction myFunction() {\n  // code can also access carName\n}"
+      ],
+      "notes": [
+        "All scripts and functions on the same page can access global variables."
+      ]
+    },
+    "function_scope": {
+      "description": [
+        "Variables defined inside a function are only accessible within that function.",
+        "They have Function Scope and are also called local variables."
+      ],
+      "examples": [
+        "function myFunction1() {\n  var carName = 'Volvo'; // Function scope\n}",
+        "function myFunction2() {\n  let carName = 'Volvo'; // Function scope\n}",
+        "function myFunction3() {\n  const carName = 'Volvo'; // Function scope\n}"
+      ],
+      "notes": [
+        "Local variables are created when the function starts and deleted when it finishes.",
+        "Arguments (parameters) act as local variables inside functions."
+      ]
+    },
+    "block_scope": {
+      "description": [
+        "Introduced in ES6 with let and const keywords.",
+        "Variables declared inside a block ({ }) are only accessible within that block."
+      ],
+      "examples": [
+        "{ let x = 2; } // x cannot be used here",
+        "{ var y = 2; } // y CAN be used here (not recommended)"
+      ],
+      "notes": ["Block scope helps prevent unintended variable overwrites."]
+    },
+    "automatically_global": {
+      "description": [
+        "Assigning a value to an undeclared variable makes it global (not recommended)."
+      ],
+      "example": [
+        "myFunction();\nfunction myFunction() {\n  carName = 'Volvo'; // Automatically global\n}"
+      ]
+    },
+    "strict_mode": {
+      "description": [
+        "Strict Mode prevents undeclared variables from becoming global."
+      ]
+    },
+    "global_variables_in_html": {
+      "description": [
+        "Global scope in HTML corresponds to the window object.",
+        "Variables declared with var belong to window, but let/const do not."
+      ],
+      "examples": [
+        "var carName = 'Volvo'; // window.carName exists",
+        "let carName = 'Volvo'; // window.carName does NOT exist"
+      ]
+    },
+    "warnings": {
+      "notes": [
+        "Do not create global variables unless intended.",
+        "Global variables can be overwritten by other scripts or window functions."
+      ]
+    },
+    "variable_lifetime": {
+      "description": [
+        "Variable lifetime starts when declared.",
+        "Function (local) variables are deleted when function ends.",
+        "Global variables in browsers are deleted when the browser/tab is closed."
+      ]
+    },
+    "exercise": {
+      "question": "Consider the following code:\nlet x = 5;\n{\n  let x = 3;\n}\nalert(x);\nWhat will be alerted?",
+      "options": [5, 3],
+      "correct_answer": 5
+    },
+    "progress_tracking": {
+      "sign_in_required": true
+    }
+  },
+  "javascript-dates": {
+    "title": "JavaScript Dates",
+    "navigation": {
+      "previous": true,
+      "next": true
+    },
+    "introduction": {
+      "description": [
+        "JavaScript Date Objects let us work with dates and times.",
+        "By default, JavaScript will use the browser's time zone and display a date as a full text string."
+      ]
+    },
+    "creating_date_objects": {
+      "description": [
+        "Date objects are created with the new Date() constructor.",
+        "There are 9 ways to create a new date object."
+      ],
+      "examples": [
+        "new Date()",
+        "new Date(dateString)",
+        "new Date(year, month)",
+        "new Date(year, month, day)",
+        "new Date(year, month, day, hours)",
+        "new Date(year, month, day, hours, minutes)",
+        "new Date(year, month, day, hours, minutes, seconds)",
+        "new Date(year, month, day, hours, minutes, seconds, ms)",
+        "new Date(milliseconds)"
+      ]
+    },
+    "notes": {
+      "description": [
+        "Date objects are static. They do not automatically update as time passes.",
+        "Months are zero-indexed: January = 0, December = 11.",
+        "Specifying values higher than valid ranges results in overflow to the next unit (month/year).",
+        "One and two digit years are interpreted as 19xx."
+      ]
+    },
+    "examples": {
+      "current_date": "const d = new Date();",
+      "specific_date_string": [
+        "const d = new Date('October 13, 2014 11:13:00');",
+        "const d = new Date('2022-03-25');"
+      ],
+      "specific_date_numbers": [
+        "const d = new Date(2018, 11, 24, 10, 33, 30, 0);",
+        "const d = new Date(2018, 15, 24, 10, 33, 30); // overflow example"
+      ],
+      "milliseconds": [
+        "const d = new Date(100000000000); // 100 billion ms after Jan 1, 1970",
+        "const d = new Date(-100000000000); // 100 billion ms before Jan 1, 1970"
+      ]
+    },
+    "date_methods": {
+      "description": [
+        "Date methods allow you to get and set the year, month, day, hour, minute, second, and millisecond of date objects.",
+        "You can use local time or UTC (universal) time."
+      ],
+      "displaying_dates": [
+        "toString(): Converts date to string including time zone.",
+        "toDateString(): Converts date to a more readable format.",
+        "toUTCString(): Converts date to UTC standard.",
+        "toISOString(): Converts date to ISO standard."
+      ]
+    },
+    "exercise": {
+      "question": "What date is created with the following code: const d = new Date(2024, 10, 18); ?",
+      "options": [
+        "October 18, 2024",
+        "November 18, 2024",
+        "October 19, 2024",
+        "November 19, 2024"
+      ],
+      "correct_answer": "November 18, 2024"
+    },
+    "progress_tracking": {
+      "sign_in_required": true
+    }
+  },
+  "javascript-arrays": {
+    "title": "JavaScript Arrays",
+    "navigation": {
+      "previous": true,
+      "next": true
+    },
+    "introduction": {
+      "description": [
+        "An Array is an object type designed for storing data collections.",
+        "Elements are ordered and zero-indexed.",
+        "Arrays are dynamic in size and can hold heterogeneous elements (numbers, strings, objects, or even other arrays)."
+      ]
+    },
+    "why_use_arrays": {
+      "description": [
+        "Arrays let you store many values under a single name and access them using an index.",
+        "This makes it easy to loop through lists and manage large collections."
+      ]
+    },
+    "creating_arrays": {
+      "array_literal": {
+        "description": "The easiest way to create an array is using an array literal.",
+        "syntax": "const array_name = [item1, item2, ...];",
+        "example": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];",
+        "multi_line_example": "const cars = [\n  \"Saab\",\n  \"Volvo\",\n  \"BMW\"\n];"
+      },
+      "empty_array_and_later_assignment": {
+        "example": "const cars = [];\ncars[0] = \"Saab\";\ncars[1] = \"Volvo\";\ncars[2] = \"BMW\";"
+      },
+      "using_new_keyword": {
+        "example": "const cars = new Array(\"Saab\", \"Volvo\", \"BMW\");",
+        "note": "Using 'new Array()' is equivalent, but array literal syntax is recommended for simplicity and speed."
+      }
+    },
+    "accessing_and_modifying_elements": {
+      "access": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];\nlet car = cars[0]; // Access first element",
+      "modify": "cars[0] = \"Opel\"; // Change first element"
+    },
+    "array_to_string": {
+      "description": "The toString() method converts an array to a comma-separated string.",
+      "example": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\ndocument.getElementById(\"demo\").innerHTML = fruits.toString(); // Result: Banana,Orange,Apple,Mango"
+    },
+    "full_array_access": {
+      "example": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];\ndocument.getElementById(\"demo\").innerHTML = cars;"
+    },
+    "arrays_are_objects": {
+      "description": [
+        "Arrays are special types of objects. typeof returns 'object'.",
+        "Arrays use numbers for indexing elements, while objects use named keys.",
+        "Arrays can contain objects, functions, or other arrays as elements."
+      ],
+      "examples": [
+        "const personArray = [\"John\", \"Doe\", 46]; // Array element access: personArray[0] returns 'John'",
+        "const personObject = {firstName:\"John\", lastName:\"Doe\", age:46}; // Object property access: personObject.firstName returns 'John'"
+      ]
+    },
+    "array_properties_and_methods": {
+      "description": [
+        "JavaScript arrays have built-in properties and methods.",
+        "The most commonly used are 'length' and 'sort()'."
+      ],
+      "examples": [
+        "cars.length // Returns number of elements",
+        "cars.sort() // Sorts the array"
+      ]
+    },
+    "progress_tracking": {
+      "sign_in_required": true
+    }
+  },
+  "javascript-sets": {
+    "title": "JavaScript Sets",
+    "navigation": {
+      "previous": true,
+      "next": true
+    },
+    "introduction": {
+      "description": [
+        "A JavaScript Set is a collection of unique values.",
+        "Each value can occur only once in a Set.",
+        "The values can be of any type: primitives or objects."
+      ]
+    },
+    "creating_sets": {
+      "methods": [
+        {
+          "method": "Pass an array to new Set()",
+          "example": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);"
+        },
+        {
+          "method": "Create an empty set and add values with add()",
+          "example": "// Create a Set\nconst letters = new Set();\nletters.add(\"a\");\nletters.add(\"b\");\nletters.add(\"c\");"
+        },
+        {
+          "method": "Create variables and add them to a Set",
+          "example": "// Create a Set\nconst letters = new Set();\nconst a = \"a\";\nconst b = \"b\";\nconst c = \"c\";\nletters.add(a);\nletters.add(b);\nletters.add(c);"
+        }
+      ]
+    },
+    "add_method": {
+      "description": "The add() method adds a new value to the Set. Duplicate values are ignored.",
+      "example": "letters.add(\"d\");\nletters.add(\"e\");\nletters.add(\"c\"); // Will not be added again"
+    },
+    "listing_elements": {
+      "description": "You can list all Set elements using a for..of loop.",
+      "example": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);\nlet text = \"\";\nfor (const x of letters) {\n  text += x;\n}"
+    },
+    "sets_are_objects": {
+      "description": [
+        "Sets are special types of objects.",
+        "typeof returns 'object'.",
+        "instanceof Set returns true."
+      ],
+      "examples": [
+        "typeof letters; // Returns 'object'",
+        "letters instanceof Set; // Returns true"
+      ]
+    },
+    "notes": {
+      "description": [
+        "Set is an ES6 feature and fully supported in all modern browsers since 2017.",
+        "You should use Sets when you need to store unique values and prevent duplicates."
+      ]
+    },
+    "learn_more": [
+      "JavaScript Set Methods",
+      "JavaScript Set Logic",
+      "JavaScript Weak Sets",
+      "JavaScript Set Reference",
+      "JavaScript Maps"
+    ],
+    "progress_tracking": {
+      "sign_in_required": true
+    }
+  },
+  "javascript-maps": {
+    "title": "JavaScript Maps",
+    "navigation": {
+      "previous": true,
+      "next": true
+    },
+    "introduction": {
+      "description": [
+        "A JavaScript Map is an object that can store collections of key-value pairs, similar to a dictionary in other languages.",
+        "Map keys can be of any data type.",
+        "Maps remember the original insertion order of keys.",
+        "Maps are optimized for frequent additions and removals of key-value pairs."
+      ]
+    },
+    "map_characteristics": {
+      "key_types": "Map keys can be any type (strings, numbers, objects, etc).",
+      "insertion_order": "The Map remembers the original insertion order of the keys.",
+      "size": "The number of items in a Map is retrieved using the size property.",
+      "performance": "Maps are optimized for frequent additions and removals of key-value pairs.",
+      "iteration": "Maps are iterable, allowing for for...of loops or methods like forEach()."
+    },
+    "creating_maps": {
+      "methods": [
+        {
+          "method": "Create an empty Map and add elements with set()",
+          "example": "// Create an empty Map\nconst fruits = new Map();\nfruits.set(\"apples\", 500);\nfruits.set(\"bananas\", 300);\nfruits.set(\"oranges\", 200);"
+        },
+        {
+          "method": "Pass an existing array to the Map constructor",
+          "example": "// Create a Map with an array\nconst fruits = new Map([\n  [\"apples\", 500],\n  [\"bananas\", 300],\n  [\"oranges\", 200]\n]);"
+        }
+      ]
+    },
+    "adding_and_changing_values": {
+      "description": "You can add or change elements using the set() method.",
+      "examples": [
+        "fruits.set(\"mangos\", 100); // Adds a new key-value pair",
+        "fruits.set(\"apples\", 200); // Changes the value of an existing key"
+      ]
+    },
+    "getting_values": {
+      "description": "Use the get() method to retrieve the value of a key.",
+      "example": "fruits.get(\"apples\"); // Returns 200"
+    },
+    "maps_are_objects": {
+      "description": "Maps are objects. You can check using typeof and instanceof.",
+      "examples": [
+        "typeof fruits; // Returns 'object'",
+        "fruits instanceof Map; // Returns true"
+      ]
+    },
+    "objects_vs_maps": {
+      "comparison": [
+        {
+          "feature": "Iteration",
+          "object": "Not directly iterable",
+          "map": "Directly iterable"
+        },
+        {
+          "feature": "Size property",
+          "object": "Do not have a size property",
+          "map": "Have a size property"
+        },
+        {
+          "feature": "Key types",
+          "object": "Keys must be Strings or Symbols",
+          "map": "Keys can be any datatype"
+        },
+        {
+          "feature": "Key order",
+          "object": "Keys are not well ordered",
+          "map": "Keys are ordered by insertion"
+        },
+        {
+          "feature": "Default keys",
+          "object": "Have default keys",
+          "map": "Do not have default keys"
+        }
+      ]
+    },
+    "notes": {
+      "description": [
+        "Map is an ES6 feature and fully supported in all modern browsers since 2017.",
+        "Use Maps when you need key-value collections that are iterable and preserve insertion order."
+      ]
+    },
+    "learn_more": [
+      "JavaScript Map Methods",
+      "JavaScript Weak Maps",
+      "JavaScript Map Reference",
+      "JavaScript Sets"
+    ],
+    "progress_tracking": {
+      "sign_in_required": true
+    }
+  },
+  "javascript-math": {
+    "title": "JavaScript Math Object",
+    "navigation": {
+      "previous": true,
+      "next": true
+    },
+    "introduction": {
+      "description": [
+        "The JavaScript Math object allows you to perform mathematical tasks.",
+        "The Math object is static: all methods and properties can be used without creating a Math object first."
+      ],
+      "example": "Math.PI;"
+    },
+    "properties": {
+      "description": "JavaScript provides 8 mathematical constants that can be accessed as Math properties.",
+      "constants": {
+        "Math.E": "Euler's number",
+        "Math.PI": "PI",
+        "Math.SQRT2": "Square root of 2",
+        "Math.SQRT1_2": "Square root of 1/2",
+        "Math.LN2": "Natural logarithm of 2",
+        "Math.LN10": "Natural logarithm of 10",
+        "Math.LOG2E": "Base 2 logarithm of E",
+        "Math.LOG10E": "Base 10 logarithm of E"
+      }
+    },
+    "methods": {
+      "rounding": {
+        "description": "4 common methods to round a number to an integer.",
+        "Math.round": "Returns x rounded to the nearest integer",
+        "Math.ceil": "Returns x rounded up to the nearest integer",
+        "Math.floor": "Returns x rounded down to the nearest integer",
+        "Math.trunc": "Returns the integer part of x (ES6)"
+      },
+      "sign": {
+        "description": "Returns if x is negative, zero, or positive",
+        "example": {
+          "Math.sign(-4)": -1,
+          "Math.sign(0)": 0,
+          "Math.sign(4)": 1
+        },
+        "note": "Math.trunc() and Math.sign() were added in ES6"
+      },
+      "power_and_root": {
+        "Math.pow": "Returns x to the power of y, e.g., Math.pow(8,2)",
+        "Math.sqrt": "Returns the square root of x, e.g., Math.sqrt(64)",
+        "Math.abs": "Returns the absolute value of x, e.g., Math.abs(-4.7)"
+      },
+      "trigonometry": {
+        "Math.sin": "Returns sine of angle x in radians, e.g., Math.sin(90 * Math.PI / 180) = 1",
+        "Math.cos": "Returns cosine of angle x in radians, e.g., Math.cos(0 * Math.PI / 180) = 1",
+        "note": "Convert degrees to radians using: radians = degrees * PI / 180"
+      },
+      "min_max_random": {
+        "Math.min": "Returns lowest value in arguments, e.g., Math.min(0,150,30,-8,-200)",
+        "Math.max": "Returns highest value in arguments, e.g., Math.max(0,150,30,-8,-200)",
+        "Math.random": "Returns a random number between 0 (inclusive) and 1 (exclusive)"
+      },
+      "logarithms": {
+        "Math.log": "Returns natural logarithm of x, e.g., Math.log(2)",
+        "Math.log2": "Returns base 2 logarithm of x, e.g., Math.log2(8)",
+        "Math.log10": "Returns base 10 logarithm of x, e.g., Math.log10(1000)"
+      }
+    },
+    "exercise": {
+      "question": "What is a correct syntax for rounding down a number to its nearest integer?",
+      "options": [
+        "Math.roundDown(4.9)",
+        "Math.floor(4.9)",
+        "Math.abs(4.9)",
+        "Math.min(4.9)"
+      ],
+      "answer": "Math.floor(4.9)"
+    },
+    "notes": [
+      "All Math methods are static.",
+      "Math.trunc() and Math.sign() are part of ES6."
+    ],
+    "progress_tracking": {
+      "sign_in_required": true
+    }
+  },
+  "javascript-regexp": {
+    "title": "JavaScript RegExp",
+    "introduction": {
+      "description": [
+        "A Regular Expression is a sequence of characters that forms a search pattern.",
+        "Regex is a common shorthand for a regular expression.",
+        "JavaScript RegExp is an object for handling Regular Expressions.",
+        "RegExp are used for text searching, replacing, and validation."
+      ],
+      "example": "let text = 'Visit W3Schools'; let n = text.search(/w3schools/i);"
+    },
+    "syntax": "/pattern/modifier flags",
+    "string_methods": {
+      "match": "Returns an array of results",
+      "replace": "Returns a new string",
+      "search": "Returns the index of the first match"
+    },
+    "examples": {
+      "match": "let n = text.match(/W3schools/);",
+      "replace": "let result = text.replace(/Microsoft/i, 'W3Schools');",
+      "search": "let n = text.search(/W3Schools/);"
+    },
+    "alternation": {
+      "description": "An alternation uses | to match any of the alternatives.",
+      "example": "let result = text.match(/red|green|blue/g);"
+    },
+    "flags": {
+      "g": "Performs a global match (find all occurrences)",
+      "i": "Performs case-insensitive matching",
+      "u": "Enables Unicode support (ES6)"
+    },
+    "metacharacters": {
+      "\\d": "Matches digits",
+      "\\w": "Matches word characters (a-z, A-Z, 0-9, _)",
+      "\\s": "Matches spaces"
+    },
+    "quantifiers": {
+      "x*": "Matches zero or more occurrences of x",
+      "x?": "Matches zero or one occurrences of x",
+      "x{n}": "Matches exactly n occurrences of x",
+      "example": "let result = text.match(/10?/g); // matches '1' followed by 0 zero or one times"
+    },
+    "assertions": {
+      "^": "Matches the beginning of a string",
+      "$": "Matches the end of a string",
+      "\\b": "Matches word boundaries",
+      "(?=...)": "Lookahead assertion",
+      "(?<=...)": "Lookbehind assertion",
+      "example_start": "let result = /^W3Schools/.test('W3Schools Tutorial'); // true",
+      "example_end": "let result = /W3Schools$/.test('Hello W3Schools'); // true"
+    },
+    "character_classes": {
+      "[abc]": "Matches any character a, b, or c",
+      "[a-z]": "Matches all characters from a to z",
+      "[0-9]": "Matches all digits from 0 to 9",
+      "example": "let result = text.match(/[0-9]/g);"
+    },
+    "exercise": {
+      "question": "What does the i modifier represent in Regular Expressions?",
+      "options": [
+        "Perform global matching (find all occurrences)",
+        "Perform case-sensitive matching",
+        "Perform case-insensitive matching"
+      ],
+      "answer": "Perform case-insensitive matching"
+    },
+    "learn_more": [
+      "JavaScript RegExp Flags",
+      "JavaScript RegExp Metacharacters",
+      "JavaScript RegExp Assertions",
+      "JavaScript RegExp Quantifiers",
+      "JavaScript RegExp Patterns",
+      "JavaScript RegExp Objects",
+      "JavaScript RegExp Methods"
+    ]
+  },
+  "javascript-data-types": {
+    "title": "JavaScript Data Types",
+    "introduction": {
+      "description": "A JavaScript variable can hold 8 types of data: 7 primitive types and 1 object type. The object type can hold many different objects."
+    },
+    "types": [
+      {
+        "type": "Number",
+        "description": "A number representing a mathematical value",
+        "example": "let length = 16; let weight = 7.5;"
+      },
+      {
+        "type": "BigInt",
+        "description": "A number representing a large integer",
+        "example": "let x = 1234567890123456789012345n; let y = BigInt(1234567890123456789012345);"
+      },
+      {
+        "type": "String",
+        "description": "A text of characters enclosed in quotes",
+        "example": "let color = 'Yellow'; let lastName = 'Johnson';"
+      },
+      {
+        "type": "Boolean",
+        "description": "A data type representing true or false",
+        "example": "let x = true; let y = false;"
+      },
+      {
+        "type": "Undefined",
+        "description": "A primitive variable with no assigned value",
+        "example": "let x; let y;"
+      },
+      {
+        "type": "Null",
+        "description": "A primitive value representing object absence",
+        "example": "let x = null; let y = null;"
+      },
+      {
+        "type": "Symbol",
+        "description": "A unique and primitive identifier",
+        "example": "const x = Symbol(); const y = Symbol();"
+      },
+      {
+        "type": "Object",
+        "description": "A collection of key-value pairs of data",
+        "examples": {
+          "object": "const person = {firstName:'John', lastName:'Doe'};",
+          "array": "const cars = ['Saab', 'Volvo', 'BMW'];",
+          "date": "const date = new Date('2022-03-25');"
+        }
+      }
+    ],
+    "concept": {
+      "description": "Data types are important to safely operate on variables. JavaScript treats operations depending on types, e.g., adding a number and string concatenates them as strings.",
+      "example1": "let x = 16 + 'Volvo'; // '16Volvo'",
+      "example2": "let x = 'Volvo' + 16; // 'Volvo16'",
+      "example3": "let x = 16 + 4 + 'Volvo'; // '20Volvo'",
+      "example4": "let x = 'Volvo' + 16 + 4; // 'Volvo164'"
+    },
+    "dynamic-types": {
+      "description": "JavaScript has dynamic types; a variable can hold different types at different times.",
+      "example": "let x; x = 5; x = 'John';"
+    },
+    "strings": {
+      "description": "Strings are series of characters, enclosed in single or double quotes.",
+      "examples": {
+        "doubleQuotes": "let carName1 = 'Volvo XC60';",
+        "singleQuotes": "let carName2 = 'Volvo XC60';",
+        "quotesInside": [
+          "let answer1 = \"It's alright\";",
+          "let answer2 = \"He is called 'Johnny'\";",
+          "let answer3 = 'He is called \"Johnny\"';"
+        ]
+      },
+      "methods_reference": [
+        "JavaScript String Methods",
+        "JavaScript String Search",
+        "JavaScript String Reference"
+      ]
+    },
+    "numbers": {
+      "description": "All JavaScript numbers are stored as 64-bit floating-point decimals.",
+      "examples": {
+        "withDecimals": "let x1 = 34.00;",
+        "withoutDecimals": "let x2 = 34;"
+      },
+      "exponentialNotation": {
+        "description": "Extra large or small numbers can be written using exponential notation.",
+        "examples": ["let y = 123e5; // 12300000", "let z = 123e-5; // 0.00123"]
+      },
+      "note": "JavaScript numbers are always 64-bit floating point (double)."
+    },
+    "bigint": {
+      "description": "BigInt can store integer values too large for normal Number.",
+      "example": "let x = BigInt('123456789012345678901234567890');"
+    },
+    "learn_more": [
+      "JavaScript Numbers Tutorial",
+      "JavaScript Number Methods",
+      "JavaScript Number Properties",
+      "JavaScript BigInt"
+    ]
+  },
+  "javascript-errors": {
+    "title": "JavaScript Errors",
+    "introduction": {
+      "description": "When executing JavaScript code, different errors can occur due to coding mistakes, invalid input, or unforeseen issues. Common error types include Reference, Type, Range, URI, Syntax, and Eval errors."
+    },
+    "error-types": [
+      {
+        "type": "ReferenceError",
+        "description": "Occurs if you reference a variable that does not exist.",
+        "examples": [
+          {
+            "code": "fname = foo;",
+            "error": "foo is not defined"
+          },
+          {
+            "code": "let x = y;\nlet y = 5;",
+            "error": "Cannot access y before initialization"
+          },
+          {
+            "code": "let x = 5;\ntry { x = y + 1; } catch(err) { let text = err.name; }",
+            "error": "y is not defined"
+          }
+        ]
+      },
+      {
+        "type": "TypeError",
+        "description": "Occurs when a value is of the wrong type or an operation is invalid for that type.",
+        "examples": [
+          {
+            "code": "Anna(5);",
+            "error": "Anna is not a function"
+          },
+          {
+            "code": "let num = 1;\nnum.toUpperCase();",
+            "error": "num.toUpperCase is not a function"
+          }
+        ]
+      },
+      {
+        "type": "RangeError",
+        "description": "Occurs when a value is out of its valid range.",
+        "examples": [
+          {
+            "code": "new Array(-1);",
+            "error": "Invalid array length"
+          },
+          {
+            "code": "let num = 1;\nnum.toPrecision(500);",
+            "error": "toPrecision() argument must be between 1 and 100"
+          }
+        ]
+      },
+      {
+        "type": "URIError",
+        "description": "Occurs if illegal characters are used in URI functions.",
+        "examples": [
+          {
+            "code": "decodeURI('%%%');",
+            "error": "URI malformed"
+          }
+        ]
+      },
+      {
+        "type": "SyntaxError",
+        "description": "Occurs when code violates JavaScript grammar rules. Syntax errors happen before runtime and are not catchable by try...catch.",
+        "examples": [
+          {
+            "code": "let fName = \"John);",
+            "error": "Invalid or unexpected token )"
+          },
+          {
+            "code": "Math.round(4.6;",
+            "error": "Missing ) after argument list"
+          }
+        ],
+        "note": "The JavaScript engine throws a SyntaxError before running the script. try...catch cannot catch syntax errors."
+      },
+      {
+        "type": "EvalError",
+        "description": "Indicates an error in the eval() function. Modern JavaScript does not throw EvalError; use SyntaxError instead."
+      }
+    ],
+    "handling-errors": {
+      "description": "The try statement defines a block of code to test for errors. The catch statement defines a block of code to handle errors if they occur.",
+      "syntax": "try { /* code to try */ } catch(err) { /* code to handle errors */ }"
+    },
+    "learn-more": [
+      "JavaScript Silent Errors",
+      "JavaScript Error Statements",
+      "JavaScript Error Object",
+      "JavaScript Debugging"
+    ],
+    "exercise": {
+      "question": "Only one of the following words is a legal JavaScript statement, which one?",
+      "options": ["find", "check", "try", "execute"],
+      "answer": "try"
+    }
+  },
+  "javascript-style-guide": {
+    "title": "JavaScript Style Guide",
+    "introduction": {
+      "description": "Always use consistent coding conventions for all your JavaScript projects to improve readability and maintainability."
+    },
+    "coding-conventions": {
+      "purpose": ["Improve code readability", "Make code maintenance easier"],
+      "components": [
+        "Naming and declaration rules for variables and functions",
+        "Rules for white space, indentation, and comments",
+        "Programming practices and principles"
+      ]
+    },
+    "variables": {
+      "naming": "Use camelCase for variable and function names. All names start with a letter.",
+      "examples": {
+        "firstName": "\"John\"",
+        "lastName": "\"Doe\"",
+        "price": 19.9,
+        "tax": 0.2,
+        "fullPrice": "price + (price * tax)"
+      }
+    },
+    "operators": {
+      "guideline": "Always put spaces around operators (=, +, -, *, /) and after commas",
+      "example": "let x = y + z;\nconst myArray = [\"Volvo\", \"Saab\", \"Fiat\"];"
+    },
+    "indentation": {
+      "guideline": "Use 2 spaces for indentation. Do not use tabs.",
+      "examples": {
+        "function": "function toCelsius(fahrenheit) {\n  return (5 / 9) * (fahrenheit - 32);\n}"
+      }
+    },
+    "statements": {
+      "simple-statements": "Always end with a semicolon.",
+      "complex-statements": {
+        "rules": [
+          "Put the opening bracket at the end of the first line with one space before it",
+          "Closing bracket on a new line without leading spaces",
+          "Do not end a complex statement with a semicolon"
+        ],
+        "examples": {
+          "function": "function toCelsius(fahrenheit) {\n  return (5 / 9) * (fahrenheit - 32);\n}",
+          "loop": "for (let i = 0; i < 5; i++) {\n  x += i;\n}",
+          "conditional": "if (time < 20) {\n  greeting = \"Good day\";\n} else {\n  greeting = \"Good evening\";\n}"
+        }
+      }
+    },
+    "objects": {
+      "rules": [
+        "Opening bracket on same line as object name",
+        "Use colon plus one space between property and value",
+        "Quotes around string values, not numeric values",
+        "No comma after the last property",
+        "Closing bracket on new line",
+        "End object definition with a semicolon"
+      ],
+      "examples": {
+        "multi-line": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\"\n};",
+        "single-line": "const person = {firstName:\"John\", lastName:\"Doe\", age:50, eyeColor:\"blue\"};"
+      }
+    },
+    "line-length": {
+      "guideline": "Avoid lines longer than 80 characters. Break lines after operators or commas.",
+      "example": "document.getElementById(\"demo\").innerHTML =\n\"Hello Dolly.\";"
+    },
+    "naming-conventions": {
+      "variables-functions": "camelCase",
+      "global-variables": "UPPERCASE",
+      "constants": "UPPERCASE",
+      "avoid": ["hyphens in JS names", "starting names with $"]
+    },
+    "loading-scripts": {
+      "guideline": "Use simple syntax for external scripts. type attribute is not necessary.",
+      "example": "<script src=\"myscript.js\"></script>"
+    },
+    "html-elements": {
+      "guideline": "Use consistent naming between HTML IDs and JavaScript references.",
+      "example": "const obj = getElementById(\"demo\");"
+    },
+    "file-extensions": {
+      "html": ".html (.htm allowed)",
+      "css": ".css",
+      "javascript": ".js",
+      "guideline": "Use lower case file names for consistency and server compatibility"
+    },
+    "performance": {
+      "note": "Coding conventions improve readability. Indentation and spaces have little effect on performance. Minify production scripts for efficiency."
+    }
+  },
+  "javascript-statements": {
+    "title": "JavaScript Statements",
+    "introduction": {
+      "description": "JavaScript statements start with a statement identifier to indicate the action to be performed. Statement identifiers are reserved words and cannot be used as variable names or for other purposes."
+    },
+    "complete-statements-reference": {
+      "revised": "July 2025",
+      "statements": [
+        { "statement": "{ }", "description": "Creates a block of statements" },
+        {
+          "statement": "async function",
+          "description": "Creates an AsyncFunction object"
+        },
+        {
+          "statement": "async function*",
+          "description": "Creates an AsyncGeneratorFunction object"
+        },
+        {
+          "statement": "await using",
+          "description": "Declares local variables that are asynchronously disposed"
+        },
+        { "statement": "break", "description": "Exits a switch or a loop" },
+        { "statement": "class", "description": "Declares a class" },
+        {
+          "statement": "const",
+          "description": "Declares a variable with a constant value"
+        },
+        {
+          "statement": "continue",
+          "description": "Breaks one iteration (in the loop) if a specified condition occurs, and continues with the next iteration in the loop"
+        },
+        {
+          "statement": "debugger",
+          "description": "Stops the execution of JavaScript, and calls (if available) the debugging function"
+        },
+        {
+          "statement": "do...while",
+          "description": "Executes a block of statements and repeats the block while a condition is true"
+        },
+        {
+          "statement": "for",
+          "description": "Loops through a block of code a number of times"
+        },
+        {
+          "statement": "for...in",
+          "description": "Loops through the properties of an object"
+        },
+        {
+          "statement": "for...of",
+          "description": "Loops through the values of an iterable object"
+        },
+        {
+          "statement": "for await...of",
+          "description": "Loops over async iterable objects"
+        },
+        { "statement": "function", "description": "Declares a function" },
+        {
+          "statement": "function*",
+          "description": "Creates a GeneratorFunction object"
+        },
+        {
+          "statement": "if...else...else if",
+          "description": "Marks a block of statements to be executed depending on a condition"
+        },
+        {
+          "statement": "import",
+          "description": "Defines a read-only import of a module"
+        },
+        {
+          "statement": "import attributes",
+          "description": "Defines how a module should be loaded"
+        },
+        { "statement": "let", "description": "Declares a variable" },
+        {
+          "statement": "return",
+          "description": "Stops the execution of a function and returns a value"
+        },
+        {
+          "statement": "switch",
+          "description": "Marks a block of statements to be executed depending on different cases"
+        },
+        { "statement": "throw", "description": "Throws (generates) an error" },
+        {
+          "statement": "try...catch...finally",
+          "description": "Marks the block of statements to be executed when an error occurs in a try block, and implements error handling"
+        },
+        {
+          "statement": "using",
+          "description": "Declares local variables that are synchronously disposed"
+        },
+        { "statement": "var", "description": "Declares a variable" },
+        {
+          "statement": "while",
+          "description": "Marks a block of statements to be executed while a condition is true"
+        }
+      ]
+    },
+    "see-also": ["Tutorial: JavaScript Statements"]
+  }
+}

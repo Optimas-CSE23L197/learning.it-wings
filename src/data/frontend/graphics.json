@@ -1075,12 +1075,1003 @@
                                                                                       ]
                                                                                     }
                                                                                   ]
-                                                                                }
-                                                                              }
+                                                                                },
+                                                                                
+                                                                                  "svg-shadow1": {
+                                                                                    "title": "SVG Drop Shadow 1",
+                                                                                    "description": "The <feDropShadow> filter is used to create a drop shadow effect on SVG elements.",
+                                                                                    "example": {
+                                                                                      "code": "<svg height=\"110\" width=\"110\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <filter id=\"f1\">\n      <feDropShadow dx=\"12\" dy=\"14\" stdDeviation=\"1\" flood-opacity=\"0.7\" />\n    </filter>\n  </defs>\n  <rect width=\"90\" height=\"90\" fill=\"yellow\" filter=\"url(#f1)\" />\n</svg>"
+                                                                                    },
+                                                                                    "attributes": [
+                                                                                      {
+                                                                                        "name": "id",
+                                                                                        "description": "Defines a unique name for the filter"
+                                                                                      },
+                                                                                      {
+                                                                                        "name": "dx",
+                                                                                        "description": "Defines the horizontal offset of the drop shadow"
+                                                                                      },
+                                                                                      {
+                                                                                        "name": "dy",
+                                                                                        "description": "Defines the vertical offset of the drop shadow"
+                                                                                      },
+                                                                                      {
+                                                                                        "name": "stdDeviation",
+                                                                                        "description": "Defines the blur amount of the shadow"
+                                                                                      },
+                                                                                      {
+                                                                                        "name": "flood-opacity",
+                                                                                        "description": "Defines the opacity of the shadow (0 to 1)"
+                                                                                      },
+                                                                                      {
+                                                                                        "name": "filter",
+                                                                                        "description": "Applies the filter to the SVG element using the filter ID"
+                                                                                      }
+                                                                                    ],
+                                                                                    "notes": [
+                                                                                      "The <filter> element must be inside <defs>",
+                                                                                      "The filter is applied using the filter attribute",
+                                                                                      "Drop shadow effects work on SVG shapes like rect, circle, text, etc."
+                                                                                    ],
+                                                                                    "platform": {
+                                                                                      "provider": "W3Schools",
+                                                                                      "copyright": "1999–2026 Refsnes Data",
+                                                                                      "powered_by": "W3.CSS"
+                                                                                    }
+                                                                                  },
+                                                                                    "svg-shadow2": {
+                                                                                      "title": "SVG Drop Shadow 2",
+                                                                                      "description": "The <feOffset> filter is used to create a drop shadow by shifting an element in the X and Y directions. It is often combined with <feBlend>, <feGaussianBlur>, and <feColorMatrix> for advanced shadow effects.",
+                                                                                      
+                                                                                      "sections": [
+                                                                                        {
+                                                                                          "title": "Basic Drop Shadow using feOffset and feBlend",
+                                                                                          "description": "Offsets the original graphic and blends it with the original element.",
+                                                                                          "example": {
+                                                                                            "code": "<svg height=\"150\" width=\"150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <filter id=\"f1\" width=\"120\" height=\"120\">\n      <feOffset in=\"SourceGraphic\" dx=\"20\" dy=\"20\" />\n      <feBlend in=\"SourceGraphic\" in2=\"offOut\" />\n    </filter>\n  </defs>\n  <rect width=\"90\" height=\"90\" stroke=\"green\" stroke-width=\"3\" fill=\"yellow\" filter=\"url(#f1)\" />\n</svg>"
+                                                                                          },
+                                                                                          "notes": [
+                                                                                            "dx defines horizontal offset",
+                                                                                            "dy defines vertical offset",
+                                                                                            "feBlend merges original and offset graphics"
+                                                                                          ]
+                                                                                        },
+                                                                                        {
+                                                                                          "title": "Blurred Shadow using feGaussianBlur",
+                                                                                          "description": "Adds blur to the shadow to create a smooth shadow effect.",
+                                                                                          "example": {
+                                                                                            "code": "<svg height=\"150\" width=\"150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <filter id=\"f2\" width=\"120\" height=\"120\">\n      <feOffset in=\"SourceGraphic\" dx=\"20\" dy=\"20\" />\n      <feGaussianBlur stdDeviation=\"10\" />\n      <feBlend in=\"SourceGraphic\" in2=\"blurOut\" />\n    </filter>\n  </defs>\n  <rect width=\"90\" height=\"90\" stroke=\"green\" stroke-width=\"3\" fill=\"yellow\" filter=\"url(#f2)\" />\n</svg>"
+                                                                                          },
+                                                                                          "notes": [
+                                                                                            "stdDeviation controls blur intensity",
+                                                                                            "Higher values create softer shadows"
+                                                                                          ]
+                                                                                        },
+                                                                                        {
+                                                                                          "title": "Black Shadow using SourceAlpha",
+                                                                                          "description": "Creates a solid black shadow using alpha channel instead of full color.",
+                                                                                          "example": {
+                                                                                            "code": "<svg height=\"150\" width=\"150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <filter id=\"f3\" width=\"120\" height=\"120\">\n      <feOffset in=\"SourceAlpha\" dx=\"20\" dy=\"20\" />\n      <feGaussianBlur stdDeviation=\"10\" />\n      <feBlend in=\"SourceGraphic\" in2=\"blurOut\" />\n    </filter>\n  </defs>\n  <rect width=\"90\" height=\"90\" stroke=\"green\" stroke-width=\"3\" fill=\"yellow\" filter=\"url(#f3)\" />\n</svg>"
+                                                                                          },
+                                                                                          "notes": [
+                                                                                            "SourceAlpha uses transparency instead of colors",
+                                                                                            "Creates more realistic shadows"
+                                                                                          ]
+                                                                                        },
+                                                                                        {
+                                                                                          "title": "Colored Shadow using feColorMatrix",
+                                                                                          "description": "Applies a color transformation matrix to control shadow color.",
+                                                                                          "example": {
+                                                                                            "code": "<svg height=\"150\" width=\"150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <filter id=\"f4\" width=\"120\" height=\"120\">\n      <feOffset in=\"SourceGraphic\" dx=\"20\" dy=\"20\" />\n      <feColorMatrix type=\"matrix\" values=\"0.2 0 0 0 0  0 0.2 0 0 0  0 0 0.2 0 0  0 0 0 1 0\" />\n      <feGaussianBlur stdDeviation=\"10\" />\n      <feBlend in=\"SourceGraphic\" in2=\"blurOut\" />\n    </filter>\n  </defs>\n  <rect width=\"90\" height=\"90\" stroke=\"green\" stroke-width=\"3\" fill=\"yellow\" filter=\"url(#f4)\" />\n</svg>"
+                                                                                          },
+                                                                                          "notes": [
+                                                                                            "feColorMatrix allows color manipulation",
+                                                                                            "Matrix values define RGB and alpha behavior",
+                                                                                            "Useful for colored or tinted shadows"
+                                                                                          ]
+                                                                                        }
+                                                                                      ],
+                                                                                      "platform": {
+                                                                                        "provider": "W3Schools",
+                                                                                        "copyright": "1999–2026 Refsnes Data",
+                                                                                        "powered_by": "W3.CSS"
+                                                                                      }
+                                                                                    },
+                                                                                      "svg-linear-gradient": {
+                                                                                        "title": "SVG Linear Gradient",
+                                                                                        "description": "A gradient is a smooth transition between two or more colors. SVG supports linear gradients using the <linearGradient> element.",
+                                                                                        
+                                                                                        "types": [
+                                                                                          "Horizontal Linear Gradient",
+                                                                                          "Vertical Linear Gradient",
+                                                                                          "Angular Linear Gradient"
+                                                                                        ],
+                                                                                    
+                                                                                        "sections": [
+                                                                                          {
+                                                                                            "title": "Basic Horizontal Linear Gradient",
+                                                                                            "description": "Creates a left-to-right color transition.",
+                                                                                            "example": {
+                                                                                              "code": "<svg height=\"150\" width=\"400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <linearGradient id=\"grad1\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n      <stop offset=\"0%\" stop-color=\"yellow\" />\n      <stop offset=\"100%\" stop-color=\"red\" />\n    </linearGradient>\n  </defs>\n  <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" fill=\"url(#grad1)\" />\n</svg>"
+                                                                                            },
+                                                                                            "notes": [
+                                                                                              "x1 and x2 define horizontal direction",
+                                                                                              "Colors are defined using <stop>",
+                                                                                              "fill links the shape to the gradient"
+                                                                                            ]
+                                                                                          },
+                                                                                          {
+                                                                                            "title": "Multi-Color Horizontal Gradient",
+                                                                                            "description": "A gradient with more than two colors.",
+                                                                                            "example": {
+                                                                                              "code": "<svg height=\"150\" width=\"400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <linearGradient id=\"grad2\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n      <stop offset=\"0%\" stop-color=\"yellow\" />\n      <stop offset=\"50%\" stop-color=\"green\" />\n      <stop offset=\"100%\" stop-color=\"red\" />\n    </linearGradient>\n  </defs>\n  <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" fill=\"url(#grad2)\" />\n</svg>"
+                                                                                            }
+                                                                                          },
+                                                                                          {
+                                                                                            "title": "Vertical Linear Gradient",
+                                                                                            "description": "Creates a top-to-bottom gradient.",
+                                                                                            "example": {
+                                                                                              "code": "<svg height=\"150\" width=\"400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <linearGradient id=\"grad3\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n      <stop offset=\"0%\" stop-color=\"yellow\" />\n      <stop offset=\"100%\" stop-color=\"red\" />\n    </linearGradient>\n  </defs>\n  <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" fill=\"url(#grad3)\" />\n</svg>"
+                                                                                            }
+                                                                                          },
+                                                                                          {
+                                                                                            "title": "Gradient with Text",
+                                                                                            "description": "Applies a gradient to a shape with text overlay.",
+                                                                                            "example": {
+                                                                                              "code": "<svg height=\"150\" width=\"400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <linearGradient id=\"grad4\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n      <stop offset=\"0%\" stop-color=\"yellow\" />\n      <stop offset=\"100%\" stop-color=\"red\" />\n    </linearGradient>\n  </defs>\n  <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" fill=\"url(#grad4)\" />\n  <text x=\"50\" y=\"86\" font-size=\"45\" fill=\"white\" font-family=\"Verdana\">SVG</text>\n</svg>"
+                                                                                            }
+                                                                                          },
+                                                                                          {
+                                                                                            "title": "Angular Linear Gradient",
+                                                                                            "description": "Creates a diagonal gradient by changing both x and y coordinates.",
+                                                                                            "example": {
+                                                                                              "code": "<svg height=\"150\" width=\"400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <linearGradient id=\"grad5\" x1=\"0%\" y1=\"100%\" x2=\"100%\" y2=\"0%\">\n      <stop offset=\"0%\" stop-color=\"yellow\" />\n      <stop offset=\"100%\" stop-color=\"red\" />\n    </linearGradient>\n  </defs>\n  <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" fill=\"url(#grad5)\" />\n</svg>"
+                                                                                            }
+                                                                                          }
+                                                                                        ],
+                                                                                    
+                                                                                        "attributes": {
+                                                                                          "id": "Defines unique gradient ID",
+                                                                                          "x1": "Start X position (default 0%)",
+                                                                                          "y1": "Start Y position (default 0%)",
+                                                                                          "x2": "End X position (default 100%)",
+                                                                                          "y2": "End Y position (default 0%)",
+                                                                                          "spreadMethod": "pad | reflect | repeat",
+                                                                                          "gradientUnits": "objectBoundingBox | userSpaceOnUse",
+                                                                                          "gradientTransform": "Transforms the gradient"
+                                                                                        },
+                                                                                    
+                                                                                        "platform": {
+                                                                                          "provider": "W3Schools",
+                                                                                          "copyright": "1999–2026 Refsnes Data",
+                                                                                          "powered_by": "W3.CSS"
+                                                                                        }
+                                                                                      },
+                                                                                      
+                                                                                        "svg-radial-gradient": {
+                                                                                          "title": "SVG Radial Gradient",
+                                                                                          "description": "Radial gradients create circular color transitions using the <radialGradient> element in SVG.",
+                                                                                          
+                                                                                          "overview": {
+                                                                                            "definition": "A radial gradient transitions colors outward from a center point.",
+                                                                                            "container": "<defs>",
+                                                                                            "usage": "Applied using fill=\"url(#gradientId)\""
+                                                                                          },
+                                                                                      
+                                                                                          "examples": [
+                                                                                            {
+                                                                                              "title": "Radial Gradient 1",
+                                                                                              "description": "Simple red to blue radial gradient",
+                                                                                              "code": "<svg height=\"150\" width=\"400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <radialGradient id=\"grad1\" cx=\"50%\" cy=\"50%\" r=\"50%\" fx=\"50%\" fy=\"50%\">\n      <stop offset=\"0%\" stop-color=\"red\" />\n      <stop offset=\"100%\" stop-color=\"blue\" />\n    </radialGradient>\n  </defs>\n  <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" fill=\"url(#grad1)\" />\n</svg>"
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Radial Gradient 2",
+                                                                                              "description": "Three color radial gradient",
+                                                                                              "code": "<svg height=\"150\" width=\"400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <radialGradient id=\"grad2\" cx=\"50%\" cy=\"50%\" r=\"50%\">\n      <stop offset=\"0%\" stop-color=\"red\" />\n      <stop offset=\"50%\" stop-color=\"green\" />\n      <stop offset=\"100%\" stop-color=\"blue\" />\n    </radialGradient>\n  </defs>\n  <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" fill=\"url(#grad2)\" />\n</svg>"
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Radial Gradient with Offset Center",
+                                                                                              "description": "Gradient origin moved to 25%",
+                                                                                              "code": "<svg height=\"150\" width=\"400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <radialGradient id=\"grad3\" cx=\"25%\" cy=\"25%\">\n      <stop offset=\"0%\" stop-color=\"red\" />\n      <stop offset=\"100%\" stop-color=\"blue\" />\n    </radialGradient>\n  </defs>\n  <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" fill=\"url(#grad3)\" />\n</svg>"
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Spread Method: Reflect",
+                                                                                              "description": "Repeats gradient in mirror style",
+                                                                                              "code": "<svg height=\"150\" width=\"400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <radialGradient id=\"grad4\" cx=\"25%\" cy=\"25%\" spreadMethod=\"reflect\">\n      <stop offset=\"0%\" stop-color=\"red\" />\n      <stop offset=\"100%\" stop-color=\"blue\" />\n    </radialGradient>\n  </defs>\n  <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" fill=\"url(#grad4)\" />\n</svg>"
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Spread Method: Repeat",
+                                                                                              "description": "Repeats gradient continuously",
+                                                                                              "code": "<svg height=\"150\" width=\"400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <radialGradient id=\"grad5\" cx=\"25%\" cy=\"25%\" spreadMethod=\"repeat\">\n      <stop offset=\"0%\" stop-color=\"red\" />\n      <stop offset=\"100%\" stop-color=\"blue\" />\n    </radialGradient>\n  </defs>\n  <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" fill=\"url(#grad5)\" />\n</svg>"
+                                                                                            },
+                                                                                            {
+                                                                                              "title": "Radial Gradient with Opacity",
+                                                                                              "description": "Uses opacity for fade effect",
+                                                                                              "code": "<svg height=\"150\" width=\"400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <radialGradient id=\"grad6\" cx=\"50%\" cy=\"50%\" r=\"50%\">\n      <stop offset=\"0%\" stop-color=\"red\" stop-opacity=\"0\" />\n      <stop offset=\"100%\" stop-color=\"blue\" stop-opacity=\"1\" />\n    </radialGradient>\n  </defs>\n  <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" fill=\"url(#grad6)\" />\n</svg>"
+                                                                                            }
+                                                                                          ],
+                                                                                      
+                                                                                          "attributes": {
+                                                                                            "id": "Unique identifier for gradient",
+                                                                                            "cx": "X position of end circle (default 50%)",
+                                                                                            "cy": "Y position of end circle (default 50%)",
+                                                                                            "fx": "X position of start circle",
+                                                                                            "fy": "Y position of start circle",
+                                                                                            "r": "Radius of gradient",
+                                                                                            "spreadMethod": "pad | reflect | repeat",
+                                                                                            "gradientUnits": "objectBoundingBox | userSpaceOnUse",
+                                                                                            "gradientTransform": "Applies transformation to gradient",
+                                                                                            "stop-color": "Defines gradient color",
+                                                                                            "stop-opacity": "Defines transparency of color"
+                                                                                          },
+                                                                                      
+                                                                                          "source": {
+                                                                                            "provider": "W3Schools",
+                                                                                            "copyright": "1999–2026 Refsnes Data",
+                                                                                            "powered_by": "W3.CSS"
+                                                                                          }
+                                                                                        },
+                                                                                          "svg-patterns": {
+                                                                                            "title": "SVG Patterns",
+                                                                                            "description": "SVG patterns are used to fill shapes with repeating graphics using the <pattern> element.",
+                                                                                            
+                                                                                            "overview": {
+                                                                                              "definition": "A pattern creates a repeated graphic fill using x and y coordinates.",
+                                                                                              "container": "<defs>",
+                                                                                              "usage": "Applied using fill=\"url(#patternId)\""
+                                                                                            },
+                                                                                        
+                                                                                            "basic_example": {
+                                                                                              "title": "Simple Pattern",
+                                                                                              "description": "Rectangle filled with repeating circles",
+                                                                                              "code": "<svg width=\"400\" height=\"110\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <pattern id=\"patt1\" x=\"0\" y=\"0\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\">\n      <circle cx=\"10\" cy=\"10\" r=\"10\" fill=\"red\" />\n    </pattern>\n  </defs>\n  <rect width=\"200\" height=\"100\" stroke=\"black\" fill=\"url(#patt1)\" />\n</svg>"
+                                                                                            },
+                                                                                        
+                                                                                            "pattern_with_gradient": {
+                                                                                              "title": "Pattern with Gradient",
+                                                                                              "description": "Pattern combining shapes and linear gradient",
+                                                                                              "code": "<svg width=\"200\" height=\"200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <linearGradient id=\"grad1\">\n      <stop offset=\"0%\" stop-color=\"white\" />\n      <stop offset=\"100%\" stop-color=\"red\" />\n    </linearGradient>\n    <pattern id=\"patt2\" x=\"0\" y=\"0\" width=\"0.25\" height=\"0.25\">\n      <rect x=\"0\" y=\"0\" width=\"50\" height=\"50\" fill=\"lightblue\" />\n      <circle cx=\"25\" cy=\"25\" r=\"20\" fill=\"url(#grad1)\" fill-opacity=\"0.8\" />\n    </pattern>\n  </defs>\n  <rect width=\"200\" height=\"200\" fill=\"url(#patt2)\" />\n</svg>"
+                                                                                            },
+                                                                                        
+                                                                                            "attributes": {
+                                                                                              "id": "Defines a unique name for the pattern",
+                                                                                              "x": "Starting x position of pattern",
+                                                                                              "y": "Starting y position of pattern",
+                                                                                              "width": "Width of pattern tile",
+                                                                                              "height": "Height of pattern tile",
+                                                                                              "patternUnits": "Defines coordinate system (userSpaceOnUse | objectBoundingBox)",
+                                                                                              "fill": "Applies the pattern to a shape",
+                                                                                              "href": "References another pattern"
+                                                                                            },
+                                                                                        
+                                                                                            "key_points": [
+                                                                                              "Patterns must be defined inside <defs>",
+                                                                                              "Patterns repeat automatically",
+                                                                                              "Can include shapes, gradients, and images",
+                                                                                              "Supports nested gradients",
+                                                                                              "Commonly used for backgrounds and textures"
+                                                                                            ],
+                                                                                        
+                                                                                            "source": {
+                                                                                              "provider": "W3Schools",
+                                                                                              "copyright": "1999–2026 Refsnes Data",
+                                                                                              "powered_by": "W3.CSS"
+                                                                                            }
+                                                                                          },
+                                                                                            "svg-transform": {
+                                                                                              "title": "SVG Transformations",
+                                                                                              "description": "SVG elements can be manipulated using transform functions that change position, size, rotation, and skewing.",
+                                                                                              "transform_functions": [
+                                                                                                "translate()",
+                                                                                                "scale()",
+                                                                                                "rotate()",
+                                                                                                "skewX()",
+                                                                                                "skewY()",
+                                                                                                "matrix()"
+                                                                                              ],
+                                                                                              "methods": {
+                                                                                                "translate": {
+                                                                                                  "description": "Moves an element along the X and Y axis.",
+                                                                                                  "examples": [
+                                                                                                    "translate(50, 0)",
+                                                                                                    "translate(0, 50)",
+                                                                                                    "translate(50, 50)"
+                                                                                                  ]
+                                                                                                },
+                                                                                                "scale": {
+                                                                                                  "description": "Scales an element in X and Y direction.",
+                                                                                                  "examples": [
+                                                                                                    "scale(2)",
+                                                                                                    "scale(1,2)",
+                                                                                                    "scale(2,1)"
+                                                                                                  ]
+                                                                                                },
+                                                                                                "rotate": {
+                                                                                                  "description": "Rotates an element by a specified angle.",
+                                                                                                  "example": "rotate(45)"
+                                                                                                },
+                                                                                                "skewX": {
+                                                                                                  "description": "Skews an element along the X-axis.",
+                                                                                                  "example": "skewX(30)"
+                                                                                                },
+                                                                                                "skewY": {
+                                                                                                  "description": "Skews an element along the Y-axis.",
+                                                                                                  "example": "skewY(30)"
+                                                                                                }
+                                                                                              },
+                                                                                              "notes": [
+                                                                                                "The transform attribute can be applied to any SVG element.",
+                                                                                                "Transformations affect both the element and its children.",
+                                                                                                "Multiple transform functions can be combined."
+                                                                                              ],
+                                                                                              "platform": {
+                                                                                                "provider": "W3Schools",
+                                                                                                "powered_by": "W3.CSS",
+                                                                                                "copyright": "1999–2026 Refsnes Data"
+                                                                                              }
+                                                                                            },
+                                                                                              "svg-clip-mask": {
+                                                                                                "title": "SVG Clip / Mask",
+                                                                                                "description": "SVG elements can be clipped or masked to control which parts are visible using clip paths or masks.",
+                                                                                                "concepts": {
+                                                                                                  "clipping": {
+                                                                                                    "description": "Clipping removes parts of an element that fall outside a defined shape using <clipPath>.",
+                                                                                                    "element": "<clipPath>",
+                                                                                                    "behavior": "Only the area inside the clipping path is visible.",
+                                                                                                    "example": {
+                                                                                                      "shape": "circle",
+                                                                                                      "clip_shape": "rectangle",
+                                                                                                      "result": "Only the clipped area of the circle is visible"
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "masking": {
+                                                                                                    "description": "Masking controls visibility using opacity values.",
+                                                                                                    "element": "<mask>",
+                                                                                                    "behavior": "White areas are visible, black areas are hidden, gray values create transparency.",
+                                                                                                    "example": {
+                                                                                                      "shape": "rectangle",
+                                                                                                      "mask_shape": "rectangle or circle",
+                                                                                                      "result": "Only masked area is visible"
+                                                                                                    }
+                                                                                                  }
+                                                                                                },
+                                                                                                "clipPath": {
+                                                                                                  "usage": "Used to clip parts of an SVG element",
+                                                                                                  "rules": [
+                                                                                                    "Defined inside <defs>",
+                                                                                                    "Uses shapes like rect, circle, path",
+                                                                                                    "Applied using clip-path attribute"
+                                                                                                  ],
+                                                                                                  "example": {
+                                                                                                    "element": "circle",
+                                                                                                    "clip": "rect",
+                                                                                                    "effect": "Only top half of the circle is visible"
+                                                                                                  }
+                                                                                                },
+                                                                                                "mask": {
+                                                                                                  "usage": "Used to control opacity of SVG elements",
+                                                                                                  "rules": [
+                                                                                                    "White = visible",
+                                                                                                    "Black = hidden",
+                                                                                                    "Gray = partial transparency"
+                                                                                                  ],
+                                                                                                  "examples": [
+                                                                                                    "Rectangle mask",
+                                                                                                    "Circle mask",
+                                                                                                    "Gradient mask"
+                                                                                                  ]
+                                                                                                },
+                                                                                                "mask_opacity": {
+                                                                                                  "description": "Mask opacity is controlled using colors",
+                                                                                                  "rules": {
+                                                                                                    "white": "Fully visible",
+                                                                                                    "black": "Fully hidden",
+                                                                                                    "gray": "Partially visible"
+                                                                                                  }
+                                                                                                },
+                                                                                                "gradient_masking": {
+                                                                                                  "description": "Gradients can be used inside masks to create fading effects",
+                                                                                                  "example": "Linear gradient used as mask fill"
+                                                                                                },
+                                                                                                "important_notes": [
+                                                                                                  "clipPath hides areas outside the defined shape",
+                                                                                                  "mask uses color brightness to control visibility",
+                                                                                                  "Both must be defined inside <defs>",
+                                                                                                  "Masks allow transparency, clip paths do not"
+                                                                                                ],
+                                                                                                "platform": {
+                                                                                                  "provider": "W3Schools",
+                                                                                                  "powered_by": "W3.CSS",
+                                                                                                  "copyright": "1999–2026 Refsnes Data"
+                                                                                                }
+                                                                                              },
+                                                                                                "svg-animation": {
+                                                                                                  "title": "SVG Animation",
+                                                                                                  "description": "SVG allows animation of elements using built-in animation tags without JavaScript.",
+                                                                                                  "animation_elements": {
+                                                                                                    "set": {
+                                                                                                      "description": "Sets the value of an attribute for a specific duration.",
+                                                                                                      "attributes": {
+                                                                                                        "attributeName": "Attribute to change",
+                                                                                                        "to": "Final value",
+                                                                                                        "begin": "Start time of animation"
+                                                                                                      },
+                                                                                                      "example": "Change circle radius after 3 seconds"
+                                                                                                    },
+                                                                                                    "animate": {
+                                                                                                      "description": "Animates an attribute value over time.",
+                                                                                                      "attributes": {
+                                                                                                        "attributeName": "Target attribute",
+                                                                                                        "from": "Starting value",
+                                                                                                        "to": "Ending value",
+                                                                                                        "begin": "Start time",
+                                                                                                        "dur": "Duration",
+                                                                                                        "repeatCount": "Number of repetitions"
+                                                                                                      },
+                                                                                                      "features": [
+                                                                                                        "Smooth transitions",
+                                                                                                        "Looping animations",
+                                                                                                        "Freeze animation using fill='freeze'"
+                                                                                                      ]
+                                                                                                    },
+                                                                                                    "animateTransform": {
+                                                                                                      "description": "Animates transformations like rotate, scale, or translate.",
+                                                                                                      "attributes": {
+                                                                                                        "attributeName": "transform",
+                                                                                                        "type": "rotate | scale | translate",
+                                                                                                        "from": "Start transform",
+                                                                                                        "to": "End transform",
+                                                                                                        "dur": "Duration",
+                                                                                                        "repeatCount": "Number of times"
+                                                                                                      },
+                                                                                                      "example": "Rotating a rectangle continuously"
+                                                                                                    },
+                                                                                                    "animateMotion": {
+                                                                                                      "description": "Moves elements along a defined path.",
+                                                                                                      "attributes": {
+                                                                                                        "path": "SVG path definition",
+                                                                                                        "begin": "Start time",
+                                                                                                        "dur": "Duration",
+                                                                                                        "repeatCount": "Repeat count"
+                                                                                                      },
+                                                                                                      "example": "Moving text and shapes along a curved path"
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "animation_features": {
+                                                                                                    "timing": [
+                                                                                                      "begin",
+                                                                                                      "dur",
+                                                                                                      "repeatCount"
+                                                                                                    ],
+                                                                                                    "control": [
+                                                                                                      "freeze (stops at end)",
+                                                                                                      "indefinite looping"
+                                                                                                    ],
+                                                                                                    "supported_elements": [
+                                                                                                      "circle",
+                                                                                                      "rect",
+                                                                                                      "text",
+                                                                                                      "path",
+                                                                                                      "group elements"
+                                                                                                    ]
+                                                                                                  },
+                                                                                                  "important_notes": [
+                                                                                                    "SVG animations run without JavaScript",
+                                                                                                    "Animations are defined inside SVG elements",
+                                                                                                    "Supported by most modern browsers",
+                                                                                                    "Use animateTransform for transformations",
+                                                                                                    "Use animateMotion for path-based movement"
+                                                                                                  ],
+                                                                                                  "platform": {
+                                                                                                    "provider": "W3Schools",
+                                                                                                    "powered_by": "W3.CSS",
+                                                                                                    "copyright": "1999–2026 Refsnes Data"
+                                                                                                  }
+                                                                                                },
+                                                                                                  "svg-scripting": {
+                                                                                                    "title": "SVG Scripting",
+                                                                                                    "description": "SVG can be combined with JavaScript to dynamically modify and animate SVG elements.",
+                                                                                                    "topics": {
+                                                                                                      "svg_with_javascript": {
+                                                                                                        "description": "JavaScript can be used to manipulate SVG elements using DOM methods.",
+                                                                                                        "example": {
+                                                                                                          "action": "Change circle radius",
+                                                                                                          "method": "setAttribute()",
+                                                                                                          "code_logic": [
+                                                                                                            "Get SVG element using getElementById()",
+                                                                                                            "Change radius using setAttribute()",
+                                                                                                            "Trigger using button click"
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "change_css": {
+                                                                                                        "description": "CSS properties of SVG elements can be changed using JavaScript.",
+                                                                                                        "example": {
+                                                                                                          "action": "Change fill color",
+                                                                                                          "method": "style.fill",
+                                                                                                          "steps": [
+                                                                                                            "Select SVG element",
+                                                                                                            "Modify CSS property",
+                                                                                                            "Trigger using button"
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "change_attributes_and_css": {
+                                                                                                        "description": "SVG attributes and styles can be changed together.",
+                                                                                                        "example": {
+                                                                                                          "changes": [
+                                                                                                            "radius (r)",
+                                                                                                            "x-position (cx)",
+                                                                                                            "fill color",
+                                                                                                            "stroke color"
+                                                                                                          ],
+                                                                                                          "methods_used": [
+                                                                                                            "setAttribute()",
+                                                                                                            "style.fill",
+                                                                                                            "style.stroke"
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "svg_animation_with_script": {
+                                                                                                        "description": "JavaScript can animate SVG elements using timers.",
+                                                                                                        "methods": {
+                                                                                                          "setInterval": "Runs animation repeatedly",
+                                                                                                          "clearInterval": "Stops animation"
+                                                                                                        },
+                                                                                                        "animation_logic": [
+                                                                                                          "Get circle element",
+                                                                                                          "Read cx value",
+                                                                                                          "Increase cx using parseInt()",
+                                                                                                          "Reset position when reaching limit",
+                                                                                                          "Update cx attribute"
+                                                                                                        ]
+                                                                                                      }
+                                                                                                    },
+                                                                                                    "key_functions": [
+                                                                                                      "getElementById()",
+                                                                                                      "setAttribute()",
+                                                                                                      "style.fill",
+                                                                                                      "setInterval()",
+                                                                                                      "clearInterval()",
+                                                                                                      "parseInt()"
+                                                                                                    ],
+                                                                                                    "features": [
+                                                                                                      "Dynamic SVG manipulation",
+                                                                                                      "User interaction using buttons",
+                                                                                                      "Attribute-based animation",
+                                                                                                      "CSS styling via JavaScript",
+                                                                                                      "Real-time animation control"
+                                                                                                    ],
+                                                                                                    "notes": [
+                                                                                                      "SVG elements can be controlled like HTML DOM elements",
+                                                                                                      "JavaScript allows interactivity",
+                                                                                                      "Animations can be manual or automatic",
+                                                                                                      "Works in all modern browsers"
+                                                                                                    ],
+                                                                                                    "platform": {
+                                                                                                      "provider": "W3Schools",
+                                                                                                      "powered_by": "W3.CSS",
+                                                                                                      "copyright": "1999–2026 Refsnes Data"
+                                                                                                    }
+                                                                                                  },
+                                                                                                    "svg-examples": {
+                                                                                                      "title": "SVG Examples",
+                                                                                                      "description": "Collection of SVG examples demonstrating shapes, text, transformations, animation, filters, gradients, masking, and scripting.",
+                                                                                                      "categories": {
+                                                                                                        "svg_basic_shapes": {
+                                                                                                          "rectangle": [
+                                                                                                            "Rectangle with basic attributes",
+                                                                                                            "Rectangle with fill and stroke",
+                                                                                                            "Rectangle with opacity",
+                                                                                                            "Rectangle with rounded corners"
+                                                                                                          ],
+                                                                                                          "circle": [
+                                                                                                            "Simple circle",
+                                                                                                            "Circle with border",
+                                                                                                            "Circle with opacity"
+                                                                                                          ],
+                                                                                                          "ellipse": [
+                                                                                                            "Single ellipse",
+                                                                                                            "Multiple overlapping ellipses",
+                                                                                                            "Two ellipses"
+                                                                                                          ],
+                                                                                                          "line": [
+                                                                                                            "Simple line",
+                                                                                                            "Thick horizontal line",
+                                                                                                            "Thick vertical line"
+                                                                                                          ],
+                                                                                                          "polygon": [
+                                                                                                            "Triangle",
+                                                                                                            "Quadrilateral",
+                                                                                                            "Hexagon",
+                                                                                                            "Star shape"
+                                                                                                          ],
+                                                                                                          "polyline": [
+                                                                                                            "Simple polyline",
+                                                                                                            "Multiple point polyline"
+                                                                                                          ],
+                                                                                                          "path": [
+                                                                                                            "Basic path",
+                                                                                                            "Quadratic Bézier curve"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_text": {
+                                                                                                          "examples": [
+                                                                                                            "Simple text",
+                                                                                                            "Text without fill",
+                                                                                                            "Text with stroke",
+                                                                                                            "Rotated text using rotate",
+                                                                                                            "Rotated text using transform",
+                                                                                                            "Using <tspan> inside text"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_text_path": {
+                                                                                                          "examples": [
+                                                                                                            "Text along a path",
+                                                                                                            "Text along a path using textLength"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_links": {
+                                                                                                          "examples": [
+                                                                                                            "Text as a link",
+                                                                                                            "Graphic as a link"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_images": {
+                                                                                                          "examples": [
+                                                                                                            "Insert an image",
+                                                                                                            "Image inside circle with text"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_markers": {
+                                                                                                          "examples": [
+                                                                                                            "Line with start and end markers",
+                                                                                                            "Polyline with multiple markers"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_fill": {
+                                                                                                          "examples": [
+                                                                                                            "Fill color",
+                                                                                                            "Fill opacity",
+                                                                                                            "Fill-rule evenodd",
+                                                                                                            "Fill-rule nonzero"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_stroke": {
+                                                                                                          "examples": [
+                                                                                                            "Stroke color",
+                                                                                                            "Stroke width",
+                                                                                                            "Stroke opacity",
+                                                                                                            "Stroke linecap",
+                                                                                                            "Stroke dasharray",
+                                                                                                            "Stroke linejoin"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_filters": {
+                                                                                                          "intro": [
+                                                                                                            "Gaussian blur filter"
+                                                                                                          ],
+                                                                                                          "blur_effect": [
+                                                                                                            "Blur using feGaussianBlur",
+                                                                                                            "Adjust blur with stdDeviation"
+                                                                                                          ],
+                                                                                                          "drop_shadow": [
+                                                                                                            "Drop shadow using feDropShadow",
+                                                                                                            "Offset shadow",
+                                                                                                            "Blurred shadow",
+                                                                                                            "Color matrix shadow"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_gradients": {
+                                                                                                          "linear": [
+                                                                                                            "Two-color horizontal gradient",
+                                                                                                            "Three-color gradient",
+                                                                                                            "Vertical gradient",
+                                                                                                            "Gradient with text",
+                                                                                                            "Angular gradient"
+                                                                                                          ],
+                                                                                                          "radial": [
+                                                                                                            "Two-color radial gradient",
+                                                                                                            "Three-color radial gradient",
+                                                                                                            "Custom center gradient",
+                                                                                                            "Reflect gradient",
+                                                                                                            "Repeat gradient",
+                                                                                                            "Opacity gradient"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_patterns": {
+                                                                                                          "examples": [
+                                                                                                            "Pattern with circles",
+                                                                                                            "Pattern with rectangles and gradient circles"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_transformations": {
+                                                                                                          "translate": [
+                                                                                                            "Move horizontally",
+                                                                                                            "Move vertically",
+                                                                                                            "Move in both directions"
+                                                                                                          ],
+                                                                                                          "scale": [
+                                                                                                            "Scale uniformly",
+                                                                                                            "Scale vertically",
+                                                                                                            "Scale horizontally"
+                                                                                                          ],
+                                                                                                          "rotate": [
+                                                                                                            "Rotate object"
+                                                                                                          ],
+                                                                                                          "skew": [
+                                                                                                            "Skew X",
+                                                                                                            "Skew Y"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_clipping_and_masking": {
+                                                                                                          "clipPath": [
+                                                                                                            "Clip using rectangle"
+                                                                                                          ],
+                                                                                                          "mask": [
+                                                                                                            "Rectangular mask",
+                                                                                                            "Circular mask",
+                                                                                                            "Opacity mask",
+                                                                                                            "Gradient mask"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_animation": {
+                                                                                                          "set": [
+                                                                                                            "Set attribute value after delay"
+                                                                                                          ],
+                                                                                                          "animate": [
+                                                                                                            "Animate position",
+                                                                                                            "Animate with freeze"
+                                                                                                          ],
+                                                                                                          "animateTransform": [
+                                                                                                            "Rotate animation"
+                                                                                                          ],
+                                                                                                          "animateMotion": [
+                                                                                                            "Move along path"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_scripting": {
+                                                                                                          "examples": [
+                                                                                                            "Change attributes using JavaScript",
+                                                                                                            "Change CSS with JavaScript",
+                                                                                                            "Modify attributes and styles",
+                                                                                                            "Animate using JavaScript timer"
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "svg_misc": {
+                                                                                                          "examples": [
+                                                                                                            "Fading rectangle",
+                                                                                                            "Growing rectangle",
+                                                                                                            "Color-changing rectangles",
+                                                                                                            "Text along motion path",
+                                                                                                            "Rotating ellipses"
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "platform_info": {
+                                                                                                        "provider": "W3Schools",
+                                                                                                        "powered_by": "W3.CSS",
+                                                                                                        "copyright": "1999–2026 Refsnes Data"
+                                                                                                      }
+                                                                                                    },
+                                                                                                      "svg-quiz": {
+                                                                                                        "title": "SVG Quiz",
+                                                                                                        "description": "Test your SVG knowledge with an interactive quiz provided by W3Schools.",
+                                                                                                        "details": {
+                                                                                                          "total_questions": 25,
+                                                                                                          "time_limit": "No time limit",
+                                                                                                          "scoring": {
+                                                                                                            "points_per_question": 1,
+                                                                                                            "maximum_score": 25
+                                                                                                          },
+                                                                                                          "purpose": "Evaluate your understanding of SVG concepts and features",
+                                                                                                          "note": "This quiz is not official and is intended for practice and self-assessment"
+                                                                                                        },
+                                                                                                        "actions": {
+                                                                                                          "start_quiz": "Start the SVG Quiz",
+                                                                                                          "suggested_preparation": "Read the SVG Tutorial before attempting the quiz"
+                                                                                                        },
+                                                                                                        "navigation": {
+                                                                                                          "previous": "Previous",
+                                                                                                          "next": "Next"
+                                                                                                        },
+                                                                                                        "platform_info": {
+                                                                                                          "provider": "W3Schools",
+                                                                                                          "powered_by": "W3.CSS",
+                                                                                                          "copyright": "1999–2026 Refsnes Data"
+                                                                                                        }
+                                                                                                      },
+                                                                                                      
+                                                                                                        "svg-reference": {
+                                                                                                          "title": "SVG Reference",
+                                                                                                          "description": "Complete reference of SVG elements and their attributes.",
+                                                                                                          "elements": [
+                                                                                                            {
+                                                                                                              "name": "a",
+                                                                                                              "description": "Creates a hyperlink around an element",
+                                                                                                              "attributes": [
+                                                                                                                "href",
+                                                                                                                "download",
+                                                                                                                "hreflang",
+                                                                                                                "referrerpolicy",
+                                                                                                                "rel",
+                                                                                                                "target",
+                                                                                                                "type"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "animate",
+                                                                                                              "description": "Animates an attribute of an element over time",
+                                                                                                              "attributes": [
+                                                                                                                "attributeName",
+                                                                                                                "from",
+                                                                                                                "to",
+                                                                                                                "by",
+                                                                                                                "dur",
+                                                                                                                "repeatCount"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "animateMotion",
+                                                                                                              "description": "Moves an element along a motion path",
+                                                                                                              "attributes": [
+                                                                                                                "path",
+                                                                                                                "keyPoints",
+                                                                                                                "rotate",
+                                                                                                                "calcMode"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "animateTransform",
+                                                                                                              "description": "Animates transformations such as scale, rotate, translate",
+                                                                                                              "attributes": [
+                                                                                                                "type",
+                                                                                                                "from",
+                                                                                                                "to",
+                                                                                                                "by"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "circle",
+                                                                                                              "description": "Defines a circle",
+                                                                                                              "attributes": [
+                                                                                                                "cx",
+                                                                                                                "cy",
+                                                                                                                "r"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "clipPath",
+                                                                                                              "description": "Defines a clipping path",
+                                                                                                              "attributes": [
+                                                                                                                "clipPathUnits"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "defs",
+                                                                                                              "description": "Container for reusable elements",
+                                                                                                              "attributes": []
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "desc",
+                                                                                                              "description": "Provides a text description for accessibility",
+                                                                                                              "attributes": []
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "ellipse",
+                                                                                                              "description": "Defines an ellipse",
+                                                                                                              "attributes": [
+                                                                                                                "cx",
+                                                                                                                "cy",
+                                                                                                                "rx",
+                                                                                                                "ry"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "feBlend",
+                                                                                                              "description": "Blends two images using blending modes",
+                                                                                                              "attributes": [
+                                                                                                                "mode",
+                                                                                                                "in",
+                                                                                                                "in2"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "feColorMatrix",
+                                                                                                              "description": "Applies color transformations",
+                                                                                                              "attributes": [
+                                                                                                                "type",
+                                                                                                                "values",
+                                                                                                                "in"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "feComponentTransfer",
+                                                                                                              "description": "Adjusts brightness and contrast of pixels",
+                                                                                                              "attributes": [
+                                                                                                                "in"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "feComposite",
+                                                                                                              "description": "Combines two images using compositing operations",
+                                                                                                              "attributes": [
+                                                                                                                "in",
+                                                                                                                "in2",
+                                                                                                                "operator"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "feConvolveMatrix",
+                                                                                                              "description": "Applies convolution filters such as blur or sharpen",
+                                                                                                              "attributes": []
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "feDiffuseLighting",
+                                                                                                              "description": "Applies lighting using surface geometry",
+                                                                                                              "attributes": []
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "feDisplacementMap",
+                                                                                                              "description": "Displaces pixels using another image",
+                                                                                                              "attributes": []
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "feDistantLight",
+                                                                                                              "description": "Defines a distant light source",
+                                                                                                              "attributes": [
+                                                                                                                "azimuth",
+                                                                                                                "elevation"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "feDropShadow",
+                                                                                                              "description": "Creates a drop shadow",
+                                                                                                              "attributes": [
+                                                                                                                "dx",
+                                                                                                                "dy",
+                                                                                                                "stdDeviation"
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "name": "feFlood",
+                                                                                                              "description": "Fills an area with a solid color",
+                                                                                                              "attributes": [
+                                                                                                                "flood-color",
+                                                                                                                "flood-opacity"
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      }
+                                                                                                      
+                                                                                                    }
+                                                                                                    
+                                                                                                  
+                                                                                                  
+                                                                                                
+                                                                                                
+                                                                                              
+                                                                                              
+                                                                                            
+                                                                                          
+                                                                                          
+                                                                                         
+                                                                                        
+                                                                                      
+                                                                                      
+                                                                                    
+                                                                                    
+                                                                                  
+                                                                                  
+                                                                                
+                                                                                
+                                                                              
                                                                               
                                                                           
                                                                           
-                                                                      }
+                                                                      
                                                                       
                                                                   
                                                                   

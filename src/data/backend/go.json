@@ -1,0 +1,2184 @@
+{
+  "course": {
+    "id": "go",
+    "title": "Go Tutorial"
+  },
+  "sections": [
+    {
+      "title": "Go Basics",
+     "lessons": [
+  { "id": "home", "title": "Go Home" },
+  { "id": "introduction", "title": "Go Introduction" },
+  { "id": "getstarted", "title": "Go Get Started" },
+  { "id": "syntax", "title": "Go Syntax" },
+  { "id": "comments", "title": "Go Comments" },
+  { "id": "variables", "title": "Go Variables" },
+  { "id": "constants", "title": "Go Constants" },
+  { "id": "output", "title": "Go Output" },
+  { "id": "datatypes", "title": "Go Data Types" } ,
+  { "id": "arrays", "title": "Go Arrays" } ,
+  { "id": "slices", "title": "Go Slices" } ,
+  { "id": "operators", "title": "Go Operators" } ,
+  { "id": "arithmetic", "title": "Go Arithmetic Operators" } ,
+  { "id": "assignment", "title": "Go Assignment Operators" } ,
+  { "id": "comparison", "title": "Go Comparison Operators" } ,
+  { "id": "logical", "title": "Go Logical Operators" } ,
+  { "id": "bitwise", "title": "Go Bitwise Operators" } ,
+  { "id": "conditions", "title": "Go Conditions" } ,
+  { "id": "if", "title": "Go if Statement" } ,
+  { "id": "ifelse", "title": "Go if else Statement" } ,
+  { "id": "elseif", "title": "Go else if Statement" } ,
+  { "id": "nestedif", "title": "Go Nested if Statement" },
+  { "id": "switch", "title": "Go Switch Statement" },
+  { "id": "switch-multicase", "title": "Go Multi-case Switch Statement" } ,
+  { "id": "for-loops", "title": "Go For Loops" } ,
+  { "id": "functions", "title": "Go Functions" } ,
+  { "id": "function-parameters", "title": "Go Function Parameters and Arguments" } ,
+  { "id": "function-returns", "title": "Go Function Returns" } ,
+  { "id": "recursion", "title": "Go Recursion Functions" } ,
+  { "id": "structs", "title": "Go Struct" } ,
+  { "id": "maps", "title": "Go Maps" }
+
+
+
+
+
+
+
+
+]
+
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "Go Tutorial",
+      "paragraphs": [
+        "Go is a popular programming language.",
+        "Go is used to create computer programs.",
+        "Start learning Go now."
+      ]
+    },
+
+    "introduction": {
+      "title": "Go Introduction",
+      "sections": [
+        {
+          "heading": "What is Go?",
+          "paragraphs": [
+            "Go is a cross-platform, open-source programming language.",
+            "Go can be used to create high-performance applications.",
+            "Go is a fast, statically typed, compiled language known for its simplicity and efficiency.",
+            "Go was developed at Google by Robert Griesemer, Rob Pike, and Ken Thompson in 2007.",
+            "Go's syntax is similar to C++."
+          ]
+        },
+        {
+          "heading": "What is Go Used For?",
+          "paragraphs": [
+            "Web development (server-side).",
+            "Developing network-based programs.",
+            "Developing cross-platform enterprise applications.",
+            "Cloud-native development."
+          ]
+        },
+        {
+          "heading": "Why Use Go?",
+          "paragraphs": [
+            "Go is fun and easy to learn.",
+            "Go has fast runtime and compilation time.",
+            "Go supports concurrency.",
+            "Go has built-in memory management.",
+            "Go works on multiple platforms like Windows, Mac, Linux, and Raspberry Pi."
+          ]
+        },
+        {
+          "heading": "Go Compared to Python and C++",
+          "table": {
+            "headers": ["Go", "Python", "C++"],
+            "rows": [
+              ["Statically typed", "Dynamically typed", "Statically typed"],
+              ["Fast runtime", "Slow runtime", "Fast runtime"],
+              ["Compiled", "Interpreted", "Compiled"],
+              ["Fast compile time", "Interpreted", "Slow compile time"],
+              ["Concurrency with goroutines and channels", "No built-in concurrency", "Concurrency with threads"],
+              ["Automatic garbage collection", "Automatic garbage collection", "No garbage collection"],
+              ["No classes and objects", "Supports classes and objects", "Supports classes and objects"],
+              ["No inheritance", "Supports inheritance", "Supports inheritance"]
+            ]
+          }
+        },
+        {
+          "heading": "Notes",
+          "paragraphs": [
+            "Compilation time means converting code into an executable program.",
+            "Concurrency means performing multiple tasks at the same time.",
+            "Statically typed means variable types are known at compile time."
+          ]
+        }
+      ]
+    },
+
+
+
+    "getstarted": {
+  "title": "Go Get Started",
+  "sections": [
+    {
+      "heading": "What You Need",
+      "paragraphs": [
+        "To start using Go, you need a text editor and a compiler.",
+        "Popular editors include VS Code, Vim, Eclipse, and Notepad.",
+        "In this tutorial, we will use an IDE to write and compile Go code."
+      ]
+    },
+    {
+      "heading": "Install Go",
+      "paragraphs": [
+        "Download Go from the official website at https://golang.org/dl/.",
+        "Follow the installation instructions for your operating system.",
+        "To verify installation, run the command: go version."
+      ],
+      "code": "go version"
+    },
+    {
+      "heading": "Install an IDE",
+      "paragraphs": [
+        "An IDE is used to edit, compile, and debug code.",
+        "Popular IDEs for Go include Visual Studio Code, Vim, Eclipse, and Notepad.",
+        "VS Code is recommended for beginners."
+      ]
+    },
+    {
+      "heading": "Configure Go in VS Code",
+      "steps": [
+        "Open VS Code.",
+        "Open Extensions (Ctrl + Shift + X).",
+        "Search for 'Go' and install the Go extension by Google.",
+        "Open the Command Palette (Ctrl + Shift + P).",
+        "Run 'Go: Install/Update Tools' and install all tools."
+      ]
+    },
+    {
+      "heading": "Your First Go Program",
+      "paragraphs": [
+        "Create a new file named helloworld.go.",
+        "Write the following code:"
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  fmt.Println(\"Hello World!\")\n}"
+    },
+    {
+      "heading": "Run the Program",
+      "paragraphs": [
+        "Open the terminal in VS Code and run the program."
+      ],
+      "code": "go run .\\helloworld.go"
+    },
+    {
+      "heading": "Build an Executable",
+      "paragraphs": [
+        "To save the program as an executable, use the build command."
+      ],
+      "code": "go build .\\helloworld.go"
+    },
+    {
+      "heading": "Result",
+      "examples": [
+        "Hello World!"
+      ]
+    }
+  ]
+},
+
+
+ "syntax": {
+    
+  "title": "Go Syntax",
+  "sections": [
+    {
+      "heading": "Go Program Structure",
+      "paragraphs": [
+        "A Go file consists of several basic parts.",
+        "These parts define how a Go program is written and executed."
+      ],
+      "list": [
+        "Package declaration",
+        "Import packages",
+        "Functions",
+        "Statements and expressions"
+      ]
+    },
+    {
+      "heading": "Example",
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  fmt.Println(\"Hello World!\")\n}"
+    },
+    {
+      "heading": "Example Explained",
+      "paragraphs": [
+        "Every Go program belongs to a package. The main package is required for executable programs.",
+        "The import statement is used to include packages, such as fmt, which provides input and output functions.",
+        "Whitespace and blank lines are ignored by Go, but they improve readability.",
+        "The main() function is the entry point of the program.",
+        "fmt.Println() prints output to the console."
+      ]
+    },
+    {
+      "heading": "Go Statements",
+      "paragraphs": [
+        "A statement is an instruction that performs an action.",
+        "In Go, statements end at the end of a line or with a semicolon.",
+        "The compiler automatically inserts semicolons at the end of lines.",
+        "The opening curly brace { must be on the same line as the function declaration."
+      ]
+    },
+    {
+      "heading": "Invalid Syntax Example",
+      "paragraphs": [
+        "The following code will cause an error because the opening brace is placed on a new line."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main()\n{\n  fmt.Println(\"Hello World!\")\n}"
+    },
+    {
+      "heading": "Compact Code",
+      "paragraphs": [
+        "Go allows writing compact code using semicolons.",
+        "This style is not recommended because it reduces readability."
+      ],
+      "code": "package main; import (\"fmt\"); func main() { fmt.Println(\"Hello World!\"); }"
+    },
+    {
+      "heading": "Exercise",
+      "paragraphs": [
+        "Insert the missing part of the code to output \"Hello World\"."
+      ],
+      "exercise": {
+        "question": "Complete the code to print Hello World.",
+        "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  (\"Hello World!\")\n}",
+        "answer": "fmt.Println"
+      }
+    }
+  ]
+},
+
+
+
+"comments": {
+  "title": "Go Comments",
+  "sections": [
+    {
+      "heading": "What are Comments?",
+      "paragraphs": [
+        "A comment is a text that is ignored during program execution.",
+        "Comments are used to explain code and make it more readable.",
+        "They can also be used to prevent code execution during testing."
+      ]
+    },
+    {
+      "heading": "Types of Comments in Go",
+      "paragraphs": [
+        "Go supports single-line comments and multi-line comments."
+      ]
+    },
+    {
+      "heading": "Single-line Comments",
+      "paragraphs": [
+        "Single-line comments start with two forward slashes (//).",
+        "Any text after // on the same line is ignored by the compiler."
+      ],
+      "code": "// This is a comment\npackage main\nimport (\"fmt\")\n\nfunc main() {\n  // This is a comment\n  fmt.Println(\"Hello World!\")\n}"
+    },
+    {
+      "heading": "Single-line Comment at End of Line",
+      "paragraphs": [
+        "Single-line comments can also be written at the end of a code line."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  fmt.Println(\"Hello World!\") // This is a comment\n}"
+    },
+    {
+      "heading": "Multi-line Comments",
+      "paragraphs": [
+        "Multi-line comments start with /* and end with */.",
+        "Any text between them is ignored by the compiler."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  /* The code below will print Hello World\n     to the screen */\n  fmt.Println(\"Hello World!\")\n}"
+    },
+    {
+      "heading": "Using Comments to Disable Code",
+      "paragraphs": [
+        "Comments can be used to prevent code from being executed.",
+        "This is useful for testing or saving code for later use."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  fmt.Println(\"Hello World!\")\n  // fmt.Println(\"This line does not execute\")\n}"
+    },
+    {
+      "heading": "Tip",
+      "paragraphs": [
+        "Use // for short comments.",
+        "Use /* */ for longer explanations."
+      ]
+    }
+  ]
+} , 
+
+"variables": {
+  "title": "Go Variables",
+  "sections": [
+    {
+      "heading": "Introduction to Variables",
+      "paragraphs": [
+        "Variables are used to store data values in a program.",
+        "In Go, every variable must be declared before it can be used."
+      ]
+    },
+    {
+      "heading": "Common Variable Types",
+      "paragraphs": [
+        "Go supports several basic data types.",
+        "int is used for whole numbers, float32 for decimal values, string for text, and bool for true or false values."
+      ]
+    },
+    {
+      "heading": "Declaring Variables with var",
+      "paragraphs": [
+        "The var keyword is used to declare variables in Go.",
+        "You can specify the variable name along with its type and value."
+      ],
+      "code": "var age int = 20"
+    },
+    {
+      "heading": "Declaring Variables with :=",
+      "paragraphs": [
+        "The := operator is a shorthand way to declare variables.",
+        "The compiler automatically determines the variable type from the value.",
+        "This method can only be used inside functions."
+      ],
+      "code": "age := 20"
+    },
+    {
+      "heading": "Variables with Initial Values",
+      "paragraphs": [
+        "When the value is known in advance, a variable can be declared and initialized in one line."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var name string = \"John\"\n  city := \"Delhi\"\n\n  fmt.Println(name)\n  fmt.Println(city)\n}"
+    },
+    {
+      "heading": "Variables Without Initial Values",
+      "paragraphs": [
+        "In Go, variables always have a default value.",
+        "If no value is assigned, Go automatically assigns a default value based on the variable type."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var a int\n  var b string\n  var c bool\n\n  fmt.Println(a)\n  fmt.Println(b)\n  fmt.Println(c)\n}"
+    },
+    {
+      "heading": "Assigning Values Later",
+      "paragraphs": [
+        "You can assign a value to a variable after declaring it.",
+        "This is useful when the value is not known at the beginning of the program."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var score int\n  score = 90\n  fmt.Println(score)\n}"
+    },
+    {
+      "heading": "Multiple Variable Declaration",
+      "paragraphs": [
+        "Go allows declaring multiple variables in a single statement.",
+        "This helps reduce repetition and makes the code cleaner."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var a, b, c int = 1, 2, 3\n  fmt.Println(a, b, c)\n}"
+    },
+    {
+      "heading": "Multiple Variables Without Type",
+      "paragraphs": [
+        "When the type is not specified, Go infers the type from the values.",
+        "Different types can be declared on the same line."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var x, y = 10, \"Go\"\n  z, w := true, 3.14\n\n  fmt.Println(x, y)\n  fmt.Println(z, w)\n}"
+    },
+    {
+      "heading": "Variable Declaration in a Block",
+      "paragraphs": [
+        "Multiple variables can be grouped together using a declaration block.",
+        "This improves readability when working with many variables."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var (\n    a int = 1\n    b string = \"Hello\"\n    c bool = true\n  )\n\n  fmt.Println(a)\n  fmt.Println(b)\n  fmt.Println(c)\n}"
+    },
+  
+{
+  "heading": "Variable Naming Rules",
+  "paragraphs": [
+    "A variable name in Go can be short or descriptive.",
+    "Using clear and meaningful names makes code easier to read and maintain."
+  ]
+},
+{
+  "heading": "Rules for Naming Variables",
+  "paragraphs": [
+    "A variable name must start with a letter or an underscore (_).",
+    "A variable name cannot start with a digit.",
+    "Only letters, numbers, and underscores are allowed.",
+    "Variable names are case-sensitive.",
+    "Variable names cannot contain spaces.",
+    "Go keywords cannot be used as variable names.",
+    "There is no fixed limit on the length of a variable name."
+  ]
+},
+{
+  "heading": "Multi-Word Variable Names",
+  "paragraphs": [
+    "Variable names with multiple words should be written in a readable format.",
+    "Go developers follow specific naming styles to improve clarity."
+  ]
+},
+{
+  "heading": "Camel Case",
+  "paragraphs": [
+    "In camel case, the first word starts with a lowercase letter.",
+    "Each subsequent word starts with an uppercase letter."
+  ],
+  "code": "myVariableName := \"John\""
+},
+{
+  "heading": "Pascal Case",
+  "paragraphs": [
+    "In Pascal case, every word starts with an uppercase letter.",
+    "This style is commonly used for exported names in Go."
+  ],
+  "code": "MyVariableName := \"John\""
+},
+{
+  "heading": "Snake Case",
+  "paragraphs": [
+    "In snake case, words are separated using underscores.",
+    "This style is valid but less common in Go programming."
+  ],
+  "code": "my_variable_name := \"John\""
+}
+  ]
+
+},
+
+
+"constants": {
+  "title": "Go Constants",
+  "sections": [
+    {
+      "heading": "What are Constants?",
+      "paragraphs": [
+        "Constants are variables whose values cannot be changed once assigned.",
+        "In Go, constants are declared using the const keyword.",
+        "Constants are read-only and remain fixed throughout the program."
+      ]
+    },
+    {
+      "heading": "Declaring a Constant",
+      "paragraphs": [
+        "A constant must be assigned a value at the time of declaration.",
+        "The value of a constant cannot be modified later."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nconst PI = 3.14\n\nfunc main() {\n  fmt.Println(PI)\n}"
+    },
+    {
+      "heading": "Constant Naming Rules",
+      "paragraphs": [
+        "Constant names follow the same naming rules as variables.",
+        "By convention, constant names are written in uppercase letters.",
+        "Constants can be declared both inside and outside functions."
+      ]
+    },
+    {
+      "heading": "Types of Constants",
+      "paragraphs": [
+        "Go supports two types of constants: typed constants and untyped constants."
+      ]
+    },
+    {
+      "heading": "Typed Constants",
+      "paragraphs": [
+        "Typed constants are declared with a specific data type.",
+        "The constant value must match the declared type."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nconst A int = 1\n\nfunc main() {\n  fmt.Println(A)\n}"
+    },
+    {
+      "heading": "Untyped Constants",
+      "paragraphs": [
+        "Untyped constants are declared without specifying a type.",
+        "The compiler automatically infers the type from the assigned value."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nconst A = 1\n\nfunc main() {\n  fmt.Println(A)\n}"
+    },
+    {
+      "heading": "Constants are Unchangeable",
+      "paragraphs": [
+        "Once a constant is declared, its value cannot be changed.",
+        "Attempting to modify a constant will result in a compilation error."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  const A = 1\n  // A = 2  // This will cause an error\n  fmt.Println(A)\n}"
+    },
+    {
+      "heading": "Multiple Constant Declaration",
+      "paragraphs": [
+        "Multiple constants can be grouped together using a constant block.",
+        "This improves readability when declaring many constants."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nconst (\n  A int = 1\n  B = 3.14\n  C = \"Hi!\"\n)\n\nfunc main() {\n  fmt.Println(A)\n  fmt.Println(B)\n  fmt.Println(C)\n}"
+    }
+  ]
+} ,
+
+"output": {
+  "title": "Go Output",
+  "sections": [
+    {
+      "heading": "Output in Go",
+      "paragraphs": [
+        "Go provides built-in functions to display output on the screen.",
+        "The most commonly used output functions are Print(), Println(), and Printf()."
+      ]
+    },
+    {
+      "heading": "The Print() Function",
+      "paragraphs": [
+        "The Print() function prints its arguments using their default format.",
+        "It does not automatically add a space or a new line at the end."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var i, j string = \"Hello\", \"World\"\n  fmt.Print(i)\n  fmt.Print(j)\n}"
+    },
+    {
+      "heading": "Printing on New Lines",
+      "paragraphs": [
+        "To print output on a new line using Print(), you can use the newline character \\n.",
+        "The newline character forces the output to move to the next line."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var i, j string = \"Hello\", \"World\"\n  fmt.Print(i, \"\\n\")\n  fmt.Print(j, \"\\n\")\n}"
+    },
+    {
+      "heading": "Printing Multiple Values",
+      "paragraphs": [
+        "Multiple values can be printed using a single Print() function.",
+        "You can also manually add spaces between values when needed."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var i, j string = \"Hello\", \"World\"\n  fmt.Print(i, \" \", j)\n}"
+    },
+    {
+      "heading": "Automatic Spacing with Numbers",
+      "paragraphs": [
+        "When printing non-string values, Print() automatically inserts a space between arguments."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var i, j = 10, 20\n  fmt.Print(i, j)\n}"
+    },
+    {
+      "heading": "The Println() Function",
+      "paragraphs": [
+        "The Println() function works like Print(), but it adds a space between arguments.",
+        "It also adds a newline at the end of the output automatically."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var i, j string = \"Hello\", \"World\"\n  fmt.Println(i, j)\n}"
+    },
+    {
+      "heading": "The Printf() Function",
+      "paragraphs": [
+        "The Printf() function formats output based on format specifiers.",
+        "It allows precise control over how values are displayed."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var i string = \"Hello\"\n  var j int = 15\n\n  fmt.Printf(\"i has value: %v and type: %T\\n\", i, i)\n  fmt.Printf(\"j has value: %v and type: %T\", j, j)\n}"
+    },
+    {
+      "heading": "Formatting Verbs",
+      "paragraphs": [
+        "%v is used to print the value of a variable.",
+        "%T is used to print the type of a variable.",
+        "Go provides many formatting verbs for different output needs."
+      ]
+    },
+  {
+  "heading": "Formatting Verbs in Go",
+  "paragraphs": [
+    "Go provides formatting verbs that work with the Printf() function.",
+    "Formatting verbs control how values are displayed in the output."
+  ]
+},
+{
+  "heading": "General Formatting Verbs",
+  "paragraphs": [
+    "%v prints the value in its default format.",
+    "%#v prints the value in Go syntax format.",
+    "%T prints the data type of the value.",
+    "%% prints a literal percent sign."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var i = 15.5\n  var txt = \"Hello World!\"\n\n  fmt.Printf(\"%v\\n\", i)\n  fmt.Printf(\"%#v\\n\", i)\n  fmt.Printf(\"%v%%\\n\", i)\n  fmt.Printf(\"%T\\n\", i)\n\n  fmt.Printf(\"%v\\n\", txt)\n  fmt.Printf(\"%#v\\n\", txt)\n  fmt.Printf(\"%T\\n\", txt)\n}"
+},
+{
+  "heading": "Integer Formatting Verbs",
+  "paragraphs": [
+    "Go provides several formatting verbs for integer values.",
+    "%b prints the value in binary format.",
+    "%d prints the value in decimal format.",
+    "%o prints the value in octal format.",
+    "%x and %X print the value in hexadecimal format."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var i = 15\n\n  fmt.Printf(\"%b\\n\", i)\n  fmt.Printf(\"%d\\n\", i)\n  fmt.Printf(\"%+d\\n\", i)\n  fmt.Printf(\"%o\\n\", i)\n  fmt.Printf(\"%x\\n\", i)\n  fmt.Printf(\"%X\\n\", i)\n}"
+},
+{
+  "heading": "String Formatting Verbs",
+  "paragraphs": [
+    "%s prints the value as a plain string.",
+    "%q prints the value as a double-quoted string.",
+    "Width can be specified to align strings in output."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var txt = \"Hello\"\n\n  fmt.Printf(\"%s\\n\", txt)\n  fmt.Printf(\"%q\\n\", txt)\n  fmt.Printf(\"%8s\\n\", txt)\n  fmt.Printf(\"%-8s\\n\", txt)\n}"
+},
+{
+  "heading": "Boolean Formatting Verbs",
+  "paragraphs": [
+    "%t prints the boolean value as true or false."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var a = true\n  var b = false\n\n  fmt.Printf(\"%t\\n\", a)\n  fmt.Printf(\"%t\\n\", b)\n}"
+},
+{
+  "heading": "Float Formatting Verbs",
+  "paragraphs": [
+    "%f prints a decimal number.",
+    "%.2f prints a decimal number with two digits after the decimal point.",
+    "%e prints the number in scientific notation.",
+    "%g prints the value using the shortest representation."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var i = 3.141\n\n  fmt.Printf(\"%e\\n\", i)\n  fmt.Printf(\"%f\\n\", i)\n  fmt.Printf(\"%.2f\\n\", i)\n  fmt.Printf(\"%6.2f\\n\", i)\n  fmt.Printf(\"%g\\n\", i)\n}"
+}
+
+  ]
+},
+
+"datatypes": {
+  "title": "Go Data Types",
+  "sections": [
+    {
+      "heading": "What are Data Types?",
+      "paragraphs": [
+        "A data type specifies the type and size of data a variable can store.",
+        "Data types help the compiler understand how much memory to allocate and how to interpret the stored value."
+      ]
+    },
+    {
+      "heading": "Static Typing in Go",
+      "paragraphs": [
+        "Go is a statically typed language.",
+        "Once a variable is declared with a specific type, it can only store values of that type."
+      ]
+    },
+    {
+      "heading": "Basic Data Types in Go",
+      "paragraphs": [
+        "Go has three main categories of basic data types.",
+        "These include boolean values, numeric values, and string values."
+      ]
+    },
+    {
+      "heading": "Boolean Data Type",
+      "paragraphs": [
+        "The bool data type represents a boolean value.",
+        "It can only store true or false."
+      ],
+      "code": "var isActive bool = true"
+    },
+    {
+      "heading": "Numeric Data Types",
+      "paragraphs": [
+        "Numeric data types are used to store numbers.",
+        "They include integer types and floating-point types."
+      ]
+    },
+    {
+      "heading": "Integer Data Type",
+      "paragraphs": [
+        "Integer data types store whole numbers.",
+        "Common integer types include int, int8, int16, int32, and int64."
+      ],
+      "code": "var count int = 5"
+    },
+    {
+      "heading": "Floating Point Data Type",
+      "paragraphs": [
+        "Floating point data types store numbers with decimal points.",
+        "Common floating-point types are float32 and float64."
+      ],
+      "code": "var price float32 = 3.14"
+    },
+    {
+      "heading": "String Data Type",
+      "paragraphs": [
+        "The string data type is used to store text.",
+        "String values are written inside double quotes."
+      ],
+      "code": "var message string = \"Hi!\""
+    },
+    {
+      "heading": "Example: Using Multiple Data Types",
+      "paragraphs": [
+        "The following example demonstrates how different data types are used in a Go program."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var a bool = true\n  var b int = 5\n  var c float32 = 3.14\n  var d string = \"Hi!\"\n\n  fmt.Println(\"Boolean:\", a)\n  fmt.Println(\"Integer:\", b)\n  fmt.Println(\"Float:\", c)\n  fmt.Println(\"String:\", d)\n}"
+    },
+    {
+  "heading": "Boolean Data Type",
+  "paragraphs": [
+    "The boolean data type in Go is declared using the bool keyword.",
+    "A boolean variable can store only two values: true or false."
+  ]
+},
+{
+  "heading": "Default Value of Boolean",
+  "paragraphs": [
+    "The default value of a boolean variable in Go is false.",
+    "If a boolean variable is declared without an initial value, it automatically becomes false."
+  ]
+},
+{
+  "heading": "Declaring Boolean Variables",
+  "paragraphs": [
+    "Boolean variables can be declared in multiple ways.",
+    "They can be declared with or without specifying the type."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var b1 bool = true   // typed declaration with initial value\n  var b2 = true        // untyped declaration with initial value\n  var b3 bool          // typed declaration without initial value\n  b4 := true           // short declaration\n\n  fmt.Println(b1)\n  fmt.Println(b2)\n  fmt.Println(b3)\n  fmt.Println(b4)\n}"
+},
+{
+  "heading": "Using Boolean Values",
+  "paragraphs": [
+    "Boolean values are commonly used in conditional statements.",
+    "They help control the flow of execution in programs."
+  ]
+},
+{
+  "heading": "Integer Data Types",
+  "paragraphs": [
+    "Integer data types are used to store whole numbers without decimal points.",
+    "Examples include positive numbers, negative numbers, and zero."
+  ]
+},
+{
+  "heading": "Signed and Unsigned Integers",
+  "paragraphs": [
+    "Go supports two categories of integer data types: signed and unsigned.",
+    "Signed integers can store both positive and negative values.",
+    "Unsigned integers can store only non-negative values."
+  ]
+},
+{
+  "heading": "Default Integer Type",
+  "paragraphs": [
+    "The default integer type in Go is int.",
+    "If no integer type is specified, Go automatically uses int."
+  ]
+},
+{
+  "heading": "Signed Integers",
+  "paragraphs": [
+    "Signed integers are declared using int keywords.",
+    "They can store both positive and negative values."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var x int = 500\n  var y int = -4500\n\n  fmt.Printf(\"Type: %T, value: %v\\n\", x, x)\n  fmt.Printf(\"Type: %T, value: %v\\n\", y, y)\n}"
+},
+{
+  "heading": "Signed Integer Types",
+  "paragraphs": [
+    "Go provides several signed integer types with different sizes.",
+    "Common signed integer types include int8, int16, int32, and int64.",
+    "The size of int depends on the system architecture."
+  ]
+},
+{
+  "heading": "Unsigned Integers",
+  "paragraphs": [
+    "Unsigned integers are declared using uint keywords.",
+    "They can store only zero and positive values."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var x uint = 500\n  var y uint = 4500\n\n  fmt.Printf(\"Type: %T, value: %v\\n\", x, x)\n  fmt.Printf(\"Type: %T, value: %v\\n\", y, y)\n}"
+},
+{
+  "heading": "Unsigned Integer Types",
+  "paragraphs": [
+    "Common unsigned integer types include uint8, uint16, uint32, and uint64.",
+    "Unsigned integers are useful when negative values are not required."
+  ]
+},
+{
+  "heading": "Choosing the Right Integer Type",
+  "paragraphs": [
+    "The integer type you choose depends on the range of values you need to store.",
+    "Using a type with insufficient range will cause a compilation error."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  // This will cause an error because 1000 is out of range for int8\n  // var x int8 = 1000\n  // fmt.Println(x)\n}"
+} ,
+{
+  "heading": "Float Data Types",
+  "paragraphs": [
+    "Float data types are used to store numbers with decimal points.",
+    "They can store both positive and negative decimal values."
+  ]
+},
+{
+  "heading": "Types of Float in Go",
+  "paragraphs": [
+    "Go provides two floating-point data types: float32 and float64.",
+    "float32 uses 32 bits of memory, while float64 uses 64 bits of memory."
+  ]
+},
+{
+  "heading": "Default Float Type",
+  "paragraphs": [
+    "The default floating-point type in Go is float64.",
+    "If no float type is specified, Go automatically uses float64."
+  ]
+},
+{
+  "heading": "Using float32",
+  "paragraphs": [
+    "The float32 type is used when memory usage needs to be optimized.",
+    "It has a smaller range compared to float64."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var x float32 = 123.78\n  var y float32 = 3.4e+38\n\n  fmt.Printf(\"Type: %T, value: %v\\n\", x, x)\n  fmt.Printf(\"Type: %T, value: %v\", y, y)\n}"
+},
+{
+  "heading": "Using float64",
+  "paragraphs": [
+    "The float64 data type can store a much larger range of values than float32.",
+    "It is commonly used for most decimal calculations."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var x float64 = 1.7e+308\n  fmt.Printf(\"Type: %T, value: %v\", x, x)\n}"
+},
+{
+  "heading": "Choosing the Right Float Type",
+  "paragraphs": [
+    "The choice between float32 and float64 depends on the required range and precision.",
+    "Using a value outside the allowed range will result in a compilation error."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  // This will cause an error because the value is out of range for float32\n  // var x float32 = 3.4e+39\n  // fmt.Println(x)\n}"
+} ,
+
+{
+  "heading": "String Data Type",
+  "paragraphs": [
+    "The string data type is used to store a sequence of characters.",
+    "String values in Go must be enclosed within double quotes."
+  ]
+},
+{
+  "heading": "Declaring String Variables",
+  "paragraphs": [
+    "String variables can be declared with or without an initial value.",
+    "If a string variable is declared without a value, its default value is an empty string."
+  ],
+  "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var txt1 string = \"Hello!\"\n  var txt2 string\n  txt3 := \"World 1\"\n\n  fmt.Printf(\"Type: %T, value: %v\\n\", txt1, txt1)\n  fmt.Printf(\"Type: %T, value: %v\\n\", txt2, txt2)\n  fmt.Printf(\"Type: %T, value: %v\\n\", txt3, txt3)\n}"
+},
+{
+  "heading": "Default Value of String",
+  "paragraphs": [
+    "The default value of a string variable in Go is an empty string.",
+    "An empty string does not contain any characters."
+  ]
+} 
+  ]
+},
+
+
+
+"arrays": {
+  "title": "Go Arrays",
+  "sections": [
+    {
+      "heading": "What are Arrays?",
+      "paragraphs": [
+        "Arrays are used to store multiple values of the same type in a single variable.",
+        "Instead of declaring many variables, arrays allow data to be grouped together."
+      ]
+    },
+    {
+      "heading": "Declaring Arrays",
+      "paragraphs": [
+        "In Go, arrays have a fixed length.",
+        "The length can be explicitly defined or inferred by the compiler."
+      ]
+    },
+    {
+      "heading": "Array Declaration with var",
+      "paragraphs": [
+        "Arrays can be declared using the var keyword.",
+        "The length can be specified or inferred using three dots (...)."
+      ],
+      "code": "var arr1 = [3]int{1, 2, 3}\nvar arr2 = [...]int{4, 5, 6, 7, 8}"
+    },
+    {
+      "heading": "Array Declaration with :=",
+      "paragraphs": [
+        "Arrays can also be declared using the := shorthand syntax.",
+        "This method is commonly used inside functions."
+      ],
+      "code": "arr1 := [3]int{1, 2, 3}\narr2 := [...]int{4, 5, 6, 7, 8}"
+    },
+    {
+      "heading": "Array Examples",
+      "paragraphs": [
+        "Arrays can store values of any data type.",
+        "The following example shows integer and string arrays."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  nums := [3]int{1, 2, 3}\n  cars := [4]string{\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"}\n\n  fmt.Println(nums)\n  fmt.Println(cars)\n}"
+    },
+    {
+      "heading": "Accessing Array Elements",
+      "paragraphs": [
+        "Array elements are accessed using index numbers.",
+        "Indexes start from 0, where index 0 refers to the first element."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  prices := [3]int{10, 20, 30}\n\n  fmt.Println(prices[0])\n  fmt.Println(prices[2])\n}"
+    },
+    {
+      "heading": "Changing Array Elements",
+      "paragraphs": [
+        "Array values can be modified by assigning a new value to an index.",
+        "The index position determines which element is changed."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  prices := [3]int{10, 20, 30}\n  prices[2] = 50\n\n  fmt.Println(prices)\n}"
+    },
+    {
+      "heading": "Array Initialization",
+      "paragraphs": [
+        "If array elements are not initialized, they receive default values.",
+        "The default value for int is 0 and for string is an empty string."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  arr1 := [5]int{}\n  arr2 := [5]int{1, 2}\n  arr3 := [5]int{1, 2, 3, 4, 5}\n\n  fmt.Println(arr1)\n  fmt.Println(arr2)\n  fmt.Println(arr3)\n}"
+    },
+    {
+      "heading": "Initializing Specific Elements",
+      "paragraphs": [
+        "Specific array elements can be initialized using index positions.",
+        "Other elements will receive default values."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  arr := [5]int{1: 10, 2: 40}\n  fmt.Println(arr)\n}"
+    },
+    {
+      "heading": "Finding the Length of an Array",
+      "paragraphs": [
+        "The len() function is used to determine the number of elements in an array."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  arr1 := [4]string{\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"}\n  arr2 := [...]int{1, 2, 3, 4, 5, 6}\n\n  fmt.Println(len(arr1))\n  fmt.Println(len(arr2))\n}"
+    }
+  ]
+} ,
+
+"slices": {
+  "title": "Go Slices",
+  "sections": [
+    {
+      "heading": "What are Slices?",
+      "paragraphs": [
+        "Slices are similar to arrays, but are more powerful and flexible.",
+        "Like arrays, slices store multiple values of the same type in a single variable.",
+        "Unlike arrays, slices can grow and shrink dynamically."
+      ]
+    },
+    {
+      "heading": "Creating a Slice",
+      "paragraphs": [
+        "There are multiple ways to create a slice in Go.",
+        "The most common method is using the []datatype{values} format."
+      ],
+      "code": "myslice := []int{}\nmyslice2 := []int{1, 2, 3}"
+    },
+    {
+      "heading": "Length and Capacity",
+      "paragraphs": [
+        "Go provides built-in functions to work with slices.",
+        "len() returns the number of elements in the slice.",
+        "cap() returns the capacity of the slice."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  s := []int{1, 2, 3}\n  fmt.Println(len(s))\n  fmt.Println(cap(s))\n}"
+    },
+    {
+      "heading": "Slice Example",
+      "paragraphs": [
+        "If no elements are provided, both length and capacity will be zero.",
+        "When elements are provided, length and capacity match the number of elements."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  s1 := []int{}\n  fmt.Println(len(s1))\n  fmt.Println(cap(s1))\n  fmt.Println(s1)\n\n  s2 := []string{\"Go\", \"Slices\", \"Are\", \"Powerful\"}\n  fmt.Println(len(s2))\n  fmt.Println(cap(s2))\n  fmt.Println(s2)\n}"
+    },
+    {
+      "heading": "Creating a Slice from an Array",
+      "paragraphs": [
+        "A slice can be created from an existing array.",
+        "The slice references a portion of the array."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  arr := [6]int{10, 11, 12, 13, 14, 15}\n  s := arr[2:4]\n\n  fmt.Println(s)\n  fmt.Println(len(s))\n  fmt.Println(cap(s))\n}"
+    },
+    {
+      "heading": "Understanding Slice Capacity",
+      "paragraphs": [
+        "The capacity of a slice depends on where it starts in the array.",
+        "The slice can grow until it reaches the end of the underlying array."
+      ]
+    },
+    {
+      "heading": "Creating a Slice Using make()",
+      "paragraphs": [
+        "The make() function can be used to create slices.",
+        "It allows you to specify length and capacity."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  s1 := make([]int, 5, 10)\n  fmt.Println(s1)\n  fmt.Println(len(s1))\n  fmt.Println(cap(s1))\n\n  s2 := make([]int, 5)\n  fmt.Println(s2)\n  fmt.Println(len(s2))\n  fmt.Println(cap(s2))\n}"
+    } ,
+
+    {
+      "heading": "Access Elements of a Slice",
+      "paragraphs": [
+        "You can access slice elements using index numbers.",
+        "Slice indexes start from 0."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  prices := []int{10, 20, 30}\n  fmt.Println(prices[0])\n  fmt.Println(prices[2])\n}"
+    },
+    {
+      "heading": "Change Elements of a Slice",
+      "paragraphs": [
+        "Slice elements can be modified using their index.",
+        "This directly updates the slice value."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  prices := []int{10, 20, 30}\n  prices[2] = 50\n  fmt.Println(prices)\n}"
+    },
+    {
+      "heading": "Append Elements to a Slice",
+      "paragraphs": [
+        "The append() function is used to add elements to a slice.",
+        "Appending may increase the slice capacity."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  s := []int{1, 2, 3}\n  s = append(s, 4, 5)\n  fmt.Println(s)\n  fmt.Println(len(s))\n  fmt.Println(cap(s))\n}"
+    },
+    {
+      "heading": "Append One Slice to Another",
+      "paragraphs": [
+        "You can append all elements of one slice into another.",
+        "The ... operator is required."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  a := []int{1, 2, 3}\n  b := []int{4, 5, 6}\n  c := append(a, b...)\n  fmt.Println(c)\n}"
+    },
+    {
+      "heading": "Changing Slice Length",
+      "paragraphs": [
+        "Slices can be resized by re-slicing or appending elements.",
+        "Re-slicing does not allocate new memory."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  arr := [6]int{9, 10, 11, 12, 13, 14}\n  s := arr[1:5]\n  fmt.Println(s)\n\n  s = arr[1:3]\n  fmt.Println(s)\n\n  s = append(s, 20, 21)\n  fmt.Println(s)\n}"
+    },
+    {
+      "heading": "Copying Slices",
+      "paragraphs": [
+        "The copy() function creates a new slice with its own memory.",
+        "This is useful for memory efficiency when working with large slices."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  numbers := []int{1,2,3,4,5,6,7,8,9,10}\n  needed := numbers[:5]\n\n  copySlice := make([]int, len(needed))\n  copy(copySlice, needed)\n\n  fmt.Println(copySlice)\n  fmt.Println(len(copySlice))\n  fmt.Println(cap(copySlice))\n}"
+    }
+  ]  
+} , 
+"operators": {
+  "title": "Go Operators",
+  "sections": [
+    {
+      "heading": "What are Operators?",
+      "paragraphs": [
+        "Operators are used to perform operations on variables and values.",
+        "They allow you to manipulate data, compare values, and control program logic."
+      ]
+    },
+    {
+      "heading": "Addition Operator (+)",
+      "paragraphs": [
+        "The + operator is used to add two values.",
+        "It can be used with constants, variables, or a combination of both."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var a = 15 + 25\n  fmt.Println(a)\n}"
+    },
+    {
+      "heading": "Using Variables with + Operator",
+      "paragraphs": [
+        "The + operator can also be used to add variables and expressions.",
+        "Values are evaluated from left to right."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var (\n    sum1 = 100 + 50\n    sum2 = sum1 + 250\n    sum3 = sum2 + sum2\n  )\n  fmt.Println(sum3)\n}"
+    },
+    {
+      "heading": "Types of Operators in Go",
+      "paragraphs": [
+        "Go provides different categories of operators.",
+        "Each category is used for a specific type of operation."
+      ],
+      "list": [
+        "Arithmetic operators",
+        "Assignment operators",
+        "Comparison operators",
+        "Logical operators",
+        "Bitwise operators"
+      ]
+    }
+  ]
+},
+"arithmetic": {
+  "title": "Go Arithmetic Operators",
+  "sections": [
+    {
+      "heading": "What are Arithmetic Operators?",
+      "paragraphs": [
+        "Arithmetic operators are used to perform mathematical operations.",
+        "They work with numeric values such as integers and floating-point numbers."
+      ]
+    },
+    {
+      "heading": "Addition Operator (+)",
+      "paragraphs": [
+        "The addition operator adds two values."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  y := 5\n  fmt.Println(x + y)\n}"
+    },
+    {
+      "heading": "Subtraction Operator (-)",
+      "paragraphs": [
+        "The subtraction operator subtracts one value from another."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  y := 5\n  fmt.Println(x - y)\n}"
+    },
+    {
+      "heading": "Multiplication Operator (*)",
+      "paragraphs": [
+        "The multiplication operator multiplies two values."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  y := 5\n  fmt.Println(x * y)\n}"
+    },
+    {
+      "heading": "Division Operator (/)",
+      "paragraphs": [
+        "The division operator divides one value by another.",
+        "When dividing integers, the result will also be an integer."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  y := 5\n  fmt.Println(x / y)\n}"
+    },
+    {
+      "heading": "Modulus Operator (%)",
+      "paragraphs": [
+        "The modulus operator returns the remainder of a division."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  y := 3\n  fmt.Println(x % y)\n}"
+    },
+    {
+      "heading": "Increment Operator (++)",
+      "paragraphs": [
+        "The increment operator increases the value of a variable by 1.",
+        "It can only be used with variables."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 5\n  x++\n  fmt.Println(x)\n}"
+    },
+    {
+      "heading": "Decrement Operator (--)",
+      "paragraphs": [
+        "The decrement operator decreases the value of a variable by 1.",
+        "It can only be used with variables."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 5\n  x--\n  fmt.Println(x)\n}"
+    }
+  ]
+} ,
+"assignment": {
+  "title": "Go Assignment Operators",
+  "sections": [
+    {
+      "heading": "What are Assignment Operators?",
+      "paragraphs": [
+        "Assignment operators are used to assign values to variables.",
+        "They can also combine assignment with arithmetic or bitwise operations."
+      ]
+    },
+    {
+      "heading": "Simple Assignment Operator (=)",
+      "paragraphs": [
+        "The equals operator assigns a value to a variable."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var x = 10\n  fmt.Println(x)\n}"
+    },
+    {
+      "heading": "Addition Assignment Operator (+=)",
+      "paragraphs": [
+        "The += operator adds a value to the variable and assigns the result."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  x += 5\n  fmt.Println(x)\n}"
+    },
+    {
+      "heading": "Subtraction Assignment Operator (-=)",
+      "paragraphs": [
+        "The -= operator subtracts a value from the variable."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  x -= 3\n  fmt.Println(x)\n}"
+    },
+    {
+      "heading": "Multiplication Assignment Operator (*=)",
+      "paragraphs": [
+        "The *= operator multiplies the variable by a value."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  x *= 3\n  fmt.Println(x)\n}"
+    },
+    {
+      "heading": "Division Assignment Operator (/=)",
+      "paragraphs": [
+        "The /= operator divides the variable by a value."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  x /= 2\n  fmt.Println(x)\n}"
+    },
+    {
+      "heading": "Modulus Assignment Operator (%=)",
+      "paragraphs": [
+        "The %= operator assigns the remainder of a division to the variable."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  x %= 3\n  fmt.Println(x)\n}"
+    },
+    {
+      "heading": "Bitwise Assignment Operators",
+      "paragraphs": [
+        "Go also supports bitwise assignment operators.",
+        "These operators combine bitwise operations with assignment."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 5\n  x &= 3\n  fmt.Println(x)\n}"
+    },
+    {
+      "heading": "Shift Assignment Operators",
+      "paragraphs": [
+        "Shift assignment operators shift bits and assign the result.",
+        "<<= shifts bits to the left, and >>= shifts bits to the right."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 4\n  x <<= 1\n  fmt.Println(x)\n}"
+    }
+  ]
+} , 
+"comparison": {
+  "title": "Go Comparison Operators",
+  "sections": [
+    {
+      "heading": "What are Comparison Operators?",
+      "paragraphs": [
+        "Comparison operators are used to compare two values.",
+        "The result of a comparison is always a boolean value: true or false."
+      ]
+    },
+    {
+      "heading": "Greater Than Operator (>)",
+      "paragraphs": [
+        "The greater than operator checks if one value is larger than another."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 5\n  y := 3\n  fmt.Println(x > y)\n}"
+    },
+    {
+      "heading": "Equal To Operator (==)",
+      "paragraphs": [
+        "The == operator checks whether two values are equal."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  y := 10\n  fmt.Println(x == y)\n}"
+    },
+    {
+      "heading": "Not Equal To Operator (!=)",
+      "paragraphs": [
+        "The != operator checks whether two values are not equal."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  y := 5\n  fmt.Println(x != y)\n}"
+    },
+    {
+      "heading": "Less Than Operator (<)",
+      "paragraphs": [
+        "The less than operator checks if one value is smaller than another."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 3\n  y := 7\n  fmt.Println(x < y)\n}"
+    },
+    {
+      "heading": "Greater Than or Equal To Operator (>=)",
+      "paragraphs": [
+        "The >= operator checks if a value is greater than or equal to another value."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 5\n  y := 5\n  fmt.Println(x >= y)\n}"
+    },
+    {
+      "heading": "Less Than or Equal To Operator (<=)",
+      "paragraphs": [
+        "The <= operator checks if a value is less than or equal to another value."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 4\n  y := 6\n  fmt.Println(x <= y)\n}"
+    },
+    {
+      "heading": "Comparison Operators in Conditions",
+      "paragraphs": [
+        "Comparison operators are commonly used in conditional statements.",
+        "You will learn more about this in the Go Conditions chapter."
+      ]
+    }
+  ]
+} ,
+"logical": {
+  "title": "Go Logical Operators",
+  "sections": [
+    {
+      "heading": "What are Logical Operators?",
+      "paragraphs": [
+        "Logical operators are used to combine or modify boolean expressions.",
+        "They return either true or false based on the logic applied."
+      ]
+    },
+    {
+      "heading": "Logical AND (&&)",
+      "paragraphs": [
+        "The logical AND operator returns true only if both conditions are true."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 7\n  fmt.Println(x > 5 && x < 10)\n}"
+    },
+    {
+      "heading": "Logical OR (||)",
+      "paragraphs": [
+        "The logical OR operator returns true if at least one condition is true."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 3\n  fmt.Println(x < 5 || x > 10)\n}"
+    },
+    {
+      "heading": "Logical NOT (!)",
+      "paragraphs": [
+        "The logical NOT operator reverses the result of a condition.",
+        "If the condition is true, it returns false, and vice versa."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 8\n  fmt.Println(!(x > 5 && x < 10))\n}"
+    },
+    {
+      "heading": "Using Logical Operators in Conditions",
+      "paragraphs": [
+        "Logical operators are commonly used in if statements and loops.",
+        "They help build complex conditions in a readable way."
+      ]
+    }
+  ]
+} ,
+"bitwise": {
+  "title": "Go Bitwise Operators",
+  "sections": [
+    {
+      "heading": "What are Bitwise Operators?",
+      "paragraphs": [
+        "Bitwise operators work on numbers at the binary level.",
+        "They perform operations on individual bits of integer values."
+      ]
+    },
+    {
+      "heading": "Bitwise AND (&)",
+      "paragraphs": [
+        "The bitwise AND operator sets a bit to 1 only if both corresponding bits are 1."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 5  // 0101\n  y := 3  // 0011\n  fmt.Println(x & y)\n}"
+    },
+    {
+      "heading": "Bitwise OR (|)",
+      "paragraphs": [
+        "The bitwise OR operator sets a bit to 1 if at least one of the corresponding bits is 1."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 5  // 0101\n  y := 3  // 0011\n  fmt.Println(x | y)\n}"
+    },
+    {
+      "heading": "Bitwise XOR (^)",
+      "paragraphs": [
+        "The bitwise XOR operator sets a bit to 1 only if the bits are different."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 5  // 0101\n  y := 3  // 0011\n  fmt.Println(x ^ y)\n}"
+    },
+    {
+      "heading": "Left Shift (<<)",
+      "paragraphs": [
+        "The left shift operator shifts bits to the left and fills the right side with zeros.",
+        "Each left shift doubles the number."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 5\n  fmt.Println(x << 1)\n}"
+    },
+    {
+      "heading": "Right Shift (>>)",
+      "paragraphs": [
+        "The right shift operator shifts bits to the right.",
+        "Each right shift halves the number."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 8\n  fmt.Println(x >> 1)\n}"
+    },
+    {
+      "heading": "When to Use Bitwise Operators",
+      "paragraphs": [
+        "Bitwise operators are commonly used in low-level programming.",
+        "They are useful for performance optimization, flags, and binary data manipulation."
+      ]
+    }
+  ]
+} ,
+"conditions": {
+  "title": "Go Conditions",
+  "sections": [
+    {
+      "heading": "What are Conditional Statements?",
+      "paragraphs": [
+        "Conditional statements are used to perform different actions based on different conditions.",
+        "A condition in Go always evaluates to either true or false."
+      ]
+    },
+    {
+      "heading": "Comparison Operators in Conditions",
+      "paragraphs": [
+        "Go supports common comparison operators used to compare values.",
+        "These operators are often used to form conditions."
+      ],
+      "list": [
+        "Less than (<)",
+        "Less than or equal to (<=)",
+        "Greater than (>)",
+        "Greater than or equal to (>=)",
+        "Equal to (==)",
+        "Not equal to (!=)"
+      ]
+    },
+    {
+      "heading": "Logical Operators in Conditions",
+      "paragraphs": [
+        "Logical operators are used to combine multiple conditions.",
+        "They help build more complex decision-making logic."
+      ],
+      "list": [
+        "Logical AND (&&)",
+        "Logical OR (||)",
+        "Logical NOT (!)"
+      ]
+    },
+    {
+      "heading": "Using Conditions",
+      "paragraphs": [
+        "Conditions are created by combining comparison and logical operators.",
+        "They control the flow of execution in a program."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 10\n  y := 5\n\n  fmt.Println(x > y)\n  fmt.Println(x != y)\n  fmt.Println((x > y) && (y > 0))\n}"
+    },
+    {
+      "heading": "Types of Conditional Statements in Go",
+      "paragraphs": [
+        "Go provides several conditional statements to control program flow."
+      ],
+      "list": [
+        "if statement",
+        "if else statement",
+        "else if statement",
+        "nested if statement",
+        "switch statement"
+      ]
+    }
+  ]
+} ,
+"if": {
+  "title": "Go if Statement",
+  "sections": [
+    {
+      "heading": "What is an if Statement?",
+      "paragraphs": [
+        "The if statement is used to execute a block of code only when a specified condition is true.",
+        "If the condition evaluates to false, the code inside the if block is skipped."
+      ]
+    },
+    {
+      "heading": "Syntax of if Statement",
+      "paragraphs": [
+        "The if keyword must be written in lowercase.",
+        "Curly braces are mandatory in Go, even for a single statement."
+      ],
+      "code": "if condition {\n  // code to be executed if condition is true\n}"
+    },
+    {
+      "heading": "Simple if Example",
+      "paragraphs": [
+        "In this example, the condition checks whether 20 is greater than 18.",
+        "Since the condition is true, the message is printed."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  if 20 > 18 {\n    fmt.Println(\"20 is greater than 18\")\n  }\n}"
+    },
+    {
+      "heading": "Using Variables in if Statement",
+      "paragraphs": [
+        "Conditions often involve variables instead of fixed values.",
+        "The comparison operator decides whether the code block should run."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 20\n  y := 18\n\n  if x > y {\n    fmt.Println(\"x is greater than y\")\n  }\n}"
+    },
+    {
+      "heading": "How the if Statement Works",
+      "paragraphs": [
+        "The condition inside the if statement is evaluated first.",
+        "If the condition is true, the code inside the block executes.",
+        "If the condition is false, the block is skipped entirely."
+      ]
+    },
+    {
+      "heading": "Practice Example",
+      "paragraphs": [
+        "This example prints a message only when x is greater than y."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 50\n  y := 10\n\n  if x > y {\n    fmt.Println(\"Hello World\")\n  }\n}"
+    }
+  ]
+} ,
+"ifelse": {
+  "title": "Go if else Statement",
+  "sections": [
+    {
+      "heading": "What is an if else Statement?",
+      "paragraphs": [
+        "The if else statement is used to execute one block of code if a condition is true and another block if the condition is false.",
+        "It allows a program to make decisions between two alternatives."
+      ]
+    },
+    {
+      "heading": "Syntax of if else Statement",
+      "paragraphs": [
+        "The else block runs only when the if condition evaluates to false.",
+        "The else keyword must be written on the same line as the closing brace of the if block."
+      ],
+      "code": "if condition {\n  // code executed when condition is true\n} else {\n  // code executed when condition is false\n}"
+    },
+    {
+      "heading": "Basic if else Example",
+      "paragraphs": [
+        "In this example, the program checks the value of time.",
+        "Since time is greater than 18, the if condition becomes false and the else block executes."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  time := 20\n\n  if time < 18 {\n    fmt.Println(\"Good day.\")\n  } else {\n    fmt.Println(\"Good evening.\")\n  }\n}"
+    },
+    {
+      "heading": "Another if else Example",
+      "paragraphs": [
+        "Here, the temperature is checked to determine whether it is warm or cold.",
+        "If the condition fails, the else block is executed."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  temperature := 14\n\n  if temperature > 15 {\n    fmt.Println(\"It is warm out there\")\n  } else {\n    fmt.Println(\"It is cold out there\")\n  }\n}"
+    },
+    {
+      "heading": "Important Syntax Rule",
+      "paragraphs": [
+        "In Go, the else keyword must be placed on the same line as the closing brace of the if block.",
+        "Placing else on a new line will cause a syntax error."
+      ]
+    },
+    {
+      "heading": "Incorrect if else Syntax Example",
+      "paragraphs": [
+        "This example demonstrates an incorrect placement of the else keyword.",
+        "The program will fail to compile due to a syntax error."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  temperature := 14\n\n  if temperature > 15 {\n    fmt.Println(\"It is warm out there.\")\n  }\n  else {\n    fmt.Println(\"It is cold out there.\")\n  }\n}"
+    }
+  ]
+},
+"elseif": {
+  "title": "Go else if Statement",
+  "sections": [
+    {
+      "heading": "What is an else if Statement?",
+      "paragraphs": [
+        "The else if statement is used to check a new condition when the previous if condition is false.",
+        "It allows multiple conditions to be tested sequentially."
+      ]
+    },
+    {
+      "heading": "Syntax of else if Statement",
+      "paragraphs": [
+        "Conditions are checked from top to bottom.",
+        "As soon as one condition evaluates to true, its block of code is executed and the remaining conditions are skipped."
+      ],
+      "code": "if condition1 {\n  // code executed if condition1 is true\n} else if condition2 {\n  // code executed if condition1 is false and condition2 is true\n} else {\n  // code executed if all conditions are false\n}"
+    },
+    {
+      "heading": "Basic else if Example",
+      "paragraphs": [
+        "In this example, the program checks the value of time.",
+        "Since time is greater than both 10 and 20, the else block is executed."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  time := 22\n\n  if time < 10 {\n    fmt.Println(\"Good morning.\")\n  } else if time < 20 {\n    fmt.Println(\"Good day.\")\n  } else {\n    fmt.Println(\"Good evening.\")\n  }\n}"
+    },
+    {
+      "heading": "else if with Comparison Example",
+      "paragraphs": [
+        "This example compares two variables to determine their relationship.",
+        "If none of the first two conditions are true, the else block is executed."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  a := 14\n  b := 14\n\n  if a < b {\n    fmt.Println(\"a is less than b.\")\n  } else if a > b {\n    fmt.Println(\"a is greater than b.\")\n  } else {\n    fmt.Println(\"a and b are equal.\")\n  }\n}"
+    },
+    {
+      "heading": "Important Rule of else if",
+      "paragraphs": [
+        "Only the first true condition is executed.",
+        "Even if multiple conditions are true, Go executes only the first matching block."
+      ]
+    },
+    {
+      "heading": "Condition Priority Example",
+      "paragraphs": [
+        "In this example, both conditions are true.",
+        "However, only the first condition is executed because it appears first."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  x := 30\n\n  if x >= 10 {\n    fmt.Println(\"x is larger than or equal to 10.\")\n  } else if x > 20 {\n    fmt.Println(\"x is larger than 20.\")\n  } else {\n    fmt.Println(\"x is less than 10.\")\n  }\n}"
+    }
+  ]
+} ,
+"nestedif": {
+  "title": "Go Nested if Statement",
+  "sections": [
+    {
+      "heading": "What is a Nested if Statement?",
+      "paragraphs": [
+        "A nested if statement means placing one if statement inside another if statement.",
+        "It is used when a condition depends on another condition being true first."
+      ]
+    },
+    {
+      "heading": "Syntax of Nested if",
+      "paragraphs": [
+        "The inner if statement is executed only when the outer if condition is true."
+      ],
+      "code": "if condition1 {\n  // executed if condition1 is true\n  if condition2 {\n    // executed if both condition1 and condition2 are true\n  }\n}"
+    },
+    {
+      "heading": "Nested if Example",
+      "paragraphs": [
+        "In this example, the program first checks if the number is greater than or equal to 10.",
+        "If that condition is true, it then checks whether the number is greater than 15."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  num := 20\n\n  if num >= 10 {\n    fmt.Println(\"Num is more than 10.\")\n\n    if num > 15 {\n      fmt.Println(\"Num is also more than 15.\")\n    }\n  } else {\n    fmt.Println(\"Num is less than 10.\")\n  }\n}"
+    },
+    {
+      "heading": "How Nested if Works",
+      "paragraphs": [
+        "The outer if condition is evaluated first.",
+        "If the outer condition is false, the inner if block is skipped.",
+        "Nested if statements help handle complex decision-making scenarios."
+      ]
+    }
+  ]
+} ,
+"switch": {
+  "title": "Go Switch Statement",
+  "sections": [
+    {
+      "heading": "What is a switch Statement?",
+      "paragraphs": [
+        "The switch statement is used to select one of many code blocks to be executed.",
+        "In Go, the switch statement runs only the matched case and does not require a break statement."
+      ]
+    },
+    {
+      "heading": "How switch Works",
+      "paragraphs": [
+        "The switch expression is evaluated once.",
+        "The result is compared with each case value.",
+        "When a match is found, the corresponding code block is executed.",
+        "The default case runs if no case matches."
+      ]
+    },
+    {
+      "heading": "Syntax of switch",
+      "paragraphs": [
+        "Each case must have the same data type as the switch expression.",
+        "The default case is optional."
+      ],
+      "code": "switch expression {\ncase x:\n  // code block\ncase y:\n  // code block\ndefault:\n  // code block\n}"
+    },
+    {
+      "heading": "Single-Case switch Example",
+      "paragraphs": [
+        "This example uses a number to determine the day of the week."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  day := 4\n\n  switch day {\n  case 1:\n    fmt.Println(\"Monday\")\n  case 2:\n    fmt.Println(\"Tuesday\")\n  case 3:\n    fmt.Println(\"Wednesday\")\n  case 4:\n    fmt.Println(\"Thursday\")\n  case 5:\n    fmt.Println(\"Friday\")\n  case 6:\n    fmt.Println(\"Saturday\")\n  case 7:\n    fmt.Println(\"Sunday\")\n  }\n}"
+    },
+    {
+      "heading": "Using the default Case",
+      "paragraphs": [
+        "The default case executes when no case value matches the switch expression."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  day := 8\n\n  switch day {\n  case 1:\n    fmt.Println(\"Monday\")\n  case 2:\n    fmt.Println(\"Tuesday\")\n  case 3:\n    fmt.Println(\"Wednesday\")\n  case 4:\n    fmt.Println(\"Thursday\")\n  case 5:\n    fmt.Println(\"Friday\")\n  case 6:\n    fmt.Println(\"Saturday\")\n  case 7:\n    fmt.Println(\"Sunday\")\n  default:\n    fmt.Println(\"Not a weekday\")\n  }\n}"
+    },
+    {
+      "heading": "Type Safety in switch",
+      "paragraphs": [
+        "All case values must be of the same type as the switch expression.",
+        "Using mismatched types will result in a compiler error."
+      ]
+    }
+  ]
+} ,
+"switch-multicase": {
+  "title": "Go Multi-case Switch Statement",
+  "sections": [
+    {
+      "heading": "What is a Multi-case switch?",
+      "paragraphs": [
+        "A multi-case switch allows multiple values to be handled by a single case.",
+        "This helps reduce duplicate code and makes the switch statement more readable."
+      ]
+    },
+    {
+      "heading": "Syntax of Multi-case switch",
+      "paragraphs": [
+        "You can separate multiple case values using commas.",
+        "If the switch expression matches any of the listed values, the case block is executed."
+      ],
+      "code": "switch expression {\ncase x, y:\n  // code block if expression matches x or y\ncase v, w:\n  // code block if expression matches v or w\ndefault:\n  // code block if no case matches\n}"
+    },
+    {
+      "heading": "Multi-case switch Example",
+      "paragraphs": [
+        "This example categorizes days into odd weekdays, even weekdays, and weekends."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  day := 5\n\n  switch day {\n  case 1, 3, 5:\n    fmt.Println(\"Odd weekday\")\n  case 2, 4:\n    fmt.Println(\"Even weekday\")\n  case 6, 7:\n    fmt.Println(\"Weekend\")\n  default:\n    fmt.Println(\"Invalid day number\")\n  }\n}"
+    },
+    {
+      "heading": "Why Use Multi-case switch?",
+      "paragraphs": [
+        "It reduces repetitive code when multiple values require the same logic.",
+        "It improves code readability and organization.",
+        "It is commonly used for grouping related values."
+      ]
+    }
+  ]
+} ,
+"for-loops": {
+  "title": "Go For Loops",
+  "sections": [
+    {
+      "heading": "Introduction to Go For Loop",
+      "paragraphs": [
+        "The for loop is used to execute a block of code multiple times.",
+        "In Go, the for loop is the only looping construct available.",
+        "Each repetition of the loop is called an iteration."
+      ]
+    },
+    {
+      "heading": "For Loop Syntax",
+      "paragraphs": [
+        "A for loop can contain up to three statements.",
+        "These statements control how the loop starts, continues, and updates."
+      ],
+      "code": "for statement1; statement2; statement3 {\n  // code to be executed for each iteration\n}"
+    },
+    {
+      "heading": "Statements Explained",
+      "paragraphs": [
+        "statement1 initializes the loop counter.",
+        "statement2 is evaluated before each iteration; if false, the loop stops.",
+        "statement3 updates the loop counter after each iteration.",
+        "All statements are optional, but the loop body must control termination."
+      ]
+    },
+    {
+      "heading": "Basic For Loop Example",
+      "paragraphs": [
+        "This example prints numbers from 0 to 4."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  for i := 0; i < 5; i++ {\n    fmt.Println(i)\n  }\n}"
+    },
+    {
+      "heading": "For Loop with Step Value",
+      "paragraphs": [
+        "You can change the increment value to control how the loop progresses.",
+        "This example counts from 0 to 100 in steps of 10."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  for i := 0; i <= 100; i += 10 {\n    fmt.Println(i)\n  }\n}"
+    },
+    {
+      "heading": "The continue Statement",
+      "paragraphs": [
+        "The continue statement skips the current iteration.",
+        "The loop then continues with the next iteration."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  for i := 0; i < 5; i++ {\n    if i == 3 {\n      continue\n    }\n    fmt.Println(i)\n  }\n}"
+    },
+    {
+      "heading": "The break Statement",
+      "paragraphs": [
+        "The break statement immediately terminates the loop.",
+        "Execution continues after the loop."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  for i := 0; i < 5; i++ {\n    if i == 3 {\n      break\n    }\n    fmt.Println(i)\n  }\n}"
+    },
+    {
+      "heading": "Nested For Loops",
+      "paragraphs": [
+        "A loop inside another loop is called a nested loop.",
+        "The inner loop runs once for each iteration of the outer loop."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  adj := [2]string{\"big\", \"tasty\"}\n  fruits := [3]string{\"apple\", \"orange\", \"banana\"}\n\n  for i := 0; i < len(adj); i++ {\n    for j := 0; j < len(fruits); j++ {\n      fmt.Println(adj[i], fruits[j])\n    }\n  }\n}"
+    },
+    {
+      "heading": "The range Keyword",
+      "paragraphs": [
+        "The range keyword simplifies iteration over arrays, slices, and maps.",
+        "It returns both the index and the value."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  fruits := [3]string{\"apple\", \"orange\", \"banana\"}\n  for idx, val := range fruits {\n    fmt.Printf(\"%v\\t%v\\n\", idx, val)\n  }\n}"
+    },
+    {
+      "heading": "Ignoring Index or Value",
+      "paragraphs": [
+        "Use an underscore (_) to ignore either the index or the value."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  fruits := [3]string{\"apple\", \"orange\", \"banana\"}\n\n  for _, val := range fruits {\n    fmt.Println(val)\n  }\n}"
+    }
+  ]
+} ,
+"functions": {
+  "title": "Go Functions",
+  "sections": [
+    {
+      "heading": "What is a Function?",
+      "paragraphs": [
+        "A function is a block of code that performs a specific task.",
+        "Functions help reduce code repetition and improve readability.",
+        "A function does not execute automatically; it runs only when called."
+      ]
+    },
+    {
+      "heading": "Creating a Function",
+      "paragraphs": [
+        "Functions are declared using the func keyword.",
+        "The function name is followed by parentheses ().",
+        "The function body is written inside curly braces {}."
+      ],
+      "code": "func functionName() {\n  // code to be executed\n}"
+    },
+    {
+      "heading": "Calling a Function",
+      "paragraphs": [
+        "Functions are executed by calling them.",
+        "To call a function, write its name followed by parentheses."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc myMessage() {\n  fmt.Println(\"I just got executed!\")\n}\n\nfunc main() {\n  myMessage()\n}"
+    },
+    {
+      "heading": "Function Called Multiple Times",
+      "paragraphs": [
+        "A function can be reused by calling it multiple times.",
+        "Each call executes the function again."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc myMessage() {\n  fmt.Println(\"I just got executed!\")\n}\n\nfunc main() {\n  myMessage()\n  myMessage()\n  myMessage()\n}"
+    },
+    {
+      "heading": "Naming Rules for Functions",
+      "paragraphs": [
+        "A function name must start with a letter.",
+        "Only letters, numbers, and underscores are allowed.",
+        "Function names are case-sensitive.",
+        "Spaces are not allowed in function names.",
+        "For multiple words, use camelCase or PascalCase.",
+        "Function names should clearly describe what the function does."
+      ]
+    },
+    {
+      "heading": "Example Output",
+      "paragraphs": [
+        "When the function is called, the code inside it executes and prints output."
+      ],
+      "code": "I just got executed!"
+    }
+  ]
+} ,
+"function-parameters": {
+  "title": "Go Function Parameters and Arguments",
+  "sections": [
+    {
+      "heading": "Parameters and Arguments",
+      "paragraphs": [
+        "Information can be passed to functions using parameters.",
+        "Parameters act like variables inside the function.",
+        "Values passed to parameters when calling a function are called arguments."
+      ]
+    },
+    {
+      "heading": "Function Parameters Syntax",
+      "paragraphs": [
+        "Parameters and their data types are defined after the function name.",
+        "Multiple parameters are separated by commas."
+      ],
+      "code": "func FunctionName(param1 type, param2 type, param3 type) {\n  // code to be executed\n}"
+    },
+    {
+      "heading": "Function With One Parameter",
+      "paragraphs": [
+        "This example defines a function with one string parameter.",
+        "Different arguments are passed when calling the function."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc familyName(fname string) {\n  fmt.Println(\"Hello\", fname, \"Refsnes\")\n}\n\nfunc main() {\n  familyName(\"Liam\")\n  familyName(\"Jenny\")\n  familyName(\"Anja\")\n}"
+    },
+    {
+      "heading": "Example Output",
+      "code": "Hello Liam Refsnes\nHello Jenny Refsnes\nHello Anja Refsnes"
+    },
+    {
+      "heading": "Parameter vs Argument",
+      "paragraphs": [
+        "Parameters are variables defined in the function declaration.",
+        "Arguments are the actual values passed to the function when it is called.",
+        "In the example above, fname is a parameter, while Liam, Jenny, and Anja are arguments."
+      ]
+    },
+    {
+      "heading": "Multiple Parameters",
+      "paragraphs": [
+        "A function can have multiple parameters with different data types.",
+        "Arguments must be passed in the same order as parameters."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc familyName(fname string, age int) {\n  fmt.Println(\"Hello\", age, \"year old\", fname, \"Refsnes\")\n}\n\nfunc main() {\n  familyName(\"Liam\", 3)\n  familyName(\"Jenny\", 14)\n  familyName(\"Anja\", 30)\n}"
+    },
+    {
+      "heading": "Multiple Parameters Output",
+      "code": "Hello 3 year old Liam Refsnes\nHello 14 year old Jenny Refsnes\nHello 30 year old Anja Refsnes"
+    },
+    {
+      "heading": "Important Notes",
+      "paragraphs": [
+        "The number of arguments must match the number of parameters.",
+        "Arguments must follow the same order as parameters.",
+        "Each parameter must have a defined data type."
+      ]
+    }
+  ]
+} ,
+"function-returns": {
+  "title": "Go Function Returns",
+  "sections": [
+    {
+      "heading": "Return Values",
+      "paragraphs": [
+        "Functions can return values to the caller.",
+        "To return a value, specify the return type and use the return keyword."
+      ],
+      "code": "func FunctionName(param1 type, param2 type) type {\n  return output\n}"
+    },
+    {
+      "heading": "Function Return Example",
+      "paragraphs": [
+        "This function receives two integers and returns their sum."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc myFunction(x int, y int) int {\n  return x + y\n}\n\nfunc main() {\n  fmt.Println(myFunction(1, 2))\n}"
+    },
+    {
+      "heading": "Named Return Values",
+      "paragraphs": [
+        "Go allows naming return values.",
+        "Named return values can be returned using a naked return."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc myFunction(x int, y int) (result int) {\n  result = x + y\n  return\n}\n\nfunc main() {\n  fmt.Println(myFunction(1, 2))\n}"
+    },
+    {
+      "heading": "Store Return Value",
+      "paragraphs": [
+        "Returned values can be stored in variables."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc myFunction(x int, y int) (result int) {\n  result = x + y\n  return\n}\n\nfunc main() {\n  total := myFunction(1, 2)\n  fmt.Println(total)\n}"
+    },
+    {
+      "heading": "Multiple Return Values",
+      "paragraphs": [
+        "Go functions can return multiple values."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc myFunction(x int, y string) (int, string) {\n  return x + x, y + \" World!\"\n}\n\nfunc main() {\n  fmt.Println(myFunction(5, \"Hello\"))\n}"
+    },
+    {
+      "heading": "Ignoring Return Values",
+      "paragraphs": [
+        "Use underscore (_) to ignore unwanted return values."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc myFunction(x int, y string) (int, string) {\n  return x + x, y + \" World!\"\n}\n\nfunc main() {\n  _, b := myFunction(5, \"Hello\")\n  fmt.Println(b)\n}"
+    }
+  ]
+},
+"recursion": {
+  "title": "Go Recursion Functions",
+  "sections": [
+    {
+      "heading": "What is Recursion?",
+      "paragraphs": [
+        "Go supports recursion, which means a function can call itself.",
+        "A recursive function must have a stopping condition to prevent infinite execution."
+      ]
+    },
+    {
+      "heading": "Simple Recursive Function Example",
+      "paragraphs": [
+        "In this example, the function testcount calls itself.",
+        "The recursion stops when the value of x becomes 11."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc testcount(x int) int {\n  if x == 11 {\n    return 0\n  }\n  fmt.Println(x)\n  return testcount(x + 1)\n}\n\nfunc main() {\n  testcount(1)\n}"
+    },
+    {
+      "heading": "How the Recursion Works",
+      "paragraphs": [
+        "The function prints the current value of x.",
+        "Each recursive call increases x by 1.",
+        "When x reaches 11, the function stops calling itself."
+      ]
+    },
+    {
+      "heading": "Why Use Recursion?",
+      "paragraphs": [
+        "Recursion is commonly used in mathematics and programming.",
+        "It allows problems to be broken down into smaller, similar sub-problems.",
+        "When written correctly, recursion can be efficient and elegant."
+      ]
+    },
+    {
+      "heading": "Factorial Using Recursion",
+      "paragraphs": [
+        "A factorial function is a classic example of recursion.",
+        "The function keeps calling itself until the value reaches zero."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc factorial_recursion(x float64) (y float64) {\n  if x > 0 {\n    y = x * factorial_recursion(x - 1)\n  } else {\n    y = 1\n  }\n  return\n}\n\nfunc main() {\n  fmt.Println(factorial_recursion(4))\n}"
+    },
+    {
+      "heading": "Important Notes on Recursion",
+      "paragraphs": [
+        "Every recursive function must have a base condition.",
+        "Without a stopping condition, recursion can lead to infinite loops.",
+        "Excessive recursion can consume large amounts of memory and processing power."
+      ]
+    }
+  ]
+} ,
+"structs": {
+  "title": "Go Structures",
+  "sections": [
+    {
+      "heading": "What is a Struct?",
+      "paragraphs": [
+        "A struct (structure) is used to group multiple variables of different data types into a single unit.",
+        "Unlike arrays, which store values of the same type, structs can store values of different types.",
+        "Structs are useful for representing real-world entities as records."
+      ]
+    },
+    {
+      "heading": "Declaring a Struct",
+      "paragraphs": [
+        "To declare a struct in Go, use the type and struct keywords.",
+        "Each struct member has a name and a data type."
+      ],
+      "code": "type Person struct {\n  name string\n  age int\n  job string\n  salary int\n}"
+    },
+    {
+      "heading": "Accessing Struct Members",
+      "paragraphs": [
+        "Struct members are accessed using the dot (.) operator.",
+        "Each struct variable has its own copy of the data."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\ntype Person struct {\n  name string\n  age int\n  job string\n  salary int\n}\n\nfunc main() {\n  var pers1 Person\n  var pers2 Person\n\n  pers1.name = \"Hege\"\n  pers1.age = 45\n  pers1.job = \"Teacher\"\n  pers1.salary = 6000\n\n  pers2.name = \"Cecilie\"\n  pers2.age = 24\n  pers2.job = \"Marketing\"\n  pers2.salary = 4500\n\n  fmt.Println(\"Name:\", pers1.name)\n  fmt.Println(\"Age:\", pers1.age)\n  fmt.Println(\"Job:\", pers1.job)\n  fmt.Println(\"Salary:\", pers1.salary)\n\n  fmt.Println(\"Name:\", pers2.name)\n  fmt.Println(\"Age:\", pers2.age)\n  fmt.Println(\"Job:\", pers2.job)\n  fmt.Println(\"Salary:\", pers2.salary)\n}"
+    },
+    {
+      "heading": "Passing Structs to Functions",
+      "paragraphs": [
+        "A struct can be passed as an argument to a function.",
+        "When passed normally, Go passes a copy of the struct."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\ntype Person struct {\n  name string\n  age int\n  job string\n  salary int\n}\n\nfunc printPerson(pers Person) {\n  fmt.Println(\"Name:\", pers.name)\n  fmt.Println(\"Age:\", pers.age)\n  fmt.Println(\"Job:\", pers.job)\n  fmt.Println(\"Salary:\", pers.salary)\n}\n\nfunc main() {\n  pers1 := Person{\"Hege\", 45, \"Teacher\", 6000}\n  pers2 := Person{\"Cecilie\", 24, \"Marketing\", 4500}\n\n  printPerson(pers1)\n  printPerson(pers2)\n}"
+    },
+    {
+      "heading": "Why Use Structs?",
+      "paragraphs": [
+        "Structs help organize related data together.",
+        "They improve code readability and maintainability.",
+        "Structs are heavily used in real-world Go applications."
+      ]
+    }
+  ]
+} ,
+"maps": {
+  "title": "Go Maps",
+  "sections": [
+    {
+      "heading": "What is a Map?",
+      "paragraphs": [
+        "Maps store data in key:value pairs.",
+        "Maps are unordered, changeable, and do not allow duplicate keys.",
+        "Maps use a hash table internally and store references to it.",
+        "The default value of a map is nil."
+      ]
+    },
+    {
+      "heading": "Creating Maps Using var and :=",
+      "paragraphs": [
+        "Maps can be created using the var keyword or the := shorthand syntax.",
+        "The order of map elements is not guaranteed."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var a = map[string]string{\"brand\": \"Ford\", \"model\": \"Mustang\", \"year\": \"1964\"}\n  b := map[string]int{\"Oslo\": 1, \"Bergen\": 2, \"Trondheim\": 3}\n\n  fmt.Println(a)\n  fmt.Println(b)\n}"
+    },
+    {
+      "heading": "Creating Maps Using make()",
+      "paragraphs": [
+        "The make() function is the recommended way to create empty maps.",
+        "Maps created with make() are ready for use immediately."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  a := make(map[string]string)\n  a[\"brand\"] = \"Ford\"\n  a[\"model\"] = \"Mustang\"\n  a[\"year\"] = \"1964\"\n\n  fmt.Println(a)\n}"
+    },
+    {
+      "heading": "Nil Maps",
+      "paragraphs": [
+        "A map declared without make() is nil.",
+        "Writing to a nil map causes a runtime panic."
+      ],
+      "code": "package main\nimport (\"fmt\")\n\nfunc main() {\n  var a = make(map[string]string)\n  var b map[string]string\n\n  fmt.Println(a == nil)\n  fmt.Println(b == nil)\n}"
+    },
+    {
+      "heading": "Accessing Map Elements",
+      "paragraphs": [
+        "Map elements are accessed using their keys.",
+        "If a key does not exist, the zero value is returned."
+      ],
+      "code": "value := myMap[key]"
+    },
+    {
+      "heading": "Updating and Adding Elements",
+      "paragraphs": [
+        "Maps allow adding new elements and updating existing ones using assignment."
+      ],
+      "code": "mapName[key] = value"
+    },
+    {
+      "heading": "Deleting Map Elements",
+      "paragraphs": [
+        "Elements can be removed from a map using the delete() function."
+      ],
+      "code": "delete(mapName, key)"
+    },
+    {
+      "heading": "Checking if a Key Exists",
+      "paragraphs": [
+        "The comma-ok idiom is used to check if a key exists in a map.",
+        "This avoids confusion with zero values."
+      ],
+      "code": "val, ok := mapName[key]"
+    },
+    {
+      "heading": "Maps Are Reference Types",
+      "paragraphs": [
+        "Maps are reference types.",
+        "Assigning one map to another copies the reference, not the data."
+      ],
+      "code": "b := a // both refer to the same map"
+    },
+    {
+      "heading": "Iterating Over Maps",
+      "paragraphs": [
+        "Maps can be iterated using the range keyword.",
+        "The iteration order is not guaranteed."
+      ],
+      "code": "for key, value := range myMap {\n  fmt.Println(key, value)\n}"
+    },
+    {
+      "heading": "Iterating Maps in a Specific Order",
+      "paragraphs": [
+        "Maps are unordered.",
+        "To iterate in a fixed order, store keys in a slice and loop over it."
+      ],
+      "code": "keys := []string{\"one\", \"two\", \"three\"}\nfor _, k := range keys {\n  fmt.Println(k, myMap[k])\n}"
+    }
+  ]
+}
+}
+}

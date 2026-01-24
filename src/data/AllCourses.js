@@ -36,15 +36,15 @@ const allCourses = [
   // animesh end
 
   // soumya start
-  { id: 28, title: "Go", path: "/go" },
+  { id: 28, title: "Go", path: "/go" }, // done 
   { id: 29, title: "Swift", path: "/swift" },
   { id: 30, title: "Django", path: "/django" },
-  { id: 31, title: "TypeScript", path: "/typescript" },
+  { id: 31, title: "TypeScript", path: "/typescript" }, //done
   { id: 32, title: "ASP.NET", path: "/asp-net" },
   { id: 33, title: "Node.js", path: "/node-js" },
-  { id: 34, title: "Git", path: "/git" },
+  { id: 34, title: "Git", path: "/git" },  //done 
   { id: 35, title: "MongoDB", path: "/mongodb" },
-  { id: 36, title: "AWS", path: "/aws" },
+  { id: 36, title: "AWS", path: "/aws" },  // done 
   // soumya end
 ];
 

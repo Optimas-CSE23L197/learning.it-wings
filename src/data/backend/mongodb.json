@@ -1,0 +1,822 @@
+{
+  "course": {
+    "id": "mongodb",
+    "title": "MongoDB Tutorial"
+  },
+  "sections": [
+    {
+      "title": "MongoDB Basics",
+      "lessons": [
+        { "id": "home", "title": "MongoDB HOME" },
+        { "id": "get-started", "title": "MongoDB Get Started" },
+        { "id": "query-api", "title": "MongoDB Query API" },
+        { "id": "create-db", "title": "MongoDB Create DB" },
+        { "id": "collection", "title": "MongoDB Collection" },
+        { "id": "insert", "title": "MongoDB Insert" },
+        { "id": "find", "title": "MongoDB Find" },
+        { "id": "update", "title": "MongoDB Update" },
+        { "id": "delete", "title": "MongoDB Delete" },
+        { "id": "query-operators", "title": "MongoDB Query Operators" },
+        { "id": "update-operators", "title": "MongoDB Update Operators" },
+        { "id": "aggregations", "title": "MongoDB Aggregations" },
+        { "id": "indexing-search", "title": "MongoDB Indexing/Search" },
+        { "id": "validation", "title": "MongoDB Validation" },
+        { "id": "data-api", "title": "MongoDB Data API" },
+        { "id": "drivers", "title": "MongoDB Drivers" },
+        { "id": "nodejs-driver", "title": "MongoDB Node.js Driver" },
+        { "id": "charts", "title": "MongoDB Charts" }
+      ]
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "MongoDB HOME",
+      "sections": [
+        {
+          "heading": "Learn MongoDB",
+          "paragraphs": [
+            "MongoDB is a document database.",
+            "It stores data in a type of JSON format called BSON (Binary JSON).",
+            "A record in MongoDB is called a document.",
+            "A document is a data structure composed of key-value pairs, similar to the structure of JSON objects."
+          ]
+        },
+        {
+          "heading": "A MongoDB Document",
+          "paragraphs": [
+            "In MongoDB, field values within a document can include various data types:"
+          ],
+          "list": [
+            "Numbers",
+            "Strings",
+            "Booleans",
+            "Arrays",
+            "Nested documents"
+          ]
+        },
+        {
+          "heading": "Example Document",
+          "paragraphs": [
+            "This example shows the structure of a typical MongoDB document:"
+          ],
+          "code": "{\n  title: \"Post Title 1\",\n  body: \"Body of post.\",\n  category: \"News\",\n  likes: 1,\n  tags: [\"news\", \"events\"],\n  date: Date()\n}"
+        }
+      ]
+    },
+    "get-started": {
+      "title": "MongoDB Get Started",
+      "sections": [
+        {
+          "heading": "SQL vs. Document Databases",
+          "paragraphs": [
+            "SQL databases are relational and store data in separate tables, requiring 'joins' to pull related information back together.",
+            "MongoDB is a non-tabular document database that stores related data together in flexible documents, making data retrieval faster.",
+            "In MongoDB, groups of data that would be called 'tables' in SQL are referred to as 'collections'."
+          ]
+        },
+        {
+          "heading": "Setting up MongoDB Atlas",
+          "paragraphs": [
+            "To use MongoDB Atlas, follow these initial setup steps:"
+          ],
+          "list": [
+            "Create a free account and set up a 'Shared Cluster'.",
+            "Under 'Database Access', create a database user.",
+            "Under 'Network Access', add your current IP address to the allowlist."
+          ]
+        },
+        {
+          "heading": "Connecting via mongosh",
+          "paragraphs": [
+            "The MongoDB Shell (mongosh) is the primary way to interact with your database."
+          ],
+          "code": "mongosh \"mongodb+srv://cluster0.example.net\" --username YOUR_NAME"
+        }
+      ]
+    },
+    "query-api": {
+      "title": "MongoDB Query API",
+      "sections": [
+        {
+          "heading": "Interacting with Data",
+          "paragraphs": [
+            "The MongoDB Query API is the primary interface used to interact with your data.",
+            "There are two fundamental ways to utilize the API:"
+          ],
+          "list": [
+            "CRUD Operations: Used for basic Create, Read, Update, and Delete actions.",
+            "Aggregation Pipelines: Used for processing data through various stages to achieve complex transformations."
+          ]
+        },
+        {
+          "heading": "Core Capabilities",
+          "paragraphs": [
+            "The Query API is versatile and supports a wide range of data operations:"
+          ],
+          "list": [
+            "Adhoc Queries: Execute queries using tools like mongosh, MongoDB Compass, VS Code, or language-specific drivers.",
+            "Data Transformations: Reshape and analyze data using powerful aggregation pipelines.",
+            "Document Joins: Combine data from different collections within a single query.",
+            "Advanced Analytics: Perform geospatial, graph, and time-series analysis.",
+            "Performance & Search: Implement indexing to improve query speed and utilize full-text search capabilities."
+          ]
+        }
+      ]
+    },
+    "create-db": {
+      "title": "MongoDB Create DB",
+      "sections": [
+        {
+          "heading": "Checking Your Current Database",
+          "paragraphs": [
+          "Once you are connected via mongosh, you can check which database you are currently using by typing `db` in your terminal.",
+          "If you used a standard Atlas connection string, you will likely start in a default database like `myFirstDatabase`."
+        ]
+      },
+      {
+        "heading": "Viewing All Databases",
+        "paragraphs": [
+          "To see a list of all databases available on your cluster, use the following command:"
+        ],
+        "code": "show dbs",
+        "paragraphs_continued": [
+          "Note: If a database is empty, it will not appear in this list. In MongoDB, an empty database is essentially non-existent until it contains data."
+        ]
+      },
+      {
+        "heading": "Creating or Changing Databases",
+        "paragraphs": [
+          "In MongoDB, the same command is used to both switch to an existing database and create a new one:"
+        ],
+        "code": "use blog",
+        "paragraphs_continued": [
+          "This command switches your current context to the 'blog' database. If 'blog' does not exist yet, MongoDB will prepare to create it as soon as you add content (like a collection or document)."
+        ]
+      }
+    ]
+  } ,
+
+  "collection": {
+    "title": "MongoDB Collection",
+    "sections": [
+      {
+        "heading": "Ways to Create a Collection",
+        "paragraphs": [
+          "In MongoDB, there are two primary methods for creating a collection within a database."
+        ]
+      },
+      {
+        "heading": "Method 1: Explicit Creation",
+        "paragraphs": [
+          "You can explicitly create a collection using the `createCollection()` database method."
+        ],
+        "code": "db.createCollection(\"posts\")"
+      },
+      {
+        "heading": "Method 2: Implicit Creation",
+        "paragraphs": [
+          "You can also create a collection automatically during the data insertion process.",
+          "If you perform an insert operation on a collection that does not yet exist, MongoDB will create it for you."
+        ],
+        "code": "db.posts.insertOne(object)",
+        "paragraphs_continued": [
+          "In the example above, the 'posts' collection is created automatically when the first document is inserted."
+        ]
+      },
+      {
+        "heading": "Important Reminder",
+        "paragraphs": [
+          "Similar to databases, a collection in MongoDB is not actually created until it contains content."
+        ]
+      }
+    ]
+  } ,
+
+
+  "insert": {
+    "title": "MongoDB Insert",
+    "sections": [
+      {
+        "heading": "Inserting Documents",
+        "paragraphs": [
+          "MongoDB provides two primary methods for adding data to your collections: `insertOne()` and `insertMany()`."
+        ]
+      },
+      {
+        "heading": "insertOne()",
+        "paragraphs": [
+          "The `insertOne()` method is used to add a single document (object) to the database.",
+          "If the target collection does not exist, MongoDB will create it automatically upon insertion."
+        ],
+        "code": "db.posts.insertOne({\n  title: \"Post Title 1\",\n  body: \"Body of post.\",\n  category: \"News\",\n  likes: 1,\n  tags: [\"news\", \"events\"],\n  date: Date()\n})",
+        "tip": "In the shell, you can press enter to start a new line after opening a curly brace '{'; the command only executes after you close the braces and press enter."
+      },
+      {
+        "heading": "insertMany()",
+        "paragraphs": [
+          "The `insertMany()` method allows you to insert an array of multiple objects into the database at once."
+        ],
+        "code": "db.posts.insertMany([ \n  {\n    title: \"Post Title 2\",\n    category: \"Event\",\n    date: Date()\n  },\n  {\n    title: \"Post Title 3\",\n    category: \"Technology\",\n    date: Date()\n  }\n])"
+      }
+    ]
+  },
+  
+  "find": {
+    "title": "MongoDB Find",
+    "sections": [
+      {
+        "heading": "Finding Data",
+        "paragraphs": [
+          "MongoDB provides two primary methods to retrieve and select data from a collection: `find()` and `findOne()`."
+        ]
+      },
+      {
+        "heading": "find() vs findOne()",
+        "paragraphs": [
+          "The `find()` method selects all documents that match a given query. If the query is left empty, it returns all documents in the collection.",
+          "The `findOne()` method returns only the first document that matches the criteria, regardless of how many matches exist in the database."
+        ],
+        "code": "// Find all documents\ndb.posts.find()\n\n// Find the first document\ndb.posts.findOne()"
+      },
+      {
+        "heading": "Querying Data",
+        "paragraphs": [
+          "To filter your results, you can pass a query object into either method to specify the criteria."
+        ],
+        "code": "db.posts.find( {category: \"News\"} )"
+      },
+      {
+        "heading": "Projection",
+        "paragraphs": [
+          "Projection allows you to specify exactly which fields to include or exclude in the results by passing a second parameter to the find methods.",
+          "Use a 1 to include a field and a 0 to exclude it.",
+          "By default, the `_id` field is always included unless it is specifically set to 0."
+        ],
+        "code": "// Include only title and date (Note: _id is included by default)\ndb.posts.find({}, {title: 1, date: 1})\n\n// Exclude _id and include title and date\ndb.posts.find({}, {_id: 0, title: 1, date: 1})\n\n// Exclude only the category field\ndb.posts.find({}, {category: 0})"
+      },
+      {
+        "heading": "Projection Rules",
+        "paragraphs": [
+          "You cannot mix 0 and 1 in the same projection object (except for the `_id` field).",
+          "Attempting to specify both inclusion and exclusion for different fields (e.g., `{title: 1, date: 0}`) will result in an error."
+        ]
+      }
+    ]
+  } ,
+  
+  "update": {
+    "title": "MongoDB Update",
+    "sections": [
+      {
+        "heading": "Updating Documents",
+        "paragraphs": [
+          "To modify existing data in a collection, MongoDB provides the `updateOne()` and `updateMany()` methods.",
+          "These methods typically require two main parameters:"
+        ],
+        "list": [
+          "Query Object: Defines which document or documents should be targeted for the update.",
+          "Update Object: Defines the data to be changed using specific update operators."
+        ]
+      },
+      {
+        "heading": "updateOne()",
+        "paragraphs": [
+          "The `updateOne()` method modifies only the first document that matches the provided query.",
+          "To change a field value, you must use the `$set` operator."
+        ],
+        "code": "// Update the 'likes' count for a specific post\ndb.posts.updateOne( { title: \"Post Title 1\" }, { $set: { likes: 2 } } )"
+      },
+      {
+        "heading": "Upsert Option",
+        "paragraphs": [
+          "The `upsert` option (update + insert) tells MongoDB to update the document if found, or insert a new one if it is not found."
+        ],
+        "code": "db.posts.updateOne( \n  { title: \"Post Title 5\" }, \n  { $set: { likes: 5, category: \"Event\" } }, \n  { upsert: true }\n)"
+      },
+      {
+        "heading": "updateMany()",
+        "paragraphs": [
+          "The `updateMany()` method modifies all documents in the collection that match the query criteria.",
+          "You can use operators like `$inc` to increment values across multiple documents simultaneously."
+        ],
+        "code": "// Increment likes by 1 for all documents\ndb.posts.updateMany({}, { $inc: { likes: 1 } })"
+      }
+    ]
+  },
+  "delete": {
+    "title": "MongoDB Delete",
+    "sections": [
+      {
+        "heading": "Deleting Documents",
+        "paragraphs": [
+          "MongoDB provides two primary methods for removing documents from a collection: `deleteOne()` and `deleteMany()`.",
+          "Both methods require a query object to determine which documents should be removed."
+        ]
+      },
+      {
+        "heading": "deleteOne()",
+        "paragraphs": [
+          "The `deleteOne()` method removes the first document that matches the specified query criteria."
+        ],
+        "code": "db.posts.deleteOne({ title: \"Post Title 5\" })"
+      },
+      {
+        "heading": "deleteMany()",
+        "paragraphs": [
+          "The `deleteMany()` method removes all documents in the collection that match the provided query.",
+          "To delete every document in a collection, you can pass an empty query object `{}`."
+        ],
+        "code": "db.posts.deleteMany({ category: \"Technology\" })"
+      }
+    ]
+  },
+  
+  "query-operators": {
+    "title": "MongoDB Query Operators",
+    "sections": [
+      {
+        "heading": "Comparison Operators",
+        "paragraphs": [
+          "Comparison operators are used in queries to compare document field values against specific values."
+        ],
+        "list": [
+          "$eq: Matches values that are equal to a specified value.",
+          "$ne: Matches all values that are not equal to a specified value.",
+          "$gt: Matches values that are greater than a specified value.",
+          "$gte: Matches values that are greater than or equal to a specified value.",
+          "$lt: Matches values that are less than a specified value.",
+          "$lte: Matches values that are less than or equal to a specified value.",
+          "$in: Matches any of the values specified in an array."
+        ]
+      },
+      {
+        "heading": "Logical Operators",
+        "paragraphs": [
+          "Logical operators allow you to combine or negate multiple query conditions."
+        ],
+        "list": [
+          "$and: Joins query clauses with a logical AND; returns all documents that match both conditions.",
+          "$or: Joins query clauses with a logical OR; returns all documents that match at least one condition.",
+          "$nor: Joins query clauses with a logical NOR; returns all documents that fail to match both conditions.",
+          "$not: Inverts the effect of a query expression and returns documents that do not match the query."
+        ]
+      },
+      {
+        "heading": "Evaluation Operators",
+        "paragraphs": [
+          "Evaluation operators provide advanced ways to analyze and match document data."
+        ],
+        "list": [
+          "$regex: Selects documents where values match a specified regular expression.",
+          "$text: Performs a text search on the content of a field indexed with a text index.",
+          "$where: Matches documents that satisfy a JavaScript expression."
+        ]
+      }
+    ]
+  },
+
+  "update-operators": {
+    "title": "MongoDB Update Operators",
+    "sections": [
+      {
+        "heading": "Field Update Operators",
+        "paragraphs": [
+          "Field update operators allow you to modify the value of specific fields or change the structure of a document."
+        ],
+        "list": [
+          "$currentDate: Sets the value of a field to the current date, either as a Date or a Timestamp.",
+          "$inc: Increments the value of a field by a specified amount.",
+          "$rename: Changes the name of an existing field.",
+          "$set: Sets the value of a field in a document. If the field does not exist, it will be created.",
+          "$unset: Deletes a specific field from a document."
+        ]
+      },
+      {
+        "heading": "Array Update Operators",
+        "paragraphs": [
+          "Array operators provide specialized logic for interacting with fields that store arrays of data."
+        ],
+        "list": [
+          "$addToSet: Adds an element to an array only if it does not already exist, ensuring the array contains distinct elements.",
+          "$pop: Removes the first or last item from an array.",
+          "$pull: Removes all instances of a value or all elements that match a specified query from an array.",
+          "$push: Adds a new element to the end of an array."
+        ]
+      }
+    ]
+  },
+  "aggregations": {
+    "title": "MongoDB Aggregations",
+    "sections": [
+      {
+        "heading": "Aggregation Pipelines",
+        "paragraphs": [
+          "Aggregation operations allow you to process data by grouping, sorting, performing calculations, and analyzing trends within your collections.",
+          "A pipeline consists of one or more 'stages' that process documents in a specific sequence.",
+          "The order of stages is critical because each stage acts upon the data results produced by the previous stage."
+        ]
+      },
+      {
+        "heading": "Example Pipeline",
+        "paragraphs": [
+          "The following example demonstrates a two-stage pipeline that filters documents and then calculates a sum:"
+        ],
+        "code": "db.posts.aggregate([\n  // Stage 1: Filter documents with more than 1 like\n  {\n    $match: { likes: { $gt: 1 } }\n  },\n  // Stage 2: Group by category and sum total likes\n  {\n    $group: { _id: \"$category\", totalLikes: { $sum: \"$likes\" } }\n  }\n])"
+      },
+      {
+        "heading": "Loading Sample Data",
+        "paragraphs": [
+          "To practice complex aggregations, you can load pre-built datasets directly from the MongoDB Atlas dashboard:"
+        ],
+        "list": [
+          "Go to the 'Databases' section in your Atlas dashboard.",
+          "Click the ellipsis (...) button for your cluster.",
+          "Select 'Load Sample Dataset' to add several example databases to your environment."
+        ]
+      } ,
+      {
+        "heading": "The $group Stage",
+        "paragraphs": [
+          "The `$group` stage is used to separate documents into groups based on a specific unique 'group key' or expression.",
+          "For each unique group key, the stage outputs a single document.",
+          "Note that the grouping `_id` is a specific expression for the stage and should not be confused with the `_id` ObjectId found in individual documents."
+        ]
+      },
+      {
+        "heading": "Example: Grouping by Field",
+        "paragraphs": [
+          "In this example, we use the `sample_airbnb` database to group documents by their property type:"
+        ],
+        "code": "db.listingsAndReviews.aggregate(\n  [ { $group : { _id : \"$property_type\" } } ]\n)",
+        "paragraphs_continued": [
+          "This operation returns the distinct values found within the `property_type` field across the collection."
+        ]
+      } ,
+      {
+        "heading": "The $project Stage",
+        "paragraphs": [
+          "This aggregation stage passes only the specified fields along to the next aggregation stage in the pipeline.",
+          "It functions the same way as the projection parameter used with the `find()` method.",
+          "This stage is highly useful for reducing the document size and focusing only on the data needed for further processing."
+        ]
+      },
+      {
+        "heading": "Inclusion and Exclusion Rules",
+        "paragraphs": [
+          "In a `$project` object, you use a `1` to include a field and a `0` to exclude a field.",
+          "The `_id` field is unique because it is always included by default unless specifically excluded with a `0`.",
+          "Important: You cannot mix both `0` and `1` in the same object, with the only exception being the `_id` field."
+        ],
+        "code": "db.restaurants.aggregate([\n  {\n    $project: {\n      \"name\": 1,\n      \"cuisine\": 1,\n      \"address\": 1\n    }\n  },\n  {\n    $limit: 5\n  }\n])",
+        "paragraphs_continued": [
+          "In this example, the resulting documents will only include the 'name', 'cuisine', and 'address' fields, along with the mandatory '_id'."
+        ]
+      } ,
+      {
+        "heading": "The $sort Stage",
+        "paragraphs": [
+          "The `$sort` aggregation stage arranges all documents in the pipeline into a specified sort order.",
+          "Like all aggregation stages, the order is critical; `$sort` only processes the documents passed to it by the preceding stage."
+        ]
+      },
+      {
+        "heading": "Sort Order Values",
+        "paragraphs": [
+          "You can control the direction of the sort by using the values 1 or -1:"
+        ],
+        "list": [
+          "1: Sorts results in ascending order (lowest to highest).",
+          "-1: Sorts results in descending order (highest to lowest)."
+        ]
+      },
+      {
+        "heading": "Example: Sorting by Capacity",
+        "paragraphs": [
+          "In this example using the `sample_airbnb` dataset, we sort the listings to show those with the highest accommodation capacity first:"
+        ],
+        "code": "db.listingsAndReviews.aggregate([ \n  { \n    $sort: { \"accommodates\": -1 } \n  },\n  {\n    $project: {\n      \"name\": 1,\n      \"accommodates\": 1\n    }\n  },\n  {\n    $limit: 5\n  }\n])",
+        "paragraphs_continued": [
+          "This pipeline first sorts the entire collection, then projects only the name and accommodates fields, and finally limits the output to the top 5 results."
+        ]
+      } ,
+      {
+        "heading": "The $match Stage",
+        "paragraphs": [
+          "The `$match` aggregation stage functions similarly to a standard `find()` query.",
+          "It is used to filter documents so that only those matching the specified query criteria are passed to the next stage of the pipeline.",
+          "Using `$match` early in your pipeline is a best practice because it reduces the number of documents processed by subsequent stages, which significantly improves performance."
+        ]
+      },
+      {
+        "heading": "Example: Filtering for Houses",
+        "paragraphs": [
+          "In this example using the `sample_airbnb` dataset, we filter for a specific property type before limiting and projecting the fields:"
+        ],
+        "code": "db.listingsAndReviews.aggregate([ \n  { $match : { property_type : \"House\" } },\n  { $limit: 2 },\n  { $project: {\n    \"name\": 1,\n    \"bedrooms\": 1,\n    \"price\": 1\n  }}\n])",
+        "paragraphs_continued": [
+          "The resulting output will only contain documents where the `property_type` field is exactly \"House\"."
+        ]
+      } ,
+      {
+        "heading": "The $addFields Stage",
+        "paragraphs": [
+          "The `$addFields` aggregation stage is used to add new fields to documents as they pass through the pipeline.",
+          "This stage can also be used to overwrite the value of existing fields.",
+          "It is particularly useful for calculating new values based on existing data without modifying the source collection permanently."
+        ]
+      },
+      {
+        "heading": "Example: Calculating an Average Grade",
+        "paragraphs": [
+          "In this example using the `sample_restaurants` dataset, we create a new field called `avgGrade` to calculate the average score for each restaurant:"
+        ],
+        "code": "db.restaurants.aggregate([\n  {\n    $addFields: {\n      avgGrade: { $avg: \"$grades.score\" }\n    }\n  },\n  {\n    $project: {\n      \"name\": 1,\n      \"avgGrade\": 1\n    }\n  },\n  {\n    $limit: 5\n  }\n])",
+        "paragraphs_continued": [
+          "The pipeline first adds the `avgGrade` field, then uses `$project` to display only the name and the new calculation, finally limiting the output to the first 5 records."
+        ]
+      } ,
+      {
+        "heading": "The $count Stage",
+        "paragraphs": [
+          "The `$count` aggregation stage calculates the total number of documents that have been passed to it from the previous stage in the pipeline.",
+          "Unlike other stages that return documents with various fields, the output of `$count` is a single document containing a single field with the total count."
+        ]
+      },
+      {
+        "heading": "Example: Counting Specific Documents",
+        "paragraphs": [
+          "In this example using the `sample_restaurants` dataset, we count how many restaurants offer 'Chinese' cuisine:"
+        ],
+        "code": "db.restaurants.aggregate([\n  {\n    $match: { \"cuisine\": \"Chinese\" }\n  },\n  {\n    $count: \"totalChinese\"\n  }\n])",
+        "paragraphs_continued": [
+          "The string value assigned to `$count` (in this case, \"totalChinese\") becomes the name of the field in the resulting output document."
+        ]
+      },
+      {
+        "heading": "The $lookup Stage",
+        "paragraphs": [
+          "The `$lookup` stage performs a left outer join to another collection within the same database.",
+          "This stage allows you to combine data from two different collections, similar to how 'joins' work in SQL.",
+          "To perform a lookup, four specific fields are required:"
+        ],
+        "list": [
+          "from: The target collection in the same database to perform the lookup against.",
+          "localField: The field from the input documents (primary collection) used for the match.",
+          "foreignField: The field from the 'from' collection used for the match.",
+          "as: The name of the new array field that will contain the matching documents."
+        ]
+      },
+      {
+        "heading": "Example: Joining Comments and Movies",
+        "paragraphs": [
+          "In this example using the `sample_mflix` dataset, we join the `comments` collection with the `movies` collection to see the details of the movie each comment refers to:"
+        ],
+        "code": "db.comments.aggregate([\n  {\n    $lookup: {\n      from: \"movies\",\n      localField: \"movie_id\",\n      foreignField: \"_id\",\n      as: \"movie_details\",\n    },\n  },\n  {\n    $limit: 1\n  }\n])",
+        "paragraphs_continued": [
+          "This returns the comment document with an added array field `movie_details` containing the matching movie information."
+        ]
+      } ,
+      {
+        "heading": "The $out Stage",
+        "paragraphs": [
+          "The `$out` aggregation stage writes the resulting documents from the aggregation pipeline into a specified collection.",
+          "This stage allows you to persist the results of complex calculations or transformations for later use.",
+          "Important: The `$out` stage must always be the last stage in the aggregation pipeline."
+        ]
+      },
+      {
+        "heading": "Example: Saving Grouped Results",
+        "paragraphs": [
+          "In this example using the `sample_airbnb` dataset, we group properties by type and save the organized list into a new collection called `properties_by_type`:"
+        ],
+        "code": "db.listingsAndReviews.aggregate([\n  {\n    $group: {\n      _id: \"$property_type\",\n      properties: {\n        $push: {\n          name: \"$name\",\n          accommodates: \"$accommodates\",\n          price: \"$price\",\n        },\n      },\n    },\n  },\n  { $out: \"properties_by_type\" },\n])",
+        "paragraphs_continued": [
+          "The first stage organizes the data, and the `$out` stage creates the new collection in the current database, filling it with the transformed documents."
+        ]
+      }
+
+    ]
+  } ,
+  "indexing-search": {
+    "title": "MongoDB Indexing & Search",
+    "sections": [
+      {
+        "heading": "Atlas Search Overview",
+        "paragraphs": [
+          "MongoDB Atlas features a powerful full-text search engine built on Apache Lucene, allowing for sophisticated search capabilities directly within your database.",
+          "This engine enables features like fuzzy matching, autocomplete, and relevance-based scoring."
+        ]
+      },
+      {
+        "heading": "Creating a Search Index",
+        "paragraphs": [
+          "To use Atlas Search, you must first create a search index through the Atlas dashboard:"
+        ],
+        "list": [
+          "Navigate to the 'Search' tab in your Cluster view.",
+          "Select 'Create Search Index' and choose the 'Visual Editor'.",
+          "Select your target Database and Collection (e.g., sample_mflix.movies).",
+          "Name your index; if you name it 'default', you can omit the index name in your queries."
+        ]
+      },
+      {
+        "heading": "Running a Search Query",
+        "paragraphs": [
+          "To query your search index, use the `$search` operator as the first stage in an aggregation pipeline:"
+        ],
+        "code": "db.movies.aggregate([\n  {\n    $search: {\n      index: \"default\",\n      text: {\n        query: \"star wars\",\n        path: \"title\"\n      },\n    },\n  },\n  {\n    $project: {\n      title: 1,\n      year: 1,\n    }\n  }\n])",
+        "paragraphs_continued": [
+          "In this example, the `$search` stage identifies documents containing 'star' or 'wars' in the title, and the `$project` stage refines the output fields."
+        ]
+      }
+    ]
+  } ,
+  "validation": {
+    "title": "MongoDB Schema Validation",
+    "sections": [
+      {
+        "heading": "Flexible vs. Strict Schemas",
+        "paragraphs": [
+          "By default, MongoDB utilizes a flexible schema, meaning documents in the same collection do not need to have the same set of fields or data types.",
+          "However, you can implement schema validation rules to ensure that all documents meet specific structural requirements, which is essential for maintaining data integrity in production environments."
+        ]
+      },
+      {
+        "heading": "JSON Schema Validation",
+        "paragraphs": [
+          "MongoDB supports the JSON Schema standard for validation. Using the `$jsonSchema` operator, you can define the types of data allowed, which fields are required, and the allowed values for each field."
+        ],
+        "code": "db.createCollection(\"posts\", {\n  validator: {\n    $jsonSchema: {\n      bsonType: \"object\",\n      required: [ \"title\", \"body\" ],\n      properties: {\n        title: {\n          bsonType: \"string\",\n          description: \"Title of post - Required.\"\n        },\n        body: {\n          bsonType: \"string\",\n          description: \"Body of post - Required.\"\n        },\n        likes: {\n          bsonType: \"int\",\n          description: \"Post like count. Must be an integer - Optional.\"\n        }\n      }\n    }\n  }\n})",
+        "paragraphs_continued": [
+          "This command creates the 'posts' collection with strict rules: any attempt to insert a document without a title or body, or with the wrong data type for 'likes', will be rejected by the database."
+        ]
+      }
+    ]
+  } ,
+  "data-api": {
+    "title": "MongoDB Data API",
+    "sections": [
+      {
+        "heading": "What is the MongoDB Data API?",
+        "paragraphs": [
+          "The Data API allows you to interact with your MongoDB Atlas database using standard HTTPS requests instead of language-specific drivers.",
+          "While drivers are generally preferred, the Data API is ideal for environments where drivers are unavailable, such as serverless functions, IoT devices, or simple webhooks."
+        ]
+      },
+      {
+        "heading": "Configuration and Setup",
+        "paragraphs": [
+          "Before sending requests, you must enable the API and configure security in the Atlas UI:"
+        ],
+        "list": [
+          "Enable API: Navigate to 'Data API' in the Atlas menu and enable it for your cluster.",
+          "Access Level: Set permissions (No Access, Read Only, Read and Write, or Custom).",
+          "API Key: Generate a Data API Key. Store this safely as it is only shown once."
+        ]
+      },
+      {
+        "heading": "Sending a Request",
+        "paragraphs": [
+          "You can use tools like `curl` to interact with your data. Every request requires your App ID, API Key, and Cluster Name."
+        ],
+        "code": "curl --location --request POST 'https://data.mongodb-api.com/app/<APP_ID>/endpoint/data/v1/action/findOne' \\\n--header 'Content-Type: application/json' \\\n--header 'api-key: <API_KEY>' \\\n--data-raw '{\n    \"dataSource\":\"Cluster0\",\n    \"database\":\"sample_mflix\",\n    \"collection\":\"movies\",\n    \"projection\": {\"title\": 1}\n}'"
+      },
+      {
+        "heading": "Available Action Endpoints",
+        "paragraphs": [
+          "The Data API provides specific endpoints for different CRUD and aggregation actions. All endpoints append the action name to the Base URL."
+        ],
+        "list": [
+          "/findOne and /find: Retrieve a single or multiple documents.",
+          "/insertOne and /insertMany: Add new data to a collection.",
+          "/updateOne and /updateMany: Modify existing documents.",
+          "/deleteOne and /deleteMany: Remove records from the database.",
+          "/aggregate: Run complex aggregation pipelines via HTTPS."
+        ]
+      }
+    ]
+  } ,
+  "drivers": {
+    "title": "MongoDB Drivers",
+    "sections": [
+      {
+        "heading": "Connecting Applications to MongoDB",
+        "paragraphs": [
+          "While the MongoDB Shell (mongosh) is ideal for testing and administrative tasks, you need a way to interact with your data from within your actual application.",
+          "MongoDB provides official language drivers that allow your code to communicate with the database using the same CRUD and aggregation methods learned in the shell."
+        ]
+      },
+      {
+        "heading": "Officially Supported Drivers",
+        "paragraphs": [
+          "MongoDB maintains official drivers for the most popular programming languages to ensure performance and security:"
+        ],
+        "list": [
+          "C / C++ / C#",
+          "Go",
+          "Java",
+          "Node.js",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Rust",
+          "Scala",
+          "Swift"
+        ]
+      },
+      {
+        "heading": "Community Libraries",
+        "paragraphs": [
+          "In addition to official drivers, there are many community-supported libraries (like Mongoose for Node.js) that add extra layers of functionality, such as Object Document Mapping (ODM)."
+        ]
+      }
+    ]
+  } ,
+  "nodejs-driver": {
+    "title": "MongoDB Node.js Driver",
+    "sections": [
+      {
+        "heading": "Installation",
+        "paragraphs": [
+          "To interact with MongoDB from a Node.js application, you must install the official `mongodb` package using npm."
+        ],
+        "code": "npm install mongodb"
+      },
+      {
+        "heading": "Connection Setup",
+        "paragraphs": [
+          "To connect to your Atlas cluster, you need a connection string (URI). This can be found in the Atlas dashboard by clicking 'Connect' on your cluster and selecting 'Connect your application'.",
+          "Ensure you replace `<username>`, `<password>`, and `<cluster.string>` with your specific credentials."
+        ]
+      },
+      {
+        "heading": "Connecting and Querying",
+        "paragraphs": [
+          "The following script demonstrates how to initialize the `MongoClient`, connect to the database, and retrieve a document using an `async` function:"
+        ],
+        "code": "const { MongoClient } = require('mongodb');\n\nconst uri = \"mongodb+srv://<user>:<password>@cluster.mongodb.net/database\";\nconst client = new MongoClient(uri);\n\nasync function run() {\n  try {\n    await client.connect();\n    const db = client.db('sample_mflix');\n    const collection = db.collection('movies');\n\n    const first = await collection.findOne();\n    console.log(first);\n  } finally {\n    await client.close();\n  }\n}\nrun().catch(console.error);"
+      },
+      {
+        "heading": "CRUD and Aggregation",
+        "paragraphs": [
+          "Once the connection is established, you can use the same methods practiced in `mongosh`.",
+          "Methods like `insertOne()`, `updateMany()`, `deleteMany()`, and `aggregate()` are available directly on the collection object within your Node.js code."
+        ]
+      }
+    ]
+  },
+
+"charts": {
+    "title": "MongoDB Charts",
+    "sections": [
+      {
+        "heading": "Visualizing Data with MongoDB Charts",
+        "paragraphs": [
+          "MongoDB Charts provides a native way to visualize your Atlas data without the need for complex ETL processes or data movement.",
+          "It is designed to handle the document model directly, including nested objects and arrays, allowing you to build real-time dashboards."
+        ]
+      },
+      {
+        "heading": "Setting Up Charts",
+        "paragraphs": [
+          "To begin visualizing, you must activate the Charts service within your Atlas project:"
+        ],
+        "list": [
+          "Navigate to the 'Charts' tab (or 'Visualization' under Services) in the Atlas dashboard.",
+          "Click 'Activate Now' to initialize the service for your project.",
+          "Create a new Dashboard to serve as a container for your visual reports."
+        ]
+      },
+      {
+        "heading": "Creating Your First Chart",
+        "paragraphs": [
+          "Building a chart involves selecting a data source and using a drag-and-drop interface to map fields to visual axes."
+        ],
+        "code": "// Example: Visualizing Movie Releases by Year\n1. Select the 'movies' collection as your Data Source.\n2. Choose 'Bar' or 'Column' as your Chart Type.\n3. Drag the 'year' field to the X-Axis (set Bin Size to 1).\n4. Drag the '_id' field to the Y-Axis (Aggregate: COUNT).",
+        "paragraphs_continued": [
+          "This configuration creates a bar chart showing the distribution of movie releases over time."
+        ]
+      },
+      {
+        "heading": "Chart Types and Customization",
+        "paragraphs": [
+          "Charts supports a wide variety of visualization styles to suit different data types:"
+        ],
+        "list": [
+          "Bar and Column: Ideal for comparing categories.",
+          "Line and Area: Best for showing trends over time.",
+          "Circular (Donut/Pie): Used to show proportional distributions.",
+          "Geospatial: Visualizes location-based data on a map."
+        ]
+      }
+    ]
+  }
+
+}
+}
+
+
+
+
+
+

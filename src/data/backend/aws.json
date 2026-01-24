@@ -37,7 +37,7 @@
         { "id": "serverless", "title": "AWS Serverless" },
         { "id": "lambda", "title": "AWS Lambda" }
       ]
-    } ,
+    },
     {
       "title": "AWS Container",
       "lessons": [
@@ -92,8 +92,6 @@
         { "id": "storage-comparison", "title": "AWS Storage Comparison" }
       ]
     }
-  
-    
   ],
   "content": {
     "home": {
@@ -123,762 +121,760 @@
           ]
         }
       ]
-    } ,
+    },
     "certification": {
-  "title": "AWS Cloud Certification",
-  "sections": [
-    {
-      "heading": "AWS Certified Cloud Practitioner",
-      "paragraphs": [
-        "AWS offers a specialized Certification Program for individuals seeking the AWS Certified Cloud Practitioner title.",
-        "Earning this certificate is an excellent way to boost your technical skills and add valuable credentials to your CV.",
-        "It proves your commitment to upgrading your skills and provides the credibility needed for higher salary potential and larger projects."
+      "title": "AWS Cloud Certification",
+      "sections": [
+        {
+          "heading": "AWS Certified Cloud Practitioner",
+          "paragraphs": [
+            "AWS offers a specialized Certification Program for individuals seeking the AWS Certified Cloud Practitioner title.",
+            "Earning this certificate is an excellent way to boost your technical skills and add valuable credentials to your CV.",
+            "It proves your commitment to upgrading your skills and provides the credibility needed for higher salary potential and larger projects."
+          ]
+        },
+        {
+          "heading": "How to Get Certified",
+          "paragraphs": [
+            "You can prepare for the exam by completing the AWS Cloud Tutorial at your own speed on W3Schools.com.",
+            "Once ready, you can schedule and take the AWS Certified Cloud Practitioner exam to document your knowledge and advance your career."
+          ]
+        }
       ]
     },
-    {
-      "heading": "How to Get Certified",
-      "paragraphs": [
-        "You can prepare for the exam by completing the AWS Cloud Tutorial at your own speed on W3Schools.com.",
-        "Once ready, you can schedule and take the AWS Certified Cloud Practitioner exam to document your knowledge and advance your career."
-      ]
-    }
-  ]
-},
-"getstarted": {
-  "title": "AWS Get Started",
-  "sections": [
-    {
-      "heading": "Free AWS Account",
-      "paragraphs": [
-        "AWS offers a Free Tier that provides limited usage of various services at no cost, allowing you to explore and experiment with the platform.",
-        "This is an ideal way to get hands-on experience without initial financial commitment."
-      ]
-    },
-    {
-      "heading": "How To Sign Up",
-      "paragraphs": [
-        "To get started, visit the AWS website and click the 'Create a free account' button.",
-        "The registration process involves several steps, including identity verification.",
-        "Note that AWS requires you to register a credit card and verify your identity via a phone number using text or voice."
-      ]
-    }
-  ]
-} ,
-"computing": {
-  "title": "AWS Cloud Computing",
-  "sections": [
-    {
-      "heading": "What is Cloud Computing?",
-      "paragraphs": [
-        "Cloud computing is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing.",
-        "Instead of upfront hardware investments, you pay only for what you use and can quickly scale resources like servers, storage, and databases.",
-        "It is fundamentally built on the client-server model, where your device (the client) sends requests to remote servers that process and return results."
+    "getstarted": {
+      "title": "AWS Get Started",
+      "sections": [
+        {
+          "heading": "Free AWS Account",
+          "paragraphs": [
+            "AWS offers a Free Tier that provides limited usage of various services at no cost, allowing you to explore and experiment with the platform.",
+            "This is an ideal way to get hands-on experience without initial financial commitment."
+          ]
+        },
+        {
+          "heading": "How To Sign Up",
+          "paragraphs": [
+            "To get started, visit the AWS website and click the 'Create a free account' button.",
+            "The registration process involves several steps, including identity verification.",
+            "Note that AWS requires you to register a credit card and verify your identity via a phone number using text or voice."
+          ]
+        }
       ]
     },
-    {
-      "heading": "Cloud Deployment Models",
-      "paragraphs": [
-        "Deployment models describe how compute resources are accessed—whether over the internet, locally, or a combination of both.",
-        "There are three primary models: Cloud-based, On-premises, and Hybrid."
+    "computing": {
+      "title": "AWS Cloud Computing",
+      "sections": [
+        {
+          "heading": "What is Cloud Computing?",
+          "paragraphs": [
+            "Cloud computing is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing.",
+            "Instead of upfront hardware investments, you pay only for what you use and can quickly scale resources like servers, storage, and databases.",
+            "It is fundamentally built on the client-server model, where your device (the client) sends requests to remote servers that process and return results."
+          ]
+        },
+        {
+          "heading": "Cloud Deployment Models",
+          "paragraphs": [
+            "Deployment models describe how compute resources are accessed—whether over the internet, locally, or a combination of both.",
+            "There are three primary models: Cloud-based, On-premises, and Hybrid."
+          ]
+        },
+        {
+          "heading": "Cloud-Based Deployment",
+          "paragraphs": [
+            "In a cloud-based deployment, everything runs in the cloud.",
+            "You can build new applications or migrate existing ones, choosing your level of control from managing virtual servers to using fully managed services.",
+            "Example: An application with virtual servers, databases, and networking components all hosted in the cloud."
+          ]
+        },
+        {
+          "heading": "On-Premises Deployment",
+          "paragraphs": [
+            "Resources run in your own data center using virtualization and management tools, also known as a 'private cloud' deployment.",
+            "Modern virtualization in this model helps maximize hardware utilization and simplifies resource management."
+          ]
+        },
+        {
+          "heading": "Hybrid Deployment",
+          "paragraphs": [
+            "Hybrid deployment connects cloud resources to on-premises infrastructure.",
+            "This model is particularly useful for handling sensitive data or meeting specific regulatory requirements while still leveraging cloud scalability."
+          ]
+        }
       ]
     },
-    {
-      "heading": "Cloud-Based Deployment",
-      "paragraphs": [
-        "In a cloud-based deployment, everything runs in the cloud.",
-        "You can build new applications or migrate existing ones, choosing your level of control from managing virtual servers to using fully managed services.",
-        "Example: An application with virtual servers, databases, and networking components all hosted in the cloud."
+    "benefits": {
+      "title": "AWS Cloud Benefits",
+      "sections": [
+        {
+          "heading": "The Core Advantages of Cloud",
+          "paragraphs": [
+            "Cloud computing provides essential benefits including cost savings, security, scalability, and flexibility.",
+            "By collaborating with Amazon Web Services, W3Schools delivers digital training that highlights how these advantages transform business operations."
+          ]
+        },
+        {
+          "heading": "Six Key Benefits of AWS Cloud",
+          "paragraphs": [
+            "AWS identifies six primary advantages that differentiate cloud computing from traditional IT infrastructure:"
+          ],
+          "list": [
+            "1. Trade upfront expense for variable expense: Pay only for what you consume instead of investing heavily in data centers and servers upfront.",
+            "2. Benefit from massive economies of scale: Higher usage from hundreds of thousands of customers leads to lower pay-as-you-go prices.",
+            "3. Stop guessing capacity: Scale resources up or down automatically based on actual demand rather than paying for unused capacity.",
+            "4. Increase speed and agility: Provision new IT resources in minutes, allowing for faster experimentation and innovation.",
+            "5. Stop spending money running and maintaining data centers: Focus on your applications and customers instead of the 'heavy lifting' of managing servers.",
+            "6. Go global in minutes: Deploy applications in multiple regions around the world with just a few clicks to provide lower latency to your users."
+          ]
+        }
       ]
     },
-    {
-      "heading": "On-Premises Deployment",
-      "paragraphs": [
-        "Resources run in your own data center using virtualization and management tools, also known as a 'private cloud' deployment.",
-        "Modern virtualization in this model helps maximize hardware utilization and simplifies resource management."
+    "infrastructure-intro": {
+      "title": "AWS Infrastructure Intro",
+      "sections": [
+        {
+          "heading": "AWS Global Infrastructure",
+          "paragraphs": [
+            "Applications run on physical hardware located in data centers globally.",
+            "AWS infrastructure consists of physical locations called Regions, which contain multiple isolated data centers known as Availability Zones (AZs).",
+            "Availability Zones are equipped with redundant power and networking to provide high availability and fault tolerance."
+          ]
+        },
+        {
+          "heading": "AWS Service Categories",
+          "paragraphs": [
+            "AWS services are organized into core categories for easier management:"
+          ],
+          "list": [
+            "Compute: Tools like EC2 and Lambda for running applications.",
+            "Storage: Services such as S3 and EBS for data retention.",
+            "Networking: Components like VPC and Route 53 for connecting resources.",
+            "Databases: Systems like RDS and DynamoDB for data management.",
+            "Security: Services such as IAM and KMS for controlling access."
+          ]
+        },
+        {
+          "heading": "AWS Shared Responsibility Model",
+          "paragraphs": [
+            "Security is a shared duty between AWS and the customer.",
+            "AWS is responsible for 'Security of the Cloud,' which includes the physical security of data centers, hardware, and networking software.",
+            "You are responsible for 'Security in the Cloud,' which covers managing your data, access controls, and encryption."
+          ]
+        }
       ]
     },
-    {
-      "heading": "Hybrid Deployment",
-      "paragraphs": [
-        "Hybrid deployment connects cloud resources to on-premises infrastructure.",
-        "This model is particularly useful for handling sensitive data or meeting specific regulatory requirements while still leveraging cloud scalability."
-      ]
-    }
-  ]
-} ,
-"benefits": {
-  "title": "AWS Cloud Benefits",
-  "sections": [
-    {
-      "heading": "The Core Advantages of Cloud",
-      "paragraphs": [
-        "Cloud computing provides essential benefits including cost savings, security, scalability, and flexibility.",
-        "By collaborating with Amazon Web Services, W3Schools delivers digital training that highlights how these advantages transform business operations."
-      ]
-    },
-    {
-      "heading": "Six Key Benefits of AWS Cloud",
-      "paragraphs": [
-        "AWS identifies six primary advantages that differentiate cloud computing from traditional IT infrastructure:"
-      ],
-      "list": [
-        "1. Trade upfront expense for variable expense: Pay only for what you consume instead of investing heavily in data centers and servers upfront.",
-        "2. Benefit from massive economies of scale: Higher usage from hundreds of thousands of customers leads to lower pay-as-you-go prices.",
-        "3. Stop guessing capacity: Scale resources up or down automatically based on actual demand rather than paying for unused capacity.",
-        "4. Increase speed and agility: Provision new IT resources in minutes, allowing for faster experimentation and innovation.",
-        "5. Stop spending money running and maintaining data centers: Focus on your applications and customers instead of the 'heavy lifting' of managing servers.",
-        "6. Go global in minutes: Deploy applications in multiple regions around the world with just a few clicks to provide lower latency to your users."
-      ]
-    }
-  ]
-} ,
-"infrastructure-intro": {
-  "title": "AWS Infrastructure Intro",
-  "sections": [
-    {
-      "heading": "AWS Global Infrastructure",
-      "paragraphs": [
-        "Applications run on physical hardware located in data centers globally.",
-        "AWS infrastructure consists of physical locations called Regions, which contain multiple isolated data centers known as Availability Zones (AZs).",
-        "Availability Zones are equipped with redundant power and networking to provide high availability and fault tolerance."
+    "ec2-intro": {
+      "title": "AWS EC2 Intro",
+      "sections": [
+        {
+          "heading": "Foundational Compute Service",
+          "paragraphs": [
+            "Compute provides the essential processing power required to run your applications on the cloud.",
+            "Amazon EC2 (Elastic Compute Cloud) is the foundational compute service, offering virtual servers that you can fully configure, control, and manage.",
+            "Unlike physical hardware, EC2 allows you to get computing power on-demand and scale capacity up or down as your needs change."
+          ]
+        },
+        {
+          "heading": "How EC2 Works",
+          "paragraphs": [
+            "EC2 operates on a multi-tenancy model where multiple customers share the same physical hardware through isolated virtual machines.",
+            "AWS manages the underlying infrastructure so you get dedicated virtual resources without the burden of maintaining physical servers."
+          ]
+        },
+        {
+          "heading": "Getting Started Workflow",
+          "paragraphs": [
+            "Working with Amazon EC2 typically involves a simple three-step process:"
+          ],
+          "list": [
+            "1. Launch: Select a template (Amazon Machine Image) with your preferred OS and apps, choose a hardware configuration (instance type), and set security rules.",
+            "2. Connect: Access your virtual server via methods like SSH (for Linux), Remote Desktop (for Windows), or programmatic API access.",
+            "3. Use: Once connected, you can run commands, install software, and manage files just as you would on a physical machine sitting in front of you."
+          ]
+        }
       ]
     },
-    {
-      "heading": "AWS Service Categories",
-      "paragraphs": [
-        "AWS services are organized into core categories for easier management:"
-      ],
-      "list": [
-        "Compute: Tools like EC2 and Lambda for running applications.",
-        "Storage: Services such as S3 and EBS for data retention.",
-        "Networking: Components like VPC and Route 53 for connecting resources.",
-        "Databases: Systems like RDS and DynamoDB for data management.",
-        "Security: Services such as IAM and KMS for controlling access."
+    "ec2-types": {
+      "title": "AWS EC2 Instance Types",
+      "sections": [
+        {
+          "heading": "Purpose-Built Configurations",
+          "paragraphs": [
+            "Amazon EC2 provides a wide selection of instance types optimized to fit different use cases.",
+            "Each instance type offers varying combinations of CPU, memory, storage, and networking capacity, giving you the flexibility to choose the appropriate mix of resources for your applications.",
+            "Instance types are grouped into families based on these capabilities to help you quickly identify the best option for your workload."
+          ]
+        },
+        {
+          "heading": "Instance Type Categories",
+          "paragraphs": [
+            "AWS organizes EC2 instances into five primary categories:"
+          ],
+          "list": [
+            "General Purpose: Provides a balance of compute, memory, and networking. Ideal for diverse workloads like web servers, code repositories, and small-to-medium databases.",
+            "Compute Optimized: Features high-performance processors for compute-intensive tasks such as batch processing, scientific modeling, and dedicated gaming servers.",
+            "Memory Optimized: Designed for workloads that process large datasets in memory, such as real-time big data analytics and in-memory databases.",
+            "Accelerated Computing: Uses hardware accelerators (GPUs or FPGAs) to perform functions like graphics processing or floating-point calculations more efficiently.",
+            "Storage Optimized: Tailored for workloads requiring high, sequential read and write access to large datasets on local storage, like data warehousing and log processing."
+          ]
+        },
+        {
+          "heading": "Naming Conventions",
+          "paragraphs": [
+            "Understanding EC2 naming helps you identify an instance's capabilities at a glance.",
+            "The first letter indicates the instance family (e.g., 'm' for general purpose, 'c' for compute optimized), while the following number represents the generation.",
+            "Additional letters specify options like 'g' for AWS Graviton processors or 'd' for local instance store volumes."
+          ]
+        }
       ]
     },
-    {
-      "heading": "AWS Shared Responsibility Model",
-      "paragraphs": [
-        "Security is a shared duty between AWS and the customer.",
-        "AWS is responsible for 'Security of the Cloud,' which includes the physical security of data centers, hardware, and networking software.",
-        "You are responsible for 'Security in the Cloud,' which covers managing your data, access controls, and encryption."
-      ]
-    }
-  ]
-} ,
-"ec2-intro": {
-  "title": "AWS EC2 Intro",
-  "sections": [
-    {
-      "heading": "Foundational Compute Service",
-      "paragraphs": [
-        "Compute provides the essential processing power required to run your applications on the cloud.",
-        "Amazon EC2 (Elastic Compute Cloud) is the foundational compute service, offering virtual servers that you can fully configure, control, and manage.",
-        "Unlike physical hardware, EC2 allows you to get computing power on-demand and scale capacity up or down as your needs change."
-      ]
-    },
-    {
-      "heading": "How EC2 Works",
-      "paragraphs": [
-        "EC2 operates on a multi-tenancy model where multiple customers share the same physical hardware through isolated virtual machines.",
-        "AWS manages the underlying infrastructure so you get dedicated virtual resources without the burden of maintaining physical servers."
+    "ec2-pricing": {
+      "title": "AWS EC2 Pricing",
+      "sections": [
+        {
+          "heading": "Pay-As-You-Go Compute",
+          "paragraphs": [
+            "Amazon EC2 operates on a consumption-based pricing model, meaning you pay only for the compute capacity you actually use.",
+            "Billing is typically measured in instance-hours or instance-seconds, depending on the operating system and instance type you select.",
+            "To help you optimize costs, AWS offers several distinct pricing models designed for different workload patterns and commitment levels."
+          ]
+        },
+        {
+          "heading": "Pricing Models and Use Cases",
+          "paragraphs": [
+            "Selecting the right pricing model can lead to significant cost reductions, sometimes up to 90% compared to standard rates:"
+          ],
+          "list": [
+            "On-Demand: Pay for capacity by the hour or second with no long-term commitments. Best for short-term, irregular, or unpredictable workloads that cannot be interrupted.",
+            "Savings Plans: A flexible model that offers up to 72% savings in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1 or 3-year term.",
+            "Reserved Instances (RI): Provide a significant discount (up to 75%) compared to On-Demand pricing when you commit to a specific instance configuration for a 1 or 3-year term. Best for steady-state, predictable workloads.",
+            "Spot Instances: Allow you to request spare AWS computing capacity for up to 90% off the On-Demand price. These are ideal for fault-tolerant or flexible applications like batch processing.",
+            "Dedicated Hosts: A physical server fully dedicated to your use. This is the most expensive option but is often required for specific software licensing (BYOL) or compliance needs."
+          ]
+        }
       ]
     },
-    {
-      "heading": "Getting Started Workflow",
-      "paragraphs": [
-        "Working with Amazon EC2 typically involves a simple three-step process:"
-      ],
-      "list": [
-        "1. Launch: Select a template (Amazon Machine Image) with your preferred OS and apps, choose a hardware configuration (instance type), and set security rules.",
-        "2. Connect: Access your virtual server via methods like SSH (for Linux), Remote Desktop (for Windows), or programmatic API access.",
-        "3. Use: Once connected, you can run commands, install software, and manage files just as you would on a physical machine sitting in front of you."
-      ]
-    }
-  ]
-} ,
-"ec2-types": {
-  "title": "AWS EC2 Instance Types",
-  "sections": [
-    {
-      "heading": "Purpose-Built Configurations",
-      "paragraphs": [
-        "Amazon EC2 provides a wide selection of instance types optimized to fit different use cases.",
-        "Each instance type offers varying combinations of CPU, memory, storage, and networking capacity, giving you the flexibility to choose the appropriate mix of resources for your applications.",
-        "Instance types are grouped into families based on these capabilities to help you quickly identify the best option for your workload."
-      ]
-    },
-    {
-      "heading": "Instance Type Categories",
-      "paragraphs": [
-        "AWS organizes EC2 instances into five primary categories:"
-      ],
-      "list": [
-        "General Purpose: Provides a balance of compute, memory, and networking. Ideal for diverse workloads like web servers, code repositories, and small-to-medium databases.",
-        "Compute Optimized: Features high-performance processors for compute-intensive tasks such as batch processing, scientific modeling, and dedicated gaming servers.",
-        "Memory Optimized: Designed for workloads that process large datasets in memory, such as real-time big data analytics and in-memory databases.",
-        "Accelerated Computing: Uses hardware accelerators (GPUs or FPGAs) to perform functions like graphics processing or floating-point calculations more efficiently.",
-        "Storage Optimized: Tailored for workloads requiring high, sequential read and write access to large datasets on local storage, like data warehousing and log processing."
-      ]
-    },
-    {
-      "heading": "Naming Conventions",
-      "paragraphs": [
-        "Understanding EC2 naming helps you identify an instance's capabilities at a glance.",
-        "The first letter indicates the instance family (e.g., 'm' for general purpose, 'c' for compute optimized), while the following number represents the generation.",
-        "Additional letters specify options like 'g' for AWS Graviton processors or 'd' for local instance store volumes."
-      ]
-    }
-  ]
-} ,
-"ec2-pricing": {
-  "title": "AWS EC2 Pricing",
-  "sections": [
-    {
-      "heading": "Pay-As-You-Go Compute",
-      "paragraphs": [
-        "Amazon EC2 operates on a consumption-based pricing model, meaning you pay only for the compute capacity you actually use.",
-        "Billing is typically measured in instance-hours or instance-seconds, depending on the operating system and instance type you select.",
-        "To help you optimize costs, AWS offers several distinct pricing models designed for different workload patterns and commitment levels."
-      ]
-    },
-    {
-      "heading": "Pricing Models and Use Cases",
-      "paragraphs": [
-        "Selecting the right pricing model can lead to significant cost reductions, sometimes up to 90% compared to standard rates:"
-      ],
-      "list": [
-        "On-Demand: Pay for capacity by the hour or second with no long-term commitments. Best for short-term, irregular, or unpredictable workloads that cannot be interrupted.",
-        "Savings Plans: A flexible model that offers up to 72% savings in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1 or 3-year term.",
-        "Reserved Instances (RI): Provide a significant discount (up to 75%) compared to On-Demand pricing when you commit to a specific instance configuration for a 1 or 3-year term. Best for steady-state, predictable workloads.",
-        "Spot Instances: Allow you to request spare AWS computing capacity for up to 90% off the On-Demand price. These are ideal for fault-tolerant or flexible applications like batch processing.",
-        "Dedicated Hosts: A physical server fully dedicated to your use. This is the most expensive option but is often required for specific software licensing (BYOL) or compliance needs."
-      ]
-    }
-  ]
-} ,
 
-"ec2-scaling": {
-  "title": "AWS EC2 Scaling",
-  "sections": [
-    {
-      "heading": "The Power of Scalability",
-      "paragraphs": [
-        "Scaling is the ability to adjust your IT resources to meet changing demand effectively.",
-        "In a traditional environment, you often have to 'guess' your capacity, leading to either wasted resources or crashes during traffic spikes.",
-        "A scalable architecture ensures that your application stays performant while you only pay for the capacity you actually use."
+    "ec2-scaling": {
+      "title": "AWS EC2 Scaling",
+      "sections": [
+        {
+          "heading": "The Power of Scalability",
+          "paragraphs": [
+            "Scaling is the ability to adjust your IT resources to meet changing demand effectively.",
+            "In a traditional environment, you often have to 'guess' your capacity, leading to either wasted resources or crashes during traffic spikes.",
+            "A scalable architecture ensures that your application stays performant while you only pay for the capacity you actually use."
+          ]
+        },
+        {
+          "heading": "Vertical Scaling (Scaling Up)",
+          "paragraphs": [
+            "Vertical scaling involves adding more power to an existing resource, such as upgrading an EC2 instance to a larger size with more CPU or RAM.",
+            "This is similar to 'renting a bigger venue' to fit more people.",
+            "While easy to implement, it has an upper limit based on the maximum hardware capacity of a single machine and often requires a brief period of downtime during the upgrade."
+          ]
+        },
+        {
+          "heading": "Horizontal Scaling (Scaling Out)",
+          "paragraphs": [
+            "Horizontal scaling involves adding more instances to your pool of resources to share the load.",
+            "This is like 'adding more lanes to a highway' to allow more traffic to flow smoothly.",
+            "This approach provides higher resilience and fault tolerance; if one instance fails, others continue to serve traffic, preventing a total system outage."
+          ]
+        }
       ]
     },
-    {
-      "heading": "Vertical Scaling (Scaling Up)",
-      "paragraphs": [
-        "Vertical scaling involves adding more power to an existing resource, such as upgrading an EC2 instance to a larger size with more CPU or RAM.",
-        "This is similar to 'renting a bigger venue' to fit more people.",
-        "While easy to implement, it has an upper limit based on the maximum hardware capacity of a single machine and often requires a brief period of downtime during the upgrade."
+    "ec2-autoscaling": {
+      "title": "AWS EC2 Auto Scaling",
+      "sections": [
+        {
+          "heading": "Maintaining Availability and Performance",
+          "paragraphs": [
+            "Amazon EC2 Auto Scaling helps you ensure that you have the correct number of Amazon EC2 instances available to handle the load for your application.",
+            "By automatically adding instances during traffic spikes and removing them when demand drops, it maintains steady performance at the lowest possible cost.",
+            "It also improves fault tolerance by automatically detecting and replacing unhealthy instances to keep your application running smoothly."
+          ]
+        },
+        {
+          "heading": "Scaling Approaches",
+          "paragraphs": [
+            "AWS offers two primary ways to automate the scaling of your EC2 fleet:"
+          ],
+          "list": [
+            "Dynamic Scaling: A reactive approach that responds to real-time changes in demand based on live metrics, such as average CPU utilization.",
+            "Predictive Scaling: A proactive approach that uses machine learning to analyze historical traffic patterns and forecast future demand, scaling resources ahead of time."
+          ]
+        },
+        {
+          "heading": "Auto Scaling Group Capacity",
+          "paragraphs": [
+            "An Auto Scaling group (ASG) is a collection of EC2 instances treated as a logical unit. You control its size using three key capacity settings:"
+          ],
+          "list": [
+            "Minimum Capacity: The floor value; the ASG will never terminate instances below this number, ensuring a baseline level of availability.",
+            "Desired Capacity: The ideal number of instances you want running under normal conditions. Auto Scaling constantly works to maintain this specific count.",
+            "Maximum Capacity: The ceiling value; the ASG will never launch more instances than this limit, which helps you strictly control costs during massive spikes."
+          ]
+        }
       ]
     },
-    {
-      "heading": "Horizontal Scaling (Scaling Out)",
-      "paragraphs": [
-        "Horizontal scaling involves adding more instances to your pool of resources to share the load.",
-        "This is like 'adding more lanes to a highway' to allow more traffic to flow smoothly.",
-        "This approach provides higher resilience and fault tolerance; if one instance fails, others continue to serve traffic, preventing a total system outage."
-      ]
-    }
-  ]
-} ,
-"ec2-autoscaling": {
-  "title": "AWS EC2 Auto Scaling",
-  "sections": [
-    {
-      "heading": "Maintaining Availability and Performance",
-      "paragraphs": [
-        "Amazon EC2 Auto Scaling helps you ensure that you have the correct number of Amazon EC2 instances available to handle the load for your application.",
-        "By automatically adding instances during traffic spikes and removing them when demand drops, it maintains steady performance at the lowest possible cost.",
-        "It also improves fault tolerance by automatically detecting and replacing unhealthy instances to keep your application running smoothly."
-      ]
-    },
-    {
-      "heading": "Scaling Approaches",
-      "paragraphs": [
-        "AWS offers two primary ways to automate the scaling of your EC2 fleet:"
-      ],
-      "list": [
-        "Dynamic Scaling: A reactive approach that responds to real-time changes in demand based on live metrics, such as average CPU utilization.",
-        "Predictive Scaling: A proactive approach that uses machine learning to analyze historical traffic patterns and forecast future demand, scaling resources ahead of time."
-      ]
-    },
-    {
-      "heading": "Auto Scaling Group Capacity",
-      "paragraphs": [
-        "An Auto Scaling group (ASG) is a collection of EC2 instances treated as a logical unit. You control its size using three key capacity settings:"
-      ],
-      "list": [
-        "Minimum Capacity: The floor value; the ASG will never terminate instances below this number, ensuring a baseline level of availability.",
-        "Desired Capacity: The ideal number of instances you want running under normal conditions. Auto Scaling constantly works to maintain this specific count.",
-        "Maximum Capacity: The ceiling value; the ASG will never launch more instances than this limit, which helps you strictly control costs during massive spikes."
-      ]
-    }
-  ]
-} ,
-"elb": {
-  "title": "AWS Elastic Load Balancing",
-  "sections": [
-    {
-      "heading": "The Front Door to Your Application",
-      "paragraphs": [
-        "Elastic Load Balancing (ELB) serves as a single point of contact for all incoming client traffic.",
-        "It automatically distributes this traffic across multiple targets—such as EC2 instances, containers, and IP addresses—to ensure no single resource becomes a bottleneck.",
-        "ELB scales its own capacity automatically in response to changes in incoming traffic at no additional hourly cost, providing a truly elastic infrastructure."
+    "elb": {
+      "title": "AWS Elastic Load Balancing",
+      "sections": [
+        {
+          "heading": "The Front Door to Your Application",
+          "paragraphs": [
+            "Elastic Load Balancing (ELB) serves as a single point of contact for all incoming client traffic.",
+            "It automatically distributes this traffic across multiple targets—such as EC2 instances, containers, and IP addresses—to ensure no single resource becomes a bottleneck.",
+            "ELB scales its own capacity automatically in response to changes in incoming traffic at no additional hourly cost, providing a truly elastic infrastructure."
+          ]
+        },
+        {
+          "heading": "Key Benefits of ELB",
+          "paragraphs": [
+            "Implementing a load balancer is a foundational best practice for building highly available systems:"
+          ],
+          "list": [
+            "High Availability: By distributing traffic across multiple Availability Zones, ELB ensures your application remains operational even if an entire data center fails.",
+            "Health Monitoring: ELB continuously 'pings' its registered targets to verify their health; if an instance becomes unhealthy, ELB stops sending it traffic until it recovers.",
+            "Security: ELB integrates with AWS Certificate Manager (ACM) for SSL/TLS decryption and works with AWS WAF to provide application-level protection against common web vulnerabilities.",
+            "Scalability: When used with EC2 Auto Scaling, new instances are automatically registered with the load balancer as they launch, ensuring they immediately start sharing the workload."
+          ]
+        },
+        {
+          "heading": "Traffic Routing Methods",
+          "paragraphs": [
+            "ELB uses various algorithms to determine which specific server should handle an incoming request:"
+          ],
+          "list": [
+            "Round Robin: The default method; requests are distributed sequentially across the list of healthy instances in a rotating cycle.",
+            "Least Connections: New requests are sent to the instance with the fewest active connections, which is ideal for long-running tasks.",
+            "IP Hash: Uses the client's IP address to consistently route them to the same backend server, maintaining session consistency.",
+            "Content-Based Routing: Advanced routing (available in Application Load Balancers) that directs traffic based on URL paths, hostnames, or HTTP headers."
+          ]
+        }
       ]
     },
-    {
-      "heading": "Key Benefits of ELB",
-      "paragraphs": [
-        "Implementing a load balancer is a foundational best practice for building highly available systems:"
-      ],
-      "list": [
-        "High Availability: By distributing traffic across multiple Availability Zones, ELB ensures your application remains operational even if an entire data center fails.",
-        "Health Monitoring: ELB continuously 'pings' its registered targets to verify their health; if an instance becomes unhealthy, ELB stops sending it traffic until it recovers.",
-        "Security: ELB integrates with AWS Certificate Manager (ACM) for SSL/TLS decryption and works with AWS WAF to provide application-level protection against common web vulnerabilities.",
-        "Scalability: When used with EC2 Auto Scaling, new instances are automatically registered with the load balancer as they launch, ensuring they immediately start sharing the workload."
+    "messaging": {
+      "title": "AWS Messaging",
+      "sections": [
+        {
+          "heading": "Application Architecture",
+          "paragraphs": [
+            "Modern applications are built using one of two primary architectural patterns: Monolithic or Microservices.",
+            "In a monolithic architecture, all components are tightly coupled and run as a single unit. This means a failure in one module can cause the entire application to crash.",
+            "A microservices architecture breaks the application into independent, loosely coupled services that communicate through messaging. This design ensures that if one service fails, the others continue to function normally."
+          ]
+        },
+        {
+          "heading": "The Role of Messaging and Queuing",
+          "paragraphs": [
+            "In microservices, components must communicate asynchronously to remain decoupled. Messaging and queuing allow services to transmit data without needing an immediate response or for both services to be available at the exact same time.",
+            "This asynchronous communication prevents failures from cascading through the system and allows each service to scale independently based on its specific workload."
+          ]
+        },
+        {
+          "heading": "Core AWS Messaging Services",
+          "paragraphs": [
+            "AWS provides three specialized services to handle different types of application communication:"
+          ],
+          "list": [
+            "Amazon SQS (Simple Queue Service): A fully managed message queuing service for reliable 1:1 communication between components. It stores messages until they are processed by a consumer.",
+            "Amazon SNS (Simple Notification Service): A high-throughput, push-based 'pub/sub' service. It allows a single publisher to fan out messages to multiple subscribers simultaneously.",
+            "Amazon EventBridge: A serverless event bus that routes data from your apps, AWS services, and third-party SaaS software to various targets using advanced filtering rules."
+          ]
+        }
       ]
     },
-    {
-      "heading": "Traffic Routing Methods",
-      "paragraphs": [
-        "ELB uses various algorithms to determine which specific server should handle an incoming request:"
-      ],
-      "list": [
-        "Round Robin: The default method; requests are distributed sequentially across the list of healthy instances in a rotating cycle.",
-        "Least Connections: New requests are sent to the instance with the fewest active connections, which is ideal for long-running tasks.",
-        "IP Hash: Uses the client's IP address to consistently route them to the same backend server, maintaining session consistency.",
-        "Content-Based Routing: Advanced routing (available in Application Load Balancers) that directs traffic based on URL paths, hostnames, or HTTP headers."
-      ]
-    }
-  ]
-} ,
-"messaging": {
-  "title": "AWS Messaging",
-  "sections": [
-    {
-      "heading": "Application Architecture",
-      "paragraphs": [
-        "Modern applications are built using one of two primary architectural patterns: Monolithic or Microservices.",
-        "In a monolithic architecture, all components are tightly coupled and run as a single unit. This means a failure in one module can cause the entire application to crash.",
-        "A microservices architecture breaks the application into independent, loosely coupled services that communicate through messaging. This design ensures that if one service fails, the others continue to function normally."
-      ]
-    },
-    {
-      "heading": "The Role of Messaging and Queuing",
-      "paragraphs": [
-        "In microservices, components must communicate asynchronously to remain decoupled. Messaging and queuing allow services to transmit data without needing an immediate response or for both services to be available at the exact same time.",
-        "This asynchronous communication prevents failures from cascading through the system and allows each service to scale independently based on its specific workload."
-      ]
-    },
-    {
-      "heading": "Core AWS Messaging Services",
-      "paragraphs": [
-        "AWS provides three specialized services to handle different types of application communication:"
-      ],
-      "list": [
-        "Amazon SQS (Simple Queue Service): A fully managed message queuing service for reliable 1:1 communication between components. It stores messages until they are processed by a consumer.",
-        "Amazon SNS (Simple Notification Service): A high-throughput, push-based 'pub/sub' service. It allows a single publisher to fan out messages to multiple subscribers simultaneously.",
-        "Amazon EventBridge: A serverless event bus that routes data from your apps, AWS services, and third-party SaaS software to various targets using advanced filtering rules."
-      ]
-    }
-  ]
-} ,
-"eventbridge": {
-  "title": "AWS EventBridge",
-  "sections": [
-    {
-      "heading": "Serverless Event Router",
-      "paragraphs": [
-        "Amazon EventBridge is a serverless event bus that simplifies the process of building event-driven applications by connecting various software components using events.",
-        "It acts as a centralized broker that ingests data from your own applications, integrated SaaS platforms, and over 90 AWS services, then routes that data to specific targets.",
-        "By using EventBridge, you can build loosely coupled, asynchronous architectures where services communicate by emitting and reacting to events rather than direct API calls."
+    "eventbridge": {
+      "title": "AWS EventBridge",
+      "sections": [
+        {
+          "heading": "Serverless Event Router",
+          "paragraphs": [
+            "Amazon EventBridge is a serverless event bus that simplifies the process of building event-driven applications by connecting various software components using events.",
+            "It acts as a centralized broker that ingests data from your own applications, integrated SaaS platforms, and over 90 AWS services, then routes that data to specific targets.",
+            "By using EventBridge, you can build loosely coupled, asynchronous architectures where services communicate by emitting and reacting to events rather than direct API calls."
+          ]
+        },
+        {
+          "heading": "Core Components",
+          "paragraphs": [
+            "EventBridge operates through four primary components that manage the flow of data:"
+          ],
+          "list": [
+            "Event Sources: Where a change in state originates, such as an S3 bucket upload, a ticket change in Zendesk, or a custom app signal.",
+            "Event Bus: The 'pipeline' or hub that receives events. Every account has a 'default' bus for AWS services, but you can create 'custom' buses for your own apps or 'partner' buses for SaaS integrations.",
+            "Rules: The intelligence layer that evaluates incoming events against specific patterns. If an event matches a rule, it is routed to the configured targets.",
+            "Targets: The destinations that perform an action once an event is received, such as an AWS Lambda function, an SQS queue, or even a third-party HTTP endpoint."
+          ]
+        },
+        {
+          "heading": "Advanced Features",
+          "paragraphs": [
+            "EventBridge includes several advanced capabilities to improve reliability and development speed:"
+          ],
+          "list": [
+            "Schema Registry: Automatically discovers and stores the structure (schema) of your events, allowing you to download code bindings to represent events as strongly typed objects.",
+            "Archive and Replay: Allows you to record all events passing through a bus and 'replay' them later. This is invaluable for debugging and testing new features against real historical data.",
+            "Pipes: A point-to-point integration tool that provides built-in filtering, transformation, and enrichment between a source and a target."
+          ]
+        }
       ]
     },
-    {
-      "heading": "Core Components",
-      "paragraphs": [
-        "EventBridge operates through four primary components that manage the flow of data:"
-      ],
-      "list": [
-        "Event Sources: Where a change in state originates, such as an S3 bucket upload, a ticket change in Zendesk, or a custom app signal.",
-        "Event Bus: The 'pipeline' or hub that receives events. Every account has a 'default' bus for AWS services, but you can create 'custom' buses for your own apps or 'partner' buses for SaaS integrations.",
-        "Rules: The intelligence layer that evaluates incoming events against specific patterns. If an event matches a rule, it is routed to the configured targets.",
-        "Targets: The destinations that perform an action once an event is received, such as an AWS Lambda function, an SQS queue, or even a third-party HTTP endpoint."
-      ]
-    },
-    {
-      "heading": "Advanced Features",
-      "paragraphs": [
-        "EventBridge includes several advanced capabilities to improve reliability and development speed:"
-      ],
-      "list": [
-        "Schema Registry: Automatically discovers and stores the structure (schema) of your events, allowing you to download code bindings to represent events as strongly typed objects.",
-        "Archive and Replay: Allows you to record all events passing through a bus and 'replay' them later. This is invaluable for debugging and testing new features against real historical data.",
-        "Pipes: A point-to-point integration tool that provides built-in filtering, transformation, and enrichment between a source and a target."
-      ]
-    }
-  ]
-} ,
 
-"sns": {
-  "title": "AWS SNS",
-  "sections": [
-    {
-      "heading": "What is Amazon SNS?",
-      "paragraphs": [
-        "Amazon Simple Notification Service (SNS) is a highly available, durable, and fully managed pub/sub (publish-subscribe) messaging service.",
-        "It acts as a communication channel called a 'topic,' where publishers send messages that are instantly pushed to all subscribed endpoints.",
-        "SNS is designed to decouple microservices and distributed systems, allowing them to communicate asynchronously without being directly connected."
+    "sns": {
+      "title": "AWS SNS",
+      "sections": [
+        {
+          "heading": "What is Amazon SNS?",
+          "paragraphs": [
+            "Amazon Simple Notification Service (SNS) is a highly available, durable, and fully managed pub/sub (publish-subscribe) messaging service.",
+            "It acts as a communication channel called a 'topic,' where publishers send messages that are instantly pushed to all subscribed endpoints.",
+            "SNS is designed to decouple microservices and distributed systems, allowing them to communicate asynchronously without being directly connected."
+          ]
+        },
+        {
+          "heading": "Application-to-Application (A2A) Messaging",
+          "paragraphs": [
+            "SNS can fan out messages to other AWS services for automated, parallel processing:"
+          ],
+          "list": [
+            "Amazon SQS: Sending messages to one or more queues for durable, asynchronous processing.",
+            "AWS Lambda: Triggering serverless functions to execute code in response to a message.",
+            "HTTPS Endpoints: Pushing notifications to web servers or custom API hooks.",
+            "Amazon Data Firehose: Directing message streams into data lakes or analytics tools."
+          ]
+        },
+        {
+          "heading": "Application-to-Person (A2P) Messaging",
+          "paragraphs": [
+            "SNS also allows you to send notifications directly to end users across various communication channels:"
+          ],
+          "list": [
+            "Mobile Push Notifications: Delivering real-time alerts to apps on iOS, Android, and Fire OS devices.",
+            "SMS (Text Messages): Sending text alerts to users in over 200 countries.",
+            "Email: Sending plain-text or HTML-formatted notifications directly to inboxes."
+          ]
+        },
+        {
+          "heading": "Key Feature: The Fan-Out Pattern",
+          "paragraphs": [
+            "The 'fan-out' pattern occurs when an SNS message is sent to a topic and then replicated to multiple SQS queues, Lambda functions, or HTTP endpoints simultaneously.",
+            "This allows for parallel processing; for example, a single 'order placed' event can trigger a payment service, an inventory update, and a shipping notification at the same time."
+          ]
+        }
       ]
     },
-    {
-      "heading": "Application-to-Application (A2A) Messaging",
-      "paragraphs": [
-        "SNS can fan out messages to other AWS services for automated, parallel processing:"
-      ],
-      "list": [
-        "Amazon SQS: Sending messages to one or more queues for durable, asynchronous processing.",
-        "AWS Lambda: Triggering serverless functions to execute code in response to a message.",
-        "HTTPS Endpoints: Pushing notifications to web servers or custom API hooks.",
-        "Amazon Data Firehose: Directing message streams into data lakes or analytics tools."
+    "sqs": {
+      "title": "AWS SQS",
+      "sections": [
+        {
+          "heading": "Distributed Message Queuing",
+          "paragraphs": [
+            "Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications.",
+            "It allows you to send, store, and receive messages between software components at any volume without losing data or requiring other services to be available.",
+            "As a pull-based service, consumers (like EC2 instances or Lambda functions) poll the queue to retrieve and process messages at their own pace."
+          ]
+        },
+        {
+          "heading": "SQS Queue Types",
+          "paragraphs": [
+            "AWS offers two types of queues to handle different application requirements:"
+          ],
+          "list": [
+            "Standard Queues: The default type, offering nearly unlimited throughput. They guarantee at-least-once delivery, but messages might occasionally arrive out of order or as duplicates.",
+            "FIFO Queues: Designed for applications where the order of operations is critical. They ensure exactly-once processing and maintain the exact order in which messages are sent (First-In-First-Out)."
+          ]
+        },
+        {
+          "heading": "The Message Lifecycle",
+          "paragraphs": [
+            "Understanding how a message moves through the system is key to building reliable applications:"
+          ],
+          "list": [
+            "1. Send: A producer sends a message to the SQS queue, where it is stored redundantly across multiple Availability Zones.",
+            "2. Receive: A consumer polls the queue and receives the message. At this point, the 'Visibility Timeout' begins.",
+            "3. Visibility Timeout: The message remains in the queue but is invisible to other consumers to prevent duplicate processing.",
+            "4. Delete: After successful processing, the consumer must manually delete the message from the queue before the timeout expires."
+          ]
+        },
+        {
+          "heading": "Key Technical Concepts",
+          "paragraphs": [
+            "Several features help you optimize performance and manage errors:"
+          ],
+          "list": [
+            "Dead-Letter Queues (DLQ): A separate queue where messages that fail to process after a certain number of attempts are moved for debugging.",
+            "Long Polling: A cost-saving feature where the consumer waits for a message to arrive in the queue before SQS sends a response, reducing empty results.",
+            "Message Retention: Messages can stay in a queue for a default of 4 days, up to a maximum of 14 days."
+          ]
+        }
       ]
     },
-    {
-      "heading": "Application-to-Person (A2P) Messaging",
-      "paragraphs": [
-        "SNS also allows you to send notifications directly to end users across various communication channels:"
-      ],
-      "list": [
-        "Mobile Push Notifications: Delivering real-time alerts to apps on iOS, Android, and Fire OS devices.",
-        "SMS (Text Messages): Sending text alerts to users in over 200 countries.",
-        "Email: Sending plain-text or HTML-formatted notifications directly to inboxes."
+    "serverless": {
+      "title": "AWS Serverless",
+      "sections": [
+        {
+          "heading": "What is Serverless Computing?",
+          "paragraphs": [
+            "Serverless computing allows you to build and run applications without the need to provision, manage, or scale servers.",
+            "While physical servers are still used, they are managed entirely by AWS, making them 'invisible' to the developer.",
+            "This model enables you to focus exclusively on your application code and business logic while AWS handles the heavy lifting of infrastructure maintenance."
+          ]
+        },
+        {
+          "heading": "EC2 vs. Serverless: The Shift in Responsibility",
+          "paragraphs": [
+            "AWS offers different levels of control depending on whether you choose a server-based or serverless approach:"
+          ],
+          "list": [
+            "Amazon EC2: You are responsible for managing the guest operating system, installing software, patching, and manually configuring scaling and high availability.",
+            "Serverless: AWS handles the entire underlying infrastructure, including automatic scaling, high availability, and the execution environment. You only manage your code and data."
+          ]
+        },
+        {
+          "heading": "Key Benefits of Serverless",
+          "paragraphs": [
+            "Adopting a serverless architecture provides several core advantages for modern development:"
+          ],
+          "list": [
+            "No Infrastructure Management: No need to install, maintain, or update servers or runtimes.",
+            "Automatic Scaling: Your application scales automatically by adjusting its capacity based on the volume of incoming requests, even scaling to zero when not in use.",
+            "Pay-for-Value: You only pay for the actual resources consumed during code execution (often measured in 100ms increments), with no charges for idle server time.",
+            "Built-in High Availability: Serverless services have fault tolerance and high availability designed into the service by default."
+          ]
+        }
       ]
     },
-    {
-      "heading": "Key Feature: The Fan-Out Pattern",
-      "paragraphs": [
-        "The 'fan-out' pattern occurs when an SNS message is sent to a topic and then replicated to multiple SQS queues, Lambda functions, or HTTP endpoints simultaneously.",
-        "This allows for parallel processing; for example, a single 'order placed' event can trigger a payment service, an inventory update, and a shipping notification at the same time."
+    "lambda": {
+      "title": "AWS Lambda",
+      "sections": [
+        {
+          "heading": "Event-Driven Serverless Compute",
+          "paragraphs": [
+            "AWS Lambda is a serverless compute service that runs your code in response to events and automatically manages the underlying compute resources for you.",
+            "It follows a 'Functions-as-a-Service' (FaaS) model, where you upload self-contained pieces of code called 'functions' that execute only when needed.",
+            "Because it is serverless, you don't have to worry about provisioning servers, patching operating systems, or manually scaling RAM and CPU."
+          ]
+        },
+        {
+          "heading": "How Lambda Works",
+          "paragraphs": [
+            "The lifecycle of a Lambda function is built around a simple 'Trigger-Process-Respond' workflow:"
+          ],
+          "list": [
+            "Triggers (Event Sources): An event occurs in another AWS service, such as a file upload to S3, a new record in DynamoDB, or an HTTP request via API Gateway.",
+            "Execution: AWS instantly spins up a secure container (microVM) to run your code, allocating the necessary resources based on your configuration.",
+            "Scaling: Lambda automatically scales to match the volume of incoming requests, from a few events a day to thousands per second, with no manual intervention.",
+            "Cost: You are billed only for the number of requests and the duration your code runs, measured in milliseconds. If the code isn't running, you pay nothing."
+          ]
+        },
+        {
+          "heading": "Versatile Use Cases",
+          "paragraphs": [
+            "Lambda's flexibility makes it ideal for a wide range of modern application tasks:"
+          ],
+          "list": [
+            "File Processing: Automatically generate thumbnails or watermarks the moment an image is uploaded to an S3 bucket.",
+            "Web Backends: Build scalable backends for websites and mobile apps by connecting Lambda to Amazon API Gateway.",
+            "IoT Data Streams: Process, filter, and analyze real-time data arriving from thousands of IoT sensors or social media feeds.",
+            "Scheduled Maintenance: Use EventBridge to trigger 'cron jobs' for automated database backups or account housekeeping reports."
+          ]
+        }
+      ]
+    },
+    "containers": {
+      "title": "AWS Containers",
+      "sections": [
+        {
+          "heading": "Understanding Containers",
+          "paragraphs": [
+            "A container is a standard unit of software that packages up code and all its dependencies (libraries, settings, and runtimes) so the application runs quickly and reliably from one computing environment to another.",
+            "Unlike Virtual Machines (VMs) that include a full guest operating system, containers share the host server's OS kernel, making them lightweight, fast to start, and highly efficient.",
+            "This isolation ensures that 'it works on my machine' also means it will work in production, regardless of differences in underlying infrastructure."
+          ]
+        },
+        {
+          "heading": "Key Benefits of Containerization",
+          "paragraphs": [
+            "Containers have revolutionized how developers build and deploy modern microservices:"
+          ],
+          "list": [
+            "Deployment Consistency: The environment remains identical throughout the development lifecycle, from a local laptop to testing and final production.",
+            "Efficiency: Because they share the host OS, you can run many more containers on a single server compared to virtual machines.",
+            "Portability: Containers can run anywhere—on-premises, in the AWS cloud, or in hybrid environments—without needing code changes.",
+            "Isolation: Applications and their dependencies remain separate, preventing 'dependency hell' where one app's updates break another app on the same server."
+          ]
+        },
+        {
+          "heading": "AWS Container Ecosystem",
+          "paragraphs": [
+            "AWS provides a comprehensive suite of services to store, manage, and run your containers:"
+          ],
+          "list": [
+            "Amazon Elastic Container Registry (ECR): A fully managed Docker container registry that makes it easy for developers to store, manage, and deploy container images.",
+            "Amazon Elastic Container Service (ECS): A highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale applications.",
+            "Amazon Elastic Kubernetes Service (EKS): A managed service that makes it easy for you to run Kubernetes on AWS without needing to install or operate your own Kubernetes control plane.",
+            "AWS Fargate: A serverless compute engine for containers that works with both ECS and EKS. With Fargate, you no longer have to provision or manage servers."
+          ]
+        }
+      ]
+    },
+    "ecs": {
+      "title": "AWS ECS",
+      "sections": [
+        {
+          "heading": "Container Orchestration at Scale",
+          "paragraphs": [
+            "Amazon Elastic Container Service (ECS) is a highly scalable, fully managed container orchestration service that allows you to easily run, stop, and manage Docker containers on a cluster.",
+            "It eliminates the need to install, operate, and scale your own cluster management software, allowing you to focus on building and deploying your applications.",
+            "ECS is deeply integrated with other AWS services like IAM for security, CloudWatch for monitoring, and Route 53 for service discovery."
+          ]
+        },
+        {
+          "heading": "Flexible Launch Types",
+          "paragraphs": [
+            "ECS provides two distinct ways to host your containers, giving you a choice between maximum control or serverless simplicity:"
+          ],
+          "list": [
+            "Fargate Launch Type: A serverless compute engine where you pay only for the resources your containers use. You don't have to manage any underlying servers or EC2 instances.",
+            "EC2 Launch Type: Provides granular control over the infrastructure. You manage the virtual servers (EC2 instances) that run your containers, allowing for specialized hardware or custom networking."
+          ]
+        },
+        {
+          "heading": "Core Components and Workflow",
+          "paragraphs": [
+            "Running applications on ECS involves a few key structural concepts:"
+          ],
+          "list": [
+            "Task Definition: A JSON-formatted blueprint that describes your application, specifying which Docker image to use and the required CPU and memory.",
+            "Task: The running instance of a Task Definition. A single task can contain one or more containers that share resources.",
+            "Service: Manages a specified number of tasks simultaneously. If a task fails, the service scheduler automatically restarts it to maintain your desired count.",
+            "Cluster: A logical grouping of tasks or services that provides the compute capacity for your workloads."
+          ]
+        },
+        {
+          "heading": "Docker Integration",
+          "paragraphs": [
+            "ECS natively supports Docker, the industry-standard platform for building and running containers.",
+            "Developers can use familiar tools like Docker Compose and the Docker CLI to define, build, and deploy their applications directly to ECS, bridging the gap between local development and cloud production."
+          ]
+        }
+      ]
+    },
+    "eks": {
+      "title": "AWS EKS",
+      "sections": [
+        {
+          "heading": "Managed Kubernetes on AWS",
+          "paragraphs": [
+            "Amazon Elastic Kubernetes Service (EKS) is a fully managed service that allows you to run Kubernetes on AWS without having to install, operate, and maintain your own Kubernetes control plane or nodes.",
+            "Kubernetes is the industry-standard open-source software for container orchestration, and EKS ensures you have a secure, high-availability environment to run it.",
+            "AWS works with the open-source community to keep EKS updated with the latest Kubernetes features and security patches."
+          ]
+        },
+        {
+          "heading": "EKS Launch Types",
+          "paragraphs": [
+            "Similar to ECS, EKS gives you the flexibility to choose how you want to manage your compute resources:"
+          ],
+          "list": [
+            "EKS with EC2: Provides full control over the infrastructure. This is ideal for complex, large-scale workloads that require custom hardware configurations or specific networking policies.",
+            "EKS with Fargate: Offers the flexibility of Kubernetes without the burden of managing servers. AWS handles the provisioning and scaling of the underlying compute for your Kubernetes pods."
+          ]
+        },
+        {
+          "heading": "Why Use Amazon EKS?",
+          "paragraphs": [
+            "EKS is designed for organizations that want the power of Kubernetes with the reliability of AWS infrastructure:"
+          ],
+          "list": [
+            "High Availability: EKS runs the Kubernetes control plane across multiple Availability Zones to eliminate a single point of failure.",
+            "Security: It integrates with AWS IAM for fine-grained access control to your Kubernetes clusters.",
+            "Scalability: You can easily scale your applications up or down based on demand using the Kubernetes Horizontal Pod Autoscaler."
+          ]
+        }
+      ]
+    },
+    "fargate": {
+      "title": "AWS Fargate",
+      "sections": [
+        {
+          "heading": "Serverless Compute for Containers",
+          "paragraphs": [
+            "AWS Fargate is a serverless, pay-as-you-go compute engine that lets you build and run applications without managing servers.",
+            "It eliminates the need to provision, configure, and scale clusters of virtual machines to run your containers. Instead, you simply specify your application's requirements.",
+            "AWS handles all the infrastructure management, including patching, updating, and securing the underlying servers, allowing your team to focus exclusively on developing code."
+          ]
+        },
+        {
+          "heading": "Fargate as a Launch Type",
+          "paragraphs": [
+            "Fargate is not a standalone orchestration service; it is a 'launch type' or compute backend used by both Amazon ECS and Amazon EKS:"
+          ],
+          "list": [
+            "With Amazon ECS: You define your application in a 'Task Definition' and choose Fargate as the launch type. Fargate then manages the execution and scaling of those tasks.",
+            "With Amazon EKS: You define a 'Fargate Profile' to specify which Kubernetes pods should run on Fargate. EKS then launches those pods on serverless infrastructure instead of EC2 nodes."
+          ]
+        },
+        {
+          "heading": "Pricing and Efficiency",
+          "paragraphs": [
+            "Fargate offers a granular cost model that aligns your expenses directly with your application's resource consumption:"
+          ],
+          "list": [
+            "Pay-as-you-go: You are billed for the exact amount of vCPU and memory resources your containerized application requests, calculated from the moment the image is pulled until the task terminates.",
+            "Per-second Billing: Pricing is calculated per second with a 1-minute minimum, ensuring you don't pay for idle server capacity between tasks.",
+            "No Over-provisioning: Because you define resources at the task level rather than picking a fixed instance size, you reduce the risk of paying for unused hardware."
+          ]
+        }
+      ]
+    },
+    "additional-compute": {
+      "title": "Additional Compute Services",
+      "sections": [
+        {
+          "heading": "Specialized Compute Solutions",
+          "paragraphs": [
+            "While EC2, Lambda, and containers cover most needs, AWS provides specialized services for specific architectural patterns and business requirements.",
+            "These services range from fully managed platforms that automate the entire deployment lifecycle to hybrid solutions that bridge the gap between your local data center and the cloud."
+          ]
+        },
+        {
+          "heading": "AWS Elastic Beanstalk",
+          "paragraphs": [
+            "Elastic Beanstalk is the fastest and simplest way to deploy and scale web applications and services.",
+            "It acts as an orchestration service (PaaS) that automatically handles resource provisioning, load balancing, auto-scaling, and health monitoring.",
+            "Best For: Developers who want to upload code (Java, Python, Node.js, etc.) and let AWS manage the infrastructure, while still retaining the ability to 'peek under the hood' and customize resources if needed."
+          ]
+        },
+        {
+          "heading": "Amazon Lightsail",
+          "paragraphs": [
+            "Lightsail is designed to be the easiest way to launch and manage a virtual private server (VPS) with a low, predictable monthly price.",
+            "It provides everything you need for a small project—a virtual machine, SSD-based storage, data transfer, and a static IP—in a single, simplified console.",
+            "Best For: Simple web applications, blogs (like WordPress), dev/test environments, and small business software."
+          ]
+        },
+        {
+          "heading": "AWS Batch",
+          "paragraphs": [
+            "AWS Batch enables you to run hundreds of thousands of computing jobs efficiently by automatically provisioning the optimal amount of compute resources.",
+            "It is designed for 'batch' processing, where work is queued up and executed as background operations rather than requiring real-time user interaction.",
+            "Best For: Scientific modeling, financial risk analysis, media transcoding, and large-scale machine learning training."
+          ]
+        },
+        {
+          "heading": "AWS Outposts",
+          "paragraphs": [
+            "AWS Outposts is a fully managed service that brings native AWS infrastructure and services directly into your on-premises data center.",
+            "It provides a consistent 'hybrid' experience, allowing you to use the same APIs and tools on-site as you do in the public cloud.",
+            "Best For: Applications that require ultra-low latency to local systems, local data processing, or must comply with strict data residency regulations."
+          ]
+        }
       ]
     }
-  ]
-} ,
-"sqs": {
-  "title": "AWS SQS",
-  "sections": [
-    {
-      "heading": "Distributed Message Queuing",
-      "paragraphs": [
-        "Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications.",
-        "It allows you to send, store, and receive messages between software components at any volume without losing data or requiring other services to be available.",
-        "As a pull-based service, consumers (like EC2 instances or Lambda functions) poll the queue to retrieve and process messages at their own pace."
-      ]
-    },
-    {
-      "heading": "SQS Queue Types",
-      "paragraphs": [
-        "AWS offers two types of queues to handle different application requirements:"
-      ],
-      "list": [
-        "Standard Queues: The default type, offering nearly unlimited throughput. They guarantee at-least-once delivery, but messages might occasionally arrive out of order or as duplicates.",
-        "FIFO Queues: Designed for applications where the order of operations is critical. They ensure exactly-once processing and maintain the exact order in which messages are sent (First-In-First-Out)."
-      ]
-    },
-    {
-      "heading": "The Message Lifecycle",
-      "paragraphs": [
-        "Understanding how a message moves through the system is key to building reliable applications:"
-      ],
-      "list": [
-        "1. Send: A producer sends a message to the SQS queue, where it is stored redundantly across multiple Availability Zones.",
-        "2. Receive: A consumer polls the queue and receives the message. At this point, the 'Visibility Timeout' begins.",
-        "3. Visibility Timeout: The message remains in the queue but is invisible to other consumers to prevent duplicate processing.",
-        "4. Delete: After successful processing, the consumer must manually delete the message from the queue before the timeout expires."
-      ]
-    },
-    {
-      "heading": "Key Technical Concepts",
-      "paragraphs": [
-        "Several features help you optimize performance and manage errors:"
-      ],
-      "list": [
-        "Dead-Letter Queues (DLQ): A separate queue where messages that fail to process after a certain number of attempts are moved for debugging.",
-        "Long Polling: A cost-saving feature where the consumer waits for a message to arrive in the queue before SQS sends a response, reducing empty results.",
-        "Message Retention: Messages can stay in a queue for a default of 4 days, up to a maximum of 14 days."
-      ]
-    }
-  ]
-} ,
-"serverless": {
-  "title": "AWS Serverless",
-  "sections": [
-    {
-      "heading": "What is Serverless Computing?",
-      "paragraphs": [
-        "Serverless computing allows you to build and run applications without the need to provision, manage, or scale servers.",
-        "While physical servers are still used, they are managed entirely by AWS, making them 'invisible' to the developer.",
-        "This model enables you to focus exclusively on your application code and business logic while AWS handles the heavy lifting of infrastructure maintenance."
-      ]
-    },
-    {
-      "heading": "EC2 vs. Serverless: The Shift in Responsibility",
-      "paragraphs": [
-        "AWS offers different levels of control depending on whether you choose a server-based or serverless approach:"
-      ],
-      "list": [
-        "Amazon EC2: You are responsible for managing the guest operating system, installing software, patching, and manually configuring scaling and high availability.",
-        "Serverless: AWS handles the entire underlying infrastructure, including automatic scaling, high availability, and the execution environment. You only manage your code and data."
-      ]
-    },
-    {
-      "heading": "Key Benefits of Serverless",
-      "paragraphs": [
-        "Adopting a serverless architecture provides several core advantages for modern development:"
-      ],
-      "list": [
-        "No Infrastructure Management: No need to install, maintain, or update servers or runtimes.",
-        "Automatic Scaling: Your application scales automatically by adjusting its capacity based on the volume of incoming requests, even scaling to zero when not in use.",
-        "Pay-for-Value: You only pay for the actual resources consumed during code execution (often measured in 100ms increments), with no charges for idle server time.",
-        "Built-in High Availability: Serverless services have fault tolerance and high availability designed into the service by default."
-      ]
-    }
-  ]
-} ,
-"lambda": {
-  "title": "AWS Lambda",
-  "sections": [
-    {
-      "heading": "Event-Driven Serverless Compute",
-      "paragraphs": [
-        "AWS Lambda is a serverless compute service that runs your code in response to events and automatically manages the underlying compute resources for you.",
-        "It follows a 'Functions-as-a-Service' (FaaS) model, where you upload self-contained pieces of code called 'functions' that execute only when needed.",
-        "Because it is serverless, you don't have to worry about provisioning servers, patching operating systems, or manually scaling RAM and CPU."
-      ]
-    },
-    {
-      "heading": "How Lambda Works",
-      "paragraphs": [
-        "The lifecycle of a Lambda function is built around a simple 'Trigger-Process-Respond' workflow:"
-      ],
-      "list": [
-        "Triggers (Event Sources): An event occurs in another AWS service, such as a file upload to S3, a new record in DynamoDB, or an HTTP request via API Gateway.",
-        "Execution: AWS instantly spins up a secure container (microVM) to run your code, allocating the necessary resources based on your configuration.",
-        "Scaling: Lambda automatically scales to match the volume of incoming requests, from a few events a day to thousands per second, with no manual intervention.",
-        "Cost: You are billed only for the number of requests and the duration your code runs, measured in milliseconds. If the code isn't running, you pay nothing."
-      ]
-    },
-    {
-      "heading": "Versatile Use Cases",
-      "paragraphs": [
-        "Lambda's flexibility makes it ideal for a wide range of modern application tasks:"
-      ],
-      "list": [
-        "File Processing: Automatically generate thumbnails or watermarks the moment an image is uploaded to an S3 bucket.",
-        "Web Backends: Build scalable backends for websites and mobile apps by connecting Lambda to Amazon API Gateway.",
-        "IoT Data Streams: Process, filter, and analyze real-time data arriving from thousands of IoT sensors or social media feeds.",
-        "Scheduled Maintenance: Use EventBridge to trigger 'cron jobs' for automated database backups or account housekeeping reports."
-      ]
-    }
-  ]
-} ,
-"containers": {
-  "title": "AWS Containers",
-  "sections": [
-    {
-      "heading": "Understanding Containers",
-      "paragraphs": [
-        "A container is a standard unit of software that packages up code and all its dependencies (libraries, settings, and runtimes) so the application runs quickly and reliably from one computing environment to another.",
-        "Unlike Virtual Machines (VMs) that include a full guest operating system, containers share the host server's OS kernel, making them lightweight, fast to start, and highly efficient.",
-        "This isolation ensures that 'it works on my machine' also means it will work in production, regardless of differences in underlying infrastructure."
-      ]
-    },
-    {
-      "heading": "Key Benefits of Containerization",
-      "paragraphs": [
-        "Containers have revolutionized how developers build and deploy modern microservices:"
-      ],
-      "list": [
-        "Deployment Consistency: The environment remains identical throughout the development lifecycle, from a local laptop to testing and final production.",
-        "Efficiency: Because they share the host OS, you can run many more containers on a single server compared to virtual machines.",
-        "Portability: Containers can run anywhere—on-premises, in the AWS cloud, or in hybrid environments—without needing code changes.",
-        "Isolation: Applications and their dependencies remain separate, preventing 'dependency hell' where one app's updates break another app on the same server."
-      ]
-    },
-    {
-      "heading": "AWS Container Ecosystem",
-      "paragraphs": [
-        "AWS provides a comprehensive suite of services to store, manage, and run your containers:"
-      ],
-      "list": [
-        "Amazon Elastic Container Registry (ECR): A fully managed Docker container registry that makes it easy for developers to store, manage, and deploy container images.",
-        "Amazon Elastic Container Service (ECS): A highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale applications.",
-        "Amazon Elastic Kubernetes Service (EKS): A managed service that makes it easy for you to run Kubernetes on AWS without needing to install or operate your own Kubernetes control plane.",
-        "AWS Fargate: A serverless compute engine for containers that works with both ECS and EKS. With Fargate, you no longer have to provision or manage servers."
-      ]
-    }
-  ]
-} ,
-"ecs": {
-  "title": "AWS ECS",
-  "sections": [
-    {
-      "heading": "Container Orchestration at Scale",
-      "paragraphs": [
-        "Amazon Elastic Container Service (ECS) is a highly scalable, fully managed container orchestration service that allows you to easily run, stop, and manage Docker containers on a cluster.",
-        "It eliminates the need to install, operate, and scale your own cluster management software, allowing you to focus on building and deploying your applications.",
-        "ECS is deeply integrated with other AWS services like IAM for security, CloudWatch for monitoring, and Route 53 for service discovery."
-      ]
-    },
-    {
-      "heading": "Flexible Launch Types",
-      "paragraphs": [
-        "ECS provides two distinct ways to host your containers, giving you a choice between maximum control or serverless simplicity:"
-      ],
-      "list": [
-        "Fargate Launch Type: A serverless compute engine where you pay only for the resources your containers use. You don't have to manage any underlying servers or EC2 instances.",
-        "EC2 Launch Type: Provides granular control over the infrastructure. You manage the virtual servers (EC2 instances) that run your containers, allowing for specialized hardware or custom networking."
-      ]
-    },
-    {
-      "heading": "Core Components and Workflow",
-      "paragraphs": [
-        "Running applications on ECS involves a few key structural concepts:"
-      ],
-      "list": [
-        "Task Definition: A JSON-formatted blueprint that describes your application, specifying which Docker image to use and the required CPU and memory.",
-        "Task: The running instance of a Task Definition. A single task can contain one or more containers that share resources.",
-        "Service: Manages a specified number of tasks simultaneously. If a task fails, the service scheduler automatically restarts it to maintain your desired count.",
-        "Cluster: A logical grouping of tasks or services that provides the compute capacity for your workloads."
-      ]
-    },
-    {
-      "heading": "Docker Integration",
-      "paragraphs": [
-        "ECS natively supports Docker, the industry-standard platform for building and running containers.",
-        "Developers can use familiar tools like Docker Compose and the Docker CLI to define, build, and deploy their applications directly to ECS, bridging the gap between local development and cloud production."
-      ]
-    }
-  ]
-} ,
-"eks": {
-  "title": "AWS EKS",
-  "sections": [
-    {
-      "heading": "Managed Kubernetes on AWS",
-      "paragraphs": [
-        "Amazon Elastic Kubernetes Service (EKS) is a fully managed service that allows you to run Kubernetes on AWS without having to install, operate, and maintain your own Kubernetes control plane or nodes.",
-        "Kubernetes is the industry-standard open-source software for container orchestration, and EKS ensures you have a secure, high-availability environment to run it.",
-        "AWS works with the open-source community to keep EKS updated with the latest Kubernetes features and security patches."
-      ]
-    },
-    {
-      "heading": "EKS Launch Types",
-      "paragraphs": [
-        "Similar to ECS, EKS gives you the flexibility to choose how you want to manage your compute resources:"
-      ],
-      "list": [
-        "EKS with EC2: Provides full control over the infrastructure. This is ideal for complex, large-scale workloads that require custom hardware configurations or specific networking policies.",
-        "EKS with Fargate: Offers the flexibility of Kubernetes without the burden of managing servers. AWS handles the provisioning and scaling of the underlying compute for your Kubernetes pods."
-      ]
-    },
-    {
-      "heading": "Why Use Amazon EKS?",
-      "paragraphs": [
-        "EKS is designed for organizations that want the power of Kubernetes with the reliability of AWS infrastructure:"
-      ],
-      "list": [
-        "High Availability: EKS runs the Kubernetes control plane across multiple Availability Zones to eliminate a single point of failure.",
-        "Security: It integrates with AWS IAM for fine-grained access control to your Kubernetes clusters.",
-        "Scalability: You can easily scale your applications up or down based on demand using the Kubernetes Horizontal Pod Autoscaler."
-      ]
-    }
-  ]
-} ,
-"fargate": {
-  "title": "AWS Fargate",
-  "sections": [
-    {
-      "heading": "Serverless Compute for Containers",
-      "paragraphs": [
-        "AWS Fargate is a serverless, pay-as-you-go compute engine that lets you build and run applications without managing servers.",
-        "It eliminates the need to provision, configure, and scale clusters of virtual machines to run your containers. Instead, you simply specify your application's requirements.",
-        "AWS handles all the infrastructure management, including patching, updating, and securing the underlying servers, allowing your team to focus exclusively on developing code."
-      ]
-    },
-    {
-      "heading": "Fargate as a Launch Type",
-      "paragraphs": [
-        "Fargate is not a standalone orchestration service; it is a 'launch type' or compute backend used by both Amazon ECS and Amazon EKS:"
-      ],
-      "list": [
-        "With Amazon ECS: You define your application in a 'Task Definition' and choose Fargate as the launch type. Fargate then manages the execution and scaling of those tasks.",
-        "With Amazon EKS: You define a 'Fargate Profile' to specify which Kubernetes pods should run on Fargate. EKS then launches those pods on serverless infrastructure instead of EC2 nodes."
-      ]
-    },
-    {
-      "heading": "Pricing and Efficiency",
-      "paragraphs": [
-        "Fargate offers a granular cost model that aligns your expenses directly with your application's resource consumption:"
-      ],
-      "list": [
-        "Pay-as-you-go: You are billed for the exact amount of vCPU and memory resources your containerized application requests, calculated from the moment the image is pulled until the task terminates.",
-        "Per-second Billing: Pricing is calculated per second with a 1-minute minimum, ensuring you don't pay for idle server capacity between tasks.",
-        "No Over-provisioning: Because you define resources at the task level rather than picking a fixed instance size, you reduce the risk of paying for unused hardware."
-      ]
-    }
-  ]
-},
-"additional-compute": {
-  "title": "Additional Compute Services",
-  "sections": [
-    {
-      "heading": "Specialized Compute Solutions",
-      "paragraphs": [
-        "While EC2, Lambda, and containers cover most needs, AWS provides specialized services for specific architectural patterns and business requirements.",
-        "These services range from fully managed platforms that automate the entire deployment lifecycle to hybrid solutions that bridge the gap between your local data center and the cloud."
-      ]
-    },
-    {
-      "heading": "AWS Elastic Beanstalk",
-      "paragraphs": [
-        "Elastic Beanstalk is the fastest and simplest way to deploy and scale web applications and services.",
-        "It acts as an orchestration service (PaaS) that automatically handles resource provisioning, load balancing, auto-scaling, and health monitoring.",
-        "Best For: Developers who want to upload code (Java, Python, Node.js, etc.) and let AWS manage the infrastructure, while still retaining the ability to 'peek under the hood' and customize resources if needed."
-      ]
-    },
-    {
-      "heading": "Amazon Lightsail",
-      "paragraphs": [
-        "Lightsail is designed to be the easiest way to launch and manage a virtual private server (VPS) with a low, predictable monthly price.",
-        "It provides everything you need for a small project—a virtual machine, SSD-based storage, data transfer, and a static IP—in a single, simplified console.",
-        "Best For: Simple web applications, blogs (like WordPress), dev/test environments, and small business software."
-      ]
-    },
-    {
-      "heading": "AWS Batch",
-      "paragraphs": [
-        "AWS Batch enables you to run hundreds of thousands of computing jobs efficiently by automatically provisioning the optimal amount of compute resources.",
-        "It is designed for 'batch' processing, where work is queued up and executed as background operations rather than requiring real-time user interaction.",
-        "Best For: Scientific modeling, financial risk analysis, media transcoding, and large-scale machine learning training."
-      ]
-    },
-    {
-      "heading": "AWS Outposts",
-      "paragraphs": [
-        "AWS Outposts is a fully managed service that brings native AWS infrastructure and services directly into your on-premises data center.",
-        "It provides a consistent 'hybrid' experience, allowing you to use the same APIs and tools on-site as you do in the public cloud.",
-        "Best For: Applications that require ultra-low latency to local systems, local data processing, or must comply with strict data residency regulations."
-      ]
-    }
-  ]
-}
-
-
   }
 }

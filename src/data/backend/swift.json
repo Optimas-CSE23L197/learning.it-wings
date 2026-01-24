@@ -1,0 +1,2147 @@
+{
+  "course": {
+    "id": "swift",
+    "title": "Swift Tutorial"
+  },
+  "sections": [
+    {
+      "title": "Swift Basics",
+      "lessons": [
+        { "id": "home", "title": "Swift Home" },
+        { "id": "introduction", "title": "Swift Introduction" },
+        { "id": "getstarted", "title": "Swift Get Started" },
+        { "id": "syntax", "title": "Swift Syntax" },
+        { "id": "statements", "title": "Swift Statements" },
+        { "id": "output", "title": "Swift Output" },
+        { "id": "comments", "title": "Swift Comments" },
+        { "id": "variables", "title": "Swift Variables" },
+        { "id": "constants", "title": "Swift Constants" },
+        { "id": "datatypes", "title": "Swift Data Types" },
+        { "id": "type-casting", "title": "Swift Type Casting" },
+        { "id": "operators", "title": "Swift Operators" },
+        { "id": "strings", "title": "Swift Strings" },
+        { "id": "arrays", "title": "Swift Arrays" },
+        { "id": "ranges", "title": "Swift Ranges" },
+        { "id": "if-else", "title": "Swift If...Else" },
+        { "id": "switch", "title": "Swift Switch" },
+        { "id": "while-loop", "title": "Swift While Loop" },
+        { "id": "for-loop", "title": "Swift For Loop" },
+        { "id": "break-continue", "title": "Swift Break/Continue" },
+        { "id": "collections", "title": "Swift Collections" }
+      ]
+    },
+    {
+      "title": "Swift Types & Functions",
+      "lessons": [
+        { "id": "functions", "title": "Swift Functions" },
+        { "id": "optionals", "title": "Swift Optionals" },
+        { "id": "enums", "title": "Swift Enums & Patterns" },
+        { "id": "closures", "title": "Swift Closures" },
+        { "id": "tuples", "title": "Tuples & Type Aliases" }
+      ]
+    } ,
+    {
+  "title": "Swift Object Model",
+  "lessons": [
+    { "id": "oop", "title": "Swift OOP" },
+    { "id": "inheritance", "title": "Swift Inheritance" },
+    { "id": "polymorphism", "title": "Swift Polymorphism" },
+    { "id": "protocols", "title": "Swift Protocols" },
+    { "id": "generics", "title": "Swift Generics" },
+    { "id": "extensions", "title": "Swift Extensions" },
+    { "id": "access-control", "title": "Access Control" },
+    { "id": "initializers", "title": "Initializers" },
+    { "id": "deinitializers", "title": "Deinitializers" },
+    { "id": "value-semantics", "title": "Value Semantics & COW" },
+    { "id": "equatable-comparable", "title": "Equatable & Comparable" }
+  ]
+},
+{
+  "title": "Swift Robustness & Async",
+  "lessons": [
+    { "id": "error-handling", "title": "Swift Error Handling" },
+    { "id": "concurrency", "title": "Swift Concurrency" },
+    { "id": "memory", "title": "Swift Memory" }
+  ]
+},
+{
+  "title": "Swift Tooling",
+  "lessons": [
+    { "id": "spm", "title": "Swift Package Manager" }
+  ]
+},
+{
+  "title": "SwiftUI Basics",
+  "lessons": [
+    { "id": "swiftui-intro", "title": "SwiftUI Intro" },
+    { "id": "ios-setup", "title": "iOS Project Setup" },
+    { "id": "swiftui-layout", "title": "SwiftUI Layout" },
+    { "id": "swiftui-navigation", "title": "SwiftUI Navigation" },
+    { "id": "swiftui-data-flow", "title": "SwiftUI Data Flow" },
+    { "id": "swiftui-lists-forms", "title": "SwiftUI Lists & Forms" },
+    { "id": "swiftui-animations", "title": "SwiftUI Animations" },
+    { "id": "swiftui-gestures", "title": "SwiftUI Gestures" },
+    { "id": "swiftui-modifiers", "title": "SwiftUI Modifiers & ViewBuilder" },
+    { "id": "swiftui-previews", "title": "SwiftUI Previews" },
+    { "id": "swiftui-accessibility", "title": "SwiftUI Accessibility" },
+    { "id": "swiftui-styling", "title": "SwiftUI Styling & Theming" }
+  ]
+},
+{
+  "title": "SwiftUI Data & Architecture",
+  "lessons": [
+    { "id": "networking", "title": "Networking" },
+    { "id": "persistence", "title": "Persistence" },
+    { "id": "core-data", "title": "Persistence (Core Data)" },
+    { "id": "mvvm", "title": "MVVM Architecture" },
+    { "id": "storage", "title": "AppStorage & SceneStorage" },
+    { "id": "testing-swiftui", "title": "Testing SwiftUI" }
+  ]
+}
+
+  ],
+  "content": {
+    "home": {
+      "title": "Swift Home",
+      "sections": [
+        {
+          "heading": "What is Swift?",
+          "paragraphs": [
+            "Swift is a fast, safe, and modern programming language created by Apple.",
+            "It is used for iOS, macOS, watchOS, tvOS, and server-side development.",
+            "Swift features type inference, optionals, value semantics, and powerful protocols.",
+            "It was designed to replace older languages like Objective-C with a more concise and readable syntax."
+          ]
+        },
+        {
+          "heading": "What is Swift Used For?",
+          "paragraphs": [
+            "Mobile app development for iPhone and iPad.",
+            "Desktop application development for Mac computers.",
+            "Software for Apple Watch and Apple TV.",
+            "Server-side systems and high-performance backend logic."
+          ]
+        },
+        {
+          "heading": "Why Use Swift?",
+          "paragraphs": [
+            "Swift is safe by design, reducing common programming errors.",
+            "Swift is incredibly fast, approaching the performance of C++.",
+            "It has a clean syntax that is easy to read and write.",
+            "Automatic memory management is handled through ARC (Automatic Reference Counting).",
+            "Great support from Apple and a massive open-source community."
+          ]
+        },
+        {
+          "heading": "Swift Language Features",
+          "table": {
+            "headers": ["Feature", "Description"],
+            "rows": [
+              ["Type Inference", "Automatically determines the data type of a variable."],
+              ["Optionals", "A safe way to handle variables that might have no value."],
+              ["Value Semantics", "Uses structs and enums to manage data safely across the app."],
+              ["Generics", "Allows writing flexible, reusable functions and types."],
+              ["Automatic Garbage Collection", "Handled via ARC; no manual memory management needed."],
+              ["Inheritance", "Supports classes and inheritance for object-oriented patterns."]
+            ]
+          }
+        }
+      ]
+    } ,
+    
+    "introduction": {
+    "title": "Swift Introduction",
+    "sections": [
+      {
+        "heading": "What is Swift?",
+        "paragraphs": [
+          "Swift is a modern, fast, and safe programming language created by Apple.",
+          "Use it to build apps for iPhone, iPad, Mac, Apple Watch, and Apple TV.",
+          "You can also run Swift on servers (Linux, Windows, macOS).",
+          "Swift helps you write correct and efficient code with type inference, optionals, value types, and protocol-oriented programming."
+        ]
+      },
+      {
+        "heading": "Why Use Swift?",
+        "paragraphs": [
+          "Swift focuses on safety and speed.",
+          "Features like optionals, value types, and generics help you avoid bugs and keep code clear.",
+          "It is great for iPhone/iPad, Mac, Apple Watch, and Apple TV development.",
+          "Swift is open source and available on multiple platforms.",
+          "The language provides expressive syntax, optionals to model absence, and value types for predictable behavior.",
+          "It features a vibrant ecosystem and first-class tooling in Xcode."
+        ]
+      },
+      {
+        "heading": "Swift History",
+        "table": {
+          "headers": [
+            "Year",
+            "Milestone"
+          ],
+          "rows": [
+            [
+              "2014",
+              "Swift 1.0 announced at WWDC as a modern successor to Objective-C"
+            ],
+            [
+              "2015",
+              "Swift became open source at swift.org, with Linux support"
+            ],
+            [
+              "2019",
+              "Swift 5 introduced ABI stability on Apple platforms"
+            ],
+            [
+              "2021",
+              "Swift 5.5 added structured concurrency (async/await, Task, actor)"
+            ],
+            [
+              "Today",
+              "Used across iOS, macOS, and server-side Swift"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Mac and Xcode for iOS Development",
+        "paragraphs": [
+          "If your goal is to build and run iOS apps, you should use a Mac with Xcode.",
+          "Xcode includes iOS SDKs, simulators, Interface Builder, and signing tools.",
+          "You can learn Swift on Windows or Linux and in the browser, but building and running iOS apps requires a Mac.",
+          "To ship to TestFlight or the App Store, you need an Apple Developer account."
+        ]
+      }
+    ]
+  } ,
+  "getstarted": {
+    "title": "Swift Get Started",
+    "sections": [
+      {
+        "heading": "Install Swift",
+        "paragraphs": [
+          "Swift installation is supported on macOS, Windows, and Linux platforms.",
+          "macOS users should install Xcode from the App Store to get the compiler, SDKs, and toolsets.",
+          "Windows and Linux users must download the toolchain from swift.org/install and configure their PATH.",
+          "Verification is performed by running `swift --version` in a terminal."
+        ]
+      },
+      {
+        "heading": "Hello World",
+        "paragraphs": [
+          "Swift code can be executed via the terminal or within the Xcode IDE.",
+          "The standard starting program uses the `print` function to output text:"
+        ],
+        "code": "print(\"Hello, Swift!\")",
+        "explanation": [
+          "**main.swift**: A Swift file where top-level code executes immediately upon being run.",
+          "**print**: The function used to write text to the standard output.",
+          "**Double Quotes**: Strings in Swift must be enclosed in double quotes."
+        ]
+      },
+      {
+        "heading": "Swift in Xcode",
+        "paragraphs": [
+          "For iOS development, users create a new project using the 'App' template and select Swift as the language.",
+          "Playgrounds are also available in Xcode for rapid prototyping and quick code experiments."
+        ]
+      }
+    ]
+  } ,
+  "syntax": {
+  "title": "Swift Syntax",
+  "sections": [
+    {
+      "heading": "Basics",
+      "paragraphs": [
+        "Swift syntax includes the fundamental rules for defining constants, variables, and common data types.",
+        "Commonly used types in Swift include `Int` (integers), `Double` (floating-point), `Bool` (Boolean), and `String` (text).",
+        "The Swift compiler uses type inference to automatically determine a value's data type based on its initial value."
+      ],
+      "list": [
+        "**let**: Used to declare a constant, which is a value that cannot be changed once set.",
+        "**var**: Used to declare a variable, which is a value that can be mutated or updated later.",
+        "**Type Annotation**: An optional way to explicitly declare a type by adding a colon and the type name after the identifier."
+      ],
+      "code": "let greeting = \"Hello\"\nvar name = \"Swift\"\nprint(greeting + \", \" + name)\n\nlet pi: Double = 3.14159\nvar count: Int = 3\nprint(\"pi = \\(pi), count = \\(count)\")"
+    },
+    {
+      "heading": "String Interpolation",
+      "paragraphs": [
+        "String interpolation allows you to embed expressions or variables directly inside a string literal for easy formatting.",
+        "In Swift, interpolation is performed using the `\\(expr)` syntax within a double-quoted string."
+      ],
+      "code": "let greeting = \"Hello\"\nvar name = \"Swift\"\nprint(\"\\(greeting), \\(name)!\")"
+    },
+    {
+      "heading": "Functions",
+      "paragraphs": [
+        "Functions are self-contained blocks of code that perform a specific task.",
+        "They are defined using the `func` keyword, followed by parameters and an optional return type indicated by an arrow (`->`)."
+      ],
+      "code": "func add(_ a: Int, _ b: Int) -> Int {\n  return a + b\n}\nprint(add(2, 3))  // Output: 5"
+    }
+  ]
+} ,
+"statements": {
+  "title": "Swift Statements",
+  "sections": [
+    {
+      "heading": "Expression & Declaration Statements",
+      "paragraphs": [
+        "Swift code is constructed from various types of statements, including declarations, expressions, and control flow.",
+        "Declarations are used to introduce new names into the program, such as constants or variables.",
+        "Expression statements are used to evaluate an expression, such as a function call like `print()`."
+      ],
+      "code": "let x = 2  // declaration\nprint(x)    // expression statement"
+    },
+    {
+      "heading": "Semicolons and Blocks",
+      "paragraphs": [
+        "In Swift, semicolons are optional at the end of a line.",
+        "They are only necessary if you intend to write multiple statements on the same line.",
+        "Braces `{ ... }` are used to group multiple statements together into a logical block."
+      ],
+      "code": "let a = 1; let b = 2 // Semicolons separate multiple statements on one line\nprint(a + b)\n\nif a < b {\n  print(\"a is less than b\")\n}"
+    }
+  ]
+} ,
+"output": {
+  "title": "Swift Text Output",
+  "sections": [
+    {
+      "heading": "Print Text",
+      "paragraphs": [
+        "The `print()` function is the primary way to write text and values to the standard output.",
+        "You can combine text with variables or constants using string interpolation, which uses the `\\(expr)` syntax."
+      ],
+      "code": "print(\"Hello, Swift!\")\nlet name = \"Kai\"\nprint(\"Hello, \\(name)!\")\n\nlet a = 2, b = 3\nprint(\"Total: \\(a + b)\")"
+    },
+    {
+      "heading": "Print Without Newline",
+      "paragraphs": [
+        "By default, the `print()` function ends with a newline character.",
+        "To prevent this and keep output on the same line, you can use the `terminator` parameter.",
+        "Passing a space or an empty string to `terminator` allows multiple print statements to appear sequentially on one line."
+      ],
+      "code": "for n in 1...3 {\n  print(n, terminator: \" \") // prints on one line\n}\nprint(\"done\")",
+      "explanation": [
+        "**terminator: \" \"**: Replaces the default newline with a space.",
+        "**terminator: \"\"**: Removes the trailing character entirely to avoid any spacing or newlines."
+      ]
+    }
+  ]
+} ,
+"number-output": {
+  "title": "Swift Number Output",
+  "sections": [
+    {
+      "heading": "Printing Numbers",
+      "paragraphs": [
+        "Numeric values can be printed directly by passing them to the `print()` function or by embedding them into strings using interpolation.",
+        "By default, passing multiple numeric arguments to `print()` results in space-separated output.",
+        "String interpolation (`\\(value)`) allows for complex formatting and even inline mathematical calculations."
+      ],
+      "code": "let a = 7, b = 3\nprint(a, b)                // space-separated by default\nprint(\"a=\\(a), b=\\(b)\")      // interpolation\nprint(\"sum = \\(a + b)\")      // inline math"
+    },
+    {
+      "heading": "Math Functions",
+      "paragraphs": [
+        "Swift provides built-in functions to perform common calculations on numbers:"
+      ],
+      "list": [
+        "**abs(x)**: Returns the absolute value of x (removes the negative sign).",
+        "**min(x, y)**: Compares two values and returns the smaller one.",
+        "**max(x, y)**: Compares two values and returns the larger one."
+      ],
+      "code": "let x = -7\nprint(abs(x))          // Output: 7\nprint(min(3, 8))       // Output: 3\nprint(max(3, 8))       // Output: 8"
+    }
+  ]
+} ,
+"comments": {
+  "title": "Swift Comments",
+  "sections": [
+    {
+      "heading": "Single-line and Multi-line Comments",
+      "paragraphs": [
+        "Comments are used to provide explanations of the code and increase readability.",
+        "Swift supports both single-line and multi-line comments, with the unique feature of allowing multi-line comments to be nested."
+      ],
+      "list": [
+        "**Single-line**: Use double slashes `//` to start a comment that ends at the end of the line.",
+        "**Multi-line**: Use `/*` to start and `*/` to end comments that span multiple lines.",
+        "**Nesting**: Swift allows you to nest multi-line comments within other multi-line comments, which is useful for commenting out large blocks of code."
+      ],
+      "code": "// This is a single-line comment\nprint(\"Hello\")\n\n/* This is a\n   multi-line comment */\nprint(\"Swift\")\n\n/* Nested comments are allowed:\n   /* inner */\n*/"
+    },
+    {
+      "heading": "Documentation Comments",
+      "paragraphs": [
+        "Documentation comments are special comments used to generate documentation for functions, types, and properties.",
+        "These differ from regular comments because they are processed by the compiler to create descriptive documentation."
+      ],
+      "list": [
+        "**Triple-slash**: Use `///` before declarations to document them, including parameters and return values.",
+        "**Multi-line Documentation**: These are started with `/**` and ended with `*/`."
+      ],
+      "code": "/// Returns the sum of two integers.\n/// - Parameters: a, b\nfunc add(_ a: Int, _ b: Int) -> Int { a + b }\nprint(add(2, 3))"
+    }
+  ]
+} ,
+
+"variables": {
+  "title": "Swift Variables",
+  "sections": [
+    {
+      "heading": "Constants and Variables",
+      "paragraphs": [
+        "In Swift, you use `let` to declare constants and `var` to declare variables.",
+        "Constants are immutable, meaning their value cannot be reassigned once set.",
+        "Variables are mutable and allow you to change or update their values during program execution."
+      ],
+      "code": "let constant = 10\nvar counter = 0\ncounter += 1\n// constant = 12 // This would cause an error\nprint(constant, counter)"
+    },
+    {
+      "heading": "Swift Type Inference",
+      "paragraphs": [
+        "Swift is a type-safe language that can automatically infer the data type of a variable or constant based on its initial value.",
+        "While inference is powerful, you can also use type annotations to explicitly define the data type for better code clarity."
+      ],
+      "code": "let x = 10         // Type inferred as Int\nlet y: Int = 20    // Explicit type annotation\nprint(x, y)"
+    },
+    {
+      "heading": "Optionals",
+      "paragraphs": [
+        "Optionals are a unique Swift feature used to declare values that might be `nil` (absent).",
+        "You declare an optional by adding a question mark `?` after the type name.",
+        "The nil-coalescing operator `??` can be used to provide a default value if the optional is empty."
+      ],
+      "code": "var nickname: String? = nil\nnickname = \"KJ\"\nprint(nickname ?? \"none\")"
+    } ,
+    {
+      "heading": "Concatenation and Interpolation",
+      "paragraphs": [
+        "Swift allows you to display values using either string concatenation or string interpolation.",
+        "Concatenation uses the `+` operator to join strings together, while interpolation uses the `\\(value)` syntax to embed expressions directly into a string literal.",
+        "Interpolation is recommended as a safer and clearer method, particularly when handling non-string values like integers."
+      ],
+      "code": "let first = \"Hello\"\nlet second = \"Swift\"\n// Concatenation\nprint(first + \", \" + second)\n// Interpolation\nprint(\"\\(first), \\(second)\")\n\nlet a = 2, b = 3\nprint(\"a = \\(a), b = \\(b), sum = \\(a + b)\")"
+    },
+    {
+      "heading": "Custom Separator and Terminator",
+      "paragraphs": [
+        "You can customize the output of the `print()` function using specific parameters.",
+        "The `separator` parameter defines the string placed between multiple items being printed.",
+        "The `terminator` parameter defines the string printed at the very end of the output, which by default is a newline character."
+      ],
+      "code": "let a = 1, b = 2, c = 3\nprint(a, b, c, separator: \", \", terminator: \"; \")\nprint(\"done\")  // prints on the same line after a semicolon"
+    } ,
+    {
+      "heading": "Multiple Variables Declared",
+      "paragraphs": [
+        "Swift allows the declaration of multiple variables or constants on a single line by separating them with commas.",
+        "This approach is generally recommended only when the code remains easy to read and understand."
+      ],
+      "code": "var x = 1, y = 2, z = 3\nlet a = 10, b = 20\nprint(x, y, z, a, b)"
+    },
+    {
+      "heading": "With Type Annotations",
+      "paragraphs": [
+        "You can explicitly define the data types for multiple declarations on one line using type annotations.",
+        "Explicit types are useful when the compiler's type inference might be ambiguous or when you want to clearly document your intent."
+      ],
+      "code": "var i: Int = 1, j: Int = 2\nlet firstName: String = \"Robin\", lastName: String = \"Refsnes\"\nprint(i + j, firstName, lastName)"
+    } ,
+    {
+      "heading": "Rules for Identifiers",
+      "paragraphs": [
+        "Identifiers are the names you give to variables, constants, types, and functions.",
+        "Swift identifiers follow specific naming conventions to ensure code validity:"
+      ],
+      "list": [
+        "Must start with either a letter or an underscore.",
+        "Can include numbers after the initial character.",
+        "Must not start with a number.",
+        "Can contain Unicode characters, such as mathematical symbols or emojis."
+      ],
+      "code": "let name = \"Swift\"\nlet π = 3.14\nlet _hidden = true"
+    },
+    {
+      "heading": "Escaping Keywords and Unicode",
+      "paragraphs": [
+        "Reserved keywords usually cannot be used as identifiers because they have special meaning to the compiler.",
+        "However, you can use a reserved keyword as an identifier if you escape it with backticks (`` ` ``).",
+        "Swift's full support for Unicode allows for highly expressive identifier names."
+      ],
+      "code": "let `switch` = \"ok\"   // escape a keyword using backticks\nlet 🐶 = \"dog\"          // Unicode identifier\nprint(`switch`, 🐶)"
+    } 
+
+  ]
+} ,
+"constants": {
+  "title": "Swift Constants",
+  "sections": [
+    {
+      "heading": "Declare Constants",
+      "paragraphs": [
+        "In Swift, you use the `let` keyword to declare constants.",
+        "A constant binds a value once, and it cannot be reassigned to a different value later in the program.",
+        "Attempting to change a constant's value after its initial assignment will result in a compiler error."
+      ],
+      "code": "let pi = 3.14159\nlet maxCount = 100\n// pi = 4.0 // Error: cannot assign to value: 'pi' is a 'let' constant"
+    },
+    {
+      "heading": "Constants and Collections",
+      "paragraphs": [
+        "The immutability of a constant also applies to collections like arrays.",
+        "If an array is declared using `let`, it is immutable, meaning you cannot add, remove, or change its elements.",
+        "Conversely, an array declared with `var` is mutable and can be modified using methods like `append()`."
+      ],
+      "code": "var nums = [1, 2]\nnums.append(3)        // OK: nums is var\nprint(nums)\n\nlet fixed = [1, 2]\n// fixed.append(3)   // Error: cannot use mutating member on immutable value"
+    } ,
+    {
+      "heading": "Tracking Values with Variables",
+      "paragraphs": [
+        "In real-world applications, variables are essential for tracking data that changes over time, such as counters, status flags, and user input."
+      ]
+    },
+    {
+      "heading": "Example: Counter",
+      "paragraphs": [
+        "A common use for a variable is to track a counter that increments as specific actions occur.",
+        "By using a variable, you can store the current state and print it as it updates."
+      ],
+      "code": "var count = 0\ncount += 1\nprint(\"Count: \\(count)\")"
+    },
+    {
+      "heading": "Example: Greeting",
+      "paragraphs": [
+        "Variables can also store strings, such as a user's name, which might change during a session.",
+        "Using string interpolation, you can dynamically update a greeting to reflect the current value stored in the variable."
+      ],
+      "code": "var name = \"Kai\"\nprint(\"Hello, \\(name)!\")\n\nname = \"Elisabeth\"\nprint(\"Hello, \\(name)!\")",
+      "explanation": [
+        "**Updating State**: This example demonstrates how the same variable (`name`) can be reassigned to a new value, causing the subsequent output to change."
+      ]
+    }
+  ]
+} ,
+
+"datatypes": {
+  "title": "Swift Data Types",
+  "sections": [
+    {
+      "heading": "Basic Types",
+      "paragraphs": [
+        "Swift includes several built-in data types that are fundamental to programming.",
+        "The language automatically deduces the specific type of a constant or variable based on its assigned value."
+      ],
+      "list": [
+        "**Int**: Used for whole numbers (integers).",
+        "**Double**: Used for floating-point numbers or decimals.",
+        "**Bool**: Used for Boolean values representing true or false.",
+        "**String**: Used for a sequence of characters or text."
+      ],
+      "code": "let anInt = 42            // Int\nlet aDouble = 3.14        // Double\nlet isSwiftFun = true     // Bool\nlet greeting = \"Hello\"    // String\nprint(aDouble)\nprint(isSwiftFun)\nprint(greeting)"
+    },
+    {
+      "heading": "Type Inference vs Annotation",
+      "paragraphs": [
+        "While Swift usually infers the type from the initial value, you can provide a type annotation for explicit clarity or to ensure a specific type is used.",
+        "Type annotations are added by placing a colon and the type name after the variable or constant identifier."
+      ],
+      "code": "let inferred = 10           // Int (inferred)\nlet annotated: Double = 3   // Double (explicit)\nprint(type(of: inferred), type(of: annotated))"
+    } ,
+    {
+      "heading": "Arithmetic",
+      "paragraphs": [
+        "Swift provides standard arithmetic operators for performing operations on numeric types like `Int` and `Double`.",
+        "Because Swift is type-safe, you must convert types when performing operations between different numeric formats, such as converting an `Int` to a `Double` for precise division."
+      ],
+      "list": [
+        "**+**: Addition.",
+        "**-**: Subtraction.",
+        "*****: Multiplication.",
+        "**/**: Division."
+      ],
+      "code": "let a = 5, b = 2\nprint(a - b)\nprint(a * b)\nprint(Double(a) / Double(b))"
+    },
+    {
+      "heading": "Integer Division vs Remainder",
+      "paragraphs": [
+        "In Swift, dividing two integers results in integer division, which truncates the result toward zero and drops any fractional part.",
+        "The remainder operator `%` is used to return the value left over after the division is complete."
+      ],
+      "code": "let a = 7, b = 3\nprint(a / b)  // Output: 2 (integer division)\nprint(a % b)  // Output: 1 (remainder)"
+    } ,
+    {
+      "heading": "Boolean Logic",
+      "paragraphs": [
+        "In Swift, the `Bool` type represents logical true or false values.",
+        "You can combine or modify these boolean values using standard logical operators."
+      ],
+      "list": [
+        "**Logical AND (&&)**: Returns true only if both operands are true.",
+        "**Logical OR (||)**: Returns true if at least one operand is true.",
+        "**Logical NOT (!)**: Negates the boolean value, turning true to false and vice versa."
+      ],
+      "code": "let a = true, b = false\nprint(a && b)  // false\nprint(a || b)  // true\nprint(!a)      // false"
+    },
+    {
+      "heading": "Comparison Results",
+      "paragraphs": [
+        "Relational operators are used to compare values, and the result of these comparisons is always a `Bool` value.",
+        "These results are fundamental for controlling the flow of a program through conditions."
+      ],
+      "list": [
+        "**Greater than (>)**: Checks if the left value is larger than the right.",
+        "**Equal to (==)**: Checks if two values are exactly the same.",
+        "**Not equal to (!=)**: Checks if two values are different."
+      ],
+      "code": "let a = 5, b = 3\nprint(a > b)   // true\nprint(a == b)  // false\nprint(a != b)  // true"
+    } ,
+    {
+      "heading": "Characters and String Length",
+      "paragraphs": [
+        "A `Character` represents a single user-visible symbol, such as a letter, number, or emoji.",
+        "Strings in Swift are essentially collections of characters.",
+        "You can determine the total number of characters in a string by using the `.count` property."
+      ],
+      "code": "let ch: Character = \"A\"\nprint(ch)\nlet word = \"Swift\"\nprint(word.count) // Output: 5"
+    },
+    {
+      "heading": "Characters and String Conversion",
+      "paragraphs": [
+        "Because `Character` and `String` are distinct types in Swift, you may need to convert between them when processing text.",
+        "Initializing a new string with a character allows you to use string-specific methods on that single symbol."
+      ],
+      "code": "let ch: Character = \"A\"\nlet s = String(ch)\nprint(s)               // \"A\""
+    },
+    {
+      "heading": "Unicode and Grapheme Clusters",
+      "paragraphs": [
+        "Swift handles complex characters as \"Extended Grapheme Clusters,\" meaning one character might be composed of multiple Unicode scalars.",
+        "Even if a character is visually complex, such as a national flag emoji composed of two regional indicators, Swift still treats it as a single `Character` with a count of 1."
+      ],
+      "code": "let heart: Character = \"❤️\"\nprint(heart)\nlet flag: Character = \"🇳🇴\"\nprint(flag)\nprint(\"e\\u{301}\".count) // Output: 1 (e + combining acute accent)"
+    }
+  ]
+} ,
+"type-casting": {
+  "title": "Swift Type Casting",
+  "sections": [
+    {
+      "heading": "Upcasting and Downcasting",
+      "paragraphs": [
+        "Type casting in Swift is a way to check the type of an instance or treat that instance as a different superclass or subclass.",
+        "**Upcasting** (using `as`) moves up the class hierarchy to a more general type.",
+        "**Optional Downcasting** (using `as?`) attempts to move down the hierarchy to a more specific type. It returns an optional value, which is `nil` if the cast fails."
+      ],
+      "code": "let items: [Any] = [1, \"Swift\"]\nfor item in items {\n  if let i = item as? Int {\n    print(\"Int: \\(i)\")\n  } else if let s = item as? String {\n    print(\"String: \\(s)\")\n  }\n}"
+    },
+    {
+      "heading": "Forced Downcast",
+      "paragraphs": [
+        "**Forced Downcasting** (using `as!`) is used when you are certain that an instance is of a specific subclass.",
+        "This is a high-risk operation; if the instance is not actually of the specified type, your program will trigger a runtime crash."
+      ],
+      "code": "let value: Any = 42\nlet i = value as! Int   // forced downcast\nprint(i)"
+    }
+  ]
+} ,
+"operators": {
+  "title": "Swift Operators",
+  "sections": [
+    {
+      "heading": "Operator Families",
+      "paragraphs": [
+        "Operators are special symbols used to check, change, or combine values.",
+        "Swift organizes these into several families, including arithmetic for math, comparison for logic, and assignment for storing values."
+      ],
+      "list": [
+        "**Arithmetic**: `+`, `-`, `*`, `/` used for mathematical calculations.",
+        "**Comparison**: `>`, `<`, `==`, `!=` used to check relationships between values.",
+        "**Logical**: `&&` (AND), `||` (OR), `!` (NOT) used to combine or invert boolean conditions."
+      ],
+      "code": "let a = 5, b = 2\n// Arithmetic\nprint(a + b)\n// Comparison\nprint(a > b)\n// Logical\nlet t = true, f = false\nprint(t && !f)"
+    },
+    {
+      "heading": "Unary and Ternary Operators",
+      "paragraphs": [
+        "Operators can be classified by the number of values (operands) they act upon.",
+        "**Unary operators** operate on a single target (e.g., `!flag`).",
+        "The **ternary conditional operator** is a unique three-part operator that functions as a concise `if-else` statement."
+      ],
+      "code": "let flag = false\nprint(!flag)               // unary NOT\n\nlet score = 85\nlet label = (score >= 90) ? \"A\" : \"Not A\"\nprint(label)"
+    } ,
+    {
+      "heading": "Basic Arithmetic",
+      "paragraphs": [
+        "Swift supports the standard four arithmetic operators for all number types.",
+        "It is important to note that when performing division between two integers, Swift uses integer division, which truncates the result toward zero by dropping any fractional remainder."
+      ],
+      "list": [
+        "**Addition (+)**: Adds two values.",
+        "**Subtraction (-)**: Subtracts the second value from the first.",
+        "**Multiplication (*)**: Multiplies two values.",
+        "**Division (/)**: Divides the first value by the second."
+      ],
+      "code": "let a = 7, b = 3\nprint(a + b)  // 10\nprint(a - b)  // 4\nprint(a * b)  // 21\nprint(a / b)  // 2 (integer division)"
+    },
+    {
+      "heading": "Remainder Operator",
+      "paragraphs": [
+        "The remainder operator (`%`), also known as the modulo operator in other languages, calculates the leftover value after an integer division.",
+        "This is particularly useful for checking if a number is even or odd (e.g., `x % 2 == 0`) or for cycling through a fixed range of indices."
+      ],
+      "code": "print(7 % 3)   // 1\nprint(8 % 2)   // 0\nprint(10 % 6)  // 4"
+    } ,
+    {
+      "heading": "Compound Assignment",
+      "paragraphs": [
+        "The basic assignment operator (`=`) initializes or updates the value of a variable.",
+        "Compound assignment operators combine a basic arithmetic operation with an assignment into a single step, updating the variable in place."
+      ],
+      "list": [
+        "**+=**: Adds and assigns.",
+        "**-=**: Subtracts and assigns.",
+        "***=**: Multiplies and assigns.",
+        "**/=**: Divides and assigns."
+      ],
+      "code": "var total = 10\ntotal += 5   // Same as: total = total + 5\nprint(total) // 15\ntotal -= 3\nprint(total) // 12\ntotal *= 2\nprint(total) // 24\ntotal /= 4\nprint(total) // 6"
+    },
+    {
+      "heading": "Append to String",
+      "paragraphs": [
+        "The addition assignment operator (`+=`) can also be used with strings.",
+        "This provides a convenient way to append new text to the end of an existing mutable string variable."
+      ],
+      "code": "var s = \"Hello\"\ns += \", Swift\"\nprint(s) // Output: Hello, Swift"
+    } ,
+    {
+      "heading": "Compare Integers",
+      "paragraphs": [
+        "Comparison operators are used to check the relationship between two values.",
+        "In Swift, all comparison operators return a `Bool` value—either `true` or `false`."
+      ],
+      "list": [
+        "**Equal to (==)**: Returns true if values are the same.",
+        "**Not equal to (!=)**: Returns true if values are different.",
+        "**Greater than (>)**: Returns true if the left value is larger.",
+        "**Less than (<)**: Returns true if the left value is smaller.",
+        "**Greater than or equal to (>=)** and **Less than or equal to (<=)**."
+      ],
+      "code": "let a = 5, b = 2\nprint(a == b)  // false\nprint(a != b)  // true\nprint(a > b)   // true\nprint(a < b)   // false\nprint(a >= 5)  // true"
+    },
+    {
+      "heading": "Compare Strings",
+      "paragraphs": [
+        "Swift also allows the use of comparison operators with strings.",
+        "Strings are compared lexicographically, which follows the standard dictionary order.",
+        "Note that string comparison in Swift is case-sensitive."
+      ],
+      "code": "print(\"apple\" < \"banana\")  // true\nprint(\"Swift\" == \"Swift\")  // true\nprint(\"cat\" > \"car\")       // true (\"t\" comes after \"r\")"
+    } ,
+    {
+      "heading": "Logical AND (&&)",
+      "paragraphs": [
+        "The logical AND operator (`&&`) combines two Boolean values.",
+        "It returns `true` only if both operands are `true`. If either value is `false`, the entire expression results in `false`."
+      ],
+      "code": "let isOwner = true\nlet isAdmin = false\nprint(isOwner && isAdmin) // false\nprint(true && true)       // true"
+    },
+    {
+      "heading": "Logical OR (||)",
+      "paragraphs": [
+        "The logical OR operator (`||`) results in `true` if at least one of its two operands is `true`.",
+        "It only returns `false` if both sides of the operator are `false`."
+      ],
+      "code": "let a = true\nlet b = false\nprint(a || b)             // true\nprint(false || false)     // false"
+    },
+    {
+      "heading": "Logical NOT (!)",
+      "paragraphs": [
+        "The logical NOT operator (`!`) is a unary operator that inverts a Boolean value.",
+        "It changes `true` to `false`, and `false` to `true`."
+      ],
+      "code": "let flag = false\nprint(!flag)              // true\nprint(!true)              // false"
+    } ,
+    {
+      "heading": "Evaluation Order",
+      "paragraphs": [
+        "Operator precedence determines the order in which different parts of a mathematical or logical expression are evaluated.",
+        "Higher precedence operators are processed before those with lower precedence. For example, multiplication and division are performed before addition and subtraction.",
+        "You can use parentheses to override the default precedence and explicitly control which operations happen first."
+      ],
+      "code": "print(2 + 3 * 4)     // 14 (3 * 4 is done first)\nprint((2 + 3) * 4)   // 20 (2 + 3 is done first)"
+    },
+    {
+      "heading": "Boolean Precedence",
+      "paragraphs": [
+        "In logical expressions, the AND operator (`&&`) has higher precedence than the OR operator (`||`).",
+        "This means the compiler will group and evaluate `&&` pairs before processing the `||` conditions unless parentheses are used to change that behavior."
+      ],
+      "code": "let a = true\nlet b = false\nlet c = true\n\nprint(a || b && c)         // true (evaluates as: a || (b && c))\nprint((a || b) && c)       // true (evaluates the OR first)\nprint(a && b || c)         // true (evaluates as: (a && b) || c)"
+    }
+  ]
+} ,
+"strings": {
+  "title": "Swift Strings",
+  "sections": [
+    {
+      "heading": "String Basics",
+      "paragraphs": [
+        "In Swift, strings are ordered collections of characters used to store and manipulate text.",
+        "You can inspect strings using built-in properties like `.count` to get the number of characters or `.isEmpty` to check if the string contains no content."
+      ],
+      "list": [
+        "**Concatenation**: Joining strings together using the `+` operator.",
+        "**Interpolation**: Embedding values or expressions within a string using the `\\(value)` syntax."
+      ],
+      "code": "let s1 = \"Hello\"\nlet s2 = \"Swift\"\nprint(s1 + \" \" + s2)        // Concatenation\nprint(\"\\(s1), \\(s2)!\")      // Interpolation\n\nlet word = \"Swift\"\nprint(word.count)           // 5\nprint(s1.isEmpty)           // false"
+    },
+    {
+      "heading": "Substrings and Case",
+      "paragraphs": [
+        "Swift provides methods to transform the casing of strings. These methods return a new string and do not modify the original constant or variable.",
+        "Accessing a specific part of a string, known as a **Substring**, requires the use of string indices rather than simple integer offsets."
+      ],
+      "code": "let text = \"Swift\"\nlet start = text.startIndex\nlet end = text.index(start, offsetBy: 3)\nlet sub = text[start..<end]  // \"Swi\"\n\nprint(sub)\nprint(text.uppercased())     // \"SWIFT\"\nprint(text.lowercased())     // \"swift\""
+    } ,
+
+    {
+      "heading": "Concatenate vs Interpolate",
+      "paragraphs": [
+        "In Swift, you can join multiple strings into one using the addition operator (`+`).",
+        "While concatenation builds a new string by linking parts together, string interpolation (`\\(value)`) allows you to insert values or expressions directly into a string literal.",
+        "Interpolation is often preferred because it is clearer and more readable when mixing static text with dynamic data."
+      ],
+      "code": "let first = \"Hello\"\nlet second = \"Swift\"\n\n// Concatenation\nprint(first + \" \" + second)\n\n// Interpolation\nprint(\"\\(first), \\(second)!\")"
+    },
+    {
+      "heading": "Append Strings",
+      "paragraphs": [
+        "To modify an existing string variable by adding more text to the end, use the addition assignment operator (`+=`).",
+        "This operation requires the string to be declared as a mutable variable using the `var` keyword."
+      ],
+      "code": "var s = \"Hello\"\ns += \", Swift\"\nprint(s) // Output: Hello, Swift"
+    } ,
+    {
+      "heading": "Mix Text and Numbers",
+      "paragraphs": [
+        "In Swift, you cannot directly add a number to a string using the `+` operator because they are different types.",
+        "The most common way to include numbers in text is through **string interpolation**, which handles the conversion automatically.",
+        "Alternatively, you can explicitly convert a number to a string using the `String()` initializer if you prefer to use concatenation."
+      ],
+      "code": "let age = 5\nprint(\"Age: \\(age)\")            // interpolation\n\nlet text = \"You are \" + String(age) // explicit conversion\nprint(text)\n\nlet pi = 3.14\nprint(\"pi = \\(pi)\")"
+    },
+    {
+      "heading": "Convert String to Number",
+      "paragraphs": [
+        "You can attempt to convert a string into a numeric type like `Int` or `Double` using their respective initializers.",
+        "Because a string might contain non-numeric characters (like \"abc\"), these initializers return an **Optional** value (`Int?`).",
+        "If the conversion fails, the result is `nil`. You should use optional binding or the nil-coalescing operator (`??`) to handle these cases safely."
+      ],
+      "code": "let s1 = \"123\"\nlet n1 = Int(s1)           // Result is Int? (Optional Int)\nprint(n1 ?? 0)             // Prints 123, or 0 if nil\n\nlet s2 = \"abc\"\nlet n2 = Int(s2)           // Result is nil\nprint(n2 == nil)           // true"
+    } ,
+    {
+      "heading": "Escapes",
+      "paragraphs": [
+        "Special characters that cannot be typed directly into a string literal must be \"escaped\" using a backslash (`\\`).",
+        "These escape sequences allow you to include control characters like tabs and newlines, or characters that would otherwise break the string syntax, such as double quotes."
+      ],
+      "list": [
+        "**\\n**: Newline (starts a new line).",
+        "**\\t**: Tab (inserts horizontal space).",
+        "**\\\"**: Double Quote (includes a \" inside the string).",
+        "**\\\\**: Backslash (includes a literal \\)."
+      ],
+      "code": "print(\"Hello\\nSwift\")\nprint(\"A\\tB\\tC\")\nprint(\"\\\"quoted\\\"\")\nprint(\"\\\\\")"
+    },
+    {
+      "heading": "Multiline Strings",
+      "paragraphs": [
+        "For long passages of text spanning several lines, Swift provides multiline string literals using triple double quotes (`\"\"\"`).",
+        "The string begins on the line after the opening quotes and ends on the line before the closing quotes.",
+        "Indentation is handled relative to the position of the closing triple quotes; any whitespace before the closing quotes is ignored for all lines in the literal."
+      ],
+      "code": "let poem = \"\"\"\nRoses are red,\nViolets are blue.\n\"\"\"\nprint(poem)"
+    } ,
+    {
+      "heading": "Composed Characters",
+      "paragraphs": [
+        "Swift strings are fully Unicode-compliant, meaning they handle complex characters correctly regardless of how they are encoded.",
+        "A single user-visible character (an Extended Grapheme Cluster) can be represented by multiple Unicode scalars. For example, the character 'é' can be a single precomposed scalar or a combination of the letter 'e' and a combining accent scalar.",
+        "Swift performs **canonical equivalence**, ensuring that visually identical characters compare as equal even if their underlying scalar sequences differ."
+      ],
+      "code": "let e1 = \"é\"\nlet e2 = \"e\\u{301}\"   // e + COMBINING ACUTE ACCENT\nprint(e1 == e2)       // true\nprint(e2)             // é"
+    },
+    {
+      "heading": "Unicode Scalars",
+      "paragraphs": [
+        "To see the raw data behind a string, you can use the `unicodeScalars` view.",
+        "This view allows you to iterate through the individual 21-bit Unicode code points that compose the string."
+      ],
+      "code": "let s = \"e\\u{301}\"\nfor scalar in s.unicodeScalars {\n  print(scalar.value)   // Output: 101 (e), 769 (´)\n}"
+    }
+
+  ]
+} ,
+"arrays": {
+  "title": "Swift Arrays",
+  "sections": [
+    {
+      "heading": "Create and Access",
+      "paragraphs": [
+        "Arrays in Swift are ordered collections that store multiple values of the same data type.",
+        "You can create an array using array literals (square brackets) and access specific elements using zero-based indexing.",
+        "Common properties like `.count` and `.isEmpty` allow you to inspect the size and state of the array."
+      ],
+      "code": "var numbers = [10, 20, 30]\nprint(numbers[0])          // 10\nnumbers.append(40)\nprint(numbers.count)       // 4\nprint(numbers.isEmpty)     // false"
+    },
+    {
+      "heading": "Insert and Remove",
+      "paragraphs": [
+        "Swift provides methods to dynamically modify the contents of an array.",
+        "The `insert(_:at:)` method adds a new element at a specific index, shifting subsequent elements to the right.",
+        "The `remove(at:)` method deletes the element at the given index and returns it, shifting remaining elements to close the gap."
+      ],
+      "code": "var items = [\"A\", \"B\", \"C\"]\nitems.insert(\"X\", at: 1)   // [\"A\", \"X\", \"B\", \"C\"]\nprint(items)\n\nitems.remove(at: 2)        // [\"A\", \"X\", \"C\"]\nprint(items)"
+    } ,
+    {
+      "heading": "Loop Elements",
+      "paragraphs": [
+        "The most common way to iterate over an array in Swift is the `for-in` loop.",
+        "If you need access to both the position (index) and the value of each item, use the `enumerated()` method, which returns a sequence of pairs containing the index and the element."
+      ],
+      "code": "let fruits = [\"Apple\", \"Banana\", \"Cherry\"]\n\n// Basic for-in loop\nfor fruit in fruits {\n  print(fruit)\n}\n\n// Loop with index and value\nfor (i, fruit) in fruits.enumerated() {\n  print(\"\\(i): \\(fruit)\")\n}"
+    },
+    {
+      "heading": "forEach",
+      "paragraphs": [
+        "For a more functional programming approach, you can use the `forEach` method.",
+        "While similar to a `for-in` loop, `forEach` has limitations: you cannot use `break` or `continue` statements to exit the loop or skip iterations.",
+        "Inside `forEach`, `$0` is used as a shorthand to represent the current element."
+      ],
+      "code": "let fruits = [\"Apple\", \"Banana\", \"Cherry\"]\n\n// Simple forEach\nfruits.forEach { print($0) }\n\n// forEach with enumerated values\nfruits.enumerated().forEach { \n  print(\"\\($0.offset): \\($0.element)\") \n}"
+    } ,
+    {
+      "heading": "ArraySlice",
+      "paragraphs": [
+        "An `ArraySlice` is a view into a portion of an existing array, created using range syntax.",
+        "Slices are highly efficient because they share storage with the original array rather than creating a new copy immediately.",
+        "You can use closed ranges (`...`) to include the end index or half-open ranges (`..<`) to exclude it."
+      ],
+      "code": "let nums = [10, 20, 30, 40, 50]\nlet middle = nums[1...3]          // Includes index 3: [20, 30, 40]\n\nlet halfOpen = nums[1..<3]       // Excludes index 3: [20, 30]\nprint(middle)\nprint(halfOpen)"
+    },
+    {
+      "heading": "One-Sided Slices",
+      "paragraphs": [
+        "Swift allows for one-sided ranges to easily slice from the start of an array to a specific index, or from an index to the very end."
+      ],
+      "code": "let arr = [0, 1, 2, 3, 4]\nprint(arr[...2])  // Elements at indices 0, 1, 2\nprint(arr[2...])  // Elements from index 2 to the end"
+    } ,
+    {
+      "heading": "Valid Indices",
+      "paragraphs": [
+        "In Swift, arrays use zero-based indexing, meaning the first element is at index 0.",
+        "The `startIndex` property is the position of the first element, while the `indices` property provides a range representing all valid positions for subscripting.",
+        "Accessing an index outside the range of `0..<count` will cause an 'out-of-bounds' error and trigger a runtime crash."
+      ],
+      "code": "let items = [10, 20, 30]\nprint(items.startIndex)       // 0\nfor i in items.indices {\n  print(\"index: \\(i), value: \\(items[i])\")\n}"
+    },
+    {
+      "heading": "Understanding endIndex",
+      "paragraphs": [
+        "A critical distinction in Swift is that `endIndex` is the \"past-the-end\" position—it is the index after the last valid element.",
+        "Consequently, `endIndex` is **not** a valid subscript. To access the final element, you must find the index immediately before the `endIndex`."
+      ],
+      "code": "let items = [10, 20, 30]\n// print(items[items.endIndex]) // Error! Out of bounds\n\nlet lastIndex = items.index(before: items.endIndex)\nprint(lastIndex)             // 2\nprint(items[lastIndex])      // 30"
+    } ,
+    {
+      "heading": "2D Arrays",
+      "paragraphs": [
+        "Multidimensional arrays are arrays that contain other arrays as their elements, commonly used to represent grids, matrices, or tables.",
+        "A 2D array is structured as rows and columns. You access a specific \"cell\" by using two sets of subscripts: the first for the row index and the second for the column index."
+      ],
+      "code": "var grid = [\n  [1, 2, 3], // Row 0\n  [4, 5, 6], // Row 1\n  [7, 8, 9]  // Row 2\n]\n\nprint(grid[0][1]) // Accesses Row 0, Column 1 (Output: 2)\n\nfor row in grid {\n  print(row)      // Prints each inner array (row)\n}"
+    },
+    {
+      "heading": "Update a Cell",
+      "paragraphs": [
+        "To modify a value within a multidimensional array, you target the specific coordinate using the same row and column indexing.",
+        "Because Swift arrays are value types, modifying an inner element requires the outer array to be declared as a variable (`var`)."
+      ],
+      "code": "var grid = [\n  [1, 2, 3],\n  [4, 5, 6],\n  [7, 8, 9]\n]\n\ngrid[1][1] = 99\nprint(grid[1])      // Output: [4, 99, 6]\nprint(grid[1][1])   // Output: 99"
+    } ,
+    {
+      "heading": "Aggregate and Transform",
+      "paragraphs": [
+        "In real-world applications, arrays are rarely just static lists; they are often filtered, transformed, and calculated to produce meaningful information.",
+        "Swift provides powerful declarative methods like `filter`, `map`, and `reduce` to process data cleanly without manual loops."
+      ],
+      "list": [
+        "**Filter**: Creates a new array containing only the elements that satisfy a specific condition.",
+        "**Map**: Transforms every element in an array and returns a new array with the results.",
+        "**Reduce**: Combines all elements of an array into a single value, such as a sum or a string."
+      ],
+      "code": "let scores = [72, 88, 95, 64, 83]\n\n// Keep only scores 75 or higher\nlet passed = scores.filter { $0 >= 75 }\n\n// Add 5 points to each passing score\nlet curved = passed.map { $0 + 5 }\n\n// Calculate the average\nlet average = curved.reduce(0, +) / curved.count\n\nprint(passed)\nprint(curved)\nprint(\"Average: \\(average)\")"
+    },
+    {
+      "heading": "Search & Index",
+      "paragraphs": [
+        "Common tasks in app development include checking if an item exists in a list or finding the exact location of a specific data point.",
+        "The `contains()` method returns a Boolean, while `firstIndex(of:)` returns an optional index because the item might not exist."
+      ],
+      "code": "let names = [\"Kai\", \"Bjorn\", \"Stale\"]\n\nprint(names.contains(\"Bjorn\"))            // true\n\nif let i = names.firstIndex(of: \"Stale\") {\n  print(\"Found at index: \\(i)\")           // 2\n}"
+    }
+
+  ]
+} ,
+"ranges": {
+  "title": "Swift Ranges",
+  "sections": [
+    {
+      "heading": "Closed and Half-Open Ranges",
+      "paragraphs": [
+        "Ranges in Swift allow you to represent a series of values, typically integers, and are frequently used in loops and array slicing.",
+        "A **Closed Range** (`a...b`) includes both the start and end values.",
+        "A **Half-Open Range** (`a..<b`) includes the start value but stops just before the end value."
+      ],
+      "code": "for n in 1...5 {\n  print(n)          // Prints 1, 2, 3, 4, 5\n}\n\nfor n in 1..<5 {\n  print(n)          // Prints 1, 2, 3, 4\n}\n\nlet r = 10...12\nprint(r.contains(11)) // true\nprint(r.contains(13)) // false"
+    },
+    {
+      "heading": "One-Sided Ranges",
+      "paragraphs": [
+        "One-sided ranges allow you to omit one end of the range, letting it extend as far as possible in one direction.",
+        "These are especially powerful when slicing arrays or checking if a value falls above or below a certain threshold."
+      ],
+      "code": "let arr = [0, 1, 2, 3, 4]\n\n// Up to and including index 2\nprint(arr[...2])      // [0, 1, 2]\n\n// From index 2 to the end\nprint(arr[2...])      // [2, 3, 4]"
+    }
+  ]
+} ,
+"if-else": {
+  "title": "Swift If...Else",
+  "sections": [
+    {
+      "heading": "Basic If...Else",
+      "paragraphs": [
+        "The `if` statement is the most fundamental way to control the flow of your program based on specific conditions.",
+        "You use `if` to execute a block of code only when a condition is true, `else if` to check additional conditions if the first one is false, and `else` as a final catch-all for when none of the conditions are met."
+      ],
+      "code": "let score = 82\n\nif score >= 90 {\n  print(\"A\")\n} else if score >= 80 {\n  print(\"B\")\n} else {\n  print(\"C or lower\")\n}"
+    },
+    {
+      "heading": "Condition Requirements",
+      "paragraphs": [
+        "In Swift, the condition for an `if` statement must explicitly evaluate to a `Bool` (`true` or `false`).",
+        "Unlike some other languages, Swift does not allow \"truthy\" or \"falsy\" values. For example, you cannot use an integer directly as a condition; you must compare it to another value to produce a Boolean result."
+      ],
+      "code": "let n = 7\nif n % 2 == 0 {\n  print(\"Even\")\n} else {\n  print(\"Odd\")\n}"
+    } ,
+    {
+      "heading": "Handling the False Branch",
+      "paragraphs": [
+        "The `else` statement provides an alternative block of code that runs only if the condition in the preceding `if` statement evaluates to `false`.",
+        "It acts as a fallback mechanism, ensuring that your program performs an action regardless of whether a condition is met or not."
+      ],
+      "code": "let hasAccess = false\nif hasAccess {\n  print(\"Welcome\")\n} else {\n  print(\"Denied\")\n}"
+    },
+    {
+      "heading": "Practical Application: Age Verification",
+      "paragraphs": [
+        "A common use for the `else` branch is handling requirements or \"Age Gates\". If a user does not meet a specific numerical threshold, the `else` block handles the rejection logic."
+      ],
+      "code": "let age = 16\nif age >= 18 {\n  print(\"Access granted\")\n} else {\n  print(\"Access denied\")\n}"
+    } ,
+    {
+      "heading": "Branch with else if conditions",
+      "paragraphs": [
+        "Use the `else if` statement to chain multiple conditions together when you have more than two possible outcomes.",
+        "If the initial `if` condition is `false`, Swift evaluates the `else if` conditions in order.",
+        "Once a condition evaluates to `true`, the corresponding block of code is executed, and the rest of the chain is ignored."
+      ],
+      "code": "let score = 72\nif score >= 90 {\n  print(\"A\")\n} else if score >= 80 {\n  print(\"B\")\n} else if score >= 70 {\n  print(\"C\")\n} else {\n  print(\"Below C\")\n}"
+    },
+    {
+      "heading": "Temperature Levels",
+      "paragraphs": [
+        "Multiple `else if` branches are useful for categorizing a single value into different ranges, such as temperature descriptions.",
+        "The final `else` acts as a catch-all for any values that do not meet any of the preceding conditions."
+      ],
+      "code": "let t = 0\nif t <= 0 {\n  print(\"Freezing\")\n} else if t < 10 {\n  print(\"Cold\")\n} else if t < 20 {\n  print(\"Cool\")\n} else {\n  print(\"Warm\")\n}"
+    } ,
+
+      {
+      "heading": "Basic Ternary Operator",
+      "paragraphs": [
+        "The ternary operator is a concise way to choose between two values based on a condition.",
+        "It uses the syntax `condition ? valueIfTrue : valueIfFalse`.",
+        "This is often referred to as a \"short hand if-else\" because it performs a similar logical function in a single line of code."
+      ],
+      "code": "let age = 20\nlet status = (age >= 18) ? \"Adult\" : \"Minor\"\nprint(status) // Output: Adult"
+    },
+    {
+      "heading": "Choose the Minimum",
+      "paragraphs": [
+        "A common practical use for the ternary operator is selecting the minimum or maximum of two values quickly.",
+        "If the condition (`a < b`) is true, the first value (`a`) is returned; otherwise, the second value (`b`) is returned."
+      ],
+      "code": "let a = 5, b = 9\nlet min = (a < b) ? a : b\nprint(min) // Output: 5"
+    } ,
+    {
+      "heading": "Multi-step Checks",
+      "paragraphs": [
+        "Nested `if` statements allow you to check multiple levels of conditions by placing one `if` statement inside another.",
+        "This is particularly useful for layered logic, such as verifying if a user is logged in before checking their specific permissions or roles."
+      ],
+      "code": "let isLoggedIn = true\nlet isAdmin = false\n\nif isLoggedIn {\n  if isAdmin {\n    print(\"Admin panel\")\n  } else {\n    print(\"Limited access\")\n  }\n}"
+    },
+    {
+      "heading": "Validate and Branch",
+      "paragraphs": [
+        "Another common pattern is using an outer `if` statement to validate that an input is within a correct range before using nested logic to categorize that input.",
+        "This ensures that the inner logic only executes on valid data, preventing incorrect results or processing of invalid values."
+      ],
+      "code": "let score = 85\n\nif score >= 0 && score <= 100 {\n  if score >= 90 {\n    print(\"A\")\n  } else if score >= 80 {\n    print(\"B\")\n  } else if score >= 70 {\n    print(\"C\")\n  } else {\n    print(\"Below C\")\n  }\n} else {\n  print(\"Invalid score\")\n}"
+    } ,
+    {
+      "heading": "Combine Conditions with Logical Operators",
+      "paragraphs": [
+        "Logical operators allow you to combine multiple Boolean checks into a single `if` statement to control complex code paths.",
+        "The Logical OR operator (`||`) executes the code block if at least one of the conditions is true."
+      ],
+      "code": "let isMember = true\nlet hasCoupon = false\n\nif isMember || hasCoupon {\n  print(\"Discount applied\")\n}"
+    },
+    {
+      "heading": "AND and NOT",
+      "paragraphs": [
+        "The Logical AND operator (`&&`) requires both conditions to be true for the code block to execute.",
+        "The Logical NOT operator (`!`) negates a Boolean value, turning `true` into `false` and vice versa."
+      ],
+      "code": "let isMember = true\nlet expired = false\n\nif isMember && !expired {\n  print(\"Active member\")\n}"
+    } ,
+    {
+      "heading": "Validate input with conditions",
+      "paragraphs": [
+        "In real-world applications, conditional logic is essential for validating user input and guarding against invalid data states.",
+        "By checking if a string is not empty using the `!isEmpty` property, you ensure that the program only processes meaningful information.",
+        "If the validation condition fails, the logic inside the block is skipped to prevent errors or empty submissions."
+      ],
+      "code": "let input = \"hello\"\nif !input.isEmpty {\n  print(\"Input received: \\(input)\")\n}"
+    },
+    {
+      "heading": "Feature Flag",
+      "paragraphs": [
+        "Feature flags (or feature toggles) allow developers to enable or disable specific functionality without deploying new code.",
+        "You can combine a global 'enabled' flag with specific user group requirements (like \"beta\") using logical operators to strictly control who sees a new feature."
+      ],
+      "code": "let enabled = true\nlet userGroup = \"beta\"\nif enabled && userGroup == \"beta\" {\n  print(\"Show feature\")\n}"
+    }
+
+  ]
+} ,
+"switch": {
+  "title": "Swift Switch",
+  "sections": [
+    {
+      "heading": "Basic Switch with Ranges",
+      "paragraphs": [
+        "The `switch` statement in Swift matches a value against several possible matching patterns.",
+        "It is highly flexible and can match exact values or intervals using range syntax.",
+        "Once a match is found, Swift executes the code for that case and then exits the switch entirely; it does not 'fall through' to the next case by default."
+      ],
+      "code": "let grade = 82\nswitch grade {\ncase 90...100:\n  print(\"A\")\ncase 80..<90:\n  print(\"B\")\ncase 70..<80:\n  print(\"C\")\ndefault:\n  print(\"Below C\")\n}"
+    },
+    {
+      "heading": "String Switch",
+      "paragraphs": [
+        "Swift supports switching over many different data types, including strings.",
+        "This is useful for handling commands or categorized text input directly."
+      ],
+      "code": "let command = \"start\"\nswitch command {\ncase \"start\":\n  print(\"Starting\")\ncase \"stop\":\n  print(\"Stopping\")\ndefault:\n  print(\"Unknown\")\n}"
+    }
+  ]
+} ,
+"while-loop": {
+  "title": "Swift While Loop",
+  "sections": [
+    {
+      "heading": "while",
+      "paragraphs": [
+        "A `while` loop starts by evaluating a single condition.",
+        "If the condition is `true`, the set of statements is repeated until the condition becomes `false`.",
+        "Because the condition is checked before the loop body runs, the code inside may not execute at all if the initial condition is already `false`."
+      ],
+      "code": "var n = 3\nwhile n > 0 {\n  print(n)\n  n -= 1\n}\nprint(\"Liftoff!\")"
+    },
+    {
+      "heading": "repeat { } while",
+      "paragraphs": [
+        "The `repeat-while` loop is Swift's version of the 'do-while' loop found in other languages.",
+        "It performs a single pass through the loop block first, before considering the loop's condition.",
+        "It then continues to repeat the loop as long as the condition is `true`.",
+        "This ensures that the code block always runs at least once."
+      ],
+      "code": "var attempts = 0\nrepeat {\n  attempts += 1\n  print(\"Attempt #\\(attempts)\")\n} while attempts < 3"
+    } ,
+    {
+      "heading": "The repeat/while Loop",
+      "paragraphs": [
+        "The `repeat-while` loop is a variation of the while loop that executes the code block first, then evaluates the condition.",
+        "It is equivalent to the 'do-while' loop found in many other programming languages.",
+        "The loop will continue to repeat as long as the condition remains `true`."
+      ],
+      "code": "var attempts = 0\nrepeat {\n  attempts += 1\n  print(\"Attempt #\\(attempts)\")\n} while attempts < 3"
+    },
+    {
+      "heading": "Runs Once Even If Condition Is False",
+      "paragraphs": [
+        "A key characteristic of the `repeat-while` loop is that it guarantees the body of the loop will run at least once.",
+        "Because the condition check happens at the end of the block, the code executes before the loop determines if it should stop."
+      ],
+      "code": "var n = 0\nrepeat {\n  print(\"Runs once\")\n} while n > 0"
+    } ,
+    {
+      "heading": "While Loop Countdown",
+      "paragraphs": [
+        "A common use for a `while` loop is managing a countdown or processing a specific number of remaining items.",
+        "The loop continues as long as the counter remains above zero, executing the block and decrementing the value in each pass."
+      ],
+      "code": "var remaining = 3\nwhile remaining > 0 {\n  print(\"Remaining: \\(remaining)\")\n  remaining -= 1\n}\n// Output: Remaining: 3, 2, 1"
+    },
+    {
+      "heading": "Poll Until Success",
+      "paragraphs": [
+        "In real-world networking or data processing, you often need to retry an operation until it succeeds or reaches a maximum number of attempts.",
+        "By combining a success flag with a counter using the logical AND operator (`&&`), you can ensure the loop exits once the goal is achieved or the limit is hit."
+      ],
+      "code": "var attempts = 0\nvar success = false\nwhile !success && attempts < 5 {\n  attempts += 1\n  print(\"Checking... #\\(attempts)\")\n  if attempts == 3 {\n    success = true\n    print(\"Success!\")\n  }\n}"
+    }
+  ]
+} ,
+"for-loop": {
+  "title": "Swift For Loop",
+  "sections": [
+    {
+      "heading": "Iterate a Range",
+      "paragraphs": [
+        "The `for-in` loop is used to iterate over a sequence, such as a range of numbers, an array, or a dictionary.",
+        "By using a range, you can execute a block of code a fixed number of times.",
+        "A closed range like `1...3` includes both the start and end values in the iteration."
+      ],
+      "code": "for i in 1...3 {\n  print(i)\n}\n// Output: 1, 2, 3"
+    },
+    {
+      "heading": "Iterate an Array",
+      "paragraphs": [
+        "You can use `for-in` to loop through every element in an array directly.",
+        "If your logic requires both the position of the element and the element itself, use the `enumerated()` method.",
+        "This method returns a tuple containing the index and the value for each item in the collection."
+      ],
+      "code": "let nums = [10, 20, 30]\n\n// Basic iteration\nfor n in nums {\n  print(n)\n}\n\n// Iteration with index\nfor (index, value) in nums.enumerated() {\n  print(\"index: \\(index), value: \\(value)\")\n}"
+    } ,
+    {
+      "heading": "Generate combinations with nested loops",
+      "paragraphs": [
+        "A nested loop is a loop placed inside the body of another loop.",
+        "The \"inner\" loop runs to completion for every single iteration of the \"outer\" loop.",
+        "This structure is ideal for generating pairs, coordinates, or combinations from multiple ranges or collections."
+      ],
+      "code": "for i in 1...2 {\n  for j in 1...3 {\n    print(i, j)\n  }\n}\n// Output: (1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)"
+    },
+    {
+      "heading": "Multiplication Table",
+      "paragraphs": [
+        "Nested loops are commonly used to build and display grids or matrices, such as a multiplication table.",
+        "By iterating through rows and columns, you can perform calculations at each intersection and format the output as a table."
+      ],
+      "code": "for i in 1...3 {\n  var row = \"\"\n  for j in 1...3 {\n    row += \"\\(i*j) \"\n  }\n  print(row)\n}\n// Output:\n// 1 2 3 \n// 2 4 6 \n// 3 6 9"
+    } ,
+    {
+      "heading": "Iterate with forEach closures",
+      "paragraphs": [
+        "The `forEach` method provides a functional way to iterate over a sequence by passing a closure as an argument.",
+        "It processes each element in the sequence in the same order as a `for-in` loop.",
+        "You can use the shorthand syntax `$0` to refer to the current element being processed within the closure."
+      ],
+      "code": "[\"A\", \"B\", \"C\"].forEach { print($0) }\n// Output: A, B, C"
+    },
+    {
+      "heading": "Enumerated forEach",
+      "paragraphs": [
+        "By combining `enumerated()` with `forEach`, you can access both the index and the value of each element.",
+        "The closure receives a tuple where `$0.offset` represents the index and `$0.element` represents the actual value."
+      ],
+      "code": "let items = [\"A\", \"B\", \"C\"]\nitems.enumerated().forEach {\n  print(\"\\($0.offset): \\($0.element)\")\n}\n// Output: 0: A, 1: B, 2: C"
+    } ,
+    {
+      "heading": "Process Arrays and Aggregate Results",
+      "paragraphs": [
+        "In real-world development, `for` loops are frequently used to aggregate data from a collection, such as calculating the total sum or average of a set of numbers.",
+        "By iterating through an array, you can accumulate values into a variable declared outside the loop."
+      ],
+      "code": "let numbers = [1, 2, 3, 4, 5]\nvar sum = 0\nfor n in numbers {\n  sum += n\n}\nprint(sum) // Output: 15"
+    },
+    {
+      "heading": "Filter Even Numbers",
+      "paragraphs": [
+        "Beyond standard iteration, Swift provides functional methods like `filter` to create new collections based on specific requirements.",
+        "For example, you can use a filter to keep only even numbers by checking if each element is divisible by 2."
+      ],
+      "code": "let numbers = [1, 2, 3, 4, 5]\nlet evens = numbers.filter { $0 % 2 == 0 }\nprint(evens) // Output: [2, 4]"
+    } 
+  ]
+} ,
+"break-continue": {
+  "title": "Swift Break/Continue",
+  "sections": [
+    {
+      "heading": "break",
+      "paragraphs": [
+        "The `break` statement is used to terminate a loop immediately.",
+        "When Swift encounters `break`, it stops executing the code inside the loop and jumps to the first line of code following the loop.",
+        "This is useful for stopping a loop early once a specific condition has been met or a target has been found."
+      ],
+      "code": "for i in 1...10 {\n  if i == 4 { break }\n  print(i)\n}\n// Output: 1, 2, 3"
+    },
+    {
+      "heading": "continue",
+      "paragraphs": [
+        "The `continue` statement tells a loop to stop what it is doing and start again at the beginning of the next iteration.",
+        "It skips the remaining code within the current loop body but does not exit the loop entirely.",
+        "This is effective for filtering out specific values or skipping unnecessary processing during a loop."
+      ],
+      "code": "for i in 1...5 {\n  if i % 2 == 0 { continue }\n  print(i) // only odd numbers\n}\n// Output: 1, 3, 5"
+    }
+  ]
+} ,
+"collections": {
+  "title": "Swift Collections",
+  "sections": [
+    {
+      "heading": "Arrays",
+      "paragraphs": [
+        "Arrays are used to store ordered lists of values.",
+        "They preserve the order of elements and allow for duplicate values.",
+        "You can define the type using `[Type]`, add elements with the `.append` method, and check the total number of items using `.count`.",
+        "Elements are accessed using an index, such as `array[index]`."
+      ],
+      "code": "var nums: [Int] = [1, 2, 3]\nnums.append(4)\nprint(nums.count)    // 4\nprint(nums[0])       // 1"
+    },
+    {
+      "heading": "Dictionaries",
+      "paragraphs": [
+        "Dictionaries store associations between keys and values in a collection.",
+        "The syntax for a dictionary type is `[Key: Value]`.",
+        "You can assign values using a key and read them back; it is standard practice to use the nil-coalescing operator (`??`) to provide a default value if a key is missing."
+      ],
+      "code": "var ages: [String: Int] = [\"Kai\": 30]\nages[\"Elisabeth\"] = 25\nprint(ages[\"Kai\"] ?? 0)"
+    },
+    {
+      "heading": "Sets",
+      "paragraphs": [
+        "Sets are used to store unique items in an unordered fashion.",
+        "The syntax is defined as `Set<Element>`.",
+        "Sets automatically deduplicate values and are efficient for testing membership with the `.contains` method."
+      ],
+      "code": "var letters: Set<Character> = [\"a\", \"b\", \"a\"]\nprint(letters.contains(\"a\"))"
+    } ,
+    {
+      "heading": "Deduplicate Values",
+      "paragraphs": [
+        "Sets are collections that store unique values with no defined order.",
+        "They are particularly useful for deduplicating values from a source array, as a Set will automatically ignore any duplicate literals during initialization.",
+        "You can test if a specific item exists within a Set using the `.contains()` method."
+      ],
+      "code": "var letters: Set<Character> = [\"a\", \"b\", \"a\"]\nprint(letters.contains(\"a\")) // Output: true"
+    },
+    {
+      "heading": "Set Operations",
+      "paragraphs": [
+        "Swift Sets support powerful mathematical operations to combine or compare multiple sets.",
+        "These include `union` to combine all unique elements, `intersection` to find common elements, and `subtracting` to remove elements found in another set."
+      ],
+      "code": "let a: Set<Int> = [1, 2, 3]\nlet b: Set<Int> = [3, 4]\n\nprint(a.union(b).sorted())          // [1, 2, 3, 4]\nprint(a.intersection(b).sorted())   // [3]\nprint(a.subtracting(b).sorted())    // [1, 2]"
+    } ,
+    {
+      "heading": "Dictionary Basics",
+      "paragraphs": [
+        "Dictionaries store associations between keys of the same type and values of the same type in an unordered collection.",
+        "Each value is associated with a unique key, which acts as an identifier for that value.",
+        "You can add new key-value pairs or update existing ones using subscripting.",
+        "When retrieving a value, use the nil-coalescing operator (`??`) to provide a fallback value in case the key is not present."
+      ],
+      "code": "var ages: [String: Int] = [\"Kai\": 30]\nages[\"Elisabeth\"] = 25\nprint(ages[\"Kai\"] ?? 0)"
+    },
+    {
+      "heading": "Iterate Keys and Values",
+      "paragraphs": [
+        "You can loop through a dictionary to access its contents.",
+        "Because dictionaries are unordered, you can use the `.keys.sorted()` method if you need to process the items in a specific alphabetical or numerical order.",
+        "During iteration, you can use the key to look up its corresponding value."
+      ],
+      "code": "let ages = [\"Kai\": 30, \"Elisabeth\": 25]\nfor k in ages.keys.sorted() {\n  print(\"\\(k): \\(ages[k]!)\")\n}"
+    } ,
+    {
+      "heading": "Transform and Aggregate",
+      "paragraphs": [
+        "Swift provides higher-order functions to perform common operations on collections in a concise, functional style.",
+        "The `map` function transforms every element in an array and returns a new array with the updated values.",
+        "The `filter` function creates a new array containing only the elements that satisfy a specific condition.",
+        "The `reduce` function combines all elements in a collection into a single value based on a starting value and a combining operation."
+      ],
+      "code": "let nums = [1, 2, 3, 4]\nlet doubled = nums.map { $0 * 2 }\nlet evens = nums.filter { $0 % 2 == 0 }\nlet sum = nums.reduce(0, +)\n\nprint(doubled) // [2, 4, 6, 8]\nprint(evens)   // [2, 4]\nprint(sum)     // 10"
+    },
+    {
+      "heading": "Convert and Sum",
+      "paragraphs": [
+        "The `compactMap` function is specifically designed to handle optional results during transformation.",
+        "It applies a transformation and automatically removes any `nil` values, resulting in an array of non-optional items.",
+        "This is highly effective for converting a list of strings into integers, as it ignores strings that cannot be validly converted."
+      ],
+      "code": "let raw = [\"1\", \"x\", \"2\", \"3\"]\nlet ints = raw.compactMap { Int($0) }   // [1, 2, 3]\nlet total = ints.reduce(0, +)\nprint(total) // 6"
+    } ,
+    {
+      "heading": "Sort",
+      "paragraphs": [
+        "Swift provides two primary ways to sort arrays: `sorted()` and `sort()`.",
+        "The `sorted()` method returns a new array that is sorted, leaving the original array unchanged.",
+        "The `sort()` method (or `sort(by:)`) performs an in-place sort, meaning it modifies the original array directly.",
+        "You can specify the sort order using operators like `>` for descending or `<` for ascending."
+      ],
+      "code": "var nums = [3, 1, 2]\nlet ascending = nums.sorted()\nprint(ascending)      // [1, 2, 3]\n\nnums.sort(by: >)\nprint(nums)           // [3, 2, 1]"
+    },
+    {
+      "heading": "Case-Insensitive Sort",
+      "paragraphs": [
+        "By default, string sorting is case-sensitive (uppercase letters usually come before lowercase).",
+        "To perform a case-insensitive sort, you can provide a custom closure that normalizes the strings (e.g., using `.lowercased()`) before comparing them."
+      ],
+      "code": "let names = [\"bob\", \"Alice\", \"dave\"]\nlet caseInsensitive = names.sorted { $0.lowercased() < $1.lowercased() }\nprint(caseInsensitive) // [\"Alice\", \"bob\", \"dave\"]"
+    } ,
+    {
+      "heading": "Mutable vs Immutable Collections",
+      "paragraphs": [
+        "In Swift, the keyword used to declare a collection determines whether its contents can be changed after creation.",
+        "Use `let` to create an immutable collection, which prevents you from adding, removing, or changing elements.",
+        "Use `var` to create a mutable collection, allowing you to modify the size or content of the collection in-place."
+      ],
+      "code": "let fixed = [1, 2]\n// fixed.append(3) // Error: Cannot mutate a 'let' constant\n\nvar bag = [1, 2]\nbag.append(3)\nprint(bag.count) // Output: 3"
+    },
+    {
+      "heading": "Dictionary Mutability",
+      "paragraphs": [
+        "Dictionaries follow the same mutability rules as arrays and other collections.",
+        "A dictionary declared with `var` can be modified by inserting new keys or updating existing values using subscripting.",
+        "Attempting to update a dictionary declared with `let` will result in a compile-time error."
+      ],
+      "code": "var user = [\"name\": \"Kai\"]\nuser[\"city\"] = \"Oslo\"\nprint(user.count) // Output: 2"
+    },
+    {
+      "heading": "Common APIs",
+      "paragraphs": [
+        "In Swift, Arrays, Sets, and Dictionaries all conform to the `Sequence` and `Collection` protocols.",
+        "This conformance provides a unified set of APIs, allowing you to use the same properties like `count` and `isEmpty` across different data structures.",
+        "The `count` property returns the number of elements, while `isEmpty` provides a Boolean check for whether the collection contains any items."
+      ],
+      "code": "let arr = [1, 2, 3]\nprint(arr.count)   // 3\nprint(arr.isEmpty) // false\n\nlet s: Set<Int> = [1, 2, 3]\nprint(s.contains(2)) // true\nprint(s.isEmpty)     // false"
+    },
+    {
+      "heading": "Indices",
+      "paragraphs": [
+        "The `indices` property provides a safe way to iterate over all valid positions within a collection.",
+        "Using `indices` ensures that your loop stays within the bounds of the collection, which helps prevent index-out-of-range errors."
+      ],
+      "code": "let arr = [10, 20, 30]\nfor i in arr.indices {\n  print(\"index: \\(i), value: \\(arr[i])\")\n}"
+    }
+    
+  ]
+} ,
+"functions": {
+  "title": "Swift Functions",
+  "sections": [
+    {
+      "heading": "Defining and Calling Functions",
+      "paragraphs": [
+        "Functions are self-contained chunks of code that perform a specific task.",
+        "You define a function using the `func` keyword, followed by its name, parameters in parentheses, and an optional return type.",
+        "When calling a function, you must use the parameter labels defined in the function signature."
+      ],
+      "code": "func greet(name: String) -> String {\n  return \"Hello, \\(name)!\"\n}\nprint(greet(name: \"Swift\"))"
+    },
+    {
+      "heading": "Parameters and Return Values",
+      "paragraphs": [
+        "Functions can accept multiple parameters separated by commas, each requiring a type annotation.",
+        "You can use an underscore (`_`) before a parameter name to omit the label at the call site.",
+        "The return type is specified with the `->` symbol; if no value is returned, the return type can be omitted."
+      ],
+      "code": "func add(_ a: Int, _ b: Int) -> Int { a + b }\nprint(add(2, 3))"
+    },
+    {
+      "heading": "Inout, Default Values, and Variadics",
+      "paragraphs": [
+        "The `inout` keyword allows a function to modify a parameter's value directly, which persists after the function call ends.",
+        "Parameters can have default values, making them optional when the function is called.",
+        "Variadic parameters, denoted by `...`, allow a function to accept zero or more values of a specified type as an array."
+      ],
+      "code": "func increment(_ value: inout Int, by step: Int = 1) {\n  value += step\n}\nvar x = 10\nincrement(&x)\n\nfunc sum(_ nums: Int...) -> Int { nums.reduce(0, +) }\nprint(sum(1, 2, 3))"
+    }
+  ]
+} ,
+"optionals": {
+  "title": "Swift Optionals",
+  "sections": [
+    {
+      "heading": "What Are Optionals?",
+      "paragraphs": [
+        "An optional represents two possibilities: either there is a value, and you can unwrap it to access that value, or there is no value at all (represented by `nil`).",
+        "You declare an optional by adding a question mark (`?`) after the type name.",
+        "To read a value safely, you can use the nil-coalescing operator (`??`) to provide a fallback default if the optional is `nil`, or use 'if let' optional binding to check for and extract the value."
+      ],
+      "code": "var nickname: String? = nil\nprint(nickname ?? \"(none)\")\n\nnickname = \"Ace\"\nif let name = nickname {\n  print(name)\n}"
+    },
+    {
+      "heading": "Guard Let",
+      "paragraphs": [
+        "The `guard let` statement is used for early exits in functions when a required value is missing.",
+        "Unlike `if let`, the variable unwrapped by `guard` remains available for the rest of the function's scope following the guard statement.",
+        "If the optional contains `nil`, the `else` block must be executed, typically requiring a `return` to exit the function."
+      ],
+      "code": "func greet(_ input: String?) {\n  guard let name = input else {\n    print(\"Missing name\")\n    return\n  }\n  print(\"Hello, \\(name)\")\n}\n\ngreet(nil)\ngreet(\"Swift\")"
+    }
+  ]
+} ,
+"enums": {
+  "title": "Swift Enums & Pattern Matching",
+  "sections": [
+    {
+      "heading": "Basic Enums",
+      "paragraphs": [
+        "An enumeration (enum) defines a common type for a group of related values and enables you to work with those values in a type-safe way.",
+        "Once a variable's type is inferred as a specific enum, you can use a shorter dot syntax to assign or check its value."
+      ],
+      "code": "enum Direction { case north, south, east, west }\nlet d: Direction = .east"
+    },
+    {
+      "heading": "Associated Values",
+      "paragraphs": [
+        "Swift enums can store additional information alongside each case value.",
+        "This allows different cases to carry different types of data, such as a UPC barcode carrying four integers while a QR code carries a string."
+      ],
+      "code": "enum Barcode {\n  case upc(Int, Int, Int, Int)\n  case qr(String)\n}\nlet b1 = Barcode.upc(8, 85909, 51226, 3)"
+    },
+    {
+      "heading": "Pattern Matching",
+      "paragraphs": [
+        "Pattern matching with a `switch` statement allows you to extract and use the associated values stored inside an enum case.",
+        "You can 'bind' these values to temporary constants or variables using the `let` keyword within the case matching logic."
+      ],
+      "code": "switch code {\ncase .upc(let numberSystem, let manufacturer, let product, let check):\n  print(\"UPC: \\(numberSystem)-\\(manufacturer)\")\ncase .qr(let text):\n  print(\"QR: \\(text)\")\n}"
+    },
+    {
+      "heading": "Raw Values",
+      "paragraphs": [
+        "Enums can also be prepopulated with default values (called raw values), which are all of the same type, such as integers or strings.",
+        "You can initialize an enum from a raw value using a failable initializer, which returns the matching case or `nil` if no match is found."
+      ],
+      "code": "enum HTTPStatus: Int { case ok = 200, notFound = 404 }\nlet status = HTTPStatus(rawValue: 200)\nprint(status == .ok) // true"
+    }
+  ]
+} ,
+"closures": {
+  "title": "Swift Closures",
+  "sections": [
+    {
+      "heading": "Closure Expressions",
+      "paragraphs": [
+        "Closures are self-contained blocks of functionality that can be passed around and used in your code.",
+        "The standard syntax includes parameters, a return type, and the `in` keyword to separate the header from the body.",
+        "Swift provides powerful shorthand features, such as type inference and shorthand argument names like `$0` and `$1`, to make closures more concise."
+      ],
+      "code": "let nums = [3, 1, 2]\nlet sorted = nums.sorted { $0 < $1 }\nlet strings = sorted.map { \"#\\($0)\" }\nprint(strings) // [\"#1\", \"#2\", \"#3\"]"
+    },
+    {
+      "heading": "Capturing Values",
+      "paragraphs": [
+        "A closure can capture constants and variables from the surrounding context in which it is defined.",
+        "Swift can then refer to and modify those values from within its body, even if the original scope no longer exists.",
+        "This is commonly used to create 'factory' functions that produce counters or unique behavior tied to local state."
+      ],
+      "code": "func makeCounter() -> () -> Int {\n  var n = 0\n  return {\n    n += 1\n    return n\n  }\n}\n\nlet next = makeCounter()\nprint(next()) // 1\nprint(next()) // 2"
+    },
+    {
+      "heading": "Trailing Closures",
+      "paragraphs": [
+        "Trailing closure syntax is a special formatting rule used when a closure is passed as the final argument to a function.",
+        "Instead of wrapping the closure inside the function's parentheses, you write it outside, which improves the readability of long closure bodies."
+      ],
+      "code": "func repeatTimes(_ n: Int, _ work: () -> Void) {\n  for _ in 0..<n { work() }\n}\n\nrepeatTimes(3) {\n  print(\"Hi\")\n}"
+    }
+  ]
+} ,
+"tuples": {
+  "title": "Swift Tuples & Type Aliases",
+  "sections": [
+    {
+      "heading": "Tuples",
+      "paragraphs": [
+        "Tuples allow you to group multiple values into a single compound value without the need to define a formal struct.",
+        "They are useful for returning multiple values from a single function call.",
+        "You can access tuple elements using labeled names (e.g., `user.name`) or by destructuring the tuple into separate constants or variables."
+      ],
+      "code": "let user: (name: String, age: Int) = (\"Morgan\", 30)\nprint(user.name)\n\nlet http: (code: Int, message: String) = (200, \"OK\")\nlet (code, msg) = http\nprint(msg)"
+    },
+    {
+      "heading": "Type Aliases",
+      "paragraphs": [
+        "A type alias allows you to provide a new, descriptive name for an existing data type.",
+        "This is particularly helpful for making complex type signatures, such as nested dictionaries or closures with multiple parameters, easier to read.",
+        "Once defined, the alias can be used anywhere you would normally use the original type."
+      ],
+      "code": "typealias JSON = [String: Any]\ntypealias Completion = (Result<Void, Error>) -> Void\n\nfunc save(completion: Completion) {\n  completion(.success(()))\n}"
+    }
+  ]
+} ,
+"oop": {
+  "title": "Swift OOP",
+  "sections": [
+    {
+      "heading": "Object-Oriented Programming",
+      "paragraphs": [
+        "Swift supports object-oriented programming (OOP), a paradigm centered around \"objects\" that contain data as properties and code as methods.",
+        "OOP in Swift is primarily implemented through classes and protocols.",
+        "Both classes and structs support features like properties, methods, access control, and protocol conformance, but they differ fundamentally in how they handle memory and inheritance."
+      ]
+    },
+    {
+      "heading": "Structs vs Classes",
+      "paragraphs": [
+        "The primary difference between a struct and a class is their underlying semantic behavior: structs are value types, whereas classes are reference types.",
+        "A value type (struct) is copied when it is assigned to a new variable or passed to a function, ensuring that changes to the copy do not affect the original.",
+        "A reference type (class) shares a single instance; multiple variables can point to the same memory location, meaning a mutation through one variable is reflected in all others."
+      ],
+      "code": "struct Point { var x: Int; var y: Int }\nvar p1 = Point(x: 1, y: 2)\nvar p2 = p1      // copy created\np2.x = 10\nprint(p1.x)      // 1\n\nclass Counter { var value = 0 }\nlet c1 = Counter()\nlet c2 = c1      // reference shared\nc2.value = 5\nprint(c1.value)  // 5"
+    } ,
+    {
+      "heading": "Define a Class",
+      "paragraphs": [
+        "Classes are reference types used to define blueprints for objects.",
+        "They can contain stored properties to hold data and methods to define behavior.",
+        "Instances of a class share a single identity; when you assign a class instance to a new variable, both variables point to the same object in memory."
+      ],
+      "code": "class Counter {\n  var value = 0\n  func inc() { value += 1 }\n}\n\nlet c = Counter()\nc.inc()"
+    },
+    {
+      "heading": "Initializers and State",
+      "paragraphs": [
+        "Classes often require an initializer (`init`) to set up the initial state of their properties.",
+        "Instance methods can then be used to mutate that state over time, such as updating a bank balance.",
+        "Unlike structs, class instances declared with `let` can still have their variable properties modified because the reference to the object remains constant even if the data inside changes."
+      ],
+      "code": "class BankAccount {\n  var balance: Int\n  init(balance: Int) { self.balance = balance }\n  func deposit(_ amount: Int) { balance += amount }\n}\n\nlet acc = BankAccount(balance: 100)\nacc.deposit(25)\nprint(acc.balance) // Output: 125"
+    } ,
+    {
+      "heading": "Define a Struct",
+      "paragraphs": [
+        "Structs are lightweight value types used to group related data and functionality.",
+        "When you define a struct, Swift automatically provides a memberwise initializer, allowing you to set properties when creating an instance.",
+        "Unlike classes, structs are copied when assigned to a new variable or passed to a function.",
+        "Because of this copy behavior, mutations made to one instance do not affect any other instances."
+      ],
+      "code": "struct Point { var x: Int; var y: Int }\nvar p1 = Point(x: 1, y: 2)\nvar p2 = p1 // A unique copy is created\np2.x = 10\n\nprint(p1.x) // 1\nprint(p2.x) // 10"
+    },
+    {
+      "heading": "Key Differences",
+      "paragraphs": [
+        "Choosing between a class and a struct depends on whether you need value semantics or reference semantics.",
+        "Structs are preferred for simple data structures, while classes are used for shared identity, inheritance, or when interacting with Objective-C.",
+        "The primary functional difference lies in how data is handled during assignment: structs create a unique copy, whereas classes pass a reference to the same existing instance.",
+        "Additionally, classes support inheritance to build hierarchies, while structs do not."
+      ],
+      "code": "struct Point { var x: Int; var y: Int }\nclass Counter { var value = 0 }\n\n// Struct behavior: Copying\nvar p1 = Point(x: 1, y: 2)\nvar p2 = p1 \np2.x = 9 \nprint(p1.x) // 1 (unchanged)\n\n// Class behavior: Referencing\nlet c1 = Counter()\nlet c2 = c1 \nc2.value = 7 \nprint(c1.value) // 7 (updated via c2)"
+    } ,
+    {
+      "heading": "Stored and Computed Properties",
+      "paragraphs": [
+        "Class properties allow you to store state or provide calculated values within a class instance.",
+        "Stored properties can be constants (defined with `let`) or variables (defined with `var`) that keep a specific value.",
+        "Computed properties do not store a value directly; instead, they provide a getter to calculate a value every time they are accessed.",
+        "Type properties, defined with the `static` keyword, are shared across all instances of a class rather than belonging to a single object."
+      ],
+      "code": "class User {\n  var name: String // stored\n  var greeting: String { \"Hello, \\(name)\" } // computed\n  static var appName = \"MyApp\" // type property\n  \n  init(name: String) {\n    self.name = name\n  }\n}"
+    },
+    {
+      "heading": "Property Observers",
+      "paragraphs": [
+        "Property observers observe and respond to changes in a property’s value.",
+        "The `willSet` observer is called just before a value is stored, providing the new value via the `newValue` constant.",
+        "The `didSet` observer is called immediately after a new value is stored, providing the previous value via the `oldValue` constant."
+      ],
+      "code": "class Player {\n  var score: Int = 0 {\n    willSet { print(\"About to set to \\(newValue)\") }\n    didSet { print(\"Changed from \\(oldValue) to \\(score)\") }\n  }\n}\n\nlet p = Player()\np.score = 10"
+    } ,
+    {
+      "heading": "Type Methods",
+      "paragraphs": [
+        "Type methods are functions that belong to the type itself rather than to an instance of that type.",
+        "In Swift, you define these methods using either the `static` or `class` keyword.",
+        "The key difference is that `class` methods can be overridden by subclasses, whereas `static` methods are final and cannot be overridden."
+      ],
+      "code": "class Math {\n  class func square(_ n: Int) -> Int { n * n } // overridable in subclasses\n  static func cube(_ n: Int) -> Int { n * n * n } // not overridable\n}\n\nprint(Math.square(4))\nprint(Math.cube(3))"
+    },
+    {
+      "heading": "Overriding class func",
+      "paragraphs": [
+        "When you want a subclass to provide its own implementation of a type method, you must define it with the `class` keyword in the base class.",
+        "The subclass then uses the `override` keyword to redefine the method.",
+        "If a type method is marked as `static`, any attempt to override it in a subclass will result in a compiler error."
+      ],
+      "code": "class Base {\n  class func greet() { print(\"Base\") }\n  static func ping() { print(\"Base ping\") }\n}\n\nclass Sub: Base {\n  override class func greet() { print(\"Sub\") }\n  // static func ping() would fail to override\n}\n\nBase.greet() // Output: Base\nSub.greet()  // Output: Sub"
+    } ,
+    {
+      "heading": "Type Methods",
+      "paragraphs": [
+        "Type methods are functions that belong to the type itself rather than to an instance of that type.",
+        "In Swift, you define these methods using either the `static` or `class` keyword.",
+        "The key difference is that `class` methods can be overridden by subclasses, whereas `static` methods are final and cannot be overridden."
+      ],
+      "code": "class Math {\n  class func square(_ n: Int) -> Int { n * n } // overridable in subclasses\n  static func cube(_ n: Int) -> Int { n * n * n } // not overridable\n}\n\nprint(Math.square(4))\nprint(Math.cube(3))"
+    },
+    {
+      "heading": "Overriding class func",
+      "paragraphs": [
+        "When you want a subclass to provide its own implementation of a type method, you must define it with the `class` keyword in the base class.",
+        "The subclass then uses the `override` keyword to redefine the method.",
+        "If a type method is marked as `static`, any attempt to override it in a subclass will result in a compiler error."
+      ],
+      "code": "class Base {\n  class func greet() { print(\"Base\") }\n  static func ping() { print(\"Base ping\") }\n}\n\nclass Sub: Base {\n  override class func greet() { print(\"Sub\") }\n  // static func ping() would fail to override\n}\n\nBase.greet() // Output: Base\nSub.greet()  // Output: Sub"
+    } ,
+    {
+      "heading": "Disambiguation",
+      "paragraphs": [
+        "The `self` keyword refers to the current instance of a type.",
+        "It is primarily used to disambiguate, or make distinct, property names from parameter names when they share the same identifier.",
+        "While often optional inside instance methods, it is required inside initializers when a parameter name matches a property name.",
+        "In type methods, `Self` (with a capital S) refers to the type itself rather than a specific instance."
+      ],
+      "code": "struct User {\n  var name: String\n  init(name: String) {\n    self.name = name // self.name is the property, name is the parameter\n  }\n}\n\nclass Counter {\n  var value = 0\n  func inc() { self.value += 1 }\n  class func resetAll() { print(Self.self) } \n}"
+    },
+    {
+      "heading": "Mutating and self",
+      "paragraphs": [
+        "In value types like structs, the `self` keyword can also be used within `mutating` methods to clarify which properties are being updated.",
+        "This is specifically helpful when the method takes a parameter with the same name as an instance property."
+      ],
+      "code": "struct Counter {\n  var value = 0\n  mutating func add(_ value: Int) {\n    self.value += value // self.value is the property; value is the argument\n  }\n}\n\nvar c = Counter()\nc.add(3)\nprint(c.value) // Output: 3"
+    }
+
+    
+  ]
+} ,
+"inheritance": {
+  "title": "Swift Inheritance",
+  "sections": [
+    {
+      "heading": "Subclass and Override",
+      "paragraphs": [
+        "Inheritance allows a class to inherit properties and methods from another class, known as its superclass.",
+        "A subclass can provide its own custom implementation of an inherited method by using the `override` keyword.",
+        "This is fundamental for creating class hierarchies where specialized types build upon general behavior."
+      ],
+      "code": "class Animal { func speak() { print(\"...\") } }\nclass Dog: Animal { \n  override func speak() { print(\"Woof\") } \n}\n\nlet a = Animal(); a.speak() // Output: ...\nlet d = Dog(); d.speak()    // Output: Woof"
+    },
+    {
+      "heading": "Call super",
+      "paragraphs": [
+        "When overriding a method, you can use the `super` keyword to call the superclass's version of that method.",
+        "This allows you to extend the existing behavior of the superclass rather than completely replacing it."
+      ],
+      "code": "class Animal { func speak() { print(\"...\") } }\nclass Dog: Animal {\n  override func speak() {\n    super.speak()\n    print(\"Woof\")\n  }\n}\n\nlet d = Dog()\nd.speak()\n// Output:\n// ...\n// Woof"
+    }
+  ]
+} ,
+"polymorphism": {
+  "title": "Swift Polymorphism",
+  "sections": [
+    {
+      "heading": "Basic Polymorphism",
+      "paragraphs": [
+        "Polymorphism allows you to treat multiple related types as their common supertype.",
+        "By using inheritance, different subclasses (like `Dog` and `Cat`) can be stored in an array of their superclass type (`Animal`).",
+        "Swift uses dynamic dispatch to determine at runtime which version of a method (the override) to call based on the actual instance type."
+      ],
+      "code": "class Animal { func speak() { print(\"...\") } }\nclass Dog: Animal { override func speak() { print(\"Woof\") } }\nclass Cat: Animal { override func speak() { print(\"Meow\") } }\n\nlet animals: [Animal] = [Dog(), Cat()]\nanimals.forEach { $0.speak() }\n// Output:\n// Woof\n// Meow"
+    },
+    {
+      "heading": "Protocol Polymorphism",
+      "paragraphs": [
+        "You can also achieve polymorphism using protocols, which allows unrelated types (like different structs) to be treated uniformly if they conform to the same protocol.",
+        "This approach is often more flexible than class inheritance because it works with value types like structs and enums."
+      ],
+      "code": "protocol Speaker { func speak() }\nstruct Dog: Speaker { func speak() { print(\"Woof\") } }\nstruct Cat: Speaker { func speak() { print(\"Meow\") } }\n\nlet speakers: [Speaker] = [Dog(), Cat()]\nspeakers.forEach { $0.speak() }"
+    }
+  ]
+} ,
+"protocols": {
+  "title": "Swift Protocols",
+  "sections": [
+    {
+      "heading": "Defining and Conforming to Protocols",
+      "paragraphs": [
+        "A protocol defines a blueprint or contract of methods, properties, and other requirements that suit a particular task or piece of functionality.",
+        "Protocols do not provide implementations themselves; instead, they are adopted by classes, structs, or enums that provide the actual implementation for those requirements.",
+        "The syntax for adoption involves placing the protocol name after the type's name, separated by a colon."
+      ],
+      "code": "protocol Greetable {\n  func greet() -> String\n}\n\nstruct Person: Greetable {\n  var name: String\n  func greet() -> String { \"Hello, \\(name)\" }\n}\n\nlet p = Person(name: \"Swift\")\nprint(p.greet())"
+    },
+    {
+      "heading": "Protocol Extensions (Default Implementations)",
+      "paragraphs": [
+        "You can extend a protocol to provide default implementations for its method or property requirements.",
+        "Conforming types that do not provide their own implementation will automatically use the default behavior provided by the extension.",
+        "This allows you to add functionality to conforming types without modifying them individually."
+      ],
+      "code": "protocol Describable { func describe() -> String }\n\nextension Describable {\n  func describe() -> String { \"(no description)\" }\n}\n\nstruct User: Describable { let name: String }\n\nstruct Car: Describable {\n  let model: String\n  func describe() -> String { \"Car: \\(model)\" }\n}\n\nlet u = User(name: \"Morgan\")\nlet c = Car(model: \"SwiftMobile\")\nprint(u.describe()) // Output: (no description)\nprint(c.describe()) // Output: Car: SwiftMobile"
+    },
+    {
+      "heading": "Protocols with Associated Types",
+      "paragraphs": [
+        "An associated type gives a placeholder name to a type that is used as part of the protocol.",
+        "The actual type to use for that associated type is not specified until the protocol is adopted by a concrete type.",
+        "This allows protocols to remain generic while still enforcing that a conforming type uses a consistent internal type for its operations."
+      ],
+      "code": "protocol Container {\n  associatedtype Element\n  mutating func append(_ item: Element)\n  var count: Int { get }\n  subscript(i: Int) -> Element { get }\n}\n\nstruct IntStack: Container {\n  private var items: [Int] = []\n  mutating func append(_ item: Int) { items.append(item) }\n  var count: Int { items.count }\n  subscript(i: Int) -> Int { items[i] }\n}"
+    }
+  ]
+} ,
+"generics": {
+  "title": "Swift Generics",
+  "sections": [
+    {
+      "heading": "Generic Functions",
+      "paragraphs": [
+        "Generics enable you to write flexible, reusable functions and types that can work with any type, subject to requirements you define.",
+        "You use a placeholder type name (frequently the letter `T`) between angle brackets `< >` to indicate that the function will handle a generic type.",
+        "This approach avoids code duplication by allowing one function to perform logic on different data types, such as swapping two integers or two strings."
+      ],
+      "code": "func swapTwo<T>(_ a: inout T, _ b: inout T) {\n  let tmp = a\n  a = b\n  b = tmp\n}\n\nvar x = 1, y = 2\nswapTwo(&x, &y)\nprint(x) // 2\nprint(y) // 1"
+    },
+    {
+      "heading": "Generic Constraints (where)",
+      "paragraphs": [
+        "Generic constraints specify that a type parameter must inherit from a specific class or conform to a particular protocol.",
+        "For example, constraining a type to `Comparable` allows the use of relational operators like `<` or `>` within the function body.",
+        "You can apply simple constraints directly in the angle brackets (e.g., `<T: Comparable>`) or use more complex `where` clauses for sophisticated bounds."
+      ],
+      "code": "func minValue<T: Comparable>(_ a: T, _ b: T) -> T {\n  return a < b ? a : b\n}\n\nprint(minValue(3, 7))      // 3\nprint(minValue(\"b\", \"a\"))  // a"
+    }
+  ]
+} ,
+"extensions": {
+  "title": "Swift Extensions",
+  "sections": [
+    {
+      "heading": "Computed Properties and Methods",
+      "paragraphs": [
+        "Extensions add new functionality to an existing class, struct, enumeration, or protocol type.",
+        "This allows you to add helpers and utility methods to types you do not own, such as built-in Swift types like `String` or `Int`.",
+        "Extensions can add computed instance properties and computed type properties, but they cannot add stored properties."
+      ],
+      "code": "extension String {\n  var isBlank: Bool { trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }\n  func repeated(_ n: Int) -> String { String(repeating: self, count: n) }\n}\n\nprint(\"  \".isBlank)     // true\nprint(\"Hi\".repeated(3)) // HiHiHi"
+    },
+    {
+      "heading": "Protocol Conformance in Extensions",
+      "paragraphs": [
+        "You can use an extension to make an existing type conform to a new protocol.",
+        "This is an effective way to separate the core logic of a type from its specialized behaviors, such as making a model 'Describable'."
+      ],
+      "code": "protocol Describable { func describe() -> String }\nstruct User { let name: String }\n\nextension User: Describable {\n  func describe() -> String { \"User(\\(name))\" }\n}"
+    },
+    {
+      "heading": "Nesting by Responsibility",
+      "paragraphs": [
+        "Extensions are a powerful tool for organizing code by grouping related methods and properties together.",
+        "You can use multiple extensions for a single type to categorize functionality by responsibility, such as separating networking logic from formatting helpers.",
+        "This practice keeps the original type declaration concise and easy to read."
+      ],
+      "code": "struct Article { let title: String; let body: String }\n\nextension Article { // Formatting helpers\n  var preview: String { String(body.prefix(40)) + \"...\" }\n}\n\nextension Article { // Networking stub\n  static func fetchAll() -> [Article] { [] }\n}"
+    }
+  ]
+} ,
+"access-control": {
+  "title": "Swift Access Control",
+  "sections": [
+    {
+      "heading": "Access Levels",
+      "paragraphs": [
+        "Access control restricts access to parts of your code from code in other source files and modules.",
+        "Swift's defaults are designed to be safe, with `internal` being the default access level if you do not specify one.",
+        "There are four primary levels: `public` for cross-module access, `internal` for the same module, `fileprivate` for the same file, and `private` for the specific enclosing scope."
+      ],
+      "code": "public struct APIClient {\n  public init() {}\n  public func request() {}\n}\n\nstruct Repository { // internal by default\n  fileprivate var cache: [String: String] = [:]\n  private func reset() { cache.removeAll() }\n}"
+    },
+    {
+      "heading": "Types and Members",
+      "paragraphs": [
+        "A fundamental rule of Swift access control is that a member cannot be more visible than its enclosing type.",
+        "For example, you cannot have a `public` variable inside an `internal` struct because the struct itself limits the visibility of all its members.",
+        "Lower or equal visibility levels are always allowed (e.g., an `internal` variable inside a `public` struct)."
+      ],
+      "code": "internal struct Box { // The whole type is internal\n  // public var value: Int // Error: member cannot be more visible than type\n  var value: Int // Valid (internal)\n}"
+    }
+  ]
+} ,
+"initializers": {
+  "title": "Swift Initializers",
+  "sections": [
+    {
+      "heading": "Memberwise and Custom Init",
+      "paragraphs": [
+        "Initializers are special methods called to create a new instance of a particular type.",
+        "Swift structs automatically receive a memberwise initializer if they do not define any custom initializers of their own.",
+        "You can define custom initializers to customize the setup process, such as using positional parameters or performing data validation during initialization."
+      ],
+      "code": "struct User { var name: String; var age: Int }\nlet a = User(name: \"Morgan\", age: 30) // memberwise\n\nstruct Point {\n  var x: Int, y: Int\n  init(_ x: Int, _ y: Int) { self.x = x; self.y = y }\n}\nlet p = Point(1, 2)"
+    },
+    {
+      "heading": "Class Designated vs Convenience",
+      "paragraphs": [
+        "Classes distinguish between designated and convenience initializers to manage property initialization across hierarchies.",
+        "Designated initializers are the primary initializers for a class; they must fully initialize all stored properties introduced by that class.",
+        "Convenience initializers are secondary initializers that act as shortcuts; they must eventually call a designated initializer from the same class using `self.init`."
+      ],
+      "code": "class Person {\n  let name: String\n  let age: Int\n  init(name: String, age: Int) {\n    self.name = name; self.age = age\n  }\n  convenience init(name: String) { self.init(name: name, age: 0) }\n}"
+    },
+    {
+      "heading": "Failable and Throwing Initializers",
+      "paragraphs": [
+        "A failable initializer (`init?`) allows an initialization to return `nil` if the provided input is invalid.",
+        "A throwing initializer (`init throws`) can propagate an error if the initialization fails, allowing the caller to handle specific error cases."
+      ],
+      "code": "struct Email {\n  let value: String\n  init?(_ s: String) {\n    if s.contains(\"@\") { value = s } else { return nil }\n  }\n}\n\nenum InitError: Error { case invalid }\nstruct Port {\n  let number: Int\n  init(_ n: Int) throws {\n    guard (1...65535).contains(n) else { throw InitError.invalid }\n    number = n\n  }\n}"
+    }
+  ]
+} ,
+"deinitializers": {
+  "title": "Swift Deinitializers",
+  "sections": [
+    {
+      "heading": "Deinit",
+      "paragraphs": [
+        "A deinitializer is called immediately before a class instance is deallocated.",
+        "You define a deinitializer with the `deinit` keyword, which does not take any parameters and is written without parentheses.",
+        "Deinitializers are called automatically by Swift when an instance is no longer needed; you cannot call them manually.",
+        "They are specifically used for performing cleanup tasks, such as closing file handles, releasing external resources, or removing notification observers."
+      ],
+      "code": "class FileHandle {\n  init() { print(\"open\") }\n  deinit { print(\"close\") }\n}\n\nvar h: FileHandle? = FileHandle() // prints \"open\"\nh = nil // prints \"close\""
+    }
+  ]
+} ,
+"value-semantics": {
+  "title": "Swift Value Semantics & COW",
+  "sections": [
+    {
+      "heading": "Value Semantics",
+      "paragraphs": [
+        "In Swift, collections like arrays, sets, and dictionaries use value semantics.",
+        "Value semantics ensure predictability because each variable has its own unique copy of the data, meaning changes to one variable do not affect others."
+      ],
+      "code": "var a = [1, 2, 3]\nvar b = a\nb.append(4)\nprint(a) // [1, 2, 3]\nprint(b) // [1, 2, 3, 4]"
+    },
+    {
+      "heading": "Copy-on-Write (COW)",
+      "paragraphs": [
+        "Copy-on-Write (COW) is an optimization used by Swift collections to make copies efficient.",
+        "When you assign a collection to a new variable, both variables initially share the same underlying storage (buffer) to avoid the overhead of a full copy.",
+        "A real copy is only triggered when one of the shared instances is actually mutated.",
+        "This ensures that the cost of copying large collections is only paid when it is strictly necessary."
+      ],
+      "code": "var a = [1, 2, 3]\nvar b = a       // 'a' and 'b' share the same storage buffer\nb.append(4)     // Mutation triggers a copy for 'b' only\nprint(a)        // [1, 2, 3]\nprint(b)        // [1, 2, 3, 4]"
+    }
+  ]
+} ,
+"equatable-comparable": {
+  "title": "Swift Equatable & Comparable",
+  "sections": [
+    {
+      "heading": "Derived vs Custom Conformance",
+      "paragraphs": [
+        "The `Equatable` protocol allows you to compare two instances for equality using the `==` operator.",
+        "The `Comparable` protocol extends this by allowing you to define a relational order using operators like `<`.",
+        "Swift can often synthesize (automatically generate) these implementations for structs if all of their stored properties already conform to the same protocols.",
+        "If manual logic is required, you must implement the static operator methods within the type's definition."
+      ],
+      "code": "struct Point: Equatable, Comparable {\n  var x: Int, y: Int\n  static func == (lhs: Point, rhs: Point) -> Bool { \n    lhs.x == rhs.x && lhs.y == rhs.y \n  }\n  static func < (lhs: Point, rhs: Point) -> Bool { \n    (lhs.x, lhs.y) < (rhs.x, rhs.y) \n  }\n}\n\nlet a = Point(x: 1, y: 2), b = Point(x: 1, y: 3)\nprint(a == b) // false\nprint(a < b)  // true"
+    },
+    {
+      "heading": "Sorting with Comparable",
+      "paragraphs": [
+        "Conforming to `Comparable` automatically grants your type access to a suite of powerful collection methods, such as `sorted()`, `min()`, and `max()`.",
+        "By defining how one instance is 'less than' another, Swift handles the complex sorting algorithms for you."
+      ],
+      "code": "struct Score: Comparable {\n  let user: String\n  let value: Int\n  static func < (l: Score, r: Score) -> Bool { l.value < r.value }\n}\n\nlet scores = [Score(user: \"A\", value: 10), Score(user: \"B\", value: 5)]\nlet sorted = scores.sorted()\nprint(sorted.map { $0.value }) // [5, 10]"
+    }
+  ]
+} ,
+"error-handling": {
+  "title": "Swift Error Handling",
+  "sections": [
+    {
+      "heading": "Throw, Try, and Catch",
+      "paragraphs": [
+        "In Swift, error handling is the process of responding to and recovering from error conditions in your program.",
+        "Functions that can fail must be marked with the `throws` keyword. To call these functions, you must precede them with `try`.",
+        "You use a `do-catch` statement to handle errors by running a block of code and catching any errors that are thrown.",
+        "Alternatively, `try?` converts the result of a throwing function into an optional, returning `nil` if an error occurs instead of requiring a catch block."
+      ],
+      "code": "enum InputError: Error { case negative }\n\nfunc validate(_ n: Int) throws -> String {\n  if n < 0 { throw InputError.negative }\n  return \"ok: \\(n)\"\n}\n\ndo {\n  let result = try validate(-1)\n  print(result)\n} catch {\n  print(\"Caught an error\")\n}\n\nlet maybe = try? validate(1)\nprint(maybe ?? \"nil\")"
+    },
+    {
+      "heading": "Defer (Cleanup)",
+      "paragraphs": [
+        "The `defer` statement is used to execute a set of statements just before code execution leaves the current block.",
+        "This is essential for cleanup tasks, such as closing a file or manual memory management, because it is guaranteed to run regardless of how the scope is exited—whether by a `return`, a `break`, or a thrown error."
+      ],
+      "code": "func processFile() throws {\n  print(\"Open File\")\n  defer { print(\"Close File\") }\n  \n  let success = false\n  if !success { throw FileError.fail }\n  print(\"Processing...\")\n}"
+    }
+  ]
+} ,
+"concurrency": {
+  "title": "Swift Concurrency",
+  "sections": [
+    {
+      "heading": "Async/Await and Task",
+      "paragraphs": [
+        "Modern Swift uses `async` and `await` to write asynchronous code that reads like synchronous code.",
+        "Functions marked as `async` can suspend their execution without blocking the thread, allowing other work to run in the meantime.",
+        "A `Task` creates a unit of asynchronous work, allowing you to run async code from a synchronous context."
+      ],
+      "code": "func fetchValue() async -> Int { 7 }\n\nTask {\n  let v = await fetchValue()\n  print(\"Got \\(v)\")\n}"
+    },
+    {
+      "heading": "Parallelism with async let and Task Groups",
+      "paragraphs": [
+        "To run multiple asynchronous operations simultaneously, use `async let` for a fixed number of tasks or `TaskGroup` for a dynamic collection of tasks.",
+        "With `async let`, the child tasks start immediately, and you use `await` only when you finally need their results.",
+        "Task Groups allow you to 'fan out' many concurrent tasks and aggregate their results as they complete."
+      ],
+      "code": "// async let example\nasync let a = fetch(1)\nasync let b = fetch(2)\nlet total = await (a + b)\n\n// Task Group example\nawait withTaskGroup(of: Int.self) { group in\n  for n in [1, 2, 3] {\n    group.addTask { await square(n) }\n  }\n}"
+    },
+    {
+      "heading": "Actors and Thread Safety",
+      "paragraphs": [
+        "Actors are reference types that protect their mutable state from data races by ensuring only one task can access their internal properties at a time.",
+        "The `@MainActor` attribute ensures that code (like UI updates) always runs on the main thread, which is a requirement for many system frameworks."
+      ],
+      "code": "actor SafeCounter {\n  private var value = 0\n  func increment() { value += 1 }\n}\n\n@MainActor\nfunc updateUI() { /* UI code here */ }"
+    },
+    {
+      "heading": "Cooperative Cancellation",
+      "paragraphs": [
+        "Swift uses a cooperative cancellation model, meaning a task isn't stopped instantly; instead, it must periodically check if it has been cancelled.",
+        "You can check for cancellation using `Task.isCancelled` or `try Task.checkCancellation()`, which throws a `CancellationError`."
+      ],
+      "code": "func slowWork() async throws {\n  for i in 1...5 {\n    try Task.checkCancellation()\n    try await Task.sleep(nanoseconds: 300_000_000)\n  }\n}"
+    }
+  ]
+} ,
+"memory": {
+  "title": "Swift Memory Management",
+  "sections": [
+    {
+      "heading": "Automatic Reference Counting (ARC)",
+      "paragraphs": [
+        "Swift uses Automatic Reference Counting (ARC) to track and manage your app's memory usage.",
+        "ARC automatically frees up the memory used by class instances when those instances are no longer needed (i.e., when their reference count reaches zero).",
+        "Reference counting only applies to instances of classes. Structs and enumerations are value types, not reference types, and are not stored and passed by reference."
+      ],
+      "code": "class Box {\n  let name: String\n  init(_ n: String) { name = n; print(\"init \\(n)\") }\n  deinit { print(\"deinit \\(name)\") }\n}\n\ndo {\n  let b = Box(\"A\") // Reference count is 1\n  print(\"in scope\")\n} // b goes out of scope, reference count is 0, deinit is called\nprint(\"after scope\")"
+    },
+    {
+      "heading": "Strong Reference Cycles",
+      "paragraphs": [
+        "A strong reference cycle occurs when two class instances hold a strong reference to each other, such that each instance keeps the other alive.",
+        "This prevents ARC from ever deallocating the instances, leading to a memory leak.",
+        "You resolve strong reference cycles by defining some of the relationships between instances as `weak` or `unowned` references instead of strong references."
+      ],
+      "code": "class Person {\n  var apartment: Apartment?\n  deinit { print(\"Person deinit\") }\n}\n\nclass Apartment {\n  weak var tenant: Person? // weak breaks the cycle\n  deinit { print(\"Apartment deinit\") }\n}\n\n// When john and unit are set to nil, both deallocate correctly."
+    },
+    {
+      "heading": "Closures and Capture Lists",
+      "paragraphs": [
+        "A strong reference cycle can also occur if you assign a closure to a property of a class instance, and the body of that closure captures the instance (e.g., via `self`).",
+        "To break this cycle, you define a capture list in the closure's definition, marking the captured reference as `weak` or `unowned`.",
+        "Using `[weak self]` makes the captured reference an optional, requiring you to safely unwrap it before use."
+      ],
+      "code": "class Loader {\n  var onComplete: (() -> Void)?\n  func load() {\n    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in\n      guard let self = self else { return }\n      print(\"Finished: \\(self)\")\n      self.onComplete?()\n    }\n  }\n}"
+    }
+  ]
+} ,
+"spm": {
+  "title": "Swift Package Manager (SPM)",
+  "sections": [
+    {
+      "heading": "Create a New Package",
+      "paragraphs": [
+        "Swift Package Manager (SPM) is the official tool for managing the distribution of Swift code.",
+        "It integrates with the Swift build system to automate the process of downloading, compiling, and linking dependencies.",
+        "You can initialize a new project from the terminal as either a library or an executable."
+      ],
+      "code": "$ mkdir hello-pkg && cd hello-pkg\n$ swift package init --type executable\n$ swift build\n$ swift run\n// Output: Hello, world!"
+    },
+    {
+      "heading": "Package.swift Manifest",
+      "paragraphs": [
+        "Every Swift package contains a `Package.swift` manifest file that describes the package's configuration using Swift code.",
+        "The manifest defines the package name, the products it exposes (like libraries or executables), and the dependencies it requires from other repositories."
+      ],
+      "code": "// swift-tools-version: 5.10\nimport PackageDescription\n\nlet package = Package(\n  name: \"hello-pkg\",\n  products: [\n    .executable(name: \"hello-pkg\", targets: [\"hello-pkg\"]),\n  ],\n  dependencies: [],\n  targets: [\n    .executableTarget(name: \"hello-pkg\", dependencies: [])\n  ]\n)"
+    },
+    {
+      "heading": "Targets, Products, and Dependencies",
+      "paragraphs": [
+        "**Targets** are the basic building blocks of a package; they define a set of source files that are compiled into a module or test suite.",
+        "**Products** are the outward-facing artifacts of a package, such as a library that other packages can use or an executable binary.",
+        "**Dependencies** are external packages that your code relies on. You declare them via a URL and a version requirement."
+      ],
+      "code": "dependencies: [\n  .package(url: \"https://github.com/apple/swift-argument-parser\", from: \"1.2.0\")\n],\ntargets: [\n  .executableTarget(\n    name: \"hello-pkg\",\n    dependencies: [\n      .product(name: \"ArgumentParser\", package: \"swift-argument-parser\")\n    ]\n  )\n]"
+    }
+  ]
+} ,
+"swiftui-intro": {
+  "title": "SwiftUI Introduction",
+  "sections": [
+    {
+      "heading": "What is SwiftUI?",
+      "paragraphs": [
+        "SwiftUI is a modern, declarative framework for building user interfaces across all Apple platforms.",
+        "Unlike imperative frameworks where you provide step-by-step instructions to change the UI, in SwiftUI you describe the end state of the UI based on your data.",
+        "When the underlying data (state) changes, SwiftUI automatically re-renders the affected parts of the interface."
+      ]
+    },
+    {
+      "heading": "Step 1: Basic Declarative UI",
+      "paragraphs": [
+        "Local state is managed using the `@State` property wrapper.",
+        "UI components like `VStack` (Vertical Stack), `Text`, and `Button` allow you to layout and interact with your app."
+      ],
+      "code": "import SwiftUI\n\nstruct ContentView: View {\n  @State private var count = 0\n\n  var body: some View {\n    VStack(spacing: 12) {\n      Text(\"Count: \\(count)\")\n      Button(\"Increment\") { count += 1 }\n    }\n    .padding()\n  }\n}"
+    },
+    {
+      "heading": "Step 2: State with ObservableObject",
+      "paragraphs": [
+        "For complex apps, state is often moved into a separate class that conforms to the `ObservableObject` protocol.",
+        "Properties marked with `@Published` trigger UI updates whenever their value changes.",
+        "The view uses `@StateObject` to instantiate and own the lifecycle of the view model."
+      ],
+      "code": "class CounterModel: ObservableObject {\n  @Published var count = 0\n  func increment() { count += 1 }\n}\n\nstruct ContentView: View {\n  @StateObject private var vm = CounterModel()\n\n  var body: some View {\n    VStack {\n      Text(\"Count: \\(vm.count)\")\n      Button(\"Increment\") { vm.increment() }\n    }\n  }\n}"
+    }
+  ]
+}
+
+
+
+
+}
+  }

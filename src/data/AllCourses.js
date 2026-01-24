@@ -37,13 +37,13 @@ const allCourses = [
 
   // soumya start
   { id: 28, title: "Go", path: "/go" }, // done 
-  { id: 29, title: "Swift", path: "/swift" },
+  { id: 29, title: "Swift", path: "/swift" }, // done 
   { id: 30, title: "Django", path: "/django" },
   { id: 31, title: "TypeScript", path: "/typescript" }, //done
-  { id: 32, title: "ASP.NET", path: "/asp-net" },
+  { id: 32, title: "ASP.NET", path: "/asp-net" }, // done
   { id: 33, title: "Node.js", path: "/node-js" },
   { id: 34, title: "Git", path: "/git" },  //done 
-  { id: 35, title: "MongoDB", path: "/mongodb" },
+  { id: 35, title: "MongoDB", path: "/mongodb" }, // done 
   { id: 36, title: "AWS", path: "/aws" },  // done 
   // soumya end
 ];

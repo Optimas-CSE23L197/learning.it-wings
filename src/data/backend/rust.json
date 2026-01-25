@@ -1,0 +1,1710 @@
+{
+  "course": {
+    "id": "rust",
+    "title": "Rust Tutorial"
+  },
+  "sections": [
+    {
+      "title": "Rust Tutorial",
+      "lessons": [
+        { "id": "home", "title": "Rust HOME" },
+        { "id": "intro", "title": "Rust Intro" },
+        { "id": "get-started", "title": "Rust Get Started" },
+        { "id": "syntax", "title": "Rust Syntax" },
+        { "id": "output", "title": "Rust Output" },
+        { "id": "comments", "title": "Rust Comments" },
+        { "id": "variables", "title": "Rust Variables" },
+        { "id": "data-types", "title": "Rust Data Types" },
+        { "id": "constants", "title": "Rust Constants" },
+        { "id": "operators", "title": "Rust Operators" },
+        { "id": "booleans", "title": "Rust Booleans" },
+        { "id": "if-else", "title": "Rust If..Else" },
+        { "id": "match", "title": "Rust Match" },
+        { "id": "loops", "title": "Rust Loops" },
+        { "id": "while-loops", "title": "Rust While Loops" },
+        { "id": "for-loops", "title": "Rust For Loops" },
+        { "id": "functions", "title": "Rust Functions" },
+        { "id": "scope", "title": "Rust Scope" },
+        { "id": "strings", "title": "Rust Strings" },
+        { "id": "ownership", "title": "Rust Ownership" },
+        { "id": "borrowing", "title": "Rust Borrowing" }
+      ]
+    },
+    {
+      "title": "Rust Data Structures",
+      "lessons": [
+        { "id": "data-structures", "title": "Rust Data Structures" },
+        { "id": "arrays", "title": "Rust Arrays" },
+        { "id": "vectors", "title": "Rust Vectors" },
+        { "id": "tuples", "title": "Rust Tuples" },
+        { "id": "hashmap", "title": "Rust HashMap" },
+        { "id": "structs", "title": "Rust Structs" },
+        { "id": "enums", "title": "Rust Enums" }
+      ]
+    },
+    {
+      "title": "Rust Certificate",
+      "lessons": [{ "id": "certificate", "title": "Rust Certificate" }]
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "Learn Rust",
+      "paragraphs": [
+        "Rust is a popular programming language used to build everything from web servers to game engines.",
+        "Rust is known for being very fast, and is similar to C and C++ in language.",
+        "Start learning Rust now »",
+        "Tip: Sign in to track your progress."
+      ],
+      "sections": [
+        {
+          "heading": "Examples in Each Chapter",
+          "paragraphs": [
+            "Our \"Try it Yourself\" editor makes it easy to learn Rust. You can edit code and view the result in your browser:",
+            "Click on the \"Try it Yourself\" button to see how it works.",
+            "We recommend reading this tutorial, in the sequence listed in the left menu."
+          ],
+          "example": "fn main() {\n  println!(\"Hello World!\");\n}"
+        },
+        {
+          "heading": "Track Your Progress",
+          "paragraphs": [
+            "Create a W3Schools account and get access to more features and learning materials:",
+            "Note: This is an optional feature. You can study at W3Schools without creating an account."
+          ],
+          "list": [
+            "View your completed tutorials, exercises, and quizzes",
+            "Keep an eye on your progress and daily streaks",
+            "Join the leaderboard and compete with others",
+            "Get your own avatar and unlock new skins",
+            "Create your own personal website"
+          ]
+        }
+      ]
+    },
+    "introduction": {
+      "title": "Rust Introduction",
+      "paragraphs": [
+        "Rust is a modern programming language.",
+        "It is designed for performance, reliability, and safety - especially safe handling of memory."
+      ],
+      "sections": [
+        {
+          "heading": "Why Learn Rust?",
+          "list": [
+            "It is one of the fastest-growing programming languages in the world",
+            "Learning Rust makes it easier to pick up other languages like Java, Python, C++, and C#, because the syntax is similar.",
+            "Rust is very fast",
+            "Rust requires less memory compared to many other languages",
+            "Rust is used to build web servers, creating games, operating systems, and much more!"
+          ]
+        },
+        {
+          "heading": "Difference between Rust and C\\C++",
+          "paragraphs": [
+            "The main difference is that Rust is \"safe by default\".",
+            "In Rust, memory access is automatically checked by the compiler, which helps you avoid common bugs like crashes, leaks, and unsafe memory behavior.",
+            "In C and C++, you must manually manage memory, which can lead to errors if you are not careful"
+          ]
+        },
+        {
+          "heading": "Get Started",
+          "paragraphs": [
+            "This tutorial will teach you the basics of Rust.",
+            "It is not necessary to have any prior programming experience.",
+            "Get Started »"
+          ]
+        }
+      ]
+    },
+    "get-started": {
+      "title": "Rust Get Started",
+      "paragraphs": [
+        "At IT-Wings, you can try Rust without installing anything.",
+        "Our Online Rust Editor runs directly in your browser, and shows both the code and the result:"
+      ],
+      "sections": [
+        {
+          "heading": "Try Rust Online",
+          "paragraphs": ["Code:", "Result:", "Try it Yourself »"],
+          "code": "fn main() {\n  println!(\"Hello World!\");\n}",
+          "output": "Hello World!"
+        },
+        {
+          "heading": "Install Rust",
+          "paragraphs": [
+            "However, if you want to download and install rust, you can go to rust-lang.org and follow the instructions there.",
+            "Or, if you are using the terminal, you can run:"
+          ],
+          "code": "curl https://sh.rustup.rs -sSf | sh"
+        },
+        {
+          "heading": "Check Installation",
+          "paragraphs": [
+            "After installing, check if Rust is installed correctly by running:",
+            "The output will look something like this, depending on your version number:"
+          ],
+          "code": "rustc --version",
+          "exampleOutput": "rustc 1.86.0 (05f9846f8 2025-03-31)"
+        },
+        {
+          "heading": "Create a New Project",
+          "paragraphs": [
+            "Use Cargo to create a new Rust project:",
+            "The output will look something like this:"
+          ],
+          "code": "cargo new my_project",
+          "exampleOutput": "Creating binary (application) `my_project` package\nnote: see more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html",
+          "list": [
+            "Cargo.toml: Project settings",
+            "src/main.rs: Main Rust file"
+          ]
+        },
+        {
+          "heading": "Default main.rs Code",
+          "paragraphs": ["The main.rs file contains this default code:"],
+          "code": "fn main() {\n  println!(\"Hello, world!\");\n}"
+        },
+        {
+          "heading": "Build and Run the Project",
+          "paragraphs": [
+            "Next, write the following code to go into the project folder:",
+            "Then build and run the project:",
+            "The output should be:",
+            "Congratulations! You have just run your first Rust program."
+          ],
+          "steps": [
+            {
+              "title": "Go into project folder",
+              "code": "cd my_project"
+            },
+            {
+              "title": "Build and run",
+              "code": "cargo run"
+            }
+          ],
+          "output": "Hello, world!"
+        }
+      ]
+    },
+    "syntax": {
+      "title": "Rust Syntax",
+      "paragraphs": [
+        "You have already seen the following code a couple of times in the first chapters. Let's break it down to understand it better:"
+      ],
+      "sections": [
+        {
+          "heading": "Example",
+          "paragraphs": ["Try it Yourself »"],
+          "example": "fn main() {\n  println!(\"Hello World!\");\n}"
+        },
+        {
+          "heading": "Example explained",
+          "paragraphs": [
+            "Line 1: fn main() is something that always appears at the beginning of every Rust program. main() is called a function, and any code inside its curly brackets {} will be executed.",
+            "Line 2: println!() is a macro, used to output/print text to the screen. In our example it will output \"Hello World!\". To end the code, you must remember a semicolon (;)."
+          ]
+        },
+        {
+          "heading": "What is a macro?",
+          "paragraphs": [
+            "A macro is like a function, but with an exclamation mark (!) after it.",
+            "Don't worry about the terminology for now.",
+            "For now, just know that macros are similar to functions (they execute things), but they do not always follow the same rules as functions.",
+            "You will learn more about macros later."
+          ]
+        },
+        {
+          "heading": "Good to know",
+          "paragraphs": [
+            "The Rust compiler ignores white spaces.",
+            "The code above could also been written as:"
+          ],
+          "code": "fn main(){println!(\"Hello World!\");}",
+          "note": "However, multiple lines and indentation makes the code more readable."
+        }
+      ]
+    },
+    "output": {
+      "title": "Rust Output (Print Text)",
+      "paragraphs": [
+        "To print text in Rust, you can use the println!() macro:"
+      ],
+      "sections": [
+        {
+          "heading": "Print Text with println!()",
+          "paragraphs": ["Try it Yourself »"],
+          "example": "println!(\"Hello World!\");"
+        },
+        {
+          "heading": "Multiple println!() Macros",
+          "paragraphs": [
+            "You can use as many println!() macros as you want. Note that it will add a new line for each macro:",
+            "Try it Yourself »"
+          ],
+          "example": "println!(\"Hello World!\");\nprintln!(\"I am learning Rust.\");\nprintln!(\"It is awesome!\");"
+        },
+        {
+          "heading": "The Print Macro",
+          "paragraphs": [
+            "There is also a print!() macro, which is similar to println!().",
+            "The only difference is that it does not insert a new line at the end of the output:"
+          ],
+          "example": "print!(\"Hello World! \");\nprint!(\"I will print on the same line.\");",
+          "note": "Note that we add an extra space when needed (after \"Hello World!\" in the example above), for better readability.",
+          "tip": "In this tutorial, we will only use println!() as it makes it easier to read the output of code."
+        },
+        {
+          "heading": "Add New Lines Manually",
+          "paragraphs": [
+            "If you really want to add a new line in print!(), you can use the \\n character:",
+            "Just like with many other programming languages, you can use the newline character (\\n) to break up lines. It is an escape sequence, and it forces the cursor to change its position to the beginning of the next line on the screen. This results in a new line.",
+            "You can also break up a line in the middle of a sentence. This goes for both print!() and println!():"
+          ],
+          "examples": [
+            "print!(\"Hello World!\\n\");\nprint!(\"I will print on the same line.\");",
+            "println!(\"Hello World!\\nThis line was broken up!\");"
+          ]
+        }
+      ]
+    },
+    "comments": {
+      "title": "Rust Comments",
+      "paragraphs": [
+        "Comments can be used to explain code, and to make it more readable.",
+        "It can also be used to prevent execution when testing alternative code.",
+        "Comments can be singled-lined or multi-lined."
+      ],
+      "sections": [
+        {
+          "heading": "Single-line Comments",
+          "paragraphs": [
+            "Single-line comments start with two forward slashes (//).",
+            "Any text between // and the end of the line is ignored by the compiler (will not be executed).",
+            "This example uses a single-line comment before a line of code:"
+          ],
+          "example": "// This is a comment\nprintln!(\"Hello World!\");"
+        },
+        {
+          "heading": "Single-line Comment at the End of a Line",
+          "paragraphs": [
+            "This example uses a single-line comment at the end of a line of code:"
+          ],
+          "example": "println!(\"Hello World!\"); // This is a comment"
+        },
+        {
+          "heading": "Multi-line Comments",
+          "paragraphs": [
+            "Multi-line comments start with /* and ends with */.",
+            "Any text between /* and */ will be ignored by the compiler:"
+          ],
+          "example": "/* The code below will print the words Hello World!\nto the screen, and it is amazing */\nprintln!(\"Hello World!\");"
+        },
+        {
+          "heading": "Single or multi-line comments?",
+          "paragraphs": [
+            "It is up to you which you want to use.",
+            "Normally, we use // for short comments, and /* */ for longer."
+          ]
+        }
+      ]
+    },
+    "variables": {
+      "title": "Rust Variables",
+      "paragraphs": [
+        "Variables are containers for storing data values, like numbers and characters.",
+        "To create a variable in Rust, use the let keyword and specify the name of the variable (name in this example):"
+      ],
+      "sections": [
+        {
+          "heading": "Create a Variable",
+          "paragraphs": ["Try it Yourself »"],
+          "example": "let name = \"John\";\nprintln!(\"My first name is: {}\", name);"
+        },
+        {
+          "heading": "What is {}?",
+          "paragraphs": [
+            "Rust uses {} as a placeholder in println!() to show variable values.",
+            "In the example above, the output will be \"My first name is: John\".",
+            "You can use as many placeholders as you like:"
+          ],
+          "example": "let name = \"John\";\nlet age = 30;\nprintln!(\"{} is {} years old.\", name, age);"
+        },
+        {
+          "heading": "Using Placeholders in Order",
+          "paragraphs": [
+            "When you use many placeholders, the values you pass are used in the same order.",
+            "In the example above:",
+            "The first {} gets replaced with name (\"John\")",
+            "The second {} gets replaced with age (30)",
+            "Important: The order matters. If you switch the values, the output will change:"
+          ],
+          "example": "let name = \"John\";\nlet age = 30;\nprintln!(\"{} is {} years old.\", age, name);  // Outputs 30 is John years old"
+        },
+        {
+          "heading": "Variable Values Cannot be Changed by Default",
+          "paragraphs": [
+            "By default, variables in Rust cannot be changed after they are created:"
+          ],
+          "example": "let x = 5;\nx = 10; // Error\nprintln!(\"{}\", x);"
+        },
+        {
+          "heading": "Change Variable Values",
+          "paragraphs": [
+            "If you want to change the value of a variable, you must use the mut keyword (which means mutable/changeable):"
+          ],
+          "example": "let mut x = 5;\nprintln!(\"Before: {}\", x);\nx = 10;\nprintln!(\"After: {}\", x);"
+        }
+      ]
+    },
+    "data-types": {
+      "title": "Rust Data Types",
+      "paragraphs": [
+        "Unlike many other programming languages, variables in Rust do not need to be declared with a specified type (like \"String\" for text or \"Int\" for numbers, if you are familiar with those from C or Java).",
+        "In Rust, the type of a variable is decided by the value you give it. Rust looks at the value and automatically chooses the right type:"
+      ],
+      "sections": [
+        {
+          "heading": "Type Inference Example",
+          "paragraphs": ["Try it Yourself »"],
+          "example": "let my_num = 5;         // integer\nlet my_double = 5.99;   // float\nlet my_letter = 'D';    // character\nlet my_bool = true;     // boolean\nlet my_text = \"Hello\";  // string"
+        },
+        {
+          "heading": "Explicit Types Example",
+          "paragraphs": [
+            "However, it is possible to explicitly tell Rust what type a value should be:",
+            "Try it Yourself »"
+          ],
+          "example": "let my_num: i32 = 5;          // integer\nlet my_double: f64 = 5.99;    // float\nlet my_letter: char = 'D';    // character\nlet my_bool: bool = true;     // boolean\nlet my_text: &str = \"Hello\";  // string"
+        },
+        {
+          "heading": "Basic Data Type Groups",
+          "paragraphs": [
+            "You will learn more about when you need to specify the type later in this tutorial.",
+            "Either way, it is good to understand what the different types mean.",
+            "Basic data types in Rust are divided into different groups:"
+          ],
+          "list": [
+            "Numbers - Whole numbers and decimal numbers (i32, f64)",
+            "Characters - Single letters or symbols (char)",
+            "Strings - Text, a sequence of characters (&str)",
+            "Booleans - True or false values (bool)"
+          ]
+        },
+        {
+          "heading": "Numbers",
+          "paragraphs": [
+            "Number types are divided into two groups: integer types and floating point types."
+          ],
+          "sections": [
+            {
+              "heading": "Integer (i32)",
+              "paragraphs": [
+                "The i32 type is used to store whole numbers, positive or negative (such as 123 or -456), without decimals:"
+              ],
+              "example": "let age: i32 = 25;\nprintln!(\"Age is: {}\", age);"
+            },
+            {
+              "heading": "Floating Point (f64)",
+              "paragraphs": [
+                "The f64 type is used to store numbers containing one or more decimals:"
+              ],
+              "example": "let price: f64 = 19.99;\nprintln!(\"Price is: ${}\", price);"
+            }
+          ]
+        },
+        {
+          "heading": "Characters (char)",
+          "paragraphs": [
+            "The char type is used to store a single character.",
+            "A char value must be surrounded by single quotes, like 'A' or 'c':"
+          ],
+          "example": "let myGrade: char = 'B';\nprintln!(\"{}\", myGrade);"
+        },
+        {
+          "heading": "Strings (&str)",
+          "paragraphs": [
+            "The &str type is used to store a sequence of characters (text).",
+            "String values must be surrounded by double quotes:"
+          ],
+          "example": "let name: &str = \"John\";\nprintln!(\"Hello, {}!\", name);"
+        },
+        {
+          "heading": "Booleans (bool)",
+          "paragraphs": [
+            "The bool type can only take the values true or false:"
+          ],
+          "example": "let is_logged_in: bool = true;\nprintln!(\"User logged in? {}\", is_logged_in);"
+        },
+        {
+          "heading": "Combining Data Types",
+          "paragraphs": ["You can mix different types in the same program:"],
+          "example": "let name = \"John\";\nlet age = 28;\nlet is_admin = false;\nprintln!(\"Name: {}\", name);\nprintln!(\"Age: {}\", age);\nprintln!(\"Admin: {}\", is_admin);"
+        }
+      ]
+    },
+    "constants": {
+      "title": "Rust Constants",
+      "paragraphs": [
+        "Constant variables are used to store values that never change.",
+        "Unlike regular variables, constants must be defined with a type (e.g. i32 or char)."
+      ],
+      "sections": [
+        {
+          "heading": "Creating a Constant",
+          "paragraphs": [
+            "To create a constant, use the const keyword, followed by the name, type, and value:",
+            "Try it Yourself »"
+          ],
+          "example": "const BIRTHYEAR: i32 = 1980;\nconst MINUTES_PER_HOUR: i32 = 60;"
+        },
+        {
+          "heading": "Constants Must Have a Type",
+          "paragraphs": [
+            "You must write the type when creating a constant.",
+            "You cannot let Rust guess the type like you can with regular variables:",
+            "Try it Yourself »"
+          ],
+          "example": "const BIRTHYEAR: i32 = 1980; // Ok\nconst BIRTHYEAR = 1980;  // Error: missing type"
+        },
+        {
+          "heading": "Naming Rules",
+          "paragraphs": [
+            "Another thing about constants, is that it is considered good practice to declare them with uppercase.",
+            "It is not required, but useful for code readability and common for Rust programmers:"
+          ],
+          "list": ["MAX_SPEED", "PI", "MINUTES_PER_HOUR"]
+        },
+        {
+          "heading": "Constants vs Variables",
+          "paragraphs": ["Here's a quick comparison:"],
+          "table": {
+            "headers": ["Feature", "Constant (const)", "Variable (let)"],
+            "rows": [
+              ["Can change?", "No", "Yes, if mut is used"],
+              ["Type required?", "Yes", "No (optional)"]
+            ]
+          }
+        }
+      ]
+    },
+    "operators": {
+      "title": "Rust Operators",
+      "paragraphs": [
+        "Operators are used to perform operations on values and variables.",
+        "Rust supports many common operators, like:"
+      ],
+      "sections": [
+        {
+          "heading": "Operator Types",
+          "list": [
+            "Arithmetic Operators",
+            "Assignment Operators",
+            "Comparison Operators",
+            "Logical Operators"
+          ]
+        },
+        {
+          "heading": "Arithmetic Operators",
+          "paragraphs": ["Arithmetic operators are used to do basic math:"],
+          "table": {
+            "headers": ["Operator", "Name", "Example", "Result"],
+            "rows": [
+              ["+", "Addition", "5 + 3", "8"],
+              ["-", "Subtraction", "5 - 3", "2"],
+              ["*", "Multiplication", "5 * 3", "15"],
+              ["/", "Division", "10 / 2", "5"],
+              ["%", "Remainder (modulus)", "10 % 3", "1"]
+            ]
+          },
+          "example": "fn main() {\n  let add = 5 + 3;\n  let sub = 10 - 4;\n  let mul = 6 * 2;\n  let div = 12 / 3;\n  let rem = 10 % 3;\n\n  println!(\"Add: {}\", add);\n  println!(\"Sub: {}\", sub);\n  println!(\"Mul: {}\", mul);\n  println!(\"Div: {}\", div);\n  println!(\"Rem: {}\", rem);\n}"
+        },
+        {
+          "heading": "Assignment Operators",
+          "paragraphs": [
+            "Assignment operators are used to assign and update values:"
+          ],
+          "table": {
+            "headers": ["Operator", "Example", "Same As"],
+            "rows": [
+              ["=", "x = 5", "Assign 5 to x"],
+              ["+=", "x += 3", "x = x + 3"],
+              ["-=", "x -= 2", "x = x - 2"],
+              ["*=", "x *= 4", "x = x * 4"],
+              ["/=", "x /= 2", "x = x / 2"],
+              ["%=", "x %= 2", "x = x % 2"]
+            ]
+          },
+          "example": "fn main() {\n  let mut x = 10;\n  println!(\"Start: {}\", x);\n\n  x += 5;\n  println!(\"After += 5: {}\", x);\n\n  x -= 2;\n  println!(\"After -= 2: {}\", x);\n\n  x *= 2;\n  println!(\"After *= 2: {}\", x);\n\n  x /= 3;\n  println!(\"After /= 3: {}\", x);\n\n  x %= 4;\n  println!(\"After %= 4: {}\", x);\n}"
+        },
+        {
+          "heading": "Comparison Operators",
+          "paragraphs": [
+            "Comparison operators compare values and return true or false:"
+          ],
+          "table": {
+            "headers": ["Operator", "Meaning", "Example"],
+            "rows": [
+              ["==", "Equal to", "5 == 5 is true"],
+              ["!=", "Not equal to", "5 != 3 is true"],
+              [">", "Greater than", "7 > 3 is true"],
+              ["<", "Less than", "2 < 5 is true"],
+              [">=", "Greater than or equal to", "5 >= 5 is true"],
+              ["<=", "Less than or equal to", "3 <= 4 is true"]
+            ]
+          },
+          "example": "fn main() {\n  let a = 5;\n  let b = 10;\n\n  println!(\"5 == 10: {}\", a == b);\n  println!(\"5 != 10: {}\", a != b);\n  println!(\"5 < 10: {}\", a < b);\n  println!(\"5 >= 10: {}\", a >= b);\n}"
+        },
+        {
+          "heading": "Logical Operators",
+          "paragraphs": [
+            "Logical operators are used to work with boolean values:"
+          ],
+          "table": {
+            "headers": ["Operator", "Name", "Description"],
+            "rows": [
+              ["&&", "AND", "true if both values are true"],
+              ["||", "OR", "true if at least one is true"],
+              ["!", "NOT", "inverts the boolean value"]
+            ]
+          },
+          "example": "fn main() {\n  let logged_in = true;\n  let is_admin = false;\n\n  println!(\"Is regular user: {}\", logged_in && !is_admin);\n  println!(\"Has any access: {}\", logged_in || is_admin);\n  println!(\"Not logged in: {}\", !logged_in);\n}"
+        }
+      ]
+    },
+    "booleans": {
+      "title": "Rust Booleans",
+      "paragraphs": [
+        "Very often, in programming, you will need a data type that can only have one of two values, like:",
+        "For this, Rust has a bool data type, which is known as booleans.",
+        "Booleans represent values that are either true or false."
+      ],
+      "sections": [
+        {
+          "heading": "Boolean Values",
+          "list": ["YES / NO", "ON / OFF", "TRUE / FALSE"]
+        },
+        {
+          "heading": "Creating Boolean Variables",
+          "paragraphs": [
+            "You can store a boolean value in a variable using the bool type:",
+            "Try it Yourself »"
+          ],
+          "example": "let is_programming_fun: bool = true;\nlet is_fish_tasty: bool = false;\n\nprintln!(\"Is Programming Fun? {}\", is_programming_fun);\nprintln!(\"Is Fish Tasty? {}\", is_fish_tasty);"
+        },
+        {
+          "heading": "Boolean Type Can Be Inferred",
+          "paragraphs": [
+            "Remember that Rust is smart enough to understand that true and false values are boolean values, meaning that you don't have to specify the bool keyword:",
+            "Try it Yourself »"
+          ],
+          "example": "let is_programming_fun = true;\nlet is_fish_tasty = false;\n\nprintln!(\"Is Programming Fun? {}\", is_programming_fun);\nprintln!(\"Is Fish Tasty? {}\", is_fish_tasty);"
+        },
+        {
+          "heading": "Boolean from Comparison",
+          "paragraphs": [
+            "Most of the time, there is no need to type true or false yourself.",
+            "Instead, boolean values come from comparing values using operators like == or >:",
+            "Here, age >= 18 returns true, as long as age is 18 or older."
+          ],
+          "example": "let age = 20;\nlet can_vote = age >= 18;\n\nprintln!(\"Can vote? {}\", can_vote);"
+        },
+        {
+          "heading": "Using Booleans in if Statements",
+          "paragraphs": [
+            "Boolean values are often used in if statements to decide what code should run:",
+            "Cool, right? Booleans are the basis for all Rust comparisons and conditions.",
+            "You will learn more about if and else statements in the next chapter."
+          ],
+          "example": "let is_logged_in = true;\n\nif is_logged_in {\n  println!(\"Welcome back!\");\n} else {\n  println!(\"Please log in.\");\n}"
+        }
+      ]
+    },
+    "if-else": {
+      "title": "Rust If .. Else Conditions",
+      "paragraphs": [
+        "You already know that Rust supports familiar comparison conditions from mathematics, such as:",
+        "You can use these conditions to perform different actions for different decisions.",
+        "Rust has the following conditional statements:",
+        "Note: Unlike many other programming languages, if..else can be used as a statement or as an expression (to assign a value to a variable) in Rust."
+      ],
+      "sections": [
+        {
+          "heading": "Comparison Conditions",
+          "list": [
+            "Less than: a < b",
+            "Less than or equal to: a <= b",
+            "Greater than: a > b",
+            "Greater than or equal to: a >= b",
+            "Equal to a == b",
+            "Not Equal to: a != b"
+          ]
+        },
+        {
+          "heading": "Conditional Statements",
+          "list": [
+            "Use if to specify a block of code to be executed, if a specified condition is true",
+            "Use else to specify a block of code to be executed, if the same condition is false",
+            "Use else if to specify a new condition to test, if the first condition is false",
+            "Use match to specify many alternative blocks of code to be executed"
+          ]
+        },
+        {
+          "heading": "if",
+          "paragraphs": [
+            "Use if to specify a block of code to be executed if a condition is true."
+          ],
+          "example": "if 7 > 5 {\n  println!(\"7 is greater than 5.\");\n}"
+        },
+        {
+          "heading": "Test Variables",
+          "paragraphs": ["You can also test variables:"],
+          "example": "let x = 7;\nlet y = 5;\n\nif x > y {\n  println!(\"x is greater than y.\");\n}"
+        },
+        {
+          "heading": "if...else",
+          "paragraphs": [
+            "If the condition is not true, you can use else to run different code:"
+          ],
+          "example": "let age = 16;\n\nif age >= 18 {\n  println!(\"You can vote.\");\n} else {\n  println!(\"You are too young to vote.\");\n}"
+        },
+        {
+          "heading": "else if",
+          "paragraphs": ["You can check multiple conditions using else if:"],
+          "example": "let score = 85;\n\nif score >= 90 {\n  println!(\"Grade: A\");\n} else if score >= 80 {\n  println!(\"Grade: B\");\n} else if score >= 70 {\n  println!(\"Grade: C\");\n} else {\n  println!(\"Grade: F\");\n}"
+        },
+        {
+          "heading": "Using if as an Expression",
+          "paragraphs": [
+            "In Rust, if...else can also be used as an expression.",
+            "This means you can assign the result of an if to a variable:",
+            "When using if as an expression, you must include else. This ensures the result always has a value."
+          ],
+          "example": "let time = 20;\nlet greeting = if time < 18 {\n  \"Good day.\"\n} else {\n  \"Good evening.\"\n};\nprintln!(\"{}\", greeting);"
+        },
+        {
+          "heading": "Simplified Syntax",
+          "paragraphs": [
+            "If each block only contains a single expression, you can write it in a shorter way on one line:",
+            "Tip: This works similarly to the ternary operator (condition ? value1 : value2) in languages like Java or C.",
+            "However, Rust does not have a ternary operator, but using if...else as an expression gives you the same effect."
+          ],
+          "example": "let time = 20;\nlet greeting = if time < 18 { \"Good day.\" } else { \"Good evening.\" };\nprintln!(\"{}\", greeting);"
+        },
+        {
+          "heading": "Don't Mix Types",
+          "paragraphs": [
+            "Note: The value from if and else must be the same type, like two pieces of text or two numbers (in the example above, both are strings).",
+            "When you mix types, like a string and an integer, you'll get an error:"
+          ],
+          "example": "let number = 5;\nlet result = if number < 10 { \"Too small\" } else { 100 };\nprintln!(\"{}\", result);",
+          "result": "error[E0308]: `if` and `else` have incompatible types"
+        }
+      ]
+    },
+    "match": {
+      "title": "Rust Match",
+      "paragraphs": [
+        "When you have many choices, using match is easier than writing lots of if...else.",
+        "match is used to select one of many code blocks to be executed:"
+      ],
+      "sections": [
+        {
+          "heading": "Match Example",
+          "paragraphs": ["Try it Yourself »"],
+          "example": "fn main() {\n  let day = 4;\n\n  match day {\n    1 => println!(\"Monday\"),\n    2 => println!(\"Tuesday\"),\n    3 => println!(\"Wednesday\"),\n    4 => println!(\"Thursday\"),\n    5 => println!(\"Friday\"),\n    6 => println!(\"Saturday\"),\n    7 => println!(\"Sunday\"),\n    _ => println!(\"Invalid day.\"),\n  }\n}"
+        },
+        {
+          "heading": "Example explained",
+          "list": [
+            "The match variable (day) is evaluated once.",
+            "The value of the day variable is compared with the values of each \"branch\"",
+            "Each branch starts with a value, followed by => and a result",
+            "If there is a match, the associated block of code is executed",
+            "_ is used to specify some code to run if there is no match (like default in other languages).",
+            "In the example above, the value of day is 4, meaning \"Thursday\" will be printed"
+          ]
+        },
+        {
+          "heading": "Multiple Matches",
+          "paragraphs": [
+            "You can match multiple values at once using the | operator (OR):",
+            "Try it Yourself »"
+          ],
+          "example": "fn main() {\n  let day = 6;\n\n  match day {\n    1 | 2 | 3 | 4 | 5 => println!(\"Weekday\"),\n    6 | 7 => println!(\"Weekend\"),\n    _ => println!(\"Invalid day\"),\n  }\n}"
+        },
+        {
+          "heading": "match with a Return Value",
+          "paragraphs": [
+            "Just like if, match can also return a value:",
+            "This means you can save the result of a match into a variable:",
+            "Try it Yourself »"
+          ],
+          "example": "fn main() {\n  let day = 4;\n\n  let result = match day {\n    1 => \"Monday\",\n    2 => \"Tuesday\",\n    3 => \"Wednesday\",\n    4 => \"Thursday\",\n    5 => \"Friday\",\n    6 => \"Saturday\",\n    7 => \"Sunday\",\n    _ => \"Invalid day.\",\n  };\n\n  println!(\"{}\", result);\n}",
+          "note": "Each part of the match branches must be the same type - just like with if...else."
+        }
+      ]
+    },
+    "loops": {
+      "title": "Rust Loops",
+      "paragraphs": [
+        "Loops can execute a block of code as long as a specified condition is reached.",
+        "Loops are handy because they save time, reduce errors, and they make code more readable.",
+        "For example, instead of writing the same line 10 times to print some text, you can use a loop to repeat it for you.",
+        "Rust has three types of loops: loop, while, and for."
+      ],
+      "sections": [
+        {
+          "heading": "loop",
+          "paragraphs": [
+            "loop is the simplest of Rust's three loop types.",
+            "It will run forever unless you tell it to stop:"
+          ],
+          "example": "loop {\n  println!(\"This will repeat forever!\");\n}",
+          "warning": "This loop never stops! You will need to press Ctrl + C to end the program."
+        },
+        {
+          "heading": "Stop a loop with break",
+          "paragraphs": [
+            "To stop a loop, use the break keyword:",
+            "Try it Yourself »"
+          ],
+          "example": "let mut count = 1;\n\nloop {\n  println!(\"Hello World!\");\n\n  if count == 3 {\n    break;\n  }\n\n  count += 1;\n}"
+        },
+        {
+          "heading": "Example explained",
+          "list": [
+            "This prints \"Hello World!\" 3 times.",
+            "It uses a counter to keep track of how many times it has looped.",
+            "The counter starts at 1 (let mut count = 1;).",
+            "Each time the loop runs, the counter goes up by 1: (count += 1;).",
+            "When it reaches 3, the loop stops."
+          ]
+        },
+        {
+          "heading": "Return a Value",
+          "paragraphs": [
+            "You can also return a value from a loop using break with a value.",
+            "This lets you save the result of the loop into a variable:",
+            "Try it Yourself »"
+          ],
+          "example": "let mut count = 1;\n\nlet result = loop {\n  println!(\"Hello!\");\n\n  if count == 3 {\n    break count; // Stop the loop and return the number 3\n  }\n\n  count += 1;\n};\n\nprintln!(\"The loop stopped at: {}\", result);",
+          "note": "When you save the result of a loop into a variable, you must put a semicolon (;) at the end.",
+          "summary": "This loop prints \"Hello!\" until count reaches 3, then stops and returns that number."
+        },
+        {
+          "heading": "Next",
+          "paragraphs": [
+            "Learn how to use while loops to repeat code while a condition is true."
+          ]
+        }
+      ]
+    },
+    "while-loops": {
+      "title": "Rust While Loops",
+      "paragraphs": ["The while loop runs as long as a condition is true."],
+      "sections": [
+        {
+          "heading": "while Loop Example",
+          "paragraphs": [
+            "Try it Yourself »",
+            "In the example above, the loop keeps running as long as the counter is less than or equal to 5.",
+            "It prints the numbers from 1 to 5, one on each line."
+          ],
+          "example": "let mut count = 1;\n\nwhile count <= 5 {\n  println!(\"Count: {}\", count);\n  count += 1;\n}"
+        },
+        {
+          "heading": "False Condition",
+          "paragraphs": [
+            "The while loop checks the condition before each loop, so if the condition is false at the start, the loop will not run at all:"
+          ],
+          "example": "let count = 10;\n\nwhile count <= 5 {\n  println!(\"This won't be printed.\");\n}"
+        },
+        {
+          "heading": "Stop a While Loop",
+          "paragraphs": [
+            "You can stop a while loop when you want by using break:",
+            "Try it Yourself »",
+            "This prints numbers from 1 to 5 (stops the loop when num reaches 6)."
+          ],
+          "example": "let mut num = 1;\n\nwhile num <= 10 {\n  if num == 6 {\n    break;\n  }\n  println!(\"Number: {}\", num);\n  num += 1;\n}"
+        },
+        {
+          "heading": "Skip a Value",
+          "paragraphs": [
+            "You can skip a value by using the continue statement:",
+            "Try it Yourself »",
+            "This prints numbers from 1 to 10, except for the number 6."
+          ],
+          "example": "let mut num = 1;\n\nwhile num <= 10 {\n  if num == 6 {\n    num += 1;\n    continue;\n  }\n\n  println!(\"Number: {}\", num);\n  num += 1;\n}"
+        },
+        {
+          "heading": "Next",
+          "paragraphs": [
+            "Learn how to use the for loop to go through a range of values."
+          ]
+        }
+      ]
+    },
+    "for-loops": {
+      "title": "Rust For Loop",
+      "paragraphs": [
+        "When you know exactly how many times you want to loop through a block of code, use the for loop together with the in keyword, instead of a while loop:"
+      ],
+      "sections": [
+        {
+          "heading": "for Loop Example",
+          "paragraphs": [
+            "Try it Yourself »",
+            "This prints numbers from 1 to 5.",
+            "Note: 1..6 means from 1 up to (but not including) 6.",
+            "Note: Rust handles the counter variable (i) automatically, unlike many other programming languages. You don't need to declare or increment it manually."
+          ],
+          "example": "for i in 1..6 {\n  println!(\"i is: {}\", i);\n}"
+        },
+        {
+          "heading": "Inclusive Range",
+          "paragraphs": [
+            "If you want to include the last number, use ..= (two dots and an equals sign):",
+            "Try it Yourself »",
+            "This prints numbers from 1 to 6, including 6."
+          ],
+          "example": "for i in 1..=6 {\n  println!(\"i is: {}\", i);\n}"
+        },
+        {
+          "heading": "Break and Continue",
+          "paragraphs": [
+            "Just like other loops, you can use break to stop the loop and continue to skip a value:",
+            "Try it Yourself »",
+            "This prints 1, 2, and 4. It skips 3 and stops before 5."
+          ],
+          "example": "for i in 1..=10 {\n  if i == 3 {\n    continue; // skip 3\n  }\n  if i == 5 {\n    break; // stop before printing 5\n  }\n  println!(\"i is: {}\", i);\n}"
+        },
+        {
+          "heading": "Rust Loops Summary",
+          "paragraphs": [
+            "Rust has three types of loops that let you run code over and over again. Each one is used in different situations:"
+          ],
+          "sections": [
+            {
+              "heading": "1. loop",
+              "paragraphs": [
+                "The simplest kind of loop. It runs forever unless you stop it with break.",
+                "Use loop when you don't know in advance how many times to repeat."
+              ],
+              "example": "loop {\n  // do something\n  if condition {\n    break;\n  }\n}"
+            },
+            {
+              "heading": "2. while",
+              "paragraphs": [
+                "Repeats code while a condition is true. It checks the condition before each loop.",
+                "Use while when you want to repeat code until something happens."
+              ],
+              "example": "while count <= 5 {\n  println!(\"{}\", count);\n  count += 1;\n}"
+            },
+            {
+              "heading": "3. for",
+              "paragraphs": [
+                "Repeats code a fixed number of times.",
+                "Use for when you know exactly what to loop through."
+              ],
+              "example": "for i in 1..=5 {\n  println!(\"{}\", i);\n}"
+            }
+          ]
+        },
+        {
+          "heading": "Extra Keywords",
+          "paragraphs": ["You can use these in any loop:"],
+          "list": [
+            "break - stop the loop",
+            "continue - skip a value in the loop"
+          ]
+        },
+        {
+          "heading": "Next",
+          "paragraphs": [
+            "Now that you know how loops work, you are ready to start working with functions and reusable code!"
+          ]
+        }
+      ]
+    },
+    "functions": {
+      "title": "Rust Functions",
+      "paragraphs": [
+        "A function is a block of code that only runs when you call it.",
+        "Functions are used to organize your code, avoid repeating yourself, and make your program easier to understand."
+      ],
+      "sections": [
+        {
+          "heading": "Creating a Function",
+          "paragraphs": [
+            "To create a function, use the fn keyword, followed by the function name and a set of parentheses () and curly braces {}:"
+          ],
+          "example": "fn function_name() {\n  // code to be executed\n}"
+        },
+        {
+          "heading": "Calling a Function",
+          "paragraphs": [
+            "Now that you have created a function, you can execute it by calling it.",
+            "To call a function, write the name of the function followed by two parantheses ().",
+            "Try it Yourself »"
+          ],
+          "example": "// Create a function\nfn say_hello() {\n  println!(\"Hello from a function!\");\n}\n\nsay_hello(); // Call the function"
+        },
+        {
+          "heading": "Functions with Parameters",
+          "paragraphs": [
+            "You can send information into a function using parameters.",
+            "Parameters are written inside the parentheses ().",
+            "In this example, the function takes a string parameter called name and prints it in the greeting message.",
+            "Try it Yourself »"
+          ],
+          "example": "fn greet(name: &str) {\n  println!(\"Hello, {}!\", name);\n}\n\ngreet(\"John\");"
+        },
+        {
+          "heading": "Functions with Return Values",
+          "paragraphs": [
+            "A function can also return a value.",
+            "Use the  -> symbol in the function header to show what type of value will be returned.",
+            "Inside the function, use the return keyword to send the value back:",
+            "This function adds two numbers and returns the result.",
+            "Try it Yourself »"
+          ],
+          "example": "fn add(a: i32, b: i32) -> i32 {\n  return a + b;\n}\n\nlet sum = add(3, 4);\nprintln!(\"Sum is: {}\", sum);"
+        },
+        {
+          "heading": "Omitting return",
+          "paragraphs": [
+            "In Rust, you can omit the return keyword.",
+            "Just write the value on the last line of the function, without a semicolon:",
+            "The last line a + b is automatically returned.",
+            "Both examples do the same thing. It is up to you which one to use.",
+            "Try it Yourself »"
+          ],
+          "example": "fn add(a: i32, b: i32) -> i32 {\n  a + b\n}\n\nlet sum = add(3, 4);\nprintln!(\"Sum is: {}\", sum);"
+        },
+        {
+          "heading": "Why Use Functions?",
+          "list": [
+            "To organize your code",
+            "To avoid repeating the same code",
+            "To make your programs easier to read and change"
+          ]
+        }
+      ]
+    },
+    "scope": {
+      "title": "Rust Scope",
+      "paragraphs": [
+        "Now that you understand how functions work, it is important to learn how variables act inside and outside of functions.",
+        "Scope refers to where a variable is allowed to be used.",
+        "A variable only lives inside the block where it was created. A block is anything inside curly braces { }."
+      ],
+      "sections": [
+        {
+          "heading": "Variable Inside a Function",
+          "paragraphs": [
+            "A variable created inside a function only exists inside that function:",
+            "Try it Yourself »",
+            "Note: The variable message only exists inside the function. Trying to use it outside the function will cause an error."
+          ],
+          "example": "fn myFunction() {\n  let message = \"Hello!\";\n  println!(\"{}\", message);  // You can access the message variable here\n}\n\nmyFunction();\n\nprintln!(\"{}\", message); // Error - you cannot access the message variable outside of the function"
+        },
+        {
+          "heading": "Variable Inside a Block",
+          "paragraphs": [
+            "You can also create blocks inside other code, like in if statements or loops.",
+            "Variables created in these blocks are only valid inside them.",
+            "Try it Yourself »"
+          ],
+          "example": "let score = 80;\n\nif score > 50 {\n  let result = \"Pass\";\n  println!(\"Result: {}\", result);\n}\n\nprintln!(\"Result: {}\", result); // Error: result is out of scope here"
+        },
+        {
+          "heading": "Variables in the Same Scope (Shadowing)",
+          "paragraphs": [
+            "In Rust, you can declare a new variable with the same name in the same scope using let. This is called shadowing:",
+            "Try it Yourself »",
+            "The second x replaces the first one. The value 5 is no longer accessible after the second declaration.",
+            "This is different from languages that disallow reusing variable names.",
+            "In Rust, it's a feature used to transform or update values safely."
+          ],
+          "example": "let x = 5;\nlet x = 10;\n\nprintln!(\"x is: {}\", x); // prints 10"
+        },
+        {
+          "heading": "Shadowing Inside a New Block",
+          "paragraphs": [
+            "You can also reuse a variable name inside a new block:",
+            "Try it Yourself »",
+            "Here, the two x variables are in different scopes.",
+            "The inner x only exists inside the block. Outside the block, the original value remains."
+          ],
+          "example": "let x = 5;\n\n{\n  let x = 10;\n  println!(\"Inside block: {}\", x);\n}\n\nprintln!(\"Outside block: {}\", x);"
+        },
+        {
+          "heading": "Why Scope Matters",
+          "paragraphs": ["Understanding scope helps you:"],
+          "list": [
+            "Know where a variable can be used",
+            "Prevent naming conflicts",
+            "Avoid errors when working with functions, loops, and conditionals"
+          ],
+          "note": "Even though shadowing is allowed, using the same name too often can make your code harder to read. Use clear names when possible."
+        }
+      ]
+    },
+    "strings": {
+      "title": "Rust Strings",
+      "paragraphs": [
+        "Strings are used to store text.",
+        "You have already learned that you can use the &str type to create a string:",
+        "Note that strings are surrounded by double quotes (\"Hello\").",
+        "There are two main types of strings in Rust:",
+        "In this chapter, you will mostly work with the String type because it is more flexible and can be changed over time."
+      ],
+      "sections": [
+        {
+          "heading": "String Slice (&str)",
+          "paragraphs": ["Example", "Try it Yourself »"],
+          "example": "let greeting: &str = \"Hello\";\nprintln!(\"{}\", greeting);"
+        },
+        {
+          "heading": "Types of Strings in Rust",
+          "list": [
+            "&str - is called \"string slices\", and is used for fixed text like \"Hello\"",
+            "String - used when you need a string that can change"
+          ]
+        },
+        {
+          "heading": "Create a String",
+          "paragraphs": [
+            "You can create a String from a string literal using the to_string() method or the String::from() function:",
+            "It is up to you which one to choose - both to_string() and String::from() are very common in Rust."
+          ],
+          "examples": [
+            {
+              "title": "Using to_string()",
+              "code": "let text1 = \"Hello World\".to_string();"
+            },
+            {
+              "title": "Using String::from()",
+              "code": "let text2 = String::from(\"Hello World\");"
+            }
+          ]
+        },
+        {
+          "heading": "Change a String",
+          "paragraphs": [
+            "Strings are mutable, so you can change them if they are declared with mut.",
+            "Use push_str() to add text to a string:",
+            "Use push() to add one character:"
+          ],
+          "examples": [
+            {
+              "title": "push_str() Example",
+              "code": "let mut greeting = String::from(\"Hello\");\ngreeting.push_str(\" World\");\nprintln!(\"{}\", greeting); // Hello World"
+            },
+            {
+              "title": "push() Example",
+              "code": "let mut word = String::from(\"Hi\");\nword.push('!');\nprintln!(\"{}\", word); // Hi!"
+            }
+          ]
+        },
+        {
+          "heading": "Concatenate Strings",
+          "paragraphs": [
+            "You can combine strings using the format! macro:",
+            "You can also use the + operator to combine strings, but it can get messy with many values.",
+            "Note: You can only add a &str to a String with +. That is why &s2 and &s3 (a string slice) is used here.",
+            "Good to know: format! is often the preferred choice than using + for combining strings."
+          ],
+          "examples": [
+            {
+              "title": "Using format!",
+              "code": "let s1 = String::from(\"Hello\");\nlet s2 = String::from(\"World!\");\nlet s3 = String::from(\"What a beautiful day!\");\nlet result = format!(\"{} {} {}\", s1, s2, s3);\nprintln!(\"{}\", result);"
+            },
+            {
+              "title": "Using + Operator",
+              "code": "let s1 = String::from(\"Hello\");\nlet s2 = String::from(\"World!\");\nlet s3 = String::from(\"What a beautiful day!\");\nlet result = s1 + \" \" + &s2 + \" \" + &s3;\nprintln!(\"{}\", result);"
+            }
+          ]
+        },
+        {
+          "heading": "String Length",
+          "paragraphs": [
+            "You can use the .len() method to get the length of a string:",
+            "Try it Yourself »"
+          ],
+          "example": "let name = String::from(\"John\");\nprintln!(\"Length: {}\", name.len()); // 4"
+        }
+      ]
+    },
+    "ownership": {
+      "title": "Rust Ownership",
+      "paragraphs": [
+        "Rust uses \"ownership\" to manage memory in a safe way.",
+        "Every value in Rust has an owner. The owner is usually a variable."
+      ],
+      "sections": [
+        {
+          "heading": "Ownership Rules",
+          "list": [
+            "Each value has one owner",
+            "When the owner goes out of scope, the value is deleted",
+            "You can only have one owner at a time, unless you borrow it (covered in the next chapter)"
+          ]
+        },
+        {
+          "heading": "Basic Ownership Example",
+          "paragraphs": [
+            "In this example, a owns the string. Then we move it to b:",
+            "When we assign a to b, the ownership moves.",
+            "This means only b can use the value now, because a is no longer valid.",
+            "Try it Yourself »"
+          ],
+          "example": "let a = String::from(\"Hello\");\nlet b = a;\n\n// println!(\"{}\", a); Error: a no longer owns the value\nprintln!(\"{}\", b); // Ok: b now owns the value"
+        },
+        {
+          "heading": "Copy Types",
+          "paragraphs": [
+            "But simple types like numbers, characters and booleans are copied, not moved.",
+            "This means you can still use the original variable after assigning it to another:",
+            "Here, a is copied into b, not moved, so you can still use b.",
+            "Try it Yourself »"
+          ],
+          "example": "let a = 5;\nlet b = a;\nprintln!(\"a = {}\", a);  // Works\nprintln!(\"b = {}\", b);  // Works"
+        },
+        {
+          "heading": "Clone",
+          "paragraphs": [
+            "For other types, like String, if you really want to keep the original value and also assign it to another variable, you can use the .clone() method, which makes a copy of the data:",
+            "Try it Yourself »",
+            "However, if you don't need to own the value twice, using a reference (&) is usually better than cloning, which you will learn more about in the next chapter."
+          ],
+          "example": "let a = String::from(\"Hello\");\nlet b = a.clone(); // Now both have the same value\n\nprintln!(\"a = {}\", a);  // Works\nprintln!(\"b = {}\", b);  // Works"
+        },
+        {
+          "heading": "Why Ownership Matters",
+          "list": [
+            "Rust uses ownership to automatically free memory when it's no longer needed",
+            "It prevents bugs like using memory that's already been deleted",
+            "It is one of the reasons Rust is so safe and fast"
+          ]
+        },
+        {
+          "heading": "Next",
+          "paragraphs": [
+            "Learn about borrowing - how to let other parts of your program use a value without taking ownership."
+          ]
+        }
+      ]
+    },
+    "borrowing": {
+      "title": "Rust Borrowing and References",
+      "paragraphs": [
+        "Sometimes you want to use a value without taking ownership of it.",
+        "Rust lets you do this using a reference - this is called borrowing:"
+      ],
+      "sections": [
+        {
+          "heading": "What is a Reference?",
+          "paragraphs": [
+            "A reference lets you look at a value without owning it.",
+            "You create a reference using the & symbol:",
+            "Since b is only borrowing the value, a still owns it.",
+            "Try it Yourself »"
+          ],
+          "example": "let a = String::from(\"Hello\");\nlet b = &a;\n\nprintln!(\"a = {}\", a);\nprintln!(\"b = {}\", b);"
+        },
+        {
+          "heading": "Mutable References",
+          "paragraphs": [
+            "If you want to change a value through a reference, you need to make the reference mut:",
+            "Try it Yourself »",
+            "Note: You can only have one mutable reference to a value at a time!"
+          ],
+          "example": "let mut name = String::from(\"John\");\nlet name_ref = &mut name;\nname_ref.push_str(\" Doe\");\n\nprintln!(\"{}\", name_ref); // John Doe"
+        },
+        {
+          "heading": "Why Borrowing is Important",
+          "paragraphs": [
+            "Borrowing helps you reuse values safely, without giving them away."
+          ],
+          "list": [
+            "It lets you use values without taking ownership",
+            "It avoids cloning, which can be slow for large data",
+            "It makes your programs safer and faster"
+          ]
+        }
+      ]
+    },
+    "data-structures": {
+      "title": "Rust Data Structures",
+      "paragraphs": [
+        "In Rust, data structures are used to store and organize values.",
+        "Rust provides many built-in data structures. Each is used to handle data in different ways.",
+        "Some of the most common are:",
+        "We will explore all of them in detail later, but for now, here's a quick introduction to each one."
+      ],
+      "sections": [
+        {
+          "heading": "Common Data Structures",
+          "list": ["Array", "Vector (Vec)", "Tuple", "HashMap"]
+        },
+        {
+          "heading": "Arrays",
+          "paragraphs": [
+            "An array in Rust is a fixed-size list of values, all of the same type.",
+            "You cannot grow or shrink an array after it's created.",
+            "To access an array element, refer to its index number.",
+            "Array indexes start with 0: [0] is the first element, [1] is the second element, etc.",
+            "Try it Yourself »"
+          ],
+          "example": "let fruits = [\"apple\", \"banana\", \"orange\"];\nprintln!(\"Last fruit: {}\", fruits[2]);"
+        },
+        {
+          "heading": "Vectors",
+          "paragraphs": [
+            "A vector is a resizable array.",
+            "Unlike regular arrays, vectors can grow or shrink in size.",
+            "Try it Yourself »"
+          ],
+          "example": "let mut fruits = vec![\"apple\", \"banana\"];\nfruits.push(\"cherry\");\n\nprintln!(\"Last fruit: {}\", fruits[2]);"
+        },
+        {
+          "heading": "Tuples",
+          "paragraphs": [
+            "A tuple can hold multiple values of different types.",
+            "It is useful when grouping different types together.",
+            "You access tuple elements using a dot and an index number, like person.1, etc:",
+            "Try it Yourself »"
+          ],
+          "example": "let person = (\"John\", 30, true);\nprintln!(\"Name: {}\", person.0);\nprintln!(\"Age: {}\", person.1);\nprintln!(\"Is active: {}\", person.2);"
+        },
+        {
+          "heading": "HashMaps",
+          "paragraphs": [
+            "A HashMap stores key-value pairs.",
+            "It lets you look up a value using a key.",
+            "To use HashMap, you must import it from the standard library.",
+            "Try it Yourself »"
+          ],
+          "example": "// Import HashMap\nuse std::collections::HashMap;\n\nfn main() {\n  let mut capitalCities = HashMap::new();\n  capitalCities.insert(\"France\", \"Paris\");\n  capitalCities.insert(\"Japan\", \"Tokyo\");\n\n  println!(\"Capital of Japan is {}\", capitalCities[\"Japan\"]);\n}"
+        },
+        {
+          "heading": "Data Structures Overview",
+          "table": {
+            "headers": ["Data Structure", "Use Case", "Can Grow?"],
+            "rows": [
+              ["Array", "Fixed-size list of same-type values", "No"],
+              ["Vector (Vec)", "Growable list of same-type values", "Yes"],
+              ["Tuple", "Group different types together", "No"],
+              ["HashMap", "Key-value lookup", "Yes"]
+            ]
+          }
+        },
+        {
+          "heading": "Next",
+          "paragraphs": [
+            "Next, let's take a closer look at each data structure in more detail."
+          ]
+        }
+      ]
+    },
+    "arrays": {
+      "title": "Rust Arrays",
+      "paragraphs": [
+        "Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value."
+      ],
+      "sections": [
+        {
+          "heading": "Create an Array",
+          "paragraphs": [
+            "You can create an array using square brackets [ ], and separate the values with commas.",
+            "Note: Make sure all values are of the same data type (integers in the example below):",
+            "This creates an array with five integers."
+          ],
+          "example": "let numbers = [1, 2, 3, 4, 5];"
+        },
+        {
+          "heading": "Access Array Elements",
+          "paragraphs": [
+            "To access an array element, refer to its index number.",
+            "Array indexes start with 0: [0] is the first element. [1] is the second element, etc.",
+            "This statement accesses the value of the first element [0] in numbers:",
+            "Try it Yourself »"
+          ],
+          "example": "let numbers = [1, 2, 3, 4, 5];\nprintln!(\"The first number is: {}\", numbers[0]);"
+        },
+        {
+          "heading": "Change Array Values",
+          "paragraphs": [
+            "To change the value of a specified element, refer to the index number and assign a new value.",
+            "Remember to make the array mutable (using the mut keyword):",
+            "Try it Yourself »"
+          ],
+          "example": "let mut numbers = [1, 2, 3, 4, 5];\nnumbers[0] = 10;\nprintln!(\"The new first number is: {}\", numbers[0]);"
+        },
+        {
+          "heading": "Array Length",
+          "paragraphs": [
+            "You can get the number of elements in an array using the .len() method:",
+            "Try it Yourself »"
+          ],
+          "example": "let numbers = [1, 2, 3, 4, 5];\nprintln!(\"This array has {} elements.\", numbers.len());"
+        },
+        {
+          "heading": "Loop Through an Array",
+          "paragraphs": [
+            "You can loop through the array elements with the for loop.",
+            "Try it Yourself »"
+          ],
+          "example": "let fruits = [\"apple\", \"banana\", \"orange\"];\nfor fruit in fruits {\n  println!(\"I like {}.\", fruit);\n}"
+        },
+        {
+          "heading": "Print the Entire Array",
+          "paragraphs": [
+            "Note: When printing the whole array, you must use {:?} inside println!:",
+            "Try it Yourself »",
+            "If you are just printing one element from the array, you can use {}.",
+            "Try it Yourself »"
+          ],
+          "examples": [
+            {
+              "title": "Print full array",
+              "code": "let numbers = [1, 2, 3, 4, 5];\nprintln!(\"{:?}\", numbers);"
+            },
+            {
+              "title": "Print one element",
+              "code": "let numbers = [1, 2, 3, 4, 5];\nprintln!(\"{}\", numbers[0]);"
+            }
+          ]
+        },
+        {
+          "heading": "To Sum Up",
+          "paragraphs": [
+            "When printing a single element from an array, use {}.",
+            "When printing the entire array, use {:?}.",
+            "If you are wondering why we didn't use {:?} inside the loop, it is because in a loop, you are printing each single value from the array.",
+            "A good rule is to use {} for basic types like strings, numbers, and booleans, and {:?} for data structures like arrays and vectors - when printing the entire structure."
+          ]
+        },
+        {
+          "heading": "Fixed Size (Arrays) vs. Dynamic Size (Vectors)",
+          "paragraphs": [
+            "You will often hear the terms fixed size and dynamic size when talking about arrays in Rust.",
+            "This is because arrays in Rust have a fixed size, meaning you cannot add or remove elements after the array is created:",
+            "Trying to add another element (a fourth element) to the cars array will result in an error:",
+            "Try it Yourself »"
+          ],
+          "example": "// An array with 3 elements\nlet mut cars = [\"Volvo\", \"BMW\", \"Ford\"];\n\n// Trying to add another element (a fourth element) to the cars array will result in an error\ncars[3] = \"Mazda\";   // Error: index out of bounds"
+        },
+        {
+          "heading": "Vectors - Dynamic Size Example",
+          "paragraphs": [
+            "For operations that require adding and removing array elements, you can use Vectors, which are resizable arrays.",
+            "The size of a vector is dynamic, meaning it can grow and shrink as needed.",
+            "You can use the vec! macro to create a vector:",
+            "Try it Yourself »",
+            "This was just a short introduction to vectors. You will learn more about them in the next chapter."
+          ],
+          "example": "// A vector with 3 elements\nlet mut cars = vec![\"Volvo\", \"BMW\", \"Ford\"];\n\n// Add another element\ncars.push(\"Mazda\");\n\nprintln!(\"{:?}\", cars); // [\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"]"
+        }
+      ]
+    },
+    "vectors": {
+      "title": "Rust Vectors",
+      "paragraphs": [
+        "A vector is a resizable array. Unlike regular arrays, vectors can grow or shrink in size."
+      ],
+      "sections": [
+        {
+          "heading": "Creating a Vector",
+          "paragraphs": [
+            "To create a vector, use the vec! macro:",
+            "This creates a vector with three string elements."
+          ],
+          "example": "let fruits = vec![\"apple\", \"banana\", \"orange\"];"
+        },
+        {
+          "heading": "Access Vector Elements",
+          "paragraphs": [
+            "You can access values in a vector using index numbers (just like arrays):",
+            "Try it Yourself »"
+          ],
+          "example": "let fruits = vec![\"apple\", \"banana\", \"orange\"];\nprintln!(\"First fruit: {}\", fruits[0]);"
+        },
+        {
+          "heading": "Change Vector Values",
+          "paragraphs": [
+            "To change a value in the vector, refer to the index number and assign a new value.",
+            "Remember to make the vector mutable (using the mut keyword):",
+            "Try it Yourself »"
+          ],
+          "example": "let mut fruits = vec![\"apple\", \"banana\", \"orange\"];\nfruits[0] = \"grape\";\nprintln!(\"New first fruit: {}\", fruits[0]);"
+        },
+        {
+          "heading": "Add Elements to a Vector",
+          "paragraphs": [
+            "You can add a new element to the end of a vector using the push() method:",
+            "Try it Yourself »"
+          ],
+          "example": "let mut fruits = vec![\"apple\", \"banana\"];\nfruits.push(\"cherry\");\nprintln!(\"{:?}\", fruits); // [\"apple\", \"banana\", \"cherry\"]"
+        },
+        {
+          "heading": "Remove Elements from a Vector",
+          "paragraphs": [
+            "To remove the last element from a vector, use pop():",
+            "Try it Yourself »"
+          ],
+          "example": "let mut fruits = vec![\"apple\", \"banana\", \"cherry\"];\nfruits.pop();\nprintln!(\"{:?}\", fruits); // [\"apple\", \"banana\"]"
+        },
+        {
+          "heading": "Add or Remove Elements at a Specified Index",
+          "paragraphs": [
+            "Rust vectors are designed to grow and shrink at the end, but you can also add or remove elements at the beginning or at a specified index.",
+            "Use insert() to add an item at a specified index:"
+          ],
+          "examples": [
+            {
+              "title": "Add \"apple\" to the beginning of the vector",
+              "code": "let mut fruits = vec![\"banana\", \"orange\"];\nfruits.insert(0, \"apple\");\nprintln!(\"{:?}\", fruits); // [\"apple\", \"banana\", \"orange\"]"
+            },
+            {
+              "title": "Add \"apple\" in the middle of the vector",
+              "code": "let mut fruits = vec![\"banana\", \"orange\"];\nfruits.insert(1, \"apple\");\nprintln!(\"{:?}\", fruits); // [\"banana\", \"apple\", \"orange\"]"
+            }
+          ]
+        },
+        {
+          "heading": "Remove the First Item",
+          "paragraphs": [
+            "Use remove() to remove an element from a specified index:",
+            "Try it Yourself »",
+            "Note: Adding or removing elements from the beginning is slower than at the end, because all the other elements have to shift positions."
+          ],
+          "example": "let mut fruits = vec![\"apple\", \"banana\", \"orange\"];\nfruits.remove(0);\nprintln!(\"{:?}\", fruits); // [\"banana\", \"orange\"]"
+        },
+        {
+          "heading": "Vector Length",
+          "paragraphs": [
+            "You can find out how many elements there are in a vector using the .len() method:",
+            "Try it Yourself »"
+          ],
+          "example": "let fruits = vec![\"apple\", \"banana\", \"cherry\"];\nprintln!(\"There are {} fruits.\", fruits.len());"
+        },
+        {
+          "heading": "Loop Through a Vector",
+          "paragraphs": [
+            "Just like arrays, you can use a for loop to go through all the values in a vector:",
+            "Try it Yourself »",
+            "Note: Use &fruits to borrow the vector instead of moving it.",
+            "In Rust, borrowing means using a reference to a value instead of taking ownership of it.",
+            "When you loop through a vector without &, the values are moved out, and you can no longer use the vector.",
+            "But when you borrow the vector using &, you can still use it later in your program.",
+            "You can learn more about ownership in our chapters on Ownership and Borrowing and References."
+          ],
+          "example": "let fruits = vec![\"apple\", \"banana\", \"orange\"];\nfor fruit in &fruits {\n  println!(\"I like {}.\", fruit);\n}"
+        }
+      ]
+    },
+    "tuples": {
+      "title": "Rust Tuples",
+      "paragraphs": [
+        "A tuple is a group of values of different types, stored in a single variable.",
+        "Tuples are useful when you want to return or work with multiple values together."
+      ],
+      "sections": [
+        {
+          "heading": "Create a Tuple",
+          "paragraphs": [
+            "Tuples are written using parentheses (), with values separated by commas:",
+            "This tuple contains a &str, an i32, and a bool."
+          ],
+          "example": "let person = (\"John\", 30, true);"
+        },
+        {
+          "heading": "Access Tuple Values",
+          "paragraphs": [
+            "You can access tuple values by using a dot . followed by the index:",
+            "Try it Yourself »"
+          ],
+          "example": "let person = (\"John\", 30, true);\nprintln!(\"Name: {}\", person.0);\nprintln!(\"Age: {}\", person.1);\nprintln!(\"Is active: {}\", person.2);"
+        },
+        {
+          "heading": "Unpack a Tuple",
+          "paragraphs": [
+            "When we create a tuple, we normally assign values to it. This is called \"packing\" a tuple:",
+            "But, in Rust, we are also allowed to extract the values back into variables. This is called \"unpacking\":",
+            "Try it Yourself »"
+          ],
+          "examples": [
+            {
+              "title": "Packing a tuple",
+              "code": "let person = (\"Jenny\", 45, false);"
+            },
+            {
+              "title": "Unpacking a tuple",
+              "code": "let person = (\"Jenny\", 45, false);\nlet (name, age, active) = person;\n\nprintln!(\"Name: {}\", name);\nprintln!(\"Age: {}\", age);\nprintln!(\"Active: {}\", active);"
+            }
+          ]
+        },
+        {
+          "heading": "Return a Tuple from a Function",
+          "paragraphs": [
+            "Tuples are often used to return multiple values from a function:",
+            "Try it Yourself »"
+          ],
+          "example": "fn get_user() -> (String, i32) {\n  (String::from(\"Liam\"), 25)\n}\n\nfn main() {\n  let user = get_user();\n  println!(\"User: {} ({} years old)\", user.0, user.1);\n}"
+        }
+      ]
+    },
+    "hashmap": {
+      "title": "Rust HashMap",
+      "paragraphs": [
+        "A HashMap is a collection of key/value pairs.",
+        "HashMaps are great when you want to store values and find them by a key.",
+        "To use HashMap, you must import it from Rust's standard library:"
+      ],
+      "import": "use std::collections::HashMap;",
+      "sections": [
+        {
+          "heading": "Create a HashMap",
+          "paragraphs": [
+            "You can create a new, empty HashMap and add items to it:",
+            "Try it Yourself »"
+          ],
+          "example": "// Import HashMap\nuse std::collections::HashMap;\n\nfn main() {\n  // Create a HashMap called capitalCities\n  let mut capitalCities = HashMap::new();\n\n  // Add keys and values (Country, City)\n  capitalCities.insert(\"England\", \"London\");\n  capitalCities.insert(\"Germany\", \"Berlin\");\n  capitalCities.insert(\"Norway\", \"Oslo\");\n\n  println!(\"{:?}\", capitalCities);\n}"
+        },
+        {
+          "heading": "Access Values",
+          "paragraphs": [
+            "You can use the .get() method to access a value in a HashMap by its key:",
+            "Try it Yourself »"
+          ],
+          "example": "let mut capitalCities = HashMap::new();\n\ncapitalCities.insert(\"England\", \"London\");\ncapitalCities.insert(\"Germany\", \"Berlin\");\ncapitalCities.insert(\"Norway\", \"Oslo\");\n\nif let Some(city) = capitalCities.get(\"England\") {\n  println!(\"The capital of England is {}.\", city);\n} else {\n  println!(\"England is not in the map.\");\n}"
+        },
+        {
+          "heading": "Update Values",
+          "paragraphs": [
+            "If you insert a new value using a key that already exists, the old value is replaced with the new one:",
+            "Try it Yourself »"
+          ],
+          "example": "let mut capitalCities = HashMap::new();\n\ncapitalCities.insert(\"England\", \"London\");\ncapitalCities.insert(\"England\", \"Berlin\");\n\nprintln!(\"{:?}\", capitalCities);"
+        },
+        {
+          "heading": "Remove Values",
+          "paragraphs": [
+            "To remove a key from a HashMap, use the .remove() method:",
+            "Try it Yourself »"
+          ],
+          "example": "let mut capitalCities = HashMap::new();\n\n// Add keys and values (Country, City)\ncapitalCities.insert(\"England\", \"London\");\ncapitalCities.insert(\"Germany\", \"Berlin\");\ncapitalCities.insert(\"Norway\", \"Oslo\");\n\n// Remove the key \"England\"\ncapitalCities.remove(\"England\");\n\nprintln!(\"{:?}\", capitalCities);"
+        },
+        {
+          "heading": "Loop Through a HashMap",
+          "paragraphs": [
+            "You can use a for loop to go through all key/value pairs:",
+            "Try it Yourself »"
+          ],
+          "example": "let mut capitalCities = HashMap::new();\n\n// Add keys and values (Country, City)\ncapitalCities.insert(\"England\", \"London\");\ncapitalCities.insert(\"Germany\", \"Berlin\");\ncapitalCities.insert(\"Norway\", \"Oslo\");\n\n// Loop through the HashMap\nfor (country, city) in &capitalCities {\n  println!(\"The capital of {} is {}.\", country, city);\n}"
+        }
+      ],
+      "why_use_hashmaps": [
+        "To store data by key",
+        "To quickly look up values",
+        "To group related data (like names and scores)"
+      ],
+      "note": "HashMaps require keys to be unique. Inserting the same key again will overwrite the old value."
+    },
+    "structs": {
+      "title": "Rust Structs",
+      "paragraphs": [
+        "A struct (short for \"structure\") is a custom data structure that lets you group related values together.",
+        "You can think of a struct like a mini-database for one thing, like a person with a name and age."
+      ],
+      "sections": [
+        {
+          "heading": "Create a Struct",
+          "paragraphs": [
+            "You define a struct using the struct keyword and place the fields (variables) inside:"
+          ],
+          "example": "struct Person {\n  name: String,\n  age: u32,\n  can_vote: bool,\n}"
+        },
+        {
+          "heading": "Create an Object and Access Fields",
+          "paragraphs": [
+            "Once you have a struct, you can create an object of it.",
+            "Then, you can access the fields of the struct using dot syntax (.):",
+            "Try it Yourself »"
+          ],
+          "example": "// Create a Struct called Person\nstruct Person {\n  name: String,\n  age: u32,\n  can_vote: bool,\n}\n\n// Create a Person object\nlet user = Person {\n  name: String::from(\"John\"),\n  age: 35,\n  can_vote: true,\n};\n\n// Access and print the values\nprintln!(\"Name: {}\", user.name);\nprintln!(\"Age: {}\", user.age);\nprintln!(\"Can vote? {}\", user.can_vote);"
+        },
+        {
+          "heading": "Fields",
+          "paragraphs": [
+            "Fields are similar to variables, but they belong to a struct.",
+            "Since they are part of a larger structure (like Person or Car), they are called fields in Rust, not regular variables."
+          ]
+        },
+        {
+          "heading": "Change a Field",
+          "paragraphs": [
+            "To change a value inside a struct, you must make the struct object mutable by using mut:",
+            "Try it Yourself »"
+          ],
+          "example": "struct Person {\n  name: String,\n  age: u32,\n}\n\nlet mut user = Person {\n  name: String::from(\"John\"),\n  age: 35,\n};\n\nuser.age = 36; // Change value of age\nprintln!(\"Name: {}\", user.name);\nprintln!(\"Updated age: {}\", user.age);"
+        }
+      ],
+      "why_use_structs": [
+        "To group related data in a clean way",
+        "To make your code easier to read and maintain",
+        "To create real-world examples, like users, books, cars, etc."
+      ]
+    },
+    "enums": {
+      "title": "Rust Enums",
+      "paragraphs": [
+        "An enum (short for \"enumeration\") is a way to define a type that can be one of a few different values.",
+        "Each value in the enum is called a variant.",
+        "Enums are useful when you want to represent a value that can only be one of a set of options - like days of the week, directions, or results like success and error."
+      ],
+      "sections": [
+        {
+          "heading": "Create an Enum",
+          "paragraphs": [
+            "To create an enum, use the enum keyword and add a set of named values (variants) separated by commas:"
+          ],
+          "example": "enum Direction {\n  Up,\n  Down,\n  Left,\n  Right,\n}"
+        },
+        {
+          "heading": "Use an Enum",
+          "paragraphs": [
+            "To use the enum, create a variable and assign it one of the enum's variants (use :: to access a variant):",
+            "Try it Yourself »"
+          ],
+          "example": "enum Direction {\n  Up,\n  Down,\n  Left,\n  Right,\n}\n\nfn main() {\n  let my_direction = Direction::Up;\n  println!(\"We are going up!\");\n}"
+        },
+        {
+          "heading": "Match on Enum Values",
+          "paragraphs": [
+            "Enums work great with the match statement. You can run different code depending on which variant is used:",
+            "Try it Yourself »"
+          ],
+          "example": "enum Direction {\n  Up,\n  Down,\n  Left,\n  Right,\n}\n\nfn main() {\n  let my_direction = Direction::Left;\n\n  match my_direction {\n    Direction::Up => println!(\"Going up\"),\n    Direction::Down => println!(\"Going down\"),\n    Direction::Left => println!(\"Going left\"),\n    Direction::Right => println!(\"Going right\"),\n  }\n}"
+        },
+        {
+          "heading": "Enums with Data",
+          "paragraphs": [
+            "Enum variants can also hold data. This is useful when each variant needs to store extra information:",
+            "Try it Yourself »"
+          ],
+          "example": "enum LoginStatus {\n  Success(String),\n  Error(String),\n}\n\nfn main() {\n  let result1 = LoginStatus::Success(String::from(\"Welcome, John!\"));\n  let result2 = LoginStatus::Error(String::from(\"Incorrect password\"));\n\n  match result1 {\n    LoginStatus::Success(message) => println!(\"Success: {}\", message),\n    LoginStatus::Error(message) => println!(\"Error: {}\", message),\n  }\n}"
+        }
+      ],
+      "why_use_enums": [
+        "To group related values into one type",
+        "To make your code more readable and safe",
+        "To handle different cases with match"
+      ]
+    }
+  }
+}

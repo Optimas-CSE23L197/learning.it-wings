@@ -1,0 +1,1520 @@
+{
+  "course": {
+    "id": "kotlin",
+    "title": "Kotlin Tutorial"
+  },
+  "sections": [
+    {
+      "title": "Kotlin Tutorial",
+      "lessons": [
+        { "id": "home", "title": "Kotlin HOME" },
+        { "id": "intro", "title": "Kotlin Intro" },
+        { "id": "get-started", "title": "Kotlin Get Started" },
+        { "id": "syntax", "title": "Kotlin Syntax" },
+        { "id": "output", "title": "Kotlin Output" },
+        { "id": "comments", "title": "Kotlin Comments" },
+        { "id": "variables", "title": "Kotlin Variables" },
+        { "id": "data-types", "title": "Kotlin Data Types" },
+        { "id": "operators", "title": "Kotlin Operators" },
+        { "id": "strings", "title": "Kotlin Strings" },
+        { "id": "booleans", "title": "Kotlin Booleans" },
+        { "id": "if-else", "title": "Kotlin If...Else" },
+        { "id": "when", "title": "Kotlin When" },
+        { "id": "while-loop", "title": "Kotlin While Loop" },
+        { "id": "break-continue", "title": "Kotlin Break/Continue" },
+        { "id": "arrays", "title": "Kotlin Arrays" },
+        { "id": "for-loop", "title": "Kotlin For Loop" },
+        { "id": "ranges", "title": "Kotlin Ranges" },
+        { "id": "functions", "title": "Kotlin Functions" }
+      ]
+    },
+    {
+      "title": "Kotlin Classes",
+      "lessons": [
+        { "id": "classes", "title": "Kotlin Classes" },
+        { "id": "oop", "title": "Kotlin OOP" },
+        { "id": "classes-objects", "title": "Kotlin Classes/Objects" },
+        { "id": "constructors", "title": "Kotlin Constructors" },
+        { "id": "class-functions", "title": "Kotlin Class Functions" },
+        { "id": "inheritance", "title": "Kotlin Inheritance" }
+      ]
+    },
+    {
+      "title": "Kotlin Examples",
+      "lessons": [
+        { "id": "examples", "title": "Kotlin Examples" },
+        { "id": "compiler", "title": "Kotlin Compiler" },
+        { "id": "exercises", "title": "Kotlin Exercises" },
+        { "id": "quiz", "title": "Kotlin Quiz" },
+        { "id": "syllabus", "title": "Kotlin Syllabus" },
+        { "id": "study-plan", "title": "Kotlin Study Plan" },
+        { "id": "certificate", "title": "Kotlin Certificate" }
+      ]
+    }
+  ],
+  "content": {
+    "home": {
+      "title": "Learn Kotlin",
+      "paragraphs": [
+        "Kotlin is a modern, trending programming language.",
+        "Kotlin is easy to learn, especially if you already know Java (it is 100% compatible with Java).",
+        "Kotlin is used to develop Android apps, server side apps, and much more.",
+        "Start learning Kotlin now »",
+        "Tip: Sign in to track your progress."
+      ],
+      "sections": [
+        {
+          "heading": "Examples in Each Chapter",
+          "paragraphs": [
+            "Our \"Try it Yourself\" editor makes it easy to learn Kotlin. You can edit the code and view the result in your browser:",
+            "Click on the \"Try it Yourself\" button to see how it works."
+          ],
+          "example": "fun main() {\n  println(\"Hello World\")\n}"
+        },
+        {
+          "heading": "Kotlin Exercises",
+          "paragraphs": ["Test Yourself With Exercises"],
+          "exercise": {
+            "question": "Insert the missing part of the code below to output \"Hello World\".",
+            "code": " () {\n  println(\"Hello World\")\n}",
+            "answer": "fun main"
+          }
+        },
+        {
+          "heading": "Kotlin Quiz",
+          "paragraphs": [
+            "Learn by taking a quiz! This quiz will give you a signal of how much you know about Kotlin."
+          ]
+        },
+        {
+          "heading": "Learn by Examples",
+          "paragraphs": [
+            "Learn by examples! This tutorial supplements all explanations with clarifying examples."
+          ]
+        },
+        {
+          "heading": "Download Kotlin",
+          "paragraphs": [
+            "Download Kotlin from github: https://github.com/JetBrains/kotlin"
+          ]
+        },
+        {
+          "heading": "Track Your Progress",
+          "paragraphs": [
+            "Create a W3Schools account and get access to more features and learning materials:",
+            "Note: This is an optional feature. You can study at W3Schools without creating an account."
+          ],
+          "list": [
+            "View your completed tutorials, exercises, and quizzes",
+            "Keep an eye on your progress and daily streaks",
+            "Join the leaderboard and compete with others",
+            "Get your own avatar and unlock new skins",
+            "Create your own personal website"
+          ]
+        },
+        {
+          "heading": "Get Certified",
+          "paragraphs": [
+            "Kickstart your career",
+            "Get certified by completing the Kotlin course"
+          ]
+        }
+      ]
+    },
+    "intro": {
+      "title": "Kotlin Introduction",
+      "paragraphs": [
+        "Kotlin is a modern, trending programming language that was released in 2016 by JetBrains.",
+        "It has become very popular since it is compatible with Java (one of the most popular programming languages out there), which means that Java code (and libraries) can be used in Kotlin programs."
+      ],
+      "sections": [
+        {
+          "heading": "What is Kotlin used for?",
+          "paragraphs": ["Kotlin is used for:"],
+          "list": [
+            "Mobile applications (specially Android apps)",
+            "Web development",
+            "Server side applications",
+            "Data science",
+            "And much, much more!"
+          ]
+        },
+        {
+          "heading": "Why Use Kotlin?",
+          "list": [
+            "Kotlin is fully compatible with Java",
+            "Kotlin works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)",
+            "Kotlin is concise and safe",
+            "Kotlin is easy to learn, especially if you already know Java",
+            "Kotlin is free to use",
+            "Big community/support"
+          ]
+        },
+        {
+          "heading": "Get Started",
+          "paragraphs": [
+            "This tutorial will teach you the very basics of Kotlin.",
+            "It is not necessary to have any prior programming experience.",
+            "Get Started »"
+          ]
+        }
+      ]
+    },
+    "get-started": {
+      "title": "Kotlin Get Started",
+      "paragraphs": [
+        "The easiest way to get started with Kotlin, is to use an IDE.",
+        "An IDE (Integrated Development Environment) is used to edit and compile code.",
+        "In this chapter, we will use IntelliJ (developed by the same people that created Kotlin) which is free to download from https://www.jetbrains.com/idea/download/."
+      ],
+      "sections": [
+        {
+          "heading": "Kotlin Install",
+          "paragraphs": [
+            "Once IntelliJ is downloaded and installed, click on the New Project button to get started with IntelliJ.",
+            "Then click on \"Kotlin\" in the left side menu, and enter a name for your project.",
+            "Next, we need to install something called JDK (Java Development Kit) to get our Kotlin project up and going.",
+            "Click on the \"Project JDK\" menu, select \"Download JDK\" and select a version and vendor (e.g. AdoptOpenJDK 11) and click on the \"Download\" button.",
+            "When the JDK is downloaded and installed, choose it from the select menu and then click on the \"Next\" button and at last \"Finish\"."
+          ]
+        },
+        {
+          "heading": "Create a Kotlin File",
+          "paragraphs": [
+            "Now we can start working with our Kotlin project.",
+            "Open the src (source) folder, and create a Kotlin file.",
+            "Select the \"File\" option and add a name to your Kotlin file, for example \"Main\"."
+          ]
+        },
+        {
+          "heading": "Your First Kotlin Program",
+          "paragraphs": [
+            "You have now created your first Kotlin file (Main.kt).",
+            "Inside the Main.kt file, add the following code:"
+          ],
+          "example": "fun main() {\n  println(\"Hello World\")\n}"
+        },
+        {
+          "heading": "Run the Program",
+          "paragraphs": [
+            "Don't worry if you don't understand the code above - we will discuss it in detail in later chapters.",
+            "Click on the Run button at the top navigation bar, then click \"Run\", and select \"Mainkt\".",
+            "IntelliJ will build your project, and run the Kotlin file.",
+            "The output will look something like this:",
+            "Hello World",
+            "As you can see, the output of the code was \"Hello World\", meaning that you have now written and executed your first Kotlin program!"
+          ]
+        },
+        {
+          "heading": "Learning Kotlin At W3Schools",
+          "paragraphs": [
+            "When learning Kotlin at w3schools.com, you can use our \"Try it Yourself\" tool, which shows both the code and the result.",
+            "This will make it easier for you to understand every part as we move forward:"
+          ],
+          "subsections": [
+            {
+              "title": "Main.kt",
+              "code": "fun main() {\n  println(\"Hello World\")\n}",
+              "result": "Hello World"
+            }
+          ]
+        }
+      ]
+    },
+    "syntax": {
+      "title": "Kotlin Syntax",
+      "paragraphs": [
+        "In the previous chapter, we created a Kotlin file called Main.kt, and we used the following code to print \"Hello World\" to the screen:"
+      ],
+      "sections": [
+        {
+          "heading": "Example",
+          "example": "fun main() {\n  println(\"Hello World\")\n}"
+        },
+        {
+          "heading": "Example explained",
+          "paragraphs": [
+            "The fun keyword is used to declare a function. A function is a block of code designed to perform a particular task. In the example above, it declares the main() function.",
+            "The main() function is something you will see in every Kotlin program. This function is used to execute code. Any code inside the main() function's curly brackets {} will be executed.",
+            "For example, the println() function is inside the main() function, meaning that this will be executed. The println() function is used to output/print text, and in our example it will output \"Hello World\".",
+            "Good To Know: In Kotlin, code statements do not have to end with a semicolon (;) (which is often required for other programming languages, such as Java, C++, C#, etc.)."
+          ]
+        },
+        {
+          "heading": "Main Parameters",
+          "paragraphs": [
+            "Before Kotlin version 1.3, it was required to use the main() function with parameters, like: fun main(args : Array<String>).",
+            "The example above had to be written like this to work:"
+          ],
+          "example": "fun main(args : Array<String>) {\n  println(\"Hello World\")\n}"
+        },
+        {
+          "heading": "Note",
+          "paragraphs": [
+            "This is no longer required, and the program will run fine without it.",
+            "However, it will not do any harm if you have been using it in the past, and will continue to use it."
+          ]
+        }
+      ]
+    },
+    "output": {
+      "title": "Kotlin Output (Print Text)",
+      "paragraphs": [
+        "The println() function is used to output values/print text:"
+      ],
+      "sections": [
+        {
+          "heading": "Example",
+          "example": "fun main() {\n  println(\"Hello World\")\n}"
+        },
+        {
+          "heading": "Multiple println()",
+          "paragraphs": [
+            "You can add as many println() functions as you want. Note that it will add a new line for each function:"
+          ],
+          "example": "fun main() {\n  println(\"Hello World!\")\n  println(\"I am learning Kotlin.\")\n  println(\"It is awesome!\")\n}"
+        },
+        {
+          "heading": "Print Numbers and Calculations",
+          "paragraphs": [
+            "You can also print numbers, and perform mathematical calculations:"
+          ],
+          "example": "fun main() {\n  println(3 + 3)\n}"
+        },
+        {
+          "heading": "The print() function",
+          "paragraphs": [
+            "There is also a print() function, which is similar to println().",
+            "The only difference is that it does not insert a new line at the end of the output:"
+          ],
+          "example": "fun main() {\n  print(\"Hello World! \")\n  print(\"I am learning Kotlin. \")\n  print(\"It is awesome!\")\n}"
+        },
+        {
+          "heading": "Note",
+          "paragraphs": [
+            "Note that we have added a space character to create a space between the sentences."
+          ]
+        }
+      ]
+    },
+    "comments": {
+      "title": "Kotlin Comments",
+      "paragraphs": [
+        "Comments can be used to explain Kotlin code, and to make it more readable.",
+        "It can also be used to prevent execution when testing alternative code."
+      ],
+      "sections": [
+        {
+          "heading": "Single-line Comments",
+          "paragraphs": [
+            "Single-line comments starts with two forward slashes (//).",
+            "Any text between // and the end of the line is ignored by Kotlin (will not be executed).",
+            "This example uses a single-line comment before a line of code:"
+          ],
+          "example": "// This is a comment\nprintln(\"Hello World\")"
+        },
+        {
+          "heading": "Single-line Comment at the End of a Line",
+          "paragraphs": [
+            "This example uses a single-line comment at the end of a line of code:"
+          ],
+          "example": "println(\"Hello World\")  // This is a comment"
+        },
+        {
+          "heading": "Multi-line Comments",
+          "paragraphs": [
+            "Multi-line comments start with /* and ends with */.",
+            "Any text between /* and */ will be ignored by Kotlin.",
+            "This example uses a multi-line comment (a comment block) to explain the code:"
+          ],
+          "example": "/* The code below will print the words Hello World\nto the screen, and it is amazing */\nprintln(\"Hello World\")"
+        }
+      ]
+    },
+    "variables": {
+      "title": "Kotlin Variables",
+      "paragraphs": [
+        "Variables are containers for storing data values.",
+        "To create a variable, use var or val, and assign a value to it with the equal sign (=):"
+      ],
+      "sections": [
+        {
+          "heading": "Syntax",
+          "code": "var variableName = value\nval variableName = value"
+        },
+        {
+          "heading": "Example",
+          "example": "var name = \"John\"\nval birthyear = 1975\n\nprintln(name)          // Print the value of name\nprintln(birthyear)     // Print the value of birthyear"
+        },
+        {
+          "heading": "var vs val",
+          "paragraphs": [
+            "The difference between var and val is that variables declared with the var keyword can be changed/modified, while val variables cannot."
+          ]
+        },
+        {
+          "heading": "Variable Type",
+          "paragraphs": [
+            "Unlike many other programming languages, variables in Kotlin do not need to be declared with a specified type (like \"String\" for text or \"Int\" for numbers, if you are familiar with those).",
+            "Kotlin is smart enough to understand that \"John\" is a String (text), and that 1975 is an Int (number) variable."
+          ],
+          "examples": [
+            "var name = \"John\"      // String (text)\nval birthyear = 1975   // Int (number)\n\nprintln(name)          // Print the value of name\nprintln(birthyear)     // Print the value of birthyear",
+            "var name: String = \"John\" // String\nval birthyear: Int = 1975 // Int\n\nprintln(name)\nprintln(birthyear)"
+          ]
+        },
+        {
+          "heading": "Declare Without Value",
+          "paragraphs": [
+            "You can also declare a variable without assigning the value, and assign the value later.",
+            "However, this is only possible when you specify the type:"
+          ],
+          "examples": [
+            "var name: String\nname = \"John\"\nprintln(name)",
+            "var name\nname = \"John\"\nprintln(name)"
+          ]
+        },
+        {
+          "heading": "Note",
+          "paragraphs": [
+            "You will learn more about Data Types in the next chapter."
+          ]
+        },
+        {
+          "heading": "Notes on val",
+          "paragraphs": [
+            "When you create a variable with the val keyword, the value cannot be changed/reassigned.",
+            "The following example will generate an error:"
+          ],
+          "example": "val name = \"John\"\nname = \"Robert\"  // Error (Val cannot be reassigned)\nprintln(name)"
+        },
+        {
+          "heading": "Changing Values with var",
+          "paragraphs": [
+            "When using var, you can change the value whenever you want:"
+          ],
+          "example": "var name = \"John\"\nname = \"Robert\"\nprintln(name)"
+        },
+        {
+          "heading": "So When To Use val?",
+          "paragraphs": [
+            "The val keyword is useful when you want a variable to always store the same value, like PI (3.14159...):"
+          ],
+          "example": "val pi = 3.14159265359\nprintln(pi)"
+        },
+        {
+          "heading": "Display Variables",
+          "paragraphs": [
+            "Like you have seen with the examples above, the println() method is often used to display variables.",
+            "To combine both text and a variable, use the + character:"
+          ],
+          "examples": [
+            "val name = \"John\"\nprintln(\"Hello \" + name)",
+            "val firstName = \"John \"\nval lastName = \"Doe\"\nval fullName = firstName + lastName\nprintln(fullName)",
+            "val x = 5\nval y = 6\nprintln(x + y) // Print the value of x + y"
+          ]
+        },
+        {
+          "heading": "From the example above, you can expect:",
+          "list": [
+            "x stores the value 5",
+            "y stores the value 6",
+            "Then we use the println() method to display the value of x + y, which is 11"
+          ]
+        },
+        {
+          "heading": "Variable Names",
+          "paragraphs": [
+            "A variable can have a short name (like x and y) or more descriptive names (age, sum, totalVolume).",
+            "The general rule for Kotlin variables are:"
+          ],
+          "list": [
+            "Names can contain letters, digits, underscores, and dollar signs",
+            "Names should start with a letter",
+            "Names can also begin with $ and _ (but we will not use it in this tutorial)",
+            "Names are case sensitive (\"myVar\" and \"myvar\" are different variables)",
+            "Names should start with a lowercase letter and it cannot contain whitespace",
+            "Reserved words (like Kotlin keywords, such as var or String) cannot be used as names"
+          ]
+        },
+        {
+          "heading": "camelCase variables",
+          "paragraphs": [
+            "You might notice that we used firstName and lastName as variable names in the example above, instead of firstname and lastname.",
+            "This is called \"camelCase\", and it is considered as good practice as it makes it easier to read when you have a variable name with different words in it, for example \"myFavoriteFood\", \"rateActionMovies\" etc."
+          ]
+        }
+      ]
+    },
+    "data-types": {
+      "title": "Kotlin Data Types",
+      "paragraphs": [
+        "In Kotlin, the type of a variable is decided by its value:"
+      ],
+      "sections": [
+        {
+          "heading": "Example",
+          "example": "val myNum = 5             // Int\nval myDoubleNum = 5.99    // Double\nval myLetter = 'D'        // Char\nval myBoolean = true      // Boolean\nval myText = \"Hello\"      // String"
+        },
+        {
+          "heading": "Specify Type",
+          "paragraphs": [
+            "However, you learned from the previous chapter that it is possible to specify the type if you want:"
+          ],
+          "example": "val myNum: Int = 5                // Int\nval myDoubleNum: Double = 5.99    // Double\nval myLetter: Char = 'D'          // Char\nval myBoolean: Boolean = true     // Boolean\nval myText: String = \"Hello\"      // String"
+        },
+        {
+          "heading": "Note",
+          "paragraphs": [
+            "Sometimes you have to specify the type, and often you don't.",
+            "Anyhow, it is good to know what the different types represent.",
+            "You will learn more about when you need to specify the type later."
+          ]
+        },
+        {
+          "heading": "Data Type Groups",
+          "paragraphs": ["Data types are divided into different groups:"],
+          "list": ["Numbers", "Characters", "Booleans", "Strings", "Arrays"]
+        },
+        {
+          "heading": "Numbers",
+          "paragraphs": [
+            "Number types are divided into two groups:",
+            "Integer types store whole numbers, positive or negative (such as 123 or -456), without decimals. Valid types are Byte, Short, Int and Long.",
+            "Floating point types represent numbers with a fractional part, containing one or more decimals. There are two types: Float and Double.",
+            "If you don't specify the type for a numeric variable, it is most often returned as Int for whole numbers and Double for floating point numbers."
+          ]
+        },
+        {
+          "heading": "Integer Types",
+          "subsections": [
+            {
+              "title": "Byte",
+              "paragraphs": [
+                "The Byte data type can store whole numbers from -128 to 127.",
+                "This can be used instead of Int or other integer types to save memory when you are certain that the value will be within -128 and 127:"
+              ],
+              "example": "val myNum: Byte = 100\nprintln(myNum)"
+            },
+            {
+              "title": "Short",
+              "paragraphs": [
+                "The Short data type can store whole numbers from -32768 to 32767:"
+              ],
+              "example": "val myNum: Short = 5000\nprintln(myNum)"
+            },
+            {
+              "title": "Int",
+              "paragraphs": [
+                "The Int data type can store whole numbers from -2147483648 to 2147483647:"
+              ],
+              "example": "val myNum: Int = 100000\nprintln(myNum)"
+            },
+            {
+              "title": "Long",
+              "paragraphs": [
+                "The Long data type can store whole numbers from -9223372036854775808 to 9223372036854775807.",
+                "This is used when Int is not large enough to store the value.",
+                "Optionally, you can end the value with an \"L\":"
+              ],
+              "example": "val myNum: Long = 15000000000L\nprintln(myNum)"
+            }
+          ]
+        },
+        {
+          "heading": "Difference Between Int and Long",
+          "paragraphs": [
+            "A whole number is an Int as long as it is up to 2147483647.",
+            "If it goes beyond that, it is defined as Long:"
+          ],
+          "example": "val myNum1 = 2147483647  // Int\nval myNum2 = 2147483648  // Long"
+        },
+        {
+          "heading": "Floating Point Types",
+          "paragraphs": [
+            "Floating point types represent numbers with a decimal, such as 9.99 or 3.14515.",
+            "The Float and Double data types can store fractional numbers:"
+          ],
+          "subsections": [
+            {
+              "title": "Float Example",
+              "example": "val myNum: Float = 5.75F\nprintln(myNum)"
+            },
+            {
+              "title": "Double Example",
+              "example": "val myNum: Double = 19.99\nprintln(myNum)"
+            }
+          ]
+        },
+        {
+          "heading": "Use Float or Double?",
+          "paragraphs": [
+            "The precision of a floating point value indicates how many digits the value can have after the decimal point.",
+            "The precision of Float is only six or seven decimal digits, while Double variables have a precision of about 15 digits.",
+            "Therefore it is safer to use Double for most calculations.",
+            "Also note that you should end the value of a Float type with an \"F\"."
+          ]
+        },
+        {
+          "heading": "Scientific Numbers",
+          "paragraphs": [
+            "A floating point number can also be a scientific number with an \"e\" or \"E\" to indicate the power of 10:"
+          ],
+          "example": "val myNum1: Float = 35E3F\nval myNum2: Double = 12E4\nprintln(myNum1)\nprintln(myNum2)"
+        },
+        {
+          "heading": "Booleans",
+          "paragraphs": [
+            "The Boolean data type can only take the values true or false:"
+          ],
+          "example": "val isKotlinFun: Boolean = true\nval isFishTasty: Boolean = false\nprintln(isKotlinFun)   // Outputs true\nprintln(isFishTasty)   // Outputs false",
+          "note": "Boolean values are mostly used for conditional testing, which you will learn more about in a later chapter."
+        },
+        {
+          "heading": "Characters",
+          "paragraphs": [
+            "The Char data type is used to store a single character.",
+            "A char value must be surrounded by single quotes, like 'A' or 'c':"
+          ],
+          "example": "val myGrade: Char = 'B'\nprintln(myGrade)"
+        },
+        {
+          "heading": "Char Note",
+          "paragraphs": [
+            "Unlike Java, you cannot use ASCII values to display certain characters.",
+            "The value 66 would output a \"B\" in Java, but will generate an error in Kotlin:"
+          ],
+          "example": "val myLetter: Char = 66\nprintln(myLetter) // Error"
+        },
+        {
+          "heading": "Strings",
+          "paragraphs": [
+            "The String data type is used to store a sequence of characters (text).",
+            "String values must be surrounded by double quotes:"
+          ],
+          "example": "val myText: String = \"Hello World\"\nprintln(myText)",
+          "note": "You will learn more about strings in the Strings chapter."
+        },
+        {
+          "heading": "Arrays",
+          "paragraphs": [
+            "Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.",
+            "You will learn more about arrays in the Arrays chapter."
+          ]
+        },
+        {
+          "heading": "Type Conversion",
+          "paragraphs": [
+            "Type conversion is when you convert the value of one data type to another type.",
+            "In Kotlin, numeric type conversion is different from Java.",
+            "For example, it is not possible to convert an Int type to a Long type with the following code:"
+          ],
+          "example": "val x: Int = 5\nval y: Long = x\nprintln(y) // Error: Type mismatch"
+        },
+        {
+          "heading": "Convert Numeric Types",
+          "paragraphs": [
+            "To convert a numeric data type to another type, you must use one of the following functions:",
+            "toByte(), toShort(), toInt(), toLong(), toFloat(), toDouble() or toChar():"
+          ],
+          "example": "val x: Int = 5\nval y: Long = x.toLong()\nprintln(y)"
+        }
+      ]
+    },
+    "operators": {
+      "title": "Kotlin Operators",
+      "paragraphs": [
+        "Operators are used to perform operations on variables and values.",
+        "The value is called an operand, while the operation (to be performed between the two operands) is defined by an operator:"
+      ],
+      "sections": [
+        {
+          "heading": "Operands and Operators",
+          "table": {
+            "headers": ["Operand", "Operator", "Operand"],
+            "rows": [["100", "+", "50"]]
+          },
+          "paragraphs": [
+            "In the example below, the numbers 100 and 50 are operands, and the + sign is an operator:"
+          ],
+          "example": "var x = 100 + 50"
+        },
+        {
+          "heading": "Operator with Variables",
+          "paragraphs": [
+            "Although the + operator is often used to add together two values, it can also be used to add together a variable and a value, or a variable and a variable:"
+          ],
+          "example": "var sum1 = 100 + 50       // 150 (100 + 50)\nvar sum2 = sum1 + 250     // 400 (150 + 250)\nvar sum3 = sum2 + sum2    // 800 (400 + 400)"
+        },
+        {
+          "heading": "Operator Groups",
+          "paragraphs": [
+            "Kotlin divides the operators into the following groups:"
+          ],
+          "list": [
+            "Arithmetic operators",
+            "Assignment operators",
+            "Comparison operators",
+            "Logical operators"
+          ]
+        },
+        {
+          "heading": "Arithmetic Operators",
+          "paragraphs": [
+            "Arithmetic operators are used to perform common mathematical operations."
+          ],
+          "table": {
+            "headers": ["Operator", "Name", "Description", "Example"],
+            "rows": [
+              ["+", "Addition", "Adds together two values", "x + y"],
+              ["-", "Subtraction", "Subtracts one value from another", "x - y"],
+              ["*", "Multiplication", "Multiplies two values", "x * y"],
+              ["/", "Division", "Divides one value from another", "x / y"],
+              ["%", "Modulus", "Returns the division remainder", "x % y"],
+              ["++", "Increment", "Increases the value by 1", "++x"],
+              ["--", "Decrement", "Decreases the value by 1", "--x"]
+            ]
+          }
+        },
+        {
+          "heading": "Kotlin Assignment Operators",
+          "paragraphs": [
+            "Assignment operators are used to assign values to variables.",
+            "In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x:"
+          ],
+          "example": "var x = 10"
+        },
+        {
+          "heading": "Addition Assignment Operator (+=)",
+          "paragraphs": [
+            "The addition assignment operator (+=) adds a value to a variable:"
+          ],
+          "example": "var x = 10\nx += 5"
+        },
+        {
+          "heading": "List of Assignment Operators",
+          "table": {
+            "headers": ["Operator", "Example", "Same As"],
+            "rows": [
+              ["=", "x = 5", "x = 5"],
+              ["+=", "x += 3", "x = x + 3"],
+              ["-=", "x -= 3", "x = x - 3"],
+              ["*=", "x *= 3", "x = x * 3"],
+              ["/=", "x /= 3", "x = x / 3"],
+              ["%=", "x %= 3", "x = x % 3"]
+            ]
+          }
+        },
+        {
+          "heading": "Kotlin Comparison Operators",
+          "paragraphs": [
+            "Comparison operators are used to compare two values, and returns a Boolean value: either true or false."
+          ],
+          "table": {
+            "headers": ["Operator", "Name", "Example"],
+            "rows": [
+              ["==", "Equal to", "x == y"],
+              ["!=", "Not equal", "x != y"],
+              [">", "Greater than", "x > y"],
+              ["<", "Less than", "x < y"],
+              [">=", "Greater than or equal to", "x >= y"],
+              ["<=", "Less than or equal to", "x <= y"]
+            ]
+          },
+          "note": "You will learn much more about Booleans in the Boolean chapter and Conditions."
+        },
+        {
+          "heading": "Kotlin Logical Operators",
+          "paragraphs": [
+            "Logical operators are used to determine the logic between variables or values:"
+          ],
+          "table": {
+            "headers": ["Operator", "Name", "Description", "Example"],
+            "rows": [
+              [
+                "&&",
+                "Logical and",
+                "Returns true if both statements are true",
+                "x < 5 && x < 10"
+              ],
+              [
+                "||",
+                "Logical or",
+                "Returns true if one of the statements is true",
+                "x < 5 || x < 4"
+              ],
+              [
+                "!",
+                "Logical not",
+                "Reverse the result, returns false if the result is true",
+                ""
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "strings": {
+      "title": "Kotlin Strings",
+      "paragraphs": [
+        "Strings are used for storing text.",
+        "A string contains a collection of characters surrounded by double quotes:"
+      ],
+      "sections": [
+        {
+          "heading": "Example",
+          "example": "var greeting = \"Hello\""
+        },
+        {
+          "heading": "String Type",
+          "paragraphs": [
+            "Unlike Java, you do not have to specify that the variable should be a String.",
+            "Kotlin is smart enough to understand that the greeting variable in the example above is a String because of the double quotes.",
+            "However, just like with other data types, you can specify the type if you insist:"
+          ],
+          "example": "var greeting: String = \"Hello\""
+        },
+        {
+          "heading": "Note",
+          "paragraphs": [
+            "If you want to create a String without assigning the value (and assign the value later), you must specify the type while declaring the variable:"
+          ],
+          "examples": [
+            "var name: String\nname = \"John\"\nprintln(name)",
+            "var name\nname = \"John\"\nprintln(name)"
+          ]
+        },
+        {
+          "heading": "Access a String",
+          "paragraphs": [
+            "To access the characters (elements) of a string, you must refer to the index number inside square brackets.",
+            "String indexes start with 0.",
+            "In the example below, we access the first and third element in txt:"
+          ],
+          "example": "var txt = \"Hello World\"\nprintln(txt[0]) // first element (H)\nprintln(txt[2]) // third element (l)",
+          "note": "[0] is the first element. [1] is the second element, [2] is the third element, etc."
+        },
+        {
+          "heading": "String Length",
+          "paragraphs": [
+            "A String in Kotlin is an object, which contain properties and functions that can perform certain operations on strings, by writing a dot character (.) after the specific string variable.",
+            "For example, the length of a string can be found with the length property:"
+          ],
+          "example": "var txt = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\nprintln(\"The length of the txt string is: \" + txt.length)"
+        },
+        {
+          "heading": "String Functions",
+          "paragraphs": [
+            "There are many string functions available, for example uppercase() and lowercase():"
+          ],
+          "example": "var txt = \"Hello World\"\nprintln(txt.uppercase())   // Outputs \"HELLO WORLD\"\nprintln(txt.lowercase())   // Outputs \"hello world\""
+        },
+        {
+          "heading": "Comparing Strings",
+          "paragraphs": [
+            "The compareTo(string) function compares two strings and returns 0 if both are equal:"
+          ],
+          "example": "var txt1 = \"Hello World\"\nvar txt2 = \"Hello World\"\nprintln(txt1.compareTo(txt2))  // Outputs 0 (they are equal)"
+        },
+        {
+          "heading": "Finding a String in a String",
+          "paragraphs": [
+            "The indexOf() function returns the index (the position) of the first occurrence of a specified text in a string (including whitespace):"
+          ],
+          "example": "var txt = \"Please locate where 'locate' occurs!\"\nprintln(txt.indexOf(\"locate\"))  // Outputs 7",
+          "note": "Remember that Kotlin counts positions from zero. 0 is the first position in a string, 1 is the second, 2 is the third ..."
+        },
+        {
+          "heading": "Quotes Inside a String",
+          "paragraphs": [
+            "To use quotes inside a string, use single quotes ('):"
+          ],
+          "example": "var txt1 = \"It's alright\"\nvar txt2 = \"That's great\""
+        },
+        {
+          "heading": "String Concatenation",
+          "paragraphs": [
+            "The + operator can be used between strings to add them together to make a new string. This is called concatenation:"
+          ],
+          "example": "var firstName = \"John\"\nvar lastName = \"Doe\"\nprintln(firstName + \" \" + lastName)",
+          "note": "Note that we have added an empty text (\" \") to create a space between firstName and lastName on print."
+        },
+        {
+          "heading": "Concatenate with plus()",
+          "paragraphs": [
+            "You can also use the plus() function to concatenate two strings:"
+          ],
+          "example": "var firstName = \"John \"\nvar lastName = \"Doe\"\nprintln(firstName.plus(lastName))"
+        },
+        {
+          "heading": "String Templates/Interpolation",
+          "paragraphs": [
+            "Instead of concatenation, you can also use \"string templates\", which is an easy way to add variables and expressions inside a string.",
+            "Just refer to the variable with the $ symbol:"
+          ],
+          "example": "var firstName = \"John\"\nvar lastName = \"Doe\"\nprintln(\"My name is $firstName $lastName\")",
+          "note": "\"String Templates\" is a popular feature of Kotlin, as it reduces the amount of code."
+        }
+      ]
+    },
+    "booleans": {
+      "title": "Kotlin Booleans",
+      "paragraphs": [
+        "Very often, in programming, you will need a data type that can only have one of two values, like:",
+        "YES / NO",
+        "ON / OFF",
+        "TRUE / FALSE",
+        "For this, Kotlin has a Boolean data type, which can take the values true or false."
+      ],
+      "sections": [
+        {
+          "heading": "Boolean Values",
+          "paragraphs": [
+            "A boolean type can be declared with the Boolean keyword and can only take the values true or false:"
+          ],
+          "example": "val isKotlinFun: Boolean = true\nval isFishTasty: Boolean = false\nprintln(isKotlinFun)   // Outputs true\nprintln(isFishTasty)   // Outputs false"
+        },
+        {
+          "heading": "Boolean Without Specifying Type",
+          "paragraphs": [
+            "Just like you have learned with other data types in the previous chapters, the example above can also be written without specifying the type, as Kotlin is smart enough to understand that the variables are Booleans:"
+          ],
+          "example": "val isKotlinFun = true\nval isFishTasty = false\nprintln(isKotlinFun)   // Outputs true\nprintln(isFishTasty)   // Outputs false"
+        },
+        {
+          "heading": "Boolean Expression",
+          "paragraphs": [
+            "A Boolean expression returns a Boolean value: true or false.",
+            "You can use a comparison operator, such as the greater than (>) operator to find out if an expression (or a variable) is true:"
+          ],
+          "example": "val x = 10\nval y = 9\nprintln(x > y) // Returns true, because 10 is greater than 9"
+        },
+        {
+          "heading": "Example",
+          "paragraphs": ["Or even easier:"],
+          "example": "println(10 > 9) // Returns true, because 10 is greater than 9"
+        },
+        {
+          "heading": "Equal To Operator (==)",
+          "paragraphs": [
+            "In the examples below, we use the equal to (==) operator to evaluate an expression:"
+          ],
+          "examples": [
+            "val x = 10;\nprintln(x == 10); // Returns true, because the value of x is equal to 10",
+            "println(10 == 15); // Returns false, because 10 is not equal to 15"
+          ]
+        },
+        {
+          "heading": "Note",
+          "paragraphs": [
+            "The Boolean value of an expression is the basis for all Kotlin comparisons and conditions.",
+            "You will learn more about conditions in the next chapter."
+          ]
+        }
+      ]
+    },
+    "if-else": {
+      "title": "Kotlin Conditions and If..Else",
+      "paragraphs": [
+        "You already know that Kotlin supports familiar comparison conditions from mathematics, such as:",
+        "Less than: a < b",
+        "Less than or equal to: a <= b",
+        "Greater than: a > b",
+        "Greater than or equal to: a >= b",
+        "Equal to a == b",
+        "Not Equal to: a != b",
+        "You can use these conditions to perform different actions for different decisions.",
+        "Kotlin has the following conditionals:"
+      ],
+      "sections": [
+        {
+          "heading": "Conditionals",
+          "list": [
+            "Use if to specify a block of code to be executed, if a specified condition is true",
+            "Use else to specify a block of code to be executed, if the same condition is false",
+            "Use else if to specify a new condition to test, if the first condition is false",
+            "Use when to specify many alternative blocks of code to be executed"
+          ]
+        },
+        {
+          "heading": "Note",
+          "paragraphs": [
+            "Unlike Java, if..else can be used as a statement or as an expression (to assign a value to a variable) in Kotlin."
+          ]
+        },
+        {
+          "heading": "Kotlin if",
+          "paragraphs": [
+            "Use if to specify a block of code to be executed if a condition is true."
+          ],
+          "syntax": "if (condition) {\n  // block of code to be executed if the condition is true\n}",
+          "note": "Note that if is in lowercase letters. Uppercase letters (If or IF) will generate an error.",
+          "examples": [
+            "if (20 > 18) {\n  println(\"20 is greater than 18\")\n}",
+            "val x = 20\nval y = 18\nif (x > y) {\n  println(\"x is greater than y\")\n}"
+          ]
+        },
+        {
+          "heading": "Example explained",
+          "paragraphs": [
+            "In the example above we use two variables, x and y, to test whether x is greater than y (using the > operator).",
+            "As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that \"x is greater than y\"."
+          ]
+        },
+        {
+          "heading": "Kotlin else",
+          "paragraphs": [
+            "Use else to specify a block of code to be executed if the condition is false."
+          ],
+          "syntax": "if (condition) {\n  // block of code to be executed if the condition is true\n} else {\n  // block of code to be executed if the condition is false\n}",
+          "example": "val time = 20\nif (time < 18) {\n  println(\"Good day.\")\n} else {\n  println(\"Good evening.\")\n}\n// Outputs \"Good evening.\""
+        },
+        {
+          "heading": "Example explained",
+          "paragraphs": [
+            "In the example above, time (20) is greater than 18, so the condition is false, so we move on to the else condition and print to the screen \"Good evening\".",
+            "If the time was less than 18, the program would print \"Good day\"."
+          ]
+        },
+        {
+          "heading": "Kotlin else if",
+          "paragraphs": [
+            "Use else if to specify a new condition if the first condition is false."
+          ],
+          "syntax": "if (condition1) {\n  // block of code to be executed if condition1 is true\n} else if (condition2) {\n  // block of code to be executed if the condition1 is false and condition2 is true\n} else {\n  // block of code to be executed if the condition1 is false and condition2 is false\n}",
+          "example": "val time = 22\nif (time < 10) {\n  println(\"Good morning.\")\n} else if (time < 20) {\n  println(\"Good day.\")\n} else {\n  println(\"Good evening.\")\n}\n// Outputs \"Good evening.\""
+        },
+        {
+          "heading": "Example explained (else if)",
+          "paragraphs": [
+            "In the example above, time (22) is greater than 10, so the first condition is false.",
+            "The next condition, in the else if statement, is also false, so we move on to the else condition since condition1 and condition2 is both false - and print to the screen \"Good evening\".",
+            "However, if the time was 14, our program would print \"Good day.\""
+          ]
+        },
+        {
+          "heading": "Kotlin If..Else Expressions",
+          "paragraphs": [
+            "In Kotlin, you can also use if..else statements as expressions (assign a value to a variable and return it):"
+          ],
+          "example": "val time = 20\nval greeting = if (time < 18) {\n  \"Good day.\"\n} else {\n  \"Good evening.\"\n}\nprintln(greeting)",
+          "note": "When using if as an expression, you must also include else (required)."
+        },
+        {
+          "heading": "Omitting Curly Braces",
+          "paragraphs": [
+            "You can ommit the curly braces {} when if has only one statement:"
+          ],
+          "example": "fun main() {\n  val time = 20\n  val greeting = if (time < 18) \"Good day.\" else \"Good evening.\"\n  println(greeting)\n}",
+          "tip": "This example is similar to the \"ternary operator\" (short hand if...else) in Java."
+        }
+      ]
+    },
+    "when": {
+      "title": "Kotlin when",
+      "paragraphs": [
+        "Instead of writing many if..else expressions, you can use the when expression, which is much easier to read.",
+        "It is used to select one of many code blocks to be executed:"
+      ],
+      "sections": [
+        {
+          "heading": "Example",
+          "paragraphs": [
+            "Use the weekday number to calculate the weekday name:"
+          ],
+          "example": "val day = 4\n\nval result = when (day) {\n  1 -> \"Monday\"\n  2 -> \"Tuesday\"\n  3 -> \"Wednesday\"\n  4 -> \"Thursday\"\n  5 -> \"Friday\"\n  6 -> \"Saturday\"\n  7 -> \"Sunday\"\n  else -> \"Invalid day.\"\n}\nprintln(result)\n\n// Outputs \"Thursday\" (day 4)"
+        },
+        {
+          "heading": "Note",
+          "paragraphs": [
+            "The when expression is similar to the switch statement in Java."
+          ]
+        },
+        {
+          "heading": "This is how it works",
+          "list": [
+            "The when variable (day) is evaluated once",
+            "The value of the day variable is compared with the values of each \"branch\"",
+            "Each branch starts with a value, followed by an arrow (->) and a result",
+            "If there is a match, the associated block of code is executed",
+            "else is used to specify some code to run if there is no match",
+            "In the example above, the value of day is 4, meaning \"Thursday\" will be printed"
+          ]
+        }
+      ]
+    },
+    "while-loop": {
+      "title": "Loops",
+      "paragraphs": [
+        "Loops can execute a block of code as long as a specified condition is reached.",
+        "Loops are handy because they save time, reduce errors, and they make code more readable."
+      ],
+      "sections": [
+        {
+          "heading": "Kotlin While Loop",
+          "paragraphs": [
+            "The while loop loops through a block of code as long as a specified condition is true:"
+          ],
+          "syntax": "while (condition) {\n  // code block to be executed\n}",
+          "paragraphs_after": [
+            "In the example below, the code in the loop will run, over and over again, as long as the counter variable (i) is less than 5:"
+          ],
+          "example": "var i = 0\nwhile (i < 5) {\n  println(i)\n  i++\n}",
+          "note": "Do not forget to increase the variable used in the condition, otherwise the loop will never end."
+        },
+        {
+          "heading": "The Do..While Loop",
+          "paragraphs": [
+            "The do..while loop is a variant of the while loop.",
+            "This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true."
+          ],
+          "syntax": "do {\n  // code block to be executed\n}\nwhile (condition);",
+          "paragraphs_after": [
+            "The example below uses a do/while loop.",
+            "The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:"
+          ],
+          "example": "var i = 0\ndo {\n  println(i)\n  i++\n}\nwhile (i < 5)",
+          "note": "Do not forget to increase the variable used in the condition, otherwise the loop will never end!"
+        }
+      ]
+    },
+    "break-continue": {
+      "title": "Kotlin Break and Continue",
+      "sections": [
+        {
+          "heading": "Kotlin Break",
+          "paragraphs": [
+            "The break statement is used to jump out of a loop.",
+            "This example jumps out of the loop when i is equal to 4:"
+          ],
+          "example": "var i = 0\nwhile (i < 10) {\n  println(i)\n  i++\n  if (i == 4) {\n    break\n  }\n}"
+        },
+        {
+          "heading": "Kotlin Continue",
+          "paragraphs": [
+            "The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.",
+            "This example skips the value of 4:"
+          ],
+          "example": "var i = 0\nwhile (i < 10) {\n  if (i == 4) {\n    i++\n    continue\n  }\n  println(i)\n  i++\n}"
+        }
+      ]
+    },
+    "arrays": {
+      "title": "Kotlin Arrays",
+      "paragraphs": [
+        "Arrays are used to store multiple values in a single variable, instead of creating separate variables for each value.",
+        "To create an array, use the arrayOf() function, and place the values in a comma-separated list inside it:"
+      ],
+      "sections": [
+        {
+          "heading": "Create an Array",
+          "example": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\")"
+        },
+        {
+          "heading": "Access the Elements of an Array",
+          "paragraphs": [
+            "You can access an array element by referring to the index number, inside square brackets.",
+            "In this example, we access the value of the first element in cars:"
+          ],
+          "example": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\")\nprintln(cars[0])\n// Outputs Volvo",
+          "note": "Just like with Strings, Array indexes start with 0: [0] is the first element. [1] is the second element, etc."
+        },
+        {
+          "heading": "Change an Array Element",
+          "paragraphs": [
+            "To change the value of a specific element, refer to the index number:"
+          ],
+          "examples": [
+            "cars[0] = \"Opel\"",
+            "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\")\ncars[0] = \"Opel\"\nprintln(cars[0])\n// Now outputs Opel instead of Volvo"
+          ]
+        },
+        {
+          "heading": "Array Length / Size",
+          "paragraphs": [
+            "To find out how many elements an array have, use the size property:"
+          ],
+          "example": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\")\nprintln(cars.size)\n// Outputs 4"
+        },
+        {
+          "heading": "Check if an Element Exists",
+          "paragraphs": [
+            "You can use the in operator to check if an element exists in an array:"
+          ],
+          "example": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\")\nif (\"Volvo\" in cars) {\n  println(\"It exists!\")\n} else {\n  println(\"It does not exist.\")\n}"
+        },
+        {
+          "heading": "Loop Through an Array",
+          "paragraphs": [
+            "Often when you work with arrays, you need to loop through all of the elements.",
+            "You can loop through the array elements with the for loop, which you will learn even more about in the next chapter.",
+            "The following example outputs all elements in the cars array:"
+          ],
+          "example": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\")\nfor (x in cars) {\n  println(x)\n}"
+        }
+      ]
+    },
+    "for-loop": {
+      "title": "Kotlin For Loop",
+      "paragraphs": [
+        "Often when you work with arrays, you need to loop through all of the elements.",
+        "To loop through array elements, use the for loop together with the in operator:"
+      ],
+      "sections": [
+        {
+          "heading": "Example",
+          "paragraphs": ["Output all elements in the cars array:"],
+          "example": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\")\nfor (x in cars) {\n  println(x)\n}"
+        },
+        {
+          "heading": "Loop Through Different Arrays",
+          "paragraphs": [
+            "You can loop through all kinds of arrays. In the example above, we used an array of strings.",
+            "In the example below, we loop through an array of integers:"
+          ],
+          "example": "val nums = arrayOf(1, 5, 10, 15, 20)\nfor (x in nums) {\n  println(x)\n}"
+        },
+        {
+          "heading": "Traditional For Loop",
+          "paragraphs": [
+            "Unlike Java and other programming languages, there is no traditional for loop in Kotlin.",
+            "In Kotlin, the for loop is used to loop through arrays, ranges, and other things that contains a countable number of values.",
+            "You will learn more about ranges in the next chapter - which will create a range of values."
+          ]
+        }
+      ]
+    },
+    "ranges": {
+      "title": "Kotlin Ranges",
+      "paragraphs": [
+        "With the for loop, you can also create ranges of values with \"..\":"
+      ],
+      "sections": [
+        {
+          "heading": "Example",
+          "paragraphs": ["Print the whole alphabet:"],
+          "example": "for (chars in 'a'..'x') {\n  println(chars)\n}"
+        },
+        {
+          "heading": "Ranges of Numbers",
+          "paragraphs": ["You can also create ranges of numbers:"],
+          "example": "for (nums in 5..15) {\n  println(nums)\n}",
+          "note": "The first and last value is included in the range."
+        },
+        {
+          "heading": "Check if a Value Exists",
+          "paragraphs": [
+            "You can also use the in operator to check if a value exists in a range:"
+          ],
+          "examples": [
+            "val nums = arrayOf(2, 4, 6, 8)\nif (2 in nums) {\n  println(\"It exists!\")\n} else {\n  println(\"It does not exist.\")\n}",
+            "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\")\nif (\"Volvo\" in cars) {\n  println(\"It exists!\")\n} else {\n  println(\"It does not exist.\")\n}"
+          ]
+        },
+        {
+          "heading": "Break or Continue a Range",
+          "paragraphs": [
+            "You can also use the break and continue keywords in a range/for loop:"
+          ],
+          "examples": [
+            "for (nums in 5..15) {\n  if (nums == 10) {\n    break\n  }\n  println(nums)\n}",
+            "for (nums in 5..15) {\n  if (nums == 10) {\n    continue\n  }\n  println(nums)\n}"
+          ]
+        }
+      ]
+    },
+    "functions": {
+      "title": "Kotlin Functions",
+      "paragraphs": [
+        "A function is a block of code which only runs when it is called.",
+        "You can pass data, known as parameters, into a function.",
+        "Functions are used to perform certain actions, and they are also known as methods."
+      ],
+      "sections": [
+        {
+          "heading": "Predefined Functions",
+          "paragraphs": [
+            "So it turns out you already know what a function is. You have been using it the whole time through this tutorial!",
+            "For example, println() is a function. It is used to output/print text to the screen:"
+          ],
+          "example": "fun main() {\n  println(\"Hello World\")\n}"
+        },
+        {
+          "heading": "Create Your Own Functions",
+          "paragraphs": [
+            "To create your own function, use the fun keyword, and write the name of the function, followed by parantheses ():",
+            "Create a function named \"myFunction\" that should output some text:"
+          ],
+          "example": "fun myFunction() {\n  println(\"I just got executed!\")\n}"
+        },
+        {
+          "heading": "Call a Function",
+          "paragraphs": [
+            "Now that you have created a function, you can execute it by calling it.",
+            "To call a function in Kotlin, write the name of the function followed by two parantheses ().",
+            "In the following example, myFunction() will print some text (the action), when it is called:"
+          ],
+          "example": "fun main() {\n  myFunction() // Call myFunction\n}\n\n// Outputs \"I just got executed!\""
+        },
+        {
+          "heading": "Call a Function Multiple Times",
+          "paragraphs": [
+            "A function can be called multiple times, if you want:"
+          ],
+          "example": "fun main() {\n  myFunction()\n  myFunction()\n  myFunction()\n}\n\n// I just got executed!\n// I just got executed!\n// I just got executed!"
+        },
+        {
+          "heading": "Function Parameters",
+          "paragraphs": [
+            "Information can be passed to functions as parameter.",
+            "Parameters are specified after the function name, inside the parentheses.",
+            "You can add as many parameters as you want, just separate them with a comma.",
+            "Just note that you must specify the type of each parameter (Int, String, etc).",
+            "The following example has a function that takes a String called fname as parameter."
+          ],
+          "example": "fun myFunction(fname: String) {\n  println(fname + \" Doe\")\n}\n\nfun main() {\n  myFunction(\"John\")\n  myFunction(\"Jane\")\n  myFunction(\"George\")\n}\n  \n// John Doe\n// Jane Doe\n// George Doe"
+        },
+        {
+          "heading": "Parameters vs Arguments",
+          "paragraphs": [
+            "When a parameter is passed to the function, it is called an argument.",
+            "So, from the example above: fname is a parameter, while John, Jane and George are arguments."
+          ]
+        },
+        {
+          "heading": "Multiple Parameters",
+          "paragraphs": ["You can have as many parameters as you like:"],
+          "example": "fun myFunction(fname: String, age: Int) {\n  println(fname + \" is \" + age)\n}\n\nfun main() {\n  myFunction(\"John\", 35)\n  myFunction(\"Jane\", 32)\n  myFunction(\"George\", 15)\n}\n\n// John is 35\n// Jane is 32\n// George is 15",
+          "note": "When working with multiple parameters, the function call must have the same number of arguments as there are parameters, and the arguments must be passed in the same order."
+        },
+        {
+          "heading": "Return Values",
+          "paragraphs": [
+            "In the examples above, we used functions to output a value.",
+            "In the following example, we will use a function to return a value and assign it to a variable.",
+            "To return a value, use the return keyword, and specify the return type after the function's parantheses (Int in this example):",
+            "A function with one Int parameter, and Int return type:"
+          ],
+          "example": "fun myFunction(x: Int): Int {\n  return (x + 5)\n}\n\nfun main() {\n  var result = myFunction(3)\n  println(result)\n}\n\n// 8 (3 + 5)"
+        },
+        {
+          "heading": "Return Values with Two Parameters",
+          "paragraphs": [
+            "Using two parameters:",
+            "A function with two Int parameters, and Int return type:"
+          ],
+          "example": "fun myFunction(x: Int, y: Int): Int {\n  return (x + y)\n}\n\nfun main() {\n  var result = myFunction(3, 5)\n  println(result)\n}\n\n// 8 (3 + 5)"
+        },
+        {
+          "heading": "Shorter Syntax for Return Values",
+          "paragraphs": [
+            "There is also a shorter syntax for returning values.",
+            "You can use the = operator instead of return without specifying the return type.",
+            "Kotlin is smart enough to automatically find out what it is:"
+          ],
+          "example": "fun myFunction(x: Int, y: Int) = x + y\n\nfun main() {\n  var result = myFunction(3, 5)\n  println(result)\n}\n\n// 8 (3 + 5)"
+        }
+      ]
+    },
+    "oop": {
+      "title": "Kotlin - What is OOP?",
+      "paragraphs": [
+        "OOP stands for Object-Oriented Programming.",
+        "Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.",
+        "Object-oriented programming has several advantages over procedural programming:"
+      ],
+      "sections": [
+        {
+          "heading": "Advantages of OOP",
+          "list": [
+            "OOP is faster and easier to execute",
+            "OOP provides a clear structure for the programs",
+            "OOP helps to keep the Kotlin code DRY \"Don't Repeat Yourself\", and makes the code easier to maintain, modify and debug",
+            "OOP makes it possible to create full reusable applications with less code and shorter development time"
+          ]
+        },
+        {
+          "heading": "Tip",
+          "paragraphs": [
+            "The \"Don't Repeat Yourself\" (DRY) principle is about reducing the repetition of code.",
+            "You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it."
+          ]
+        },
+        {
+          "heading": "Kotlin - What are Classes and Objects?",
+          "paragraphs": [
+            "Classes and objects are the two main aspects of object-oriented programming.",
+            "Look at the following illustration to see the difference between class and objects:"
+          ]
+        },
+        {
+          "heading": "Example (Class and Objects)",
+          "table": {
+            "headers": ["Class", "Objects"],
+            "rows": [
+              ["Fruit", "Apple, Banana, Mango"],
+              ["Car", "Volvo, Audi, Toyota"]
+            ]
+          }
+        },
+        {
+          "heading": "Explanation",
+          "paragraphs": [
+            "So, a class is a template for objects, and an object is an instance of a class.",
+            "When the individual objects are created, they inherit all the variables and methods from the class.",
+            "You will learn much more about classes and objects in the next chapter."
+          ]
+        }
+      ]
+    },
+    "classes_objects": {
+      "title": "Kotlin Classes/Objects",
+      "paragraphs": [
+        "Everything in Kotlin is associated with classes and objects, along with its properties and functions.",
+        "For example: in real life, a car is an object. The car has properties, such as brand, weight and color, and functions, such as drive and brake.",
+        "A Class is like an object constructor, or a \"blueprint\" for creating objects."
+      ],
+      "sections": [
+        {
+          "heading": "Create a Class",
+          "paragraphs": [
+            "To create a class, use the class keyword, and specify the name of the class:"
+          ],
+          "example": {
+            "title": "Create a Car class along with some properties (brand, model and year)",
+            "code": "class Car {\n  var brand = \"\"\n  var model = \"\"\n  var year = 0\n}"
+          },
+          "notes": [
+            "A property is basically a variable that belongs to the class.",
+            "Good to Know: It is considered good practice to start the name of a class with an upper case letter, for better organization."
+          ]
+        },
+        {
+          "heading": "Create an Object",
+          "paragraphs": [
+            "Now we can use the class named Car to create objects.",
+            "In the example below, we create an object of Car called c1, and then we access the properties of c1 by using the dot syntax (.), just like we did to access array and string properties:"
+          ],
+          "example": {
+            "title": "Create object and access properties",
+            "code": "// Create a c1 object of the Car class\nval c1 = Car()\n\n// Access the properties and add some values to it\nc1.brand = \"Ford\"\nc1.model = \"Mustang\"\nc1.year = 1969\n\nprintln(c1.brand)   // Outputs Ford\nprintln(c1.model)   // Outputs Mustang\nprintln(c1.year)    // Outputs 1969"
+          }
+        },
+        {
+          "heading": "Multiple Objects",
+          "paragraphs": ["You can create multiple objects of one class:"],
+          "example": {
+            "title": "Create multiple objects from the same class",
+            "code": "val c1 = Car()\nc1.brand = \"Ford\"\nc1.model = \"Mustang\"\nc1.year = 1969\n\nval c2 = Car()\nc2.brand = \"BMW\"\nc2.model = \"X5\"\nc2.year = 1999\n\nprintln(c1.brand)  // Ford\nprintln(c2.brand)  // BMW"
+          }
+        }
+      ]
+    },
+    "constructors": {
+      "title": "Kotlin Constructor",
+      "paragraphs": [
+        "In the previous chapter, we created an object of a class, and specified the properties inside the class.",
+        "In Kotlin, there's a faster way of doing this, by using a constructor.",
+        "A constructor is like a special function, and it is defined by using two parentheses () after the class name.",
+        "You can specify the properties inside of the parentheses (like passing parameters into a regular function).",
+        "The constructor will initialize the properties when you create an object of a class.",
+        "Just remember to specify the type of the property/variable."
+      ],
+      "sections": [
+        {
+          "heading": "Without Constructor",
+          "paragraphs": [
+            "This is how it looks when you define properties inside the class and set them after creating the object:"
+          ],
+          "example": {
+            "title": "Create class and set values later",
+            "code": "class Car {\n  var brand = \"\"\n  var model = \"\"\n  var year = 0\n}\n\nfun main() {\n  val c1 = Car()\n  c1.brand = \"Ford\"\n  c1.model = \"Mustang\"\n  c1.year = 1969\n}"
+          }
+        },
+        {
+          "heading": "Using a Constructor",
+          "paragraphs": [
+            "With a constructor, you can pass the values directly when creating the object:"
+          ],
+          "example": {
+            "title": "Class with constructor",
+            "code": "class Car(var brand: String, var model: String, var year: Int)\n\nfun main() {\n  val c1 = Car(\"Ford\", \"Mustang\", 1969)\n}"
+          }
+        },
+        {
+          "heading": "Multiple Objects",
+          "paragraphs": [
+            "Now it's even easier to create multiple objects of the same class:"
+          ],
+          "example": {
+            "title": "Create multiple objects using constructor",
+            "code": "class Car(var brand: String, var model: String, var year: Int)\n\nfun main() {\n  val c1 = Car(\"Ford\", \"Mustang\", 1969)\n  val c2 = Car(\"BMW\", \"X5\", 1999)\n  val c3 = Car(\"Tesla\", \"Model S\", 2020)\n}"
+          }
+        }
+      ]
+    },
+    "class_functions": {
+      "title": "Kotlin Class Functions",
+      "paragraphs": [
+        "You can also use functions inside a class, to perform certain actions.",
+        "Tip: When a function is declared inside a class, it is known as a class function, or member function.",
+        "Note: When an object of the class is created, it has access to all of the class functions."
+      ],
+      "sections": [
+        {
+          "heading": "Class Function Example",
+          "paragraphs": [
+            "Create a drive() function inside the Car class and call it:"
+          ],
+          "example": {
+            "title": "drive() inside a class",
+            "code": "class Car(var brand: String, var model: String, var year: Int) {\n  // Class function\n  fun drive() {\n    println(\"Wrooom!\")\n  }\n}\n\nfun main() {\n  val c1 = Car(\"Ford\", \"Mustang\", 1969)\n\n  // Call the function\n  c1.drive()\n}"
+          }
+        },
+        {
+          "heading": "Class Function Parameters",
+          "paragraphs": [
+            "Just like with regular functions, you can pass parameters to a class function.",
+            "Create two functions: drive() and speed(), and pass parameters to the speed() function:"
+          ],
+          "example": {
+            "title": "Function with parameters",
+            "code": "class Car(var brand: String, var model: String, var year: Int) {\n  // Class function\n  fun drive() {\n    println(\"Wrooom!\")\n  }\n\n  // Class function with parameters\n  fun speed(maxSpeed: Int) {\n    println(\"Max speed is: \" + maxSpeed)\n  }\n}\n\nfun main() {\n  val c1 = Car(\"Ford\", \"Mustang\", 1969)\n\n  // Call the functions\n  c1.drive()\n  c1.speed(200)\n}"
+          }
+        }
+      ]
+    },
+    "inheritance": {
+      "title": "Kotlin Inheritance (Subclass and Superclass)",
+      "paragraphs": [
+        "In Kotlin, it is possible to inherit class properties and functions from one class to another.",
+        "We group the \"inheritance concept\" into two categories:",
+        "subclass (child) - the class that inherits from another class",
+        "superclass (parent) - the class being inherited from",
+        "In the example below, MyChildClass (subclass) inherits the properties from the MyParentClass class (superclass)."
+      ],
+      "sections": [
+        {
+          "heading": "Example",
+          "example": {
+            "title": "Subclass and Superclass",
+            "code": "// Superclass\nopen class MyParentClass {\n  val x = 5\n}\n\n// Subclass\nclass MyChildClass: MyParentClass() {\n  fun myFunction() {\n    println(x) // x is now inherited from the superclass\n  }\n}\n\n// Create an object of MyChildClass and call myFunction\nfun main() {\n  val myObj = MyChildClass()\n  myObj.myFunction()\n}"
+          }
+        },
+        {
+          "heading": "Example Explained",
+          "paragraphs": [
+            "Use the open keyword in front of the superclass/parent, to make this the class other classes should inherit properties and functions from.",
+            "To inherit from a class, specify the name of the subclass, followed by a colon :, and then the name of the superclass."
+          ]
+        },
+        {
+          "heading": "Why And When To Use \"Inheritance\"?",
+          "paragraphs": [
+            "It is useful for code reusability: reuse properties and functions of an existing class when you create a new class."
+          ]
+        }
+      ]
+    }
+  }
+}

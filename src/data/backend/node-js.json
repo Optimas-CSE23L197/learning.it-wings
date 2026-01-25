@@ -1,0 +1,2482 @@
+{
+  "course": {
+    "id": "nodejs",
+    "title": "Node.js"
+  },
+  "sections": [
+    {
+      "title": "Node.js Tutorial",
+      "lessons": [
+        { "id": "home", "title": "Node HOME" },
+        { "id": "intro", "title": "Node Intro" },
+        { "id": "get-started", "title": "Node Get Started" },
+        { "id": "requirements", "title": "Node JS Requirements" },
+        { "id": "vs-browser", "title": "Node.js vs Browser" },
+        { "id": "cmd-line", "title": "Node Cmd Line" },
+        { "id": "v8", "title": "Node V8 Engine" },
+        { "id": "architecture", "title": "Node Architecture" },
+        { "id": "event-loop", "title": "Node Event Loop" }
+      ]
+    },
+    {
+      "title": "Asynchronous",
+      "lessons": [
+        { "id": "async", "title": "Node Async" },
+        { "id": "promises", "title": "Node Promises" },
+        { "id": "async-await", "title": "Node Async/Await" },
+        { "id": "error-handling", "title": "Node Errors Handling" }
+      ]
+    },
+    {
+      "title": "Module Basics",
+      "lessons": [
+        { "id": "modules", "title": "Node Modules" },
+        { "id": "es-modules", "title": "Node ES Modules" },
+        { "id": "npm", "title": "Node NPM" },
+        { "id": "package-json", "title": "Node package.json" },
+        { "id": "npm-scripts", "title": "Node NPM Scripts" },
+        { "id": "manage-dep", "title": "Node Manage Dep" },
+        { "id": "publish", "title": "Node Publish Packages" }
+      ]
+    },
+    {
+      "title": "Core Modules",
+      "lessons": [
+        { "id": "http", "title": "HTTP Module" },
+        { "id": "https", "title": "HTTPS Module" },
+        { "id": "fs", "title": "File System (fs)" },
+        { "id": "path", "title": "Path Module" },
+        { "id": "os", "title": "OS Module" },
+        { "id": "url", "title": "URL Module" },
+        { "id": "events", "title": "Events Module" },
+        { "id": "stream", "title": "Stream Module" },
+        { "id": "buffer", "title": "Buffer Module" },
+        { "id": "crypto", "title": "Crypto Module" },
+        { "id": "timers", "title": "Timers Module" },
+        { "id": "dns", "title": "DNS Module" },
+        { "id": "assert", "title": "Assert Module" },
+        { "id": "util", "title": "Util Module" },
+        { "id": "readline", "title": "Readline Module" }
+      ]
+    },
+    {
+      "title": "JS & TS Features",
+      "lessons": [
+        { "id": "es6", "title": "Node ES6+" },
+        { "id": "process", "title": "Node Process" },
+        { "id": "typescript", "title": "Node TypeScript" },
+        { "id": "adv-typescript", "title": "Node Adv. TypeScript" },
+        { "id": "lint", "title": "Node Lint & Formatting" }
+      ]
+    },
+    {
+      "title": "Building Applications",
+      "lessons": [
+        { "id": "frameworks", "title": "Node Frameworks" },
+        { "id": "express", "title": "Express.js" },
+        { "id": "middleware", "title": "Middleware Concept" },
+        { "id": "rest-api", "title": "REST API Design" },
+        { "id": "auth", "title": "API Authentication" },
+        { "id": "frontend", "title": "Node.js with Frontend" }
+      ]
+    },
+    {
+      "title": "Advanced Communication",
+      "lessons": [
+        { "id": "graphql", "title": "GraphQL" },
+        { "id": "socketio", "title": "Socket.IO" },
+        { "id": "websockets", "title": "WebSockets" }
+      ]
+    },
+    {
+      "title": "Testing & Debugging",
+      "lessons": [
+        { "id": "adv-debugging", "title": "Node Adv. Debugging" },
+        { "id": "testing", "title": "Node Testing Apps" },
+        { "id": "test-frameworks", "title": "Node Test Frameworks" },
+        { "id": "test-runner", "title": "Node Test Runner" }
+      ]
+    },
+    {
+      "title": "Node.js Deployment",
+      "lessons": [
+        { "id": "env", "title": "Node Env Variables" },
+        { "id": "dev-prod", "title": "Node Dev vs Prod" },
+        { "id": "ci-cd", "title": "Node CI/CD" },
+        { "id": "security", "title": "Node Security" },
+        { "id": "deployment", "title": "Node Deployment" }
+      ]
+    },
+    {
+      "title": "Performance & Scaling",
+      "lessons": [
+        { "id": "logging", "title": "Node Logging" },
+        { "id": "monitoring", "title": "Node Monitoring" },
+        { "id": "performance", "title": "Node Performance" },
+        { "id": "child-process", "title": "Child Process Module" },
+        { "id": "cluster", "title": "Cluster Module" },
+        { "id": "worker-threads", "title": "Worker Threads" }
+      ]
+    },
+    {
+      "title": "Node.js Advanced",
+      "lessons": [
+        { "id": "microservices", "title": "Microservices" },
+        { "id": "webassembly", "title": "Node WebAssembly" },
+        { "id": "http2", "title": "HTTP2 Module" },
+        { "id": "perf-hooks", "title": "Perf_hooks Module" },
+        { "id": "vm", "title": "VM Module" },
+        { "id": "tls", "title": "TLS/SSL Module" },
+        { "id": "net", "title": "Net Module" },
+        { "id": "zlib", "title": "Zlib Module" },
+        { "id": "real-world", "title": "Real-World Examples" }
+      ]
+    },
+    {
+      "title": "Hardware & IoT",
+      "lessons": [
+        { "id": "raspi-start", "title": "RasPi Get Started" },
+        { "id": "raspi-gpio", "title": "RasPi GPIO Introduction" },
+        { "id": "raspi-blink", "title": "RasPi Blinking LED" },
+        { "id": "raspi-button", "title": "RasPi LED & Pushbutton" },
+        { "id": "raspi-flow", "title": "RasPi Flowing LEDs" },
+        { "id": "raspi-ws", "title": "RasPi WebSocket" },
+        { "id": "raspi-rgb", "title": "RasPi RGB LED WebSocket" },
+        { "id": "raspi-components", "title": "RasPi Components" }
+      ]
+    }
+  ] ,
+  "content": {
+    "home": {
+      "title": "What is Node.js?",
+      "paragraphs": [
+        "Node.js is a free, open source tool that lets you run JavaScript outside the web browser.",
+        "With Node.js, you can build fast and scalable applications like web servers, APIs, tools, and more.",
+        "Node.js is designed to build efficient and high-performance applications."
+      ],
+      "sections": [
+        {
+          "heading": "What Can You Build With Node.js?",
+          "paragraphs": [
+            "Node.js uses an event-driven, non-blocking model.",
+            "It can handle many connections at once without waiting for one to finish before starting another.",
+            "This makes it great for real-time apps and high-traffic websites."
+          ],
+          "list": [
+            "Web servers and websites",
+            "REST APIs",
+            "Real-time apps (like chat)",
+            "Command-line tools",
+            "Working with files and databases",
+            "IoT and hardware control"
+          ]
+        },
+        {
+          "heading": "How to Run Node.js Code",
+          "paragraphs": [
+            "Save your code in a file, for example app.js, then run it in your terminal or command prompt with:"
+          ],
+          "example": "node app.js"
+        },
+        {
+          "heading": "Learning by Examples",
+          "paragraphs": [
+            "Node.js provides examples that show both the code and the result.",
+            "This helps in understanding how Node.js works in real scenarios."
+          ],
+          "example": "let http = require('http');\n\nhttp.createServer(function (req, res) {\n  res.writeHead(200, {'Content-Type': 'text/plain'});\n  res.end('Hello World!');\n}).listen(8080);"
+        },
+        {
+          "heading": "Examples in Command Line",
+          "paragraphs": [
+            "Some examples are better explained in the command line interface.",
+            "These examples display output directly in the terminal."
+          ],
+          "example": "console.log('This example is different!');\nconsole.log('The result is displayed in the Command Line Interface');"
+        },
+        {
+          "heading": "Node.js Built-in Modules",
+          "paragraphs": [
+            "Node.js comes with many built-in modules to help you work with files, servers, paths, and the operating system.",
+            "You can use them by importing them with require()."
+          ],
+          "example": "const os = require('os');\nconsole.log(os.platform());"
+        },
+        {
+          "heading": "What is npm?",
+          "paragraphs": [
+            "npm is the package manager for Node.js.",
+            "It helps you install and manage third-party packages to add more features to your applications."
+          ],
+          "example": "npm install express"
+        },
+        {
+          "heading": "Using a Package",
+          "paragraphs": [
+            "After installing a package, you can import and use it in your code."
+          ],
+          "example": "const express = require('express');\nconst app = express();\napp.get('/', (req, res) => res.send('Hello World!'));\napp.listen(8080);"
+        },
+        {
+          "heading": "Exercise",
+          "paragraphs": [
+            "Practice is important to master Node.js."
+          ],
+          "example": "node filename.js"
+        }
+      ]
+    },"intro": {
+      "title": "Node.js Introduction",
+      "paragraphs": [
+        "In this tutorial, you'll learn how to install and run Node.js.",
+        "You will understand core concepts like modules and the event loop.",
+        "You will learn how to build web servers, APIs, and work with databases and files.",
+        "You will also learn how to deploy Node.js applications."
+      ],
+      "sections": [
+        {
+          "heading": "What is Node.js?",
+          "paragraphs": [
+            "Node.js is a free, open-source JavaScript runtime that runs on Windows, Mac, Linux, and more.",
+            "It lets you execute JavaScript code outside of a web browser, enabling server-side development.",
+            "Built on Chrome's V8 JavaScript engine, Node.js is designed for building scalable network applications efficiently."
+          ],
+          "example": "console.log('Hello from Node.js!');"
+        },
+        {
+          "heading": "Why Node.js?",
+          "paragraphs": [
+            "Node.js excels at handling many simultaneous connections with minimal overhead.",
+            "Its non-blocking, event-driven architecture makes it highly efficient for I/O-heavy workloads."
+          ],
+          "list": [
+            "Real-time applications",
+            "APIs and microservices",
+            "Data streaming applications",
+            "Command-line tools",
+            "Server-side web applications"
+          ]
+        }
+      ]
+    } ,
+    "get-started": {
+      "title": "Node.js Get Started",
+      "paragraphs": [
+        "This section explains how to download, install, and run Node.js on your system.",
+        "You will also create your first Node.js server."
+      ],
+      "sections": [
+        {
+          "heading": "Download and Install Node.js",
+          "list": [
+            "Go to https://nodejs.org",
+            "Download the LTS (Long Term Support) version",
+            "Run the installer and follow the instructions"
+          ]
+        },
+        {
+          "heading": "Verify Installation",
+          "paragraphs": [
+            "After installing Node.js, open your terminal or command prompt and type:"
+          ],
+          "example": "node --version\nnpm --version"
+        },
+        {
+          "heading": "Troubleshooting",
+          "list": [
+            "Restart your terminal or command prompt",
+            "Make sure Node.js was added to your system PATH",
+            "On Windows, restart your computer if needed"
+          ]
+        },
+        {
+          "heading": "Create Your First Server",
+          "paragraphs": [
+            "Once Node.js is installed, create a file called myfirst.js.",
+            "Add the following code to create a simple web server."
+          ],
+          "example": "let http = require('http');\nhttp.createServer(function (req, res) {\n  res.writeHead(200, {'Content-Type': 'text/html'});\n  res.end('Hello World!');\n}).listen(8080);"
+        },
+        {
+          "heading": "Run the Server",
+          "paragraphs": [
+            "Navigate to the folder that contains myfirst.js.",
+            "Start the server using the following command:"
+          ],
+          "example": "node myfirst.js"
+        },
+        {
+          "heading": "View in Browser",
+          "paragraphs": [
+            "Open your browser and go to:",
+            "http://localhost:8080",
+            "You should see the message: Hello World!"
+          ]
+        },
+        {
+          "heading": "Command Line Interface",
+          "paragraphs": [
+            "Node.js files must be initiated from the command line interface.",
+            "On Windows, open Command Prompt or type cmd in search.",
+            "On Mac or Linux, use the Terminal."
+          ]
+        }
+      ]
+    } ,
+    "requirements": {
+  "title": "Node.js JavaScript Requirements",
+  "paragraphs": [
+    "Before starting with Node.js, you should have a basic understanding of JavaScript.",
+    "This section covers the essential JavaScript concepts needed for Node.js development.",
+    "You can run all examples in a browser console or in a .js file using Node.js."
+  ],
+  "sections": [
+    {
+      "heading": "JavaScript Fundamentals",
+      "paragraphs": [
+        "These are the key JavaScript concepts you should know before learning Node.js."
+      ],
+      "list": [
+        "Variables",
+        "Functions",
+        "Objects",
+        "Arrays",
+        "Asynchronous programming (callbacks, promises, async/await)",
+        "ES6+ features"
+      ]
+    },
+    {
+      "heading": "Variables and Functions",
+      "paragraphs": [
+        "JavaScript allows you to declare variables using let, const, and var.",
+        "Functions can be defined using traditional syntax or arrow functions."
+      ],
+      "example": "let name = 'Node.js';\nconst version = 20;\n\nfunction greet(user) {\n  return `Hello, ${user}!`;\n}\n\nconst add = (a, b) => a + b;\n\nconsole.log(greet('Developer'));\nconsole.log(add(5, 3));"
+    },
+    {
+      "heading": "Objects and Arrays",
+      "paragraphs": [
+        "Objects store data in key-value pairs.",
+        "Arrays store multiple values in a list."
+      ],
+      "example": "const user = {\n  name: 'Alice',\n  age: 25,\n  greet() {\n    console.log(`Hi, I'm ${this.name}`);\n  }\n};\n\nconst colors = ['red', 'green', 'blue'];\n\ncolors.forEach(color => console.log(color));\nconst lengths = colors.map(color => color.length);"
+    },
+    {
+      "heading": "Asynchronous JavaScript",
+      "paragraphs": [
+        "Node.js heavily relies on asynchronous programming.",
+        "It allows tasks like file reading and API calls to run without blocking the program."
+      ],
+      "example": "function fetchData(callback) {\n  setTimeout(() => {\n    callback('Data received!');\n  }, 1000);\n}\n\nconst fetchDataPromise = () => {\n  return new Promise((resolve) => {\n    setTimeout(() => resolve('Promise resolved!'), 1000);\n  });\n};\n\nasync function getData() {\n  const result = await fetchDataPromise();\n  console.log(result);\n}\n\ngetData();"
+    },
+    {
+      "heading": "Destructuring and Template Literals",
+      "paragraphs": [
+        "Destructuring allows extracting values from objects easily.",
+        "Template literals make string formatting simpler."
+      ],
+      "example": "const { name } = user;\nconsole.log(`Hello, ${name}!`);"
+    },
+    {
+      "heading": "Key JavaScript Concepts",
+      "list": [
+        "Variables: let, const, var",
+        "Functions: regular and arrow functions",
+        "Objects & Arrays",
+        "Modules: require() and import/export",
+        "Error Handling: try/catch blocks"
+      ]
+    },
+    {
+      "heading": "Node.js Feature Support",
+      "paragraphs": [
+        "Modern Node.js supports most ES6+ JavaScript features."
+      ],
+      "list": [
+        "let / const: Supported",
+        "Arrow Functions: Supported",
+        "Destructuring: Supported",
+        "Template Literals: Supported",
+        "Promises: Supported",
+        "Async/Await: Supported"
+      ]
+    }
+  ]
+} ,
+"vs-browser": {
+  "title": "Node.js vs Browser",
+  "paragraphs": [
+    "Node.js and browsers both run JavaScript, but they operate in very different environments.",
+    "Node.js is designed for server-side development, while browsers are used for client-side applications.",
+    "Each environment provides different APIs, security models, and capabilities."
+  ],
+  "sections": [
+    {
+      "heading": "Key Differences",
+      "paragraphs": [
+        "Node.js provides APIs for file system access, networking, and operating system tasks.",
+        "Browsers provide APIs for DOM manipulation, user interface, and web interactions."
+      ],
+      "list": [
+        "APIs: Node.js has file system and OS APIs; browsers have DOM and UI APIs",
+        "Global Objects: Node.js uses global; browsers use window or self",
+        "Modules: Node.js uses CommonJS and ES modules; browsers use ES modules or script tags",
+        "Security: Browsers are sandboxed; Node.js has full system access",
+        "Event Loop: Both use event loop, but Node.js has extra system APIs",
+        "Environment Variables: Node.js can use process.env; browsers cannot",
+        "Package Management: Node.js uses npm/yarn; browsers use CDNs or bundlers"
+      ]
+    },
+    {
+      "heading": "Global Objects",
+      "paragraphs": [
+        "The global object is different in Node.js and browsers."
+      ],
+      "example": "// Node.js\nglobal.mylet = 42;\nconsole.log(global.mylet);\n\n// Browser\nwindow.mylet = 42;\nconsole.log(window.mylet);"
+    },
+    {
+      "heading": "File Access",
+      "paragraphs": [
+        "Node.js can directly access the file system.",
+        "Browsers cannot access files directly for security reasons."
+      ],
+      "example": "// Node.js\nconst fs = require('fs');\nfs.readFile('myfile.txt', 'utf8', (err, data) => {\n  if (err) throw err;\n  console.log(data);\n});\n\n// Browser\n// Not allowed for security reasons"
+    },
+    {
+      "heading": "HTTP Requests",
+      "paragraphs": [
+        "Both environments can make HTTP requests, but using different APIs."
+      ],
+      "example": "// Node.js\nconst https = require('https');\nhttps.get('https://example.com', res => {\n  let data = '';\n  res.on('data', chunk => data += chunk);\n  res.on('end', () => console.log(data));\n});\n\n// Browser\nfetch('https://example.com')\n  .then(response => response.text())\n  .then(console.log);"
+    },
+    {
+      "heading": "Modules",
+      "paragraphs": [
+        "Node.js supports CommonJS and ES modules.",
+        "Browsers mainly use ES modules or script tags."
+      ],
+      "example": "// Node.js (CommonJS)\nconst fs = require('fs');\n\n// ES Modules\n// import fs from 'fs'; // Node.js only\n// import _ from 'https://cdn.jsdelivr.net/npm/lodash-es/lodash.js'; // Browser"
+    },
+    {
+      "heading": "Feature Comparison",
+      "list": [
+        "File System Access: Node.js (Yes), Browser (No)",
+        "Networking (TCP/UDP): Node.js (Yes), Browser (No)",
+        "DOM Access: Node.js (No), Browser (Yes)",
+        "Global Object: Node.js (global), Browser (window/self)",
+        "Modules: Node.js (CommonJS/ESM), Browser (ESM/Scripts)",
+        "Environment Variables: Node.js (Yes), Browser (No)",
+        "Security: Node.js (Full access), Browser (Sandboxed)",
+        "Package Management: Node.js (npm/yarn), Browser (CDN/Bundler)"
+      ]
+    }
+  ]
+} ,
+"cmd-line": {
+  "title": "Node.js Command Line Usage",
+  "paragraphs": [
+    "Node.js provides a powerful command line interface (CLI) for running JavaScript files, managing packages, debugging applications, and more.",
+    "All Node.js commands are executed in a terminal or command prompt.",
+    "On Windows, you can use Command Prompt, PowerShell, or Windows Terminal. On macOS/Linux, use Terminal."
+  ],
+  "sections": [
+    {
+      "heading": "Basic Node.js Commands",
+      "paragraphs": [
+        "These are the most common commands used when working with Node.js applications."
+      ],
+      "example": "# Run a JavaScript file\nnode app.js\n\n# Run with arguments\nnode app.js arg1 arg2\n\n# Run in watch mode\nnode --watch app.js"
+    },
+    {
+      "heading": "Using the REPL",
+      "paragraphs": [
+        "The Node.js REPL (Read-Eval-Print Loop) is an interactive shell for executing JavaScript code.",
+        "Start the REPL by typing node in the terminal."
+      ],
+      "example": "> const name = 'Node.js';\n> console.log(`Hello, ${name}!`);\n> .help\n> .exit"
+    },
+    {
+      "heading": "Command Line Arguments",
+      "paragraphs": [
+        "Command line arguments can be accessed using process.argv.",
+        "The first two values are the Node.js path and the script path."
+      ],
+      "example": "console.log('All arguments:', process.argv);\nconsole.log('First argument:', process.argv[2]);\nconsole.log('Second argument:', process.argv[3]);"
+    },
+    {
+      "heading": "Environment Variables",
+      "paragraphs": [
+        "Environment variables allow configuring applications without changing code."
+      ],
+      "example": "console.log('Environment:', process.env.NODE_ENV || 'development');\nconsole.log('Custom variable:', process.env.MY_VARIABLE);"
+    },
+    {
+      "heading": "Debugging Node.js Applications",
+      "paragraphs": [
+        "Node.js provides debugging features that integrate with Chrome DevTools."
+      ],
+      "example": "node --inspect app.js\nnode --inspect-brk app.js\nnode --inspect=9222 app.js"
+    },
+    {
+      "heading": "Using Chrome DevTools",
+      "paragraphs": [
+        "Start your app with node --inspect app.js.",
+        "Open Chrome and go to chrome://inspect.",
+        "Click on Open dedicated DevTools for Node."
+      ]
+    },
+    {
+      "heading": "Common CLI Tools",
+      "paragraphs": [
+        "Node.js includes useful command line tools such as nvm and npm."
+      ],
+      "example": "nvm install 18.16.0\nnvm use 18.16.0\nnvm ls\n\nnpm init\nnpm install\nnpm update\nnpm audit"
+    },
+    {
+      "heading": "Common Command Line Flags",
+      "paragraphs": [
+        "Node.js provides flags to control runtime behavior and performance."
+      ],
+      "example": "node --version\nnode --help\nnode --check app.js\nnode --trace-warnings app.js\nnode --max-old-space-size=4096 app.js"
+    },
+    {
+      "heading": "Performance and Experimental Features",
+      "paragraphs": [
+        "Some features are experimental and must be enabled using flags."
+      ],
+      "example": "node --experimental-modules app.mjs\nnode --experimental-repl-await\nnode --experimental-worker"
+    }
+  ]
+} ,
+"v8": {
+  "title": "Node.js V8 Engine",
+  "paragraphs": [
+    "The V8 engine is Google's open-source JavaScript engine used by both Chrome and Node.js.",
+    "It compiles JavaScript into native machine code for fast execution.",
+    "Node.js relies on V8 to provide a high-performance JavaScript runtime on the server."
+  ],
+  "sections": [
+    {
+      "heading": "What is the V8 Engine?",
+      "paragraphs": [
+        "V8 was developed by Google for the Chrome browser in 2008.",
+        "Node.js integrates V8 to execute JavaScript outside the browser."
+      ],
+      "list": [
+        "Origin: Developed by Google for Chrome",
+        "Integration: Used by Node.js for server-side JavaScript",
+        "Features: JIT compilation, garbage collection, ES6+ support"
+      ]
+    },
+    {
+      "heading": "Why V8 Makes Node.js Fast",
+      "list": [
+        "Just-In-Time (JIT) Compilation: Converts JavaScript into optimized machine code",
+        "Hidden Classes: Optimizes property access on objects",
+        "Efficient Garbage Collection: Manages memory efficiently",
+        "Inline Caching: Speeds up repeated property lookups"
+      ]
+    },
+    {
+      "heading": "Check V8 Version",
+      "paragraphs": [
+        "You can check which V8 version your Node.js installation uses."
+      ],
+      "example": "console.log(`V8 version: ${process.versions.v8}`);"
+    },
+    {
+      "heading": "V8's Role in Node.js",
+      "paragraphs": [
+        "V8 provides the core JavaScript execution environment for Node.js.",
+        "It allows Node.js to execute JavaScript code outside the browser and access operating system features."
+      ],
+      "list": [
+        "Execute JavaScript outside the browser",
+        "Access file system and networking APIs",
+        "Use the same JavaScript engine as Chrome"
+      ]
+    },
+    {
+      "heading": "V8 Memory Usage",
+      "paragraphs": [
+        "V8 exposes memory usage information that can be used for performance monitoring."
+      ],
+      "example": "const v8 = require('v8');\nconst heapStats = v8.getHeapStatistics();\n\nconsole.log('Heap size limit:', (heapStats.heap_size_limit / 1024 / 1024).toFixed(2), 'MB');\nconsole.log('Total heap size:', (heapStats.total_heap_size / 1024 / 1024).toFixed(2), 'MB');\nconsole.log('Used heap size:', (heapStats.used_heap_size / 1024 / 1024).toFixed(2), 'MB');"
+    },
+    {
+      "heading": "V8 Update Cycle",
+      "paragraphs": [
+        "V8 is constantly updated with new JavaScript features and performance improvements.",
+        "Node.js regularly updates its embedded V8 engine.",
+        "New Node.js versions often include newer versions of V8."
+      ],
+      "list": [
+        "Provides access to new JavaScript features",
+        "Improves performance and memory usage",
+        "Implements ECMAScript and WebAssembly standards"
+      ]
+    }
+  ]
+} ,
+"architecture": {
+  "title": "Node.js Architecture",
+  "paragraphs": [
+    "Node.js uses a single-threaded, event-driven architecture designed to handle many connections efficiently.",
+    "It is ideal for building scalable network applications, real-time apps, and APIs.",
+    "The core idea is non-blocking I/O with asynchronous execution."
+  ],
+  "sections": [
+    {
+      "heading": "What is Node.js Architecture?",
+      "paragraphs": [
+        "Node.js runs on a single main thread but can handle multiple requests using an event loop.",
+        "Instead of blocking the main thread, heavy operations are handled asynchronously."
+      ],
+      "list": [
+        "Single-threaded execution",
+        "Event-driven model",
+        "Non-blocking I/O",
+        "Asynchronous processing"
+      ]
+    },
+    {
+      "heading": "Architecture Flow",
+      "paragraphs": [
+        "Node.js processes requests in several phases.",
+        "Each request goes through the event loop and callback queue."
+      ],
+      "list": [
+        "Client Request Phase: Clients send requests to the server",
+        "Event Queue: Requests are placed in a queue",
+        "Event Loop: Picks up requests one by one",
+        "Request Processing: Non-blocking tasks run immediately, blocking tasks go to thread pool",
+        "Response Phase: Callbacks are executed and responses sent"
+      ]
+    },
+    {
+      "heading": "Non-blocking Example",
+      "paragraphs": [
+        "This example shows how Node.js continues execution without waiting for file operations."
+      ],
+      "example": "const fs = require('fs');\nconsole.log('Before file read');\nfs.readFile('myfile.txt', 'utf8', (err, data) => {\n  if (err) throw err;\n  console.log('File contents:', data);\n});\nconsole.log('After file read');"
+    },
+    {
+      "heading": "Blocking vs Non-blocking",
+      "paragraphs": [
+        "Blocking code stops the entire process until it finishes.",
+        "Non-blocking code allows other operations to continue."
+      ],
+      "example": "// Blocking\nconst data = fs.readFileSync('myfile.txt', 'utf8');\nconsole.log('Blocking completed');\n\n// Non-blocking\nfs.readFile('myfile.txt', 'utf8', (err, data) => {\n  if (err) throw err;\n  console.log('Non-blocking completed');\n});\nconsole.log('This runs before file is read');"
+    },
+    {
+      "heading": "When to Use Node.js",
+      "paragraphs": [
+        "Node.js is best suited for applications that require high I/O performance."
+      ],
+      "list": [
+        "I/O-bound applications (file operations, database queries)",
+        "Real-time applications (chat, notifications)",
+        "APIs (REST and GraphQL)",
+        "Microservices"
+      ]
+    },
+    {
+      "heading": "Limitations",
+      "paragraphs": [
+        "Node.js is not ideal for CPU-intensive tasks.",
+        "Such tasks can block the event loop and degrade performance."
+      ],
+      "list": [
+        "Use worker threads",
+        "Use microservices in other languages",
+        "Use native add-ons"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "list": [
+        "Handles many concurrent connections efficiently",
+        "Great for I/O-bound applications",
+        "Uses JavaScript on both client and server",
+        "Large ecosystem via npm"
+      ]
+    }
+  ]
+} ,
+"event-loop": {
+  "title": "Node.js Event Loop",
+  "paragraphs": [
+    "The event loop is what makes Node.js non-blocking and efficient.",
+    "It handles asynchronous operations and allows Node.js to manage thousands of concurrent connections using a single thread."
+  ],
+  "sections": [
+    {
+      "heading": "What is the Event Loop?",
+      "paragraphs": [
+        "The event loop delegates heavy tasks to the system and processes their results through callbacks.",
+        "This enables Node.js to remain responsive while handling many operations."
+      ]
+    },
+    {
+      "heading": "How the Event Loop Works",
+      "list": [
+        "Execute the main script (synchronous code)",
+        "Process microtasks (Promises, process.nextTick)",
+        "Execute timers (setTimeout, setInterval)",
+        "Run I/O callbacks",
+        "Process setImmediate callbacks",
+        "Handle close events"
+      ]
+    },
+    {
+      "heading": "Execution Order Example",
+      "paragraphs": [
+        "This example demonstrates how synchronous code, promises, and timers are executed."
+      ],
+      "example": "console.log('First');\nsetTimeout(() => console.log('Third'), 0);\nPromise.resolve().then(() => console.log('Second'));\nconsole.log('Fourth');"
+    },
+    {
+      "heading": "Execution Order Explanation",
+      "list": [
+        "Synchronous code runs first",
+        "Microtasks (Promises) run next",
+        "Timers execute after that"
+      ]
+    },
+    {
+      "heading": "Event Loop Phases",
+      "list": [
+        "Timers: setTimeout, setInterval",
+        "I/O Callbacks",
+        "Poll phase",
+        "Check phase: setImmediate",
+        "Close phase"
+      ]
+    },
+    {
+      "heading": "Phases Example",
+      "example": "console.log('1. Start');\nprocess.nextTick(() => console.log('2. Next tick'));\nPromise.resolve().then(() => console.log('3. Promise'));\nsetTimeout(() => console.log('4. Timeout'), 0);\nsetImmediate(() => console.log('5. Immediate'));\nconsole.log('6. End');"
+    },
+    {
+      "heading": "Why the Event Loop is Important",
+      "list": [
+        "Handles thousands of concurrent connections",
+        "Supports real-time applications",
+        "Enables APIs and microservices",
+        "Efficient for data streaming"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "list": [
+        "Node.js uses an event loop for async execution",
+        "Callbacks have different priorities",
+        "Promises run before the next phase",
+        "This model enables high scalability"
+      ]
+    }
+  ]
+} ,
+"async": {
+  "title": "Node.js Asynchronous Programming",
+  "paragraphs": [
+    "Asynchronous programming allows Node.js to perform other tasks while waiting for operations like file or network requests.",
+    "This non-blocking approach enables Node.js to handle many connections efficiently."
+  ],
+  "sections": [
+    {
+      "heading": "What is Asynchronous Programming?",
+      "paragraphs": [
+        "In Node.js, asynchronous operations let your program continue running without waiting for slow tasks.",
+        "This is achieved using callbacks, promises, and async/await."
+      ]
+    },
+    {
+      "heading": "Sync vs Async",
+      "list": [
+        "Synchronous blocks execution until complete",
+        "Asynchronous does not block execution",
+        "Async provides better performance",
+        "Sync is simpler but slower"
+      ]
+    },
+    {
+      "heading": "Synchronous File Read",
+      "example": "const fs = require('fs');\nconsole.log('1. Starting sync read...');\nconst data = fs.readFileSync('myfile.txt', 'utf8');\nconsole.log('2. File contents:', data);\nconsole.log('3. Done reading file');"
+    },
+    {
+      "heading": "Asynchronous File Read",
+      "example": "const fs = require('fs');\nconsole.log('1. Starting async read...');\nfs.readFile('myfile.txt', 'utf8', (err, data) => {\n  if (err) throw err;\n  console.log('2. File contents:', data);\n});\nconsole.log('3. Done starting read operation');"
+    },
+    {
+      "heading": "Avoiding Callback Hell",
+      "paragraphs": [
+        "Nested callbacks make code hard to read and maintain.",
+        "This problem is called callback hell."
+      ]
+    },
+    {
+      "heading": "Using Promises",
+      "example": "getUser(userId)\n  .then(user => getOrders(user.id))\n  .then(orders => processOrders(orders))\n  .then(() => console.log('All done!'))\n  .catch(handleError);"
+    },
+    {
+      "heading": "Async and Await",
+      "example": "async function processUser(userId) {\n  try {\n    const user = await getUser(userId);\n    const orders = await getOrders(user.id);\n    await processOrders(orders);\n    console.log('All done!');\n  } catch (err) {\n    handleError(err);\n  }\n}"
+    },
+    {
+      "heading": "Modern Async Patterns",
+      "list": [
+        "Promises",
+        "Async/Await",
+        "Parallel execution with Promise.all"
+      ]
+    },
+    {
+      "heading": "Parallel Execution",
+      "example": "async function fetchAllData() {\n  const [users, products, orders] = await Promise.all([\n    User.find(),\n    Product.find(),\n    Order.find()\n  ]);\n  return { users, products, orders };\n}"
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Use async/await",
+        "Always handle errors",
+        "Avoid mixing sync and async",
+        "Use Promise.all when possible"
+      ]
+    },
+    {
+      "heading": "Why Use Asynchronous Code?",
+      "paragraphs": [
+        "Async code allows Node.js to handle many users at the same time.",
+        "This makes Node.js ideal for servers and real-time systems."
+      ]
+    },
+    {
+      "heading": "Summary",
+      "list": [
+        "Node.js uses non-blocking I/O",
+        "Async/await is the modern standard",
+        "Callback hell should be avoided",
+        "Parallel operations improve performance"
+      ]
+    }
+  ]
+} ,
+"promises": {
+  "title": "Node.js Promises",
+  "paragraphs": [
+    "Promises provide a cleaner way to handle asynchronous operations compared to callbacks.",
+    "A promise represents the eventual completion or failure of an async task."
+  ],
+  "sections": [
+    {
+      "heading": "Promise States",
+      "list": [
+        "Pending",
+        "Fulfilled",
+        "Rejected"
+      ]
+    },
+    {
+      "heading": "Benefits of Promises",
+      "list": [
+        "Avoids callback hell",
+        "Better error handling",
+        "Supports chaining",
+        "Supports parallel execution"
+      ]
+    },
+    {
+      "heading": "Callback vs Promise",
+      "example": "getUser(id)\n  .then(user => getOrders(user.id))\n  .then(orders => processOrders(orders))\n  .catch(handleError);"
+    },
+    {
+      "heading": "Creating a Promise",
+      "example": "const myPromise = new Promise((resolve, reject) => {\n  setTimeout(() => {\n    const success = Math.random() > 0.5;\n    if (success) resolve('Success');\n    else reject(new Error('Failed'));\n  }, 1000);\n});"
+    },
+    {
+      "heading": "Using a Promise",
+      "example": "myPromise\n  .then(result => console.log(result))\n  .catch(error => console.error(error.message));"
+    },
+    {
+      "heading": "Promise Chaining",
+      "example": "getUser(123)\n  .then(user => getUserPosts(user))\n  .then(posts => console.log(posts))\n  .catch(error => console.error(error));"
+    },
+    {
+      "heading": "Promise.all",
+      "paragraphs": [
+        "Runs multiple promises in parallel.",
+        "Fails if any promise rejects."
+      ],
+      "example": "Promise.all([p1, p2, p3])\n  .then(results => console.log(results))\n  .catch(error => console.error(error));"
+    },
+    {
+      "heading": "Promise.race",
+      "paragraphs": [
+        "Returns the first settled promise."
+      ],
+      "example": "Promise.race([p1, p2])\n  .then(result => console.log(result));"
+    },
+    {
+      "heading": "Error Handling",
+      "paragraphs": [
+        "Errors should always be handled using .catch()."
+      ],
+      "example": "fetchData()\n  .then(data => console.log(data))\n  .catch(err => console.error(err.message));"
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Always use .catch()",
+        "Use Promise.all for parallel work",
+        "Avoid deeply nested then() chains",
+        "Prefer async/await for readability"
+      ]
+    }
+  ]
+} ,
+"async-await": {
+  "title": "Node.js Async/Await",
+  "paragraphs": [
+    "Async/await is a modern way to handle asynchronous operations in Node.js.",
+    "It is built on top of Promises and allows writing async code in a synchronous style.",
+    "Introduced in Node.js 7.6, async/await improves readability and maintainability."
+  ],
+  "sections": [
+    {
+      "heading": "Syntax and Usage",
+      "list": [
+        "async declares an asynchronous function",
+        "await pauses execution until a Promise resolves",
+        "await can only be used inside async functions"
+      ]
+    },
+    {
+      "heading": "Basic Example",
+      "example": "async function getData() {\n  const result = await someAsyncOperation();\n  return result;\n}\n\nfunction someAsyncOperation() {\n  return new Promise(resolve => {\n    setTimeout(() => resolve('Operation completed'), 1000);\n  });\n}"
+    },
+    {
+      "heading": "Reading a File",
+      "example": "const fs = require('fs').promises;\n\nasync function readFile() {\n  try {\n    const data = await fs.readFile('myfile.txt', 'utf8');\n    console.log(data);\n  } catch (error) {\n    console.error(error);\n  }\n}"
+    },
+    {
+      "heading": "Error Handling",
+      "paragraphs": [
+        "Async/await allows traditional try/catch error handling.",
+        "This makes error flow easier to understand."
+      ],
+      "example": "async function fetchUser() {\n  try {\n    const user = await getUser();\n    return user;\n  } catch (error) {\n    console.error(error);\n    throw error;\n  }\n}"
+    },
+    {
+      "heading": "Sequential vs Parallel",
+      "paragraphs": [
+        "Sequential awaits run one after another.",
+        "Parallel execution improves performance."
+      ],
+      "example": "async function fetchParallel() {\n  const results = await Promise.all([\n    fetchData(1),\n    fetchData(2),\n    fetchData(3)\n  ]);\n  return results;\n}"
+    },
+    {
+      "heading": "Callbacks vs Promises vs Async/Await",
+      "list": [
+        "Callbacks cause nested code",
+        "Promises improve structure",
+        "Async/await provides the cleanest syntax"
+      ]
+    },
+    {
+      "heading": "Async Functions Return Promises",
+      "example": "async function hello() {\n  return 'Hello';\n}\n\nhello().then(msg => console.log(msg));"
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Always handle errors",
+        "Use Promise.all for parallel tasks",
+        "Avoid mixing callbacks and async",
+        "Keep async functions focused",
+        "Prefer async/await over raw promises"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "list": [
+        "Async/await is built on Promises",
+        "Code looks synchronous but remains non-blocking",
+        "Try/catch simplifies error handling",
+        "Parallel execution improves performance"
+      ]
+    }
+  ]
+} ,
+"error-handling": {
+  "title": "Node.js Error Handling",
+  "paragraphs": [
+    "Errors are unavoidable in real-world applications, and proper error handling is essential for stability.",
+    "Good error handling prevents crashes, improves debugging, and provides better user experience."
+  ],
+  "sections": [
+    {
+      "heading": "Why Handle Errors?",
+      "list": [
+        "Prevents application crashes",
+        "Provides meaningful feedback",
+        "Improves debugging",
+        "Maintains application stability",
+        "Ensures resource cleanup"
+      ]
+    },
+    {
+      "heading": "Common Error Types",
+      "list": [
+        "SyntaxError",
+        "TypeError",
+        "ReferenceError",
+        "System errors (ENOENT, ECONNREFUSED)"
+      ]
+    },
+    {
+      "heading": "Error-First Callbacks",
+      "paragraphs": [
+        "Node.js core modules follow the error-first callback pattern.",
+        "The first argument of the callback is always the error object."
+      ],
+      "example": "fs.readFile('config.json', (err, data) => {\n  if (err) return console.error(err.message);\n  console.log(data);\n});"
+    },
+    {
+      "heading": "Try/Catch with Async/Await",
+      "example": "async function loadUser(id) {\n  try {\n    const data = await fs.readFile(`users/${id}.json`);\n    return JSON.parse(data);\n  } catch (error) {\n    throw error;\n  }\n}"
+    },
+    {
+      "heading": "Global Error Handling",
+      "paragraphs": [
+        "Node.js allows listening for global errors.",
+        "These should only be used for cleanup before shutdown."
+      ],
+      "example": "process.on('uncaughtException', err => {\n  console.error(err);\n  process.exit(1);\n});\n\nprocess.on('unhandledRejection', err => {\n  console.error(err);\n  process.exit(1);\n});"
+    },
+    {
+      "heading": "Custom Error Types",
+      "example": "class ValidationError extends Error {\n  constructor(message) {\n    super(message);\n    this.name = 'ValidationError';\n  }\n}"
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Always handle errors",
+        "Log meaningful error messages",
+        "Use try/catch for async code",
+        "Clean resources in finally blocks",
+        "Avoid swallowing errors"
+      ]
+    },
+    {
+      "heading": "Dos and Don'ts",
+      "list": [
+        "Do validate inputs",
+        "Do log errors",
+        "Don't ignore errors",
+        "Don't expose sensitive info",
+        "Don't continue after fatal errors"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "list": [
+        "Error handling keeps apps stable",
+        "Async errors need try/catch",
+        "Global handlers are last resort",
+        "Custom errors improve clarity"
+      ]
+    }
+  ]
+} ,
+
+"modules": {
+  "title": "Node.js Modules",
+  "paragraphs": [
+    "Modules are the building blocks of Node.js applications.",
+    "They help organize code into reusable components and prevent global namespace pollution.",
+    "Node.js supports CommonJS modules by default."
+  ],
+  "sections": [
+    {
+      "heading": "What is a Module?",
+      "paragraphs": [
+        "A module is a reusable piece of code stored in a file.",
+        "Every .js file in Node.js is treated as a module."
+      ]
+    },
+    {
+      "heading": "Built-in Modules",
+      "list": [
+        "fs",
+        "http",
+        "path",
+        "os",
+        "events",
+        "util",
+        "stream",
+        "crypto",
+        "url",
+        "querystring"
+      ]
+    },
+    {
+      "heading": "Using Built-in Modules",
+      "example": "const http = require('http');\n\nhttp.createServer((req, res) => {\n  res.writeHead(200, {'Content-Type': 'text/html'});\n  res.end('Hello World!');\n}).listen(8080);"
+    },
+    {
+      "heading": "Exporting Multiple Items",
+      "example": "const getDate = () => new Date().toISOString();\nconst add = (a, b) => a + b;\n\nexports.getDate = getDate;\nexports.add = add;"
+    },
+    {
+      "heading": "Exporting a Single Item",
+      "example": "class Logger {\n  log(msg) {\n    console.log(msg);\n  }\n}\n\nmodule.exports = Logger;"
+    },
+    {
+      "heading": "Importing Custom Modules",
+      "example": "const { getDate } = require('./utils');\nconst Logger = require('./logger');"
+    },
+    {
+      "heading": "Module Resolution",
+      "list": [
+        "Core modules",
+        "node_modules folder",
+        "Local files using ./ or ../"
+      ]
+    },
+    {
+      "heading": "Module Caching",
+      "paragraphs": [
+        "Node.js caches modules after the first load.",
+        "Subsequent require() calls return the cached version."
+      ]
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Keep modules focused on one task",
+        "Use meaningful file names",
+        "Group related modules",
+        "Use index.js for entry points",
+        "Document exported functions"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "list": [
+        "Modules enable code reuse",
+        "CommonJS is default in Node.js",
+        "Use require() and module.exports",
+        "Modules improve scalability"
+      ]
+    }
+  ]
+} ,
+"es-modules": {
+  "title": "Node.js ES Modules",
+  "paragraphs": [
+    "ES Modules (ESM) is the official standard module system in modern JavaScript.",
+    "It was introduced in ES6 and is now fully supported in Node.js.",
+    "ES Modules provide static imports, better tooling, and support for top-level await."
+  ],
+  "sections": [
+    {
+      "heading": "CommonJS vs ES Modules",
+      "list": [
+        "CommonJS uses require() and module.exports",
+        "ES Modules use import and export",
+        "CommonJS loads dynamically at runtime",
+        "ES Modules are statically analyzed before execution",
+        "ES Modules support top-level await"
+      ]
+    },
+    {
+      "heading": "CommonJS Example",
+      "example": "function add(a, b) {\n  return a + b;\n}\n\nmodule.exports = { add };"
+    },
+    {
+      "heading": "ES Module Example",
+      "example": "export function add(a, b) {\n  return a + b;\n}\n\nimport { add } from './math.mjs';\nconsole.log(add(5, 3));"
+    },
+    {
+      "heading": "Enabling ES Modules",
+      "list": [
+        "Use .mjs file extension",
+        "Or set \"type\": \"module\" in package.json",
+        "Or run with node --input-type=module"
+      ]
+    },
+    {
+      "heading": "Named Exports",
+      "example": "export function sayHello() {\n  console.log('Hello');\n}\n\nexport function sayGoodbye() {\n  console.log('Goodbye');\n}"
+    },
+    {
+      "heading": "Default Export",
+      "example": "export default function main() {\n  console.log('Main function');\n}"
+    },
+    {
+      "heading": "Import Syntax",
+      "example": "import main, { sayHello } from './module.mjs';\nmain();\nsayHello();"
+    },
+    {
+      "heading": "Dynamic Imports",
+      "example": "const module = await import('./math.mjs');\nconsole.log(module.add(10, 5));"
+    },
+    {
+      "heading": "Top-level Await",
+      "example": "const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');\nconst data = await response.json();\nconsole.log(data);"
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Always include file extensions",
+        "Use named exports for utilities",
+        "Use default export for main module",
+        "Use index.mjs for directories",
+        "Avoid mixing CommonJS and ESM"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "list": [
+        "ES Modules are the modern standard",
+        "They support static analysis",
+        "Top-level await is supported",
+        "Better for large scalable apps"
+      ]
+    }
+  ]
+} ,
+"npm": {
+  "title": "Node.js NPM",
+  "paragraphs": [
+    "NPM is the package manager for Node.js.",
+    "It allows you to download, install, update and manage third-party libraries.",
+    "npm is installed automatically when you install Node.js."
+  ],
+  "sections": [
+    {
+      "heading": "What is a Package?",
+      "paragraphs": [
+        "A package contains all the files needed for a module.",
+        "Packages are reusable libraries you can include in your project."
+      ]
+    },
+    {
+      "heading": "Installing a Package",
+      "paragraphs": [
+        "You can install packages using the npm install command.",
+        "Installed packages are stored inside the node_modules folder."
+      ],
+      "example": "npm install upper-case"
+    },
+    {
+      "heading": "Using a Package",
+      "example": "let uc = require('upper-case');\n\nlet http = require('http');\nhttp.createServer(function (req, res) {\n  res.writeHead(200, {'Content-Type': 'text/html'});\n  res.write(uc.upperCase(\"Hello World!\"));\n  res.end();\n}).listen(8080);"
+    },
+    {
+      "heading": "Global Packages",
+      "paragraphs": [
+        "Global packages are installed system-wide.",
+        "They are usually command-line tools."
+      ],
+      "example": "npm install -g http-server"
+    },
+    {
+      "heading": "Updating Packages",
+      "list": [
+        "npm update package-name",
+        "npm update",
+        "npm outdated",
+        "npm install -g npm@latest"
+      ]
+    },
+    {
+      "heading": "Uninstalling Packages",
+      "list": [
+        "npm uninstall package-name",
+        "npm uninstall -g package-name",
+        "npm uninstall --save package-name"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "list": [
+        "npm manages project dependencies",
+        "node_modules stores installed packages",
+        "Global packages provide CLI tools",
+        "npm helps keep packages updated"
+      ]
+    }
+  ]
+} ,
+
+"package-json": {
+  "title": "Node.js package.json",
+  "paragraphs": [
+    "package.json is a special file that describes your Node.js project.",
+    "It stores information like name, version, dependencies, scripts and metadata.",
+    "It is essential for managing and sharing Node.js applications."
+  ],
+  "sections": [
+    {
+      "heading": "Creating package.json",
+      "paragraphs": [
+        "You can create a package.json file using npm init.",
+        "For quick setup, use npm init -y to generate default values."
+      ],
+      "example": "npm init\nnpm init -y"
+    },
+    {
+      "heading": "Basic Structure",
+      "example": "{\n  \"name\": \"my-node-app\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A simple Node.js app\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"start\": \"node index.js\"\n  },\n  \"license\": \"ISC\"\n}"
+    },
+    {
+      "heading": "Adding Dependencies",
+      "paragraphs": [
+        "When you install a package, it is automatically added to dependencies."
+      ],
+      "example": "npm install express"
+    },
+    {
+      "heading": "Scripts",
+      "paragraphs": [
+        "Scripts allow you to define custom commands for your project."
+      ],
+      "example": "\"scripts\": {\n  \"start\": \"node index.js\",\n  \"dev\": \"nodemon index.js\",\n  \"test\": \"jest\"\n}"
+    },
+    {
+      "heading": "Dependencies",
+      "paragraphs": [
+        "dependencies are required for production.",
+        "devDependencies are only used during development."
+      ],
+      "example": "\"dependencies\": {\n  \"express\": \"^4.18.2\"\n},\n\"devDependencies\": {\n  \"nodemon\": \"^2.0.22\"\n}"
+    },
+    {
+      "heading": "Version Ranges",
+      "list": [
+        "^4.17.21 allows compatible updates",
+        "~4.17.21 allows patch updates",
+        "Exact version locks the package",
+        "latest installs newest stable version"
+      ]
+    },
+    {
+      "heading": "Running Scripts",
+      "example": "npm start\nnpm run dev\nnpm test"
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Keep package-lock.json in version control",
+        "Use npm ci for deployments",
+        "Avoid unnecessary dependencies",
+        "Update packages regularly"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "package.json is the heart of every Node.js project.",
+        "It controls dependencies, scripts and project configuration."
+      ]
+    }
+  ]
+} ,
+"npm-scripts": {
+  "title": "Node.js NPM Scripts",
+  "paragraphs": [
+    "NPM scripts are commands defined in package.json to automate common project tasks.",
+    "They help run, test, build, and manage applications easily using simple commands."
+  ],
+  "sections": [
+    {
+      "heading": "Defining Scripts",
+      "paragraphs": [
+        "Scripts are defined inside the scripts section of package.json."
+      ],
+      "example": "{\n  \"scripts\": {\n    \"start\": \"node index.js\",\n    \"dev\": \"nodemon index.js\",\n    \"test\": \"echo \\\"Running tests...\\\"\"\n  }\n}"
+    },
+    {
+      "heading": "Running Scripts",
+      "paragraphs": [
+        "Use npm run followed by the script name.",
+        "Some scripts like start and test have shortcuts."
+      ],
+      "example": "npm run dev\nnpm start\nnpm test"
+    },
+    {
+      "heading": "Common Uses",
+      "list": [
+        "Start the application",
+        "Run tests",
+        "Use build tools like webpack",
+        "Run linters and formatters",
+        "Automate repetitive tasks"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "NPM scripts simplify development by automating workflows.",
+        "They reduce manual commands and keep project tasks consistent."
+      ]
+    }
+  ]
+} ,
+
+"manage-dep": {
+  "title": "Node.js Managing Dependencies",
+  "paragraphs": [
+    "Dependency management is the process of tracking, installing, updating, and removing external packages used in a Node.js project.",
+    "It helps keep applications stable, secure, and maintainable over time."
+  ],
+  "sections": [
+    {
+      "heading": "Key Components",
+      "list": [
+        "package.json for declaring dependencies",
+        "Lock files for exact versions",
+        "Package manager commands",
+        "Security auditing tools"
+      ]
+    },
+    {
+      "heading": "Semantic Versioning",
+      "paragraphs": [
+        "Node.js uses semantic versioning with MAJOR.MINOR.PATCH format.",
+        "Version symbols control how updates are applied."
+      ],
+      "list": [
+        "^2.8.1 allows any compatible 2.x.x version",
+        "~2.8.1 allows patch updates only",
+        "2.8.1 installs exact version",
+        ">=2.8.1 installs version or higher",
+        "* allows any version"
+      ]
+    },
+    {
+      "heading": "Installing Dependencies",
+      "paragraphs": [
+        "Dependencies can be installed individually or all at once."
+      ],
+      "example": "npm install\nnpm install express\nnpm install express@4.17.1\nnpm install -g nodemon"
+    },
+    {
+      "heading": "Types of Dependencies",
+      "list": [
+        "dependencies for production",
+        "devDependencies for development",
+        "peerDependencies for compatibility",
+        "optionalDependencies for extra features"
+      ]
+    },
+    {
+      "heading": "Lock Files",
+      "paragraphs": [
+        "Lock files ensure consistent installations across environments.",
+        "Always commit lock files to version control."
+      ]
+    },
+    {
+      "heading": "Updating and Auditing",
+      "paragraphs": [
+        "Dependencies should be updated and audited regularly."
+      ],
+      "example": "npm outdated\nnpm update\nnpm audit\nnpm audit fix"
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Use exact versions in production",
+        "Keep lock files committed",
+        "Audit for vulnerabilities",
+        "Minimize unnecessary packages",
+        "Document why dependencies are used"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "Managing dependencies correctly is essential for healthy Node.js projects.",
+        "Proper versioning, updates, and audits prevent bugs and security issues."
+      ]
+    }
+  ]
+} ,
+"publish": {
+  "title": "Node.js Publish a Package",
+  "paragraphs": [
+    "Publishing a package means making your Node.js module available for others to install via the npm registry.",
+    "It allows developers to share open-source libraries and tools with the community."
+  ],
+  "sections": [
+    {
+      "heading": "Preparing Your Package",
+      "list": [
+        "Initialize project with npm init",
+        "Add package.json, README.md, LICENSE",
+        "Create main entry file (index.js)",
+        "Use .gitignore and .npmignore"
+      ]
+    },
+    {
+      "heading": "npm Account",
+      "list": [
+        "Create account on npmjs.com",
+        "Verify email",
+        "Login using npm login",
+        "Check status with npm whoami"
+      ]
+    },
+    {
+      "heading": "Publishing Steps",
+      "paragraphs": [
+        "Check package name availability before publishing.",
+        "Test your package locally before publishing."
+      ],
+      "example": "npm view my-package\nnpm link\nnpm publish\nnpm publish --tag beta"
+    },
+    {
+      "heading": "Updating a Package",
+      "list": [
+        "Use semantic versioning",
+        "Update changelog",
+        "Publish updated version",
+        "Tag release with Git"
+      ],
+      "example": "npm version patch\nnpm version minor\nnpm version major\nnpm publish"
+    },
+    {
+      "heading": "Managing Published Packages",
+      "list": [
+        "Unpublish specific version",
+        "Deprecate old versions",
+        "Transfer ownership"
+      ],
+      "example": "npm unpublish my-package@1.0.0\nnpm deprecate my-package@1.0.0 \"Use v2\"\nnpm owner add user my-package"
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Follow semantic versioning",
+        "Write good documentation",
+        "Include tests",
+        "Use proper license",
+        "Maintain changelog",
+        "Avoid unpublishing"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "Publishing packages helps share knowledge and tools with the Node.js ecosystem.",
+        "Maintaining packages responsibly builds trust and long-term usability."
+      ]
+    }
+  ]
+} ,
+
+"http": {
+  "title": "Node.js HTTP Module",
+  "paragraphs": [
+    "Node.js includes a built-in HTTP module that allows you to create web servers and handle HTTP requests and responses.",
+    "It is essential for building web applications, REST APIs, and microservices."
+  ],
+  "sections": [
+    {
+      "heading": "Key Features",
+      "list": [
+        "Create HTTP servers",
+        "Handle HTTP methods (GET, POST, PUT, DELETE)",
+        "Work with headers",
+        "Stream large data",
+        "Make HTTP requests"
+      ]
+    },
+    {
+      "heading": "Including the HTTP Module",
+      "paragraphs": [
+        "Use require() to include the HTTP module in CommonJS projects.",
+        "Use import in ES module projects."
+      ],
+      "example": "const http = require('http');"
+    },
+    {
+      "heading": "Creating an HTTP Server",
+      "paragraphs": [
+        "The createServer() method creates a server that listens for requests.",
+        "The callback receives request and response objects."
+      ],
+      "example": "const http = require('http');\nconst server = http.createServer((req, res) => {\n  res.writeHead(200, { 'Content-Type': 'text/plain' });\n  res.end('Hello World');\n});\nserver.listen(3000);"
+    },
+    {
+      "heading": "HTTP Headers",
+      "paragraphs": [
+        "Headers allow sending metadata with responses.",
+        "Use res.writeHead() or res.setHeader()."
+      ],
+      "example": "res.writeHead(200, { 'Content-Type': 'text/html' });"
+    },
+    {
+      "heading": "Reading Request Headers",
+      "example": "console.log(req.headers);\nconst userAgent = req.headers['user-agent'];"
+    },
+    {
+      "heading": "Working with URLs",
+      "paragraphs": [
+        "The req.url property contains the requested path.",
+        "The URL module helps parse query parameters."
+      ],
+      "example": "const { URL } = require('url');\nconst parsedUrl = new URL(req.url, `http://${req.headers.host}`);"
+    },
+    {
+      "heading": "Handling HTTP Methods",
+      "paragraphs": [
+        "Different HTTP methods perform different actions.",
+        "Use req.method and req.url to route requests."
+      ],
+      "example": "if (req.method === 'GET' && req.url === '/users') {\n  res.end('Get users');\n}"
+    },
+    {
+      "heading": "Streaming Data",
+      "paragraphs": [
+        "Streams allow efficient handling of large files.",
+        "Data is processed in chunks instead of memory."
+      ],
+      "example": "const fs = require('fs');\nconst stream = fs.createReadStream('file.txt');\nstream.pipe(res);"
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Always return proper HTTP status codes",
+        "Handle errors gracefully",
+        "Use streams for large data",
+        "Separate routing logic",
+        "Avoid blocking operations"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "The HTTP module is the foundation of Node.js web servers.",
+        "It enables full control over requests, responses, and data flow."
+      ]
+    }
+  ]
+} ,
+"https": {
+  "title": "Node.js HTTPS Module",
+  "paragraphs": [
+    "The HTTPS module is a core Node.js module that provides secure HTTP communication using TLS/SSL.",
+    "It encrypts data between client and server, ensuring privacy, integrity, and authentication."
+  ],
+  "sections": [
+    {
+      "heading": "Why Use HTTPS",
+      "list": [
+        "Encrypts sensitive data",
+        "Authenticates servers",
+        "Ensures data integrity",
+        "Improves SEO",
+        "Required for modern web APIs"
+      ]
+    },
+    {
+      "heading": "How HTTPS Works",
+      "list": [
+        "Client initiates secure connection",
+        "Server sends SSL/TLS certificate",
+        "Certificate is verified by CA",
+        "Secure encrypted session established",
+        "Data transferred using symmetric encryption"
+      ]
+    },
+    {
+      "heading": "Importing the Module",
+      "example": "const https = require(\"https\");"
+    },
+    {
+      "heading": "SSL/TLS Certificates",
+      "list": [
+        "Self-signed (development only)",
+        "Domain Validated (DV)",
+        "Organization Validated (OV)",
+        "Extended Validation (EV)",
+        "Wildcard certificates",
+        "Multi-domain certificates"
+      ]
+    },
+    {
+      "heading": "Creating HTTPS Server",
+      "paragraphs": [
+        "HTTPS server works like HTTP but requires certificates."
+      ],
+      "example": "https.createServer(sslOptions, (req, res) => { ... })"
+    },
+    {
+      "heading": "Security Best Practices",
+      "list": [
+        "Use TLS 1.2 or higher",
+        "Enable HSTS",
+        "Use secure headers",
+        "Keep Node.js updated",
+        "Use reverse proxy in production",
+        "Never commit secrets"
+      ]
+    },
+    {
+      "heading": "Making HTTPS Requests",
+      "paragraphs": [
+        "HTTPS module can make secure API requests."
+      ],
+      "example": "https.get(options, callback)"
+    },
+    {
+      "heading": "HTTPS with Express",
+      "paragraphs": [
+        "Express can run over HTTPS using https.createServer."
+      ],
+      "example": "https.createServer(sslOptions, app)"
+    },
+    {
+      "heading": "HTTP vs HTTPS",
+      "list": [
+        "HTTP is unencrypted",
+        "HTTPS is encrypted",
+        "HTTP uses port 80",
+        "HTTPS uses port 443"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "HTTPS is essential for secure modern web applications.",
+        "It protects data, improves trust, and enables advanced web features."
+      ]
+    }
+  ]
+},
+"fs": {
+  "title": "Node.js File System Module",
+  "paragraphs": [
+    "The File System module (fs) is a core Node.js module used to work with files and directories.",
+    "It supports both synchronous and asynchronous file operations."
+  ],
+  "sections": [
+    {
+      "heading": "Importing the Module",
+      "examples": [
+        "const fs = require(\"fs\");",
+        "import fs from \"fs\";",
+        "const fs = require(\"fs\").promises;"
+      ]
+    },
+    {
+      "heading": "Common Use Cases",
+      "list": [
+        "Read and write files",
+        "Create and delete files",
+        "Rename and move files",
+        "Create and remove directories",
+        "Watch files for changes",
+        "Work with file streams"
+      ]
+    },
+    {
+      "heading": "Reading Files",
+      "paragraphs": [
+        "Files can be read using callbacks, promises, or synchronously.",
+        "Promise-based API with async/await is recommended."
+      ],
+      "examples": [
+        "fs.readFile(\"file.txt\", \"utf8\", callback)",
+        "await fs.readFile(\"file.txt\", \"utf8\")",
+        "fs.readFileSync(\"file.txt\", \"utf8\")"
+      ]
+    },
+    {
+      "heading": "Writing Files",
+      "paragraphs": [
+        "Files can be created or overwritten using writeFile.",
+        "Content can be appended using appendFile."
+      ],
+      "examples": [
+        "await fs.writeFile(\"file.txt\", \"Hello\")",
+        "await fs.appendFile(\"log.txt\", \"New entry\")"
+      ]
+    },
+    {
+      "heading": "Using Streams",
+      "paragraphs": [
+        "Streams are recommended for large files to reduce memory usage."
+      ],
+      "examples": [
+        "fs.createReadStream(\"big.txt\")",
+        "fs.createWriteStream(\"output.txt\")"
+      ]
+    },
+    {
+      "heading": "Deleting Files and Directories",
+      "paragraphs": [
+        "Files can be deleted using unlink.",
+        "Directories can be deleted using rm with recursive option."
+      ],
+      "examples": [
+        "await fs.unlink(\"file.txt\")",
+        "await fs.rm(\"folder\", { recursive: true })"
+      ]
+    },
+    {
+      "heading": "Renaming and Moving Files",
+      "paragraphs": [
+        "The rename method is used for both renaming and moving files."
+      ],
+      "examples": [
+        "await fs.rename(\"old.txt\", \"new.txt\")",
+        "await fs.rename(\"src/file.txt\", \"dest/file.txt\")"
+      ]
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Prefer async/await over synchronous methods",
+        "Always handle errors",
+        "Use streams for large files",
+        "Validate file paths",
+        "Avoid blocking the event loop"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "The fs module is essential for server-side file handling in Node.js.",
+        "It enables building file-based features like logging, uploads, and configuration systems."
+      ]
+    }
+  ]
+} ,
+"path": {
+  "title": "Node.js Path Module",
+  "paragraphs": [
+    "The Path module is a core Node.js module used to work with file and directory paths.",
+    "It helps write cross-platform code by handling differences between Windows and POSIX path formats."
+  ],
+  "sections": [
+    {
+      "heading": "Importing the Module",
+      "examples": [
+        "const path = require(\"path\");",
+        "import path from \"path\";",
+        "import { join, resolve, basename } from \"path\";"
+      ]
+    },
+    {
+      "heading": "Common Use Cases",
+      "list": [
+        "Build file paths safely",
+        "Extract file names and extensions",
+        "Resolve relative and absolute paths",
+        "Normalize messy paths",
+        "Generate relative paths",
+        "Handle cross-platform paths"
+      ]
+    },
+    {
+      "heading": "Important Methods",
+      "list": [
+        "path.basename() – get file name",
+        "path.extname() – get file extension",
+        "path.join() – join path segments",
+        "path.resolve() – create absolute path",
+        "path.parse() – split path into parts",
+        "path.format() – build path from object",
+        "path.normalize() – clean path",
+        "path.relative() – get relative path",
+        "path.isAbsolute() – check absolute path"
+      ]
+    },
+    {
+      "heading": "Special Properties",
+      "list": [
+        "path.sep – OS-specific separator",
+        "path.delimiter – PATH variable separator",
+        "path.win32 – Windows path handling",
+        "path.posix – POSIX path handling"
+      ]
+    },
+    {
+      "heading": "__dirname and __filename",
+      "paragraphs": [
+        "In CommonJS, __dirname and __filename give the current file and directory.",
+        "In ES modules, use import.meta.url with fileURLToPath()."
+      ],
+      "examples": [
+        "path.join(__dirname, \"config\", \"app.json\")",
+        "const __filename = fileURLToPath(import.meta.url)"
+      ]
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Always use path.join instead of string concatenation",
+        "Use path.resolve for absolute paths",
+        "Never trust user input for paths",
+        "Prevent directory traversal",
+        "Use path.normalize for cleanup"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "The Path module is essential for safe and portable file handling.",
+        "It ensures your Node.js applications work correctly on all operating systems."
+      ]
+    }
+  ]
+},
+"os": {
+  "title": "Node.js OS Module",
+  "paragraphs": [
+    "The OS module provides utilities for interacting with the operating system.",
+    "It allows Node.js applications to retrieve system information in a cross-platform way."
+  ],
+  "sections": [
+    {
+      "heading": "Importing the Module",
+      "examples": [
+        "const os = require(\"os\");",
+        "import os from \"os\";",
+        "import { arch, platform, cpus } from \"os\";"
+      ]
+    },
+    {
+      "heading": "Common Use Cases",
+      "list": [
+        "Detect operating system",
+        "Get CPU and memory details",
+        "Access user information",
+        "Find home and temp directories",
+        "Monitor system resources",
+        "Build platform-aware applications"
+      ]
+    },
+    {
+      "heading": "System Information Methods",
+      "list": [
+        "os.arch() – CPU architecture",
+        "os.platform() – OS platform",
+        "os.type() – OS name",
+        "os.release() – OS version",
+        "os.version() – Kernel version",
+        "os.hostname() – System name",
+        "os.cpus() – CPU core details",
+        "os.totalmem() – Total memory",
+        "os.freemem() – Free memory",
+        "os.uptime() – System uptime"
+      ]
+    },
+    {
+      "heading": "User and Environment",
+      "list": [
+        "os.userInfo() – Current user",
+        "os.homedir() – Home directory",
+        "os.tmpdir() – Temp directory",
+        "os.endianness() – Byte order"
+      ]
+    },
+    {
+      "heading": "Network Information",
+      "list": [
+        "os.networkInterfaces() – Network adapters",
+        "Get IP addresses",
+        "Detect internal vs external networks"
+      ]
+    },
+    {
+      "heading": "Performance and Monitoring",
+      "list": [
+        "Check free and used memory",
+        "Monitor CPU cores",
+        "Track system uptime",
+        "Detect low-resource environments"
+      ]
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Cache heavy calls like os.cpus()",
+        "Avoid frequent polling in production",
+        "Use for diagnostics, not business logic",
+        "Combine with process module for metrics"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "The OS module is useful for building system-aware Node.js applications.",
+        "It provides fast, synchronous access to important operating system data."
+      ]
+    }
+  ]
+} ,
+"url": {
+  "title": "Node.js URL Module",
+  "paragraphs": [
+    "The URL module provides utilities for parsing and formatting URLs.",
+    "It can be used to split web addresses into readable parts, construct URLs, and manage query parameters."
+  ],
+  "sections": [
+    {
+      "heading": "Importing the Module",
+      "examples": [
+        "const url = require(\"url\");",
+        "const { URL } = require(\"url\");"
+      ]
+    },
+    {
+      "heading": "Legacy API (url.parse)",
+      "examples": [
+        "let adr = \"http://localhost:8080/default.htm?year=2017&month=february\";",
+        "let q = url.parse(adr, true);",
+        "q.host",
+        "q.pathname",
+        "q.search",
+        "q.query.month"
+      ]
+    },
+    {
+      "heading": "Modern WHATWG URL API",
+      "examples": [
+        "const myURL = new URL(\"https://example.org:8080/p/a/t/h?query=string#hash\");",
+        "myURL.hostname",
+        "myURL.pathname",
+        "myURL.searchParams.get(\"query\")"
+      ]
+    },
+    {
+      "heading": "URL Object Properties",
+      "list": [
+        "href",
+        "protocol",
+        "host",
+        "hostname",
+        "port",
+        "pathname",
+        "search",
+        "query",
+        "hash"
+      ]
+    },
+    {
+      "heading": "URLSearchParams",
+      "examples": [
+        "const params = new URLSearchParams(\"?name=Kai&age=30\");",
+        "params.get(\"name\")",
+        "params.append(\"city\", \"Stavanger\")",
+        "params.delete(\"age\")",
+        "params.toString()"
+      ]
+    },
+    {
+      "heading": "File Server with URL Module",
+      "examples": [
+        "let filename = \".\" + q.pathname;",
+        "fs.readFile(filename, function(err, data) { ... })"
+      ]
+    },
+    {
+      "heading": "Common Use Cases",
+      "list": [
+        "Parse URLs",
+        "Extract query parameters",
+        "Construct safe URLs",
+        "Build routers",
+        "Handle redirects",
+        "Serve files based on URL paths"
+      ]
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Prefer WHATWG URL API for new code",
+        "Always validate URLs",
+        "Use encodeURIComponent for dynamic paths",
+        "Avoid manual string parsing",
+        "Sanitize user-provided URLs"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "The URL module is essential for working with web addresses in Node.js.",
+        "It supports both legacy and modern APIs for flexible URL handling."
+      ]
+    }
+  ]
+} ,
+"events": {
+  "title": "Node.js Events",
+  "paragraphs": [
+    "Every action on a computer is an event, such as when a connection is made or a file is opened.",
+    "Node.js uses an event-driven architecture where objects emit named events and listeners respond to them."
+  ],
+  "sections": [
+    {
+      "heading": "Core Concept",
+      "paragraphs": [
+        "Objects in Node.js can fire events.",
+        "Streams, servers, and many core modules are based on events."
+      ],
+      "examples": [
+        "rs.on(\"open\", () => { console.log(\"The file is open\"); })"
+      ]
+    },
+    {
+      "heading": "EventEmitter Basics",
+      "examples": [
+        "const EventEmitter = require(\"events\");",
+        "const myEmitter = new EventEmitter();",
+        "myEmitter.on(\"greet\", () => console.log(\"Hello there!\"));",
+        "myEmitter.emit(\"greet\");"
+      ]
+    },
+    {
+      "heading": "Creating Custom Events",
+      "examples": [
+        "let events = require(\"events\");",
+        "let eventEmitter = new events.EventEmitter();",
+        "eventEmitter.on(\"scream\", () => console.log(\"I hear a scream!\"));",
+        "eventEmitter.emit(\"scream\");"
+      ]
+    },
+    {
+      "heading": "Passing Arguments",
+      "examples": [
+        "emitter.on(\"userJoined\", (username, id) => { ... })",
+        "emitter.emit(\"userJoined\", \"JohnDoe\", 42)"
+      ]
+    },
+    {
+      "heading": "One-time Events",
+      "examples": [
+        "emitter.once(\"connection\", () => console.log(\"First connection\"));"
+      ]
+    },
+    {
+      "heading": "Error Handling",
+      "examples": [
+        "emitter.on(\"error\", err => console.error(err.message));",
+        "emitter.emit(\"error\", new Error(\"Something went wrong\"))"
+      ]
+    },
+    {
+      "heading": "Common Methods",
+      "list": [
+        "on() – register listener",
+        "emit() – trigger event",
+        "once() – run only once",
+        "off() – remove listener",
+        "removeAllListeners()"
+      ]
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Always handle error events",
+        "Use named functions for listeners",
+        "Remove unused listeners",
+        "Avoid memory leaks by limiting listeners"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "The EventEmitter class is the backbone of Node.js.",
+        "Most Node.js APIs including streams, HTTP servers, and file systems are built on events."
+      ]
+    }
+  ]
+},
+"stream": {
+  "title": "Node.js Streams",
+  "paragraphs": [
+    "Streams are collections of data that are processed piece by piece instead of all at once.",
+    "They allow efficient handling of large data without loading everything into memory."
+  ],
+  "sections": [
+    {
+      "heading": "Why Streams",
+      "list": [
+        "Memory efficient for large files",
+        "Start processing before full data arrives",
+        "Used in files, HTTP, compression, databases",
+        "Enable real-time data handling"
+      ]
+    },
+    {
+      "heading": "Core Stream Types",
+      "list": [
+        "Readable – data source",
+        "Writable – data destination",
+        "Duplex – both read and write",
+        "Transform – modify data in transit"
+      ]
+    },
+    {
+      "heading": "Readable Streams",
+      "examples": [
+        "fs.createReadStream('file.txt')",
+        "stream.on('data', chunk => { ... })",
+        "stream.on('end', () => { ... })"
+      ]
+    },
+    {
+      "heading": "Writable Streams",
+      "examples": [
+        "fs.createWriteStream('output.txt')",
+        "stream.write('Hello')",
+        "stream.end()"
+      ]
+    },
+    {
+      "heading": "Pipe",
+      "paragraphs": [
+        "pipe() connects a readable stream to a writable stream.",
+        "It automatically handles flow and backpressure."
+      ],
+      "examples": [
+        "readableStream.pipe(writableStream)"
+      ]
+    },
+    {
+      "heading": "Chaining Streams",
+      "examples": [
+        "fs.createReadStream('a.txt')",
+        ".pipe(zlib.createGzip())",
+        ".pipe(fs.createWriteStream('a.txt.gz'))"
+      ]
+    },
+    {
+      "heading": "Duplex Streams",
+      "paragraphs": [
+        "Duplex streams can read and write.",
+        "Example: TCP sockets."
+      ]
+    },
+    {
+      "heading": "Transform Streams",
+      "paragraphs": [
+        "Transform streams modify data.",
+        "Used for encryption, compression, formatting."
+      ]
+    },
+    {
+      "heading": "Stream Events",
+      "list": [
+        "data",
+        "end",
+        "error",
+        "finish",
+        "drain",
+        "close"
+      ]
+    },
+    {
+      "heading": "pipeline()",
+      "paragraphs": [
+        "pipeline() is a safer alternative to pipe().",
+        "It handles cleanup and errors automatically."
+      ],
+      "examples": [
+        "pipeline(read, transform, write, callback)"
+      ]
+    },
+    {
+      "heading": "Object Mode",
+      "paragraphs": [
+        "Streams can work with JavaScript objects.",
+        "Set objectMode: true."
+      ]
+    },
+    {
+      "heading": "Practical Uses",
+      "list": [
+        "Streaming files",
+        "Video streaming",
+        "CSV processing",
+        "HTTP responses"
+      ]
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Always handle error events",
+        "Use pipeline() instead of pipe()",
+        "Respect backpressure",
+        "Always end writable streams",
+        "Avoid blocking operations"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "Streams are one of the most powerful features of Node.js.",
+        "They form the backbone of file systems, networking, and real-time systems."
+      ]
+    }
+  ]
+} ,
+"buffer": {
+  "title": "Node.js Buffer Module",
+  "paragraphs": [
+    "The Buffer module is used to handle binary data in Node.js.",
+    "Buffers represent raw memory allocations outside the JavaScript heap."
+  ],
+  "sections": [
+    {
+      "heading": "Why Buffers",
+      "list": [
+        "Work with binary data",
+        "Fixed-length memory blocks",
+        "Used in files, networks, streams",
+        "Faster than regular JavaScript arrays"
+      ]
+    },
+    {
+      "heading": "Creating Buffers",
+      "list": [
+        "Buffer.alloc(size)",
+        "Buffer.allocUnsafe(size)",
+        "Buffer.from(data)"
+      ]
+    },
+    {
+      "heading": "Buffer.alloc",
+      "paragraphs": [
+        "Creates a zero-filled buffer.",
+        "Safest way to allocate memory."
+      ],
+      "examples": [
+        "Buffer.alloc(10)"
+      ]
+    },
+    {
+      "heading": "Buffer.allocUnsafe",
+      "paragraphs": [
+        "Faster but memory is uninitialized.",
+        "Must be filled before use."
+      ],
+      "examples": [
+        "Buffer.allocUnsafe(10)"
+      ]
+    },
+    {
+      "heading": "Buffer.from",
+      "paragraphs": [
+        "Creates buffer from strings, arrays, or other buffers."
+      ],
+      "examples": [
+        "Buffer.from('Hello')",
+        "Buffer.from([65,66,67])"
+      ]
+    },
+    {
+      "heading": "Writing to Buffers",
+      "examples": [
+        "buffer.write('Hello')",
+        "buffer[0] = 72"
+      ]
+    },
+    {
+      "heading": "Reading from Buffers",
+      "examples": [
+        "buffer.toString()",
+        "buffer.toString('utf8', 0, 5)",
+        "buffer[0]"
+      ]
+    },
+    {
+      "heading": "Common Buffer Methods",
+      "list": [
+        "Buffer.compare()",
+        "buffer.copy()",
+        "buffer.slice()",
+        "buffer.equals()",
+        "buffer.toString()"
+      ]
+    },
+    {
+      "heading": "Encodings",
+      "list": [
+        "utf8",
+        "ascii",
+        "latin1",
+        "base64",
+        "hex",
+        "utf16le"
+      ]
+    },
+    {
+      "heading": "Advanced Operations",
+      "list": [
+        "Buffer.concat()",
+        "buffer.indexOf()",
+        "buffer.includes()",
+        "buffer.lastIndexOf()"
+      ]
+    },
+    {
+      "heading": "Buffer with Streams",
+      "paragraphs": [
+        "Streams send data in chunks as Buffers.",
+        "Common in file and network processing."
+      ]
+    },
+    {
+      "heading": "Buffer with File System",
+      "paragraphs": [
+        "Files are read and written as buffers.",
+        "Used for partial file reads."
+      ]
+    },
+    {
+      "heading": "Performance",
+      "list": [
+        "Buffers use memory outside JS heap",
+        "allocUnsafe is faster",
+        "Large buffer to string is expensive",
+        "Pooling can improve performance"
+      ]
+    },
+    {
+      "heading": "Security",
+      "list": [
+        "Avoid allocUnsafe unless needed",
+        "Always clear sensitive buffers",
+        "Slices share memory",
+        "Validate external binary input"
+      ]
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Use Buffer.alloc for safety",
+        "Zero-fill sensitive data",
+        "Avoid leaking slices",
+        "Be careful with logs"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "Buffers are the foundation of binary handling in Node.js.",
+        "They power streams, networking, and file systems."
+      ]
+    }
+  ]
+}
+
+  }
+}

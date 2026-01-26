@@ -138,6 +138,10 @@
       "aws": {
         "title": "AWS Tutorial",
         "file": "backend/aws.json"
+      } ,
+      "swift": {
+        "title": "Swift",
+        "file": "backend/swift.json"
       }
     }
   },

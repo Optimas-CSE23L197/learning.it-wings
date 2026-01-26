@@ -1,0 +1,2600 @@
+{
+  "course": {
+    "id": "asp-webpages",
+    "title": "ASP.NET WebPages Tutorial"
+  },
+  "sections": [
+    {
+      "title": "WP Tutorial",
+      "lessons": [
+        { "id": "webpages-intro", "title": "WebPages Intro" },
+        { "id": "webpages-razor", "title": "WebPages Razor" },
+        { "id": "webpages-layout", "title": "WebPages Layout" },
+        { "id": "webpages-folders", "title": "WebPages Folders" },
+        { "id": "webpages-global", "title": "WebPages Global" },
+        { "id": "webpages-forms", "title": "WebPages Forms" },
+        { "id": "webpages-objects", "title": "WebPages Objects" },
+        { "id": "webpages-files", "title": "WebPages Files" },
+        { "id": "webpages-databases", "title": "WebPages Databases" },
+        { "id": "webpages-helpers", "title": "WebPages Helpers" },
+        { "id": "webpages-webgrid", "title": "WebPages WebGrid" },
+        { "id": "webpages-charts", "title": "WebPages Charts" },
+        { "id": "webpages-email", "title": "WebPages Email" },
+        { "id": "webpages-security", "title": "WebPages Security" },
+        { "id": "webpages-publish", "title": "WebPages Publish" },
+        { "id": "webpages-examples", "title": "WebPages Examples" },
+        { "id": "webpages-classes", "title": "WebPages Classes" }
+      ]
+    },
+    {
+      "title": "ASP.NET Razor",
+      "lessons": [
+        { "id": "razor-intro", "title": "Razor Intro" },
+        { "id": "razor-syntax", "title": "Razor Syntax" },
+        { "id": "razor-csharp-variables", "title": "Razor C# Variables" },
+        { "id": "razor-csharp-loops", "title": "Razor C# Loops" },
+        { "id": "razor-csharp-logic", "title": "Razor C# Logic" },
+        { "id": "razor-vb-variables", "title": "Razor VB Variables" },
+        { "id": "razor-vb-loops", "title": "Razor VB Loops" },
+        { "id": "razor-vb-logic", "title": "Razor VB Logic" }
+      ]
+    },
+    {
+      "title": "ASP Classic",
+      "lessons": [
+        { "id": "asp-intro", "title": "ASP Intro" },
+        { "id": "asp-syntax", "title": "ASP Syntax" },
+        { "id": "asp-variables", "title": "ASP Variables" },
+        { "id": "asp-procedures", "title": "ASP Procedures" },
+        { "id": "asp-conditionals", "title": "ASP Conditionals" },
+        { "id": "asp-looping", "title": "ASP Looping" },
+        { "id": "asp-forms", "title": "ASP Forms" },
+        { "id": "asp-cookies", "title": "ASP Cookies" },
+        { "id": "asp-session", "title": "ASP Session" },
+        { "id": "asp-application", "title": "ASP Application" },
+        { "id": "asp-include", "title": "ASP #include" },
+        { "id": "asp-global-asa", "title": "ASP Global.asa" },
+        { "id": "asp-ajax", "title": "ASP AJAX" },
+        { "id": "asp-email", "title": "ASP e-mail" },
+        { "id": "asp-examples", "title": "ASP Examples" },
+        { "id": "asp-certificate", "title": "ASP Certificate" }
+      ]
+    },
+    {
+      "title": "ASP Reference",
+      "lessons": [
+        { "id": "ref-vb-functions", "title": "ASP VB Functions" },
+        { "id": "ref-vb-keywords", "title": "ASP VB Keywords" },
+        { "id": "ref-response", "title": "ASP Response" },
+        { "id": "ref-request", "title": "ASP Request" },
+        { "id": "ref-application", "title": "ASP Application" },
+        { "id": "ref-session", "title": "ASP Session" },
+        { "id": "ref-server", "title": "ASP Server" },
+        { "id": "ref-error", "title": "ASP Error" },
+        { "id": "ref-filesystem", "title": "ASP FileSystem" },
+        { "id": "ref-textstream", "title": "ASP TextStream" },
+        { "id": "ref-drive", "title": "ASP Drive" },
+        { "id": "ref-file", "title": "ASP File" } ,
+        { "id": "ref-folder", "title": "ASP Folder" },
+      { "id": "ref-dictionary", "title": "ASP Dictionary" },
+      { "id": "ref-adrotator", "title": "ASP AdRotator" },
+      { "id": "ref-browsercap", "title": "ASP BrowserCap" },
+      { "id": "ref-contentlinking", "title": "ASP Content Linking" },
+      { "id": "ref-contentrotator", "title": "ASP Content Rotator" },
+      { "id": "ref-quickref", "title": "ASP Quick Ref" }
+      ]
+    }
+  ],
+  "content": {
+    "webpages-intro": {
+      "title": "WebPages Intro",
+      "sections": [
+        {
+          "heading": "Introduction to ASP.NET Web Pages",
+          "paragraphs": [
+            "Web Pages is one of several programming models available for creating ASP.NET web sites and applications.",
+            "It provides a straightforward way to combine HTML, CSS, and server-side code into a single development flow.",
+            "The model is designed to be easy to learn, understand, and use, making it an ideal starting point for those new to ASP.NET.",
+            "It is similar to other server-side scripting models like PHP and Classic ASP."
+          ]
+        },
+        {
+          "heading": "Core Features",
+          "paragraphs": [
+            "Web Pages uses a Single Page Application (SPA) model where the logic and presentation are handled together.",
+            "Developers can use either C# (C sharp) or VB (Visual Basic) as the scripting language.",
+            "Applications are easily extendable using programmable 'helpers' for advanced features like databases, social networking, graphics, and video."
+          ]
+        },
+        {
+          "heading": "Server-Side Execution",
+          "paragraphs": [
+            "Because ASP.NET code is executed on the server, users cannot see the original code in their browser; they only see the plain HTML output.",
+            "The following example demonstrates how server code (using the @ symbol) can be embedded in HTML to perform tasks like displaying the current time:"
+          ],
+          "code": "<html>\n<body>\n      <h1>Hello Web Pages</h1>\n      <p>The time is @DateTime.Now</p>\n</body>\n</html>"
+        }
+      ]
+    },
+    "webpages-razor": {
+      "title": "WebPages Razor",
+      "sections": [
+        {
+          "heading": "What is Razor?",
+          "paragraphs": [
+            "Razor is a markup syntax that lets you embed server-based code into web pages.",
+            "It has the power of traditional ASP.NET, but is easier to learn and use.",
+            "Razor is a server-side markup syntax, much like PHP and Classic ASP."
+          ]
+        },
+        {
+          "heading": "C# and Visual Basic",
+          "paragraphs": [
+            "Razor supports both C# (C sharp) and VB (Visual Basic) programming languages.",
+            "Web Pages using Razor typically have the file extension .cshtml for C# and .vbhtml for Visual Basic."
+          ]
+        },
+        {
+          "heading": "Main Razor Syntax Rules",
+          "paragraphs": [
+            "Razor code blocks are enclosed in @{ ... }.",
+            "Inline expressions (variables and functions) start with @.",
+            "Code statements end with a semicolon.",
+            "Variables are declared with the var keyword (or specific types like string, int)."
+          ],
+          "code": "@{ \n  var myMessage = \"Hello World\"; \n  var total = 10 + 20; \n}\n\n<p>The message is: @myMessage</p>\n<p>The total is: @total</p>"
+        }
+      ]
+    },
+    "webpages-layout": {
+      "title": "WebPages Layout",
+      "sections": [
+        {
+          "heading": "Achieving a Consistent Look",
+          "paragraphs": [
+            "Web Pages allows you to create a web site with a consistent look and feel by ensuring every page has the same header, footer, style, and layout.",
+            "This is done efficiently through reusable content blocks and layout templates."
+          ]
+        },
+        {
+          "heading": "Content Blocks with @RenderPage()",
+          "paragraphs": [
+            "Content blocks like headers and footers can be stored in separate files and imported anywhere in a web page using the `@RenderPage()` method.",
+            "This saves work by centralizing content; updating a single header or footer file automatically updates all pages using it."
+          ],
+          "code": "<html>\n<body>\n@RenderPage(\"header.cshtml\")\n<h1>Hello Web Pages</h1>\n<p>This is a paragraph</p>\n@RenderPage(\"footer.cshtml\")\n</body>\n</html>"
+        },
+        {
+          "heading": "Using a Layout Page with @RenderBody()",
+          "paragraphs": [
+            "A layout page defines the structure of a site but leaves a space for content using the `@RenderBody()` method.",
+            "Individual content pages link to the layout using a `Layout` directive at the start of the file."
+          ],
+          "code": "// Layout Page (Layout.cshtml)\n<html>\n<body>\n<p>This is header text</p>\n@RenderBody()\n<p>&copy; 2014 W3Schools. All rights reserved.</p>\n</body>\n</html>\n\n// Content Page\n@{Layout=\"Layout.cshtml\";}\n<h1>Welcome to W3Schools</h1>\n<p>Lorem ipsum content...</p>"
+        },
+        {
+          "heading": "Security and Organization",
+          "paragraphs": [
+            "Files starting with an underscore (e.g., `_header.cshtml` or `_Layout.cshtml`) cannot be browsed directly from the web, preventing users from viewing partial files or templates.",
+            "Sensitive information like database or email passwords should be kept in a separate file named `_AppStart.cshtml`."
+          ],
+          "code": "// _AppStart.cshtml\n@{\nWebMail.SmtpServer = \"mailserver.example.com\";\nWebMail.UserName = \"username@example.com\";\nWebMail.Password = \"your-password\";\n}"
+        }
+      ]
+    } ,
+    "webpages-folders": {
+      "title": "WebPages Folders",
+      "sections": [
+        {
+          "heading": "Folder Structures and Paths",
+          "paragraphs": [
+            "Understanding the difference between logical and physical folder structures is essential for managing an ASP.NET website.",
+            "A typical ASP.NET site includes specific folders such as 'Account' for security, 'App_Data' for databases, 'Images' for media, 'Scripts' for browser scripts, and 'Shared' for common files like layouts."
+          ]
+        },
+        {
+          "heading": "Virtual vs. Physical Names",
+          "paragraphs": [
+            "A virtual path (e.g., /html/intro.asp) is a web-friendly shorthand that corresponds to a physical path on the server's hard drive (e.g., C:\\MyWebSites\\html\\intro.asp).",
+            "Using virtual paths allows you to move your website to different servers without needing to update all the internal file paths in your code."
+          ]
+        },
+        {
+          "heading": "The ~ Operator",
+          "paragraphs": [
+            "In programming code, the `~` operator is used to specify the virtual root of the web application.",
+            "By using this operator, your code remains portable even if the website is moved to a different folder."
+          ],
+          "code": "var myImagesFolder = \"~/images\";\nvar myStyleSheet = \"~/styles/StyleSheet.css\";"
+        },
+        {
+          "heading": "Server.MapPath and Href Methods",
+          "paragraphs": [
+            "The `Server.MapPath` method converts a virtual path into a physical path that the server can understand, which is necessary for opening local data files.",
+            "The `Href` method is used to convert a code path into a path the browser can understand, specifically for resources like CSS or images in HTML elements."
+          ],
+          "code": "// Converting to physical path\nvar fileName = Server.MapPath(\"~/dataFile.txt\");\n\n// Creating a browser-friendly link\n<link rel=\"stylesheet\" type=\"text/css\" href=\"@Href(\"~/Shared/Site.css\")\" />"
+        }
+      ]
+    },
+    "webpages-global": {
+      "title": "WebPages Global",
+      "sections": [
+        {
+          "heading": "Global Startup Pages",
+          "paragraphs": [
+            "In ASP.NET Web Pages, you can use specialized files to run code at the application level or folder level before individual pages execute.",
+            "These files use an underscore prefix, which prevents them from being browsed directly by web users."
+          ]
+        },
+        {
+          "heading": "Application Startup: _AppStart",
+          "paragraphs": [
+            "The `_AppStart` file is located in the root of your site and runs only once—the very first time any page in the site is requested.",
+            "It is typically used for initialization tasks, such as setting global values, counters, or security settings.",
+            "This file must have the same extension as your other web pages (e.g., `_AppStart.cshtml`)."
+          ]
+        },
+        {
+          "heading": "Folder Startup: _PageStart",
+          "paragraphs": [
+            "The `_PageStart` file can be added to any folder and runs before every page request within that specific folder.",
+            "Common uses for `_PageStart` include setting a consistent layout for all pages in a folder or performing login checks before allowing a page to run."
+          ]
+        },
+        {
+          "heading": "Execution Logic",
+          "paragraphs": [
+            "When a request arrives, ASP.NET follows a specific order of execution:"
+          ],
+          "list": [
+            "ASP.NET first checks for `_AppStart`. If it is the first request to the site, `_AppStart` runs.",
+            "Next, it checks for `_PageStart` in the relevant folder and runs it.",
+            "Finally, the specifically requested page runs.",
+            "Inside `_PageStart`, you can use the `RunPage()` method to specify exactly where the requested page should execute; otherwise, it runs automatically after `_PageStart` finishes."
+          ]
+        }
+      ]
+    },
+    "webpages-forms": {
+      "title": "WebPages Forms",
+      "sections": [
+        {
+          "heading": "Handling HTML Forms",
+          "paragraphs": [
+            "An HTML form is a document section containing input controls like text boxes, check boxes, and pull-down lists.",
+            "In ASP.NET Web Pages, you use Razor code to process data submitted through these forms."
+          ]
+        },
+        {
+          "heading": "Reading Form Input",
+          "paragraphs": [
+            "The `IsPost` property is used to check if the page has been submitted via a POST request.",
+            "You can retrieve the data entered by the user using the `Request` object followed by the name of the input control."
+          ],
+          "code": "@{\nif (IsPost) { \n  string companyname = Request[\"CompanyName\"]; \n  string contactname = Request[\"ContactName\"]; \n  <p>You entered: @companyname and @contactname</p>\n}\nelse {\n  <form method=\"post\" action=\"\">\n    Company Name: <input type=\"text\" name=\"CompanyName\" /><br />\n    Contact Name: <input type=\"text\" name=\"ContactName\" /><br />\n    <input type=\"submit\" value=\"Submit\" />\n  </form>\n}\n}"
+        },
+        {
+          "heading": "Dynamic Content: Displaying Images",
+          "paragraphs": [
+            "Forms can be used to dynamically change page content, such as displaying a specific image based on a user's selection from a drop-down list.",
+            "The server-side code reads the selection, constructs the file path, and updates the `src` attribute of an `<img>` element."
+          ],
+          "code": "@{\nvar imagePath=\"\";\nif (Request[\"Choice\"] != null)\n   {imagePath=\"images/\" + Request[\"Choice\"];}\n}\n<!DOCTYPE html>\n<html>\n<body>\n<form method=\"post\">\n<select name=\"Choice\">\n  <option value=\"Photo1.jpg\">Photo 1</option>\n  <option value=\"Photo2.jpg\">Photo 2</option>\n</select>\n<input type=\"submit\" value=\"Submit\" />\n@if (imagePath != \"\")\n{\n<img src=\"@imagePath\" alt=\"Sample\" />\n} \n</form>\n</body>\n</html>"
+        },
+        {
+          "heading": "Example Logic Explained",
+          "paragraphs": [
+            "The `<select>` element (named 'Choice') passes the file name to the server when the user clicks submit.",
+            "The Razor code reads this via `Request[\"Choice\"]` and stores the resulting path in a variable named `imagePath`.",
+            "To prevent errors, the `<img>` element is placed inside an `if` block so it only attempts to render once a choice has been made."
+          ]
+        }
+      ]
+    },
+    "webpages-objects": {
+      "title": "WebPages Objects",
+      "sections": [
+        {
+          "heading": "Understanding the Page Object",
+          "paragraphs": [
+            "ASP.NET Web Pages is built heavily around the use of Objects.",
+            "The Page Object provides methods and properties that allow you to control page rendering and access request data."
+          ]
+        },
+        {
+          "heading": "Common Page Object Methods",
+          "paragraphs": [
+            "Methods are used to perform specific actions during the page lifecycle:"
+          ],
+          "list": [
+            "href: Builds a URL using specified parameters.",
+            "RenderBody(): Used in layout pages to render the portion of a content page not within a named section.",
+            "RenderPage(page): Renders the content of one page inside another.",
+            "RenderSection(section): Renders the content of a named section in layout pages.",
+            "Write(object): Writes an object as an HTML-encoded string.",
+            "WriteLiteral: Writes an object directly without HTML-encoding it first."
+          ]
+        },
+        {
+          "heading": "Common Page Object Properties",
+          "paragraphs": [
+            "Properties provide information about the current page or request:"
+          ],
+          "list": [
+            "IsPost: Returns true if the client used a POST request to transfer data.",
+            "Layout: Sets or gets the path for a layout page.",
+            "Page: Allows property-like access to data shared between content pages and layouts.",
+            "Request: Provides access to the HttpRequest object for the current request.",
+            "Server: Provides access to the HttpServerUtility object for web-page processing."
+          ]
+        },
+        {
+          "heading": "Sharing Data via the Page Property",
+          "paragraphs": [
+            "The Page property is highly useful for sharing data between a content file and a layout file.",
+            "You can dynamically add your own properties, such as Page.Title or Page.Version, to manage site-wide information."
+          ],
+          "code": "// In Home.cshtml\n@{\n  Layout=\"~/Shared/Layout.cshtml\";\n  Page.Title=\"Home Page\";\n}\n\n// In Layout.cshtml\n<!DOCTYPE html>\n<html>\n<head>\n  <title>@Page.Title</title>\n</head>\n<body>\n  @RenderBody()\n</body>\n</html>"
+        }
+      ]
+    } ,
+    "webpages-files": {
+      "title": "WebPages Files",
+      "sections": [
+        {
+          "heading": "Working with Text Files",
+          "paragraphs": [
+            "Sometimes it is necessary to access data stored in text files, often referred to as flat files.",
+            "Common formats for these flat files include .txt, .xml, and .csv (comma-delimited values)."
+          ]
+        },
+        {
+          "heading": "Storing Data in App_Data",
+          "paragraphs": [
+            "Data files should typically be stored in the App_Data folder of your website.",
+            "For example, you can create a file named Persons.txt with comma-separated values like 'George,Lucas' to act as a simple data source."
+          ]
+        },
+        {
+          "heading": "Reading and Displaying File Data",
+          "paragraphs": [
+            "To read a text file, you first use Server.MapPath to find the exact physical path on the server.",
+            "File.ReadAllLines is then used to open the file and read every line into an array for processing.",
+            "By nesting loops, you can iterate through each line and split the string by commas to display individual data items:"
+          ],
+          "code": "@{\nvar dataFile = Server.MapPath(\"~/App_Data/Persons.txt\");\nArray userData = File.ReadAllLines(dataFile);\n}\n\n<!DOCTYPE html>\n<html>\n<body>\n<h1>Reading Data from a File</h1>\n@foreach (string dataLine in userData)\n{\n  foreach (string dataItem in dataLine.Split(','))\n  {@dataItem <text>&nbsp;</text>}\n  <br />\n}\n</body>\n</html>"
+        },
+        {
+          "heading": "Handling Excel and CSV Files",
+          "paragraphs": [
+            "Microsoft Excel spreadsheets can be saved as .csv files, where rows become text lines and columns are separated by commas.",
+            "You can use the same logic for reading .txt files to read and display data from these Excel-generated .csv files."
+          ]
+        }
+      ]
+    },
+    "webpages-databases": {
+      "title": "WebPages Databases",
+      "sections": [
+        {
+          "heading": "Working with Databases",
+          "paragraphs": [
+            "ASP.NET Web Pages allows you to easily display data from a database by either connecting to an existing one or creating a new one from scratch.",
+            "A common approach involves connecting to SQL Server Compact databases located within the application."
+          ]
+        },
+        {
+          "heading": "Displaying Data in a Table",
+          "paragraphs": [
+            "To list data, you open a connection and execute a SQL SELECT query.",
+            "The results are returned as a collection that can be iterated through using a `@foreach` loop to generate HTML table rows:"
+          ],
+          "code": "@{\n  var db = Database.Open(\"SmallBakery\"); \n  var selectQueryString = \"SELECT * FROM Product ORDER BY Name\"; \n}\n<html> \n<body> \n  <h1>Small Bakery Products</h1> \n  <table> \n    <tr>\n      <th>Id</th><th>Product</th><th>Description</th><th>Price</th> \n    </tr>\n    @foreach(var row in db.Query(selectQueryString))\n    {\n      <tr> \n        <td>@row.Id</td> \n        <td>@row.Name</td> \n        <td>@row.Description</td> \n        <td align=\"right\">@row.Price</td> \n      </tr> \n    }\n  </table> \n</body> \n</html>"
+        },
+        {
+          "heading": "How Database.Open() Works",
+          "paragraphs": [
+            "The `Database.Open(name)` method follows a two-step logic to establish a connection:"
+          ],
+          "list": [
+            "It first searches the `App_Data` folder for a database file matching the name (without the extension).",
+            "If no file is found, it looks for a 'connection string' in the `Web.config` file that matches the name.",
+            "This flexibility allows developers to test locally with a file and switch to a full SQL database on a live host without changing page code."
+          ]
+        },
+        {
+          "heading": "Database Object Reference",
+          "paragraphs": [
+            "The Database object provides several methods for different types of data operations:"
+          ],
+          "list": [
+            "Database.Query(): Executes a query and returns a collection of results.",
+            "Database.Execute(): Used for INSERT, UPDATE, or DELETE statements; returns the count of affected records.",
+            "Database.QuerySingle(): Executes a query and returns only a single record.",
+            "Database.QueryValue(): Executes a query and returns a single value (like a count or sum).",
+            "Database.GetLastInsertId(): Returns the identity column value from the most recently inserted row."
+          ]
+        }
+      ]
+    },
+  "webpages-webgrid": {
+      "title": "WebPages WebGrid",
+      "sections": [
+        {
+          "heading": "The WebGrid Helper",
+          "paragraphs": [
+            "The WebGrid helper is one of many useful ASP.NET Web Helpers designed to simplify data display.",
+            "While you can manually create HTML tables using Razor loops, the WebGrid helper provides a much easier and more automated approach."
+          ]
+        },
+        {
+          "heading": "Features of WebGrid",
+          "paragraphs": [
+            "The WebGrid helper includes several built-in functionalities to improve user experience and development speed:"
+          ],
+          "list": [
+            "It automatically sets up an HTML table to display data.",
+            "It supports various options for custom formatting.",
+            "It includes built-in support for paging through large datasets.",
+            "It supports data sorting by clicking on column headings."
+          ]
+        },
+        {
+          "heading": "Implementing WebGrid",
+          "paragraphs": [
+            "To use WebGrid, you query your database, create a new WebGrid object with that data, and then call the GetHtml() method to render the table:"
+          ],
+          "code": "@{\n  var db = Database.Open(\"SmallBakery\"); \n  var selectQueryString = \"SELECT * FROM Product ORDER BY Name\"; \n  var data = db.Query(selectQueryString); \n  var grid = new WebGrid(data); \n}\n<html> \n<head> \n  <title>Displaying Data Using the WebGrid Helper</title> \n</head> \n<body> \n  <h1>Small Bakery Products</h1> \n  <div id=\"grid\"> \n    @grid.GetHtml()\n  </div> \n</body> \n</html>"
+        },
+        {
+          "heading": "WebGrid Object Reference",
+          "paragraphs": [
+            "The following methods are the primary tools for working with the WebGrid object:"
+          ],
+          "list": [
+            "WebGrid(data): Creates a new WebGrid object using data from a query.",
+            "WebGrid.GetHtml(): Renders the actual markup required to display the data in an HTML table.",
+            "WebGrid.Pager(): Renders a pager control for the WebGrid object to navigate through pages of data."
+          ]
+        }
+      ]
+    },
+    "webpages-charts": {
+      "title": "WebPages Charts",
+      "sections": [
+        {
+          "heading": "The Chart Helper",
+          "paragraphs": [
+            "The Chart Helper allows you to display data in graphical form rather than just text or grids.",
+            "It can create various chart types including area, bar, column, line, and pie charts, as well as specialized stock charts.",
+            "The helper provides many formatting options and labels to customize the visual output."
+          ]
+        },
+        {
+          "heading": "Creating a Chart from an Array",
+          "paragraphs": [
+            "You can generate a chart directly from hardcoded arrays for quick data visualization:"
+          ],
+          "code": "@{\nvar myChart = new Chart(width: 600, height: 400)\n   .AddTitle(\"Employees\")\n   .AddSeries(chartType: \"column\",\n      xValue: new[] { \"Peter\", \"Andrew\", \"Julie\", \"Mary\", \"Dave\" },\n      yValues: new[] { \"2\", \"6\", \"4\", \"5\", \"3\" })\n   .Write();\n}",
+          "list": [
+            "new Chart: Creates the object and sets dimensions.",
+            "AddTitle: Specifies the chart title.",
+            "AddSeries: Defines the chart type and axis data.",
+            "Write(): Renders the chart image to the browser."
+          ]
+        },
+        {
+          "heading": "Creating a Chart from a Database",
+          "paragraphs": [
+            "You can use the results of a database query to populate your chart.",
+            "The DataBindTable method is an easy way to bind a data source to the chart:",
+            "Alternatively, AddSeries can be used for more explicit control over how data fields are mapped."
+          ],
+          "code": "@{\nvar db = Database.Open(\"SmallBakery\");\nvar dbdata = db.Query(\"SELECT Name, Price FROM Product\");\nvar myChart = new Chart(width: 600, height: 400)\n   .AddTitle(\"Product Sales\")\n   .DataBindTable(dataSource: dbdata, xField: \"Name\")\n   .Write();\n}"
+        },
+        {
+          "heading": "Charting from XML Data",
+          "paragraphs": [
+            "A third option is to use an XML file as the data source.",
+            "This involves reading the XML into a DataSet and then using a DataView to provide the values to the Chart Helper."
+          ]
+        },
+        {
+          "heading": "Chart Object Reference",
+          "paragraphs": [
+            "Common methods for the Chart object include:"
+          ],
+          "list": [
+            "Chart(): Initializes the chart with width and height.",
+            "AddLegend(): Adds a legend to identify data series.",
+            "AddSeries(): Adds a series of values, allowing specification of chart type and axis labels."
+          ]
+        }
+      ]
+    },
+    "webpages-email": {
+      "title": "WebPages Email",
+      "sections": [
+        {
+          "heading": "The WebMail Helper",
+          "paragraphs": [
+            "The WebMail Helper allows web applications to easily send emails using the Simple Mail Transfer Protocol (SMTP).",
+            "This is highly useful for scenarios like support requests, where user input needs to be forwarded to a specific email address."
+          ]
+        },
+        {
+          "heading": "Initializing WebMail in _AppStart",
+          "paragraphs": [
+            "To use the WebMail helper, you must configure SMTP settings. Doing this in the `_AppStart.cshtml` file ensures the helper is initialized when the site starts.",
+            "Required properties include the SMTP server name, port number, credentials, and the 'from' address:"
+          ],
+          "code": "@{\n  WebMail.SmtpServer = \"smtp.example.com\";\n  WebMail.SmtpPort = 25;\n  WebMail.EnableSsl = false;\n  WebMail.UserName = \"support@example.com\";\n  WebMail.Password = \"password-goes-here\";\n  WebMail.From = \"john@example.com\";\n}"
+        },
+        {
+          "heading": "Sending an Email",
+          "paragraphs": [
+            "Sending an email typically involves a two-page process: an input page to collect data and a send page to process and transmit the email.",
+            "On the send page, use the `WebMail.Send()` method to deliver the message. It is recommended to use a `try-catch` block to handle potential delivery errors:"
+          ],
+          "code": "@{\n  var customerEmail = Request[\"customerEmail\"];\n  var customerRequest = Request[\"customerRequest\"];\n  try {\n    WebMail.Send(\n      to: \"someone@example.com\", \n      subject: \"Help request from - \" + customerEmail, \n      body: customerRequest \n    );\n  } catch (Exception ex) {\n    <text>Error: @ex.Message</text>\n  }\n}"
+        },
+        {
+          "heading": "WebMail Object Reference",
+          "paragraphs": [
+            "The `Send()` method supports both mandatory and optional parameters for advanced configuration:"
+          ],
+          "list": [
+            "to: The recipient email addresses (separated by semicolon).",
+            "subject: The subject line of the email.",
+            "body: The main content of the message.",
+            "cc: Optional carbon copy recipients.",
+            "filesToAttach: Optional collection of filenames for attachments.",
+            "isBodyHtml: Set to true if the body contains HTML markup."
+          ]
+        }
+      ]
+    },
+    "webpages-security": {
+      "title": "WebPages Security",
+      "sections": [
+        {
+          "heading": "The WebSecurity Object",
+          "paragraphs": [
+            "The WebSecurity object provides essential security and authentication services for ASP.NET Web Pages applications.",
+            "It allows developers to manage user accounts, handle logins and logouts, and perform password resets or changes."
+          ]
+        },
+        {
+          "heading": "Initializing the Security Database",
+          "paragraphs": [
+            "Before using WebSecurity, the system must be initialized, typically within the `_AppStart.cshtml` file so it runs when the application starts.",
+            "This initialization links the security system to a specific database and profile table:"
+          ],
+          "code": "@{\n  WebSecurity.InitializeDatabaseConnection(\"Users\", \"UserProfile\", \"UserId\", \"Email\", true);\n}",
+          "list": [
+            "Users: The name of the database file (e.g., Users.sdf).",
+            "UserProfile: The table containing user profile information.",
+            "UserId: The primary key column for user IDs.",
+            "Email: The column used for user names (login identifiers).",
+            "Auto-create: The final parameter (true) automatically creates membership tables if they are missing, though the database itself must already exist."
+          ]
+        },
+        {
+          "heading": "WebSecurity Properties and Methods",
+          "paragraphs": [
+            "The object includes several properties to check the state of the current user:",
+            "Key methods handle the core authentication flow:"
+          ],
+          "list": [
+            "IsAuthenticated: Returns true if the user is currently logged in.",
+            "CurrentUserName: Retrieves the name of the logged-in user.",
+            "CurrentUserId: Retrieves the unique ID of the current user.",
+            "Login() / Logout(): Manages user sessions via authentication tokens in cookies.",
+            "CreateUserAndAccount(): Registers a new user in the system.",
+            "RequireAuthenticatedUser(): Protects a page by exiting if the user is not logged in.",
+            "GeneratePasswordResetToken(): Creates a secure token for password recovery via email."
+          ]
+        },
+        {
+          "heading": "Configuration and Troubleshooting",
+          "paragraphs": [
+            "If security features fail on a hosting provider, you may need to explicitly enable SimpleMembership in your `Web.config` file:"
+          ],
+          "code": "<appSettings>\n  <add key=\"enableSimpleMembership\" value=\"true\" />\n</appSettings>"
+        }
+      ]
+    },
+    "webpages-publish": {
+      "title": "WebPages Publish",
+      "sections": [
+        {
+          "heading": "Publishing the Website",
+          "paragraphs": [
+            "Publishing involves moving your website from a local development environment to a remote hosting server.",
+            "Ensure that your hosting provider supports and runs the latest version of ASP.NET, such as 4.0 or 4.5."
+          ]
+        },
+        {
+          "heading": "Deployment Steps",
+          "paragraphs": [
+            "Follow these core steps to deploy your application:"
+          ],
+          "list": [
+            "Copy all web folders and content from your development computer to the remote server application folder.",
+            "Verify that the 'bin' folder on the server contains all necessary DLL files from your development environment.",
+            "Key DLL files include System.Web.Helpers.dll, System.Web.Razor.dll, and WebMatrix.Data.dll among others."
+          ]
+        },
+        {
+          "heading": "Handling Data and Databases",
+          "paragraphs": [
+            "Special care must be taken when publishing applications that contain data, such as SQL Server Compact (.sdf) files in the App_Data folder.",
+            "Avoid publishing test data to a live server to prevent overwriting actual production data.",
+            "A common practice is to delete test records and copy an empty version of the database file to the server for a fresh start."
+          ]
+        }
+      ]
+    },
+    "webpages-examples": {
+      "title": "WebPages Examples",
+      "sections": [
+        {
+          "heading": "Learning by Example",
+          "paragraphs": [
+            "The best way to master ASP.NET Web Pages is through practical examples in both C# and Visual Basic.",
+            "These examples cover everything from basic page logic to advanced database integration and data visualization."
+          ]
+        },
+        {
+          "heading": "Basic Web Pages and Logic",
+          "paragraphs": [
+            "Core examples demonstrate how to handle common web tasks and programming logic:"
+          ],
+          "list": [
+            "Basic Web Pages: Displaying date and time, using reusable headers/footers, and creating basic HTML forms.",
+            "Programming Logic (C# & VB): Using For, For Each, and While loops, managing arrays, and handling If/Else or Switch/Select conditions."
+          ]
+        },
+        {
+          "heading": "Database and Helper Examples",
+          "paragraphs": [
+            "Advanced examples focus on data management and the use of built-in ASP.NET Helpers:"
+          ],
+          "list": [
+            "Databases: Displaying raw database data and utilizing the WebGrid Helper for automated table generation.",
+            "Chart Helper: Creating bar and pie charts using data sourced from arrays, databases, or XML files."
+          ]
+        }
+      ]
+    },
+    "webpages-classes": {
+      "title": "WebPages Classes",
+      "sections": [
+        {
+          "heading": "ASP.NET Classes Reference",
+          "paragraphs": [
+            "The ASP.NET Classes Reference provides a comprehensive set of methods and properties for data conversion, request handling, and page rendering."
+          ]
+        },
+        {
+          "heading": "Data Conversion and Validation",
+          "paragraphs": [
+            "Web Pages includes several methods to convert string values into specific data types or check if a conversion is possible:"
+          ],
+          "list": [
+            "AsInt(), AsBool(), AsDecimal(), AsFloat(), AsDateTime(): Converts a string to the specified type, with optional default values if the conversion fails.",
+            "IsInt(), IsBool(), IsDecimal(), IsFloat(), IsDateTime(): Returns true if a string value can be successfully converted to the specified type.",
+            "IsEmpty(): Checks if a variable or object currently holds no value.",
+            "ToString(): Provides a string representation of an object's value."
+          ]
+        },
+        {
+          "heading": "Request and Response Objects",
+          "paragraphs": [
+            "The Request and Response objects manage the communication between the browser and the server:"
+          ],
+          "list": [
+            "Request.Form / Request.QueryString: Accesses data posted from forms or passed in the URL.",
+            "Request.Unvalidated(): Selectively disables request validation to allow potentially dangerous content like HTML markup.",
+            "Response.Redirect(path): Sends the browser to a different URL.",
+            "Response.OutputCache(): Caches page output for a set duration to improve performance.",
+            "Response.SetStatus(): Manages the HTTP status codes sent back to the browser."
+          ]
+        },
+        {
+          "heading": "Page and Server Utilities",
+          "paragraphs": [
+            "Utility classes assist with path mapping, HTML encoding, and cross-page data sharing:"
+          ],
+          "list": [
+            "Server.MapPath(virtualPath): Converts a virtual web path into a physical server path.",
+            "Server.HtmlEncode() / Server.HtmlDecode(): Secures strings for HTML rendering or restores encoded text.",
+            "Html.Raw(): Renders content as raw HTML markup instead of encoded text.",
+            "PageData / Page: Shared collections for data used across content, layout, and partial pages.",
+            "Session: Stores user-specific data that persists until the browser is closed."
+          ]
+        },
+        {
+          "heading": "Layout and Rendering Methods",
+          "paragraphs": [
+            "These methods control how different page components are assembled into a final response:"
+          ],
+          "list": [
+            "RenderBody(): Used in layout pages to render the main content of a page.",
+            "RenderPage(path): Renders a separate content page at the current location.",
+            "RenderSection(name): Renders a specific named section from a content page.",
+            "Href(path): Creates browser-compatible URLs from local file paths."
+          ]
+        }
+      ]
+    } ,
+    "razor-intro": {
+      "title": "Razor Intro",
+      "sections": [
+        {
+          "heading": "What is Razor?",
+          "paragraphs": [
+            "Razor is a server-side markup syntax, not a programming language, that allows you to embed server-based code (C# or Visual Basic) into web pages.",
+            "When a page is requested, the server executes this embedded code before returning the final page to the browser.",
+            "This enables the creation of dynamic web content and the execution of complex tasks, such as accessing databases.",
+            "Based on ASP.NET, Razor is designed to be easier to learn and use than traditional ASP.NET markup while retaining its power."
+          ]
+        },
+        {
+          "heading": "Syntax Comparison",
+          "paragraphs": [
+            "Razor syntax is similar to PHP and Classic ASP, providing a streamlined way to mix code and HTML:"
+          ],
+          "code": "\n<ul>\n@for (int i = 0; i < 10; i++) {\n<li>@i</li>\n}\n</ul>"
+        },
+        {
+          "heading": "Razor Helpers",
+          "paragraphs": [
+            "Helpers are components accessed via single lines of Razor code to perform common tasks.",
+            "You can use built-in ASP.NET helpers or build your own using Razor syntax."
+          ],
+          "list": [
+            "Web Grid and Web Graphics",
+            "Google Analytics, Facebook, and Twitter Integration",
+            "Sending Email and Validation"
+          ]
+        },
+        {
+          "heading": "Programming Languages",
+          "paragraphs": [
+            "Razor supports two primary server-side languages: C# (C sharp) and VB (Visual Basic)."
+          ]
+        }
+      ]
+    } ,
+    "razor-syntax": {
+      "title": "Razor Syntax",
+      "sections": [
+        {
+          "heading": "Basic Razor Syntax Rules",
+          "paragraphs": [
+            "Razor syntax provides a simple way to transition between HTML markup and server-side code.",
+            "The following rules define the core of Razor's structure:"
+          ],
+          "list": [
+            "Razor code blocks are enclosed in @{ ... }.",
+            "Inline expressions (variables and functions) start with @.",
+            "Code statements end with a semicolon.",
+            "Variables are declared with the 'var' keyword or specific types (e.g., string, int).",
+            "C# code is case-sensitive, and files usually have the extension .cshtml."
+          ]
+        },
+        {
+          "heading": "Code and Markup Examples",
+          "paragraphs": [
+            "You can mix HTML and C# directly. The server processes the code and returns plain HTML to the browser."
+          ],
+          "code": "\n@{ var myMessage = \"Hello World\"; }\n\n\n<p>The message is: @myMessage</p>\n\n\n@{\n  var greeting = \"Welcome!\";\n  var weekDay = DateTime.Now.DayOfWeek;\n  var greetingMessage = greeting + \" Today is \" + weekDay;\n}\n<p>@greetingMessage</p>"
+        },
+        {
+          "heading": "Handling Strings and Numbers",
+          "paragraphs": [
+            "Razor allows for seamless concatenation of strings and mathematical operations within code blocks.",
+            "Values stored in variables can be rendered directly into the HTML output by using the @ symbol."
+          ]
+        }
+      ]
+    } ,
+    "razor-csharp-variables": {
+      "title": "Razor C# Variables",
+      "sections": [
+        {
+          "heading": "Understanding Variables",
+          "paragraphs": [
+            "Variables are named entities used to store data within your application.",
+            "A variable name must start with an alphabetic character and cannot contain whitespace or reserved characters.",
+            "Variables can be declared using the 'var' keyword, allowing ASP.NET to determine the type automatically, or by explicitly stating the data type."
+          ],
+          "code": "// Using the var keyword\nvar greeting = \"Welcome to W3Schools\";\nvar counter = 103;\n\n// Using explicit data types\nstring greeting = \"Welcome to W3Schools\";\nint counter = 103;"
+        },
+        {
+          "heading": "Common Data Types",
+          "paragraphs": [
+            "C# supports various data types depending on the kind of information being stored:"
+          ],
+          "list": [
+            "int: Used for whole numbers (e.g., 103, 12).",
+            "float: Used for floating-point numbers (e.g., 3.14).",
+            "decimal: Used for high-precision decimal numbers.",
+            "bool: Represents Boolean values (true or false).",
+            "string: Stores sequences of characters (e.g., \"Hello\")."
+          ]
+        },
+        {
+          "heading": "Operators in C#",
+          "paragraphs": [
+            "Operators tell ASP.NET what kind of command to perform in an expression:"
+          ],
+          "list": [
+            "Assignment (=): Assigns a value to a variable.",
+            "Arithmetic (+, -, *, /): Performs basic math or string concatenation (+).",
+            "Comparison (==, !=, <, >): Checks for equality or relative value.",
+            "Logical (&&, ||, !): Performs AND, OR, and NOT operations.",
+            "Accessors (., [], ()): Used to access members, array indexes, or group expressions."
+          ]
+        },
+        {
+          "heading": "Converting Data Types",
+          "paragraphs": [
+            "User input typically arrives as a string and must be converted to numeric or date types before performing calculations.",
+            "ASP.NET provides several 'As' methods for conversion and 'Is' methods for validation:"
+          ],
+          "list": [
+            "AsInt() / IsInt(): Converts string to integer.",
+            "AsDecimal() / IsDecimal(): Converts string to decimal.",
+            "AsDateTime() / IsDateTime(): Converts string to a DateTime type.",
+            "AsBool() / IsBool(): Converts string to Boolean.",
+            "ToString(): Converts any data type back into a string."
+          ]
+        }
+      ]
+    } ,
+    "razor-csharp-loops": {
+      "title": "Razor C# Loops and Arrays",
+      "sections": [
+        {
+          "heading": "Repeating Statements with Loops",
+          "paragraphs": [
+            "Loops allow you to execute the same set of statements repeatedly based on specific conditions.",
+            "ASP.NET Razor supports several types of loops, including 'for', 'foreach', and 'while' loops."
+          ]
+        },
+        {
+          "heading": "The For Loop",
+          "paragraphs": [
+            "The 'for' loop is used when you know exactly how many times the loop should run, making it ideal for counting tasks."
+          ],
+          "code": "<html>\n<body>\n@for(var i = 10; i < 21; i++)\n    {<p>Line @i</p>}\n</body>\n</html>"
+        },
+        {
+          "heading": "The For Each Loop",
+          "paragraphs": [
+            "The 'foreach' loop is specifically designed to iterate through a collection or an array until every item has been processed.",
+            "It is commonly used to walk through system collections, such as Request.ServerVariables."
+          ],
+          "code": "<ul>\n@foreach (var x in Request.ServerVariables)\n    {<li>@x</li>}\n</ul>"
+        },
+        {
+          "heading": "The While Loop",
+          "paragraphs": [
+            "The 'while' loop is a general-purpose loop that continues to execute as long as its specified condition remains true.",
+            "Typically, these loops include a statement inside the block to increment or decrement the counter variable to prevent infinite loops."
+          ],
+          "code": "@{\nvar i = 0;\nwhile (i < 5)\n    {\n    i += 1;\n    <p>Line @i</p>\n    }\n}"
+        },
+        {
+          "heading": "Working with Arrays",
+          "paragraphs": [
+            "Arrays are used to store multiple similar variables in a single named entity, rather than creating separate variables for each item.",
+            "You can access specific items in an array using an index and check the total number of items using the Length property."
+          ],
+          "code": "@{\nstring[] members = {\"Jani\", \"Hege\", \"Kai\", \"Jim\"};\nint len = members.Length;\nstring x = members[1]; // Accesses the second item\n}\n\n@foreach (var person in members)\n{\n  <p>@person</p>\n}"
+        }
+      ]
+    } ,
+    "razor-csharp-logic": {
+      "title": "Razor C# Logic Conditions",
+      "sections": [
+        {
+          "heading": "The If Condition",
+          "paragraphs": [
+            "C# enables the execution of code blocks based on specific conditions using the `if` statement.",
+            "The statement evaluates a condition written inside parentheses and returns true or false.",
+            "If the condition is true, the code inside the following braces is executed."
+          ],
+          "code": "@{var price=50;}\n\n@if (price>30)\n{\n    <p>The price is too high.</p>\n}"
+        },
+        {
+          "heading": "The Else Condition",
+          "paragraphs": [
+            "An `if` statement can include an `else` block to define what happens when the primary condition is false.",
+            "The `else` block acts as a catch-all for \"everything else\" that does not meet the first requirement."
+          ],
+          "code": "@if (price>30)\n{\n  <p>The price is too high.</p>\n}\nelse\n{\n  <p>The price is OK.</p>\n}"
+        },
+        {
+          "heading": "The Else If Condition",
+          "paragraphs": [
+            "For scenarios requiring multiple tests, you can use `else if` conditions.",
+            "The server evaluates conditions in order; once a true condition is found, its block executes, and the rest of the chain is skipped.",
+            "You can include any number of `else if` blocks, with a final `else` covering cases where none of the specific conditions were met."
+          ],
+          "code": "@if (price>=30)\n{\n  <p>The price is high.</p>\n}\nelse if (price>20 && price<30)\n{\n  <p>The price is OK.</p>\n}\nelse\n{\n  <p>The price is low.</p>\n}"
+        },
+        {
+          "heading": "Switch Conditions",
+          "paragraphs": [
+            "A `switch` block is used to test a single value against multiple individual match cases.",
+            "Each case ends with a colon, and the code within that case must end with a `break` statement to exit the block.",
+            "A `default:` case can be included to handle any values that do not match the specified cases."
+          ],
+          "code": "@switch(day)\n{\n  case \"Monday\":\n    message=\"First weekday.\";\n    break;\n  case \"Friday\":\n    message=\"Tomorrow is weekend!\";\n    break;\ndefault:\n    message=\"Today is \" + day;\n    break;\n}"
+        }
+      ]
+    } ,
+    "razor-vb-variables": {
+      "title": "Razor VB Variables",
+      "sections": [
+        {
+          "heading": "Declaring Variables in VB",
+          "paragraphs": [
+            "In Visual Basic (VB), variables are named entities used to store data, and their names must start with an alphabetic character.",
+            "Variables are declared using the 'Dim' keyword. You can let ASP.NET determine the data type automatically or declare it explicitly using the 'As' keyword."
+          ],
+          "code": "' Using the Dim keyword for automatic typing\nDim greeting = \"Welcome to W3Schools\"\nDim counter = 103\n\n' Explicitly declaring data types\nDim greeting As String = \"Welcome to W3Schools\"\nDim counter As Integer = 103"
+        },
+        {
+          "heading": "VB Data Types",
+          "paragraphs": [
+            "VB supports several common data types for different kinds of information:"
+          ],
+          "list": [
+            "integer: Whole numbers (e.g., 103, 12, 5168).",
+            "double: 64-bit floating-point numbers for decimals (e.g., 3.14).",
+            "decimal: High-precision decimal numbers.",
+            "boolean: True or false values.",
+            "string: Textual data enclosed in quotes."
+          ]
+        },
+        {
+          "heading": "Visual Basic Operators",
+          "paragraphs": [
+            "Operators in VB handle assignment, math, and logical comparisons:"
+          ],
+          "list": [
+            "Assignment and Equality (=): Used both to assign values and to check if values are equal.",
+            "Inequality (<>): Returns true if values are not equal.",
+            "Concatenation (&): Used specifically for adding strings together.",
+            "Logical (And, Or, Not): Standard logical operations.",
+            "Extended Logical (AndAlso, OrElse): Efficient versions of logical operators."
+          ]
+        },
+        {
+          "heading": "Data Type Conversion",
+          "paragraphs": [
+            "Since user input is received as strings, numeric or date-based calculations require data conversion.",
+            "VB uses 'As' methods for conversion and 'Is' methods for validation:"
+          ],
+          "list": [
+            "AsInt() / IsInt(): Converts string to an integer.",
+            "AsDateTime() / IsDateTime(): Converts string to a DateTime object.",
+            "AsBool() / IsBool(): Converts string to a Boolean value.",
+            "ToString(): Converts any type back into a string."
+          ]
+        }
+      ]
+    } ,
+    "razor-vb-loops": {
+      "title": "Razor VB Loops and Arrays",
+      "sections": [
+        {
+          "heading": "Repeating Statements in Visual Basic",
+          "paragraphs": [
+            "Visual Basic (VB) provides several ways to execute statements repeatedly through different types of loops.",
+            "These include 'For', 'For Each', and 'Do While' loops, each suited for different data structures and logic requirements."
+          ]
+        },
+        {
+          "heading": "The For Loop",
+          "paragraphs": [
+            "The 'For' loop is used when the number of iterations is known beforehand, making it useful for counting up or down through a range of numbers."
+          ],
+          "code": "<html>\n<body>\n@For i=10 To 21\n    @<p>Line #@i</p>\nNext i\n</body>\n</html>"
+        },
+        {
+          "heading": "The For Each Loop",
+          "paragraphs": [
+            "The 'For Each' loop is the standard way to iterate through every item in a collection or an array.",
+            "It automatically moves through the collection until every object has been processed, such as walking through the Request.ServerVariables collection."
+          ],
+          "code": "<html>\n<body>\n<ul>\n@For Each x In Request.ServerVariables\n    @<li>@x</li>\nNext x\n</ul>\n</body>\n</html>"
+        },
+        {
+          "heading": "The While Loop (Do While)",
+          "paragraphs": [
+            "The 'Do While' loop is a general-purpose loop that continues as long as a specified condition remains true.",
+            "It typically uses a variable to track the count, which is updated inside the loop using operators like '+='."
+          ],
+          "code": "@Code\nDim i=0\nDo While i<5\n    i += 1\n    @<p>Line #@i</p>\nLoop\nEnd Code"
+        },
+        {
+          "heading": "Arrays in VB",
+          "paragraphs": [
+            "Arrays allow you to store a collection of similar variables under a single name rather than declaring individual variables for each.",
+            "VB arrays can be indexed to retrieve specific values, and you can find the index of a specific item using `Array.IndexOf()`."
+          ],
+          "code": "@Code\nDim members As String()={\"Jani\",\"Hege\",\"Kai\",\"Jim\"}\nDim len = members.Length\nDim x = members(2-1) 'Accesses the second item\nEnd Code\n\n@For Each person In members\n   @<p>@person</p>\nNext person"
+        }
+      ]
+    } ,
+    "razor-vb-logic": {
+      "title": "Razor VB Logic Conditions",
+      "sections": [
+        {
+          "heading": "The If Condition",
+          "paragraphs": [
+            "Visual Basic (VB) allows you to execute code based on specific conditions using the `If` statement.",
+            "The condition is written between the `If` and `Then` keywords.",
+            "The code between `If ... Then` and `End If` is executed only if the test returns true."
+          ],
+          "code": "@Code\nDim price=50\nEnd Code\n\n@If price>30 Then\n    @<p>The price is too high.</p>\nEnd If"
+        },
+        {
+          "heading": "The Else Condition",
+          "paragraphs": [
+            "An `If` statement can include an `Else` condition to specify code that should run if the primary test is false.",
+            "This covers \"everything else\" not captured by the first condition."
+          ],
+          "code": "@If price>30 Then\n    @<p>The price is too high.</p>\nElse\n    @<p>The price is OK.</p>\nEnd If"
+        },
+        {
+          "heading": "The ElseIf Condition",
+          "paragraphs": [
+            "Multiple conditions can be tested sequentially using `ElseIf`.",
+            "If the first condition is false, the server checks the next `ElseIf`. If that is also false, it moves to the next or the final `Else` block.",
+            "You can have any number of `ElseIf` conditions in a single block."
+          ],
+          "code": "@If price>=30 Then\n    @<p>The price is high.</p>\nElseIf price>20 And price<30 Then\n    @<p>The price is OK.</p>\nElse\n    @<p>The price is low.</p>\nEnd If"
+        },
+        {
+          "heading": "Select Conditions",
+          "paragraphs": [
+            "A `Select Case` block is used to test a single value against multiple individual match cases.",
+            "If the test value matches a `Case` value, the corresponding code lines are executed.",
+            "A `Case Else` can be included as a default to handle cases where none of the specific case values match."
+          ],
+          "code": "@Select Case day\nCase \"Monday\"\n    message=\"This is the first weekday.\"\nCase \"Friday\"\n    message=\"Tomorrow is weekend!\"\nCase Else\n    message=\"Today is \" & day\nEnd Select"
+        }
+      ]
+    } ,
+    "asp-intro": {
+      "title": "ASP Intro",
+      "sections": [
+        {
+          "heading": "What is ASP?",
+          "paragraphs": [
+            "ASP stands for Active Server Pages and is a Microsoft technology used for creating dynamic web pages.",
+            "It functions as a program that runs inside a web server, executing scripts much like PHP does.",
+            "Because ASP code is executed on the server, it provides built-in security as the source code cannot be viewed in a browser; only the resulting plain HTML is visible to the user."
+          ]
+        },
+        {
+          "heading": "Understanding ASP Files",
+          "paragraphs": [
+            "An ASP file typically has the extension '.asp' and is fundamentally the same as an HTML file but with added server-side scripts.",
+            "These server scripts are processed by the ASP engine before the page is delivered to the browser."
+          ],
+          "code": "<!DOCTYPE html>\n<html>\n<body>\n<%\n  response.write(\"My first ASP script!\")\n%>\n</body>\n</html>"
+        },
+        {
+          "heading": "Key Capabilities",
+          "paragraphs": [
+            "ASP offers several powerful features for web development:"
+          ],
+          "list": [
+            "Dynamically edit, change, or add content to customize any web page.",
+            "Respond to user queries or data submitted via HTML forms.",
+            "Access databases or other server-side data and return the results to a browser.",
+            "Provide a simple and high-speed environment for web application logic."
+          ]
+        },
+        {
+          "heading": "The Request-Response Cycle",
+          "paragraphs": [
+            "The process of serving an ASP file involves a specific workflow:"
+          ],
+          "list": [
+            "When a browser requests an ASP file, the server passes the request to the ASP engine.",
+            "The ASP engine reads the file and executes the scripts contained within it.",
+            "Finally, the file is returned to the browser as standard, plain HTML."
+          ]
+        }
+      ]
+    } ,
+    "asp-syntax": {
+      "title": "ASP Syntax",
+      "sections": [
+        {
+          "heading": "Core Scripting Language",
+          "paragraphs": [
+            "The default scripting language for ASP is VBScript, which is a lightweight version of Microsoft's Visual Basic.",
+            "VBScript is case-insensitive, meaning methods like 'Response.Write()' can be written as 'response.write()'.",
+            "While VBScript is the default, you can use JavaScript by adding a language specification at the top of the file:"
+          ],
+          "code": "<%@ language=\"javascript\"%>"
+        },
+        {
+          "heading": "Script Delimiters",
+          "paragraphs": [
+            "Server-side scripts in an ASP file are surrounded by special delimiters: <% and %>.",
+            "Anything inside these delimiters is executed on the server before the page is sent to the client."
+          ]
+        },
+        {
+          "heading": "Writing Output",
+          "paragraphs": [
+            "The primary way to send content to the browser is through the 'Response.Write()' method.",
+            "You can include standard text, HTML tags, and even CSS styles within the output string.",
+            "ASP also provides a shorthand equal sign (=) as an alternative to 'Response.Write()':"
+          ],
+          "code": "<%=\"Hello World!\"%>"
+        },
+        {
+          "heading": "HTML Integration",
+          "paragraphs": [
+            "ASP files are essentially HTML files that contain server scripts.",
+            "Below is an example of an ASP script generating styled HTML content:"
+          ],
+          "code": "<html>\n<body>\n<%\n  Response.Write(\"<h2 style='color:blue'>Formatted Output</h2>\")\n%>\n</body>\n</html>"
+        }
+      ]
+    } ,
+    "asp-variables": {
+      "title": "ASP Variables",
+      "sections": [
+        {
+          "heading": "Understanding VBScript Variables",
+          "paragraphs": [
+            "Variables serve as containers for storing information, such as values or expressions.",
+            "In VBScript, all variables are of the 'variant' type, which allows them to store different kinds of data automatically.",
+            "Variable names must begin with a letter, cannot contain periods (.), and are limited to 255 characters."
+          ]
+        },
+        {
+          "heading": "Declaring and Assigning Variables",
+          "paragraphs": [
+            "Variables are typically 'declared' using the Dim, Public, or Private statements.",
+            "To force explicit declaration and prevent errors from typos, use the 'Option Explicit' statement at the top of your script.",
+            "Values are assigned by placing the variable name on the left and the value on the right of an equal sign:"
+          ],
+          "code": "Option Explicit\nDim carname\ncarname=\"Volvo\"\nDim x\nx=10"
+        },
+        {
+          "heading": "VBScript Array Variables",
+          "paragraphs": [
+            "Arrays store multiple related data items in a single variable using zero-based indexing.",
+            "A fixed-size array is declared by specifying the highest index in parentheses; for example, 'Dim names(2)' creates an array with 3 elements.",
+            "VBScript also supports multi-dimensional arrays, with up to 60 dimensions possible by separating index numbers with commas:"
+          ],
+          "code": "Dim table(4,6) ' A 2D array with 5 rows and 7 columns\n\n' Assigning and retrieving values\nnames(0)=\"Tove\"\nmother=names(0)"
+        },
+        {
+          "heading": "Variable Lifetime and Scope",
+          "paragraphs": [
+            "The accessibility of a variable depends on where it is declared:"
+          ],
+          "list": [
+            "Local Variables: Declared inside a procedure; they are created and destroyed each time the procedure runs and cannot be accessed from outside.",
+            "Script-Level Variables: Declared outside a procedure; they can be accessed and changed by any script within the same ASP file.",
+            "Session Variables: Store information for one specific user and are available across all pages in the application.",
+            "Application Variables: Available to all pages and store information relevant to all users of the application."
+          ]
+        }
+      ]
+    } ,
+    "asp-procedures": {
+      "title": "ASP Procedures",
+      "sections": [
+        {
+          "heading": "Procedures and Functions in ASP",
+          "paragraphs": [
+            "ASP source code can include both procedures and functions to organize reusable code blocks.",
+            "You can call a JavaScript procedure from VBScript and vice versa within the same ASP file.",
+            "To write procedures in a language other than the default, include the language specification at the top of the page:"
+          ],
+          "code": "<%@ language=\"javascript\" %>\n<head>\n<%\nfunction jsproc(num1,num2)\n{\n  Response.Write(num1*num2)\n}\n%>\n</head>\n<body>\n  <p>Result: <%jsproc(3,4)%></p>\n</body>"
+        },
+        {
+          "heading": "VBScript Procedure Types",
+          "paragraphs": [
+            "VBScript distinguishes between two main types of procedures: Sub procedures and Function procedures."
+          ],
+          "list": [
+            "**Sub Procedure**: Enclosed by `Sub` and `End Sub`, it performs actions but does not return a value.",
+            "**Function Procedure**: Enclosed by `Function` and `End Function`, it can perform actions and return a value by assigning that value to the function's name."
+          ],
+          "code": "' Function example returning a value\nFunction myfunction(a, b)\n  myfunction = a + b\nEnd Function"
+        },
+        {
+          "heading": "Calling Procedures",
+          "paragraphs": [
+            "The syntax for calling a procedure depends on the scripting language and the use of keywords:"
+          ],
+          "list": [
+            "**With 'Call'**: When using the `Call` keyword in VBScript, parameters must be enclosed in parentheses (e.g., `Call MyProc(arg)`).",
+            "**Without 'Call'**: If `Call` is omitted in VBScript, do not use parentheses for the parameters (e.g., `MyProc arg`).",
+            "**JavaScript Context**: When calling procedures from a JavaScript-based ASP file, always use parentheses after the procedure name."
+          ]
+        }
+      ]
+    } ,
+
+      "asp-conditionals": {
+      "title": "ASP Conditionals",
+      "sections": [
+        {
+          "heading": "VBScript Conditional Statements",
+          "paragraphs": [
+            "Conditional statements in ASP allow you to perform different actions based on different decisions.",
+            "VBScript provides four primary ways to handle conditional logic:"
+          ],
+          "list": [
+            "If statement : Executes code only when a specific condition is true.",
+            "If...Then...Else statement : Chooses between two different sets of code.",
+            "If...Then...ElseIf statement : Selects one from many sets of code lines.",
+            "Select Case statement : Provides an efficient way to select one of many blocks of code."
+          ]
+        },
+        {
+          "heading": "The If...Then...Else Structure",
+          "paragraphs": [
+            "For simple, single-line actions, you can omit the 'End If' keyword:"
+          ],
+          "code": "If i=10 Then response.write(\"Hello\")",
+          "paragraphs": [
+            "However, if you want to execute multiple statements, you must use separate lines and close the block with 'End If'. The 'Else' keyword defines the alternative action when the condition is false:"
+          ],
+          "code": "i=hour(time)\nIf i < 10 Then\n  response.write(\"Good morning!\")\nElse\n  response.write(\"Have a nice day!\")\nEnd If"
+        },
+        {
+          "heading": "Select Case Statement",
+          "paragraphs": [
+            "The 'Select Case' statement evaluates a single expression once and compares its value against various cases.",
+            "If a match is found, the associated code block is executed. You can use 'Case Else' to handle all remaining values that do not match a specific case."
+          ],
+          "code": "d=weekday(date)\nSelect Case d\n  Case 1\n    response.write(\"Sleepy Sunday\")\n  Case 2\n    response.write(\"Monday again!\")\n  Case else\n    response.write(\"Just another day!\")\nEnd Select"
+        }
+      ]
+    } ,
+    "asp-looping": {
+      "title": "ASP Looping",
+      "sections": [
+        {
+          "heading": "VBScript Looping Statements",
+          "paragraphs": [
+            "Looping statements are utilized to run a specific block of code a set number of times or based on a condition.",
+            "VBScript includes several types of loops for different programming scenarios:"
+          ],
+          "list": [
+            "**For...Next**: Executes code a specified number of times.",
+            "**For Each...Next**: Iterates through each item in a collection or each element of an array.",
+            "**Do...Loop**: Loops while or until a specific condition becomes true.",
+            "**While...Wend**: This is an older syntax; developers are encouraged to use the Do...Loop statement instead."
+          ]
+        },
+        {
+          "heading": "For...Next and the Step Keyword",
+          "paragraphs": [
+            "The 'For' statement sets a counter variable with start and end values, while 'Next' increments that counter.",
+            "By using the 'Step' keyword, you can customize the increment or decrement value:"
+          ],
+          "code": "<%\n' Increment by 2\nFor i = 2 To 10 Step 2\n  response.write(i)\nNext\n\n' Decrement by 2\nFor i = 10 To 2 Step -2\n  response.write(i)\nNext\n%>",
+          "paragraphs": [
+            "You can prematurely exit a 'For...Next' loop using the `Exit For` keyword."
+          ]
+        },
+        {
+          "heading": "For Each...Next Loop",
+          "paragraphs": [
+            "This loop is specifically designed to handle collections or arrays without needing a manual counter."
+          ],
+          "code": "<%\nDim cars(2)\ncars(0)=\"Volvo\"\ncars(1)=\"BMW\"\n\nFor Each x In cars\n  response.write(x)\nNext\n%>"
+        },
+        {
+          "heading": "Do...Loop and Condition Logic",
+          "paragraphs": [
+            "Use a 'Do...Loop' when the number of repetitions is unknown. You can check conditions using 'While' or 'Until' at either the start or the end of the loop:"
+          ],
+          "list": [
+            "**Do While / Do Until**: Checks the condition before the first run. If the condition isn't met, the code may never execute.",
+            "**Loop While / Loop Until**: Checks the condition after the run. This ensures the code block executes at least once.",
+            "**Exit Do**: Immediately exits a 'Do...Loop' structure."
+          ]
+        }
+      ]
+    },
+    "asp-forms": {
+      "title": "ASP Forms and User Input",
+      "sections": [
+        {
+          "heading": "Retrieving User Input",
+          "paragraphs": [
+            "The Request object is the primary tool for retrieving information submitted by users through HTML forms.",
+            "Depending on the form's submission method, you use either the Request.QueryString or Request.Form command to collect data."
+          ]
+        },
+        {
+          "heading": "Request.QueryString (GET Method)",
+          "paragraphs": [
+            "The Request.QueryString command collects values from forms using the 'GET' method.",
+            "Information sent via GET is appended to the URL and visible in the browser's address bar, making it public.",
+            "This method has a limit on the amount of information that can be sent."
+          ],
+          "code": "\n<form method=\"get\" action=\"simpleform.asp\">\n  First Name: <input type=\"text\" name=\"fname\"><br>\n  <input type=\"submit\" value=\"Submit\">\n</form>\n\n\nWelcome @(Request.QueryString(\"fname\"))"
+        },
+        {
+          "heading": "Request.Form (POST Method)",
+          "paragraphs": [
+            "The Request.Form command is used to retrieve values from forms using the 'POST' method.",
+            "Information sent via POST is invisible in the URL and has no limits on the volume of data sent."
+          ],
+          "code": "\n<form method=\"post\" action=\"simpleform.asp\">\n  Last Name: <input type=\"text\" name=\"lname\"><br>\n  <input type=\"submit\" value=\"Submit\">\n</form>\n\n\nWelcome @(Request.Form(\"lname\"))"
+        },
+        {
+          "heading": "Form Validation",
+          "paragraphs": [
+            "Validation should occur on the browser via client scripts whenever possible to reduce server load and increase speed.",
+            "Server-side validation is essential if data will be inserted into a database.",
+            "A recommended technique is to post a form to itself; this allows error messages to appear on the same page, making them easier for users to find."
+          ]
+        }
+      ]
+    } ,
+    "asp-cookies": {
+      "title": "ASP Cookies",
+      "sections": [
+        {
+          "heading": "What is a Cookie?",
+          "paragraphs": [
+            "A cookie is a small file that the server embeds on a user's computer to identify them.",
+            "Whenever the browser requests a page from that server, it sends the cookie back along with the request.",
+            "ASP allows you to both create and retrieve these cookie values."
+          ]
+        },
+        {
+          "heading": "Creating and Modifying Cookies",
+          "paragraphs": [
+            "The `Response.Cookies` command is used to create cookies.",
+            "**Important**: This command must appear before the `<html>` tag in your ASP file.",
+            "You can assign values and set properties like expiration dates:"
+          ],
+          "code": "<%\nResponse.Cookies(\"firstname\")=\"Alex\"\nResponse.Cookies(\"firstname\").Expires=#May 10,2012#\n%>"
+        },
+        {
+          "heading": "Retrieving Cookie Values",
+          "paragraphs": [
+            "The `Request.Cookies` command is used to retrieve a value from a cookie stored on the user's computer:"
+          ],
+          "code": "<%\nfname=Request.Cookies(\"firstname\")\nresponse.write(\"Firstname=\" & fname)\n%>",
+          "paragraphs": [
+            "If a cookie contains multiple values, it is considered a collection with 'Keys'. You can check if a cookie has multiple values using the `HasKeys` property."
+          ]
+        },
+        {
+          "heading": "Handling Cookie-less Browsers",
+          "paragraphs": [
+            "If a browser does not support cookies, you must use alternative methods to pass information between pages:"
+          ],
+          "list": [
+            "**URL Parameters**: Add data to the query string (e.g., `welcome.asp?fname=John`) and retrieve it using `Request.QueryString`.",
+            "**Forms**: Pass user input via a form using the 'POST' method and retrieve it with `Request.Form`."
+          ]
+        }
+      ]
+    } ,
+    "asp-session": {
+      "title": "ASP Session Object",
+      "sections": [
+        {
+          "heading": "The Session Object",
+          "paragraphs": [
+            "Because the HTTP protocol is stateless, web servers do not naturally know who a user is or what they are doing.",
+            "ASP solves this by creating a unique cookie for each user to identify their session.",
+            "The Session object stores information about a single user and makes that data available across all pages in one application."
+          ]
+        },
+        {
+          "heading": "Session Lifecycle",
+          "paragraphs": [
+            "A session begins when a new user requests an ASP file and a value is stored in a session variable, or when a Session_OnStart procedure is triggered.",
+            "By default, a session ends after 20 minutes of inactivity, but this can be adjusted using the Timeout property:"
+          ],
+          "code": "<%\nSession.Timeout=5 ' Sets timeout to 5 minutes\nSession.Abandon  ' Ends the session immediately\n%>",
+          "paragraphs": [
+            "Tip: Only store small amounts of data in session variables to avoid consuming excessive server resources."
+          ]
+        },
+        {
+          "heading": "Storing and Retrieving Variables",
+          "paragraphs": [
+            "Variables stored in the Session object are accessible from any page within the ASP application:"
+          ],
+          "code": "<%\nSession(\"username\")=\"Donald Duck\"\nSession(\"age\")=50\n%>\n\nWelcome <%Response.Write(Session(\"username\"))%>",
+          "paragraphs": [
+            "You can also use session variables to store user preferences, such as screen resolution, to deliver customized content."
+          ]
+        },
+        {
+          "heading": "Managing the Contents Collection",
+          "paragraphs": [
+            "The Contents collection contains all variables currently stored in the session.",
+            "You can remove specific items or clear all variables entirely:"
+          ],
+          "code": "<%\nSession.Contents.Remove(\"sale\") ' Removes one variable\nSession.Contents.RemoveAll()   ' Removes all variables\n%>",
+          "paragraphs": [
+            "To view everything stored in a session, you can loop through the collection using 'For Each' or use the 'Count' property to iterate by index."
+          ]
+        }
+      ]
+    } ,
+    "asp-application": {
+      "title": "ASP Application Object",
+      "sections": [
+        {
+          "heading": "The Application Object",
+          "paragraphs": [
+            "An application in ASP is a group of files that work together to perform a specific purpose.",
+            "The Application object ties these files together by allowing data to be stored and accessed from any page within the application.",
+            "Unlike the Session object, which is unique to each user, a single Application object is shared by ALL users."
+          ]
+        },
+        {
+          "heading": "Storing and Accessing Variables",
+          "paragraphs": [
+            "Application variables hold global information used by many pages, such as database connection strings or global hit counters.",
+            "These variables are often initialized in the 'Global.asa' file:"
+          ],
+          "code": "<script language=\"vbscript\" runat=\"server\">\nSub Application_OnStart\n  Application(\"users\") = 1\nEnd Sub\n</script>\n\n\n<% Response.Write(Application(\"users\")) %>"
+        },
+        {
+          "heading": "Collections and Management",
+          "paragraphs": [
+            "The Application object contains two primary collections for metadata:"
+          ],
+          "list": [
+            "**Contents**: Stores all variables added to the application via script. You can use the `Count` property to iterate through them.",
+            "**StaticObjects**: Contains all objects added to the application with the HTML `<object>` tag."
+          ]
+        },
+        {
+          "heading": "Locking and Unlocking",
+          "paragraphs": [
+            "Because multiple users access the same Application object simultaneously, the `Lock` and `Unlock` methods are used to prevent data corruption during updates.",
+            "When locked, other users cannot modify the application variables until the `Unlock` method is called:"
+          ],
+          "code": "<%\nApplication.Lock\n' perform updates to application variables\nApplication(\"users\") = Application(\"users\") + 1\nApplication.Unlock\n%>"
+        }
+      ]
+    } ,
+    "asp-include": {
+      "title": "ASP #include",
+      "sections": [
+        {
+          "heading": "The #include Directive",
+          "paragraphs": [
+            "The `#include` directive allows you to insert the content of one ASP file into another before the server executes the script.",
+            "It is commonly used to create reusable elements like headers, footers, functions, or static content that appear on multiple pages."
+          ],
+          "code": "\n"
+        },
+        {
+          "heading": "Virtual vs. File Keywords",
+          "paragraphs": [
+            "There are two ways to specify the path of the file you wish to include:"
+          ],
+          "list": [
+            "**Virtual**: Indicates a path beginning with a virtual directory on the server (e.g., ``).",
+            "**File**: Indicates a relative path starting from the directory that contains the including file (e.g., ``)."
+          ]
+        },
+        {
+          "heading": "Security and Extensions",
+          "paragraphs": [
+            "While `.inc` is a common extension for included files, browsing an `.inc` file directly will display its source code.",
+            "If your included file contains confidential information, it is safer to use the `.asp` extension so the server interprets it rather than displaying the raw code."
+          ]
+        },
+        {
+          "heading": "Critical Processing Rules",
+          "paragraphs": [
+            "Understanding the order of operations is vital for successful implementation:"
+          ],
+          "list": [
+            "**Pre-processing**: Files are processed and inserted *before* any scripts are executed. You cannot use a variable to define the filename in an include statement.",
+            "**Script Delimiters**: You cannot open or close script delimiters (`<%` or `%>`) within an included file if they are already open in the main file.",
+            "**Looping**: To include a file multiple times within a loop, the include directive must be placed outside of the server-side code blocks."
+          ],
+          "code": "<% For i = 1 to n %>\n  \n<% Next %>"
+        }
+      ]
+    } ,
+
+      "asp-global-asa": {
+      "title": "ASP Global.asa",
+      "sections": [
+        {
+          "heading": "The Global.asa File",
+          "paragraphs": [
+            "Global.asa is an optional file containing declarations of objects, variables, and methods accessible by every page in an ASP application.",
+            "It must be stored in the root directory of the application, and only one Global.asa file is permitted per application.",
+            "It supports various browser scripts like VBScript and JavaScript, but since standard ASP delimiters (<% %>) cannot be used, code must be placed inside <script> elements."
+          ]
+        },
+        {
+          "heading": "Application and Session Events",
+          "paragraphs": [
+            "The file primarily handles four types of event procedures to manage the application lifecycle:"
+          ],
+          "list": [
+            "**Application_OnStart**: Runs when the first user calls the first page or after a server restart/file edit.",
+            "**Session_OnStart**: Occurs every time a new user requests their first page.",
+            "**Session_OnEnd**: Triggers when a user session ends (usually after 20 minutes of inactivity).",
+            "**Application_OnEnd**: Occurs after the last user ends their session, typically when the server stops."
+          ],
+          "code": "<script language=\"vbscript\" runat=\"server\">\nSub Application_OnStart\n  Application(\"visitors\")=0\nEnd Sub\n\nSub Session_OnStart\n  Application.Lock\n  Application(\"visitors\")=Application(\"visitors\")+1\n  Application.UnLock\nEnd Sub\n</script>"
+        },
+        {
+          "heading": "Object and TypeLibrary Declarations",
+          "paragraphs": [
+            "You can use the `<object>` tag to create objects with session or application scope outside of the `<script>` tag.",
+            "TypeLibrary declarations (METADATA tags) allow ASP code to access COM object constants and improve error reporting."
+          ],
+          "code": "<object runat=\"server\" scope=\"session\" id=\"MyAd\" progid=\"MSWC.AdRotator\">\n</object>\n\n"
+        },
+        {
+          "heading": "Common Uses and Restrictions",
+          "paragraphs": [
+            "Global.asa is frequently used for:"
+          ],
+          "list": [
+            "Initializing global variables and visitor counters.",
+            "Controlling page access via `Response.Redirect`.",
+            "Pre-loading database records into application arrays for faster access."
+          ],
+          "paragraphs": [
+            "**Restrictions**: You cannot display text directly from this file, and there are limitations on which built-in objects can be used within specific event handlers."
+          ]
+        }
+      ]
+    } ,
+    "asp-ajax": {
+      "title": "ASP AJAX",
+      "sections": [
+        {
+          "heading": "What is AJAX?",
+          "paragraphs": [
+            "AJAX stands for Asynchronous JavaScript and XML and is a technique used to create fast, dynamic web pages.",
+            "It allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes, meaning parts of a page can update without reloading the entire page.",
+            "Classic web pages must reload completely to change any content, whereas AJAX-enabled sites like Gmail and YouTube update content seamlessly."
+          ]
+        },
+        {
+          "heading": "How AJAX Works",
+          "paragraphs": [
+            "AJAX is based on a combination of established internet standards:"
+          ],
+          "list": [
+            "**XMLHttpRequest object**: Used to exchange data asynchronously with the server.",
+            "**JavaScript/DOM**: Used to display and interact with the information.",
+            "**CSS**: Used to style the received data.",
+            "**XML/JSON**: Often used as the format for transferring the data."
+          ]
+        },
+        {
+          "heading": "AJAX ASP Example: Live Suggestions",
+          "paragraphs": [
+            "A common use for AJAX in ASP is providing live search suggestions as a user types.",
+            "When a user types in an input field, the `onkeyup` event triggers a JavaScript function that sends the input to an ASP file.",
+            "The ASP file (`gethint.asp`) checks an array of names and returns matches to be displayed instantly."
+          ],
+          "code": "function showHint(str) {\n  var xmlhttp = new XMLHttpRequest();\n  xmlhttp.onreadystatechange = function() {\n    if (this.readyState == 4 && this.status == 200) {\n      document.getElementById(\"txtHint\").innerHTML = this.responseText;\n    }\n  };\n  xmlhttp.open(\"GET\", \"gethint.asp?q=\" + str, true);\n  xmlhttp.send();\n}"
+        },
+        {
+          "heading": "AJAX with Databases",
+          "paragraphs": [
+            "AJAX can also facilitate interactive communication with a server-side database.",
+            "In this workflow, a user selection (such as a dropdown choice) triggers a request to an ASP file that executes a SQL query.",
+            "The ASP file processes the database results and returns them as an HTML table to be injected into the current page."
+          ],
+          "code": "<%\n' getcustomer.asp snippet\nsql=\"SELECT * FROM CUSTOMERS WHERE CUSTOMERID='\" & request.querystring(\"q\") & \"'\"\nset conn=Server.CreateObject(\"ADODB.Connection\")\nconn.Open(Server.Mappath(\"/datafolder/northwind.mdb\"))\nset rs=conn.execute(sql)\n' ... generate HTML table from recordset\n%>"
+        }
+      ]
+    } ,
+    "asp-email": {
+      "title": "ASP e-mail",
+      "sections": [
+        {
+          "heading": "Introduction to CDOSYS",
+          "paragraphs": [
+            "CDOSYS (Collaboration Data Objects) is a built-in Microsoft component in ASP designed to simplify the creation of messaging applications.",
+            "It replaced the discontinued CDONTs technology used in older versions of Windows.",
+            "To send an email, you start by creating a 'CDO.Message' object and setting its properties like 'To', 'From', and 'Subject'."
+          ],
+          "code": "<%\nSet myMail = CreateObject(\"CDO.Message\")\nmyMail.Subject = \"Sending email with CDO\"\nmyMail.From = \"mymail@mydomain.com\"\nmyMail.To = \"someone@somedomain.com\"\n%>"
+        },
+        {
+          "heading": "Email Formats and Attachments",
+          "paragraphs": [
+            "CDOSYS supports various email formats and the inclusion of external files:"
+          ],
+          "list": [
+            "**Text E-mail**: Use the 'TextBody' property for plain text messages.",
+            "**HTML E-mail**: Use the 'HTMLBody' property to send formatted content with HTML tags.",
+            "**Webpage as E-mail**: Use the 'CreateMHTMLBody' method to send a webpage directly from a URL or a local file.",
+            "**Attachments**: Use the 'AddAttachment' method followed by the file path to include files with your message."
+          ],
+          "code": "myMail.HTMLBody = \"<h1>This is an HTML message.</h1>\"\nmyMail.AddAttachment \"c:\\mydocuments\\test.txt\"\nmyMail.Send\nSet myMail = Nothing"
+        },
+        {
+          "heading": "Advanced Configuration",
+          "paragraphs": [
+            "For more complex scenarios, you can specify fields for CC and BCC, or configure the message to use a remote SMTP server.",
+            "Remote server configuration requires updating the 'Configuration.Fields' item with specific Microsoft schemas for the server address and port."
+          ],
+          "code": "<%\nmyMail.Configuration.Fields.Item _\n(\"http://schemas.microsoft.com/cdo/configuration/sendusing\") = 2\nmyMail.Configuration.Fields.Item _\n(\"http://schemas.microsoft.com/cdo/configuration/smtpserver\") = \"smtp.server.com\"\nmyMail.Configuration.Fields.Item _\n(\"http://schemas.microsoft.com/cdo/configuration/smtpserverport\") = 25\nmyMail.Configuration.Fields.Update\n%>"
+        }
+      ]
+    } ,
+    "asp-examples": {
+      "title": "ASP Examples",
+      "sections": [
+        {
+          "heading": "Basic ASP Output",
+          "paragraphs": [
+            "ASP provides methods to generate dynamic content by writing plain text, HTML tags, and HTML attributes directly to the browser."
+          ]
+        },
+        {
+          "heading": "VBScript Core Syntax",
+          "paragraphs": [
+            "VBScript is the primary language used for ASP examples, covering fundamental programming concepts:"
+          ],
+          "list": [
+            "**Variables & Arrays**: Declaring variables, modifying values, and creating indexed arrays to store data series.",
+            "**Looping**: Implementing 'For...Next', 'For Each', and 'Do...While' loops to iterate through code or HTML structures.",
+            "**Conditionals**: Using 'If...Then...Else' and 'Select Case' for logical decision-making.",
+            "**Procedures**: Defining Sub procedures for actions and Function procedures for calculations that return values."
+          ]
+        },
+        {
+          "heading": "Built-in Functions",
+          "paragraphs": [
+            "VBScript includes extensive built-in functions for data manipulation:"
+          ],
+          "list": [
+            "**Date & Time**: Formatting dates, retrieving day/month names, and performing date arithmetic.",
+            "**String Handling**: Converting case (Upper/Lower), trimming whitespace, reversing strings, and replacing characters.",
+            "**Math & Random**: Rounding numbers and generating random integers within specified ranges."
+          ]
+        },
+        {
+          "heading": "ASP Objects & Reference Examples",
+          "paragraphs": [
+            "The tutorial provides practical examples for the core ASP objects used to manage web applications:"
+          ],
+          "list": [
+            "**Response**: Handling redirects, managing the buffer, and controlling page caching/expiration.",
+            "**Request**: Retrieving form data (QueryString and Form collections), accessing cookies, and identifying visitor IP/browser types.",
+            "**Server & Session**: Creating hit counters, opening text files, and managing user-specific session IDs and timeouts.",
+            "**FileSystem & TextStream**: Checking the existence of files/folders, reading text files line-by-line, and managing drive properties.",
+            "**Components**: Using the AdRotator for dynamic images, Browser Capabilities for site optimization, and Content Linking for navigation."
+          ]
+        }
+      ]
+    } ,
+    "asp-certificate": {
+      "title": "ASP Certificate",
+      "sections": [
+        {
+          "heading": "W3Schools Certification Program",
+          "paragraphs": [
+            "W3Schools offers an online certification program designed for professionals to document their coding skills and improve their careers.",
+            "The program is flexible, allowing students to study at their own pace from any location.",
+            "With over 50,000 certificates issued, the brand is recognized and trusted by top companies looking for skilled developers."
+          ]
+        },
+        {
+          "heading": "Exam Overview",
+          "paragraphs": [
+            "The certification exam follows a specific structure and set of requirements:"
+          ],
+          "table": {
+            "headers": [ "Feature", "Details" ],
+            "rows": [
+              [ "Fee", "95 USD" ],
+              [ "Format", "Online, multiple choice" ],
+              [ "Questions", "Adaptive, 60 on average" ],
+              [ "Time Limit", "60 minutes" ],
+              [ "Attempts", "3" ],
+              [ "Expiration", "None" ]
+            ]
+          }
+        },
+        {
+          "heading": "Certification Levels",
+          "paragraphs": [
+            "Certification levels are awarded based on the final exam score:"
+          ],
+          "list": [
+            "**Intermediate**: Minimum 40% (Passing requirement).",
+            "**Advanced**: 75%.",
+            "**Professional**: 90%."
+          ]
+        },
+        {
+          "heading": "How It Works",
+          "paragraphs": [
+            "The process from learning to certification involves five simple steps:"
+          ],
+          "list": [
+            "1. Study for free at W3Schools.com at your own speed.",
+            "2. Test your knowledge using online quizzes.",
+            "3. Apply for the certificate by paying the exam fee.",
+            "4. Complete the online exam at any time.",
+            "5. Receive your certificate and share it via a unique link or QR code."
+          ]
+        },
+        {
+          "heading": "Career Benefits",
+          "paragraphs": [
+            "A certificate serves as verified credentials that can be added to a CV, Resume, or LinkedIn profile.",
+            "It demonstrates a commitment to skill upgrading, providing the credibility needed for higher salaries and larger projects."
+          ]
+        }
+      ]
+    } ,
+    "ref-vb-functions": {
+      "title": "ASP VB Functions",
+      "sections": [
+        {
+          "heading": "VBScript Function Categories",
+          "paragraphs": [
+            "VBScript provides a comprehensive library of built-in functions to handle data manipulation, formatting, and system interactions within ASP.",
+            "These functions are categorized by their primary purpose, such as handling time, converting types, or performing mathematical operations."
+          ]
+        },
+        {
+          "heading": "Date and Time Functions",
+          "paragraphs": [
+            "These functions allow for retrieving system time and performing date arithmetic:"
+          ],
+          "list": [
+            "**Now**: Returns current system date and time.",
+            "**Date / Time**: Returns the current system date or time individually.",
+            "**DateAdd / DateDiff**: Adds a time interval to a date or calculates the difference between two dates.",
+            "**WeekdayName / MonthName**: Returns the text name of a specific day or month.",
+            "**IsDate**: Validates if an expression can be converted to a date."
+          ]
+        },
+        {
+          "heading": "Conversion and Formatting",
+          "paragraphs": [
+            "Conversion functions change an expression's subtype, while formatting functions prepare data for display:"
+          ],
+          "list": [
+            "**CInt / CDbl / CStr**: Converts expressions to Integer, Double, or String subtypes.",
+            "**CDate**: Converts a valid date/time expression to a Date subtype.",
+            "**FormatCurrency / FormatPercent**: Formats numbers as currency or percentages.",
+            "**FormatDateTime**: Formats a date or time based on a specified style."
+          ]
+        },
+        {
+          "heading": "String and Math Functions",
+          "paragraphs": [
+            "String functions manipulate text, while math functions handle numerical logic:"
+          ],
+          "list": [
+            "**Len / Trim**: Returns string length or removes leading/trailing spaces.",
+            "**InStr / InStrRev**: Locates the position of a substring within a string.",
+            "**UCase / LCase**: Converts strings to upper or lower case.",
+            "**Abs / Sqr**: Returns the absolute value or square root of a number.",
+            "**Rnd**: Generates a random number between 0 and 1."
+          ]
+        },
+        {
+          "heading": "Array and Other Functions",
+          "paragraphs": [
+            "Additional utilities manage arrays and object instantiation:"
+          ],
+          "list": [
+            "**Split / Join**: Converts a string into an array or joins array elements into a single string.",
+            "**LBound / UBound**: Returns the smallest or largest subscript of an array.",
+            "**CreateObject**: Instantiates an automation object of a specified type.",
+            "**IsNumeric / IsObject**: Checks if an expression is a number or an object."
+          ]
+        }
+      ]
+    } ,
+    "ref-vb-keywords": {
+      "title": "ASP VB Keywords",
+      "sections": [
+        {
+          "heading": "VBScript Keywords Overview",
+          "paragraphs": [
+            "VBScript keywords are reserved words used to indicate specific states or values within your ASP code.",
+            "Understanding the distinction between states like Empty, Null, and Nothing is essential for robust error handling and resource management."
+          ]
+        },
+        {
+          "heading": "Variable States: Empty vs. Null",
+          "paragraphs": [
+            "VBScript distinguishes between uninitialized variables and those explicitly marked as containing invalid data:"
+          ],
+          "list": [
+            "**Empty**: Indicates an uninitialized variable value. This occurs when a variable is first created without an assignment or explicitly set to Empty. Use `IsEmpty()` to test for this state.",
+            "**Null**: Indicates that a variable contains no valid data, typically because it was explicitly set to an \"invalid\" state. Use `IsNull()` to test if a value contains invalid data."
+          ],
+          "code": "Dim x        ' x is currently Empty\nx = Null     ' x now contains no valid data (Null)\nIf IsEmpty(x) Then ... ' Checks if uninitialized\nIf IsNull(x) Then ...  ' Checks if invalid"
+        },
+        {
+          "heading": "Object Management: Nothing",
+          "paragraphs": [
+            "The `Nothing` keyword is specifically used for object variables to indicate an uninitialized state or to release system resources:"
+          ],
+          "list": [
+            "**Nothing**: Used to disassociate an object variable from an actual object, releasing memory.",
+            "**Is Nothing**: The correct way to test if an object is unset. Comparing a value using `=` (e.g., `myObject = Nothing`) will always return false."
+          ],
+          "code": "Set myObject = Nothing ' Releases resources\nIf (myObject Is Nothing) Then ' Correct way to test"
+        },
+        {
+          "heading": "Boolean Keywords",
+          "paragraphs": [
+            "Standard Boolean logic is handled by two primary keywords:"
+          ],
+          "list": [
+            "**True**: Indicates a correct Boolean condition.",
+            "**False**: Indicates an incorrect Boolean condition (carries a value of 0)."
+          ]
+        }
+      ]
+    } ,
+
+      "ref-response": {
+      "title": "ASP Response Object",
+      "sections": [
+        {
+          "heading": "The Response Object",
+          "paragraphs": [
+            "The ASP Response object is the primary tool used to send output from the server to the user's browser.",
+            "It encompasses collections for setting data, properties for configuring behavior, and methods for executing specific actions."
+          ]
+        },
+        {
+          "heading": "Collections",
+          "table": {
+            "headers": [ "Collection", "Description" ],
+            "rows": [
+              [ "Cookies", "Used to set a cookie value. If the cookie does not exist, it is created with the specified value." ]
+            ]
+          }
+        },
+        {
+          "heading": "Key Properties",
+          "paragraphs": [
+            "Response properties allow you to control how the browser and intermediary servers handle the output:"
+          ],
+          "list": [
+            "**Buffer**: Determines whether the page output should be buffered until the script finishes or sent as it is generated.",
+            "**ContentType**: Specifies the HTTP content type (e.g., text/html) for the response.",
+            "**Expires / ExpiresAbsolute**: Sets the duration (in minutes) or a specific date/time for which a page remains cached in the browser.",
+            "**Status**: Defines the value of the HTTP status line returned by the server (e.g., '200 OK').",
+            "**IsClientConnected**: Returns a Boolean indicating if the user has disconnected from the server."
+          ]
+        },
+        {
+          "heading": "Common Methods",
+          "paragraphs": [
+            "Methods provide functional control over the data being sent to the client:"
+          ],
+          "list": [
+            "**Write**: The most common method, used to send a specific string of text or HTML to the output.",
+            "**Redirect**: Sends the user to a different URL immediately.",
+            "**End**: Stops script processing and returns whatever has been generated so far.",
+            "**Clear / Flush**: 'Clear' empties any buffered HTML, while 'Flush' sends the current buffered content immediately.",
+            "**BinaryWrite**: Sends data directly to the output without character conversion, useful for non-text data."
+          ]
+        }
+      ]
+    } ,
+    "ref-request": {
+      "title": "ASP Request Object",
+      "sections": [
+        {
+          "heading": "The Request Object",
+          "paragraphs": [
+            "The Request object is used by the server to retrieve information from a visitor when a browser asks for a page.",
+            "It captures data sent via forms, URL parameters, cookies, and client-side certificates."
+          ]
+        },
+        {
+          "heading": "Collections",
+          "paragraphs": [
+            "The Request object organizes data into five primary collections based on the source of the information:"
+          ],
+          "list": [
+            "**QueryString**: Contains variable values sent in an HTTP query string, typically from a form using the 'GET' method or a link.",
+            "**Form**: Contains input values from an HTML form using the 'POST' method; this data is invisible in the URL.",
+            "**Cookies**: Stores all cookie values sent along with the HTTP request.",
+            "**ServerVariables**: Provides access to environmental information such as the visitor's IP address and browser type.",
+            "**ClientCertificate**: Holds the field values stored in a client's security certificate."
+          ]
+        },
+        {
+          "heading": "Properties and Methods",
+          "paragraphs": [
+            "In addition to collections, the Request object includes specific properties and methods for handling raw data:"
+          ],
+          "list": [
+            "**TotalBytes (Property)**: Returns the total count of bytes sent by the client in the request body.",
+            "**BinaryRead (Method)**: Retrieves data sent as part of a POST request and stores it in a safe array for processing non-textual data."
+          ]
+        }
+      ]
+    } ,
+    "ref-application": {
+      "title": "ASP Application Object",
+      "sections": [
+        {
+          "heading": "The Application Object",
+          "paragraphs": [
+            "An application in the web environment consists of a group of ASP files working together toward a common goal.",
+            "The Application object acts as the glue that ties these files together.",
+            "While similar to the Session object, the key difference is scope: all users share a single Application object, whereas each user has their own unique Session object."
+          ]
+        },
+        {
+          "heading": "Collections",
+          "table": {
+            "headers": [ "Collection", "Description" ],
+            "rows": [
+              [ "Contents", "Contains all items added to the application via script commands." ],
+              [ "StaticObjects", "Contains all objects added to the application using the HTML <object> tag." ]
+            ]
+          }
+        },
+        {
+          "heading": "Methods",
+          "paragraphs": [
+            "Methods allow for the management of stored data and concurrency control:"
+          ],
+          "list": [
+            "**Contents.Remove**: Deletes a specific item from the Contents collection.",
+            "**Contents.RemoveAll()**: Deletes every item currently in the Contents collection.",
+            "**Lock**: Prevents other users from modifying Application variables simultaneously.",
+            "**Unlock**: Re-enables modification of variables after a Lock has been applied."
+          ]
+        },
+        {
+          "heading": "Events",
+          "paragraphs": [
+            "Application events manage the beginning and end of the application lifecycle:"
+          ],
+          "list": [
+            "**Application_OnStart**: Occurs when the Application object is first referenced, before any new sessions are created.",
+            "**Application_OnEnd**: Occurs once all user sessions have concluded and the application effectively ends."
+          ]
+        }
+      ]
+    } ,
+    "ref-session": {
+      "title": "ASP Session Object",
+      "sections": [
+        {
+          "heading": "The Session Object",
+          "paragraphs": [
+            "The Session object is designed to store information about a single user and manage settings for their specific visit.",
+            "Because the HTTP protocol is stateless, web servers do not naturally maintain information about who a user is.",
+            "ASP solves this by creating a unique cookie for each user, allowing the server to identify the user and store data like names, IDs, and preferences across all pages in an application."
+          ]
+        },
+        {
+          "heading": "Collections",
+          "table": {
+            "headers": [ "Collection", "Description" ],
+            "rows": [
+              [ "Contents", "Includes all items added to the session via script commands." ],
+              [ "StaticObjects", "Includes all objects added to the session using the HTML <object> tag." ]
+            ]
+          }
+        },
+        {
+          "heading": "Properties",
+          "paragraphs": [
+            "Session properties manage localization, identification, and lifespan:"
+          ],
+          "list": [
+            "**SessionID**: Returns a server-generated unique identifier for each user.",
+            "**Timeout**: Sets or returns the period of inactivity (in minutes) before the session expires.",
+            "**LCID**: Controls how date, time, and currency are displayed based on a specific region or location.",
+            "**CodePage**: Defines the character set used for displaying dynamic content."
+          ]
+        },
+        {
+          "heading": "Methods and Events",
+          "paragraphs": [
+            "Methods allow for manual session control, while events trigger logic based on the session's status:"
+          ],
+          "list": [
+            "**Abandon**: Immediately destroys the user session and all stored variables.",
+            "**Contents.Remove / RemoveAll()**: Deletes specific items or all items from the Contents collection.",
+            "**Session_OnStart**: Occurs the moment a user initiates a new session.",
+            "**Session_OnEnd**: Occurs when a session expires or is manually abandoned."
+          ]
+        }
+      ]
+    } ,
+    "ref-server": {
+      "title": "ASP Server Object",
+      "sections": [
+        {
+          "heading": "The Server Object",
+          "paragraphs": [
+            "The ASP Server object provides access to methods and properties specifically residing on the server.",
+            "It is primarily used for managing script execution, utility encoding, and object instantiation."
+          ]
+        },
+        {
+          "heading": "Properties",
+          "table": {
+            "headers": [ "Property", "Description" ],
+            "rows": [
+              [ "ScriptTimeout", "Sets or returns the maximum number of seconds a script is allowed to run before being terminated by the server." ]
+            ]
+          }
+        },
+        {
+          "heading": "Methods",
+          "paragraphs": [
+            "The Server object includes several utility methods for file management and string processing:"
+          ],
+          "list": [
+            "**CreateObject**: Creates an instance of a server-side object or component.",
+            "**MapPath**: Maps a virtual or relative path to a physical path on the server.",
+            "**HTMLEncode**: Applies HTML encoding to a string, ensuring it displays correctly in a browser.",
+            "**URLEncode**: Applies URL encoding rules to a string for use in a query string.",
+            "**Execute**: Executes a second ASP file from within the current file.",
+            "**Transfer**: Transfers all information from the current ASP file to another, stopping the first script.",
+            "**GetLastError()**: Returns an ASPError object describing the error that occurred."
+          ]
+        }
+      ]
+    } ,
+
+      "ref-error": {
+      "title": "ASP Error Object",
+      "sections": [
+        {
+          "heading": "The ASPError Object",
+          "paragraphs": [
+            "The ASPError object is designed to provide detailed insights into any errors that occur within ASP scripts.",
+            "Introduced in ASP 3.0, it is available on IIS5 and newer versions.",
+            "This object is not created automatically; it is generated only when the `Server.GetLastError` method is called."
+          ]
+        },
+        {
+          "heading": "ASPError Properties (Read-Only)",
+          "paragraphs": [
+            "The object contains several properties that help developers pinpoint the exact nature and location of a script failure:"
+          ],
+          "table": {
+            "headers": [ "Property", "Description" ],
+            "rows": [
+              [ "ASPCode", "Returns the specific error code generated by IIS." ],
+              [ "ASPDescription", "Returns a detailed description if the error is ASP-related." ],
+              [ "Category", "Indicates the source of the error (e.g., ASP, a scripting language, or an object)." ],
+              [ "File", "Returns the name of the ASP file where the error occurred." ],
+              [ "Line / Column", "Provides the exact line number and column position of the error within the file." ],
+              [ "Source", "Returns the actual line of source code that caused the detection of the error." ],
+              [ "Number", "Returns the standard COM error code." ],
+              [ "Description", "Provides a short summary or description of the error." ]
+            ]
+          }
+        }
+      ]
+    } ,
+    "ref-filesystem": {
+      "title": "ASP FileSystemObject",
+      "sections": [
+        {
+          "heading": "The FileSystemObject (FSO)",
+          "paragraphs": [
+            "The FileSystemObject is used to access and manipulate the file system on the server.",
+            "It allows developers to create, delete, move, and copy files and folders, as well as retrieve detailed information about the server's drives and directory paths."
+          ],
+          "code": "<%\ndim fs,fname\nset fs=Server.CreateObject(\"Scripting.FileSystemObject\")\nset fname=fs.CreateTextFile(\"c:\\test.txt\",true)\nfname.WriteLine(\"Hello World!\")\nfname.Close\nset fname=nothing\nset fs=nothing\n%>"
+        },
+        {
+          "heading": "FSO Properties and Methods",
+          "paragraphs": [
+            "The object provides a robust set of tools for file system interaction:"
+          ],
+          "table": {
+            "headers": [ "Feature", "Description" ],
+            "rows": [
+              [ "Drives Property", "Returns a collection of all Drive objects available on the computer." ],
+              [ "Existence Checks", "Methods like FileExists, FolderExists, and DriveExists verify if a specific component is present." ],
+              [ "File Operations", "Includes CopyFile, DeleteFile, MoveFile, and OpenTextFile." ],
+              [ "Folder Operations", "Includes CopyFolder, CreateFolder, DeleteFolder, and MoveFolder." ],
+              [ "Path Utilities", "Methods like GetBaseName, GetExtensionName, GetFileName, and GetParentFolderName extract specific parts of a path string." ]
+            ]
+          }
+        },
+        {
+          "heading": "Advanced Path and File Handling",
+          "paragraphs": [
+            "Beyond basic CRUD operations, FSO can handle complex system-level tasks:"
+          ],
+          "list": [
+            "**BuildPath**: Appends a name to an existing path safely.",
+            "**GetAbsolutePathName**: Returns the full path from the root for a specified relative path.",
+            "**GetSpecialFolder**: Retrieves paths to Windows system folders.",
+            "**GetTempName**: Generates a random name for temporary file or folder creation."
+          ]
+        }
+      ]
+    } ,
+    "ref-textstream": {
+      "title": "ASP TextStream Object",
+      "sections": [
+        {
+          "heading": "The TextStream Object",
+          "paragraphs": [
+            "The TextStream object is specifically designed to access and manipulate the sequential content of text files on the server.",
+            "To create an instance of this object, you can use the `CreateTextFile` or `OpenTextFile` methods of the `FileSystemObject`, or the `OpenAsTextStream` method of a `File` object."
+          ],
+          "code": "<%\ndim fs,f\nset fs=Server.CreateObject(\"Scripting.FileSystemObject\")\nset f=fs.CreateTextFile(\"c:\\test.txt\",true)\nf.WriteLine(\"Hello World!\")\nf.Close\nset f=nothing\nset fs=nothing\n%>"
+        },
+        {
+          "heading": "TextStream Properties",
+          "paragraphs": [
+            "Properties are primarily used to track the current position of the file pointer during read operations:"
+          ],
+          "table": {
+            "headers": [ "Property", "Description" ],
+            "rows": [
+              [ "AtEndOfLine", "Returns true if the pointer is immediately before the end-of-line marker." ],
+              [ "AtEndOfStream", "Returns true if the pointer is at the very end of the file." ],
+              [ "Column", "Returns the current character's column number position." ],
+              [ "Line", "Returns the current line number within the stream." ]
+            ]
+          }
+        },
+        {
+          "heading": "Reading and Writing Methods",
+          "paragraphs": [
+            "The TextStream object offers several methods to control how data is read from or written to a file:"
+          ],
+          "list": [
+            "**Read / ReadLine / ReadAll**: Reads a specific number of characters, a single line, or the entire file, respectively.",
+            "**Write / WriteLine**: 'Write' inserts text without a break, while 'WriteLine' appends a new-line character at the end.",
+            "**WriteBlankLines**: Inserts a specified number of empty lines into the file.",
+            "**Skip / SkipLine**: Moves the pointer forward by a specified number of characters or skips the next entire line.",
+            "**Close**: Terminates the connection to the open file."
+          ]
+        }
+      ]
+    } ,
+    "ref-drive": {
+      "title": "ASP Drive Object",
+      "sections": [
+        {
+          "heading": "The Drive Object",
+          "paragraphs": [
+            "The Drive object provides access to information regarding a local disk drive or a network share.",
+            "It can return detailed metadata such as the file system type, free space, serial number, and volume name.",
+            "**Note**: This object is strictly for drive-level information; to view or manipulate the actual contents (files/folders) of a drive, the Folder object must be used instead."
+          ]
+        },
+        {
+          "heading": "Instantiation",
+          "paragraphs": [
+            "To use the Drive object, you must first create an instance of the `FileSystemObject` and then use the `GetDrive` method or the `Drives` property:"
+          ],
+          "code": "<%\ndim fs, d\nset fs=Server.CreateObject(\"Scripting.FileSystemObject\")\n' Get information for drive C\nset d=fs.GetDrive(\"c:\")\nResponse.Write(\"Total size in bytes: \" & d.TotalSize)\nset d=nothing\nset fs=nothing\n%>"
+        },
+        {
+          "heading": "Drive Object Properties",
+          "paragraphs": [
+            "The properties of the Drive object allow for comprehensive monitoring of storage hardware and network resources:"
+          ],
+          "table": {
+            "headers": [ "Property", "Description" ],
+            "rows": [
+              [ "AvailableSpace / FreeSpace", "Returns the amount of space available to the user on the drive." ],
+              [ "DriveLetter / Path", "Returns the uppercase letter identifying the drive or its path (e.g., C:)." ],
+              [ "DriveType", "Returns a value indicating the type of drive (e.g., Removable, Fixed, Network, CD-ROM)." ],
+              [ "FileSystem", "Identifies the file system in use (e.g., FAT, NTFS, CDFS)." ],
+              [ "IsReady", "A Boolean returning true if the drive is currently accessible." ],
+              [ "RootFolder", "Returns a Folder object representing the drive's root directory." ],
+              [ "SerialNumber", "Returns the decimal serial number used to uniquely identify the disk volume." ],
+              [ "ShareName", "Returns the network share name for network-mapped drives." ],
+              [ "TotalSize", "Returns the total storage capacity of the drive or network share." ],
+              [ "VolumeName", "Sets or returns the label assigned to the drive volume." ]
+            ]
+          }
+        }
+      ]
+    } ,
+    "ref-file": {
+      "title": "ASP File Object",
+      "sections": [
+        {
+          "heading": "The File Object",
+          "paragraphs": [
+            "The File object is used to retrieve specific information about a file on the server.",
+            "To work with this object, you must first create an instance of the `FileSystemObject` and then use the `GetFile` method or the `Files` property of a `Folder` object."
+          ],
+          "code": "<%\nDim fs, f\nSet fs=Server.CreateObject(\"Scripting.FileSystemObject\")\nSet f=fs.GetFile(\"c:\\test.txt\")\nResponse.Write(\"File created: \" & f.DateCreated)\nSet f=nothing\nSet fs=nothing\n%>"
+        },
+        {
+          "heading": "File Properties",
+          "paragraphs": [
+            "The File object contains various properties to examine file metadata and locations:"
+          ],
+          "table": {
+            "headers": [ "Property", "Description" ],
+            "rows": [
+              [ "Attributes", "Sets or returns the file attributes." ],
+              [ "DateCreated", "Returns the creation date and time." ],
+              [ "DateLastAccessed", "Returns the date and time of the last access." ],
+              [ "DateLastModified", "Returns the date and time of the last modification." ],
+              [ "Drive", "Returns the drive letter where the file resides." ],
+              [ "Name", "Sets or returns the name of the file." ],
+              [ "ParentFolder", "Returns the Folder object of the parent directory." ],
+              [ "Path", "Returns the full path of the file." ],
+              [ "Size", "Returns the file size in bytes." ],
+              [ "Type", "Returns the file type description." ]
+            ]
+          }
+        },
+        {
+          "heading": "File Methods",
+          "paragraphs": [
+            "Methods allow you to perform direct actions on the physical file:"
+          ],
+          "list": [
+            "**Copy**: Copies the file to a new location.",
+            "**Delete**: Removes the specified file from the system.",
+            "**Move**: Moves the file to a different directory.",
+            "**OpenAsTextStream**: Opens the file and returns a `TextStream` object for reading or writing content."
+          ]
+        }
+      ]
+    } ,
+    
+      "ref-folder": {
+      "title": "ASP Folder Object",
+      "sections": [
+        {
+          "heading": "The Folder Object",
+          "paragraphs": [
+            "The Folder object is used to retrieve specific information about a directory on the server.",
+            "To interact with this object, you must first create a `FileSystemObject` and then instantiate the Folder object using the `GetFolder` method."
+          ],
+          "code": "<%\nDim fs, fo\nSet fs=Server.CreateObject(\"Scripting.FileSystemObject\")\nSet fo=fs.GetFolder(\"c:\\test\")\nResponse.Write(\"Folder created: \" & fo.DateCreated)\nSet fo=nothing\nSet fs=nothing\n%>"
+        },
+        {
+          "heading": "Collections",
+          "paragraphs": [
+            "The Folder object allows you to iterate through its contents via two main collections:"
+          ],
+          "list": [
+            "**Files**: Returns a collection of all individual files located within the specified folder.",
+            "**SubFolders**: Returns a collection of all subdirectories contained within the specified folder."
+          ]
+        },
+        {
+          "heading": "Folder Properties",
+          "paragraphs": [
+            "Properties provide metadata and location data for the directory:"
+          ],
+          "table": {
+            "headers": [ "Property", "Description" ],
+            "rows": [
+              [ "Attributes", "Sets or returns the folder's system attributes." ],
+              [ "DateCreated", "Returns the creation date and time of the folder." ],
+              [ "Drive", "Returns the letter of the drive containing the folder." ],
+              [ "IsRootFolder", "Returns True if the folder is the root of its drive." ],
+              [ "Name / Path", "Sets or returns the name and absolute path of the folder." ],
+              [ "ParentFolder", "Returns the folder object representing the parent directory." ],
+              [ "Size", "Returns the total size (in bytes) of all files and folders within it." ]
+            ]
+          }
+        },
+        {
+          "heading": "Folder Methods",
+          "paragraphs": [
+            "Methods allow for structural manipulation and file creation:"
+          ],
+          "list": [
+            "**Copy**: Copies the folder and its contents to a new location.",
+            "**Delete**: Permanently removes the folder and everything inside it.",
+            "**Move**: Relocates the folder to a different path.",
+            "**CreateTextFile**: Creates a new text file directly inside the folder and returns a `TextStream` object."
+          ]
+        }
+      ]
+    } ,
+    "ref-dictionary": {
+      "title": "ASP Dictionary Object",
+      "sections": [
+        {
+          "heading": "The Dictionary Object",
+          "paragraphs": [
+            "The Dictionary object is used to store information in name/value pairs, commonly referred to as a key and an item.",
+            "While similar to Arrays, Dictionaries are often a more desirable solution for manipulating related data because they handle size changes and item deletion more efficiently."
+          ],
+          "code": "<%\nDim d\nSet d=Server.CreateObject(\"Scripting.Dictionary\")\nd.Add \"re\",\"Red\"\nd.Add \"gr\",\"Green\"\nd.Add \"bl\",\"Blue\"\nResponse.Write(\"The value of key gr is: \" & d.Item(\"gr\"))\n%>"
+        },
+        {
+          "heading": "Dictionary vs. Arrays",
+          "paragraphs": [
+            "Dictionaries offer several functional advantages over standard Arrays:"
+          ],
+          "list": [
+            "**Identification**: Items are identified by unique keys rather than just numerical indices.",
+            "**Dynamic Sizing**: You do not need to call `ReDim` to change the size of a Dictionary.",
+            "**Automatic Shifting**: When an item is deleted, the remaining items automatically shift up.",
+            "**Search Performance**: Dictionaries perform better when frequently accessing random elements or locating items by their content.",
+            "**Limitations**: Unlike Arrays, Dictionaries cannot be multidimensional."
+          ]
+        },
+        {
+          "heading": "Properties and Methods",
+          "paragraphs": [
+            "The Dictionary object provides built-in tools for managing collections of data:"
+          ],
+          "table": {
+            "headers": [ "Feature", "Description" ],
+            "rows": [
+              [ "Count Property", "Returns the total number of key/item pairs." ],
+              [ "Item Property", "Sets or returns the value associated with a specific key." ],
+              [ "Add Method", "Adds a new key/item pair to the object." ],
+              [ "Exists Method", "Returns a Boolean indicating if a specific key is present." ],
+              [ "Keys / Items Methods", "Returns an array containing all keys or all items, respectively." ],
+              [ "Remove / RemoveAll", "Deletes a specific pair or clears the entire Dictionary." ]
+            ]
+          }
+        }
+      ]
+    } ,
+    "ref-adrotator": {
+      "title": "ASP AdRotator Component",
+      "sections": [
+        {
+          "heading": "The AdRotator Component",
+          "paragraphs": [
+            "The ASP AdRotator component creates an object that displays a different image each time a user enters or refreshes a web page.",
+            "This component relies on a separate text file to manage information about the images, such as file paths, links, and display rates.",
+            "**Note**: This component is incompatible with Internet Information Server 7 (IIS7)."
+          ],
+          "code": "<%\nset adrotator=server.createobject(\"MSWC.AdRotator\")\nadrotator.GetAdvertisement(\"ads.txt\")\n%>"
+        },
+        {
+          "heading": "The Schedule File (ads.txt)",
+          "paragraphs": [
+            "A standard text file is used to define how advertisements are rotated:"
+          ],
+          "list": [
+            "**REDIRECT**: Specifies the page the visitor is sent to when clicking an ad.",
+            "**WIDTH / HEIGHT / BORDER**: Optional parameters placed under REDIRECT to set image dimensions.",
+            "**Asterisk (*)**: Separates the global settings from the specific advertisement entries.",
+            "**Ad Entries**: Each ad requires four lines: the image URL, hyperlink URL, alternate text, and display weight (percentage)."
+          ]
+        },
+        {
+          "heading": "Redirection Logic",
+          "paragraphs": [
+            "When a user clicks an advertisement, the request is sent to a redirection file (e.g., banners.asp).",
+            "This file typically receives a query string containing the target URL and performs the final `Response.Redirect`."
+          ],
+          "code": "<%\nurl=Request.QueryString(\"url\")\nIf url<>\"\" then Response.Redirect(url)\n%>"
+        },
+        {
+          "heading": "Properties and Methods",
+          "table": {
+            "headers": [ "Feature", "Description" ],
+            "rows": [
+              [ "Border Property", "Sets the size of the border around the advertisement." ],
+              [ "Clickable Property", "Determines if the ad functions as a hyperlink (True/False)." ],
+              [ "TargetFrame Property", "Specifies the name of the frame or window (e.g., '_blank') where the ad link opens." ],
+              [ "GetAdvertisement Method", "The primary method that returns the HTML required to display the ad." ]
+            ]
+          }
+        }
+      ]
+    } ,
+    "ref-browsercap": {
+      "title": "ASP Browser Capabilities",
+      "sections": [
+        {
+          "heading": "The Browser Capabilities Component",
+          "paragraphs": [
+            "The ASP Browser Capabilities component creates a `BrowserType` object used to identify a visitor's browser type, version, and specific capabilities.",
+            "This determination is made by comparing the **User Agent header** sent by the browser against a server-side configuration file named `Browscap.ini`.",
+            "If the header matches an entry in the file, the object lists the browser's properties; otherwise, all properties are set to 'UNKNOWN'."
+          ],
+          "code": "<%\nSet MyBrow=Server.CreateObject(\"MSWC.BrowserType\")\nResponse.Write(\"Browser: \" & MyBrow.browser)\nResponse.Write(\"Version: \" & MyBrow.version)\n%>"
+        },
+        {
+          "heading": "The Browscap.ini File",
+          "paragraphs": [
+            "The `Browscap.ini` file defines the properties and default values for various browsers.",
+            "It supports inheritance (via a parent browser definition) and wildcards for matching User Agent strings."
+          ],
+          "list": [
+            "**HTTPUserAgentHeader**: Specifies the string to match against the visitor's browser header.",
+            "**Browser Properties**: Common properties include `ActiveXControls`, `Cookies`, `Frames`, `Javascript`, and `Vbscript`.",
+            "**Default Settings**: Uses `[*]` to define capabilities for any browser that does not match specific entries."
+          ]
+        },
+        {
+          "heading": "Detectable Capabilities",
+          "paragraphs": [
+            "The `BrowserType` object can detect a wide range of features to help developers optimize the user experience:"
+          ],
+          "table": {
+            "headers": [ "Property", "Description" ],
+            "rows": [
+              [ "Platform", "Specifies the operating system (e.g., WinNT)." ],
+              [ "Frames/Tables", "Indicates if the browser supports frames or HTML tables." ],
+              [ "Cookies", "Returns True if the browser supports cookies." ],
+              [ "Javascript/Vbscript", "Indicates support for specific scripting languages." ],
+              [ "Backgroundsounds", "Determines if the browser can play background audio." ]
+            ]
+          }
+        }
+      ]
+    } ,
+    "ref-contentlinking": {
+      "title": "ASP Content Linking",
+      "sections": [
+        {
+          "heading": "The Content Linking Component",
+          "paragraphs": [
+            "The ASP Content Linking component is used to create a quick and easy navigation system by returning a Nextlink object that manages a list of web pages.",
+            "This component allows developers to build tables of contents and sequential navigation without manually updating links on every page."
+          ],
+          "code": "<%\nSet nl=Server.CreateObject(\"MSWC.NextLink\")\n%>"
+        },
+        {
+          "heading": "Implementation Strategy",
+          "paragraphs": [
+            "The system relies on three primary components to function:"
+          ],
+          "list": [
+            "**The Content List File**: A text file (e.g., links.txt) containing URLs followed by tab-separated descriptions, listed in the desired display order.",
+            "**The Navigation Logic**: An include file (e.g., nlcode.inc) that uses the NextLink object to generate 'Previous' and 'Next' links dynamically.",
+            "**The ASP Pages**: Individual pages that include the logic file using the `` directive."
+          ],
+          "code": "<%\n' Example nlcode.inc logic\nif (nl.GetListIndex(\"links.txt\") > 1) then\n  Response.Write(\"<a href='\" & nl.GetPreviousURL(\"links.txt\") & \"'>Previous</a>\")\nend if\nResponse.Write(\"<a href='\" & nl.GetNextURL(\"links.txt\") & \"'>Next</a>\")\n%>"
+        },
+        {
+          "heading": "Content Linking Methods",
+          "paragraphs": [
+            "The NextLink object provides several methods to navigate and retrieve data from the list file:"
+          ],
+          "table": {
+            "headers": [ "Method", "Description" ],
+            "rows": [
+              [ "GetListCount", "Returns the total number of items in the list file." ],
+              [ "GetListIndex", "Returns the current page's index (starting at 1); returns 0 if not in the list." ],
+              [ "GetNextURL", "Returns the URL of the next item in the list." ],
+              [ "GetNextDescription", "Returns the text description for the next item." ],
+              [ "GetPreviousURL", "Returns the URL of the previous item in the list." ],
+              [ "GetPreviousDescription", "Returns the text description for the previous item." ],
+              [ "GetNthURL", "Returns the URL of a specific item by its index number." ],
+              [ "GetNthDescription", "Returns the description of a specific item by its index number." ]
+            ]
+          }
+        }
+      ]
+    } ,
+    "ref-contentrotator": {
+      "title": "ASP Content Rotator",
+      "sections": [
+        {
+          "heading": "The Content Rotator Component",
+          "paragraphs": [
+            "The ASP Content Rotator component creates a `ContentRotator` object that displays a different content string each time a user enters or refreshes a page.",
+            "This component is available in ASP 3.0 and relies on a Content Schedule File to manage the rotating snippets.",
+            "Because these content strings can contain standard HTML tags, you can rotate diverse types of content, including text, images, colors, and hyperlinks."
+          ],
+          "code": "<%\nSet cr=Server.CreateObject(\"MSWC.ContentRotator\")\n%>"
+        },
+        {
+          "heading": "Content Schedule File (e.g., textads.txt)",
+          "paragraphs": [
+            "The text file that contains the content strings uses a specific syntax to define weighting:"
+          ],
+          "list": [
+            "**Delimiter (%%)**: Each content entry must start with a double percent sign.",
+            "**Relative Weighting (#number)**: An optional parameter that specifies how often a string should be displayed relative to others.",
+            "**Calculation Example**: If you have two entries with `#3` and one with `#4`, the `#3` entries will each display 3/10ths of the time, and the `#4` entry will display 4/10ths of the time."
+          ],
+          "code": "%% #3\n<h2>This is a great day!!</h2>\n\n%% #3\n<img src=\"smiley.gif\">\n\n%% #4\n<a href=\"https://www.w3schools.com\">Visit W3Schools.com</a>"
+        },
+        {
+          "heading": "Content Rotator Methods",
+          "paragraphs": [
+            "The `ContentRotator` object provides two primary methods for outputting content:"
+          ],
+          "table": {
+            "headers": [ "Method", "Description" ],
+            "rows": [
+              [ "ChooseContent", "Retrieves and displays a single content string from the schedule file based on the established weights." ],
+              [ "GetAllContent", "Retrieves and displays all content strings stored in the text file simultaneously." ]
+            ]
+          },
+          "code": "<%\n' Displaying a single rotated ad\nresponse.write(cr.ChooseContent(\"text/textads.txt\"))\n%>"
+        }
+      ]
+    } ,
+    "ref-quickref": {
+      "title": "ASP Quick Reference",
+      "sections": [
+        {
+          "heading": "Basic Syntax and Forms",
+          "paragraphs": [
+            "ASP scripts are enclosed in `<%` and `%>` delimiters, with VBScript as the default language.",
+            "To collect user input, `Request.QueryString` is used for forms with the 'GET' method (visible in the address bar), while `Request.Form` is used for the 'POST' method (invisible to others)."
+          ],
+          "code": "<%@ language=\"javascript\" %>\n<html>\n<body>\n<% response.write(\"Hello World!\") %>\n</body>\n</html>"
+        },
+        {
+          "heading": "Cookies and Include Files",
+          "paragraphs": [
+            "Cookies identify users by embedding small files on their computers; `Response.Cookies` creates them, while `Request.Cookies` retrieves their values.",
+            "The `#include` directive allows the reuse of headers, footers, or functions across multiple pages:"
+          ],
+          "list": [
+            "**Virtual**: Indicates a path starting from a virtual directory (e.g., ``).",
+            "**File**: Indicates a relative path starting from the current directory (e.g., ``)."
+          ]
+        },
+        {
+          "heading": "Global.asa Configuration",
+          "paragraphs": [
+            "Stored in the root directory, `Global.asa` handles application-wide events, object declarations, and TypeLibrary constants.",
+            "Subroutines for `Application_OnStart`, `Application_OnEnd`, `Session_OnStart`, and `Session_OnEnd` must be placed inside `<script>` tags rather than ASP delimiters."
+          ]
+        },
+        {
+          "heading": "Core Object Reference",
+          "paragraphs": [
+            "The quick reference summarizes the primary functions of ASP's built-in objects:"
+          ],
+          "table": {
+            "headers": [ "Object", "Primary Use" ],
+            "rows": [
+              [ "Session", "Stores data for a single user; features Abandon method and Timeout property." ],
+              [ "Application", "Ties files together for all users; uses Lock/Unlock for concurrency." ],
+              [ "Response", "Sends output to the user; features Write, Redirect, and Buffer control." ],
+              [ "Request", "Retrieves data from the visitor; includes Form, QueryString, and ServerVariables." ],
+              [ "Server", "Provides server-side utilities like CreateObject, MapPath, and HTMLEncode." ]
+            ]
+          }
+        }
+      ]
+    }
+
+      
+  } 
+}

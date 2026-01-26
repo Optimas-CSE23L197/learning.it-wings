@@ -1,0 +1,1350 @@
+{
+  "course": {
+    "id": "django",
+    "title": "Django Tutorial"
+  },
+  "sections": [
+    {
+      "title": "Django Tutorial",
+      "lessons": [
+        { "id": "home", "title": "Django Home" },
+        { "id": "intro", "title": "Django Intro" },
+        { "id": "get-started", "title": "Django Get Started" },
+        { "id": "create-virtual-environment", "title": "Create Virtual Environment" },
+        { "id": "install-django", "title": "Install Django" },
+        { "id": "create-project", "title": "Django Create Project" },
+        { "id": "create-app", "title": "Django Create App" },
+        { "id": "views", "title": "Django Views" },
+        { "id": "urls", "title": "Django URLs" },
+        { "id": "templates", "title": "Django Templates" },
+        { "id": "models", "title": "Django Models" },
+        { "id": "insert-data", "title": "Django Insert Data" },
+        { "id": "update-data", "title": "Django Update Data" },
+        { "id": "delete-data", "title": "Django Delete Data" },
+        { "id": "update-model", "title": "Django Update Model" }
+      ]
+    },
+    {
+      "title": "Display Data",
+      "lessons": [
+        { "id": "prep-template-and-view", "title": "Prep Template and View" },
+        { "id": "add-link-to-details", "title": "Add Link to Details" },
+        { "id": "add-master-template", "title": "Add Master Template" },
+        { "id": "add-main-index-page", "title": "Add Main Index Page" },
+        { "id": "django-404-template", "title": "Django 404 Template" },
+        { "id": "add-test-view", "title": "Add Test View" }
+      ]
+    } ,
+    {
+    "title": "Admin",
+    "lessons": [
+      { "id": "django-admin", "title": "Django Admin" },
+      { "id": "create-user", "title": "Create User" },
+      { "id": "include-models", "title": "Include Models" },
+      { "id": "set-list-display", "title": "Set List Display" },
+      { "id": "update-members", "title": "Update Members" },
+      { "id": "add-members", "title": "Add Members" },
+      { "id": "delete-members", "title": "Delete Members" }
+    ]
+  },
+  {
+    "title": "Django Syntax",
+    "lessons": [
+      { "id": "django-variables", "title": "Django Variables" },
+      { "id": "django-tags", "title": "Django Tags" },
+      { "id": "django-if-else", "title": "Django If Else" },
+      { "id": "django-for-loop", "title": "Django For Loop" },
+      { "id": "django-comment", "title": "Django Comment" },
+      { "id": "django-include", "title": "Django Include" }
+    ]
+  },
+  {
+    "title": "QuerySets",
+    "lessons": [
+      { "id": "queryset-introduction", "title": "QuerySet Introduction" },
+      { "id": "queryset-get", "title": "QuerySet Get" }
+    ]
+  }
+
+  ],
+  "content": {
+    "home": {
+  "title": "Learn Django",
+  "paragraphs": [
+    "Django is a back-end server side web framework.",
+    "Django is free, open source and written in Python.",
+    "Django makes it easier to build web pages using Python.",
+    "Start learning Django now"
+  ],
+  "sections": [
+    {
+      "heading": "Learning by Doing",
+      "paragraphs": [
+        "In this tutorial you get a step by step guide on how to install and create a Django project. You will learn how to create a project where you can add, read, update or delete data.",
+        "You will learn how to make HTML Templates and use Django Template Tags to insert data within a HTML document.",
+        "You will learn how to work with QuerySets to extract, filter, and sort data from the database.",
+        "You will also learn how to set up a PostgreSQL database and how to deploy your Django project to the world."
+      ]
+    },
+    {
+      "heading": "Learning by Examples",
+      "paragraphs": [
+        "In the tutorial we will use examples to better explain the various concepts."
+      ],
+      "example": "<ul>\n  {% for x in mymembers %}\n    <li>{{ x.firstname }}</li>\n  {% endfor %}\n</ul>"
+    },
+    {
+      "heading": "Learning by Exercises",
+      "paragraphs": [
+        "Many chapters in this tutorial end with an exercise where you can check your level of knowledge.",
+        "See all Django Exercises"
+      ]
+    },
+    {
+      "heading": "Django Quiz",
+      "paragraphs": [
+        "Learn by taking a quiz! The quiz will give you a signal of how much you know about Django.",
+        "Start Django Quiz"
+      ]
+    },
+    {
+      "heading": "Track Your Progress",
+      "paragraphs": [
+        "Create a W3Schools account and get access to more features and learning materials:",
+        "Note: This is an optional feature. You can study at W3Schools without creating an account."
+      ],
+      "list": [
+        "View your completed tutorials, exercises, and quizzes",
+        "Keep an eye on your progress and daily streaks",
+        "Join the leaderboard and compete with others",
+        "Get your own avatar and unlock new skins",
+        "Create your own personal website"
+      ]
+    },
+    {
+      "heading": "Learning by References",
+      "paragraphs": [
+        "You will also find references over the most common Django features:"
+      ],
+      "list": [
+        "Template Tags",
+        "QuerySet Filters",
+        "Field Lookups"
+      ]
+    }
+  ]
+}
+,
+    "intro": {
+  "title": "Django Introduction",
+  "sections": [
+    {
+      "heading": "What is Django?",
+      "paragraphs": [
+        "Django is a Python framework that makes it easier to create web sites using Python.",
+        "Django takes care of the difficult stuff so that you can concentrate on building your web applications.",
+        "Django emphasizes reusability of components, also referred to as DRY (Don't Repeat Yourself), and comes with ready-to-use features like login system, database connection and CRUD operations (Create Read Update Delete).",
+        "Django is especially helpful for database driven websites."
+      ]
+    },
+    {
+      "heading": "How does Django Work?",
+      "paragraphs": [
+        "Django follows the MVT design pattern (Model View Template).",
+        "Model - The data you want to present, usually data from a database.",
+        "View - A request handler that returns the relevant template and content - based on the request from the user.",
+        "Template - A text file (like an HTML file) containing the layout of the web page, with logic on how to display the data."
+      ]
+    },
+    {
+      "heading": "Model",
+      "paragraphs": [
+        "The model provides data from the database.",
+        "In Django, the data is delivered as an Object Relational Mapping (ORM), which is a technique designed to make it easier to work with databases.",
+        "The most common way to extract data from a database is SQL. One problem with SQL is that you have to have a pretty good understanding of the database structure to be able to work with it.",
+        "Django, with ORM, makes it easier to communicate with the database, without having to write complex SQL statements.",
+        "The models are usually located in a file called models.py."
+      ]
+    },
+    {
+      "heading": "View",
+      "paragraphs": [
+        "A view is a function or method that takes http requests as arguments, imports the relevant model(s), and finds out what data to send to the template, and returns the final result.",
+        "The views are usually located in a file called views.py."
+      ]
+    },
+    {
+      "heading": "Template",
+      "paragraphs": [
+        "A template is a file where you describe how the result should be represented.",
+        "Templates are often .html files, with HTML code describing the layout of a web page, but it can also be in other file formats to present other results, but we will concentrate on .html files.",
+        "Django uses standard HTML to describe the layout, but uses Django tags to add logic:",
+        "The templates of an application is located in a folder named templates."
+      ],
+      "example": "<h1>My Homepage</h1>\n\n<p>My name is {{ firstname }}.</p>"
+    },
+    {
+      "heading": "URLs",
+      "paragraphs": [
+        "Django also provides a way to navigate around the different pages in a website.",
+        "When a user requests a URL, Django decides which view it will send it to.",
+        "This is done in a file called urls.py."
+      ]
+    },
+    {
+      "heading": "So, What is Going On?",
+      "paragraphs": [
+        "When you have installed Django and created your first Django web application, and the browser requests the URL, this is basically what happens:",
+        "Django receives the URL, checks the urls.py file, and calls the view that matches the URL.",
+        "The view, located in views.py, checks for relevant models.",
+        "The models are imported from the models.py file.",
+        "The view then sends the data to a specified template in the template folder.",
+        "The template contains HTML and Django tags, and with the data it returns finished HTML content back to the browser.",
+        "Django can do a lot more than this, but this is basically what you will learn in this tutorial, and are the basic steps in a simple web application made with Django."
+      ]
+    },
+    {
+      "heading": "Django History",
+      "paragraphs": [
+        "Django was invented by Lawrence Journal-World in 2003, to meet the short deadlines in the newspaper and at the same time meeting the demands of experienced web developers.",
+        "Initial release to the public was in July 2005.",
+        "Latest version of Django is 4.0.3 (March 2022)."
+      ]
+    }
+  ]
+}
+,
+    "get-started": {
+  "title": "Django Getting Started",
+  "sections": [
+    {
+      "heading": "Django Getting Started",
+      "paragraphs": [
+        "To install Django, you must have Python installed, and a package manager like PIP.",
+        "PIP is included in Python from version 3.4."
+      ]
+    },
+    {
+      "heading": "Django Requires Python",
+      "paragraphs": [
+        "To check if your system has Python installed, run this command in the command prompt:",
+        "If Python is installed, you will get a result with the version number, like this",
+        "If you find that you do not have Python installed on your computer, then you can download it for free from the following website: https://www.python.org/"
+      ],
+      "example": "python --version\n\nPython 3.13.2"
+    },
+    {
+      "heading": "PIP",
+      "paragraphs": [
+        "To install Django, you must use a package manager like PIP, which is included in Python from version 3.4.",
+        "To check if your system has PIP installed, run this command in the command prompt:",
+        "If PIP is installed, you will get a result with the version number.",
+        "For me, on a windows machine, the result looks like this:",
+        "If you do not have PIP installed, you can download and install it from this page: https://pypi.org/project/pip/"
+      ],
+      "example": "pip --version\n\npip 24.3.1 from C:\\Program Files\\WindowsApps\\PythonVersion\\Lib\\site-packages\\pip (python 3.13)"
+    },
+    {
+      "heading": "Virtual Environment",
+      "paragraphs": [
+        "It is suggested to have a dedicated virtual environment for each Django project, and in the next chapter you will learn how to create a virtual environment, and then install Django in it."
+      ]
+    }
+  ]
+}
+,
+    "create-virtual-environment": {
+  "title": "Django - Create Virtual Environment",
+  "sections": [
+    {
+      "heading": "Virtual Environment",
+      "paragraphs": [
+        "It is suggested to have a dedicated virtual environment for each Django project, and one way to manage a virtual environment is venv, which is included in Python.",
+        "The name of the virtual environment is your choice, in this tutorial we will call it myworld.",
+        "Type the following in the command prompt, remember to navigate to where you want to create your project:"
+      ],
+      "example": "python -m venv myworld"
+    },
+    {
+      "heading": "Virtual Environment Structure",
+      "paragraphs": [
+        "This will set up a virtual environment, and create a folder named \"myworld\" with subfolders and files, like this:"
+      ],
+      "example": "myworld\n  Include\n  Lib\n  Scripts\n  .gitignore\n  pyvenv.cfg"
+    },
+    {
+      "heading": "Activate Environment",
+      "paragraphs": [
+        "Then you have to activate the environment, by typing this command:"
+      ],
+      "example": "Windows:\n\nmyworld\\Scripts\\activate.bat\n\nUnix/MacOS:\n\nsource myworld/bin/activate"
+    },
+    {
+      "heading": "Activated Result",
+      "paragraphs": [
+        "Once the environment is activated, you will see this result in the command prompt:"
+      ],
+      "example": "Windows:\n\n(myworld) C:\\Users\\Your Name>\n\nUnix/MacOS:\n\n(myworld) ... $"
+    },
+    {
+      "heading": "Note",
+      "paragraphs": [
+        "You must activate the virtual environment every time you open the command prompt to work on your project."
+      ]
+    },
+    {
+      "heading": "Install Django",
+      "paragraphs": [
+        "In the next chapter you will finally learn how to install Django!"
+      ]
+    }
+  ]
+}
+,
+    "install-django": {
+  "title": "Install Django",
+  "sections": [
+    {
+      "heading": "Install Django",
+      "paragraphs": [
+        "Now, that we have created a virtual environment, we are ready to install Django.",
+        "Note: Remember to install Django while you are in the virtual environment!",
+        "Django is installed using pip, with this command:"
+      ],
+      "example": "(myworld) ... $ python -m pip install Django"
+    },
+    {
+      "heading": "Installation Output",
+      "paragraphs": [
+        "Which will give a result that looks like this (at least on my Windows machine):"
+      ],
+      "example": "Collecting Django\n  Downloading Django-5.1.7-py3-none-any.whl.metadata (4.1 kB)\nCollecting asgiref<4,>=3.8.1 (from Django)\n  Downloading asgiref-3.8.1-py3-none-any.whl.metadata (9.3 kB)\nCollecting sqlparse>=0.3.1 (from Django)\n  Downloading sqlparse-0.5.3-py3-none-any.whl.metadata (3.9 kB)\nCollecting tzdata (from Django)\n  Downloading tzdata-2025.1-py2.py3-none-any.whl.metadata (1.4 kB)\nDownloading Django-5.1.7-py3-none-any.whl (8.3 MB)\nInstalling collected packages: tzdata, sqlparse, asgiref, Django\nSuccessfully installed Django-5.1.7 asgiref-3.8.1 sqlparse-0.5.3 tzdata-2025.1\n\n[notice] A new release of pip is available: 24.3.1 -> 25.0.1\n[notice] To update, run: python.exe -m pip install --upgrade pip"
+    },
+    {
+      "heading": "Windows, Mac, or Unix?",
+      "paragraphs": [
+        "You can run this project on either one. There can be some small differences, like some Windows versions prefers py as the first word in the command line, instead of python:",
+        "In the rest of this tutorial, we will be using Windows commands with the python keyword."
+      ],
+      "example": "python --version"
+    },
+    {
+      "heading": "Check Django Version",
+      "paragraphs": [
+        "You can check if Django is installed by asking for its version number like this:",
+        "If Django is installed, you will get a result with the version number:"
+      ],
+      "example": "(myworld) C:\\Users\\Your Name>django-admin --version\n\n5.1.7"
+    },
+    {
+      "heading": "What's Next?",
+      "paragraphs": [
+        "Now you are ready to create a Django project in a virtual environment on your computer.",
+        "In the next chapters of this tutorial we will create a Django project and look at the various features of Django and hopefully make you a Django developer."
+      ]
+    },
+    {
+      "heading": "Exercise",
+      "paragraphs": [
+        "What is a correct syntax for installing Django on a Windows machine?"
+      ],
+      "list": [
+        "python -m pip get Django",
+        "python -m pip load D-jango",
+        "python -m pip install Django"
+      ]
+    }
+  ]
+},
+    "create-project": {
+  "title": "Django Create Project",
+  "sections": [
+    {
+      "heading": "My First Project",
+      "paragraphs": [
+        "Once you have come up with a suitable name for your Django project, like mine: my_tennis_club, navigate to where in the file system you want to store the code (in the virtual environment), I will navigate to the myworld folder, and run this command in the command prompt:"
+      ],
+      "example": "django-admin startproject my_tennis_club"
+    },
+    {
+      "heading": "Project Structure",
+      "paragraphs": [
+        "Django creates a my_tennis_club folder on my computer, with this content:",
+        "These are all files and folders with a specific meaning, you will learn about some of them later in this tutorial, but for now, it is more important to know that this is the location of your project, and that you can start building applications in it."
+      ],
+      "example": "my_tennis_club\n    manage.py\n    my_tennis_club/\n        __init__.py\n        asgi.py\n        settings.py\n        urls.py\n        wsgi.py"
+    },
+    {
+      "heading": "Run the Django Project",
+      "paragraphs": [
+        "Now that you have a Django project, you can run it, and see what it looks like in a browser.",
+        "Navigate to the /my_tennis_club folder and execute this command in the command prompt:"
+      ],
+      "example": "python manage.py runserver"
+    },
+    {
+      "heading": "Run Output",
+      "paragraphs": [
+        "Which will produce this result:",
+        "Open a new browser window and type 127.0.0.1:8000 in the address bar.",
+        "The result:"
+      ],
+      "example": "Watching for file changes with StatReloader\nPerforming system checks...\n\nSystem check identified no issues (0 silenced).\n\nYou have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.\nRun 'python manage.py migrate' to apply them.\nMarch 19, 2025 - 14:19:38\nDjango version 5.1.7, using settings 'my_tennis_club.settings'\nStarting development server at http://127.0.0.1:8000/\nQuit the server with CTRL-BREAK."
+    },
+    {
+      "heading": "What's Next?",
+      "paragraphs": [
+        "We have a Django project!",
+        "The next step is to make an app in your project.",
+        "You cannot have a web page created with Django without an app."
+      ]
+    }
+  ]
+}
+,
+    "create-app": {
+  "title": "Django Create App",
+  "sections": [
+    {
+      "heading": "What is an App?",
+      "paragraphs": [
+        "An app is a web application that has a specific meaning in your project, like a home page, a contact form, or a members database.",
+        "In this tutorial we will create an app that allows us to list and register members in a database."
+      ]
+    },
+    {
+      "heading": "Create App",
+      "paragraphs": [
+        "Use startapp to create a new Django app inside your project.",
+        "Stop the server before running the command if it is already running."
+      ],
+      "example": "python manage.py startapp members"
+    },
+    {
+      "heading": "App Files",
+      "paragraphs": [
+        "Django creates a folder for the app with important files like models.py, views.py, and admin.py.",
+        "The views.py file is used to handle requests and send responses."
+      ]
+    }
+  ]
+}
+,
+    "views": {
+  "title": "Django Views",
+  "sections": [
+    {
+      "heading": "What are Views?",
+      "paragraphs": [
+        "Django views are Python functions that take http requests and return http response, like HTML documents.",
+        "Views are usually put in a file called views.py located in your app folder."
+      ]
+    },
+    {
+      "heading": "Simple View Example",
+      "paragraphs": [
+        "A simple view returns a response back to the browser.",
+        "The name of the view does not have to be the same as the application."
+      ],
+      "example": "from django.http import HttpResponse\n\ndef members(request):\n    return HttpResponse(\"Hello world!\")"
+    },
+    {
+      "heading": "How Views Work",
+      "paragraphs": [
+        "To execute a view, it must be connected to a URL.",
+        "You will learn about URLs in the next chapter."
+      ]
+    }
+  ]
+}
+,
+    "urls": {
+  "title": "Django URLs",
+  "sections": [
+    {
+      "heading": "App URLs",
+      "paragraphs": [
+        "Create a urls.py file in the same folder as views.py.",
+        "This file connects URLs to view functions."
+      ],
+      "example": "from django.urls import path\nfrom . import views\n\nurlpatterns = [\n    path('members/', views.members, name='members'),\n]"
+    },
+    {
+      "heading": "Project URLs",
+      "paragraphs": [
+        "You must also include the app URLs in the main project urls.py file.",
+        "This routes incoming requests to the correct app."
+      ],
+      "example": "from django.contrib import admin\nfrom django.urls import include, path\n\nurlpatterns = [\n    path('', include('members.urls')),\n    path('admin/', admin.site.urls),\n]"
+    },
+    {
+      "heading": "Run and Test",
+      "paragraphs": [
+        "Start the server and open the URL in the browser."
+      ],
+      "example": "python manage.py runserver\n\nhttp://127.0.0.1:8000/members/"
+    }
+  ]
+}
+,
+    "templates": {
+  "title": "Django Templates",
+  "sections": [
+    {
+      "heading": "Create Template",
+      "paragraphs": [
+        "Templates are HTML files used to display content in Django.",
+        "Create a templates folder inside your app and add an HTML file."
+      ],
+      "example": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Hello World!</h1>\n<p>Welcome to my first Django project!</p>\n\n</body>\n</html>"
+    },
+    {
+      "heading": "Modify View",
+      "paragraphs": [
+        "Load the template in the view and return it as a response."
+      ],
+      "example": "from django.http import HttpResponse\nfrom django.template import loader\n\ndef members(request):\n  template = loader.get_template('myfirst.html')\n  return HttpResponse(template.render())"
+    },
+    {
+      "heading": "Register App",
+      "paragraphs": [
+        "Add your app name to INSTALLED_APPS in settings.py so Django recognizes it."
+      ],
+      "example": "INSTALLED_APPS = [\n    'members'\n]"
+    },
+    {
+      "heading": "Run Project",
+      "paragraphs": [
+        "Run migrations and start the server to see the template in the browser."
+      ],
+      "example": "python manage.py migrate\npython manage.py runserver\n\nhttp://127.0.0.1:8000/members/"
+    }
+  ]
+}
+,
+    "models": {
+  "title": "Django Models",
+  "sections": [
+    {
+      "heading": "What is a Model?",
+      "paragraphs": [
+        "A Django model is a table in your database.",
+        "Models represent data as Python objects and map them to database tables."
+      ]
+    },
+    {
+      "heading": "Create Model",
+      "paragraphs": [
+        "Define models in the models.py file inside your app.",
+        "Each model class becomes a table in the database."
+      ],
+      "example": "from django.db import models\n\nclass Member(models.Model):\n  firstname = models.CharField(max_length=255)\n  lastname = models.CharField(max_length=255)"
+    },
+    {
+      "heading": "Database",
+      "paragraphs": [
+        "Django uses SQLite by default.",
+        "The database file is named db.sqlite3 and is created automatically."
+      ]
+    },
+    {
+      "heading": "Migrations",
+      "paragraphs": [
+        "After creating a model, you must generate and apply migrations to create the table."
+      ],
+      "example": "python manage.py makemigrations members\npython manage.py migrate"
+    },
+    {
+      "heading": "Auto ID",
+      "paragraphs": [
+        "Django automatically adds an id field as the primary key for each table."
+      ]
+    }
+  ]
+}
+,
+    "insert-data": {
+  "title": "Django Insert Data",
+  "sections": [
+    {
+      "heading": "Open Shell",
+      "paragraphs": [
+        "Use the Django shell to interact with the database.",
+        "The shell lets you run Python code inside your project."
+      ],
+      "example": "python manage.py shell"
+    },
+    {
+      "heading": "View Data",
+      "paragraphs": [
+        "Import the model and check existing records.",
+        "A QuerySet represents data from the database."
+      ],
+      "example": "from members.models import Member\n\nMember.objects.all()"
+    },
+    {
+      "heading": "Insert Single Record",
+      "paragraphs": [
+        "Create a model object and save it to the database."
+      ],
+      "example": "member = Member(firstname='Emil', lastname='Refsnes')\nmember.save()"
+    },
+    {
+      "heading": "Insert Multiple Records",
+      "paragraphs": [
+        "You can insert many records by creating multiple objects and saving them in a loop."
+      ],
+      "example": "member1 = Member(firstname='Tobias', lastname='Refsnes')\nmember2 = Member(firstname='Linus', lastname='Refsnes')\nmembers_list = [member1, member2]\n\nfor x in members_list:\n  x.save()"
+    }
+  ]
+}
+,
+    "update-data": {
+  "title": "Django Update Data",
+  "sections": [
+    {
+      "heading": "Get Record",
+      "paragraphs": [
+        "Fetch an existing record from the database using a QuerySet."
+      ],
+      "example": "from members.models import Member\n\nx = Member.objects.all()[4]"
+    },
+    {
+      "heading": "Update Record",
+      "paragraphs": [
+        "Change the field values of the object and save it."
+      ],
+      "example": "x.firstname = \"Stalikken\"\nx.save()"
+    },
+    {
+      "heading": "Verify Update",
+      "paragraphs": [
+        "Check the updated data using a QuerySet."
+      ],
+      "example": "Member.objects.all().values()"
+    }
+  ]
+}
+,
+    "delete-data": {
+  "title": "Django Delete Data",
+  "sections": [
+    {
+      "heading": "Get Record",
+      "paragraphs": [
+        "Fetch the record you want to delete from the database."
+      ],
+      "example": "from members.models import Member\n\nx = Member.objects.all()[5]"
+    },
+    {
+      "heading": "Delete Record",
+      "paragraphs": [
+        "Call the delete() method on the object."
+      ],
+      "example": "x.delete()"
+    },
+    {
+      "heading": "Verify Deletion",
+      "paragraphs": [
+        "Check the remaining records to confirm deletion."
+      ],
+      "example": "Member.objects.all().values()"
+    }
+  ]
+}
+,
+"update-model": {
+  "title": "Django Update Model",
+  "sections": [
+    {
+      "heading": "Add Fields",
+      "paragraphs": [
+        "To change the structure of a table, update the model class in models.py.",
+        "New fields must be added to the model definition."
+      ],
+      "example": "class Member(models.Model):\n  firstname = models.CharField(max_length=255)\n  lastname = models.CharField(max_length=255)\n  phone = models.IntegerField(null=True)\n  joined_date = models.DateField(null=True)"
+    },
+    {
+      "heading": "Create Migration",
+      "paragraphs": [
+        "After modifying a model, generate a migration to reflect the changes."
+      ],
+      "example": "python manage.py makemigrations members"
+    },
+    {
+      "heading": "Apply Migration",
+      "paragraphs": [
+        "Apply the migration to update the database schema."
+      ],
+      "example": "python manage.py migrate"
+    },
+    {
+      "heading": "Update Data",
+      "paragraphs": [
+        "Insert values into the new fields using the Django shell."
+      ],
+      "example": "from members.models import Member\n\nx = Member.objects.all()[0]\nx.phone = 5551234\nx.joined_date = '2022-01-05'\nx.save()"
+    }
+  ]
+}
+,
+    "prep-template-and-view": {
+  "title": "Django Prepare Template",
+  "sections": [
+    {
+      "heading": "Create Template",
+      "paragraphs": [
+        "Create an HTML template to display data from the model.",
+        "Use Django template tags to loop through data."
+      ],
+      "example": "<h1>Members</h1>\n<ul>\n  {% for x in mymembers %}\n    <li>{{ x.firstname }} {{ x.lastname }}</li>\n  {% endfor %}\n</ul>"
+    },
+    {
+      "heading": "Modify View",
+      "paragraphs": [
+        "Fetch model data in the view and send it to the template.",
+        "The context dictionary passes data to the template."
+      ],
+      "example": "from .models import Member\n\ndef members(request):\n  mymembers = Member.objects.all().values()\n  context = { 'mymembers': mymembers }\n  return render(request, 'all_members.html', context)"
+    },
+    {
+      "heading": "Run Project",
+      "paragraphs": [
+        "Start the server and open the members URL in the browser."
+      ],
+      "example": "python manage.py runserver\n\nhttp://127.0.0.1:8000/members/"
+    }
+  ]
+}
+,
+   "add-link-to-details": {
+  "title": "Django Add Link to Details",
+  "sections": [
+    {
+      "heading": "Details Template",
+      "paragraphs": [
+        "Create a new template to show details of a single record.",
+        "Use template variables to display model fields."
+      ],
+      "example": "<h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>\n<p>Phone: {{ mymember.phone }}</p>\n<p>Member since: {{ mymember.joined_date }}</p>\n<p>Back to <a href=\"/members\">Members</a></p>"
+    },
+    {
+      "heading": "Add Link in List",
+      "paragraphs": [
+        "Make each item in the list clickable using its id."
+      ],
+      "example": "<li><a href=\"details/{{ x.id }}\">{{ x.firstname }} {{ x.lastname }}</a></li>"
+    },
+    {
+      "heading": "Create Details View",
+      "paragraphs": [
+        "Create a new view that fetches a single record using its id."
+      ],
+      "example": "def details(request, id):\n  mymember = Member.objects.get(id=id)\n  return render(request, 'details.html', { 'mymember': mymember })"
+    },
+    {
+      "heading": "Add URL Route",
+      "paragraphs": [
+        "Map the details URL to the new view."
+      ],
+      "example": "path('members/details/<int:id>', views.details, name='details')"
+    }
+  ]
+}
+,
+    "add-master-template": {
+  "title": "Django Add Master Template",
+  "sections": [
+    {
+      "heading": "Master Template",
+      "paragraphs": [
+        "A master template contains common HTML shared across multiple pages.",
+        "It uses Django block tags as placeholders."
+      ],
+      "example": "<!DOCTYPE html>\n<html>\n<head>\n  <title>{% block title %}{% endblock %}</title>\n</head>\n<body>\n  {% block content %}\n  {% endblock %}\n</body>\n</html>"
+    },
+    {
+      "heading": "Extend Master",
+      "paragraphs": [
+        "Other templates extend the master template using the extends tag.",
+        "They fill in the title and content blocks."
+      ],
+      "example": "{% extends \"master.html\" %}\n\n{% block title %}\n  My Tennis Club\n{% endblock %}\n\n{% block content %}\n  <h1>Members</h1>\n{% endblock %}"
+    },
+    {
+      "heading": "Why Use Master Template",
+      "paragraphs": [
+        "It avoids repeating the same HTML in multiple templates.",
+        "Changes in the layout only need to be done in one place."
+      ]
+    }
+  ]
+}
+,
+    "add-main-index-page": {
+  "title": "Django Add Main Index Page",
+  "sections": [
+    {
+      "heading": "Main Template",
+      "paragraphs": [
+        "Create a main landing page template for the root URL.",
+        "This page is shown when users visit the project root."
+      ],
+      "example": "{% extends \"master.html\" %}\n\n{% block title %}\n  My Tennis Club\n{% endblock %}\n\n{% block content %}\n  <h1>My Tennis Club</h1>\n  <p>Check out all our <a href=\"members/\">members</a></p>\n{% endblock %}"
+    },
+    {
+      "heading": "Main View",
+      "paragraphs": [
+        "Create a view that loads and renders the main template."
+      ],
+      "example": "def main(request):\n  return render(request, 'main.html')"
+    },
+    {
+      "heading": "Root URL",
+      "paragraphs": [
+        "Map the root URL to the main view."
+      ],
+      "example": "path('', views.main, name='main')"
+    },
+    {
+      "heading": "Link Back to Home",
+      "paragraphs": [
+        "Add a link back to the main page from other pages."
+      ],
+      "example": "<p><a href=\"/\">HOME</a></p>"
+    }
+  ]
+}
+,
+    "django-404-template": {
+  "title": "Django 404 (Page Not Found)",
+  "sections": [
+    {
+      "heading": "What is a 404 Page?",
+      "paragraphs": [
+        "A 404 error occurs when a user tries to access a page that does not exist.",
+        "Django shows a default 404 page when DEBUG is set to False."
+      ]
+    },
+    {
+      "heading": "Enable 404 Page",
+      "paragraphs": [
+        "Set DEBUG to False and define allowed hosts in settings.py."
+      ],
+      "example": "DEBUG = False\nALLOWED_HOSTS = ['*']"
+    },
+    {
+      "heading": "Customize 404 Page",
+      "paragraphs": [
+        "Create a 404.html file in the templates folder to customize the error page."
+      ],
+      "example": "<!DOCTYPE html>\n<html>\n<title>Wrong address</title>\n<body>\n  <h1>Ooops!</h1>\n  <h2>I cannot find the file you requested!</h2>\n</body>\n</html>"
+    },
+    {
+      "heading": "Reset Debug",
+      "paragraphs": [
+        "After testing, set DEBUG back to True for development."
+      ],
+      "example": "DEBUG = True\nALLOWED_HOSTS = []"
+    }
+  ]
+}
+,
+    "add-test-view": {
+  "title": "Django Add Test View",
+  "sections": [
+    {
+      "heading": "Create Test View",
+      "paragraphs": [
+        "A test view is used to safely experiment with Django features.",
+        "It renders a template with sample data."
+      ],
+      "example": "def testing(request):\n  context = { 'fruits': ['Apple', 'Banana', 'Cherry'] }\n  return render(request, 'template.html', context)"
+    },
+    {
+      "heading": "Add URL Route",
+      "paragraphs": [
+        "Map the testing URL to the new test view."
+      ],
+      "example": "path('testing/', views.testing, name='testing')"
+    },
+    {
+      "heading": "Create Test Template",
+      "paragraphs": [
+        "Create a template to display test data."
+      ],
+      "example": "{% for x in fruits %}\n  <h1>{{ x }}</h1>\n{% endfor %}"
+    }
+  ]
+} ,
+"django-admin": {
+  "title": "Django Admin",
+  "sections": [
+    {
+      "heading": "What is Django Admin?",
+      "paragraphs": [
+        "Django Admin is a built-in CRUD interface for managing your models.",
+        "CRUD stands for Create, Read, Update, Delete."
+      ]
+    },
+    {
+      "heading": "Run Admin Panel",
+      "paragraphs": [
+        "Start the development server.",
+        "Open the admin URL in the browser."
+      ],
+      "example": "python manage.py runserver\n\nhttp://127.0.0.1:8000/admin/"
+    },
+    {
+      "heading": "Admin URL Mapping",
+      "paragraphs": [
+        "The admin panel works because the admin route is defined in urls.py."
+      ],
+      "example": "from django.contrib import admin\nfrom django.urls import path\n\nurlpatterns = [\n  path('admin/', admin.site.urls),\n]"
+    }
+  ]
+} ,
+"create-user": {
+  "title": "Create Admin User",
+  "sections": [
+    {
+      "heading": "Why Create User?",
+      "paragraphs": [
+        "To access the Django Admin panel, a superuser account is required."
+      ]
+    },
+    {
+      "heading": "Create Superuser",
+      "paragraphs": [
+        "Use the createsuperuser command to create an admin account."
+      ],
+      "example": "python manage.py createsuperuser"
+    },
+    {
+      "heading": "Login to Admin",
+      "paragraphs": [
+        "Start the server and login using the created credentials."
+      ],
+      "example": "python manage.py runserver\n\nhttp://127.0.0.1:8000/admin/"
+    },
+    {
+      "heading": "Important Note",
+      "paragraphs": [
+        "By default, only built-in models like Users and Groups appear.",
+        "Custom models must be registered to appear in Admin."
+      ]
+    }
+  ]
+} ,
+"include-models": {
+  "title": "Include Models in Admin",
+  "sections": [
+    {
+      "heading": "Register Model",
+      "paragraphs": [
+        "To show a model in the admin panel, it must be registered.",
+        "This is done in the admin.py file of the app."
+      ],
+      "example": "from django.contrib import admin\nfrom .models import Member\n\nadmin.site.register(Member)"
+    },
+    {
+      "heading": "Result",
+      "paragraphs": [
+        "After registering, the model appears in the admin interface.",
+        "You can view and manage records through the UI."
+      ]
+    },
+    {
+      "heading": "Next Step",
+      "paragraphs": [
+        "By default, objects show as 'Model object (id)'.",
+        "You can customize display fields in admin settings."
+      ]
+    }
+  ]
+} ,
+"set-list-display": {
+  "title": "Set Fields to Display in Admin",
+  "sections": [
+    {
+      "heading": "Problem",
+      "paragraphs": [
+        "By default, Django shows records as 'Model object (id)' in the admin list.",
+        "This is not very user-friendly."
+      ]
+    },
+    {
+      "heading": "Option 1: __str__ Method",
+      "paragraphs": [
+        "Override the __str__ method in the model to control how objects are displayed."
+      ],
+      "example": "class Member(models.Model):\n  firstname = models.CharField(max_length=255)\n  lastname = models.CharField(max_length=255)\n\n  def __str__(self):\n    return f\"{self.firstname} {self.lastname}\""
+    },
+    {
+      "heading": "Option 2: list_display",
+      "paragraphs": [
+        "Use list_display in admin.py to show selected fields as columns."
+      ],
+      "example": "class MemberAdmin(admin.ModelAdmin):\n  list_display = (\"firstname\", \"lastname\", \"joined_date\")\n\nadmin.site.register(Member, MemberAdmin)"
+    },
+    {
+      "heading": "Result",
+      "paragraphs": [
+        "Admin list now shows readable values instead of object ids.",
+        "Multiple fields appear as table columns."
+      ]
+    }
+  ]
+} ,
+"update-members": {
+  "title": "Update Members in Admin",
+  "sections": [
+    {
+      "heading": "Edit Records",
+      "paragraphs": [
+        "You can update existing records directly from the Django Admin panel.",
+        "Click any member to open the edit form."
+      ]
+    },
+    {
+      "heading": "Update Fields",
+      "paragraphs": [
+        "Modify fields like joined_date and phone number.",
+        "Save the changes to update the database."
+      ]
+    },
+    {
+      "heading": "Result",
+      "paragraphs": [
+        "All changes are immediately reflected in the database.",
+        "You can repeat this for all members."
+      ]
+    }
+  ]
+} ,
+"add-members": {
+  "title": "Add Members in Admin",
+  "sections": [
+    {
+      "heading": "Add New Record",
+      "paragraphs": [
+        "You can add new records directly from the Django Admin panel.",
+        "Click the 'Add Member' button to open the form."
+      ]
+    },
+    {
+      "heading": "Fill Form",
+      "paragraphs": [
+        "Enter values for all member fields.",
+        "Click Save to store the new record."
+      ]
+    },
+    {
+      "heading": "Result",
+      "paragraphs": [
+        "The new member is immediately added to the database.",
+        "It appears in the admin list view."
+      ]
+    }
+  ]
+} ,
+"delete-members": {
+  "title": "Delete Members in Admin",
+  "sections": [
+    {
+      "heading": "Delete from List",
+      "paragraphs": [
+        "You can delete members by selecting them from the list view.",
+        "Choose the action 'Delete selected members'."
+      ]
+    },
+    {
+      "heading": "Delete from Edit Page",
+      "paragraphs": [
+        "You can also open a member and click the red DELETE button."
+      ]
+    },
+    {
+      "heading": "Result",
+      "paragraphs": [
+        "The selected members are permanently removed from the database."
+      ]
+    }
+  ]
+} ,
+"django-variables": {
+  "title": "Django Template Variables",
+  "sections": [
+    {
+      "heading": "Render Variables",
+      "paragraphs": [
+        "Use {{ variable }} to display values inside templates."
+      ]
+    },
+    {
+      "heading": "Send Variables from View",
+      "paragraphs": [
+        "Create a context dictionary in the view.",
+        "Pass it to template.render(context, request)."
+      ]
+    },
+    {
+      "heading": "Create Variables in Template",
+      "paragraphs": [
+        "Use {% with %} to define variables directly in the template.",
+        "They exist until {% endwith %}."
+      ]
+    },
+    {
+      "heading": "Use Model Data",
+      "paragraphs": [
+        "Fetch data from models in views.",
+        "Loop through data using {% for %} in templates."
+      ]
+    }
+  ]
+} ,
+"django-tags": {
+  "title": "Django Template Tags",
+  "sections": [
+    {
+      "heading": "What are Template Tags",
+      "paragraphs": [
+        "Template tags allow programming logic inside HTML.",
+        "They are written using {% %} brackets."
+      ]
+    },
+    {
+      "heading": "Common Examples",
+      "paragraphs": [
+        "Use {% if %} for conditions.",
+        "Use {% for %} for loops."
+      ]
+    },
+    {
+      "heading": "Purpose",
+      "paragraphs": [
+        "Template tags let Django process logic on the server.",
+        "They generate dynamic HTML before sending to browser."
+      ]
+    },
+    {
+      "heading": "Important Tags",
+      "paragraphs": [
+        "if, for, extends, block, include, url, with, csrf_token"
+      ]
+    }
+  ]
+} ,
+"django-if-else": {
+  "title": "Django If Else",
+  "sections": [
+    {
+      "heading": "Basic If",
+      "paragraphs": [
+        "The if tag is used to execute code only when a condition is true.",
+        "It must always be closed using the endif tag."
+      ]
+    },
+    {
+      "heading": "Elif and Else",
+      "paragraphs": [
+        "The elif tag is used to check another condition if the first one fails.",
+        "The else tag executes when none of the conditions are true."
+      ]
+    },
+    {
+      "heading": "Comparison Operators",
+      "paragraphs": [
+        "== checks if two values are equal.",
+        "!= checks if two values are not equal.",
+        "<, <=, >, >= are used for numeric comparisons."
+      ]
+    },
+    {
+      "heading": "Logical Operators",
+      "paragraphs": [
+        "and returns true when all conditions are true.",
+        "or returns true when at least one condition is true."
+      ]
+    },
+    {
+      "heading": "Membership",
+      "paragraphs": [
+        "The in keyword checks if a value exists inside a list or object.",
+        "The not in keyword checks if a value does not exist."
+      ]
+    },
+    {
+      "heading": "Identity",
+      "paragraphs": [
+        "The is keyword checks if two variables point to the same object.",
+        "The is not keyword checks if two variables are different objects."
+      ]
+    },
+    {
+      "heading": "Truth Check",
+      "paragraphs": [
+        "You can directly test a variable without comparison.",
+        "If the variable is not empty or false, the condition runs."
+      ]
+    }
+  ]
+} ,
+"django-for-loop": {
+  "title": "Django for Template Tag",
+  "sections": [
+    {
+      "heading": "Basic List Loop",
+      "paragraphs": [
+        "Use {% for %} to loop through a list.",
+        "End every loop with {% endfor %}."
+      ],
+      "code": [
+        "{% for x in fruits %}",
+        "  <p>{{ x }}</p>",
+        "{% endfor %}"
+      ]
+    },
+    {
+      "heading": "Loop Through Model Data",
+      "paragraphs": [
+        "You can loop through objects fetched from a Django model."
+      ],
+      "code": [
+        "{% for x in members %}",
+        "  <h3>{{ x.firstname }} {{ x.lastname }}</h3>",
+        "{% endfor %}"
+      ]
+    },
+    {
+      "heading": "Loop With Index",
+      "paragraphs": [
+        "Use forloop.counter to get the current index."
+      ],
+      "code": [
+        "{% for x in fruits %}",
+        "  <p>{{ forloop.counter }}. {{ x }}</p>",
+        "{% endfor %}"
+      ]
+    },
+    {
+      "heading": "Reverse Loop",
+      "paragraphs": [
+        "Use reversed keyword to loop in reverse order."
+      ],
+      "code": [
+        "{% for x in fruits reversed %}",
+        "  <p>{{ x }}</p>",
+        "{% endfor %}"
+      ]
+    },
+    {
+      "heading": "Empty List Handling",
+      "paragraphs": [
+        "Use {% empty %} to handle empty lists safely."
+      ],
+      "code": [
+        "<ul>",
+        "{% for x in members %}",
+        "  <li>{{ x.firstname }}</li>",
+        "{% empty %}",
+        "  <li>No members found</li>",
+        "{% endfor %}",
+        "</ul>"
+      ]
+    },
+    {
+      "heading": "First and Last Check",
+      "paragraphs": [
+        "forloop.first and forloop.last help in UI logic."
+      ],
+      "code": [
+        "    <p>{{ item }}</p>",
+        "  <p",
+        "    {% if forloop.first %}style=\"color:green;\"{% endif %}",
+        "    {% if forloop.last %}style=\"color:red;\"{% endif %}",
+        "  >{{ x }}</p>",
+        "{% endfor %}"
+      ]
+    },
+    {
+      "heading": "Nested Loop",
+      "paragraphs": [
+        "You can nest for loops for complex data structures."
+      ],
+      "code": [
+        "{% for category in categories %}",
+        "  <h2>{{ category.name }}</h2>",
+        "  {% for item in category.items %}",
+        "    <p>{{ item }}</p>",
+        "  {% endfor %}",
+        "{% endfor %}"
+      ]
+    }
+  ]
+} ,
+"django-intro": {
+    "title": "Django Introduction",
+    "sections": [
+      {
+        "heading": "What is Django?",
+        "paragraphs": [
+          "Django is a high-level Python web framework that encourages rapid development.",
+          "It follows the MVT (Model View Template) design pattern."
+        ],
+        "code": [
+          "# Example of a simple Django View",
+          "from django.http import HttpResponse",
+          "",
+          "def index(request):",
+          "    return HttpResponse('Hello, world!')"
+        ]
+      },
+      {
+        "heading": "The MVT Pattern",
+        "paragraphs": [
+          "Model: The data handler (Database).",
+          "View: The logic handler (Processes requests).",
+          "Template: The presentation handler (HTML)."
+        ]
+      }
+    ]
+  },
+  "django-venv": {
+    "title": "Create Virtual Environment",
+    "sections": [
+      {
+        "heading": "Creation",
+        "paragraphs": [
+          "Use the venv module to create an isolated environment named 'myworld'."
+        ],
+        "code": [
+          "python -m venv myworld"
+        ]
+      },
+      {
+        "heading": "Activation",
+        "paragraphs": [
+          "You must activate the environment before installing Django."
+        ],
+        "code": [
+          "# Windows:",
+          "myworld\\Scripts\\activate.bat",
+          "",
+          "# Unix or MacOS:",
+          "source myworld/bin/activate"
+        ]
+      }
+    ]
+  }
+
+
+
+
+
+
+
+
+  }
+}

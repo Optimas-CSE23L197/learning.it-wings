@@ -54,8 +54,8 @@
     {
       "title": "MySQL Database",
       "lessons": [
-        { "id": "create-db", "title": "MySQL Create DB" },
-        { "id": "drop-db", "title": "MySQL Drop DB" },
+        { "id": "create-database", "title": "MySQL Create DB" },
+        { "id": "drop-database", "title": "MySQL Drop DB" },
         { "id": "create-table", "title": "MySQL Create Table" },
         { "id": "drop-table", "title": "MySQL Drop Table" },
         { "id": "alter-table", "title": "MySQL Alter Table" },
@@ -70,6 +70,13 @@
         { "id": "auto-increment", "title": "MySQL AUTO INCREMENT" },
         { "id": "dates", "title": "MySQL Dates" },
         { "id": "views", "title": "MySQL Views" }
+      ]
+    },
+    {
+      "title": "MySQL References",
+      "lessons": [
+        { "id": "data-types", "title": "MySQL Data Types" },
+        { "id": "functions", "title": "MySQL Functions" }
       ]
     }
   ],
@@ -3866,6 +3873,1119 @@
             "query": "SELECT * FROM Customers\nWHERE City = 'Berlin' ___ Age ___ 30;",
             "keywords": ["AND", "<"],
             "answer": "SELECT * FROM Customers WHERE City = 'Berlin' AND Age < 30;"
+          }
+        }
+      ]
+    },
+    "create-database": {
+      "title": "MySQL CREATE DATABASE Statement",
+      "sections": [
+        {
+          "heading": "The MySQL CREATE DATABASE Statement",
+          "content": [
+            "The CREATE DATABASE statement is used to create a new SQL database."
+          ]
+        },
+        {
+          "heading": "Syntax",
+          "code": "CREATE DATABASE databasename;"
+        },
+        {
+          "heading": "CREATE DATABASE Example",
+          "content": [
+            "The following SQL statement creates a database called \"testDB\":"
+          ],
+          "example": "CREATE DATABASE testDB;"
+        },
+        {
+          "heading": "Tip",
+          "content": [
+            "Make sure you have admin privilege before creating any database.",
+            "Once a database is created, you can check it in the list of databases with the following SQL command:",
+            "SHOW DATABASES;"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct SQL keywords to create a database named 'SchoolDB'.",
+            "query": "___ ___ SchoolDB;",
+            "keywords": ["CREATE", "DATABASE"],
+            "answer": "CREATE DATABASE SchoolDB;"
+          }
+        }
+      ]
+    },
+    "drop-database": {
+      "title": "MySQL DROP DATABASE Statement",
+      "sections": [
+        {
+          "heading": "The MySQL DROP DATABASE Statement",
+          "content": [
+            "The DROP DATABASE statement is used to drop an existing SQL database."
+          ]
+        },
+        {
+          "heading": "Syntax",
+          "code": "DROP DATABASE databasename;"
+        },
+        {
+          "heading": "Note",
+          "content": [
+            "Be careful before dropping a database.",
+            "Deleting a database will result in loss of complete information stored in the database."
+          ]
+        },
+        {
+          "heading": "DROP DATABASE Example",
+          "content": [
+            "The following SQL statement drops the existing database \"testDB\":"
+          ],
+          "example": "DROP DATABASE testDB;"
+        },
+        {
+          "heading": "Tip",
+          "content": [
+            "Make sure you have admin privilege before dropping any database.",
+            "Once a database is dropped, you can check it in the list of databases with the following SQL command:",
+            "SHOW DATABASES;"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct SQL keywords to drop a database named 'SchoolDB'.",
+            "query": "___ ___ SchoolDB;",
+            "keywords": ["DROP", "DATABASE"],
+            "answer": "DROP DATABASE SchoolDB;"
+          }
+        }
+      ]
+    },
+    "create-table": {
+      "title": "MySQL CREATE TABLE Statement",
+      "sections": [
+        {
+          "heading": "The MySQL CREATE TABLE Statement",
+          "content": [
+            "The CREATE TABLE statement is used to create a new table in a database."
+          ]
+        },
+        {
+          "heading": "Syntax",
+          "code": "CREATE TABLE table_name (\n  column1 datatype,\n  column2 datatype,\n  column3 datatype,\n  ...\n);"
+        },
+        {
+          "heading": "Column and Datatype Description",
+          "content": [
+            "The column parameters specify the names of the columns of the table.",
+            "The datatype parameter specifies the type of data the column can hold (e.g. varchar, integer, date, etc.)."
+          ]
+        },
+        {
+          "heading": "Tip",
+          "content": [
+            "For an overview of the available data types, see the complete MySQL Data Types reference."
+          ]
+        },
+        {
+          "heading": "MySQL CREATE TABLE Example",
+          "content": [
+            "The following example creates a table called \"Persons\" with five columns."
+          ],
+          "example": "CREATE TABLE Persons (\n  PersonID int,\n  LastName varchar(255),\n  FirstName varchar(255),\n  Address varchar(255),\n  City varchar(255)\n);"
+        },
+        {
+          "heading": "Column Details",
+          "content": [
+            "The PersonID column is of type int and holds an integer value.",
+            "The LastName, FirstName, Address, and City columns are of type varchar and can hold up to 255 characters."
+          ]
+        },
+        {
+          "heading": "Empty Table Result",
+          "content": [
+            "After creation, the \"Persons\" table will be empty and ready to be filled with data using the INSERT INTO statement."
+          ]
+        },
+        {
+          "heading": "Create Table Using Another Table",
+          "content": [
+            "A new table can be created by copying an existing table.",
+            "The new table gets the same column definitions and can include all or selected columns.",
+            "When created this way, the new table is filled with data from the existing table."
+          ]
+        },
+        {
+          "heading": "Syntax (Create Table from Another Table)",
+          "code": "CREATE TABLE new_table_name AS\nSELECT column1, column2, ...\nFROM existing_table_name\nWHERE condition;"
+        },
+        {
+          "heading": "Example (Create Table from Another Table)",
+          "example": "CREATE TABLE TestTable AS\nSELECT customername, contactname\nFROM customers;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct SQL keywords and column names to create a table named 'Customers' with columns 'Name', 'ID', and 'Address'.",
+            "query": "___ ___ Customers ( ___ varchar(255), ___ int, ___ varchar(255) );",
+            "keywords": ["CREATE TABLE", "Name", "ID", "Address"],
+            "answer": "CREATE TABLE Customers ( Name varchar(255), ID int, Address varchar(255) );"
+          }
+        }
+      ]
+    },
+    "drop-table": {
+      "title": "MySQL DROP TABLE Statement",
+      "sections": [
+        {
+          "heading": "The MySQL DROP TABLE Statement",
+          "content": [
+            "The DROP TABLE statement is used to drop an existing table in a database."
+          ]
+        },
+        {
+          "heading": "Syntax",
+          "code": "DROP TABLE table_name;"
+        },
+        {
+          "heading": "Note",
+          "content": [
+            "Be careful before dropping a table.",
+            "Deleting a table will result in loss of complete information stored in the table."
+          ]
+        },
+        {
+          "heading": "MySQL DROP TABLE Example",
+          "content": [
+            "The following SQL statement drops the existing table \"Shippers\":"
+          ],
+          "example": "DROP TABLE Shippers;"
+        },
+        {
+          "heading": "MySQL TRUNCATE TABLE",
+          "content": [
+            "The TRUNCATE TABLE statement is used to delete the data inside a table, but not the table itself."
+          ]
+        },
+        {
+          "heading": "Syntax (TRUNCATE TABLE)",
+          "code": "TRUNCATE TABLE table_name;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keywords to form a statement that deletes the 'Customers' table.",
+            "query": "___ ___ Customers;",
+            "keywords": ["DROP", "TABLE"],
+            "answer": "DROP TABLE Customers;"
+          }
+        }
+      ]
+    },
+    "alter-table": {
+      "title": "MySQL ALTER TABLE Statement",
+      "sections": [
+        {
+          "heading": "MySQL ALTER TABLE Statement",
+          "content": [
+            "The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.",
+            "It is also used to add and drop various constraints on an existing table."
+          ]
+        },
+        {
+          "heading": "ALTER TABLE - ADD Column",
+          "content": ["To add a column in a table, use the following syntax:"],
+          "code": "ALTER TABLE table_name\nADD column_name datatype;"
+        },
+        {
+          "heading": "ADD Column Example",
+          "example": "ALTER TABLE Customers\nADD Email varchar(255);"
+        },
+        {
+          "heading": "ALTER TABLE - DROP COLUMN",
+          "content": [
+            "To delete a column in a table, use the following syntax.",
+            "Note that some database systems do not allow deleting a column."
+          ],
+          "code": "ALTER TABLE table_name\nDROP COLUMN column_name;"
+        },
+        {
+          "heading": "DROP COLUMN Example",
+          "example": "ALTER TABLE Customers\nDROP COLUMN Email;"
+        },
+        {
+          "heading": "ALTER TABLE - MODIFY COLUMN",
+          "content": [
+            "To change the data type of a column in a table, use the following syntax:"
+          ],
+          "code": "ALTER TABLE table_name\nMODIFY COLUMN column_name datatype;"
+        },
+        {
+          "heading": "MySQL ALTER TABLE Example",
+          "content": [
+            "The following example adds a column named \"DateOfBirth\" to the \"Persons\" table."
+          ],
+          "example": "ALTER TABLE Persons\nADD DateOfBirth date;"
+        },
+        {
+          "heading": "Change Data Type Example",
+          "content": [
+            "The following statement changes the data type of the \"DateOfBirth\" column."
+          ],
+          "example": "ALTER TABLE Persons\nMODIFY COLUMN DateOfBirth year;"
+        },
+        {
+          "heading": "DROP COLUMN Example (Persons)",
+          "content": [
+            "The following statement deletes the \"DateOfBirth\" column from the \"Persons\" table."
+          ],
+          "example": "ALTER TABLE Persons\nDROP COLUMN DateOfBirth;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keywords to delete the 'DateOfBirth' column from the 'Persons' table.",
+            "query": "___ TABLE Persons ___ COLUMN DateOfBirth;",
+            "keywords": ["ALTER", "DROP"],
+            "answer": "ALTER TABLE Persons DROP COLUMN DateOfBirth;"
+          }
+        }
+      ]
+    },
+    "constraints": {
+      "title": "MySQL Constraints",
+      "sections": [
+        {
+          "heading": "MySQL Constraints",
+          "content": [
+            "SQL constraints are used to specify rules for data in a table."
+          ]
+        },
+        {
+          "heading": "Create Constraints",
+          "content": [
+            "Constraints can be specified when the table is created using the CREATE TABLE statement.",
+            "Constraints can also be added after the table is created using the ALTER TABLE statement."
+          ]
+        },
+        {
+          "heading": "Syntax",
+          "code": "CREATE TABLE table_name (\n  column1 datatype constraint,\n  column2 datatype constraint,\n  column3 datatype constraint,\n  ...\n);"
+        },
+        {
+          "heading": "About Constraints",
+          "content": [
+            "Constraints are used to limit the type of data that can go into a table.",
+            "They ensure the accuracy and reliability of the data.",
+            "If data violates a constraint, the action is aborted.",
+            "Constraints can be column-level or table-level.",
+            "Column-level constraints apply to a single column.",
+            "Table-level constraints apply to the entire table."
+          ]
+        },
+        {
+          "heading": "Common SQL Constraints",
+          "list": [
+            "NOT NULL – Ensures that a column cannot have a NULL value",
+            "UNIQUE – Ensures that all values in a column are different",
+            "PRIMARY KEY – A combination of NOT NULL and UNIQUE that uniquely identifies each row",
+            "FOREIGN KEY – Prevents actions that would destroy links between tables",
+            "CHECK – Ensures that values in a column satisfy a specific condition",
+            "DEFAULT – Sets a default value for a column if no value is specified",
+            "CREATE INDEX – Used to create and retrieve data from the database very quickly"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the primary purpose of SQL constraints?",
+            "options": [
+              "To define relationships between databases",
+              "To enforce rules for the data in a table",
+              "To create new tables in a database",
+              "To manage SQL user permissions"
+            ],
+            "answer": "To enforce rules for the data in a table"
+          }
+        }
+      ]
+    },
+    "not-null": {
+      "title": "MySQL NOT NULL Constraint",
+      "sections": [
+        {
+          "heading": "MySQL NOT NULL Constraint",
+          "content": [
+            "By default, a column can hold NULL values.",
+            "The NOT NULL constraint enforces a column to NOT accept NULL values.",
+            "This ensures that a field always contains a value, meaning you cannot insert or update a record without providing a value for this field."
+          ]
+        },
+        {
+          "heading": "NOT NULL on CREATE TABLE",
+          "content": [
+            "The following SQL ensures that specific columns will not accept NULL values when the table is created."
+          ],
+          "example": "CREATE TABLE Persons (\n  ID int NOT NULL,\n  LastName varchar(255) NOT NULL,\n  FirstName varchar(255) NOT NULL,\n  Age int\n);"
+        },
+        {
+          "heading": "NOT NULL on ALTER TABLE",
+          "content": [
+            "To add a NOT NULL constraint to an existing table, use ALTER TABLE."
+          ],
+          "example": "ALTER TABLE Persons\nMODIFY Age int NOT NULL;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the purpose of the SQL NOT NULL constraint?",
+            "options": [
+              "To ensure a column cannot have duplicate values",
+              "To enforce that a column must always contain a value",
+              "To define a unique identifier for a table",
+              "To prevent a table from being dropped"
+            ],
+            "answer": "To enforce that a column must always contain a value"
+          }
+        }
+      ]
+    },
+    "unique": {
+      "title": "MySQL UNIQUE Constraint",
+      "sections": [
+        {
+          "heading": "MySQL UNIQUE Constraint",
+          "content": [
+            "The UNIQUE constraint ensures that all values in a column are different.",
+            "Both UNIQUE and PRIMARY KEY constraints guarantee uniqueness for a column or set of columns.",
+            "A PRIMARY KEY constraint automatically has a UNIQUE constraint.",
+            "You can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per table."
+          ]
+        },
+        {
+          "heading": "UNIQUE Constraint on CREATE TABLE",
+          "content": [
+            "The following SQL creates a UNIQUE constraint on the \"ID\" column when the table is created."
+          ],
+          "example": "CREATE TABLE Persons (\n  ID int NOT NULL,\n  LastName varchar(255) NOT NULL,\n  FirstName varchar(255),\n  Age int,\n  UNIQUE (ID)\n);"
+        },
+        {
+          "heading": "Named UNIQUE Constraint on CREATE TABLE",
+          "content": [
+            "You can name a UNIQUE constraint and apply it to multiple columns."
+          ],
+          "example": "CREATE TABLE Persons (\n  ID int NOT NULL,\n  LastName varchar(255) NOT NULL,\n  FirstName varchar(255),\n  Age int,\n  CONSTRAINT UC_Person UNIQUE (ID, LastName)\n);"
+        },
+        {
+          "heading": "UNIQUE Constraint on ALTER TABLE",
+          "content": [
+            "To add a UNIQUE constraint to an existing table, use ALTER TABLE."
+          ],
+          "example": "ALTER TABLE Persons\nADD UNIQUE (ID);"
+        },
+        {
+          "heading": "Named UNIQUE Constraint on ALTER TABLE",
+          "example": "ALTER TABLE Persons\nADD CONSTRAINT UC_Person UNIQUE (ID, LastName);"
+        },
+        {
+          "heading": "DROP a UNIQUE Constraint",
+          "content": [
+            "To remove a UNIQUE constraint, drop the associated index."
+          ],
+          "example": "ALTER TABLE Persons\nDROP INDEX UC_Person;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keywords to add a named UNIQUE constraint on the 'ID' and 'LastName' columns.",
+            "query": "ALTER TABLE Persons ___ CONSTRAINT UC_Person ___ (ID, LastName);",
+            "keywords": ["ADD", "UNIQUE"],
+            "answer": "ALTER TABLE Persons ADD CONSTRAINT UC_Person UNIQUE (ID, LastName);"
+          }
+        }
+      ]
+    },
+    "primary-key": {
+      "title": "MySQL PRIMARY KEY Constraint",
+      "sections": [
+        {
+          "heading": "MySQL PRIMARY KEY Constraint",
+          "content": [
+            "The PRIMARY KEY constraint uniquely identifies each record in a table.",
+            "Primary keys must contain UNIQUE values and cannot contain NULL values.",
+            "A table can have only one primary key, which can consist of one or multiple columns."
+          ]
+        },
+        {
+          "heading": "PRIMARY KEY on CREATE TABLE",
+          "content": [
+            "The following SQL creates a PRIMARY KEY on the \"ID\" column when the table is created."
+          ],
+          "example": "CREATE TABLE Persons (\n  ID int NOT NULL,\n  LastName varchar(255) NOT NULL,\n  FirstName varchar(255),\n  Age int,\n  PRIMARY KEY (ID)\n);"
+        },
+        {
+          "heading": "Named PRIMARY KEY on CREATE TABLE",
+          "content": [
+            "You can name a PRIMARY KEY constraint and define it on multiple columns."
+          ],
+          "example": "CREATE TABLE Persons (\n  ID int NOT NULL,\n  LastName varchar(255) NOT NULL,\n  FirstName varchar(255),\n  Age int,\n  CONSTRAINT PK_Person PRIMARY KEY (ID, LastName)\n);"
+        },
+        {
+          "heading": "PRIMARY KEY on ALTER TABLE",
+          "content": [
+            "To add a PRIMARY KEY constraint to an existing table, use ALTER TABLE."
+          ],
+          "example": "ALTER TABLE Persons\nADD PRIMARY KEY (ID);"
+        },
+        {
+          "heading": "Named PRIMARY KEY on ALTER TABLE",
+          "content": [
+            "When adding a primary key using ALTER TABLE, the column(s) must already be defined as NOT NULL."
+          ],
+          "example": "ALTER TABLE Persons\nADD CONSTRAINT PK_Person PRIMARY KEY (ID, LastName);"
+        },
+        {
+          "heading": "DROP a PRIMARY KEY Constraint",
+          "content": [
+            "To remove a PRIMARY KEY constraint from a table, use the following SQL statement."
+          ],
+          "example": "ALTER TABLE Persons\nDROP PRIMARY KEY;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "True or False: Primary keys must contain UNIQUE values and cannot contain NULL values.",
+            "options": ["True", "False"],
+            "answer": "True"
+          }
+        }
+      ]
+    },
+    "foreign-key": {
+      "title": "MySQL FOREIGN KEY Constraint",
+      "sections": [
+        {
+          "heading": "MySQL FOREIGN KEY Constraint",
+          "content": [
+            "The FOREIGN KEY constraint is used to prevent actions that would destroy links between tables.",
+            "A FOREIGN KEY is a field or collection of fields in one table that refers to the PRIMARY KEY in another table.",
+            "The table with the foreign key is called the child table, and the table with the primary key is called the parent (referenced) table."
+          ]
+        },
+        {
+          "heading": "Understanding FOREIGN KEY Relationships",
+          "content": [
+            "The PersonID column in the Orders table points to the PersonID column in the Persons table.",
+            "PersonID is the PRIMARY KEY in the Persons table.",
+            "PersonID is a FOREIGN KEY in the Orders table.",
+            "The FOREIGN KEY constraint prevents invalid data from being inserted into the foreign key column."
+          ]
+        },
+        {
+          "heading": "FOREIGN KEY on CREATE TABLE",
+          "content": [
+            "The following SQL creates a FOREIGN KEY on the PersonID column when the Orders table is created."
+          ],
+          "example": "CREATE TABLE Orders (\n  OrderID int NOT NULL,\n  OrderNumber int NOT NULL,\n  PersonID int,\n  PRIMARY KEY (OrderID),\n  FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)\n);"
+        },
+        {
+          "heading": "Named FOREIGN KEY on CREATE TABLE",
+          "content": [
+            "You can name a FOREIGN KEY constraint when creating a table."
+          ],
+          "example": "CREATE TABLE Orders (\n  OrderID int NOT NULL,\n  OrderNumber int NOT NULL,\n  PersonID int,\n  PRIMARY KEY (OrderID),\n  CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID)\n  REFERENCES Persons(PersonID)\n);"
+        },
+        {
+          "heading": "FOREIGN KEY on ALTER TABLE",
+          "content": [
+            "To add a FOREIGN KEY constraint to an existing table, use ALTER TABLE."
+          ],
+          "example": "ALTER TABLE Orders\nADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);"
+        },
+        {
+          "heading": "Named FOREIGN KEY on ALTER TABLE",
+          "example": "ALTER TABLE Orders\nADD CONSTRAINT FK_PersonOrder\nFOREIGN KEY (PersonID) REFERENCES Persons(PersonID);"
+        },
+        {
+          "heading": "DROP a FOREIGN KEY Constraint",
+          "content": [
+            "To remove a FOREIGN KEY constraint, use the following SQL statement."
+          ],
+          "example": "ALTER TABLE Orders\nDROP FOREIGN KEY FK_PersonOrder;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "The FOREIGN KEY constraint is used to:",
+            "options": [
+              "Perform a comparison between a single column value and a range of other values",
+              "Prevent actions that would destroy links between tables",
+              "Ensure that a column cannot contain NULL values",
+              "Automatically generate values for columns"
+            ],
+            "answer": "Prevent actions that would destroy links between tables"
+          }
+        }
+      ]
+    },
+    "check": {
+      "title": "MySQL CHECK Constraint",
+      "sections": [
+        {
+          "heading": "MySQL CHECK Constraint",
+          "content": [
+            "The CHECK constraint is used to limit the value range that can be placed in a column.",
+            "If defined on a column, it allows only certain values for that column.",
+            "If defined on a table, it can limit values in columns based on values in other columns in the same row."
+          ]
+        },
+        {
+          "heading": "CHECK on CREATE TABLE",
+          "content": [
+            "The following SQL creates a CHECK constraint on the \"Age\" column to ensure values are 18 or older."
+          ],
+          "example": "CREATE TABLE Persons (\n  ID int NOT NULL,\n  LastName varchar(255) NOT NULL,\n  FirstName varchar(255),\n  Age int,\n  CHECK (Age >= 18)\n);"
+        },
+        {
+          "heading": "Named CHECK Constraint on CREATE TABLE",
+          "content": [
+            "You can name a CHECK constraint and apply conditions on multiple columns."
+          ],
+          "example": "CREATE TABLE Persons (\n  ID int NOT NULL,\n  LastName varchar(255) NOT NULL,\n  FirstName varchar(255),\n  Age int,\n  City varchar(255),\n  CONSTRAINT CHK_Person CHECK (Age >= 18 AND City = 'Sandnes')\n);"
+        },
+        {
+          "heading": "CHECK on ALTER TABLE",
+          "content": [
+            "To add a CHECK constraint to an existing table, use ALTER TABLE."
+          ],
+          "example": "ALTER TABLE Persons\nADD CHECK (Age >= 18);"
+        },
+        {
+          "heading": "Named CHECK Constraint on ALTER TABLE",
+          "example": "ALTER TABLE Persons\nADD CONSTRAINT CHK_PersonAge CHECK (Age >= 18 AND City = 'Sandnes');"
+        },
+        {
+          "heading": "DROP a CHECK Constraint",
+          "content": [
+            "To remove a CHECK constraint from a table, use the following SQL statement."
+          ],
+          "example": "ALTER TABLE Persons\nDROP CHECK CHK_PersonAge;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the primary purpose of the SQL CHECK constraint?",
+            "options": [
+              "To ensure that a column cannot have NULL values",
+              "To enforce unique values in a column",
+              "To limit the value range that can be placed in a column",
+              "To link a column to a primary key in another table"
+            ],
+            "answer": "To limit the value range that can be placed in a column"
+          }
+        }
+      ]
+    },
+    "default": {
+      "title": "MySQL DEFAULT Constraint",
+      "sections": [
+        {
+          "heading": "MySQL DEFAULT Constraint",
+          "content": [
+            "The DEFAULT constraint is used to set a default value for a column.",
+            "The default value is added to new records when no other value is specified."
+          ]
+        },
+        {
+          "heading": "DEFAULT on CREATE TABLE",
+          "content": [
+            "The following SQL sets a DEFAULT value for the \"City\" column when the table is created."
+          ],
+          "example": "CREATE TABLE Persons (\n  ID int NOT NULL,\n  LastName varchar(255) NOT NULL,\n  FirstName varchar(255),\n  Age int,\n  City varchar(255) DEFAULT 'Sandnes'\n);"
+        },
+        {
+          "heading": "DEFAULT with System Values",
+          "content": [
+            "The DEFAULT constraint can also use system functions such as CURRENT_DATE()."
+          ],
+          "example": "CREATE TABLE Orders (\n  ID int NOT NULL,\n  OrderNumber int NOT NULL,\n  OrderDate date DEFAULT CURRENT_DATE()\n);"
+        },
+        {
+          "heading": "DEFAULT on ALTER TABLE",
+          "content": [
+            "To add a DEFAULT constraint to an existing table, use ALTER TABLE."
+          ],
+          "example": "ALTER TABLE Persons\nALTER City SET DEFAULT 'Sandnes';"
+        },
+        {
+          "heading": "DROP a DEFAULT Constraint",
+          "content": [
+            "To remove a DEFAULT constraint from a column, use the following SQL statement."
+          ],
+          "example": "ALTER TABLE Persons\nALTER City DROP DEFAULT;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the primary purpose of the SQL DEFAULT constraint?",
+            "options": [
+              "To ensure all values in a column are unique",
+              "To set a default value for a column when no value is specified",
+              "To limit the range of values in a column",
+              "To prevent NULL values in a column"
+            ],
+            "answer": "To set a default value for a column when no value is specified"
+          }
+        }
+      ]
+    },
+    "create-index": {
+      "title": "MySQL CREATE INDEX Statement",
+      "sections": [
+        {
+          "heading": "MySQL CREATE INDEX Statement",
+          "content": [
+            "The CREATE INDEX statement is used to create indexes in tables.",
+            "Indexes are used to retrieve data from the database more quickly.",
+            "Indexes are not visible to users and are only used to speed up searches and queries."
+          ]
+        },
+        {
+          "heading": "Note",
+          "content": [
+            "Updating a table with indexes takes more time than updating a table without indexes.",
+            "Only create indexes on columns that are frequently searched."
+          ]
+        },
+        {
+          "heading": "CREATE INDEX Syntax",
+          "content": [
+            "Creates an index on a table. Duplicate values are allowed."
+          ],
+          "code": "CREATE INDEX index_name\nON table_name (column1, column2, ...);"
+        },
+        {
+          "heading": "CREATE UNIQUE INDEX Syntax",
+          "content": [
+            "Creates a unique index on a table. Duplicate values are not allowed."
+          ],
+          "code": "CREATE UNIQUE INDEX index_name\nON table_name (column1, column2, ...);"
+        },
+        {
+          "heading": "MySQL CREATE INDEX Example",
+          "content": [
+            "The following SQL creates an index named \"idx_lastname\" on the \"LastName\" column in the \"Persons\" table."
+          ],
+          "example": "CREATE INDEX idx_lastname\nON Persons (LastName);"
+        },
+        {
+          "heading": "CREATE INDEX on Multiple Columns",
+          "content": [
+            "You can create an index on multiple columns by listing them inside parentheses."
+          ],
+          "example": "CREATE INDEX idx_pname\nON Persons (LastName, FirstName);"
+        },
+        {
+          "heading": "DROP INDEX Statement",
+          "content": [
+            "The DROP INDEX statement is used to delete an index from a table."
+          ],
+          "code": "ALTER TABLE table_name\nDROP INDEX index_name;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the purpose of the SQL CREATE INDEX statement?",
+            "options": [
+              "To create a backup of a table",
+              "To retrieve data more quickly by creating indexes",
+              "To ensure data integrity in a table",
+              "To delete an existing index in a table"
+            ],
+            "answer": "To retrieve data more quickly by creating indexes"
+          }
+        }
+      ]
+    },
+    "auto-increment": {
+      "title": "MySQL AUTO INCREMENT Field",
+      "sections": [
+        {
+          "heading": "What is an AUTO INCREMENT Field?",
+          "content": [
+            "AUTO_INCREMENT allows a unique number to be generated automatically when a new record is inserted into a table.",
+            "It is often used for the primary key field so that a unique value is created automatically for each new record."
+          ]
+        },
+        {
+          "heading": "MySQL AUTO_INCREMENT Keyword",
+          "content": [
+            "MySQL uses the AUTO_INCREMENT keyword to perform the auto-increment feature.",
+            "By default, the starting value is 1 and it increments by 1 for each new record."
+          ]
+        },
+        {
+          "heading": "AUTO_INCREMENT on CREATE TABLE",
+          "content": [
+            "The following SQL defines the \"Personid\" column as an auto-increment primary key in the \"Persons\" table."
+          ],
+          "example": "CREATE TABLE Persons (\n  Personid int NOT NULL AUTO_INCREMENT,\n  LastName varchar(255) NOT NULL,\n  FirstName varchar(255),\n  Age int,\n  PRIMARY KEY (Personid)\n);"
+        },
+        {
+          "heading": "Set AUTO_INCREMENT Start Value",
+          "content": [
+            "You can change the starting value of an AUTO_INCREMENT column using ALTER TABLE."
+          ],
+          "example": "ALTER TABLE Persons AUTO_INCREMENT = 100;"
+        },
+        {
+          "heading": "Insert Data with AUTO_INCREMENT",
+          "content": [
+            "When inserting a new record, you do not need to specify a value for the AUTO_INCREMENT column.",
+            "A unique value will be generated automatically."
+          ],
+          "example": "INSERT INTO Persons (FirstName, LastName)\nVALUES ('Lars', 'Monsen');"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the primary purpose of an AUTO_INCREMENT field in SQL?",
+            "options": [
+              "To allow duplicate values in a column",
+              "To automatically generate a unique number for a column",
+              "To reset column values after deletion",
+              "To format column data as text"
+            ],
+            "answer": "To automatically generate a unique number for a column"
+          }
+        }
+      ]
+    },
+    "dates": {
+      "title": "MySQL Working With Dates",
+      "sections": [
+        {
+          "heading": "MySQL Dates",
+          "content": [
+            "When working with dates, it is important that the format of the inserted date matches the format of the date column in the database.",
+            "Queries work as expected when only the date portion is used.",
+            "When a time portion is included, date comparisons become more complex."
+          ]
+        },
+        {
+          "heading": "MySQL Date Data Types",
+          "content": [
+            "MySQL provides several data types for storing date and time values.",
+            "DATE – format YYYY-MM-DD",
+            "DATETIME – format YYYY-MM-DD HH:MI:SS",
+            "TIMESTAMP – format YYYY-MM-DD HH:MI:SS",
+            "YEAR – format YYYY or YY"
+          ]
+        },
+        {
+          "heading": "Note",
+          "content": [
+            "Date data types are defined for a column when a table is created."
+          ]
+        },
+        {
+          "heading": "Working with Dates (Without Time)",
+          "content": [
+            "Dates can be compared easily when no time component is involved."
+          ],
+          "example": "SELECT * FROM Orders WHERE OrderDate = '2008-11-11';"
+        },
+        {
+          "heading": "Working with Dates (With Time)",
+          "content": [
+            "If the date column includes a time component, comparing only the date will return no results.",
+            "This happens because the query looks for an exact match including time."
+          ]
+        },
+        {
+          "heading": "Tip",
+          "content": [
+            "Avoid using time components in date values unless necessary to keep queries simple and maintainable."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct column name to filter records with the OrderDate of 2008-11-11.",
+            "query": "SELECT * FROM Orders\nWHERE ___ = '2008-11-11';",
+            "keywords": ["OrderDate"],
+            "answer": "SELECT * FROM Orders WHERE OrderDate = '2008-11-11';"
+          }
+        }
+      ]
+    },
+    "views": {
+      "title": "MySQL Views",
+      "sections": [
+        {
+          "heading": "MySQL CREATE VIEW Statement",
+          "content": [
+            "A view is a virtual table based on the result-set of an SQL statement.",
+            "A view contains rows and columns just like a real table.",
+            "The fields in a view come from one or more real tables in the database.",
+            "Views can include SQL statements and functions and present data as if it comes from a single table."
+          ]
+        },
+        {
+          "heading": "CREATE VIEW Syntax",
+          "content": ["A view is created using the CREATE VIEW statement."],
+          "code": "CREATE VIEW view_name AS\nSELECT column1, column2, ...\nFROM table_name\nWHERE condition;"
+        },
+        {
+          "heading": "Note",
+          "content": [
+            "A view always shows up-to-date data.",
+            "The database engine recreates the view every time it is queried."
+          ]
+        },
+        {
+          "heading": "MySQL CREATE VIEW Example",
+          "content": [
+            "The following SQL creates a view that shows all customers from Brazil."
+          ],
+          "example": "CREATE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName\nFROM Customers\nWHERE Country = 'Brazil';"
+        },
+        {
+          "heading": "Query a View",
+          "example": "SELECT * FROM [Brazil Customers];"
+        },
+        {
+          "heading": "View with Subquery Example",
+          "content": [
+            "The following SQL creates a view that selects products with a price higher than the average price."
+          ],
+          "example": "CREATE VIEW [Products Above Average Price] AS\nSELECT ProductName, Price\nFROM Products\nWHERE Price > (SELECT AVG(Price) FROM Products);"
+        },
+        {
+          "heading": "MySQL Updating a View",
+          "content": [
+            "A view can be updated using the CREATE OR REPLACE VIEW statement."
+          ],
+          "code": "CREATE OR REPLACE VIEW view_name AS\nSELECT column1, column2, ...\nFROM table_name\nWHERE condition;"
+        },
+        {
+          "heading": "Update View Example",
+          "content": [
+            "The following SQL adds the City column to the Brazil Customers view."
+          ],
+          "example": "CREATE OR REPLACE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName, City\nFROM Customers\nWHERE Country = 'Brazil';"
+        },
+        {
+          "heading": "MySQL Dropping a View",
+          "content": ["A view is deleted using the DROP VIEW statement."],
+          "code": "DROP VIEW view_name;"
+        },
+        {
+          "heading": "DROP VIEW Example",
+          "example": "DROP VIEW [Brazil Customers];"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keywords to complete the CREATE VIEW statement.",
+            "query": "___ VIEW Norwegians AS\n___ Firstname, Lastname\n___ Persons\n___ Country = 'Norway';",
+            "keywords": ["CREATE", "SELECT", "FROM", "WHERE"],
+            "answer": "CREATE VIEW Norwegians AS\nSELECT Firstname, Lastname\nFROM Persons\nWHERE Country = 'Norway';"
+          }
+        }
+      ]
+    },
+    "data-types": {
+      "title": "MySQL Data Types",
+      "sections": [
+        {
+          "heading": "MySQL Data Types",
+          "content": [
+            "The data type of a column defines what value the column can hold, such as integer, character, date, or binary data.",
+            "Each column in a database table must have a name and a data type.",
+            "The data type helps SQL understand what kind of data is expected and how it should be handled."
+          ]
+        },
+        {
+          "heading": "Main Data Type Categories",
+          "content": [
+            "MySQL has three main data type categories:",
+            "String data types",
+            "Numeric data types",
+            "Date and time data types"
+          ]
+        },
+        {
+          "heading": "String Data Types",
+          "table": {
+            "headers": ["Data Type", "Description"],
+            "rows": [
+              ["CHAR(size)", "Fixed-length string (0–255 characters)"],
+              ["VARCHAR(size)", "Variable-length string (0–65535 characters)"],
+              ["BINARY(size)", "Fixed-length binary string"],
+              ["VARBINARY(size)", "Variable-length binary string"],
+              ["TINYTEXT", "String up to 255 characters"],
+              ["TEXT", "String up to 65,535 bytes"],
+              ["MEDIUMTEXT", "String up to 16,777,215 characters"],
+              ["LONGTEXT", "String up to 4,294,967,295 characters"],
+              ["TINYBLOB", "Binary data up to 255 bytes"],
+              ["BLOB", "Binary data up to 65,535 bytes"],
+              ["MEDIUMBLOB", "Binary data up to 16,777,215 bytes"],
+              ["LONGBLOB", "Binary data up to 4,294,967,295 bytes"],
+              ["ENUM", "String with one value from a predefined list"],
+              ["SET", "String with multiple values from a predefined list"]
+            ]
+          }
+        },
+        {
+          "heading": "Numeric Data Types",
+          "table": {
+            "headers": ["Data Type", "Description"],
+            "rows": [
+              ["BIT(size)", "Bit-value type (1–64 bits)"],
+              ["TINYINT", "Very small integer"],
+              ["SMALLINT", "Small integer"],
+              ["MEDIUMINT", "Medium integer"],
+              ["INT / INTEGER", "Standard integer"],
+              ["BIGINT", "Large integer"],
+              ["BOOL / BOOLEAN", "Boolean value (true or false)"],
+              ["FLOAT", "Floating-point number"],
+              [
+                "DOUBLE / DOUBLE PRECISION",
+                "Double-precision floating-point number"
+              ],
+              ["DECIMAL / DEC", "Exact fixed-point number"]
+            ]
+          }
+        },
+        {
+          "heading": "Numeric Type Options",
+          "content": [
+            "Numeric data types can use UNSIGNED to disallow negative values.",
+            "ZEROFILL pads numbers with leading zeros and automatically applies UNSIGNED."
+          ]
+        },
+        {
+          "heading": "Date and Time Data Types",
+          "table": {
+            "headers": ["Data Type", "Description"],
+            "rows": [
+              ["DATE", "Date in YYYY-MM-DD format"],
+              ["DATETIME", "Date and time in YYYY-MM-DD HH:MI:SS format"],
+              ["TIMESTAMP", "Date and time stored as Unix timestamp"],
+              ["TIME", "Time in HH:MI:SS format"],
+              ["YEAR", "Year in four-digit format (1901–2155, 0000)"]
+            ]
+          }
+        },
+        {
+          "heading": "Note",
+          "content": [
+            "MySQL 8.0 does not support two-digit year format.",
+            "Date and time data types are defined when creating a table."
+          ]
+        }
+      ]
+    },
+    "functions": {
+      "title": "MySQL Functions",
+      "sections": [
+        {
+          "heading": "MySQL Functions",
+          "content": [
+            "MySQL provides many built-in functions to perform operations on data.",
+            "These functions help manipulate strings, perform calculations, work with dates, and handle advanced logic."
+          ]
+        },
+        {
+          "heading": "Function Categories",
+          "content": [
+            "MySQL functions are grouped into the following main categories:",
+            "String functions",
+            "Numeric functions",
+            "Date and time functions",
+            "Advanced functions"
+          ]
+        },
+        {
+          "heading": "MySQL String Functions",
+          "content": [
+            "String functions are used to manipulate and analyze text data."
+          ],
+          "table": {
+            "headers": ["Function", "Description"],
+            "rows": [
+              ["ASCII", "Returns the ASCII value of a character"],
+              [
+                "CHAR_LENGTH / CHARACTER_LENGTH",
+                "Returns the length of a string in characters"
+              ],
+              ["CONCAT", "Concatenates two or more strings"],
+              ["CONCAT_WS", "Concatenates strings with a separator"],
+              ["LEFT / RIGHT", "Extracts characters from a string"],
+              ["LOWER / LCASE", "Converts a string to lowercase"],
+              ["UPPER / UCASE", "Converts a string to uppercase"],
+              ["LENGTH", "Returns the length of a string in bytes"],
+              ["REPLACE", "Replaces occurrences of a substring"],
+              ["SUBSTRING / SUBSTR", "Extracts part of a string"],
+              ["TRIM / LTRIM / RTRIM", "Removes spaces from a string"]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL Numeric Functions",
+          "content": [
+            "Numeric functions are used to perform mathematical operations."
+          ],
+          "table": {
+            "headers": ["Function", "Description"],
+            "rows": [
+              ["ABS", "Returns the absolute value"],
+              ["AVG", "Returns the average value"],
+              ["COUNT", "Returns the number of rows"],
+              ["MAX", "Returns the maximum value"],
+              ["MIN", "Returns the minimum value"],
+              ["SUM", "Returns the sum of values"],
+              ["ROUND", "Rounds a number"],
+              ["RAND", "Returns a random number"],
+              ["SQRT", "Returns the square root"]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL Date and Time Functions",
+          "content": [
+            "Date functions are used to work with date and time values."
+          ],
+          "table": {
+            "headers": ["Function", "Description"],
+            "rows": [
+              ["CURDATE / CURRENT_DATE", "Returns the current date"],
+              ["NOW / CURRENT_TIMESTAMP", "Returns the current date and time"],
+              ["DATE", "Extracts the date part"],
+              ["DATEDIFF", "Returns the difference between two dates"],
+              ["DATE_ADD / DATE_SUB", "Adds or subtracts a time interval"],
+              ["YEAR / MONTH / DAY", "Extracts parts of a date"]
+            ]
+          }
+        },
+        {
+          "heading": "MySQL Advanced Functions",
+          "content": [
+            "Advanced functions are used for conditional logic, type conversion, and system information."
+          ],
+          "table": {
+            "headers": ["Function", "Description"],
+            "rows": [
+              ["CASE", "Conditional logic"],
+              ["CAST / CONVERT", "Converts one data type to another"],
+              ["COALESCE", "Returns the first non-NULL value"],
+              ["IF / IFNULL", "Conditional functions"],
+              ["DATABASE", "Returns the current database name"],
+              ["USER / CURRENT_USER", "Returns the current user"],
+              ["VERSION", "Returns the MySQL version"]
+            ]
           }
         }
       ]

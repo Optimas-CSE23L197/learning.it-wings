@@ -24,27 +24,27 @@ const allCourses = [
   // munsi end
 
   // animesh start
-  { id: 19, title: "MySQL", path: "/mysql" },
-  { id: 20, title: "PHP", path: "/php" },
-  { id: 21, title: "Java", path: "/java" },
-  { id: 22, title: "C", path: "/c" },
-  { id: 23, title: "C++", path: "/cpp" },
-  { id: 24, title: "C#", path: "/csharp" },
-  { id: 25, title: "R", path: "/r" },
-  { id: 26, title: "Kotlin", path: "/kotlin" },
-  { id: 27, title: "Rust", path: "/rust" },
+  { id: 19, title: "MySQL", path: "/mysql" }, // done
+  { id: 20, title: "PHP", path: "/php" }, // pending
+  { id: 21, title: "Java", path: "/java" }, // pending
+  { id: 22, title: "C", path: "/c" }, // pending
+  { id: 23, title: "C++", path: "/cpp" }, // pending
+  { id: 24, title: "C#", path: "/csharp" }, // done
+  { id: 25, title: "R", path: "/r" }, // done
+  { id: 26, title: "Kotlin", path: "/kotlin" }, // done
+  { id: 27, title: "Rust", path: "/rust" }, // done
   // animesh end
 
   // soumya start
-  { id: 28, title: "Go", path: "/go" }, // done 
-  { id: 29, title: "Swift", path: "/swift" }, // done 
+  { id: 28, title: "Go", path: "/go" }, // done
+  { id: 29, title: "Swift", path: "/swift" }, // done
   { id: 30, title: "Django", path: "/django" },
   { id: 31, title: "TypeScript", path: "/typescript" }, //done
   { id: 32, title: "ASP.NET", path: "/asp-net" }, // done
   { id: 33, title: "Node.js", path: "/node-js" },
-  { id: 34, title: "Git", path: "/git" },  //done 
-  { id: 35, title: "MongoDB", path: "/mongodb" }, // done 
-  { id: 36, title: "AWS", path: "/aws" },  // done 
+  { id: 34, title: "Git", path: "/git" }, //done
+  { id: 35, title: "MongoDB", path: "/mongodb" }, // done
+  { id: 36, title: "AWS", path: "/aws" }, // done
   // soumya end
 ];
 

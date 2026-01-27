@@ -202,6 +202,1760 @@
           "note": "Try it Yourself »"
         }
       ]
+    },
+    "syntax": {
+      "title": "R Syntax",
+      "sections": [
+        {
+          "heading": "R Syntax",
+          "content": [
+            "R syntax is used to write instructions that R can understand and execute.",
+            "R allows output of text, numbers, and calculations using simple and readable commands."
+          ]
+        },
+        {
+          "heading": "Output Text",
+          "content": [
+            "To output text in R, you can use either single quotes or double quotes."
+          ],
+          "example": "\"Hello World!\""
+        },
+        {
+          "heading": "Output Numbers",
+          "content": [
+            "To output numbers in R, simply type the number without using quotes."
+          ],
+          "example": "5\n10\n25"
+        },
+        {
+          "heading": "Simple Calculations",
+          "content": [
+            "R can perform basic arithmetic operations such as addition."
+          ],
+          "example": "5 + 5"
+        },
+        {
+          "heading": "Note",
+          "content": [
+            "You have now written your first R code using basic R syntax."
+          ]
+        }
+      ]
+    },
+    "comments": {
+      "title": "R Comments",
+      "sections": [
+        {
+          "heading": "R Comments",
+          "content": [
+            "Comments are used to explain R code and make it more readable.",
+            "They can also be used to prevent code from being executed while testing."
+          ]
+        },
+        {
+          "heading": "Single-line Comments",
+          "content": [
+            "In R, comments start with the # character.",
+            "Anything that comes after # on a line is ignored by R."
+          ],
+          "example": "# This is a comment\n\"Hello World!\""
+        },
+        {
+          "heading": "End-of-line Comments",
+          "content": [
+            "Comments can also be written at the end of a line of code."
+          ],
+          "example": "\"Hello World!\" # This is a comment"
+        },
+        {
+          "heading": "Using Comments to Disable Code",
+          "content": [
+            "Comments can be used to prevent R from executing specific lines of code."
+          ],
+          "example": "# \"Good morning!\"\n\"Good night!\""
+        },
+        {
+          "heading": "Multiline Comments",
+          "content": [
+            "R does not support multiline comment syntax like some other programming languages.",
+            "To create multiline comments, add # at the beginning of each line."
+          ],
+          "example": "# This is a comment\n# written in\n# more than just one line\n\"Hello World!\""
+        }
+      ]
+    },
+    "variables": {
+      "title": "R Variables",
+      "sections": [
+        {
+          "heading": "Creating Variables in R",
+          "content": [
+            "Variables are containers for storing data values.",
+            "In R, a variable is created the moment a value is assigned to it.",
+            "To assign a value to a variable, use the <- operator.",
+            "To output the value of a variable, simply type the variable name."
+          ],
+          "example": "name <- \"John\"\nage <- 40\n\nname\nage"
+        },
+        {
+          "heading": "Assignment Operators",
+          "content": [
+            "In R, both <- and = can be used as assignment operators.",
+            "The <- operator is preferred because = can be restricted in some contexts."
+          ]
+        },
+        {
+          "heading": "Print / Output Variables",
+          "content": [
+            "Unlike many other programming languages, R automatically prints the value of a variable when you type its name."
+          ],
+          "example": "name <- \"John Doe\"\n\nname"
+        },
+        {
+          "heading": "Using the print() Function",
+          "content": [
+            "R also provides a print() function to output variable values.",
+            "This can be useful for users familiar with other languages like Python."
+          ],
+          "example": "name <- \"John Doe\"\n\nprint(name)"
+        },
+        {
+          "heading": "Printing Inside Code Blocks",
+          "content": [
+            "When working inside expressions such as loops or code blocks, the print() function is required to display output."
+          ],
+          "example": "for (x in 1:10) {\n  print(x)\n}"
+        },
+        {
+          "heading": "Conclusion",
+          "content": [
+            "You can choose whether to use print() or not for output.",
+            "However, inside curly braces {} or expressions, print() must be used to display results."
+          ]
+        }
+      ]
+    },
+    "data-types": {
+      "title": "R Data Types",
+      "sections": [
+        {
+          "heading": "Data Types",
+          "content": [
+            "In programming, data types define what kind of data a variable can store.",
+            "Variables can store different types of data, and different data types can perform different operations."
+          ]
+        },
+        {
+          "heading": "Dynamic Typing in R",
+          "content": [
+            "In R, variables do not need to be declared with a specific data type.",
+            "A variable can change its data type after it has been assigned."
+          ],
+          "example": "my_var <- 30\nmy_var <- \"Sally\""
+        },
+        {
+          "heading": "Basic Data Types in R",
+          "content": ["R provides several basic data types."],
+          "table": {
+            "headers": ["Data Type", "Examples", "Description"],
+            "rows": [
+              ["numeric", "10.5, 55, 787", "Decimal numbers"],
+              [
+                "integer",
+                "1L, 55L, 100L",
+                "Whole numbers (L specifies integer)"
+              ],
+              ["complex", "9 + 3i", "Numbers with imaginary part"],
+              ["character", "\"R is exciting\"", "Text or string values"],
+              ["logical", "TRUE, FALSE", "Boolean values"]
+            ]
+          }
+        },
+        {
+          "heading": "Checking Data Types",
+          "content": [
+            "The class() function is used to check the data type of a variable."
+          ],
+          "example": "# numeric\nx <- 10.5\nclass(x)\n\n# integer\nx <- 1000L\nclass(x)\n\n# complex\nx <- 9i + 3\nclass(x)\n\n# character\nx <- \"R is exciting\"\nclass(x)\n\n# logical\nx <- TRUE\nclass(x)"
+        },
+        {
+          "heading": "Note",
+          "content": [
+            "You will learn more about each data type in the upcoming chapters."
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "title": "R Numbers",
+      "sections": [
+        {
+          "heading": "Numbers",
+          "content": [
+            "R supports different types of numbers for mathematical operations.",
+            "There are three main number types in R: numeric, integer, and complex."
+          ]
+        },
+        {
+          "heading": "Number Types in R",
+          "content": ["numeric", "integer", "complex"],
+          "example": "x <- 10.5   # numeric\ny <- 10L    # integer\nz <- 1i     # complex"
+        },
+        {
+          "heading": "Numeric",
+          "content": [
+            "Numeric is the most common number type in R.",
+            "It includes numbers with or without decimal points."
+          ],
+          "example": "x <- 10.5\ny <- 55\n\nx\ny\n\nclass(x)\nclass(y)"
+        },
+        {
+          "heading": "Integer",
+          "content": [
+            "Integers are whole numbers without decimals.",
+            "To create an integer in R, append the letter L to the value."
+          ],
+          "example": "x <- 1000L\ny <- 55L\n\nx\ny\n\nclass(x)\nclass(y)"
+        },
+        {
+          "heading": "Complex",
+          "content": [
+            "Complex numbers contain an imaginary part represented by i."
+          ],
+          "example": "x <- 3 + 5i\ny <- 5i\n\nx\ny\n\nclass(x)\nclass(y)"
+        },
+        {
+          "heading": "Type Conversion",
+          "content": [
+            "R provides functions to convert numbers between different types.",
+            "Common conversion functions include as.numeric(), as.integer(), and as.complex()."
+          ],
+          "example": "x <- 1L\ny <- 2\n\n# convert from integer to numeric\na <- as.numeric(x)\n\n# convert from numeric to integer\nb <- as.integer(y)\n\nx\ny\n\nclass(a)\nclass(b)"
+        }
+      ]
+    },
+    "math": {
+      "title": "R Math",
+      "sections": [
+        {
+          "heading": "Simple Math",
+          "content": [
+            "In R, operators are used to perform common mathematical operations on numbers."
+          ]
+        },
+        {
+          "heading": "Addition",
+          "content": ["The + operator is used to add two values."],
+          "example": "10 + 5"
+        },
+        {
+          "heading": "Subtraction",
+          "content": [
+            "The - operator is used to subtract one value from another."
+          ],
+          "example": "10 - 5"
+        },
+        {
+          "heading": "Note",
+          "content": [
+            "R provides many more operators for mathematical operations, which are covered in the R Operators tutorial."
+          ]
+        },
+        {
+          "heading": "Built-in Math Functions",
+          "content": [
+            "R includes built-in functions to perform common mathematical calculations."
+          ]
+        },
+        {
+          "heading": "Minimum and Maximum",
+          "content": [
+            "The min() and max() functions return the smallest and largest values in a set."
+          ],
+          "example": "max(5, 10, 15)\n\nmin(5, 10, 15)"
+        },
+        {
+          "heading": "Square Root",
+          "content": [
+            "The sqrt() function returns the square root of a number."
+          ],
+          "example": "sqrt(16)"
+        },
+        {
+          "heading": "Absolute Value",
+          "content": [
+            "The abs() function returns the absolute (positive) value of a number."
+          ],
+          "example": "abs(-4.7)"
+        },
+        {
+          "heading": "Rounding Numbers",
+          "content": [
+            "The ceiling() function rounds a number up to the nearest integer.",
+            "The floor() function rounds a number down to the nearest integer."
+          ],
+          "example": "ceiling(1.4)\n\nfloor(1.4)"
+        }
+      ]
+    },
+    "strings": {
+      "title": "R Strings",
+      "sections": [
+        {
+          "heading": "String Literals",
+          "content": [
+            "Strings are used for storing text.",
+            "In R, strings can be enclosed in either single quotes or double quotes.",
+            "Single-quoted and double-quoted strings behave the same way."
+          ],
+          "example": "\"hello\"\n'hello'"
+        },
+        {
+          "heading": "Assign a String to a Variable",
+          "content": [
+            "Strings can be assigned to variables using the <- operator.",
+            "Typing the variable name will output the string value."
+          ],
+          "example": "str <- \"Hello\"\nstr"
+        },
+        {
+          "heading": "Multiline Strings",
+          "content": [
+            "R allows multiline strings by including line breaks inside quotes.",
+            "R automatically inserts the \\n escape character at each line break."
+          ],
+          "example": "str <- \"Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\"\n\nstr"
+        },
+        {
+          "heading": "Printing Multiline Strings",
+          "content": [
+            "To preserve line breaks exactly as written in the code, use the cat() function."
+          ],
+          "example": "cat(str)"
+        },
+        {
+          "heading": "String Length",
+          "content": [
+            "The nchar() function returns the number of characters in a string."
+          ],
+          "example": "str <- \"Hello World!\"\n\nnchar(str)"
+        },
+        {
+          "heading": "Check a String",
+          "content": [
+            "The grepl() function checks whether a pattern exists in a string.",
+            "It returns TRUE if the pattern is found, otherwise FALSE."
+          ],
+          "example": "str <- \"Hello World!\"\n\ngrepl(\"H\", str)\ngrepl(\"Hello\", str)\ngrepl(\"X\", str)"
+        },
+        {
+          "heading": "Combine Two Strings",
+          "content": [
+            "The paste() function is used to concatenate two or more strings."
+          ],
+          "example": "str1 <- \"Hello\"\nstr2 <- \"World\"\n\npaste(str1, str2)"
+        }
+      ]
+    },
+    "booleans": {
+      "title": "R Booleans / Logical Values",
+      "sections": [
+        {
+          "heading": "Booleans (Logical Values)",
+          "content": [
+            "In programming, boolean values are used to determine whether an expression is true or false.",
+            "R evaluates expressions and returns one of two logical values: TRUE or FALSE."
+          ]
+        },
+        {
+          "heading": "Comparing Values",
+          "content": [
+            "When comparing two values, R evaluates the expression and returns a logical result."
+          ],
+          "example": "10 > 9\n10 == 9\n10 < 9"
+        },
+        {
+          "heading": "Comparing Variables",
+          "content": [
+            "Logical comparisons can also be made between variables."
+          ],
+          "example": "a <- 10\nb <- 9\n\na > b"
+        },
+        {
+          "heading": "Booleans in if Statements",
+          "content": [
+            "Logical values are commonly used in if...else statements to control program flow."
+          ],
+          "example": "a <- 200\nb <- 33\n\nif (b > a) {\n  print(\"b is greater than a\")\n} else {\n  print(\"b is not greater than a\")\n}"
+        }
+      ]
+    },
+    "operators": {
+      "title": "R Operators",
+      "sections": [
+        {
+          "heading": "Operators",
+          "content": [
+            "Operators are used to perform operations on variables and values.",
+            "For example, the + operator adds two values together."
+          ],
+          "example": "10 + 5"
+        },
+        {
+          "heading": "Operator Categories",
+          "content": [
+            "R divides operators into the following groups:",
+            "Arithmetic operators",
+            "Assignment operators",
+            "Comparison operators",
+            "Logical operators",
+            "Miscellaneous operators"
+          ]
+        },
+        {
+          "heading": "R Arithmetic Operators",
+          "table": {
+            "headers": ["Operator", "Name", "Example"],
+            "rows": [
+              ["+", "Addition", "x + y"],
+              ["-", "Subtraction", "x - y"],
+              ["*", "Multiplication", "x * y"],
+              ["/", "Division", "x / y"],
+              ["^", "Exponent", "x ^ y"],
+              ["%%", "Modulus", "x %% y"],
+              ["%/%", "Integer Division", "x %/% y"]
+            ]
+          }
+        },
+        {
+          "heading": "R Assignment Operators",
+          "content": [
+            "Assignment operators are used to assign values to variables.",
+            "The direction of assignment can be reversed."
+          ],
+          "example": "my_var <- 3\nmy_var <<- 3\n3 -> my_var\n3 ->> my_var\n\nmy_var"
+        },
+        {
+          "heading": "Note",
+          "content": [
+            "<<- is a global assignment operator.",
+            "x <- 3 is equivalent to 3 -> x."
+          ]
+        },
+        {
+          "heading": "R Comparison Operators",
+          "table": {
+            "headers": ["Operator", "Name", "Example"],
+            "rows": [
+              ["==", "Equal", "x == y"],
+              ["!=", "Not equal", "x != y"],
+              [">", "Greater than", "x > y"],
+              ["<", "Less than", "x < y"],
+              [">=", "Greater than or equal to", "x >= y"],
+              ["<=", "Less than or equal to", "x <= y"]
+            ]
+          }
+        },
+        {
+          "heading": "R Logical Operators",
+          "table": {
+            "headers": ["Operator", "Description"],
+            "rows": [
+              ["&", "Element-wise AND"],
+              ["&&", "Logical AND"],
+              ["|", "Element-wise OR"],
+              ["||", "Logical OR"],
+              ["!", "Logical NOT"]
+            ]
+          }
+        },
+        {
+          "heading": "R Miscellaneous Operators",
+          "table": {
+            "headers": ["Operator", "Description", "Example"],
+            "rows": [
+              [":", "Creates a sequence of numbers", "x <- 1:10"],
+              ["%in%", "Checks if element exists in vector", "x %in% y"],
+              ["%*%", "Matrix multiplication", "Matrix1 %*% Matrix2"]
+            ]
+          }
+        }
+      ]
+    },
+    "if-else": {
+      "title": "R If ... Else",
+      "sections": [
+        {
+          "heading": "Conditions and If Statements",
+          "content": [
+            "R supports common comparison operators used in mathematics.",
+            "These conditions are mostly used in if statements and loops."
+          ],
+          "table": {
+            "headers": ["Operator", "Name", "Example"],
+            "rows": [
+              ["==", "Equal", "x == y"],
+              ["!=", "Not equal", "x != y"],
+              [">", "Greater than", "x > y"],
+              ["<", "Less than", "x < y"],
+              [">=", "Greater than or equal to", "x >= y"],
+              ["<=", "Less than or equal to", "x <= y"]
+            ]
+          }
+        },
+        {
+          "heading": "The if Statement",
+          "content": [
+            "The if statement executes a block of code if a condition is TRUE.",
+            "Curly braces { } define the scope of the code block."
+          ],
+          "example": "a <- 33\nb <- 200\n\nif (b > a) {\n  print(\"b is greater than a\")\n}"
+        },
+        {
+          "heading": "Else If",
+          "content": [
+            "The else if keyword checks a new condition if the previous condition was FALSE.",
+            "You can use multiple else if statements."
+          ],
+          "example": "a <- 33\nb <- 33\n\nif (b > a) {\n  print(\"b is greater than a\")\n} else if (a == b) {\n  print(\"a and b are equal\")\n}"
+        },
+        {
+          "heading": "If Else",
+          "content": [
+            "The else keyword runs when none of the previous conditions are TRUE.",
+            "Else can also be used without else if."
+          ],
+          "example": "a <- 200\nb <- 33\n\nif (b > a) {\n  print(\"b is greater than a\")\n} else {\n  print(\"b is not greater than a\")\n}"
+        }
+      ]
+    },
+    "while-loop": {
+      "title": "R While Loop",
+      "sections": [
+        {
+          "heading": "Loops",
+          "content": [
+            "Loops execute a block of code as long as a specified condition is TRUE.",
+            "They help save time, reduce errors, and make code more readable.",
+            "R supports two types of loops: while loops and for loops."
+          ]
+        },
+        {
+          "heading": "R While Loops",
+          "content": [
+            "A while loop executes a set of statements as long as its condition remains TRUE.",
+            "An indexing variable must be defined before the loop starts.",
+            "Always remember to update the variable to avoid infinite loops."
+          ],
+          "example": "i <- 1\nwhile (i < 6) {\n  print(i)\n  i <- i + 1\n}"
+        },
+        {
+          "heading": "Break",
+          "content": [
+            "The break statement stops the loop even if the condition is still TRUE.",
+            "It is useful when a specific condition is met and the loop should terminate early."
+          ],
+          "example": "i <- 1\nwhile (i < 6) {\n  print(i)\n  i <- i + 1\n  if (i == 4) {\n    break\n  }\n}"
+        },
+        {
+          "heading": "Next",
+          "content": [
+            "The next statement skips the current iteration without stopping the loop.",
+            "Execution continues with the next iteration."
+          ],
+          "example": "i <- 0\nwhile (i < 6) {\n  i <- i + 1\n  if (i == 3) {\n    next\n  }\n  print(i)\n}"
+        },
+        {
+          "heading": "If Else Combined with a While Loop",
+          "content": [
+            "Conditional statements can be used inside while loops.",
+            "This allows different actions depending on the loop value."
+          ],
+          "example": "dice <- 1\nwhile (dice <= 6) {\n  if (dice < 6) {\n    print(\"No Yahtzee\")\n  } else {\n    print(\"Yahtzee!\")\n  }\n  dice <- dice + 1\n}"
+        }
+      ]
+    },
+    "for-loop": {
+      "title": "R For Loop",
+      "sections": [
+        {
+          "heading": "For Loops",
+          "content": [
+            "A for loop is used for iterating over a sequence.",
+            "It executes a block of code once for each item in a sequence such as a vector, list, or array.",
+            "Unlike while loops, a for loop does not require an indexing variable to be set beforehand."
+          ],
+          "example": "for (x in 1:10) {\n  print(x)\n}"
+        },
+        {
+          "heading": "Looping Through Collections",
+          "content": [
+            "A for loop can iterate through lists, vectors, and other collections.",
+            "Each element in the collection is assigned to the loop variable one by one."
+          ],
+          "example": "fruits <- list(\"apple\", \"banana\", \"cherry\")\n\nfor (x in fruits) {\n  print(x)\n}"
+        },
+        {
+          "heading": "Break",
+          "content": [
+            "The break statement stops the loop before it finishes iterating through all items.",
+            "It is useful when a specific condition is met and the loop should terminate early."
+          ],
+          "example": "fruits <- list(\"apple\", \"banana\", \"cherry\")\n\nfor (x in fruits) {\n  if (x == \"cherry\") {\n    break\n  }\n  print(x)\n}"
+        },
+        {
+          "heading": "Next",
+          "content": [
+            "The next statement skips the current iteration without stopping the loop.",
+            "Execution continues with the next item in the sequence."
+          ],
+          "example": "fruits <- list(\"apple\", \"banana\", \"cherry\")\n\nfor (x in fruits) {\n  if (x == \"banana\") {\n    next\n  }\n  print(x)\n}"
+        },
+        {
+          "heading": "If Else Combined with a For Loop",
+          "content": [
+            "Conditional statements can be combined with for loops to perform different actions based on values.",
+            "This allows more flexible and practical looping logic."
+          ],
+          "example": "dice <- 1:6\n\nfor (x in dice) {\n  if (x == 6) {\n    print(paste(\"The dice number is\", x, \"Yahtzee!\"))\n  } else {\n    print(paste(\"The dice number is\", x, \"Not Yahtzee\"))\n  }\n}"
+        }
+      ]
+    },
+    "functions": {
+      "title": "R Functions",
+      "overview": [
+        "A function is a block of code that runs only when it is called.",
+        "Functions can take inputs (arguments/parameters) and return outputs.",
+        "They help organize code, reduce repetition, and improve readability."
+      ],
+      "sections": [
+        {
+          "heading": "Creating a Function",
+          "content": [
+            "Functions are created using the function() keyword.",
+            "The function body is written inside curly braces {}."
+          ],
+          "example": "my_function <- function() {\n  print(\"Hello World!\")\n}"
+        },
+        {
+          "heading": "Calling a Function",
+          "content": [
+            "To execute a function, use its name followed by parentheses ()."
+          ],
+          "example": "my_function()"
+        },
+        {
+          "heading": "Arguments (Parameters)",
+          "content": [
+            "Arguments allow you to pass values into a function.",
+            "You can define one or more arguments, separated by commas."
+          ],
+          "example": "my_function <- function(fname) {\n  paste(fname, \"Griffin\")\n}\n\nmy_function(\"Peter\")"
+        },
+        {
+          "heading": "Parameters vs Arguments",
+          "content": [
+            "A parameter is the variable listed in the function definition.",
+            "An argument is the actual value passed to the function when it is called."
+          ]
+        },
+        {
+          "heading": "Number of Arguments",
+          "content": [
+            "By default, a function must be called with the exact number of arguments it defines.",
+            "Calling with too few or too many arguments results in an error."
+          ],
+          "example": "my_function <- function(fname, lname) {\n  paste(fname, lname)\n}\n\nmy_function(\"Peter\", \"Griffin\")"
+        },
+        {
+          "heading": "Default Parameter Values",
+          "content": [
+            "You can assign default values to parameters.",
+            "If no argument is provided, the default value is used."
+          ],
+          "example": "my_function <- function(country = \"Norway\") {\n  paste(\"I am from\", country)\n}\n\nmy_function()\nmy_function(\"India\")"
+        },
+        {
+          "heading": "Return Values",
+          "content": [
+            "Functions can return values using the return() statement.",
+            "The returned value can be stored or printed."
+          ],
+          "example": "my_function <- function(x) {\n  return(5 * x)\n}\n\nmy_function(3)"
+        }
+      ]
+    },
+    "data-structures": {
+      "title": "R Data Structures",
+      "overview": [
+        "Data structures are used to store and organize values.",
+        "R provides several built-in data structures, each suited for different use cases."
+      ],
+      "types": ["Vectors", "Lists", "Matrices", "Arrays", "Data Frames"],
+      "sections": [
+        {
+          "heading": "Vectors",
+          "content": [
+            "Vectors are the most basic data structure in R.",
+            "They store elements of the same data type."
+          ],
+          "example": "fruits <- c(\"banana\", \"apple\", \"orange\")\nfruits"
+        },
+        {
+          "heading": "Lists",
+          "content": [
+            "Lists can store elements of different data types.",
+            "They can contain numbers, strings, vectors, and even other lists."
+          ],
+          "example": "thislist <- list(\"apple\", \"banana\", 50, 100)\nthislist"
+        },
+        {
+          "heading": "Matrices",
+          "content": [
+            "Matrices are two-dimensional data structures.",
+            "All elements in a matrix must be of the same type."
+          ],
+          "example": "thismatrix <- matrix(c(1,2,3,4,5,6), nrow = 3, ncol = 2)\nthismatrix"
+        },
+        {
+          "heading": "Arrays",
+          "content": [
+            "Arrays are similar to matrices but can have more than two dimensions.",
+            "They store elements of the same type."
+          ],
+          "example": "thisarray <- c(1:24)\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\nmultiarray"
+        },
+        {
+          "heading": "Data Frames",
+          "content": [
+            "Data frames are similar to tables or spreadsheets.",
+            "Each column can contain different data types."
+          ],
+          "example": "Data_Frame <- data.frame(\n  Training = c(\"Strength\", \"Stamina\", \"Other\"),\n  Pulse = c(100, 150, 120),\n  Duration = c(60, 30, 45)\n)\nData_Frame"
+        }
+      ],
+      "summary": [
+        "Vector → same type, simple sequences",
+        "List → mixed types, grouped data",
+        "Matrix → 2D same-type data",
+        "Array → multi-dimensional same-type data",
+        "Data Frame → tabular data with mixed types"
+      ]
+    },
+    "vectors": {
+      "title": "R Vectors",
+      "sections": [
+        {
+          "heading": "Vectors",
+          "content": [
+            "A vector is a list of items that are all of the same type.",
+            "Vectors are created using the c() function."
+          ]
+        },
+        {
+          "heading": "Create Vectors",
+          "content": ["Use the c() function to combine values into a vector."],
+          "example": "# Vector of strings\nfruits <- c(\"banana\", \"apple\", \"orange\")\nfruits"
+        },
+        {
+          "heading": "Numeric Vectors",
+          "content": ["Vectors can also store numeric values."],
+          "example": "# Vector of numbers\nnumbers <- c(1, 2, 3)\nnumbers"
+        },
+        {
+          "heading": "Sequence Vectors",
+          "content": ["Use the : operator to create a sequence of numbers."],
+          "example": "numbers <- 1:10\nnumbers"
+        },
+        {
+          "heading": "Decimal Sequences",
+          "content": [
+            "Decimal sequences increase by 1 unless specified otherwise.",
+            "If the last value does not fit the sequence, it is ignored."
+          ],
+          "example": "numbers1 <- 1.5:6.5\nnumbers2 <- 1.5:6.3"
+        },
+        {
+          "heading": "Logical Vectors",
+          "content": ["Vectors can also contain logical (TRUE/FALSE) values."],
+          "example": "log_values <- c(TRUE, FALSE, TRUE, FALSE)\nlog_values"
+        },
+        {
+          "heading": "Vector Length",
+          "content": [
+            "Use the length() function to find the number of elements in a vector."
+          ],
+          "example": "length(fruits)"
+        },
+        {
+          "heading": "Sort Vectors",
+          "content": [
+            "Use the sort() function to sort vectors alphabetically or numerically."
+          ],
+          "example": "sort(fruits)\nsort(numbers)"
+        },
+        {
+          "heading": "Access Vector Elements",
+          "content": [
+            "Access elements using index positions.",
+            "Indexing in R starts at 1."
+          ],
+          "example": "fruits[1]\nfruits[c(1,3)]\nfruits[-1]"
+        },
+        {
+          "heading": "Modify Vector Elements",
+          "content": [
+            "You can change elements by assigning a new value to an index."
+          ],
+          "example": "fruits[1] <- \"pear\"\nfruits"
+        },
+        {
+          "heading": "Repeat Vectors",
+          "content": ["Use the rep() function to repeat vector values."],
+          "example": "rep(c(1,2,3), each = 3)\nrep(c(1,2,3), times = 3)\nrep(c(1,2,3), times = c(5,2,1))"
+        },
+        {
+          "heading": "Generate Sequences with seq()",
+          "content": ["Use seq() to create sequences with custom steps."],
+          "example": "seq(from = 0, to = 100, by = 20)"
+        }
+      ]
+    },
+    "lists": {
+      "title": "R Lists",
+      "sections": [
+        {
+          "heading": "Lists",
+          "content": [
+            "A list in R can contain many different data types.",
+            "Lists are ordered and changeable collections."
+          ]
+        },
+        {
+          "heading": "Create a List",
+          "content": ["Use the list() function to create a list."],
+          "example": "# List of strings\nthislist <- list(\"apple\", \"banana\", \"cherry\")\nthislist"
+        },
+        {
+          "heading": "Access List Items",
+          "content": [
+            "Access list items using index numbers.",
+            "Indexing in R starts at 1."
+          ],
+          "example": "thislist[1]"
+        },
+        {
+          "heading": "Change Item Value",
+          "content": [
+            "Modify a list item by assigning a new value to its index."
+          ],
+          "example": "thislist[1] <- \"blackcurrant\"\nthislist"
+        },
+        {
+          "heading": "List Length",
+          "content": [
+            "Use the length() function to find the number of items in a list."
+          ],
+          "example": "length(thislist)"
+        },
+        {
+          "heading": "Check if Item Exists",
+          "content": [
+            "Use the %in% operator to check if an item exists in a list."
+          ],
+          "example": "\"apple\" %in% thislist"
+        },
+        {
+          "heading": "Add List Items",
+          "content": [
+            "Use the append() function to add items to a list.",
+            "You can specify the position using the after parameter."
+          ],
+          "example": "append(thislist, \"orange\")\nappend(thislist, \"orange\", after = 2)"
+        },
+        {
+          "heading": "Remove List Items",
+          "content": [
+            "Remove items by excluding their index using negative indexing."
+          ],
+          "example": "newlist <- thislist[-1]\nnewlist"
+        },
+        {
+          "heading": "Range of Indexes",
+          "content": ["Use the : operator to access a range of list items."],
+          "example": "thislist[2:5]"
+        },
+        {
+          "heading": "Loop Through a List",
+          "content": ["Use a for loop to iterate through list items."],
+          "example": "for (x in thislist) {\n  print(x)\n}"
+        },
+        {
+          "heading": "Join Two Lists",
+          "content": ["Use the c() function to combine multiple lists."],
+          "example": "list1 <- list(\"a\", \"b\", \"c\")\nlist2 <- list(1, 2, 3)\nlist3 <- c(list1, list2)\nlist3"
+        }
+      ]
+    },
+    "matrices": {
+      "title": "R Matrices",
+      "sections": [
+        {
+          "heading": "Matrices",
+          "content": [
+            "A matrix is a two dimensional data set with columns and rows.",
+            "Matrices can store data in a tabular format."
+          ]
+        },
+        {
+          "heading": "Create a Matrix",
+          "content": [
+            "Use the matrix() function to create a matrix.",
+            "Specify the number of rows and columns using nrow and ncol."
+          ],
+          "example": "# Create a matrix\nthismatrix <- matrix(c(1,2,3,4,5,6), nrow = 3, ncol = 2)\nthismatrix"
+        },
+        {
+          "heading": "Matrix with Strings",
+          "content": ["Matrices can also contain character values."],
+          "example": "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\nthismatrix"
+        },
+        {
+          "heading": "Access Matrix Items",
+          "content": [
+            "Access items using row and column indexes.",
+            "Indexing in R starts at 1."
+          ],
+          "example": "thismatrix[1, 2]"
+        },
+        {
+          "heading": "Access Entire Row",
+          "content": [
+            "Specify a row number followed by a comma to access an entire row."
+          ],
+          "example": "thismatrix[2, ]"
+        },
+        {
+          "heading": "Access Entire Column",
+          "content": [
+            "Specify a column number before the comma to access an entire column."
+          ],
+          "example": "thismatrix[, 2]"
+        },
+        {
+          "heading": "Access Multiple Rows",
+          "content": ["Use the c() function to access more than one row."],
+          "example": "thismatrix[c(1,2), ]"
+        },
+        {
+          "heading": "Access Multiple Columns",
+          "content": ["Use the c() function to access more than one column."],
+          "example": "thismatrix[, c(1,2)]"
+        },
+        {
+          "heading": "Add Columns",
+          "content": ["Use the cbind() function to add columns to a matrix."],
+          "example": "newmatrix <- cbind(thismatrix, c(\"strawberry\", \"blueberry\"))\nnewmatrix"
+        },
+        {
+          "heading": "Add Rows",
+          "content": ["Use the rbind() function to add rows to a matrix."],
+          "example": "newmatrix <- rbind(thismatrix, c(\"strawberry\", \"blueberry\"))\nnewmatrix"
+        },
+        {
+          "heading": "Remove Rows and Columns",
+          "content": ["Remove rows or columns using negative indexing."],
+          "example": "thismatrix <- thismatrix[-c(1), -c(1)]\nthismatrix"
+        },
+        {
+          "heading": "Check if Item Exists",
+          "content": [
+            "Use the %in% operator to check if an item exists in a matrix."
+          ],
+          "example": "\"apple\" %in% thismatrix"
+        },
+        {
+          "heading": "Matrix Dimensions",
+          "content": [
+            "Use the dim() function to get the number of rows and columns."
+          ],
+          "example": "dim(thismatrix)"
+        },
+        {
+          "heading": "Matrix Length",
+          "content": [
+            "Use the length() function to get the total number of elements."
+          ],
+          "example": "length(thismatrix)"
+        },
+        {
+          "heading": "Loop Through a Matrix",
+          "content": [
+            "Use nested for loops to iterate through matrix rows and columns."
+          ],
+          "example": "for (r in 1:nrow(thismatrix)) {\n  for (c in 1:ncol(thismatrix)) {\n    print(thismatrix[r, c])\n  }\n}"
+        },
+        {
+          "heading": "Combine Matrices",
+          "content": [
+            "Use rbind() to combine matrices by rows.",
+            "Use cbind() to combine matrices by columns."
+          ],
+          "example": "Matrix1 <- matrix(c(\"apple\", \"banana\", \"cherry\", \"grape\"), nrow = 2)\nMatrix2 <- matrix(c(\"orange\", \"mango\", \"pineapple\", \"watermelon\"), nrow = 2)\nrbind(Matrix1, Matrix2)\ncbind(Matrix1, Matrix2)"
+        }
+      ]
+    },
+    "arrays": {
+      "title": "R Arrays",
+      "sections": [
+        {
+          "heading": "Arrays",
+          "content": [
+            "Compared to matrices, arrays can have more than two dimensions.",
+            "Arrays can only contain one data type."
+          ]
+        },
+        {
+          "heading": "Create an Array",
+          "content": [
+            "Use the array() function to create an array.",
+            "Use the dim parameter to specify the dimensions."
+          ],
+          "example": "# An array with one dimension\nthisarray <- c(1:24)\nthisarray\n\n# An array with more than one dimension\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\nmultiarray"
+        },
+        {
+          "heading": "Example Explained",
+          "content": [
+            "The values 1 to 24 are stored in an array.",
+            "The first two numbers in dim specify rows and columns.",
+            "The last number specifies the number of dimensions."
+          ]
+        },
+        {
+          "heading": "Access Array Items",
+          "content": [
+            "Access elements by specifying their index positions.",
+            "Indexing in R starts at 1."
+          ],
+          "example": "multiarray[2, 3, 2]"
+        },
+        {
+          "heading": "Access Rows in an Array",
+          "content": [
+            "Use c() after the comma to access a row from a matrix level."
+          ],
+          "example": "multiarray[c(1), , 1]"
+        },
+        {
+          "heading": "Access Columns in an Array",
+          "content": [
+            "Use c() before the comma to access a column from a matrix level."
+          ],
+          "example": "multiarray[, c(1), 1]"
+        },
+        {
+          "heading": "Check if Item Exists",
+          "content": [
+            "Use the %in% operator to check if a value exists in an array."
+          ],
+          "example": "2 %in% multiarray"
+        },
+        {
+          "heading": "Array Dimensions",
+          "content": [
+            "Use the dim() function to get the number of rows, columns, and dimensions."
+          ],
+          "example": "dim(multiarray)"
+        },
+        {
+          "heading": "Array Length",
+          "content": [
+            "Use the length() function to get the total number of elements."
+          ],
+          "example": "length(multiarray)"
+        },
+        {
+          "heading": "Loop Through an Array",
+          "content": ["Use a for loop to iterate through array elements."],
+          "example": "for (x in multiarray) {\n  print(x)\n}"
+        }
+      ]
+    },
+    "data-frames": {
+      "title": "R Data Frames",
+      "sections": [
+        {
+          "heading": "Data Frames",
+          "content": [
+            "Data Frames are data displayed in a format as a table.",
+            "Each column can contain different data types, but each column must contain the same type of data."
+          ]
+        },
+        {
+          "heading": "Create a Data Frame",
+          "content": ["Use the data.frame() function to create a data frame."],
+          "example": "# Create a data frame\nData_Frame <- data.frame (\n  Training = c(\"Strength\", \"Stamina\", \"Other\"),\n  Pulse = c(100, 150, 120),\n  Duration = c(60, 30, 45)\n)\n\nData_Frame"
+        },
+        {
+          "heading": "Summarize the Data",
+          "content": [
+            "Use the summary() function to summarize the data in a data frame."
+          ],
+          "example": "summary(Data_Frame)"
+        },
+        {
+          "heading": "Access Items",
+          "content": [
+            "Use single brackets, double brackets, or the $ operator to access columns."
+          ],
+          "example": "Data_Frame[1]\n\nData_Frame[[\"Training\"]]\n\nData_Frame$Training"
+        },
+        {
+          "heading": "Add Rows",
+          "content": [
+            "Use the rbind() function to add new rows to a data frame."
+          ],
+          "example": "New_row_DF <- rbind(Data_Frame, c(\"Strength\", 110, 110))\nNew_row_DF"
+        },
+        {
+          "heading": "Add Columns",
+          "content": [
+            "Use the cbind() function to add new columns to a data frame."
+          ],
+          "example": "New_col_DF <- cbind(Data_Frame, Steps = c(1000, 6000, 2000))\nNew_col_DF"
+        },
+        {
+          "heading": "Remove Rows and Columns",
+          "content": [
+            "Use negative indexing with the c() function to remove rows or columns."
+          ],
+          "example": "Data_Frame_New <- Data_Frame[-c(1), -c(1)]\nData_Frame_New"
+        },
+        {
+          "heading": "Amount of Rows and Columns",
+          "content": [
+            "Use the dim() function to get the number of rows and columns.",
+            "You can also use nrow() and ncol()."
+          ],
+          "example": "dim(Data_Frame)\n\nncol(Data_Frame)\nnrow(Data_Frame)"
+        },
+        {
+          "heading": "Data Frame Length",
+          "content": [
+            "Use the length() function to get the number of columns in a data frame."
+          ],
+          "example": "length(Data_Frame)"
+        },
+        {
+          "heading": "Combine Data Frames (Rows)",
+          "content": [
+            "Use the rbind() function to combine data frames vertically."
+          ],
+          "example": "New_Data_Frame <- rbind(Data_Frame1, Data_Frame2)\nNew_Data_Frame"
+        },
+        {
+          "heading": "Combine Data Frames (Columns)",
+          "content": [
+            "Use the cbind() function to combine data frames horizontally."
+          ],
+          "example": "New_Data_Frame1 <- cbind(Data_Frame3, Data_Frame4)\nNew_Data_Frame1"
+        }
+      ]
+    },
+    "factors": {
+      "title": "R Factors",
+      "sections": [
+        {
+          "heading": "Factors",
+          "content": [
+            "Factors are used to categorize data.",
+            "Common examples include demographic data, music genres, and training types."
+          ]
+        },
+        {
+          "heading": "Create a Factor",
+          "content": [
+            "Use the factor() function to create a factor from a vector."
+          ],
+          "example": "# Create a factor\nmusic_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"))\n\nmusic_genre"
+        },
+        {
+          "heading": "Factor Levels",
+          "content": [
+            "A factor contains unique categories called levels.",
+            "Levels are determined automatically from the data."
+          ],
+          "example": "levels(music_genre)"
+        },
+        {
+          "heading": "Set Factor Levels",
+          "content": [
+            "You can manually define factor levels using the levels argument."
+          ],
+          "example": "music_genre <- factor(\n  c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"),\n  levels = c(\"Classic\", \"Jazz\", \"Pop\", \"Rock\", \"Other\")\n)\n\nlevels(music_genre)"
+        },
+        {
+          "heading": "Factor Length",
+          "content": [
+            "Use the length() function to find the number of items in a factor."
+          ],
+          "example": "length(music_genre)"
+        },
+        {
+          "heading": "Access Factor Items",
+          "content": ["Access factor values using index numbers."],
+          "example": "music_genre[3]"
+        },
+        {
+          "heading": "Change Item Value",
+          "content": [
+            "You can change a factor value only if the new value already exists as a level."
+          ],
+          "example": "music_genre[3] <- \"Pop\"\n\nmusic_genre[3]"
+        },
+        {
+          "heading": "Invalid Factor Level",
+          "content": [
+            "Assigning a value that is not a predefined level will result in NA."
+          ],
+          "example": "music_genre[3] <- \"Opera\"\n\nmusic_genre[3]"
+        },
+        {
+          "heading": "Add New Levels",
+          "content": [
+            "To assign new values, include them when defining factor levels."
+          ],
+          "example": "music_genre <- factor(\n  c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"),\n  levels = c(\"Classic\", \"Jazz\", \"Pop\", \"Rock\", \"Opera\")\n)\n\nmusic_genre[3] <- \"Opera\"\n\nmusic_genre[3]"
+        }
+      ]
+    },
+    "plot": {
+      "title": "R Plot",
+      "sections": [
+        {
+          "heading": "Plot",
+          "content": [
+            "The plot() function is used to draw points (markers) in a diagram.",
+            "It takes parameters for specifying points on the x-axis and y-axis."
+          ]
+        },
+        {
+          "heading": "Plot a Single Point",
+          "content": ["At its simplest, plot() can be used to draw one point."],
+          "example": "plot(1, 3)"
+        },
+        {
+          "heading": "Plot Multiple Points",
+          "content": [
+            "Use vectors to draw more than one point.",
+            "Both axes must contain the same number of values."
+          ],
+          "example": "plot(c(1, 8), c(3, 10))"
+        },
+        {
+          "heading": "Plot Many Points",
+          "content": [
+            "You can plot as many points as you like as long as the x and y vectors have equal length."
+          ],
+          "example": "plot(c(1, 2, 3, 4, 5), c(3, 7, 8, 9, 12))"
+        },
+        {
+          "heading": "Using Variables",
+          "content": ["Using variables makes plots easier to read and manage."],
+          "example": "x <- c(1, 2, 3, 4, 5)\ny <- c(3, 7, 8, 9, 12)\n\nplot(x, y)"
+        },
+        {
+          "heading": "Sequences of Points",
+          "content": ["Use the : operator to create a sequence of points."],
+          "example": "plot(1:10)"
+        },
+        {
+          "heading": "Draw a Line",
+          "content": [
+            "Use the type parameter with value \"l\" to connect points with a line."
+          ],
+          "example": "plot(1:10, type=\"l\")"
+        },
+        {
+          "heading": "Plot Labels",
+          "content": [
+            "Use main, xlab, and ylab to customize the plot title and axis labels."
+          ],
+          "example": "plot(1:10, main=\"My Graph\", xlab=\"The x-axis\", ylab=\"The y axis\")"
+        },
+        {
+          "heading": "Plot Color",
+          "content": [
+            "Use the col parameter to change the color of the points."
+          ],
+          "example": "plot(1:10, col=\"red\")"
+        },
+        {
+          "heading": "Point Size",
+          "content": [
+            "Use the cex parameter to change the size of the points."
+          ],
+          "example": "plot(1:10, cex=2)"
+        },
+        {
+          "heading": "Point Shape",
+          "content": [
+            "Use the pch parameter to change the shape of points.",
+            "Valid values range from 0 to 25."
+          ],
+          "example": "plot(1:10, pch=25, cex=2)"
+        }
+      ]
+    },
+    "line": {
+      "title": "R Line Graphs",
+      "sections": [
+        {
+          "heading": "Line Graphs",
+          "content": [
+            "A line graph has a line that connects all the points in a diagram."
+          ]
+        },
+        {
+          "heading": "Create a Line Graph",
+          "content": [
+            "Use the plot() function with the type parameter set to \"l\"."
+          ],
+          "example": "plot(1:10, type=\"l\")"
+        },
+        {
+          "heading": "Line Color",
+          "content": [
+            "The default line color is black.",
+            "Use the col parameter to change the color."
+          ],
+          "example": "plot(1:10, type=\"l\", col=\"blue\")"
+        },
+        {
+          "heading": "Line Width",
+          "content": [
+            "Use the lwd parameter to control the width of the line."
+          ],
+          "example": "plot(1:10, type=\"l\", lwd=2)"
+        },
+        {
+          "heading": "Line Styles",
+          "content": [
+            "Use the lty parameter to change the line style.",
+            "Valid values range from 0 to 6."
+          ],
+          "example": "plot(1:10, type=\"l\", lwd=5, lty=3)"
+        },
+        {
+          "heading": "Line Style Values",
+          "content": [
+            "0 removes the line.",
+            "1 displays a solid line.",
+            "2 displays a dashed line.",
+            "3 displays a dotted line.",
+            "4 displays a dot-dashed line.",
+            "5 displays a long dashed line.",
+            "6 displays a two dashed line."
+          ]
+        },
+        {
+          "heading": "Multiple Lines",
+          "content": [
+            "Use the lines() function to add additional lines to a graph."
+          ],
+          "example": "line1 <- c(1,2,3,4,5,10)\nline2 <- c(2,5,7,8,9,10)\n\nplot(line1, type=\"l\", col=\"blue\")\nlines(line2, type=\"l\", col=\"red\")"
+        }
+      ]
+    },
+    "scatterplot": {
+      "title": "R Scatter Plot",
+      "sections": [
+        {
+          "heading": "Scatter Plots",
+          "content": [
+            "A scatter plot is used to display the relationship between two numerical variables.",
+            "Each observation is represented by one dot in the diagram."
+          ]
+        },
+        {
+          "heading": "Create a Scatter Plot",
+          "content": [
+            "Use the plot() function with two vectors of equal length.",
+            "One vector represents the x-axis and the other represents the y-axis."
+          ],
+          "example": "x <- c(5,7,8,7,2,2,9,4,11,12,9,6)\ny <- c(99,86,87,88,111,103,87,94,78,77,85,86)\n\nplot(x, y)"
+        },
+        {
+          "heading": "Add Plot Labels",
+          "content": [
+            "Use main, xlab, and ylab to describe the scatter plot more clearly."
+          ],
+          "example": "plot(x, y, main=\"Observation of Cars\", xlab=\"Car age\", ylab=\"Car speed\")"
+        },
+        {
+          "heading": "Understanding the Observation",
+          "content": [
+            "The x-axis represents the age of the car.",
+            "The y-axis represents the speed of the car.",
+            "Scatter plots help identify possible relationships between variables."
+          ]
+        },
+        {
+          "heading": "Compare Scatter Plots",
+          "content": [
+            "Use the points() function to add another data set to the same plot.",
+            "Assign different colors to distinguish between observations."
+          ],
+          "example": "# Day one\nx1 <- c(5,7,8,7,2,2,9,4,11,12,9,6)\ny1 <- c(99,86,87,88,111,103,87,94,78,77,85,86)\n\n# Day two\nx2 <- c(2,2,8,1,15,8,12,9,7,3,11,4,7,14,12)\ny2 <- c(100,105,84,105,90,99,90,95,94,100,79,112,91,80,85)\n\nplot(x1, y1, main=\"Observation of Cars\", xlab=\"Car age\", ylab=\"Car speed\", col=\"red\", cex=2)\npoints(x2, y2, col=\"blue\", cex=2)"
+        },
+        {
+          "heading": "Scatter Plot Conclusion",
+          "content": [
+            "Comparing multiple scatter plots can help confirm trends.",
+            "In this example, newer cars tend to have higher speeds."
+          ]
+        }
+      ]
+    },
+    "pie-charts": {
+      "title": "R Pie Charts",
+      "sections": [
+        {
+          "heading": "Pie Charts",
+          "content": [
+            "A pie chart is a circular graphical representation of data.",
+            "Each slice represents a proportion of the whole."
+          ]
+        },
+        {
+          "heading": "Create a Pie Chart",
+          "content": ["Use the pie() function to draw a pie chart."],
+          "example": "# Create a vector of values\nx <- c(10,20,30,40)\n\npie(x)"
+        },
+        {
+          "heading": "Example Explained",
+          "content": [
+            "Each value in the vector represents one slice of the pie.",
+            "The size of each slice is calculated as value divided by the sum of all values."
+          ]
+        },
+        {
+          "heading": "Start Angle",
+          "content": [
+            "Use the init.angle parameter to change the starting angle of the pie chart.",
+            "The default angle is 0 degrees."
+          ],
+          "example": "pie(x, init.angle = 90)"
+        },
+        {
+          "heading": "Labels and Title",
+          "content": [
+            "Use the label parameter to add labels to the pie chart.",
+            "Use the main parameter to add a title."
+          ],
+          "example": "mylabel <- c(\"Apples\", \"Bananas\", \"Cherries\", \"Dates\")\n\npie(x, label = mylabel, main = \"Fruits\")"
+        },
+        {
+          "heading": "Pie Chart Colors",
+          "content": ["Use the col parameter to assign colors to each slice."],
+          "example": "colors <- c(\"blue\", \"yellow\", \"green\", \"black\")\n\npie(x, label = mylabel, main = \"Fruits\", col = colors)"
+        },
+        {
+          "heading": "Add a Legend",
+          "content": [
+            "Use the legend() function to explain the pie chart slices.",
+            "Legends can be positioned in various locations."
+          ],
+          "example": "pie(x, label = mylabel, main = \"Pie Chart\", col = colors)\n\nlegend(\"bottomright\", mylabel, fill = colors)"
+        },
+        {
+          "heading": "Legend Positions",
+          "content": [
+            "Available positions include bottomright, bottom, bottomleft, left, topleft, top, topright, right, and center."
+          ]
+        }
+      ]
+    },
+    "bars": {
+      "title": "R Bar Charts",
+      "sections": [
+        {
+          "heading": "Bar Charts",
+          "content": [
+            "A bar chart uses rectangular bars to visualize data.",
+            "Bars can be displayed vertically or horizontally, and their size represents values."
+          ]
+        },
+        {
+          "heading": "Create a Bar Chart",
+          "content": [
+            "Use the barplot() function to draw a vertical bar chart."
+          ],
+          "example": "# x-axis values\nx <- c(\"A\", \"B\", \"C\", \"D\")\n\n# y-axis values\ny <- c(2, 4, 6, 8)\n\nbarplot(y, names.arg = x)"
+        },
+        {
+          "heading": "Example Explained",
+          "content": [
+            "The x variable represents labels on the x-axis.",
+            "The y variable represents the numeric values.",
+            "The names.arg parameter assigns labels to each bar."
+          ]
+        },
+        {
+          "heading": "Bar Color",
+          "content": ["Use the col parameter to change the color of the bars."],
+          "example": "barplot(y, names.arg = x, col = \"red\")"
+        },
+        {
+          "heading": "Bar Texture",
+          "content": [
+            "Use the density parameter to change the texture of the bars."
+          ],
+          "example": "barplot(y, names.arg = x, density = 10)"
+        },
+        {
+          "heading": "Bar Width",
+          "content": [
+            "Use the width parameter to control the width of each bar."
+          ],
+          "example": "barplot(y, names.arg = x, width = c(1, 2, 3, 4))"
+        },
+        {
+          "heading": "Horizontal Bars",
+          "content": [
+            "Use the horiz parameter with TRUE to display bars horizontally."
+          ],
+          "example": "barplot(y, names.arg = x, horiz = TRUE)"
+        }
+      ]
+    },
+    "statistics": {
+      "title": "R Statistics",
+      "sections": [
+        {
+          "heading": "Statistics Introduction",
+          "content": [
+            "Statistics is the science of analyzing, reviewing, and drawing conclusions from data.",
+            "R was developed by statisticians and includes many built-in tools for statistical analysis."
+          ]
+        },
+        {
+          "heading": "Basic Statistical Concepts",
+          "content": [
+            "Mean, median, and mode",
+            "Minimum and maximum values",
+            "Percentiles",
+            "Variance and standard deviation",
+            "Covariance and correlation",
+            "Probability distributions"
+          ]
+        },
+        {
+          "heading": "Why Use R for Statistics",
+          "content": [
+            "R provides built-in statistical functions.",
+            "R supports advanced statistical analysis through libraries.",
+            "R is widely used in data science, research, and analytics."
+          ]
+        },
+        {
+          "heading": "Next Steps",
+          "content": [
+            "You will learn how to calculate and apply statistical measures in the following chapters.",
+            "If you are new to statistics, studying basic statistical theory will help you understand R statistics better."
+          ]
+        }
+      ]
+    },
+    "data-set": {
+      "title": "R Data Set",
+      "sections": [
+        {
+          "heading": "Data Set",
+          "content": [
+            "A data set is a collection of data, often presented in a table.",
+            "Data sets are commonly used for statistical analysis and visualization."
+          ]
+        },
+        {
+          "heading": "Built-in Data Set",
+          "content": [
+            "R includes built-in data sets for learning and analysis.",
+            "One popular built-in data set is mtcars, taken from the 1974 Motor Trend US magazine."
+          ]
+        },
+        {
+          "heading": "View the Data Set",
+          "content": ["Use the dataset name to print its contents."],
+          "example": "# Print the mtcars data set\nmtcars"
+        },
+        {
+          "heading": "Using Data Sets for Statistics",
+          "content": [
+            "The mtcars data set will be used in upcoming examples.",
+            "It contains information about fuel consumption and automobile performance."
+          ]
+        },
+        {
+          "heading": "Get Data Set Information",
+          "content": [
+            "Use the question mark operator to view documentation about a data set."
+          ],
+          "example": "?mtcars"
+        },
+        {
+          "heading": "Data Set Description",
+          "content": [
+            "The mtcars data set contains 32 observations on 11 numeric variables.",
+            "Each row represents a car model and each column represents a specific measurement."
+          ]
+        },
+        {
+          "heading": "Data Set Variables",
+          "content": [
+            "mpg: Miles per US gallon",
+            "cyl: Number of cylinders",
+            "disp: Displacement (cu.in.)",
+            "hp: Gross horsepower",
+            "drat: Rear axle ratio",
+            "wt: Weight (1000 lbs)",
+            "qsec: Quarter mile time",
+            "vs: Engine type (0 = V-shaped, 1 = straight)",
+            "am: Transmission (0 = automatic, 1 = manual)",
+            "gear: Number of forward gears",
+            "carb: Number of carburetors"
+          ]
+        }
+      ]
+    },
+    "max-min": {
+      "title": "R Max and Min",
+      "sections": [
+        {
+          "heading": "Max and Min",
+          "content": [
+            "The max() and min() functions are used to find the highest and lowest values in a data set.",
+            "They are commonly used in statistical analysis."
+          ]
+        },
+        {
+          "heading": "Find Maximum and Minimum Values",
+          "content": [
+            "Use max() and min() to find the largest and smallest values in a variable."
+          ],
+          "example": "Data_Cars <- mtcars\n\nmax(Data_Cars$hp)\nmin(Data_Cars$hp)"
+        },
+        {
+          "heading": "Understanding the Result",
+          "content": [
+            "The largest horsepower value in the data set is 335.",
+            "The smallest horsepower value in the data set is 52."
+          ]
+        },
+        {
+          "heading": "Find Index Positions",
+          "content": [
+            "Use which.max() and which.min() to find the index of maximum and minimum values."
+          ],
+          "example": "which.max(Data_Cars$hp)\nwhich.min(Data_Cars$hp)"
+        },
+        {
+          "heading": "Find Row Names",
+          "content": [
+            "Combine which.max() and which.min() with rownames() to identify the observation names."
+          ],
+          "example": "rownames(Data_Cars)[which.max(Data_Cars$hp)]\nrownames(Data_Cars)[which.min(Data_Cars$hp)]"
+        },
+        {
+          "heading": "Max and Min as Outliers",
+          "content": [
+            "Maximum and minimum values can help detect outliers.",
+            "Outliers are data points that differ significantly from other observations."
+          ]
+        },
+        {
+          "heading": "Outlier Examples",
+          "content": [
+            "An unusually high number of gears.",
+            "A horsepower value of zero.",
+            "An extremely high vehicle weight."
+          ]
+        }
+      ]
+    },
+    "mean-median-mode": {
+      "title": "R Mean",
+      "sections": [
+        {
+          "heading": "Mean",
+          "content": [
+            "The mean is the average value of a set of numbers.",
+            "It is calculated by dividing the sum of all values by the number of values."
+          ]
+        },
+        {
+          "heading": "Mean in Statistics",
+          "content": [
+            "Mean is one of the three most common measures of central tendency.",
+            "The other two are median and mode."
+          ]
+        },
+        {
+          "heading": "Calculate the Mean",
+          "content": [
+            "Use the mean() function to calculate the average value of a variable."
+          ],
+          "example": "Data_Cars <- mtcars\n\nmean(Data_Cars$wt)"
+        },
+        {
+          "heading": "Understanding the Result",
+          "content": [
+            "The result represents the average weight of cars in the data set.",
+            "In this example, the mean weight is approximately 3.217."
+          ]
+        }
+      ]
+    },
+    "percentiles": {
+      "title": "R Percentiles",
+      "sections": [
+        {
+          "heading": "Percentiles",
+          "content": [
+            "Percentiles describe the value below which a given percentage of observations fall.",
+            "They are commonly used to understand the distribution of data."
+          ]
+        },
+        {
+          "heading": "Percentiles in Practice",
+          "content": [
+            "Percentiles help determine how values are spread within a data set.",
+            "For example, the 75th percentile means 75% of the values are lower than or equal to that value."
+          ]
+        },
+        {
+          "heading": "Calculate a Specific Percentile",
+          "content": [
+            "Use the quantile() function to calculate a specific percentile.",
+            "Specify the desired percentile using the c() function."
+          ],
+          "example": "Data_Cars <- mtcars\n\nquantile(Data_Cars$wt, c(0.75))"
+        },
+        {
+          "heading": "Multiple Percentiles",
+          "content": [
+            "If no percentile is specified, quantile() returns the 0th, 25th, 50th, 75th, and 100th percentiles."
+          ],
+          "example": "quantile(Data_Cars$wt)"
+        },
+        {
+          "heading": "Quartiles",
+          "content": [
+            "Quartiles divide the data into four equal parts.",
+            "The first quartile represents 25%, the second 50%, the third 75%, and the fourth 100% of the data."
+          ]
+        }
+      ]
     }
   }
 }

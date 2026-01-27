@@ -1,0 +1,143 @@
+{
+    "course": {
+        "id": "ajax_complete",
+        "title": "AJAX Complete Tutorial",
+        "description": "A complete end-to-end guide to AJAX covering XMLHttpRequest, server communication, XML, PHP, ASP, databases, and real-world examples."
+    },
+    "lesson": {
+        "id": "ajax_master_lesson",
+        "title": "AJAX, XMLHttpRequest, XML, and Server Integration",
+        "content": {
+            "introduction": {
+                "overview": "AJAX (Asynchronous JavaScript And XML) enables asynchronous communication between a web browser and a server, allowing parts of a web page to update without reloading.",
+                "benefits": [
+                    "Read data from a web server after page load",
+                    "Update parts of a web page dynamically",
+                    "Send data to a server in the background"
+                ]
+            },
+            "xmlhttprequest_object": {
+                "overview": "The XMLHttpRequest object is the foundation of classic AJAX and is supported by all modern browsers.",
+                "creation_syntax": "const xhttp = new XMLHttpRequest();",
+                "core_steps": [
+                    "Create the XMLHttpRequest object",
+                    "Define a callback function",
+                    "Open the request",
+                    "Send the request"
+                ]
+            },
+            "sending_requests": {
+                "methods": {
+                    "GET": {
+                        "description": "Used for fast and simple data retrieval.",
+                        "example": "xhttp.open(\"GET\", \"ajax_info.txt\", true);\nxhttp.send();"
+                    },
+                    "POST": {
+                        "description": "Used for sending large or sensitive data.",
+                        "example": "xhttp.open(\"POST\", \"ajax_test.asp\");\nxhttp.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");\nxhttp.send(\"fname=Henry&lname=Ford\");"
+                    }
+                },
+                "asynchronous_note": "Asynchronous requests are recommended. Synchronous requests can block the browser and are discouraged."
+            },
+            "callbacks_and_ready_state": {
+                "onload": "Triggered when the request has completed successfully.",
+                "onreadystatechange": {
+                    "description": "Triggered whenever the readyState changes.",
+                    "ready_states": {
+                        "0": "Request not initialized",
+                        "1": "Server connection established",
+                        "2": "Request received",
+                        "3": "Processing request",
+                        "4": "Request finished and response is ready"
+                    }
+                }
+            },
+            "server_response_handling": {
+                "properties": {
+                    "responseText": "Returns the response as a string",
+                    "responseXML": "Returns the response as an XML DOM object"
+                },
+                "methods": [
+                    "getResponseHeader()",
+                    "getAllResponseHeaders()"
+                ]
+            },
+            "xml_processing": {
+                "xml_file_used": "cd_catalog.xml",
+                "applications": [
+                    {
+                        "title": "Display XML Data in HTML Table",
+                        "description": "Loop through XML nodes and display ARTIST and TITLE values in an HTML table."
+                    },
+                    {
+                        "title": "Display First XML Record",
+                        "description": "Display the first CD record inside an HTML element."
+                    },
+                    {
+                        "title": "Navigate XML Records",
+                        "description": "Navigate between XML nodes using next() and previous() functions."
+                    },
+                    {
+                        "title": "Click to Display Album Information",
+                        "description": "Display album details dynamically when a CD is clicked."
+                    }
+                ]
+            },
+            "server_side_examples": {
+                "php": {
+                    "use_case": "Live search suggestions while typing.",
+                    "endpoint": "gethint.php",
+                    "description": "PHP script filters names and returns matching suggestions."
+                },
+                "asp": {
+                    "use_case": "Live search suggestions using ASP.",
+                    "endpoint": "gethint.asp",
+                    "description": "ASP script searches name array and returns results."
+                }
+            },
+            "database_integration": {
+                "overview": "AJAX can retrieve database records dynamically without reloading the page.",
+                "frontend_function": "showCustomer(str)",
+                "server_file": "getcustomer.php",
+                "database": "MySQL",
+                "output": "HTML table with customer information"
+            },
+            "ajax_examples_catalog": {
+                "simple_examples": [
+                    "Load TXT file with XMLHttpRequest",
+                    "XMLHttpRequest with callback function"
+                ],
+                "header_examples": [
+                    "Retrieve all response headers",
+                    "Retrieve specific response headers"
+                ],
+                "xml_examples": [
+                    "Load XML file with AJAX",
+                    "Display XML data dynamically"
+                ],
+                "server_examples": [
+                    "Retrieve data from PHP",
+                    "Retrieve data from ASP"
+                ],
+                "database_examples": [
+                    "Retrieve database content with AJAX"
+                ],
+                "applications": [
+                    "CD Catalog Viewer",
+                    "Interactive XML Navigation",
+                    "Dynamic Content Loading"
+                ]
+            },
+            "modern_alternative": {
+                "fetch_api": "Modern browsers support the Fetch API, which provides a simpler and cleaner alternative to XMLHttpRequest."
+            },
+            "key_takeaways": [
+                "AJAX enables asynchronous server communication",
+                "XMLHttpRequest is the foundation of classic AJAX",
+                "AJAX works with XML, PHP, ASP, and databases",
+                "Dynamic updates improve user experience",
+                "Fetch API is the modern replacement for XMLHttpRequest"
+            ]
+        }
+    }
+}

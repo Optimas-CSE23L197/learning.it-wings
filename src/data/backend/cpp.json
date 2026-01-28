@@ -1015,6 +1015,1892 @@
           }
         }
       ]
+    },
+    "cpp_data_structures_and_stl": {
+      "title": "C++ Data Structures and STL",
+      "overview": {
+        "definition": "Data structures are ways to store and organize data efficiently.",
+        "purpose": "They allow programs to manage large amounts of data effectively.",
+        "stl_meaning": "STL stands for Standard Template Library."
+      },
+      "stl_description": [
+        "STL is a powerful C++ library that provides ready-made data structures and algorithms.",
+        "It helps write efficient, reusable, and optimized code.",
+        "Choosing the right data structure and algorithm improves performance."
+      ],
+      "core_components_of_stl": {
+        "containers": "Store and manage data (e.g., vector, list, map).",
+        "iterators": "Provide a way to access and traverse container elements.",
+        "algorithms": "Perform operations like sorting, searching, and modifying data."
+      },
+      "relationship_explained": [
+        "Containers hold data",
+        "Iterators access data inside containers",
+        "Algorithms work on data through iterators"
+      ],
+      "common_stl_data_structures": [
+        {
+          "name": "Vector",
+          "description": "Dynamic array that allows fast index-based access.",
+          "access": "By index",
+          "order": "Maintains insertion order",
+          "best_use": "When fast access and dynamic resizing are needed",
+          "header": "<vector>"
+        },
+        {
+          "name": "List",
+          "description": "Doubly linked list allowing insertion/removal at both ends.",
+          "access": "Sequential only (no index access)",
+          "order": "Insertion order",
+          "best_use": "Frequent insertions and deletions",
+          "header": "<list>"
+        },
+        {
+          "name": "Stack",
+          "description": "LIFO (Last In, First Out) structure.",
+          "access": "Top element only",
+          "order": "LIFO",
+          "best_use": "Undo operations, recursion, expression evaluation",
+          "header": "<stack>"
+        },
+        {
+          "name": "Queue",
+          "description": "FIFO (First In, First Out) structure.",
+          "access": "Front and back only",
+          "order": "FIFO",
+          "best_use": "Task scheduling, buffering",
+          "header": "<queue>"
+        },
+        {
+          "name": "Deque",
+          "description": "Double-ended queue allowing insertion/removal at both ends.",
+          "access": "By index",
+          "order": "Insertion order",
+          "best_use": "Flexible insertion/removal at both ends",
+          "header": "<deque>"
+        },
+        {
+          "name": "Set",
+          "description": "Stores unique elements in sorted order.",
+          "access": "By value",
+          "order": "Sorted automatically",
+          "best_use": "When uniqueness and ordering matter",
+          "header": "<set>"
+        },
+        {
+          "name": "Map",
+          "description": "Stores key-value pairs with unique keys.",
+          "access": "By key",
+          "order": "Sorted by key",
+          "best_use": "Fast lookups using keys",
+          "header": "<map>"
+        }
+      ],
+      "header_includes_example": [
+        "#include <vector>",
+        "#include <list>",
+        "#include <set>",
+        "#include <map>",
+        "#include <stack>",
+        "#include <queue>"
+      ],
+      "example_vector_usage": {
+        "code": [
+          "vector<string> cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};",
+          "for (string car : cars) {",
+          "  cout << car << \"\\n\";",
+          "}"
+        ],
+        "concepts_used": [
+          "vector container",
+          "range-based loop",
+          "STL container iteration"
+        ]
+      },
+      "why_data_structures_and_algorithms_matter": [
+        "Efficient data storage",
+        "Faster program execution",
+        "Scalability for large datasets",
+        "Cleaner and more maintainable code"
+      ],
+      "exam_key_points": [
+        "STL = Containers + Iterators + Algorithms",
+        "Data structures store data",
+        "Algorithms manipulate data",
+        "Choosing the right structure improves performance"
+      ],
+      "common_exam_question": {
+        "question": "What is the purpose of data structures in C++?",
+        "correct_answer": "To store and organize data"
+      }
+    },
+    "cpp_vector": {
+      "title": "C++ Vector (Dynamic Array)",
+      "overview": [
+        "A vector is a resizable array that can grow or shrink dynamically.",
+        "Stores multiple elements of the same data type in contiguous memory.",
+        "Provides fast random access using index numbers."
+      ],
+      "header": {
+        "library": "<vector>",
+        "include_example": "#include <vector>"
+      },
+      "characteristics": [
+        "Dynamic size",
+        "Contiguous memory layout",
+        "Supports random (index-based) access",
+        "Fast access: O(1)",
+        "Optimized for insertion/removal at the end"
+      ],
+      "sections": [
+        {
+          "heading": "Create a Vector",
+          "description": "Define a vector by specifying the element type.",
+          "examples": [
+            {
+              "description": "Empty vector",
+              "code": "vector<string> cars;"
+            },
+            {
+              "description": "Vector with initial elements",
+              "code": "vector<string> cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};"
+            }
+          ],
+          "notes": [
+            "The data type of a vector cannot be changed after declaration."
+          ]
+        },
+        {
+          "heading": "Access Elements",
+          "description": "Vectors support index-based access.",
+          "methods": ["operator[]", "at()", "front()", "back()"],
+          "examples": [
+            {
+              "description": "Access by index",
+              "code": "cars[0]; cars[1];"
+            },
+            {
+              "description": "Safe access using at()",
+              "code": "cars.at(1);"
+            },
+            {
+              "description": "Access first and last elements",
+              "code": "cars.front(); cars.back();"
+            }
+          ],
+          "notes": ["at() throws an exception if index is out of range."]
+        },
+        {
+          "heading": "Modify Elements",
+          "description": "Change elements using index access.",
+          "examples": [
+            {
+              "description": "Modify using index",
+              "code": "cars[0] = \"Opel\";"
+            },
+            {
+              "description": "Modify using at()",
+              "code": "cars.at(0) = \"Opel\";"
+            }
+          ]
+        },
+        {
+          "heading": "Add Elements",
+          "description": "Vectors grow dynamically by adding elements at the end.",
+          "methods": ["push_back()"],
+          "examples": [
+            {
+              "description": "Add elements",
+              "code": "cars.push_back(\"Tesla\"); cars.push_back(\"VW\");"
+            }
+          ],
+          "notes": [
+            "Insertion at the end is efficient.",
+            "Frequent insertions in the middle are costly."
+          ]
+        },
+        {
+          "heading": "Remove Elements",
+          "description": "Remove elements from the end of the vector.",
+          "methods": ["pop_back()"],
+          "examples": [
+            {
+              "description": "Remove last element",
+              "code": "cars.pop_back();"
+            }
+          ]
+        },
+        {
+          "heading": "Vector Size and State",
+          "methods": ["size()", "empty()"],
+          "examples": [
+            {
+              "description": "Get number of elements",
+              "code": "cars.size();"
+            },
+            {
+              "description": "Check if vector is empty",
+              "code": "cars.empty();"
+            }
+          ]
+        },
+        {
+          "heading": "Loop Through a Vector",
+          "description": "Vectors support index-based and range-based loops.",
+          "examples": [
+            {
+              "description": "Index-based loop",
+              "code": "for (int i = 0; i < cars.size(); i++) { cout << cars[i]; }"
+            },
+            {
+              "description": "Range-based loop (C++11+)",
+              "code": "for (string car : cars) { cout << car; }"
+            }
+          ]
+        }
+      ],
+      "comparison_note": {
+        "vector_vs_array": [
+          "Vector: dynamic size, safer access, rich member functions",
+          "Array: fixed size, no built-in size or bounds checking"
+        ],
+        "vector_vs_deque": [
+          "Vector: fast random access, optimized for back insertion",
+          "Deque: allows fast insertion/removal at both ends"
+        ]
+      },
+      "when_to_use": [
+        "When you need fast random access",
+        "When the size may change dynamically",
+        "When most insertions/removals happen at the end"
+      ],
+      "time_complexity": {
+        "access": "O(1)",
+        "insert_end": "O(1) amortized",
+        "insert_middle": "O(n)",
+        "remove_end": "O(1)",
+        "search": "O(n)"
+      }
+    },
+    "cpp_list": {
+      "title": "C++ List (Doubly Linked List)",
+      "overview": [
+        "A list stores multiple elements of the same type and can grow or shrink dynamically.",
+        "It allows fast insertion and removal at both the beginning and the end.",
+        "Unlike vectors, lists do NOT support random (index-based) access."
+      ],
+      "header": {
+        "library": "<list>",
+        "include_example": "#include <list>"
+      },
+      "characteristics": [
+        "Doubly linked list",
+        "No index-based access",
+        "Fast insertion/removal at front and back",
+        "Bidirectional traversal",
+        "Dynamic size"
+      ],
+      "sections": [
+        {
+          "heading": "Create a List",
+          "description": "Define a list by specifying the element type.",
+          "examples": [
+            {
+              "description": "Empty list declaration",
+              "code": "list<string> cars;"
+            },
+            {
+              "description": "List with initial elements",
+              "code": "list<string> cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};"
+            }
+          ],
+          "notes": [
+            "The data type of a list cannot be changed after declaration."
+          ]
+        },
+        {
+          "heading": "Access Elements",
+          "description": "Lists do not support index access. You can only access the first or last element.",
+          "methods": ["front()", "back()"],
+          "examples": [
+            {
+              "description": "Access first and last elements",
+              "code": "cars.front(); cars.back();"
+            }
+          ]
+        },
+        {
+          "heading": "Modify Elements",
+          "description": "You can modify the first or last element directly.",
+          "examples": [
+            {
+              "description": "Modify first and last elements",
+              "code": "cars.front() = \"Opel\"; cars.back() = \"Toyota\";"
+            }
+          ]
+        },
+        {
+          "heading": "Add Elements",
+          "description": "Insert elements at either end of the list.",
+          "methods": ["push_front()", "push_back()"],
+          "examples": [
+            {
+              "description": "Add elements to both ends",
+              "code": "cars.push_front(\"Tesla\"); cars.push_back(\"VW\");"
+            }
+          ]
+        },
+        {
+          "heading": "Remove Elements",
+          "description": "Remove elements from either end of the list.",
+          "methods": ["pop_front()", "pop_back()"],
+          "examples": [
+            {
+              "description": "Remove elements from both ends",
+              "code": "cars.pop_front(); cars.pop_back();"
+            }
+          ]
+        },
+        {
+          "heading": "List Size and State",
+          "methods": ["size()", "empty()"],
+          "examples": [
+            {
+              "description": "Get number of elements",
+              "code": "cars.size();"
+            },
+            {
+              "description": "Check if list is empty",
+              "code": "cars.empty();"
+            }
+          ]
+        },
+        {
+          "heading": "Loop Through a List",
+          "description": "Lists must be iterated using range-based loops or iterators.",
+          "examples": [
+            {
+              "description": "Range-based for loop",
+              "code": "for (string car : cars) { cout << car << \"\\n\"; }"
+            }
+          ],
+          "notes": ["Traditional index-based loops do NOT work with lists."]
+        }
+      ],
+      "comparison_note": {
+        "list_vs_vector": [
+          "List: fast insert/remove at both ends, no random access",
+          "Vector: fast random access, optimized for insertion/removal at the end"
+        ]
+      },
+      "when_to_use": [
+        "Frequent insertions and deletions in the middle or at both ends",
+        "When random access is not required",
+        "Implementing queues, deques, or custom data pipelines"
+      ],
+      "time_complexity": {
+        "access_front_back": "O(1)",
+        "insert_front_back": "O(1)",
+        "remove_front_back": "O(1)",
+        "search": "O(n)"
+      }
+    },
+    "cpp_stack": {
+      "title": "C++ Stack (LIFO Data Structure)",
+      "overview": [
+        "A stack stores elements using LIFO order (Last In, First Out).",
+        "Elements are added to and removed from the top of the stack.",
+        "Only the top element is accessible."
+      ],
+      "header": {
+        "library": "<stack>",
+        "include_example": "#include <stack>"
+      },
+      "characteristics": [
+        "LIFO (Last In, First Out)",
+        "No index-based access",
+        "Insertion only at the top",
+        "Removal only from the top",
+        "Dynamic size"
+      ],
+      "sections": [
+        {
+          "heading": "Create a Stack",
+          "description": "Define a stack by specifying the element type.",
+          "examples": [
+            {
+              "description": "Empty stack declaration",
+              "code": "stack<string> cars;"
+            }
+          ],
+          "notes": [
+            "Stack elements cannot be initialized at declaration time.",
+            "The data type of a stack cannot be changed after declaration."
+          ]
+        },
+        {
+          "heading": "Add Elements",
+          "description": "Elements are added to the top of the stack using push().",
+          "methods": ["push()"],
+          "examples": [
+            {
+              "description": "Add elements to the stack",
+              "code": "cars.push(\"Volvo\"); cars.push(\"BMW\"); cars.push(\"Ford\");"
+            }
+          ]
+        },
+        {
+          "heading": "Access Elements",
+          "description": "Only the top element can be accessed.",
+          "methods": ["top()"],
+          "examples": [
+            {
+              "description": "Access top element",
+              "code": "cars.top();"
+            }
+          ]
+        },
+        {
+          "heading": "Modify the Top Element",
+          "description": "You can change the value of the top element directly.",
+          "examples": [
+            {
+              "description": "Modify top element",
+              "code": "cars.top() = \"Tesla\";"
+            }
+          ]
+        },
+        {
+          "heading": "Remove Elements",
+          "description": "Elements are removed from the top using pop().",
+          "methods": ["pop()"],
+          "examples": [
+            {
+              "description": "Remove top element",
+              "code": "cars.pop();"
+            }
+          ]
+        },
+        {
+          "heading": "Stack Size and State",
+          "methods": ["size()", "empty()"],
+          "examples": [
+            {
+              "description": "Get number of elements",
+              "code": "cars.size();"
+            },
+            {
+              "description": "Check if stack is empty",
+              "code": "cars.empty();"
+            }
+          ]
+        }
+      ],
+      "comparison_note": "Unlike a queue (FIFO), a stack follows LIFO where the most recently added element is accessed first.",
+      "when_to_use": [
+        "Undo/redo functionality",
+        "Function call management (call stack)",
+        "Expression evaluation",
+        "Backtracking algorithms",
+        "Reversing data"
+      ]
+    },
+    "cpp_queue": {
+      "title": "C++ Queue (FIFO Data Structure)",
+      "overview": [
+        "A queue stores elements using FIFO order (First In, First Out).",
+        "Elements are added at the back and removed from the front.",
+        "Random access by index is not allowed."
+      ],
+      "header": {
+        "library": "<queue>",
+        "include_example": "#include <queue>"
+      },
+      "characteristics": [
+        "FIFO (First In, First Out)",
+        "No index-based access",
+        "Insertion at the back only",
+        "Removal from the front only",
+        "Dynamic size"
+      ],
+      "sections": [
+        {
+          "heading": "Create a Queue",
+          "description": "Define a queue by specifying the element type.",
+          "examples": [
+            {
+              "description": "Empty queue declaration",
+              "code": "queue<string> cars;"
+            }
+          ],
+          "notes": [
+            "Queue elements cannot be initialized at declaration time.",
+            "The data type of a queue cannot be changed after declaration."
+          ]
+        },
+        {
+          "heading": "Add Elements",
+          "description": "Elements are added to the back of the queue using push().",
+          "methods": ["push()"],
+          "examples": [
+            {
+              "description": "Add elements to the queue",
+              "code": "cars.push(\"Volvo\"); cars.push(\"BMW\"); cars.push(\"Ford\");"
+            }
+          ]
+        },
+        {
+          "heading": "Access Elements",
+          "description": "Only the front and back elements can be accessed.",
+          "methods": ["front()", "back()"],
+          "examples": [
+            {
+              "description": "Access front element",
+              "code": "cars.front();"
+            },
+            {
+              "description": "Access back element",
+              "code": "cars.back();"
+            }
+          ]
+        },
+        {
+          "heading": "Modify Front and Back Elements",
+          "description": "You can change the values of the front or back elements directly.",
+          "examples": [
+            {
+              "description": "Modify front element",
+              "code": "cars.front() = \"Tesla\";"
+            },
+            {
+              "description": "Modify back element",
+              "code": "cars.back() = \"VW\";"
+            }
+          ]
+        },
+        {
+          "heading": "Remove Elements",
+          "description": "Elements are removed from the front using pop().",
+          "methods": ["pop()"],
+          "examples": [
+            {
+              "description": "Remove front element",
+              "code": "cars.pop();"
+            }
+          ]
+        },
+        {
+          "heading": "Queue Size and State",
+          "methods": ["size()", "empty()"],
+          "examples": [
+            {
+              "description": "Get number of elements",
+              "code": "cars.size();"
+            },
+            {
+              "description": "Check if queue is empty",
+              "code": "cars.empty();"
+            }
+          ]
+        }
+      ],
+      "comparison_note": "Unlike a deque, a queue only allows insertion at the back and removal from the front.",
+      "when_to_use": [
+        "When processing tasks in order of arrival",
+        "When FIFO behavior is required",
+        "When random access is unnecessary",
+        "When modeling real-world queues (tasks, requests, buffers)"
+      ]
+    },
+    "cpp_deque": {
+      "title": "C++ Deque (Double-Ended Queue)",
+      "overview": [
+        "A deque allows insertion and removal of elements at both the front and the back.",
+        "Elements can be accessed by index, unlike queues.",
+        "It combines features of vectors and queues."
+      ],
+      "header": {
+        "library": "<deque>",
+        "include_example": "#include <deque>"
+      },
+      "characteristics": [
+        "Insertion and removal at both ends",
+        "Indexed access supported",
+        "Dynamic size",
+        "Efficient front and back operations"
+      ],
+      "sections": [
+        {
+          "heading": "Create a Deque",
+          "description": "Define a deque by specifying the element type.",
+          "examples": [
+            {
+              "description": "Empty deque declaration",
+              "code": "deque<string> cars;"
+            },
+            {
+              "description": "Initialize deque with values",
+              "code": "deque<string> cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};"
+            }
+          ]
+        },
+        {
+          "heading": "Access Elements",
+          "description": "Access elements using index, front/back, or at().",
+          "examples": [
+            {
+              "description": "Index-based access",
+              "code": "cars[0]; // First element"
+            },
+            {
+              "description": "Front and back access",
+              "code": "cars.front(); cars.back();"
+            },
+            {
+              "description": "Bounds-checked access",
+              "code": "cars.at(1);"
+            }
+          ]
+        },
+        {
+          "heading": "Modify Elements",
+          "description": "Change element values using index or at().",
+          "examples": [
+            {
+              "description": "Modify using index",
+              "code": "cars[0] = \"Opel\";"
+            },
+            {
+              "description": "Safer modification using at()",
+              "code": "cars.at(0) = \"Opel\";"
+            }
+          ]
+        },
+        {
+          "heading": "Add Elements",
+          "methods": ["push_front()", "push_back()"],
+          "examples": [
+            {
+              "description": "Add to front",
+              "code": "cars.push_front(\"Tesla\");"
+            },
+            {
+              "description": "Add to back",
+              "code": "cars.push_back(\"VW\");"
+            }
+          ]
+        },
+        {
+          "heading": "Remove Elements",
+          "methods": ["pop_front()", "pop_back()"],
+          "examples": [
+            {
+              "description": "Remove from front",
+              "code": "cars.pop_front();"
+            },
+            {
+              "description": "Remove from back",
+              "code": "cars.pop_back();"
+            }
+          ]
+        },
+        {
+          "heading": "Deque Size and State",
+          "methods": ["size()", "empty()"],
+          "examples": [
+            {
+              "description": "Get number of elements",
+              "code": "cars.size();"
+            },
+            {
+              "description": "Check if deque is empty",
+              "code": "cars.empty();"
+            }
+          ]
+        },
+        {
+          "heading": "Loop Through a Deque",
+          "description": "Iterate using index-based loops or range-based for loops.",
+          "examples": [
+            {
+              "description": "Index-based loop",
+              "code": "for (int i = 0; i < cars.size(); i++) { cout << cars[i]; }"
+            },
+            {
+              "description": "Range-based loop (C++11+)",
+              "code": "for (string car : cars) { cout << car; }"
+            }
+          ]
+        }
+      ],
+      "comparison_note": "Unlike a queue, a deque allows insertion and removal from both ends.",
+      "when_to_use": [
+        "When you need fast insertion/removal at both ends",
+        "When indexed access is required",
+        "When a queue is too restrictive",
+        "When flexibility is more important than strict ordering rules"
+      ]
+    },
+    "cpp_sets": {
+      "title": "C++ Sets",
+      "overview": [
+        "A set stores unique elements.",
+        "Elements are automatically sorted in ascending order by default.",
+        "Duplicate values are ignored.",
+        "Elements cannot be accessed by index."
+      ],
+      "header": {
+        "library": "<set>",
+        "include_example": "#include <set>"
+      },
+      "characteristics": [
+        "All elements are unique",
+        "Automatically sorted",
+        "Values cannot be modified directly",
+        "Access is done via iteration or lookup, not indexing"
+      ],
+      "sections": [
+        {
+          "heading": "Create a Set",
+          "description": "Create a set by specifying the type of elements it will store.",
+          "examples": [
+            {
+              "description": "Empty set declaration",
+              "code": "set<string> cars;"
+            },
+            {
+              "description": "Initialize set with values",
+              "code": "set<string> cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};"
+            }
+          ]
+        },
+        {
+          "heading": "Automatic Sorting",
+          "description": "Elements are sorted automatically when inserted.",
+          "examples": [
+            {
+              "description": "Sorted string output",
+              "output_example": ["BMW", "Ford", "Mazda", "Volvo"]
+            },
+            {
+              "description": "Sorted integer output",
+              "output_example": [1, 2, 3, 5, 7, 9]
+            }
+          ]
+        },
+        {
+          "heading": "Descending Order",
+          "description": "Use the greater<type> functor to sort in descending order.",
+          "example": {
+            "code": "set<int, greater<int>> numbers = {1, 7, 3, 2, 5, 9};"
+          }
+        },
+        {
+          "heading": "Unique Elements",
+          "description": "Duplicate values are ignored automatically.",
+          "example": {
+            "code": "set<string> cars = {\"Volvo\", \"BMW\", \"Ford\", \"BMW\", \"Mazda\"};"
+          }
+        },
+        {
+          "heading": "Add Elements",
+          "method": "insert()",
+          "example": {
+            "code": "cars.insert(\"Tesla\");"
+          }
+        },
+        {
+          "heading": "Remove Elements",
+          "methods": ["erase()", "clear()"],
+          "examples": [
+            {
+              "description": "Remove specific elements",
+              "code": "cars.erase(\"Volvo\");"
+            },
+            {
+              "description": "Remove all elements",
+              "code": "cars.clear();"
+            }
+          ]
+        },
+        {
+          "heading": "Set Size and State",
+          "methods": ["size()", "empty()"],
+          "examples": [
+            {
+              "description": "Get number of elements",
+              "code": "cars.size();"
+            },
+            {
+              "description": "Check if set is empty",
+              "code": "cars.empty();"
+            }
+          ]
+        },
+        {
+          "heading": "Loop Through a Set",
+          "description": "Iterate using a range-based for loop or iterators.",
+          "example": {
+            "code": "for (string car : cars) { cout << car << \"\\n\"; }"
+          }
+        }
+      ],
+      "when_to_use": [
+        "When all elements must be unique",
+        "When sorted data is required",
+        "When fast lookup, insertion, and deletion are needed",
+        "When element order matters but indexing does not"
+      ]
+    },
+    "cpp_maps": {
+      "title": "C++ Maps",
+      "overview": [
+        "A map stores elements as key/value pairs.",
+        "Each key is unique and used to access its corresponding value.",
+        "Elements are automatically sorted in ascending order by key."
+      ],
+      "header": {
+        "library": "<map>",
+        "include_example": "#include <map>"
+      },
+      "sections": [
+        {
+          "heading": "Create a Map",
+          "description": "To create a map, specify the key type and value type using angle brackets.",
+          "examples": [
+            {
+              "description": "Empty map declaration",
+              "code": "map<string, int> people;"
+            },
+            {
+              "description": "Initialize map with values",
+              "code": "map<string, int> people = { {\"John\", 32}, {\"Adele\", 45}, {\"Bo\", 29} };"
+            }
+          ]
+        },
+        {
+          "heading": "Access Map Elements",
+          "description": [
+            "Map elements cannot be accessed using index numbers.",
+            "They are accessed using their keys."
+          ],
+          "examples": [
+            {
+              "description": "Access using square brackets",
+              "code": "cout << people[\"John\"];"
+            },
+            {
+              "description": "Access using at()",
+              "code": "cout << people.at(\"Adele\");"
+            }
+          ],
+          "notes": [
+            "Using operator[] creates a new element if the key does not exist.",
+            "The at() function throws an exception if the key does not exist."
+          ]
+        },
+        {
+          "heading": "Change Values",
+          "description": "Values associated with a key can be modified after creation.",
+          "examples": [
+            {
+              "description": "Change value using []",
+              "code": "people[\"John\"] = 50;"
+            },
+            {
+              "description": "Change value using at() (safer)",
+              "code": "people.at(\"John\") = 50;"
+            }
+          ]
+        },
+        {
+          "heading": "Add Elements",
+          "description": "New key/value pairs can be added dynamically.",
+          "examples": [
+            {
+              "description": "Add element using []",
+              "code": "people[\"Jenny\"] = 27;"
+            }
+          ]
+        },
+        {
+          "heading": "Map Characteristics",
+          "points": [
+            "Keys are unique",
+            "Elements are automatically sorted by key",
+            "Access time is logarithmic (balanced tree structure)",
+            "Ideal for fast lookup by key"
+          ]
+        },
+        {
+          "heading": "When to Use Maps",
+          "use_cases": [
+            "Storing lookup tables",
+            "Associating names with values",
+            "Dictionaries and configuration data",
+            "Any situation where data is identified by a unique key"
+          ]
+        }
+      ]
+    },
+    "cpp_iterators": {
+      "title": "C++ Iterators",
+      "overview": [
+        "Iterators are used to access and loop through elements of data structures such as vectors, lists, and sets.",
+        "They work like pointers by referring to a position in a container rather than returning a value.",
+        "The term iterator comes from the concept of iterating, which means looping."
+      ],
+      "sections": [
+        {
+          "heading": "Basic Iterator Example",
+          "description": "This example shows how to loop through a vector using an iterator.",
+          "example": {
+            "code": "vector<string> cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\n\nvector<string>::iterator it;\n\nfor (it = cars.begin(); it != cars.end(); ++it) {\n  cout << *it << \"\\n\";\n}"
+          },
+          "explanation": [
+            "A vector of strings is created to store car names.",
+            "An iterator (it) is declared for the vector.",
+            "cars.begin() points to the first element in the vector.",
+            "cars.end() points to one position after the last element.",
+            "++it moves the iterator forward.",
+            "*it dereferences the iterator to access the value it points to."
+          ]
+        },
+        {
+          "heading": "Iterator Type Matching",
+          "notes": [
+            "The iterator type must match the container type.",
+            "For example, vector<string>::iterator is required for a vector<string>."
+          ]
+        },
+        {
+          "heading": "begin() and end() Functions",
+          "description": [
+            "begin() and end() belong to containers, not to iterators themselves.",
+            "They are used together with iterators to traverse a container."
+          ],
+          "details": [
+            "begin() returns an iterator to the first element.",
+            "end() returns an iterator to one position past the last element."
+          ]
+        },
+        {
+          "heading": "Using begin()",
+          "examples": [
+            {
+              "description": "Point to the first element",
+              "code": "it = cars.begin();"
+            },
+            {
+              "description": "Point to the second element",
+              "code": "it = cars.begin() + 1;"
+            },
+            {
+              "description": "Point to the third element",
+              "code": "it = cars.begin() + 2;"
+            }
+          ]
+        },
+        {
+          "heading": "Using end()",
+          "description": "end() does not point to a real element, but to one position after the last element.",
+          "example": {
+            "description": "Point to the last element",
+            "code": "it = cars.end() - 1;"
+          }
+        },
+        {
+          "heading": "Why Iterators Are Called \"Pointers\"",
+          "content": [
+            "Iterators behave like pointers because they refer to a specific position in a container.",
+            "They allow access and modification of elements without copying values.",
+            "This makes them efficient and flexible for use with algorithms."
+          ]
+        }
+      ]
+    },
+    "cpp_algorithms": {
+      "title": "C++ Algorithms",
+      "overview": [
+        "Algorithms are used to sort, search, and manipulate data stored in data structures like vectors and lists.",
+        "C++ provides a rich set of algorithms through the <algorithm> library.",
+        "Most algorithms work with iterators such as begin(), end(), rbegin(), and rend()."
+      ],
+      "header_file": "#include <algorithm>",
+      "sections": [
+        {
+          "heading": "Sorting Algorithms",
+          "description": "Sorting rearranges elements in a data structure into a specific order.",
+          "examples": [
+            {
+              "title": "Sort strings alphabetically",
+              "code": "vector<string> cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\nsort(cars.begin(), cars.end());"
+            },
+            {
+              "title": "Sort integers numerically",
+              "code": "vector<int> numbers = {1, 7, 3, 5, 9, 2};\nsort(numbers.begin(), numbers.end());"
+            },
+            {
+              "title": "Sort in reverse order",
+              "code": "sort(numbers.rbegin(), numbers.rend());"
+            },
+            {
+              "title": "Sort a subset of elements",
+              "code": "sort(numbers.begin() + 3, numbers.end());"
+            }
+          ],
+          "notes": [
+            "sort() sorts in ascending order by default",
+            "Reverse iterators can be used for descending order"
+          ]
+        },
+        {
+          "heading": "Searching Algorithms",
+          "description": "Searching algorithms locate elements or positions within data structures.",
+          "examples": [
+            {
+              "title": "Find a specific value",
+              "code": "auto it = find(numbers.begin(), numbers.end(), 3);"
+            },
+            {
+              "title": "Find first value greater than a given number",
+              "code": "sort(numbers.begin(), numbers.end());\nauto it = upper_bound(numbers.begin(), numbers.end(), 5);"
+            },
+            {
+              "title": "Find the smallest element",
+              "code": "auto it = min_element(numbers.begin(), numbers.end());"
+            },
+            {
+              "title": "Find the largest element",
+              "code": "auto it = max_element(numbers.begin(), numbers.end());"
+            }
+          ],
+          "notes": [
+            "upper_bound() requires sorted data",
+            "min_element() and max_element() return iterators"
+          ]
+        },
+        {
+          "heading": "Modifying Algorithms",
+          "description": "Modifying algorithms change or copy data in containers.",
+          "examples": [
+            {
+              "title": "Copy elements between vectors",
+              "code": "vector<int> copiedNumbers(6);\ncopy(numbers.begin(), numbers.end(), copiedNumbers.begin());"
+            },
+            {
+              "title": "Fill all elements with a value",
+              "code": "vector<int> numbers(6);\nfill(numbers.begin(), numbers.end(), 35);"
+            }
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "question": "What does the sort() function do?",
+          "correct_answer": "Sorts elements in ascending order by default"
+        }
+      ],
+      "reference_note": "For a complete list of algorithms, see the C++ Algorithm Reference."
+    },
+    "cpp_namespaces": {
+      "title": "C++ Namespaces",
+      "sections": [
+        {
+          "heading": "What Is a Namespace?",
+          "content": [
+            "A namespace is used to group related code under a name.",
+            "It helps avoid naming conflicts when programs grow larger or when using multiple libraries.",
+            "You can think of a namespace like a folder that separates identifiers with the same name."
+          ]
+        },
+        {
+          "heading": "Why Use Namespaces?",
+          "content": [
+            "Avoid name conflicts in large projects",
+            "Organize code into logical groups",
+            "Separate your code from external libraries"
+          ]
+        },
+        {
+          "heading": "Basic Namespace Example",
+          "content": [
+            "This example defines a variable inside a custom namespace and accesses it using the scope resolution operator (::)."
+          ],
+          "example": "namespace MyNamespace {\n  int x = 42;\n}\n\nint main() {\n  cout << MyNamespace::x;\n  return 0;\n}"
+        },
+        {
+          "heading": "The using namespace Keyword",
+          "content": [
+            "The using keyword allows access to namespace members without writing the full namespace name.",
+            "This can make code shorter but may cause name conflicts in large programs."
+          ],
+          "example": "namespace MyNamespace {\n  int x = 42;\n}\n\nusing namespace MyNamespace;\n\nint main() {\n  cout << x;\n  return 0;\n}"
+        },
+        {
+          "heading": "The std Namespace",
+          "content": [
+            "Standard C++ features like cout, cin, and endl belong to the std namespace.",
+            "Without using std, you must prefix these items with std::."
+          ]
+        },
+        {
+          "heading": "Without using namespace std",
+          "example": "#include <iostream>\n\nint main() {\n  std::cout << \"Hello World!\\n\";\n  return 0;\n}"
+        },
+        {
+          "heading": "With using namespace std",
+          "example": "#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << \"Hello World!\\n\";\n  return 0;\n}"
+        },
+        {
+          "heading": "Best Practices",
+          "content": [
+            "Using namespace std is fine for small programs and learning.",
+            "In large projects, prefer std:: to avoid conflicts.",
+            "Use namespaces thoughtfully to keep code clean and maintainable."
+          ]
+        }
+      ]
+    },
+    "cpp_projects": {
+      "title": "C++ Projects and Practical Applications",
+      "sections": [
+        {
+          "heading": "Overview",
+          "content": [
+            "This section focuses on applying C++ knowledge to real-world projects.",
+            "You build small applications using concepts learned throughout the tutorial."
+          ]
+        },
+        {
+          "heading": "Why Build Projects?",
+          "content": [
+            "Understand how real programs are structured",
+            "Practice combining concepts like functions, loops, and file handling",
+            "Improve debugging and problem-solving skills",
+            "Prepare for interviews and practical exercises"
+          ],
+          "tip": "Start small and gradually add more features."
+        },
+        {
+          "heading": "Project Ideas",
+          "content": [
+            "Calculate a Student's Average",
+            "Simple Calculator",
+            "Address Book",
+            "To-Do List",
+            "Guess a Number Game",
+            "Quiz Game"
+          ]
+        },
+        {
+          "heading": "Project: Calculate a Student's Average",
+          "content": [
+            "The program asks the user to enter 1 to 5 grades.",
+            "It calculates the average score and displays a corresponding letter grade (A–F)."
+          ],
+          "example": "// Returns a letter grade based on average\nchar gradeFunction(double avg) {\n  if (avg >= 90) return 'A';\n  else if (avg >= 80) return 'B';\n  else if (avg >= 70) return 'C';\n  else if (avg >= 60) return 'D';\n  else return 'F';\n}\n\nint main() {\n  int count;\n  double sum = 0, grade;\n\n  cout << \"How many grades (1 to 5)? \";\n  cin >> count;\n\n  if (count < 1 || count > 5) {\n    cout << \"Invalid number. You must enter between 1 and 5 grades.\\n\";\n    return 1;\n  }\n\n  for (int i = 1; i <= count; i++) {\n    cout << \"Enter grade \" << i << \": \";\n    cin >> grade;\n    sum += grade;\n  }\n\n  double avg = sum / count;\n  cout << \"Average: \" << avg << \"\\n\";\n  cout << \"Letter grade: \" << gradeFunction(avg) << \"\\n\";\n\n  return 0;\n}"
+        },
+        {
+          "heading": "Key Concepts Used",
+          "content": [
+            "Loops",
+            "Functions",
+            "Conditional statements",
+            "User input handling",
+            "Basic program logic"
+          ]
+        },
+        {
+          "heading": "Practice Challenge",
+          "content": [
+            "Ask for the user's name",
+            "Ask for the user's age",
+            "Print: Hi <name>! You will turn <age+1> next year."
+          ],
+          "tip": "Use an IDE like CodeBlocks and test often. Add one feature at a time."
+        }
+      ]
+    },
+    "cpp_add_two_numbers": {
+      "title": "C++ How To Add Two Numbers",
+      "sections": [
+        {
+          "heading": "Add Two Numbers",
+          "content": [
+            "In C++, you can add two numbers using the addition operator (+).",
+            "This example shows how to add two predefined integer values and print the result."
+          ],
+          "example": "int x = 5;\nint y = 6;\nint sum = x + y;\ncout << sum;"
+        },
+        {
+          "heading": "Add Two Numbers with User Input",
+          "content": [
+            "In this example, the user provides two numbers using standard input.",
+            "The program reads the values, adds them together, and prints the result."
+          ],
+          "example": "int x, y;\nint sum;\n\ncout << \"Type a number: \";\ncin >> x;\n\ncout << \"Type another number: \";\ncin >> y;\n\nsum = x + y;\ncout << \"Sum is: \" << sum;"
+        }
+      ]
+    },
+    "cpp_generate_random_numbers": {
+      "title": "C++ How To Generate Random Numbers",
+      "sections": [
+        {
+          "heading": "Random Numbers in C++",
+          "content": [
+            "C++ provides functions to generate random numbers using the standard library.",
+            "The rand() function is used to generate pseudo-random numbers."
+          ]
+        },
+        {
+          "heading": "Using rand()",
+          "content": [
+            "The rand() function is found in the <cstdlib> library.",
+            "It generates a random integer each time it is called."
+          ],
+          "example": "cout << rand();"
+        },
+        {
+          "heading": "Random Numbers in a Range",
+          "content": [
+            "To limit the random number to a specific range, you can use the modulo operator (%).",
+            "This example generates a random number between 0 and 100."
+          ],
+          "example": "int randomNum = rand() % 101;\n\ncout << randomNum;\nreturn 0;"
+        },
+        {
+          "heading": "Different Results Each Run",
+          "content": [
+            "By default, rand() generates the same sequence of numbers each time the program runs.",
+            "To generate different results, use srand() with the current time as the seed."
+          ]
+        },
+        {
+          "heading": "Using srand() with time()",
+          "content": [
+            "The srand() function sets the starting point for generating random numbers.",
+            "The time() function from the <ctime> library is commonly used as the seed value."
+          ],
+          "example": "srand(time(0));\n\nint randomNum = rand() % 101;\n\ncout << randomNum;\nreturn 0;"
+        }
+      ]
+    },
+    "cpp_reference_documentation": {
+      "title": "C++ Reference Documentation",
+      "sections": [
+        {
+          "heading": "C++ Reference",
+          "content": [
+            "This section contains reference documentation for the C++ programming language.",
+            "It provides an overview of C++ keywords and commonly used standard libraries."
+          ]
+        },
+        {
+          "heading": "Keywords",
+          "content": [
+            "C++ keywords are reserved words that form the core syntax of the language.",
+            "They cannot be used as identifiers such as variable or function names."
+          ]
+        },
+        {
+          "heading": "Standard Libraries",
+          "content": [
+            "<iostream>: Provides input and output stream objects.",
+            "<fstream>: Provides file stream classes for file handling.",
+            "<cmath>: Contains mathematical functions.",
+            "<string>: Provides string handling and manipulation.",
+            "<cstring>: Provides functions for C-style string and memory handling.",
+            "<ctime>: Provides date and time functions.",
+            "<vector>: Provides the vector container.",
+            "<algorithm>: Provides algorithms for searching, sorting, and modifying data."
+          ]
+        },
+        {
+          "heading": "Purpose of the Reference",
+          "content": [
+            "The C++ reference serves as a quick lookup for syntax, keywords, and library functionality.",
+            "It is useful for both beginners and experienced developers who need concise technical details."
+          ]
+        }
+      ]
+    },
+    "cpp_keywords": {
+      "title": "C++ Keywords",
+      "sections": [
+        {
+          "heading": "C++ Keywords",
+          "content": [
+            "Keywords are reserved words in C++ that have special meanings and cannot be used as identifiers.",
+            "They form the core syntax of the C++ language."
+          ]
+        },
+        {
+          "heading": "Logical and Bitwise Keywords",
+          "content": [
+            "and, or, not: Alternative keywords for logical operators (&&, ||, !).",
+            "and_eq, or_eq, not_eq: Alternative assignment and comparison operators.",
+            "bitand, bitor, xor, compl: Alternative keywords for bitwise operators."
+          ]
+        },
+        {
+          "heading": "Data Types",
+          "content": [
+            "bool: Stores true or false values.",
+            "char: Stores a single character.",
+            "int, short, long: Store integer values with different sizes.",
+            "float, double: Store fractional numbers.",
+            "signed, unsigned: Control whether values can be negative."
+          ]
+        },
+        {
+          "heading": "Control Flow",
+          "content": [
+            "if, else: Conditional statements.",
+            "switch, case, default: Multi-branch selection statements.",
+            "for, while, do: Looping constructs.",
+            "break, continue: Control loop execution.",
+            "goto: Jumps to a labeled statement (generally discouraged)."
+          ]
+        },
+        {
+          "heading": "Functions and Exceptions",
+          "content": [
+            "return: Returns a value from a function.",
+            "void: Indicates no return value or unspecified type.",
+            "try, catch, throw: Exception handling keywords."
+          ]
+        },
+        {
+          "heading": "Classes and Objects",
+          "content": [
+            "class, struct: Define user-defined types.",
+            "public, private, protected: Access specifiers.",
+            "this: Pointer to the current object.",
+            "friend: Grants access to private and protected members.",
+            "virtual: Enables dynamic dispatch in inheritance."
+          ]
+        },
+        {
+          "heading": "Memory Management",
+          "content": [
+            "new: Allocates dynamic memory.",
+            "delete: Frees dynamically allocated memory.",
+            "sizeof: Returns the size of a type or variable."
+          ]
+        },
+        {
+          "heading": "Templates and Namespaces",
+          "content": [
+            "template: Declares template classes or functions.",
+            "typename, typedef: Define or alias types.",
+            "namespace: Declares a namespace.",
+            "using: Brings names from a namespace into scope."
+          ]
+        },
+        {
+          "heading": "Miscellaneous",
+          "content": [
+            "auto: Automatically deduces variable type.",
+            "const: Declares constants or read-only methods.",
+            "static: Gives static storage duration or class-level scope.",
+            "true, false: Boolean literals."
+          ]
+        }
+      ]
+    },
+    "cpp_iostream_library": {
+      "title": "C++ iostream Library",
+      "sections": [
+        {
+          "heading": "iostream Library",
+          "content": [
+            "The <iostream> library provides standard input and output stream objects in C++.",
+            "It allows programs to read input from the keyboard and write output to the console or other streams."
+          ]
+        },
+        {
+          "heading": "Purpose of <iostream>",
+          "content": [
+            "Used for standard input, output, and error handling.",
+            "Forms the foundation of console-based interaction in C++ programs."
+          ]
+        },
+        {
+          "heading": "Standard Input and Output Objects",
+          "content": [
+            "cin: Reads input from the standard input (keyboard by default).",
+            "cout: Writes output to the standard output (console by default)."
+          ]
+        },
+        {
+          "heading": "Error and Logging Streams",
+          "content": [
+            "cerr: Outputs error messages (unbuffered).",
+            "clog: Outputs logging information (buffered)."
+          ]
+        },
+        {
+          "heading": "Wide Character Streams",
+          "content": [
+            "wcin: Wide-character version of cin.",
+            "wcout: Wide-character version of cout.",
+            "wcerr: Wide-character version of cerr.",
+            "wclog: Wide-character version of clog."
+          ]
+        },
+        {
+          "heading": "Usage Notes",
+          "content": [
+            "iostream streams use the insertion (<<) and extraction (>>) operators.",
+            "They can be combined with other stream libraries such as <fstream> for file I/O."
+          ]
+        }
+      ]
+    },
+    "cpp_fstream_library": {
+      "title": "C++ fstream Library",
+      "sections": [
+        {
+          "heading": "fstream Library",
+          "content": [
+            "The <fstream> library provides classes for reading from and writing to files in C++.",
+            "It enables file input and output operations using stream-based syntax."
+          ]
+        },
+        {
+          "heading": "Purpose of <fstream>",
+          "content": [
+            "Used to handle file operations such as reading, writing, and appending data.",
+            "Works with files as data streams, similar to console input and output."
+          ]
+        },
+        {
+          "heading": "Core File Stream Classes",
+          "content": [
+            "ifstream: Used to read data from files.",
+            "ofstream: Used to write data to files.",
+            "fstream: Used for both reading and writing files."
+          ]
+        },
+        {
+          "heading": "Low-Level File Handling",
+          "content": [
+            "filebuf: A low-level buffer class used internally by file stream classes.",
+            "It manages the actual file data transfer between memory and storage."
+          ]
+        },
+        {
+          "heading": "Common Use Cases",
+          "content": [
+            "Reading text or binary files.",
+            "Writing program output to files.",
+            "Appending data to existing files."
+          ]
+        },
+        {
+          "heading": "File Handling Notes",
+          "content": [
+            "Files should always be properly opened before use and closed after operations.",
+            "Error handling is important to ensure file accessibility and integrity."
+          ]
+        }
+      ]
+    },
+    "cpp_cmath_library": {
+      "title": "C++ cmath Library",
+      "sections": [
+        {
+          "heading": "cmath Library",
+          "content": [
+            "The <cmath> library provides a wide range of mathematical functions in C++.",
+            "It supports trigonometric, logarithmic, exponential, rounding, and special mathematical operations."
+          ]
+        },
+        {
+          "heading": "Purpose of <cmath>",
+          "content": [
+            "Used to perform advanced mathematical calculations.",
+            "Commonly applied in scientific, engineering, and numerical applications."
+          ]
+        },
+        {
+          "heading": "Basic Math Functions",
+          "content": [
+            "abs(): Returns the absolute value.",
+            "fabs(): Returns the absolute value of a floating-point number.",
+            "pow(): Raises a number to a power.",
+            "sqrt(): Returns the square root.",
+            "cbrt(): Returns the cube root."
+          ]
+        },
+        {
+          "heading": "Rounding and Remainder",
+          "content": [
+            "ceil(): Rounds up to the nearest integer.",
+            "floor(): Rounds down to the nearest integer.",
+            "round(): Rounds to the nearest integer.",
+            "trunc(): Removes the fractional part.",
+            "fmod(): Returns the remainder of division."
+          ]
+        },
+        {
+          "heading": "Trigonometric Functions",
+          "content": [
+            "sin(), cos(), tan(): Trigonometric functions using radians.",
+            "asin(), acos(), atan(): Inverse trigonometric functions.",
+            "atan2(): Computes angle from x and y coordinates."
+          ]
+        },
+        {
+          "heading": "Hyperbolic Functions",
+          "content": [
+            "sinh(), cosh(), tanh(): Hyperbolic functions.",
+            "asinh(), acosh(), atanh(): Inverse hyperbolic functions."
+          ]
+        },
+        {
+          "heading": "Logarithmic and Exponential Functions",
+          "content": [
+            "log(): Natural logarithm.",
+            "log10(): Base-10 logarithm.",
+            "log2(): Base-2 logarithm.",
+            "exp(): Exponential function.",
+            "exp2(): Power of 2 exponent."
+          ]
+        },
+        {
+          "heading": "Advanced and Special Functions",
+          "content": [
+            "hypot(): Calculates sqrt(x² + y²).",
+            "gamma(), tgamma(): Gamma function values.",
+            "erf(), erfc(): Error functions.",
+            "nan(): Generates a NaN value.",
+            "copysign(): Copies sign from one number to another."
+          ]
+        }
+      ]
+    },
+    "cpp_string_library": {
+      "title": "C++ string Library",
+      "sections": [
+        {
+          "heading": "string Library",
+          "content": [
+            "The <string> library provides the std::string class for handling text in C++.",
+            "It offers safer and more convenient string handling compared to C-style strings."
+          ]
+        },
+        {
+          "heading": "Purpose of <string>",
+          "content": [
+            "Used to store and manipulate sequences of characters.",
+            "Automatically manages memory and provides many built-in utility functions."
+          ]
+        },
+        {
+          "heading": "Element Access",
+          "content": [
+            "at(): Returns the character at a specified position with bounds checking.",
+            "operator[]: Returns the character at a given index.",
+            "front(): Accesses the first character.",
+            "back(): Accesses the last character.",
+            "c_str(): Returns a C-style null-terminated string.",
+            "data(): Returns a pointer to the internal character array."
+          ]
+        },
+        {
+          "heading": "Capacity and Size",
+          "content": [
+            "size(): Returns the number of characters in the string.",
+            "length(): Alias of size().",
+            "empty(): Checks whether the string is empty.",
+            "max_size(): Returns the maximum possible size of the string.",
+            "resize(): Changes the size of the string."
+          ]
+        },
+        {
+          "heading": "Modifiers",
+          "content": [
+            "append(): Adds characters or another string to the end.",
+            "push_back(): Adds a single character to the end.",
+            "pop_back(): Removes the last character.",
+            "insert(): Inserts characters at a specified position.",
+            "erase(): Removes characters from the string.",
+            "replace(): Replaces part of the string with new content.",
+            "clear(): Removes all characters.",
+            "swap(): Exchanges contents with another string."
+          ]
+        },
+        {
+          "heading": "Search and Compare",
+          "content": [
+            "find(): Finds the first occurrence of a character or substring.",
+            "rfind(): Finds the last occurrence of a character or substring.",
+            "compare(): Compares the string with another string.",
+            "substr(): Returns a substring starting at a given position."
+          ]
+        },
+        {
+          "heading": "Iterators",
+          "content": [
+            "begin(): Returns an iterator to the first character.",
+            "end(): Returns an iterator past the last character."
+          ]
+        }
+      ]
+    },
+    "cpp_cstring_library": {
+      "title": "C++ cstring Library",
+      "sections": [
+        {
+          "heading": "cstring Library",
+          "content": [
+            "The <cstring> library provides functions for working with arrays and C-style strings.",
+            "C-style strings are arrays of characters terminated by a null character ('\\0')."
+          ]
+        },
+        {
+          "heading": "Purpose of <cstring>",
+          "content": [
+            "Used for low-level string and memory manipulation.",
+            "Commonly applied when working with character arrays instead of std::string."
+          ]
+        },
+        {
+          "heading": "Memory Manipulation Functions",
+          "content": [
+            "memchr(): Finds the first occurrence of a value in a block of memory.",
+            "memcmp(): Compares two blocks of memory.",
+            "memcpy(): Copies memory from one location to another.",
+            "memmove(): Copies memory safely when blocks overlap.",
+            "memset(): Sets all bytes in a block of memory to a specific value."
+          ]
+        },
+        {
+          "heading": "String Concatenation and Copying",
+          "content": [
+            "strcat(): Appends one C-style string to another.",
+            "strncat(): Appends a specified number of characters.",
+            "strcpy(): Copies a C-style string.",
+            "strncpy(): Copies a specified number of characters."
+          ]
+        },
+        {
+          "heading": "String Comparison and Search",
+          "content": [
+            "strcmp(): Compares two C-style strings.",
+            "strncmp(): Compares a specified number of characters.",
+            "strcoll(): Compares strings using locale settings.",
+            "strchr(): Finds the first occurrence of a character.",
+            "strrchr(): Finds the last occurrence of a character.",
+            "strstr(): Finds a substring within a string."
+          ]
+        },
+        {
+          "heading": "String Analysis and Utilities",
+          "content": [
+            "strlen(): Returns the length of a C-style string.",
+            "strspn(): Finds length up to first non-matching character.",
+            "strcspn(): Finds length up to first matching character.",
+            "strpbrk(): Finds first matching character from a set.",
+            "strtok(): Splits a string into tokens.",
+            "strerror(): Returns a description of an error code.",
+            "strxfrm(): Transforms strings using locale rules."
+          ]
+        }
+      ]
+    },
+    "cpp_ctime_library": {
+      "title": "C++ ctime Library",
+      "sections": [
+        {
+          "heading": "ctime Library",
+          "content": [
+            "The <ctime> library provides functions for working with date and time in C++.",
+            "It allows programs to measure time, manipulate timestamps, and format date and time values."
+          ]
+        },
+        {
+          "heading": "Purpose of <ctime>",
+          "content": [
+            "Used to retrieve the current system time.",
+            "Helps calculate time differences and convert between time formats."
+          ]
+        },
+        {
+          "heading": "Time Retrieval Functions",
+          "content": [
+            "time(): Returns the current time as a timestamp.",
+            "clock(): Returns the processor time used by the program."
+          ]
+        },
+        {
+          "heading": "Time Conversion Functions",
+          "content": [
+            "ctime(): Converts a timestamp into a readable string.",
+            "asctime(): Converts a tm structure into a readable string.",
+            "gmtime(): Converts a timestamp to UTC time.",
+            "localtime(): Converts a timestamp to local time."
+          ]
+        },
+        {
+          "heading": "Time Calculation",
+          "content": [
+            "difftime(): Calculates the difference between two timestamps.",
+            "mktime(): Converts a tm structure back into a timestamp."
+          ]
+        },
+        {
+          "heading": "Time Formatting",
+          "content": [
+            "strftime(): Formats date and time values into a string using custom formatting options."
+          ]
+        }
+      ]
+    },
+    "cpp_vector_library": {
+      "title": "C++ Vector Library",
+      "sections": [
+        {
+          "heading": "Vector Library",
+          "content": [
+            "The <vector> library provides a dynamic array implementation in C++.",
+            "Vectors can automatically resize and provide many built-in functions for managing elements."
+          ]
+        },
+        {
+          "heading": "Purpose of <vector>",
+          "content": [
+            "Vectors store elements contiguously in memory.",
+            "They allow fast access to elements and efficient insertion and removal at the end."
+          ]
+        },
+        {
+          "heading": "Element Access",
+          "content": [
+            "at(): Returns the element at a specified position with bounds checking.",
+            "front(): Returns the first element of the vector.",
+            "back(): Returns the last element of the vector.",
+            "data(): Returns a pointer to the underlying array."
+          ]
+        },
+        {
+          "heading": "Capacity Functions",
+          "content": [
+            "size(): Returns the number of elements in the vector.",
+            "capacity(): Returns the amount of allocated storage.",
+            "max_size(): Returns the maximum number of elements the vector can hold.",
+            "empty(): Checks whether the vector is empty.",
+            "reserve(): Requests memory allocation.",
+            "shrink_to_fit(): Reduces capacity to fit the current size."
+          ]
+        },
+        {
+          "heading": "Modifiers",
+          "content": [
+            "assign(): Assigns new values to the vector.",
+            "push_back(): Adds an element to the end.",
+            "pop_back(): Removes the last element.",
+            "insert(): Inserts elements at a specified position.",
+            "erase(): Removes elements from the vector.",
+            "clear(): Removes all elements.",
+            "swap(): Swaps contents with another vector.",
+            "resize(): Changes the number of elements."
+          ]
+        },
+        {
+          "heading": "Iterators",
+          "content": [
+            "begin(): Returns an iterator to the first element.",
+            "end(): Returns an iterator to one past the last element.",
+            "rbegin(): Returns a reverse iterator to the last element.",
+            "rend(): Returns a reverse iterator to before the first element."
+          ]
+        }
+      ]
+    },
+    "cpp_algorithm_library": {
+      "title": "C++ Algorithm Library",
+      "sections": [
+        {
+          "heading": "Algorithm Library",
+          "content": [
+            "The <algorithm> library provides functions to perform operations on ranges of data.",
+            "These functions work with containers such as arrays, vectors, and other STL data structures."
+          ]
+        },
+        {
+          "heading": "Purpose of <algorithm>",
+          "content": [
+            "It allows modification, searching, sorting, and analysis of data ranges.",
+            "Most functions operate on iterators rather than containers directly."
+          ]
+        },
+        {
+          "heading": "Searching Algorithms",
+          "content": [
+            "adjacent_find(): Finds consecutive elements with the same value.",
+            "binary_search(): Checks if a value exists in a sorted range.",
+            "find(): Finds the first occurrence of a value.",
+            "find_if(): Finds the first element matching a condition.",
+            "find_if_not(): Finds the first element that does not match a condition.",
+            "search(): Finds a sequence of values within a range."
+          ]
+        },
+        {
+          "heading": "Counting and Checking",
+          "content": [
+            "count(): Counts how many times a value appears.",
+            "count_if(): Counts elements matching a condition.",
+            "all_of(): Checks if all elements satisfy a condition.",
+            "any_of(): Checks if at least one element satisfies a condition.",
+            "none_of(): Checks if no elements satisfy a condition."
+          ]
+        },
+        {
+          "heading": "Sorting and Ordering",
+          "content": [
+            "sort(): Sorts elements in ascending order.",
+            "is_sorted(): Checks if a range is sorted.",
+            "is_sorted_until(): Finds where sorting stops.",
+            "lower_bound(): Finds the first element not less than a value.",
+            "upper_bound(): Finds the first element greater than a value."
+          ]
+        },
+        {
+          "heading": "Replacing and Modifying",
+          "content": [
+            "replace(): Replaces matching values in a range.",
+            "replace_if(): Replaces values that match a condition.",
+            "fill(): Assigns a value to all elements in a range.",
+            "for_each(): Applies a function to each element."
+          ]
+        },
+        {
+          "heading": "Copying and Merging",
+          "content": [
+            "copy(): Copies elements to another range.",
+            "merge(): Merges two sorted ranges.",
+            "reverse_copy(): Copies elements in reverse order."
+          ]
+        },
+        {
+          "heading": "Reordering and Swapping",
+          "content": [
+            "reverse(): Reverses the order of elements.",
+            "random_shuffle(): Randomly rearranges elements.",
+            "swap(): Swaps two values.",
+            "swap_ranges(): Swaps elements between two ranges."
+          ]
+        },
+        {
+          "heading": "Min and Max",
+          "content": [
+            "min_element(): Finds the smallest element in a range.",
+            "max_element(): Finds the largest element in a range."
+          ]
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,265 @@
+{
+  "course": "Master Python Curriculum",
+  "language": "Python",
+  "description": "Comprehensive Python curriculum covering programming fundamentals, data science, machine learning, web development, and algorithms.",
+  "modules": [
+    {
+      "id": 1,
+      "title": "Python Basics",
+      "topics": [
+        {
+          "title": "Introduction",
+          "explanation": "Python is a high-level, interpreted programming language known for readability and versatility.",
+          "example": "print('Hello, World!')"
+        },
+        {
+          "title": "Syntax & Indentation",
+          "explanation": "Python uses indentation instead of braces to define code blocks.",
+          "example": "if 5 > 2:\n  print('Yes')"
+        },
+        {
+          "title": "Variables",
+          "explanation": "Variables store data values and do not require explicit type declaration.",
+          "example": "x = 10"
+        },
+        {
+          "title": "Data Types",
+          "explanation": "Common built-in types include int, float, str, bool, list, tuple, set, and dict.",
+          "example": "x = [1,2,3]"
+        },
+        {
+          "title": "Operators",
+          "explanation": "Operators perform arithmetic, comparison, logical, and assignment operations.",
+          "example": "x = 5 + 3"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Control Flow",
+      "topics": [
+        {
+          "title": "Conditional Statements",
+          "explanation": "if, elif, and else control program decision-making.",
+          "example": "if x > 0:\n  print('Positive')"
+        },
+        {
+          "title": "Loops",
+          "explanation": "Loops execute a block of code repeatedly.",
+          "example": "for i in range(3): print(i)"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Functions & Lambda",
+      "topics": [
+        {
+          "title": "Functions",
+          "explanation": "Functions are reusable blocks of code.",
+          "example": "def add(a,b): return a+b"
+        },
+        {
+          "title": "Lambda Functions",
+          "explanation": "Anonymous one-line functions.",
+          "example": "x = lambda a: a*2"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Collections",
+      "topics": [
+        {
+          "title": "Lists",
+          "explanation": "Ordered, mutable collection.",
+          "example": "nums = [1,2,3]"
+        },
+        {
+          "title": "Tuples",
+          "explanation": "Ordered, immutable collection.",
+          "example": "coords = (10,20)"
+        },
+        {
+          "title": "Sets",
+          "explanation": "Unordered collection of unique values.",
+          "example": "{1,2,3}"
+        },
+        {
+          "title": "Dictionaries",
+          "explanation": "Key-value data structure.",
+          "example": "{'name':'John'}"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Object-Oriented Programming",
+      "topics": [
+        {
+          "title": "Classes & Objects",
+          "explanation": "Blueprints for creating objects.",
+          "example": "class Person:\n  def __init__(self,name): self.name=name"
+        },
+        {
+          "title": "Inheritance",
+          "explanation": "Child classes inherit properties from parent classes.",
+          "example": "class Student(Person): pass"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Modules, Files & Exceptions",
+      "topics": [
+        {
+          "title": "Modules",
+          "explanation": "Reusable Python files.",
+          "example": "import math"
+        },
+        {
+          "title": "File Handling",
+          "explanation": "Read and write files using open().",
+          "example": "open('file.txt','r')"
+        },
+        {
+          "title": "Exception Handling",
+          "explanation": "Handle runtime errors gracefully.",
+          "example": "try:\n x=1/0\nexcept:\n print('Error')"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Python MySQL",
+      "topics": [
+        {
+          "title": "Database Connection",
+          "explanation": "Connect Python to MySQL databases.",
+          "example": "import mysql.connector"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "NumPy",
+      "topics": [
+        {
+          "title": "Arrays",
+          "explanation": "Efficient numerical arrays.",
+          "example": "import numpy as np\narr = np.array([1,2,3])"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Pandas",
+      "topics": [
+        {
+          "title": "Series",
+          "explanation": "One-dimensional labeled data.",
+          "example": "pd.Series([1,2,3])"
+        },
+        {
+          "title": "DataFrame",
+          "explanation": "Two-dimensional tabular data.",
+          "example": "pd.DataFrame({'A':[1,2]})"
+        },
+        {
+          "title": "Data Cleaning",
+          "explanation": "Handle missing or incorrect data.",
+          "example": "df.dropna()"
+        },
+        {
+          "title": "GroupBy & Aggregation",
+          "explanation": "Group data for analysis.",
+          "example": "df.groupby('A').mean()"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Matplotlib & SciPy",
+      "topics": [
+        {
+          "title": "Plotting",
+          "explanation": "Visualize data using charts.",
+          "example": "plt.plot(x,y)"
+        },
+        {
+          "title": "Scientific Constants",
+          "explanation": "Mathematical and scientific tools.",
+          "example": "from scipy import constants"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Machine Learning (scikit-learn)",
+      "topics": [
+        {
+          "title": "Train-Test Split",
+          "explanation": "Separate data for training and testing.",
+          "example": "train_test_split(X,y)"
+        },
+        {
+          "title": "Regression",
+          "explanation": "Predict continuous values.",
+          "example": "LinearRegression()"
+        },
+        {
+          "title": "Classification",
+          "explanation": "Predict categories.",
+          "example": "LogisticRegression()"
+        },
+        {
+          "title": "Clustering",
+          "explanation": "Group similar data points.",
+          "example": "KMeans(n_clusters=3)"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Django",
+      "topics": [
+        {
+          "title": "Project Setup",
+          "explanation": "Create Django projects and apps.",
+          "example": "django-admin startproject mysite"
+        },
+        {
+          "title": "Views & URLs",
+          "explanation": "Handle HTTP requests and routing.",
+          "example": "def home(request): return HttpResponse('Hello')"
+        },
+        {
+          "title": "Models",
+          "explanation": "Define database structure.",
+          "example": "class Post(models.Model): title=models.CharField(max_length=100)"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Data Structures & Algorithms",
+      "topics": [
+        {
+          "title": "Arrays",
+          "explanation": "Store elements sequentially.",
+          "example": "[1,2,3]"
+        },
+        {
+          "title": "Searching",
+          "explanation": "Find elements efficiently.",
+          "example": "Linear Search"
+        },
+        {
+          "title": "Sorting",
+          "explanation": "Arrange data in order.",
+          "example": "Bubble Sort"
+        }
+      ]
+    }
+  ]
+}

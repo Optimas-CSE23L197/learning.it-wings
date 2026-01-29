@@ -17,7 +17,7 @@ export default function LessonPage() {
     }
 
     return (
-        <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-10 relative z-40">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-10 relative z-40">
             {/* ===== Header ===== */}
             <div className="mb-10">
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--white)]">

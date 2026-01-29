@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 
 const HEADER_HEIGHT = 96; // px
+const CONTENT_WIDTH = 720; // px (locked reading width)
 
 export default function ContentPage() {
     return (
@@ -16,10 +17,7 @@ export default function ContentPage() {
             </header>
 
             {/* ===== Body ===== */}
-            <div
-                className="flex"
-                style={{ paddingTop: HEADER_HEIGHT }}
-            >
+            <div className="flex" style={{ paddingTop: HEADER_HEIGHT }}>
                 {/* ===== Sidebar ===== */}
                 <aside
                     className="
@@ -32,29 +30,32 @@ export default function ContentPage() {
                     <Sidebar />
                 </aside>
 
-                {/* ===== Main Content ===== */}
+                {/* ===== Main Content (FIXED) ===== */}
                 <main
                     className="
-                        flex-1
+                        w-full
                         h-[calc(100vh-96px)]
-                        overflow-y-auto
+                        overflow-y-scroll
                         scrollbar-hide
+                        overflow-x-hidden
                         flex
-                        flex-col
+                        justify-center
                     "
                 >
+                    {/* ===== Locked Content Column ===== */}
                     <div
                         className="
-                            flex-1
-                            max-w-5xl mx-auto
-                            px-4 sm:px-6 lg:px-10
+                            w-full
+                            px-4 sm:px-6
                             py-6 sm:py-8
                         "
+                        style={{ maxWidth: CONTENT_WIDTH }}
                     >
                         <Outlet />
                     </div>
                 </main>
             </div>
+
             <Footer />
         </div>
     );

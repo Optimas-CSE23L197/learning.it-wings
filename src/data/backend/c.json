@@ -22,13 +22,23 @@
         { "id": "if-else", "title": "C If...Else" },
         { "id": "switch", "title": "C Switch" },
         { "id": "while-loop", "title": "C While Loop" },
+        { "id": "do-while-loop", "title": "C Do/While Loop" },
+        { "id": "while-loop-examples", "title": "C While Loop Examples" },
         { "id": "for-loop", "title": "C For Loop" },
+        { "id": "nested-loops", "title": "C Nested Loops" },
+        { "id": "for-loop-examples", "title": "C For Loop Examples" },
         { "id": "break-continue", "title": "C Break/Continue" },
         { "id": "arrays", "title": "C Arrays" },
-        { "id": "strings", "title": "C Strings" },
-        { "id": "user-input", "title": "C User Input" },
+        { "id": "array_size", "title": "C Array Size" },
+        { "id": "array-loop", "title": "C Array Loop" },
+        { "id": "array_real_life_examples", "title": "C Arrays - Real-Life Examples" },
+        { "id": "multidimensional-arrays", "title": "C Multidimensional Arrays" } ,
+        { "id": "arrays_code_challenge", "title": "C Arrays Code Challenge" } ,
+        { "id": "c_strings", "title": "C Strings" },
+        { "id": "c_user-input", "title": "C User Input" },
         { "id": "memory-address", "title": "C Memory Address" },
-        { "id": "pointers", "title": "C Pointers" }
+        { "id": "pointers", "title": "C Pointers" },
+        { "id": "c_pointers_module", "title": "C Pointers" }
       ]
     },
     {
@@ -236,7 +246,7 @@
         }
       ]
     },
-    "introduction": {
+    "intro": {
       "title": "C Introduction",
       "sections": [
         {
@@ -1037,6 +1047,1947 @@
           }
         }
       ]
+    } ,
+    "if-else": {
+  "title": "C If ... Else",
+  "paragraphs": [
+    "C uses conditional statements to perform different actions based on different conditions.",
+    "These conditions are based on comparison operators such as <, >, <=, >=, == and !=."
+  ],
+  "sections": [
+    {
+      "heading": "Comparison Operators",
+      "list": [
+        "a < b  (less than)",
+        "a <= b (less than or equal to)",
+        "a > b  (greater than)",
+        "a >= b (greater than or equal to)",
+        "a == b (equal to)",
+        "a != b (not equal)"
+      ]
+    },
+    {
+      "heading": "Types of Conditional Statements",
+      "list": [
+        "if",
+        "else",
+        "else if",
+        "switch"
+      ]
+    },
+    {
+      "heading": "The if Statement",
+      "paragraphs": [
+        "The if statement executes a block of code when the condition is true.",
+        "The keyword if must be written in lowercase."
+      ],
+      "example": "if (condition) {\n  // code to execute\n}"
+    },
+    {
+      "heading": "Simple Example",
+      "example": "if (20 > 18) {\n  printf(\"20 is greater than 18\");\n}"
+    },
+    {
+      "heading": "Using Variables",
+      "example": "int x = 20;\nint y = 18;\n\nif (x > y) {\n  printf(\"x is greater than y\");\n}"
+    },
+    {
+      "heading": "Explanation",
+      "paragraphs": [
+        "The variables x and y are compared using the > operator.",
+        "Since x is greater than y, the message is printed."
+      ]
+    },
+    {
+      "heading": "Exercise",
+      "paragraphs": [
+        "Which operator is used to check if two values are equal in C?"
+      ],
+      "list": [
+        "=",
+        "==",
+        "!=",
+        "<>"
+      ]
+    } ,
+    {
+      "heading": "The else Statement",
+      "paragraphs": [
+        "The else statement executes a block of code when the condition is false.",
+        "It is used together with the if statement."
+      ]
+    },
+    {
+      "heading": "Syntax",
+      "example": "if (condition) {\n  // block of code if condition is true\n} else {\n  // block of code if condition is false\n}"
+    },
+    {
+      "heading": "Example",
+      "example": "int time = 20;\n\nif (time < 18) {\n  printf(\"Good day.\");\n} else {\n  printf(\"Good evening.\");\n}\n// Outputs: Good evening."
+    },
+    {
+      "heading": "Explanation",
+      "paragraphs": [
+        "The variable time is compared with 18.",
+        "Since time is 20, the condition is false and the else block runs.",
+        "If time were less than 18, the program would print \"Good day\" instead."
+      ]
+    },
+    {
+      "heading": "Exercise",
+      "paragraphs": [
+        "What is the purpose of the else statement in C?"
+      ],
+      "list": [
+        "To execute a block of code if the if condition is true",
+        "To execute a block of code if the if condition is false",
+        "To create a new condition",
+        "To end the program"
+      ]
+    } ,
+    {
+      "heading": "The else if Statement",
+      "paragraphs": [
+        "The else if statement is used to specify a new condition if the first if condition is false.",
+        "It is used between an if statement and an else statement."
+      ]
+    },
+    {
+      "heading": "Syntax",
+      "example": "if (condition1) {\n  // block of code if condition1 is true\n} else if (condition2) {\n  // block of code if condition1 is false and condition2 is true\n} else {\n  // block of code if both conditions are false\n}"
+    },
+    {
+      "heading": "Example",
+      "example": "int time = 22;\n\nif (time < 10) {\n  printf(\"Good morning.\");\n} else if (time < 20) {\n  printf(\"Good day.\");\n} else {\n  printf(\"Good evening.\");\n}\n// Outputs: Good evening."
+    },
+    {
+      "heading": "Explanation",
+      "paragraphs": [
+        "The value of time is first checked against 10.",
+        "Since 22 is greater than 10, the first condition is false.",
+        "The next condition (time < 20) is also false.",
+        "Because both conditions fail, the else block runs and prints \"Good evening\".",
+        "If time were 14, the program would print \"Good day\"."
+      ]
+    },
+    {
+      "heading": "Exercise",
+      "paragraphs": [
+        "What is the purpose of the else if statement in C?"
+      ],
+      "list": [
+        "To check a new condition if the first if condition is true",
+        "To end the program",
+        "To specify a new condition if the first if condition is false",
+        "To repeat the previous condition"
+      ]
+    } ,
+    {
+      "heading": "The Ternary Operator",
+      "paragraphs": [
+        "The ternary operator is a shorthand way of writing an if...else statement.",
+        "It is called a ternary operator because it takes three operands: a condition, an expression to execute if the condition is true, and an expression to execute if the condition is false."
+      ]
+    },
+    {
+      "heading": "Syntax",
+      "example": "variable = (condition) ? expressionTrue : expressionFalse;"
+    },
+    {
+      "heading": "Traditional If...Else",
+      "example": "int time = 20;\nif (time < 18) {\n  printf(\"Good day.\");\n} else {\n  printf(\"Good evening.\");\n}"
+    },
+    {
+      "heading": "Using Ternary Operator",
+      "example": "int time = 20;\n(time < 18) ? printf(\"Good day.\") : printf(\"Good evening.\");"
+    },
+    {
+      "heading": "Explanation",
+      "paragraphs": [
+        "The condition (time < 18) is evaluated first.",
+        "If the condition is true, the first expression runs.",
+        "If the condition is false, the second expression runs.",
+        "Both versions produce the same output, but the ternary operator uses fewer lines."
+      ]
+    } ,
+    {
+      "heading": "Exercise",
+      "paragraphs": [
+        "What is the purpose of the ternary operator in C?"
+      ],
+      "list": [
+        "To perform arithmetic operations",
+        "To create loops",
+        "To provide a shorthand way of writing an if...else statement",
+        "To define functions"
+      ]
+    } ,
+    {
+      "heading": "Nested if Statements",
+      "paragraphs": [
+        "You can also use if statements inside another if statement. This is called a nested if statement.",
+        "Nested if statements are useful when you need to check multiple conditions that depend on each other."
+      ]
+    },
+    {
+      "heading": "Syntax",
+      "example": "if (condition1) {\n  // code to run if condition1 is true\n  if (condition2) {\n    // code to run if both condition1 and condition2 are true\n  }\n}"
+    },
+    {
+      "heading": "Basic Example",
+      "paragraphs": [
+        "First, the program checks if x is greater than 10.",
+        "If true, it then checks if y is greater than 20."
+      ],
+      "example": "int x = 15;\nint y = 25;\n\nif (x > 10) {\n  printf(\"x is greater than 10\\n\");\n\n  // Nested if\n  if (y > 20) {\n    printf(\"y is also greater than 20\\n\");\n  }\n}"
+    },
+    {
+      "heading": "Output",
+      "example": "x is greater than 10\ny is also greater than 20"
+    },
+    {
+      "heading": "Real-Life Example",
+      "paragraphs": [
+        "Nested if statements are useful when multiple conditions depend on each other.",
+        "For example, checking age first, then checking citizenship."
+      ],
+      "example": "int age = 20;\nbool isCitizen = true;\n\nif (age >= 18) {\n  printf(\"Old enough to vote.\\n\");\n\n  if (isCitizen) {\n    printf(\"And you are a citizen, so you can vote!\\n\");\n  } else {\n    printf(\"But you must be a citizen to vote.\\n\");\n  }\n} else {\n  printf(\"Not old enough to vote.\\n\");\n}"
+    },
+    {
+      "heading": "Notes",
+      "list": [
+        "You can nest as many if statements as needed.",
+        "Avoid too much nesting as it can make code hard to read.",
+        "Nested if is often used with else and else if for complex decisions."
+      ]
+    } ,
+    {
+      "heading": "Exercise",
+      "paragraphs": [
+        "What is a nested if statement in C?"
+      ],
+      "list": [
+        "An if statement inside another if statement",
+        "An if statement that checks multiple conditions at once",
+        "An if statement that can only be used with else",
+        "An if statement that cannot contain other statements"
+  ]
+},
+    {
+      "heading": "Logical Operators",
+      "list": [
+        "&& (AND) – all conditions must be true",
+        "|| (OR) – at least one condition must be true",
+        "! (NOT) – reverses a condition"
+      ]
+    },
+    {
+      "heading": "AND (&&)",
+      "paragraphs": [
+        "Use AND when both conditions must be true."
+      ],
+      "example": "int a = 200;\nint b = 33;\nint c = 500;\n\nif (a > b && c > a) {\n  printf(\"Both conditions are true\\n\");\n}"
+    },
+    {
+      "heading": "OR (||)",
+      "paragraphs": [
+        "Use OR when at least one condition must be true."
+      ],
+      "example": "int a = 200;\nint b = 33;\nint c = 500;\n\nif (a > b || a > c) {\n  printf(\"At least one condition is true\\n\");\n}"
+    },
+    {
+      "heading": "NOT (!)",
+      "paragraphs": [
+        "The NOT operator reverses a condition."
+      ],
+      "example": "int a = 33;\nint b = 200;\n\nif (!(a > b)) {\n  printf(\"a is NOT greater than b\\n\");\n}"
+    },
+    {
+      "heading": "Real-Life Example",
+      "paragraphs": [
+        "Logical operators are commonly used for access control.",
+        "Users must be logged in and either be admin or have high security clearance."
+      ],
+      "example": "bool isLoggedIn = true;\nbool isAdmin = false;\nint securityLevel = 3; // 1 = highest\n\nif (isLoggedIn && (isAdmin || securityLevel <= 2)) {\n  printf(\"Access granted\\n\");\n} else {\n  printf(\"Access denied\\n\");\n}"
+    } ,
+    {
+      "heading": "Exercise",
+      "paragraphs": [
+        "Which logical operator in C is used to check if both conditions are true?"
+      ],
+      "list": [
+        "|| (OR)",
+        "&& (AND)",
+        "! (NOT)",
+        "& (BITWISE AND)"
+
+  ]
+  } ,
+    {
+      "heading": "Practice Examples",
+      "paragraphs": [
+        "Here are some practice examples to help you understand if...else statements better:"
+      ],
+      "examples": [
+  {
+      "heading": "Door Lock System",
+      "paragraphs": [
+        "Checks whether the user entered the correct door code."
+      ],
+      "example": "int doorCode = 1337;\n\nif (doorCode == 1337) {\n  printf(\"Correct code.\\nThe door is now open.\");\n} else {\n  printf(\"Wrong code.\\nThe door remains closed.\");\n}"
+    },
+    {
+      "heading": "Positive, Negative, or Zero",
+      "paragraphs": [
+        "Checks whether a number is positive, negative, or zero."
+      ],
+      "example": "int myNum = 10;\n\nif (myNum > 0) {\n  printf(\"The value is a positive number.\");\n} else if (myNum < 0) {\n  printf(\"The value is a negative number.\");\n} else {\n  printf(\"The value is 0.\");\n}"
+    },
+    {
+      "heading": "Voting Eligibility",
+      "paragraphs": [
+        "Checks whether a person is old enough to vote."
+      ],
+      "example": "int myAge = 25;\nint votingAge = 18;\n\nif (myAge >= votingAge) {\n  printf(\"Old enough to vote!\");\n} else {\n  printf(\"Not old enough to vote.\");\n}"
+    },
+    {
+      "heading": "Voting with Citizenship (Nested If)",
+      "paragraphs": [
+        "Checks both age and citizenship using nested if statements."
+      ],
+      "example": "int age = 20;\nbool isCitizen = true;\n\nif (age >= 18) {\n  printf(\"Old enough to vote.\\n\");\n\n  if (isCitizen) {\n    printf(\"And you are a citizen, so you can vote!\\n\");\n  } else {\n    printf(\"But you must be a citizen to vote.\\n\");\n  }\n} else {\n  printf(\"Not old enough to vote.\\n\");\n}"
+    },
+    {
+      "heading": "Even or Odd",
+      "paragraphs": [
+        "Checks whether a number is even or odd."
+      ],
+      "example": "int myNum = 5;\n\nif (myNum % 2 == 0) {\n  printf(\"%d is even.\\n\", myNum);\n} else {\n  printf(\"%d is odd.\\n\", myNum);\n}"
+    },
+    {
+      "heading": "Temperature Check",
+      "paragraphs": [
+        "Classifies temperature as freezing, cool, or warm."
+      ],
+      "example": "int temperature = 30;\n\nif (temperature < 0) {\n  printf(\"It's freezing!\\n\");\n} else if (temperature < 20) {\n  printf(\"It's cool.\\n\");\n} else {\n  printf(\"It's warm.\\n\");\n}"
+    },
+    {
+      "heading": "System Access Control",
+      "paragraphs": [
+        "Grants access if the user is logged in and is either admin or has high security clearance."
+      ],
+      "example": "bool isLoggedIn = true;\nbool isAdmin = false;\nint securityLevel = 3; // 1 = highest\n\nif (isLoggedIn && (isAdmin || securityLevel <= 2)) {\n  printf(\"Access granted\\n\");\n} else {\n  printf(\"Access denied\\n\");\n}"
     }
+]
+} 
+
+  ]
+} ,
+    "switch": {
+  "title": "C Switch Statement",
+  "paragraphs": [
+    "Instead of writing many if...else statements, you can use the switch statement.",
+    "The switch statement selects one of many code blocks to be executed."
+  ],
+  "syntax": "switch (expression) {\n  case x:\n    // code block\n    break;\n  case y:\n    // code block\n    break;\n  default:\n    // code block\n}",
+  "working": [
+    "The switch expression is evaluated once.",
+    "The value of the expression is compared with each case.",
+    "If a match is found, the corresponding code block is executed.",
+    "The break statement stops further case testing.",
+    "The default block runs if no case matches (optional)."
+  ],
+  "sections": [
+    {
+      "heading": "Weekday Example",
+      "paragraphs": [
+        "Uses a number to print the corresponding weekday."
+      ],
+      "example": "int day = 4;\n\nswitch (day) {\n  case 1:\n    printf(\"Monday\");\n    break;\n  case 2:\n    printf(\"Tuesday\");\n    break;\n  case 3:\n    printf(\"Wednesday\");\n    break;\n  case 4:\n    printf(\"Thursday\");\n    break;\n  case 5:\n    printf(\"Friday\");\n    break;\n  case 6:\n    printf(\"Saturday\");\n    break;\n  case 7:\n    printf(\"Sunday\");\n    break;\n}\n// Outputs \"Thursday\""
+    },
+    {
+      "heading": "The break Keyword",
+      "paragraphs": [
+        "The break statement stops execution inside the switch block.",
+        "It prevents the program from executing other case blocks.",
+        "It also saves execution time by skipping unnecessary comparisons."
+      ]
+    },
+    {
+      "heading": "The default Keyword",
+      "paragraphs": [
+        "The default keyword runs if none of the cases match.",
+        "It must appear last and does not require a break."
+      ],
+      "example": "int day = 4;\n\nswitch (day) {\n  case 6:\n    printf(\"Today is Saturday\");\n    break;\n  case 7:\n    printf(\"Today is Sunday\");\n    break;\n  default:\n    printf(\"Looking forward to the Weekend\");\n}\n// Outputs \"Looking forward to the Weekend\""
+    }
+  ],
+  "exercise": {
+    "question": "What is the purpose of the switch statement in C?",
+    "options": [
+      "To select one of many code blocks to be executed",
+      "To loop through a set of conditions",
+      "To compare two values",
+      "To declare multiple variables"
+    ],
+    "answer": "To select one of many code blocks to be executed"
+  }
+} ,
+"while-loop": {
+  "title": "C While Loop",
+  "category": "Loops",
+  "intro": [
+    "Loops can execute a block of code as long as a specified condition is true.",
+    "Loops are handy because they save time, reduce errors, and make code more readable."
+  ],
+  "definition": "The while loop repeats a block of code as long as a specified condition is true.",
+  "syntax": "while (condition) {\n  // code block to be executed\n}",
+  "examples": [
+    {
+      "title": "Basic While Loop",
+      "code": "int i = 0;\n\nwhile (i < 5) {\n  printf(\"%d\\n\", i);\n  i++;\n}"
+    },
+    {
+      "title": "Countdown Example",
+      "code": "int countdown = 3;\n\nwhile (countdown > 0) {\n  printf(\"%d\\n\", countdown);\n  countdown--;\n}\nprintf(\"Happy New Year!!\\n\");"
+    },
+    {
+      "title": "While Loop With False Condition",
+      "code": "int i = 10;\n\nwhile (i < 5) {\n  printf(\"This will never be printed\\n\");\n  i++;\n}"
+    }
+  ],
+  "notes": [
+    "Always update the variable used in the condition (like i++) to avoid infinite loops.",
+    "If the condition is false at the start, the loop body will not execute.",
+    "The do...while loop always runs at least once before checking the condition."
+  ]
+} ,
+"do-while-loop": {
+  "title": "C Do/While Loop",
+  "category": "Loops",
+  "intro": [
+    "The do/while loop is a variant of the while loop.",
+    "It executes the code block once before checking the condition, and then repeats while the condition is true."
+  ],
+  "definition": "The do/while loop always runs at least once, even if the condition is false at the start.",
+  "syntax": "do {\n  // code block to be executed\n} while (condition);",
+  "examples": [
+    {
+      "title": "Basic Do/While Loop",
+      "code": "int i = 0;\n\ndo {\n  printf(\"%d\\n\", i);\n  i++;\n} while (i < 5);"
+    },
+    {
+      "title": "Condition False From Start",
+      "code": "int i = 10;\n\ndo {\n  printf(\"i is %d\\n\", i);\n  i++;\n} while (i < 5);"
+    },
+    {
+      "title": "User Input Example",
+      "code": "int number;\n\ndo {\n  printf(\"Enter a positive number: \");\n  scanf(\"%d\", &number);\n} while (number > 0);"
+    }
+  ],
+  "notes": [
+    "The loop body runs once before the condition is checked.",
+    "Always update the condition variable to avoid infinite loops.",
+    "Useful when an action must happen at least once, such as user input."
+  ]
+} ,
+"while-loop-examples": {
+  "title": "C While Loop Examples",
+  "category": "Loops",
+  "intro": [
+    "These examples show how the while loop is used in real-life programming situations.",
+    "They demonstrate counting, filtering numbers, reversing digits, and combining loops with conditions."
+  ],
+  "examples": [
+    {
+      "title": "Countdown Program",
+      "description": "Counts down from 3 to 1 and then prints a message.",
+      "code": "int countdown = 3;\n\nwhile (countdown > 0) {\n  printf(\"%d\\n\", countdown);\n  countdown--;\n}\n\nprintf(\"Happy New Year!!\\n\");"
+    },
+    {
+      "title": "Print Even Numbers",
+      "description": "Prints even numbers between 0 and 10.",
+      "code": "int i = 0;\n\nwhile (i <= 10) {\n  printf(\"%d\\n\", i);\n  i += 2;\n}"
+    },
+    {
+      "title": "Reverse a Number",
+      "description": "Reverses the digits of a number.",
+      "code": "int numbers = 12345;\nint revNumbers = 0;\n\nwhile (numbers) {\n  revNumbers = revNumbers * 10 + numbers % 10;\n  numbers /= 10;\n}"
+    },
+    {
+      "title": "Yatzy Game Example",
+      "description": "Prints 'No Yatzy' for numbers 1–5 and 'Yatzy!' when the number is 6.",
+      "code": "int dice = 1;\n\nwhile (dice <= 6) {\n  if (dice < 6) {\n    printf(\"No Yatzy\\n\");\n  } else {\n    printf(\"Yatzy!\\n\");\n  }\n  dice = dice + 1;\n}"
+    }
+  ],
+  "notes": [
+    "The while loop repeats as long as the condition remains true.",
+    "Always update the loop variable to avoid infinite loops.",
+    "Combining while with if...else allows decision-making inside loops."
+  ]
+} ,
+
+  "for-loop": {
+    "title": "C For Loop",
+    "category": "Loops",
+    "intro": [
+      "Use a for loop when you know in advance how many times you want to repeat a block of code.",
+      "It has three expressions: initialization, condition, and increment/decrement."
+    ],
+    "syntax": "for (expression1; expression2; expression3) { /* code */ }",
+    "explanation": [
+      "Expression 1 runs once before the loop starts.",
+      "Expression 2 is the condition checked before every iteration.",
+      "Expression 3 runs after each loop iteration."
+    ],
+    "examples": [
+      {
+        "title": "Print Numbers 0 to 4",
+        "code": "for (i = 0; i < 5; i++) {\n  printf(\"%d\\n\", i);\n}"
+      },
+      {
+        "title": "Print Even Numbers",
+        "code": "for (i = 0; i <= 10; i = i + 2) {\n  printf(\"%d\\n\", i);\n}"
+      },
+      {
+        "title": "Sum of Numbers",
+        "code": "int sum = 0;\nfor (i = 1; i <= 5; i++) {\n  sum = sum + i;\n}\nprintf(\"Sum is %d\", sum);"
+      },
+      {
+        "title": "Countdown",
+        "code": "for (i = 5; i > 0; i--) {\n  printf(\"%d\\n\", i);\n}"
+      }
+    ]
+  },
+
+  "nested-loops": {
+    "title": "C Nested Loops",
+    "category": "Loops",
+    "intro": [
+      "A nested loop is a loop inside another loop.",
+      "The inner loop runs once for every iteration of the outer loop."
+    ],
+    "examples": [
+      {
+        "title": "Basic Nested Loop",
+        "code": "for (i = 1; i <= 2; ++i) {\n  printf(\"Outer: %d\\n\", i);\n  for (j = 1; j <= 3; ++j) {\n    printf(\" Inner: %d\\n\", j);\n  }\n}"
+      },
+      {
+        "title": "Multiplication Table",
+        "code": "for (i = 1; i <= 3; i++) {\n  for (j = 1; j <= 3; j++) {\n    printf(\"%d \", i * j);\n  }\n  printf(\"\\n\");\n}"
+      }
+    ],
+    "notes": [
+      "Nested loops are useful for tables, matrices, and grids.",
+      "Time complexity increases quickly with nesting."
+    ]
+  },
+
+  "for-loop-examples": {
+    "title": "C For Loop Examples",
+    "category": "Loops",
+    "examples": [
+      {
+        "title": "Count by Tens",
+        "code": "for (i = 0; i <= 100; i += 10) {\n  printf(\"%d\\n\", i);\n}"
+      },
+      {
+        "title": "Even Numbers",
+        "code": "for (i = 0; i <= 10; i += 2) {\n  printf(\"%d\\n\", i);\n}"
+      },
+      {
+        "title": "Odd Numbers",
+        "code": "for (i = 1; i < 10; i += 2) {\n  printf(\"%d\\n\", i);\n}"
+      },
+      {
+        "title": "Powers of 2",
+        "code": "for (i = 2; i <= 512; i *= 2) {\n  printf(\"%d\\n\", i);\n}"
+      },
+      {
+        "title": "Multiplication Table",
+        "code": "int number = 2;\nfor (i = 1; i <= 10; i++) {\n  printf(\"%d x %d = %d\\n\", number, i, number * i);\n}"
+      }
+    ]
+  } ,
+
+  "break-continue": {
+    "title": "C Break and Continue",
+    "category": "Loops",
+    "intro": [
+      "The break statement is used to stop a loop completely.",
+      "The continue statement skips the current iteration and moves to the next one."
+    ],
+    "definitions": {
+      "break": "Ends the entire loop immediately.",
+      "continue": "Skips the current iteration but keeps the loop running."
+    },
+    "examples": [
+      {
+        "title": "Break in For Loop",
+        "code": "for (i = 0; i < 10; i++) {\n  if (i == 4) {\n    break;\n  }\n  printf(\"%d\\n\", i);\n}"
+      },
+      {
+        "title": "Continue in For Loop",
+        "code": "for (i = 0; i < 10; i++) {\n  if (i == 4) {\n    continue;\n  }\n  printf(\"%d\\n\", i);\n}"
+      },
+      {
+        "title": "Combine Break and Continue",
+        "code": "for (i = 0; i < 6; i++) {\n  if (i == 2) {\n    continue;\n  }\n  if (i == 4) {\n    break;\n  }\n  printf(\"%d\\n\", i);\n}"
+      },
+      {
+        "title": "Break in While Loop",
+        "code": "int i = 0;\nwhile (i < 10) {\n  if (i == 4) {\n    break;\n  }\n  printf(\"%d\\n\", i);\n  i++;\n}"
+      },
+      {
+        "title": "Continue in While Loop",
+        "code": "int i = 0;\nwhile (i < 10) {\n  if (i == 4) {\n    i++;\n    continue;\n  }\n  printf(\"%d\\n\", i);\n  i++;\n}"
+      },
+      {
+        "title": "Real-Life Example",
+        "code": "int myNumbers[] = {3, -1, 7, 0, 9};\nint length = sizeof(myNumbers) / sizeof(myNumbers[0]);\n\nfor (i = 0; i < length; i++) {\n  if (myNumbers[i] < 0) {\n    continue;\n  }\n  if (myNumbers[i] == 0) {\n    break;\n  }\n  printf(\"%d\\n\", myNumbers[i]);\n}"
+      }
+    ],
+    "notes": [
+      "break stops the loop entirely.",
+      "continue skips only the current loop cycle.",
+      "Both can be used in for, while, and do-while loops."
+    ],
+    "exercise": {
+      "question": "What does the break statement do in a loop?",
+      "options": [
+        "Skips the current iteration and continues with the next",
+        "Ends the entire loop",
+        "Pauses the loop temporarily",
+        "Restarts the loop from the beginning"
+      ],
+      "answer": "Ends the entire loop"
+    }
+  },
+  "arrays": {
+    "title": "C Arrays",
+    "category": "Data Structures",
+    "intro": [
+      "Arrays are used to store multiple values in a single variable.",
+      "All elements in an array must be of the same data type."
+    ],
+    "syntax": [
+      "int myNumbers[] = {25, 50, 75, 100};",
+      "int myNumbers[4];"
+    ],
+    "concepts": [
+      "Array indexes start from 0.",
+      "You cannot change the size of an array after creation.",
+      "All values must be of the same data type."
+    ],
+    "examples": [
+      {
+        "title": "Create an Array",
+        "code": "int myNumbers[] = {25, 50, 75, 100};"
+      },
+      {
+        "title": "Access Array Element",
+        "code": "int myNumbers[] = {25, 50, 75, 100};\nprintf(\"%d\", myNumbers[0]);"
+      },
+      {
+        "title": "Change Array Element",
+        "code": "int myNumbers[] = {25, 50, 75, 100};\nmyNumbers[0] = 33;\nprintf(\"%d\", myNumbers[0]);"
+      },
+      {
+        "title": "Set Array Size First",
+        "code": "int myNumbers[4];\nmyNumbers[0] = 25;\nmyNumbers[1] = 50;\nmyNumbers[2] = 75;\nmyNumbers[3] = 100;"
+      },
+      {
+        "title": "Avoid Mixing Data Types",
+        "code": "int myArray[] = {25, 50, 75, 3.15, 5.99};"
+      }
+    ],
+    "notes": [
+      "Indexes begin from 0.",
+      "Arrays store fixed-size data.",
+      "Mixing data types can cause truncation or errors."
+    ],
+    "exercise": {
+      "question": "What is the correct syntax to declare an array of integers with values 25, 50, 75, and 100?",
+      "options": [
+        "int myNumbers[25, 50, 75, 100];",
+        "int myNumbers = {25, 50, 75, 100};",
+        "int myNumbers[] = {25, 50, 75, 100};",
+        "int myNumbers[] = 25, 50, 75, 100;"
+      ],
+      "answer": "int myNumbers[] = {25, 50, 75, 100};"
+    }
+  } ,
+  "array_size": {
+    "title": "C Array Size",
+    "category": "Data Structures",
+    "intro": [
+      "You can use the sizeof operator to get the memory size of an array.",
+      "sizeof returns the total number of bytes used by the array."
+    ],
+    "concepts": [
+      "sizeof(array) returns the total size in bytes.",
+      "int usually takes 4 bytes, so 5 integers take 20 bytes.",
+      "To get the number of elements, divide total size by size of one element."
+    ],
+    "syntax": [
+      "sizeof(array)",
+      "sizeof(array) / sizeof(array[0])"
+    ],
+    "examples": [
+      {
+        "title": "Get Array Memory Size",
+        "code": "int myNumbers[] = {10, 25, 50, 75, 100};\nprintf(\"%zu\", sizeof(myNumbers));"
+      },
+      {
+        "title": "Get Number of Elements",
+        "code": "int myNumbers[] = {10, 25, 50, 75, 100};\nint length = sizeof(myNumbers) / sizeof(myNumbers[0]);\nprintf(\"%d\", length);"
+      },
+      {
+        "title": "Works for Any Type",
+        "code": "double myValues[] = {1.1, 2.2, 3.3};\nint length = sizeof(myValues) / sizeof(myValues[0]);\nprintf(\"%d\", length);"
+      }
+    ],
+    "notes": [
+      "sizeof returns bytes, not element count.",
+      "Use sizeof(array) / sizeof(array[0]) to get total elements.",
+      "This formula works for all data types."
+    ]
+  } ,
+  
+  "array_loop": {
+    "title": "C Array Loop",
+    "category": "Data Structures",
+    "intro": [
+      "You can use a loop to go through each element of an array.",
+      "Using a fixed number in the loop condition is not flexible."
+    ],
+    "concepts": [
+      "A for loop can iterate through array elements using indexes.",
+      "Hardcoding the array length is not recommended.",
+      "Using sizeof makes the loop work for any array size."
+    ],
+    "syntax": [
+      "for (i = 0; i < length; i++)",
+      "length = sizeof(array) / sizeof(array[0])"
+    ],
+    "examples": [
+      {
+        "title": "Loop with Fixed Size (Not Recommended)",
+        "code": "int myNumbers[] = {25, 50, 75, 100};\nint i;\n\nfor (i = 0; i < 4; i++) {\n  printf(\"%d\\n\", myNumbers[i]);\n}"
+      },
+      {
+        "title": "Flexible Loop Using sizeof",
+        "code": "int myNumbers[] = {25, 50, 75, 100};\nint length = sizeof(myNumbers) / sizeof(myNumbers[0]);\nint i;\n\nfor (i = 0; i < length; i++) {\n  printf(\"%d\\n\", myNumbers[i]);\n}"
+      }
+    ],
+    "notes": [
+      "Never hardcode the array size in loops.",
+      "Always use sizeof(array) / sizeof(array[0]).",
+      "This method adapts automatically to array size."
+    ]
+  } ,
+  
+  "array_real_life_examples": {
+    "title": "C Arrays - Real-Life Examples",
+    "category": "Data Structures",
+    "intro": [
+      "Arrays are widely used in real programs to store and process groups of values.",
+      "They allow us to calculate results like averages, minimum values, and filtered lists."
+    ],
+    "concepts": [
+      "Looping through arrays to process all values.",
+      "Using sizeof to get the number of elements.",
+      "Using conditions like if, break, and continue while looping."
+    ],
+    "examples": [
+      {
+        "title": "Calculate Average Age",
+        "code": "// An array storing different ages\nint ages[] = {20, 22, 18, 35, 48, 26, 87, 70};\n\nfloat avg, sum = 0;\nint i;\n\nint length = sizeof(ages) / sizeof(ages[0]);\n\nfor (i = 0; i < length; i++) {\n  sum += ages[i];\n}\n\navg = sum / length;\n\nprintf(\"The average age is: %.2f\", avg);"
+      },
+      {
+        "title": "Find the Lowest Age",
+        "code": "// An array storing different ages\nint ages[] = {20, 22, 18, 35, 48, 26, 87, 70};\n\nint i;\nint length = sizeof(ages) / sizeof(ages[0]);\n\nint lowestAge = ages[0];\n\nfor (i = 0; i < length; i++) {\n  if (lowestAge > ages[i]) {\n    lowestAge = ages[i];\n  }\n}"
+      },
+      {
+        "title": "Skip Negatives and Stop at Zero",
+        "code": "int myNumbers[] = {3, -1, 7, 0, 9};\nint length = sizeof(myNumbers) / sizeof(myNumbers[0]);\nint i;\n\nfor (i = 0; i < length; i++) {\n  if (myNumbers[i] < 0) {\n    continue;\n  }\n  if (myNumbers[i] == 0) {\n    break;\n  }\n  printf(\"%d\\n\", myNumbers[i]);\n}"
+      }
+    ],
+    "notes": [
+      "Always calculate array length using sizeof.",
+      "Use loops to process each element.",
+      "break stops the loop, continue skips the current iteration."
+    ]
+  } ,
+
+  "multidimensional_arrays": {
+    "title": "C Multidimensional Arrays",
+    "category": "Data Structures",
+    "intro": [
+      "A multidimensional array is an array of arrays.",
+      "It is used to store data in rows and columns, like tables or matrices.",
+      "The most common type is the two-dimensional (2D) array."
+    ],
+    "concepts": [
+      "2D arrays (rows and columns)",
+      "Accessing elements with two indexes",
+      "Updating elements in a matrix",
+      "Looping using nested loops",
+      "3D and higher dimensional arrays"
+    ],
+    "syntax_examples": [
+      {
+        "title": "Declare a 2D Array",
+        "code": "int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };"
+      },
+      {
+        "title": "Access an Element",
+        "code": "printf(\"%d\", matrix[0][2]); // Outputs 2"
+      },
+      {
+        "title": "Change an Element",
+        "code": "matrix[0][0] = 9;"
+      }
+    ],
+    "loop_example": {
+      "title": "Loop Through a 2D Array",
+      "code": "int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };\n\nint i, j;\nfor (i = 0; i < 2; i++) {\n  for (j = 0; j < 3; j++) {\n    printf(\"%d\\n\", matrix[i][j]);\n  }\n}"
+    },
+    "three_d_example": {
+      "title": "3D Array Declaration",
+      "code": "int example[2][4][3];"
+    },
+    "use_cases": [
+      "Tables and spreadsheets",
+      "Game boards",
+      "Score cards",
+      "Matrices and grids",
+      "Game levels and 3D data structures"
+    ],
+    "notes": [
+      "Array indexes always start from 0.",
+      "Each dimension needs its own loop.",
+      "Use nested loops for multi-dimensional arrays."
+    ]
+  },
+  
+  "arrays_code_challenge": {
+    "title": "C Arrays Code Challenge",
+    "challenge_name": "Create a Simple Array",
+    "instructions": [
+      "Declare an int array named numbers with 5 elements",
+      "Set the first element (numbers[0]) to 10",
+      "Set the last element (numbers[4]) to 50",
+      "Print the first element using printf",
+      "Print the last element using printf"
+    ],
+    "starter_code": "#include <stdio.h>\n\nint main() {\n  // 1) Declare an int array named numbers with 5 elements\n\n  // 2) Set numbers[0] to 10\n  // 3) Set numbers[4] to 50\n\n  // 4) Print numbers[0]\n  // 5) Print numbers[4]\n\n  return 0;\n}",
+    "solution": {
+      "code": "#include <stdio.h>\n\nint main() {\n  int numbers[5];\n\n  numbers[0] = 10;\n  numbers[4] = 50;\n\n  printf(\"%d\\n\", numbers[0]);\n  printf(\"%d\\n\", numbers[4]);\n\n  return 0;\n}"
+    },
+    "learning_outcomes": [
+      "How to declare an array",
+      "How to access array elements",
+      "How to modify array values",
+      "How to print array values"
+    ]
+  } ,
+  "c_strings": {
+    "title": "C Strings",
+    "sections": [
+      {
+        "heading": "Introduction",
+        "paragraphs": [
+          "Strings are used for storing text/characters.",
+          "Unlike many other languages, C does not have a String type. Instead, you use char arrays.",
+          "Example: char greetings[] = \"Hello World!\";"
+        ],
+        "example": "char greetings[] = \"Hello World!\";\nprintf(\"%s\", greetings);"
+      },
+      {
+        "heading": "Access Strings",
+        "paragraphs": [
+          "Strings are arrays, so you can access characters using indexes.",
+          "Use %c to print a single character."
+        ],
+        "example": "char greetings[] = \"Hello World!\";\nprintf(\"%c\", greetings[0]);"
+      },
+      {
+        "heading": "Modify Strings",
+        "paragraphs": [
+          "You can change characters using indexes and single quotes."
+        ],
+        "example": "char greetings[] = \"Hello World!\";\ngreetings[0] = 'J';\nprintf(\"%s\", greetings);"
+      },
+      {
+        "heading": "Loop Through a String",
+        "paragraphs": [
+          "Use loops to iterate through characters.",
+          "Always prefer sizeof formula."
+        ],
+        "example": "char carName[] = \"Volvo\";\nint length = sizeof(carName) / sizeof(carName[0]);\nfor(int i=0;i<length;i++){ printf(\"%c\\n\", carName[i]); }"
+      },
+      {
+        "heading": "Another Way to Create Strings",
+        "paragraphs": [
+          "You can also define strings as character arrays with a null terminator.",
+          "The \\0 marks the end of the string."
+        ],
+        "example": "char greetings[] = {'H','e','l','l','o',' ','W','o','r','l','d','!','\\0'};\nprintf(\"%s\", greetings);"
+      },
+      {
+        "heading": "Special Characters",
+        "list": [
+          "\\\" = Double quote",
+          "\\' = Single quote",
+          "\\\\ = Backslash",
+          "\\n = New line",
+          "\\t = Tab",
+          "\\0 = Null character"
+        ],
+        "example": "char txt[] = \"We are the so-called \\\"Vikings\\\" from the north.\";"
+      },
+      {
+        "heading": "String Functions",
+        "paragraphs": [
+          "To use string functions, include <string.h>.",
+          "Common functions: strlen, strcat, strcpy, strcmp."
+        ],
+        "example": "#include <string.h>\nchar str1[20] = \"Hello \";\nchar str2[] = \"World!\";\nstrcat(str1, str2);\nprintf(\"%s\", str1);"
+      },
+      {
+        "heading": "Real-Life Example",
+        "example": "char message[] = \"Good to see you,\";\nchar fname[] = \"John\";\nprintf(\"%s %s!\", message, fname);"
+      },
+      {
+        "heading": "Code Challenge",
+        "challenge": {
+          "title": "Create a Greeting Message",
+          "starter_code": "#include <stdio.h>\nint main() {\n  // Write your code here\n  return 0;\n}"
+        }
+      }
+    ]
+  } ,
+
+  "c_user_input": {
+    "title": "C User Input",
+    "sections": [
+      {
+        "heading": "Introduction",
+        "paragraphs": [
+          "printf() is used to output values in C.",
+          "To get user input, we use the scanf() function."
+        ]
+      },
+      {
+        "heading": "Single Number Input",
+        "example": "int myNum;\nprintf(\"Type a number:\\n\");\nscanf(\"%d\", &myNum);\nprintf(\"Your number is: %d\", myNum);",
+        "notes": [
+          "scanf takes a format specifier and a variable address.",
+          "The & operator stores the memory address."
+        ]
+      },
+      {
+        "heading": "Multiple Inputs",
+        "example": "int myNum;\nchar myChar;\nprintf(\"Type a number AND a character:\\n\");\nscanf(\"%d %c\", &myNum, &myChar);\nprintf(\"Your number is: %d\\n\", myNum);\nprintf(\"Your character is: %c\\n\", myChar);"
+      },
+      {
+        "heading": "String Input Using scanf",
+        "example": "char firstName[30];\nprintf(\"Enter your first name:\\n\");\nscanf(\"%s\", firstName);\nprintf(\"Hello %s\", firstName);",
+        "notes": [
+          "Do not use & for strings in scanf.",
+          "scanf stops reading at whitespace."
+        ]
+      },
+      {
+        "heading": "String Input Using fgets",
+        "example": "char fullName[30];\nprintf(\"Type your full name:\\n\");\nfgets(fullName, sizeof(fullName), stdin);\nprintf(\"Hello %s\", fullName);",
+        "notes": [
+          "Use fgets for multi-word input.",
+          "It reads until a newline is found."
+        ]
+      },
+      {
+        "heading": "Comparison",
+        "list": [
+          "scanf → single word input",
+          "fgets → full line input"
+        ]
+      },
+      {
+        "heading": "Exercise",
+        "question": "Which function is used to get user input in C?",
+        "options": ["printf()", "scanf()", "pgets()", "sgets()"],
+        "answer": "scanf()"
+      }
+    ]
+  } ,
+  
+  "c_pointers": {
+    "title": "C Pointers",
+    "sections": [
+      {
+        "heading": "Creating Pointers",
+        "paragraphs": [
+          "You can get the memory address of a variable using the & reference operator.",
+          "A pointer is a variable that stores the memory address of another variable.",
+          "Pointer variables are created using the * operator and must match the data type they point to."
+        ],
+        "example": "int myAge = 43;\nint* ptr = &myAge;\n\nprintf(\"%d\\n\", myAge);\nprintf(\"%p\\n\", &myAge);\nprintf(\"%p\\n\", ptr);"
+      },
+      {
+        "heading": "Example Explained",
+        "list": [
+          "ptr is a pointer to an int variable.",
+          "The & operator stores the memory address of myAge.",
+          "ptr now holds the address of myAge."
+        ]
+      },
+      {
+        "heading": "Dereference Operator",
+        "paragraphs": [
+          "You can access the value of the variable a pointer points to by using the * operator.",
+          "This is called dereferencing."
+        ],
+        "example": "int myAge = 43;\nint* ptr = &myAge;\n\nprintf(\"%p\\n\", ptr);\nprintf(\"%d\\n\", *ptr);"
+      },
+      {
+        "heading": "Pointer Declaration Notes",
+        "list": [
+          "int* myNum;",
+          "int *myNum;"
+        ],
+        "notes": [
+          "In declaration, * creates a pointer.",
+          "In usage, * dereferences the pointer."
+        ]
+      },
+      {
+        "heading": "Why Pointers Are Important",
+        "paragraphs": [
+          "Pointers allow direct memory manipulation.",
+          "They improve performance and reduce code.",
+          "They are essential for data structures, files, and memory management.",
+          "They must be used carefully to avoid memory corruption."
+        ]
+      },
+      {
+        "heading": "Exercise",
+        "question": "How do you declare a pointer to an int variable?",
+        "options": [
+          "int* ptr;",
+          "int ptr*;",
+          "*int ptr;",
+          "int& ptr;"
+        ],
+        "answer": "int* ptr;"
+      }
+    ]
+  } ,
+
+  "c_pointers_module": {
+    "title": "C Pointers Module",
+    "sections": [
+
+      {
+        "heading": "Pointer Arithmetic",
+        "paragraphs": [
+          "Pointer arithmetic means changing the value of a pointer to make it point to a different element in memory.",
+          "Array elements are stored next to each other in memory. Adding 1 to a pointer moves it to the next element."
+        ],
+        "example": "int myNumbers[4] = {25, 50, 75, 100};\nint *p = myNumbers;\n\nprintf(\"%d\\n\", *p);\nprintf(\"%d\\n\", *(p + 1));\nprintf(\"%d\\n\", *(p + 2));\nprintf(\"%d\\n\", *(p + 3));"
+      },
+
+      {
+        "heading": "Increment and Decrement",
+        "paragraphs": [
+          "Pointers can be moved using ++, --, += and -= operators."
+        ],
+        "example": "int myNumbers[3] = {10, 20, 30};\nint *p = myNumbers;\n\nprintf(\"%d\\n\", *p);\np++;\nprintf(\"%d\\n\", *p);\np--;\nprintf(\"%d\\n\", *p);\n\np += 2;\nprintf(\"%d\\n\", *p);"
+      },
+
+      {
+        "heading": "Pointer Subtraction",
+        "paragraphs": [
+          "Subtracting two pointers gives the number of elements between them.",
+          "Both pointers must point inside the same array."
+        ],
+        "example": "int myNumbers[5] = {10, 20, 30, 40, 50};\nint *start = &myNumbers[1];\nint *end = &myNumbers[4];\n\nprintf(\"%ld\\n\", end - start);"
+      },
+
+      {
+        "heading": "Pointer Arithmetic Depends on Type",
+        "paragraphs": [
+          "Pointer movement depends on the data type it points to.",
+          "int* moves 4 bytes, char* moves 1 byte."
+        ],
+        "example": "int myNumbers[2] = {1, 2};\nchar letters[] = \"Hi\";\n\nint *pi = myNumbers;\nchar *pc = letters;\n\nprintf(\"%p\\n\", (void*)pi);\nprintf(\"%p\\n\", (void*)(pi + 1));\n\nprintf(\"%p\\n\", (void*)pc);\nprintf(\"%p\\n\", (void*)(pc + 1));"
+      },
+
+      {
+        "heading": "Looping with Pointers",
+        "paragraphs": [
+          "You can loop through an array by moving the pointer itself."
+        ],
+        "example": "int myNumbers[4] = {25, 50, 75, 100};\nint *p = myNumbers;\n\nfor (int i = 0; i < 4; i++) {\n  printf(\"%d\\n\", *p);\n  p++;\n}"
+      },
+
+      {
+        "heading": "Common Mistakes",
+        "list": [
+          "Using the wrong pointer type",
+          "Uninitialized pointers",
+          "Going out of array bounds"
+        ]
+      },
+
+      {
+        "heading": "Pointer to Pointer",
+        "paragraphs": [
+          "A pointer to pointer stores the address of another pointer.",
+          "It adds another level of indirection."
+        ],
+        "example": "int myNum = 10;\nint *ptr = &myNum;\nint **pptr = &ptr;\n\nprintf(\"%d\\n\", **pptr);"
+      },
+
+      {
+        "heading": "Change Value Using Pointer to Pointer",
+        "example": "int myNum = 5;\nint *ptr = &myNum;\nint **pptr = &ptr;\n\n**pptr = 20;\nprintf(\"%d\\n\", myNum);"
+      },
+
+      {
+        "heading": "Pointer Code Challenge",
+        "question": "Create a pointer to x and print its value",
+        "instructions": [
+          "Declare int x = 10",
+          "Declare pointer ptr that points to x",
+          "Print value of x using ptr"
+        ],
+        "starterCode": "#include <stdio.h>\n\nint main() {\n  // Write your code here\n  return 0;\n}"
+      }
+
+    ]
+  } ,
+  "c_functions_module": {
+    "title": "C Functions",
+    "sections": [
+
+      {
+        "heading": "What is a Function?",
+        "paragraphs": [
+          "A function is a block of code which only runs when it is called.",
+          "You can pass data into a function using parameters.",
+          "Functions are used to reuse code: define once, use many times."
+        ]
+      },
+
+      {
+        "heading": "Predefined Functions",
+        "paragraphs": [
+          "main() is a function used to execute the program.",
+          "printf() is a function used to print output."
+        ],
+        "example": "int main() {\n  printf(\"Hello World!\");\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Create a Function",
+        "paragraphs": [
+          "To create a function, specify the name followed by () and {}.",
+          "void means the function does not return a value."
+        ],
+        "syntax": "void myFunction() {\n  // code to be executed\n}"
+      },
+
+      {
+        "heading": "Call a Function",
+        "paragraphs": [
+          "Functions are not executed until they are called.",
+          "To call a function, write its name followed by ();"
+        ],
+        "example": "// Create a function\nvoid myFunction() {\n  printf(\"I just got executed!\");\n}\n\nint main() {\n  myFunction();\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Calling a Function Multiple Times",
+        "example": "void myFunction() {\n  printf(\"I just got executed!\\n\");\n}\n\nint main() {\n  myFunction();\n  myFunction();\n  myFunction();\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Calculate the Sum of Numbers",
+        "paragraphs": [
+          "Functions can contain logic and calculations.",
+          "This example shows a function that calculates a sum."
+        ],
+        "example": "void calculateSum() {\n  int x = 5;\n  int y = 10;\n  int sum = x + y;\n  printf(\"The sum of x + y is: %d\", sum);\n}\n\nint main() {\n  calculateSum();\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Exercise",
+        "question": "What does the keyword void indicate when used with a function in C?",
+        "options": [
+          "The function returns an integer",
+          "The function can only be called once",
+          "The function does not return a value",
+          "The function can accept any type of parameter"
+        ],
+        "answer": "The function does not return a value"
+      }
+
+    ]
+  } ,
+  "c_function_parameters_module": {
+    "title": "C Function Parameters",
+    "sections": [
+
+      {
+        "heading": "Parameters and Arguments",
+        "paragraphs": [
+          "Information can be passed to functions as parameters.",
+          "Parameters act as variables inside the function.",
+          "When a function is called, the passed values are called arguments."
+        ],
+        "syntax": "returnType functionName(parameter1, parameter2, parameter3) {\n  // code to be executed\n}"
+      },
+
+      {
+        "heading": "Single Parameter Example",
+        "example": "void myFunction(char name[]) {\n  printf(\"Hello %s\\n\", name);\n}\n\nint main() {\n  myFunction(\"Liam\");\n  myFunction(\"Jenny\");\n  myFunction(\"Anja\");\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Multiple Parameters",
+        "example": "void myFunction(char name[], int age) {\n  printf(\"Hello %s. You are %d years old.\\n\", name, age);\n}\n\nint main() {\n  myFunction(\"Liam\", 3);\n  myFunction(\"Jenny\", 14);\n  myFunction(\"Anja\", 30);\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Using Parameters for Calculation",
+        "example": "void calculateSum(int x, int y) {\n  int sum = x + y;\n  printf(\"The sum of %d + %d is: %d\\n\", x, y, sum);\n}\n\nint main() {\n  calculateSum(5, 3);\n  calculateSum(8, 2);\n  calculateSum(15, 15);\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Notes on Parameters",
+        "paragraphs": [
+          "The number of arguments must match the number of parameters.",
+          "Arguments must be passed in the same order as parameters."
+        ]
+      },
+
+      {
+        "heading": "Pass Arrays as Parameters",
+        "example": "void myFunction(int myNumbers[5]) {\n  for (int i = 0; i < 5; i++) {\n    printf(\"%d\\n\", myNumbers[i]);\n  }\n}\n\nint main() {\n  int myNumbers[5] = {10, 20, 30, 40, 50};\n  myFunction(myNumbers);\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Return Values",
+        "paragraphs": [
+          "Use a data type instead of void if the function should return a value.",
+          "Use the return keyword inside the function."
+        ],
+        "example": "int myFunction(int x) {\n  return 5 + x;\n}\n\nint main() {\n  printf(\"Result is: %d\", myFunction(3));\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Return with Two Parameters",
+        "example": "int myFunction(int x, int y) {\n  return x + y;\n}\n\nint main() {\n  int result = myFunction(5, 3);\n  printf(\"Result is = %d\", result);\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Storing Multiple Results in Array",
+        "example": "int calculateSum(int x, int y) {\n  return x + y;\n}\n\nint main() {\n  int resultArr[6];\n\n  resultArr[0] = calculateSum(5, 3);\n  resultArr[1] = calculateSum(8, 2);\n  resultArr[2] = calculateSum(15, 15);\n  resultArr[3] = calculateSum(9, 1);\n  resultArr[4] = calculateSum(7, 7);\n  resultArr[5] = calculateSum(1, 1);\n\n  for (int i = 0; i < 6; i++) {\n    printf(\"Result%d is = %d\\n\", i + 1, resultArr[i]);\n  }\n\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Real-Life Example: Fahrenheit to Celsius",
+        "example": "float toCelsius(float fahrenheit) {\n  return (5.0 / 9.0) * (fahrenheit - 32.0);\n}\n\nint main() {\n  float f_value = 98.8;\n  float result = toCelsius(f_value);\n\n  printf(\"Fahrenheit: %.2f\\n\", f_value);\n  printf(\"Convert Fahrenheit to Celsius: %.2f\\n\", result);\n\n  return 0;\n}"
+      }
+
+    ]
+  } ,
+  
+  "c_variable_scope_module": {
+    "title": "C Variable Scope",
+    "sections": [
+
+      {
+        "heading": "Scope",
+        "paragraphs": [
+          "Variables are only accessible inside the region they are created.",
+          "This region is called the variable scope.",
+          "Scope controls where a variable can be used in a program."
+        ]
+      },
+
+      {
+        "heading": "Local Scope",
+        "paragraphs": [
+          "A variable created inside a function belongs to the local scope.",
+          "It can only be used inside that function."
+        ],
+        "example": "void myFunction() {\n  int x = 5; // Local variable\n  printf(\"%d\", x);\n}\n\nint main() {\n  myFunction();\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Local Scope Error Example",
+        "paragraphs": [
+          "Local variables cannot be accessed outside their function."
+        ],
+        "example": "void myFunction() {\n  int x = 5;\n}\n\nint main() {\n  myFunction();\n  printf(\"%d\", x); // ERROR: x is not in scope here\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Global Scope",
+        "paragraphs": [
+          "A variable created outside any function is a global variable.",
+          "Global variables can be accessed from any function."
+        ],
+        "example": "int x = 5; // Global variable\n\nvoid myFunction() {\n  printf(\"%d\", x);\n}\n\nint main() {\n  myFunction();\n  printf(\"%d\", x);\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Same Name in Local and Global Scope",
+        "paragraphs": [
+          "C treats local and global variables with the same name as separate variables.",
+          "The local variable overrides the global one inside the function."
+        ],
+        "example": "int x = 5; // Global\n\nvoid myFunction() {\n  int x = 22; // Local\n  printf(\"%d\\n\", x); // prints 22\n}\n\nint main() {\n  myFunction();\n  printf(\"%d\\n\", x); // prints 5\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Modifying Global Variables",
+        "paragraphs": [
+          "Global variables can be modified from any function.",
+          "This can make programs harder to debug and maintain."
+        ],
+        "example": "int x = 5; // Global\n\nvoid myFunction() {\n  printf(\"%d\\n\", ++x);\n}\n\nint main() {\n  myFunction();\n  printf(\"%d\\n\", x);\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Conclusion",
+        "paragraphs": [
+          "Use local variables whenever possible.",
+          "Avoid using global variables unless necessary.",
+          "Good scoping makes code easier to understand and maintain."
+        ]
+      }
+
+    ]
+  } ,
+  
+  "c_function_declaration_module": {
+    "title": "C Function Declaration and Definition",
+    "sections": [
+
+      {
+        "heading": "Function Declaration and Definition",
+        "paragraphs": [
+          "A function in C consists of two parts: declaration and definition.",
+          "Declaration includes the function name, return type, and parameters.",
+          "Definition contains the actual body of the function."
+        ],
+        "example": "void myFunction() {\n  printf(\"I just got executed!\");\n}\n\nint main() {\n  myFunction();\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Separating Declaration and Definition",
+        "paragraphs": [
+          "For better organization and optimization, declarations are usually written before main().",
+          "Definitions are written after main()."
+        ],
+        "example": "// Function declaration\nvoid myFunction();\n\nint main() {\n  myFunction();\n  return 0;\n}\n\n// Function definition\nvoid myFunction() {\n  printf(\"I just got executed!\");\n}"
+      },
+
+      {
+        "heading": "Functions with Parameters",
+        "paragraphs": [
+          "When a function uses parameters, it is good practice to separate declaration and definition."
+        ],
+        "example": "// Function declaration\nint myFunction(int x, int y);\n\nint main() {\n  int result = myFunction(5, 3);\n  printf(\"Result is = %d\", result);\n  return 0;\n}\n\n// Function definition\nint myFunction(int x, int y) {\n  return x + y;\n}"
+      },
+
+      {
+        "heading": "Functions Calling Other Functions",
+        "paragraphs": [
+          "Functions can call other functions if they are declared first.",
+          "This allows modular and reusable code."
+        ],
+        "example": "// Declare functions\nvoid myFunction();\nvoid myOtherFunction();\n\nint main() {\n  myFunction();\n  return 0;\n}\n\nvoid myFunction() {\n  printf(\"Some text in myFunction\\n\");\n  myOtherFunction();\n}\n\nvoid myOtherFunction() {\n  printf(\"Hey! Some text in myOtherFunction\\n\");\n}"
+      }
+
+    ]
+  } ,
+  
+  "c_functions_code_challenge": {
+    "title": "C Functions Code Challenge",
+    "sections": [
+
+      {
+        "heading": "Challenge: Create a Function to Add Two Numbers",
+        "paragraphs": [
+          "Test your understanding of C functions by completing a small coding challenge."
+        ]
+      },
+
+      {
+        "heading": "Instructions",
+        "list": [
+          "Above main(), declare a function named add that returns an int and takes two int parameters named x and y",
+          "Inside main(), create an int variable named result and set it to add(5, 3)",
+          "Inside main(), print result using the correct format specifier",
+          "End main() with return 0;",
+          "Below main(), define the add function using the same parameter names x and y",
+          "Inside add, return x + y"
+        ]
+      },
+
+      {
+        "heading": "Starter Code",
+        "example": "#include <stdio.h>\n\n// Write the function declaration here\n\nint main() {\n  // Call the function here\n  // Print the result here\n\n  // return 0;\n}\n\n// Write the function definition here"
+      },
+
+      {
+        "heading": "Expected Solution",
+        "example": "#include <stdio.h>\n\n// Function declaration\nint add(int x, int y);\n\nint main() {\n  int result = add(5, 3);\n  printf(\"%d\", result);\n  return 0;\n}\n\n// Function definition\nint add(int x, int y) {\n  return x + y;\n}"
+      }
+
+    ]
+  } ,
+  "c_math_functions": {
+    "title": "C Math Functions",
+    "sections": [
+
+      {
+        "heading": "Math Functions",
+        "paragraphs": [
+          "There is also a list of math functions available, that allows you to perform mathematical tasks on numbers.",
+          "To use them, you must include the math.h header file in your program:"
+        ],
+        "example": "#include <math.h>"
+      },
+
+      {
+        "heading": "Square Root",
+        "paragraphs": [
+          "To find the square root of a number, use the sqrt() function:"
+        ],
+        "example": "printf(\"%f\", sqrt(16));"
+      },
+
+      {
+        "heading": "Round a Number",
+        "paragraphs": [
+          "The ceil() function rounds a number upwards to its nearest integer.",
+          "The floor() function rounds a number downwards to its nearest integer."
+        ],
+        "example": "printf(\"%f\", ceil(1.4));\nprintf(\"%f\", floor(1.4));"
+      },
+
+      {
+        "heading": "Power",
+        "paragraphs": [
+          "The pow() function returns the value of x to the power of y (xʸ):"
+        ],
+        "example": "printf(\"%f\", pow(4, 3));"
+      },
+
+      {
+        "heading": "Reference",
+        "paragraphs": [
+          "For a complete reference of math functions, go to the C <math.h> Library Reference."
+        ]
+      }
+
+    ]
+  } ,
+
+  "c_inline_function": {
+    "title": "C Inline Function",
+    "sections": [
+
+      {
+        "heading": "Inline Function",
+        "paragraphs": [
+          "You might sometimes see the inline keyword used in other people's functions.",
+          "An inline function is a small function that asks the compiler to insert its code directly where it is called, instead of jumping to it.",
+          "This can make short, frequently used functions a little faster, because it removes the small delay of a normal function call."
+        ]
+      },
+
+      {
+        "heading": "Regular Function vs Inline Function",
+        "paragraphs": [
+          "Both functions work the same way. The only difference is that the inline version suggests to the compiler to copy the function's code directly where it is used."
+        ],
+        "example": "int square(int x) {\n  return x * x;\n}\n\ninline int square(int x) {\n  return x * x;\n}"
+      },
+
+      {
+        "heading": "Inline Function Example",
+        "paragraphs": [
+          "Here is a simple example that uses an inline function:"
+        ],
+        "example": "#include <stdio.h>\n\ninline int add(int a, int b) {\n  return a + b;\n}\n\nint main() {\n  printf(\"%d\", add(5, 3));\n  return 0;\n}"
+      },
+
+      {
+        "heading": "When Not to Use Inline",
+        "paragraphs": [
+          "Inline functions are best for small, simple functions. Avoid using them for:",
+          "Large functions",
+          "Recursive functions",
+          "Functions that are rarely called",
+          "Too many inline functions can make your program slower and larger, a problem known as code bloat."
+        ]
+      },
+
+      {
+        "heading": "Inline vs Regular Function",
+        "paragraphs": [
+          "Regular function: Code jumps to the function each time it's called.",
+          "Inline function: Code is inserted directly where it's called.",
+          "Regular function: Slightly slower.",
+          "Inline function: Slightly faster.",
+          "Regular function: Good for large functions.",
+          "Inline function: Good for small functions."
+        ]
+      },
+
+      {
+        "heading": "Summary",
+        "paragraphs": [
+          "Inline functions are defined with the inline keyword.",
+          "They can make small, often-used functions faster.",
+          "The compiler decides whether to inline a function or not.",
+          "Mostly used for short, simple functions."
+        ]
+      }
+
+    ]
+  } ,
+  
+  "c_recursion": {
+    "title": "C Recursion",
+    "sections": [
+
+      {
+        "heading": "Recursion",
+        "paragraphs": [
+          "Recursion is the technique of making a function call itself.",
+          "This technique provides a way to break complicated problems down into simple problems which are easier to solve.",
+          "Recursion may be a bit difficult to understand. The best way to figure out how it works is to experiment with it."
+        ]
+      },
+
+      {
+        "heading": "Recursion Example: Sum of Numbers",
+        "paragraphs": [
+          "Use recursion to add all numbers from 1 to 10."
+        ],
+        "example": "int sum(int k);\n\nint main() {\n  int result = sum(10);\n  printf(\"%d\", result);\n  return 0;\n}\n\nint sum(int k) {\n  if (k > 0) {\n    return k + sum(k - 1);\n  } else {\n    return 0;\n  }\n}"
+      },
+
+      {
+        "heading": "Example Explained",
+        "paragraphs": [
+          "When the sum() function is called, it adds parameter k to the sum of all numbers smaller than k.",
+          "When k becomes 0, the function returns 0 and stops calling itself.",
+          "The program follows this pattern:",
+          "10 + sum(9)",
+          "10 + (9 + sum(8))",
+          "10 + (9 + (8 + sum(7)))",
+          "...",
+          "10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + sum(0)",
+          "10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + 0"
+        ]
+      },
+
+      {
+        "heading": "Important Note",
+        "paragraphs": [
+          "The developer should be very careful with recursion.",
+          "It is easy to write a function which never terminates or uses too much memory.",
+          "When written correctly, recursion can be an efficient and elegant solution."
+        ]
+      },
+
+      {
+        "heading": "Countdown Example",
+        "paragraphs": [
+          "Use recursion to count down from 5."
+        ],
+        "example": "void countdown(int n);\n\nint main() {\n  countdown(5);\n  return 0;\n}\n\nvoid countdown(int n) {\n  if (n > 0) {\n    printf(\"%d \", n);\n    countdown(n - 1);\n  }\n}"
+      },
+
+      {
+        "heading": "Factorial with Recursion",
+        "paragraphs": [
+          "This example calculates the factorial of 5 using recursion."
+        ],
+        "example": "int factorial(int n);\n\nint main() {\n  printf(\"Factorial of 5 is %d\", factorial(5));\n  return 0;\n}\n\nint factorial(int n) {\n  if (n > 1) {\n    return n * factorial(n - 1);\n  } else {\n    return 1;\n  }\n}"
+      },
+
+      {
+        "heading": "Factorial Explanation",
+        "paragraphs": [
+          "Factorial means multiplying a number by every number below it, down to 1.",
+          "For example: 5! = 5 × 4 × 3 × 2 × 1 = 120.",
+          "By definition, 0! is also 1."
+        ]
+      }
+
+    ]
+  } ,
+  "c_function_pointers_and_callbacks": {
+    "title": "C Function Pointer & Callback Functions",
+    "sections": [
+
+      {
+        "heading": "Function Pointer",
+        "paragraphs": [
+          "A function pointer is like a normal pointer, but instead of pointing to a variable, it points to a function.",
+          "It stores the address of a function and allows you to call that function using the pointer.",
+          "Function pointers let you decide which function to run at runtime or pass functions as arguments."
+        ]
+      },
+
+      {
+        "heading": "Declaring a Function Pointer",
+        "paragraphs": [
+          "General syntax:",
+          "returnType (*pointerName)(parameterType1, parameterType2, ...);",
+          "Example:",
+          "int (*ptr)(int, int);"
+        ]
+      },
+
+      {
+        "heading": "Assigning and Calling a Function",
+        "paragraphs": [
+          "Assigning:",
+          "ptr = add;",
+          "ptr = &add;",
+          "Calling:",
+          "ptr(5, 3);",
+          "(*ptr)(5, 3);"
+        ]
+      },
+
+      {
+        "heading": "Function Pointer Example",
+        "example": "int add(int a, int b) {\n  return a + b;\n}\n\nint main() {\n  int (*ptr)(int, int) = add;\n  int result = ptr(5, 3);\n  printf(\"Result: %d\", result);\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Passing a Function as Argument (Callback)",
+        "paragraphs": [
+          "Function pointers can be passed to other functions. This is called a callback.",
+          "The receiving function can call it back when needed."
+        ],
+        "example": "void greetMorning() { printf(\"Good morning!\\n\"); }\nvoid greetEvening() { printf(\"Good evening!\\n\"); }\n\nvoid greet(void (*func)()) {\n  func();\n}\n\nint main() {\n  greet(greetMorning);\n  greet(greetEvening);\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Function Pointer Array",
+        "paragraphs": [
+          "You can store multiple function pointers in an array."
+        ],
+        "example": "void add() { printf(\"Add\\n\"); }\nvoid subtract() { printf(\"Subtract\\n\"); }\nvoid multiply() { printf(\"Multiply\\n\"); }\n\nint main() {\n  void (*operations[3])() = { add, subtract, multiply };\n  for (int i = 0; i < 3; i++) {\n    operations[i]();\n  }\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Calculator Using Function Pointer Array",
+        "example": "void add(int a, int b) { printf(\"Result: %d\\n\", a + b); }\nvoid subtract(int a, int b) { printf(\"Result: %d\\n\", a - b); }\nvoid multiply(int a, int b) { printf(\"Result: %d\\n\", a * b); }\n\nint main() {\n  int choice, x = 10, y = 5;\n  void (*operations[3])(int, int) = { add, subtract, multiply };\n\n  printf(\"Choose: 0 Add, 1 Subtract, 2 Multiply\\n\");\n  scanf(\"%d\", &choice);\n\n  if (choice >= 0 && choice < 3) {\n    operations[choice](x, y);\n  } else {\n    printf(\"Invalid choice!\\n\");\n  }\n\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Callback Function",
+        "paragraphs": [
+          "A callback function is a function passed as an argument to another function.",
+          "It allows flexible and reusable program logic.",
+          "In C, callbacks are implemented using function pointers."
+        ]
+      },
+
+      {
+        "heading": "Simple Callback Example",
+        "example": "void sayHello() { printf(\"Hello from the callback!\\n\"); }\n\nvoid runCallback(void (*callback)()) {\n  printf(\"Before callback...\\n\");\n  callback();\n  printf(\"After callback.\\n\");\n}\n\nint main() {\n  runCallback(sayHello);\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Callback with Parameters",
+        "example": "void addNumbers(int a, int b) {\n  printf(\"The sum is: %d\\n\", a + b);\n}\n\nvoid calculate(void (*callback)(int, int), int x, int y) {\n  callback(x, y);\n}\n\nint main() {\n  calculate(addNumbers, 5, 3);\n  return 0;\n}"
+      },
+
+      {
+        "heading": "qsort Callback Example",
+        "example": "#include <stdio.h>\n#include <stdlib.h>\n\nint compare(const void *a, const void *b) {\n  return (*(int*)a - *(int*)b);\n}\n\nint main() {\n  int numbers[] = {5, 2, 9, 1, 7};\n  int size = sizeof(numbers) / sizeof(numbers[0]);\n\n  qsort(numbers, size, sizeof(int), compare);\n\n  for (int i = 0; i < size; i++) {\n    printf(\"%d \", numbers[i]);\n  }\n  return 0;\n}"
+      },
+
+      {
+        "heading": "Summary",
+        "paragraphs": [
+          "A function pointer stores the address of a function.",
+          "Callbacks allow functions to be passed and executed later.",
+          "Function pointer arrays allow dynamic behavior.",
+          "They are used in menus, calculators, event systems, and libraries."
+        ]
+      }
+
+    ]
+  } ,
+  
+  "c_create_files": {
+    "title": "C Files - Create Files",
+    "paragraphs": [
+      "In C, you can create, open, read, and write to files by declaring a pointer of type FILE and using the fopen() function.",
+      "FILE is a data type used for file handling. We create a pointer variable (fptr) to work with files."
+    ],
+    "sections": [
+
+      {
+        "heading": "Opening a File",
+        "paragraphs": [
+          "To open a file, use the fopen() function:",
+          "FILE *fptr;",
+          "fptr = fopen(filename, mode);"
+        ]
+      },
+
+      {
+        "heading": "fopen() Parameters",
+        "list": [
+          "filename - The name of the file, e.g., filename.txt",
+          "mode - A character that decides how the file is opened",
+          "w - Write mode (creates file if not exists)",
+          "a - Append mode",
+          "r - Read mode"
+        ]
+      },
+
+      {
+        "heading": "Create a File",
+        "paragraphs": [
+          "To create a file, use the w mode. If the file does not exist, it will be created."
+        ],
+        "example": "FILE *fptr;\n\n// Create a file\nfptr = fopen(\"filename.txt\", \"w\");\n\n// Close the file\nfclose(fptr);"
+      },
+
+      {
+        "heading": "Create File in a Folder",
+        "paragraphs": [
+          "You can create a file in a specific folder using an absolute path."
+        ],
+        "example": "fptr = fopen(\"C:\\\\directoryname\\\\filename.txt\", \"w\");"
+      },
+
+      {
+        "heading": "Closing a File",
+        "paragraphs": [
+          "Always close a file using fclose().",
+          "This ensures data is saved, memory is cleaned, and other programs can use the file."
+        ],
+        "example": "fclose(fptr);"
+      },
+
+      {
+        "heading": "Why Close Files?",
+        "list": [
+          "Ensures all changes are saved",
+          "Allows other programs to access the file",
+          "Releases memory resources"
+        ]
+      },
+
+      {
+        "heading": "Exercise",
+        "paragraphs": [
+          "Which function can be used to open a file in C?"
+        ],
+        "list": [
+          "fwrite()",
+          "fread()",
+          "fopen()",
+          "fclose()"
+        ]
+      }
+
+    ]
+  } ,
+  
+  "c_write_files": {
+    "title": "C Files - Write To Files",
+    "paragraphs": [
+      "The w mode opens a file for writing and allows you to insert content into it.",
+      "To write to a file, use the fprintf() function with the file pointer and the text you want to store."
+    ],
+    "sections": [
+
+      {
+        "heading": "Write to a File",
+        "paragraphs": [
+          "Using w mode, you can write text into a file.",
+          "If the file already exists, its content will be deleted before writing new data."
+        ],
+        "example": "FILE *fptr;\n\n// Open a file in writing mode\nfptr = fopen(\"filename.txt\", \"w\");\n\n// Write some text to the file\nfprintf(fptr, \"Some text\");\n\n// Close the file\nfclose(fptr);"
+      },
+
+      {
+        "heading": "Overwriting Existing Content",
+        "paragraphs": [
+          "Writing to a file that already exists using w mode will erase the old content.",
+          "Only the new text will remain in the file."
+        ],
+        "example": "fprintf(fptr, \"Hello World!\");"
+      },
+
+      {
+        "heading": "Append Content to a File",
+        "paragraphs": [
+          "To add new content without deleting the existing data, use the a mode.",
+          "The a mode appends text at the end of the file."
+        ],
+        "example": "FILE *fptr;\n\n// Open a file in append mode\nfptr = fopen(\"filename.txt\", \"a\");\n\n// Append some text to the file\nfprintf(fptr, \"\\nHi everybody!\");\n\n// Close the file\nfclose(fptr);"
+      },
+
+      {
+        "heading": "Notes",
+        "list": [
+          "The w mode deletes existing file content before writing.",
+          "The a mode keeps existing content and adds new text.",
+          "Both w and a modes will create a file if it does not exist."
+        ]
+      }
+
+    ]
+  } ,
+  
+  "c_read_files": {
+    "title": "C Files - Read Files",
+    "paragraphs": [
+      "To read from a file in C, you must open it using the r mode with the fopen() function.",
+      "Reading a file requires storing its content into a character array using fgets()."
+    ],
+    "sections": [
+
+      {
+        "heading": "Open a File for Reading",
+        "paragraphs": [
+          "Use the r mode to open a file for reading.",
+          "If the file does not exist, fopen() will return NULL."
+        ],
+        "example": "FILE *fptr;\n\n// Open a file in read mode\nfptr = fopen(\"filename.txt\", \"r\");"
+      },
+
+      {
+        "heading": "Store File Content",
+        "paragraphs": [
+          "Create a character array large enough to store file data.",
+          "This example creates a string that can hold up to 100 characters."
+        ],
+        "example": "char myString[100];"
+      },
+
+      {
+        "heading": "Read a Single Line",
+        "paragraphs": [
+          "Use fgets() to read one line from the file.",
+          "It reads only the first line by default."
+        ],
+        "example": "fgets(myString, 100, fptr);"
+      },
+
+      {
+        "heading": "Read and Print a File",
+        "paragraphs": [
+          "This example reads the first line from the file and prints it."
+        ],
+        "example": "FILE *fptr;\n\nfptr = fopen(\"filename.txt\", \"r\");\nchar myString[100];\n\nfgets(myString, 100, fptr);\nprintf(\"%s\", myString);\n\nfclose(fptr);"
+      },
+
+      {
+        "heading": "Read All Lines Using a Loop",
+        "paragraphs": [
+          "To read the entire file, use fgets() inside a while loop."
+        ],
+        "example": "FILE *fptr;\n\nfptr = fopen(\"filename.txt\", \"r\");\nchar myString[100];\n\nwhile (fgets(myString, 100, fptr)) {\n  printf(\"%s\", myString);\n}\n\nfclose(fptr);"
+      },
+
+      {
+        "heading": "Good Practice: Check for NULL",
+        "paragraphs": [
+          "If the file does not exist, fopen() returns NULL.",
+          "Always check before reading the file."
+        ],
+        "example": "FILE *fptr;\n\nfptr = fopen(\"loremipsum.txt\", \"r\");\n\nif (fptr == NULL) {\n  printf(\"Not able to open the file.\");\n}\n\nfclose(fptr);"
+      },
+
+      {
+        "heading": "Safe Read Example",
+        "paragraphs": [
+          "This example checks if the file exists before reading it."
+        ],
+        "example": "FILE *fptr;\n\nfptr = fopen(\"filename.txt\", \"r\");\nchar myString[100];\n\nif (fptr != NULL) {\n  while (fgets(myString, 100, fptr)) {\n    printf(\"%s\", myString);\n  }\n} else {\n  printf(\"Not able to open the file.\");\n}\n\nfclose(fptr);"
+      },
+
+      {
+        "heading": "Notes",
+        "list": [
+          "The r mode is used to read from a file.",
+          "fgets() reads one line at a time.",
+          "Always check for NULL when opening files.",
+          "Use a loop to read the full file."
+        ]
+      }
+
+    ]
   }
 }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

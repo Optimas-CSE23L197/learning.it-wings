@@ -1,0 +1,277 @@
+{
+  "course": {
+    "id": "python",
+    "title": "Python Tutorial"
+  },
+  "sections": [
+    {
+      "title": "Python Tutorial",
+      "lessons": [
+        { "id": "home", "title": "Python HOME" },
+        { "id": "intro", "title": "Python Intro" },
+        { "id": "get-started", "title": "Python Get Started" },
+        { "id": "syntax", "title": "Python Syntax" },
+        { "id": "output", "title": "Python Output" },
+        { "id": "comments", "title": "Python Comments" },
+        { "id": "variables", "title": "Python Variables" },
+        { "id": "data-types", "title": "Python Data Types" },
+        { "id": "numbers", "title": "Python Numbers" },
+        { "id": "casting", "title": "Python Casting" },
+        { "id": "strings", "title": "Python Strings" },
+        { "id": "booleans", "title": "Python Booleans" },
+        { "id": "operators", "title": "Python Operators" },
+        { "id": "lists", "title": "Python Lists" },
+        { "id": "tuples", "title": "Python Tuples" },
+        { "id": "sets", "title": "Python Sets" },
+        { "id": "dictionaries", "title": "Python Dictionaries" },
+        { "id": "if-else", "title": "Python If...Else" },
+        { "id": "match", "title": "Python Match" },
+        { "id": "while-loops", "title": "Python While Loops" },
+        { "id": "for-loops", "title": "Python For Loops" },
+        { "id": "functions", "title": "Python Functions" },
+        { "id": "range", "title": "Python Range" },
+        { "id": "arrays", "title": "Python Arrays" },
+        { "id": "iterators", "title": "Python Iterators" },
+        { "id": "modules", "title": "Python Modules" },
+        { "id": "dates", "title": "Python Dates" },
+        { "id": "math", "title": "Python Math" },
+        { "id": "json", "title": "Python JSON" },
+        { "id": "regex", "title": "Python RegEx" },
+        { "id": "pip", "title": "Python PIP" },
+        { "id": "try-except", "title": "Python Try...Except" },
+        { "id": "string-formatting", "title": "Python String Formatting" },
+        { "id": "none", "title": "Python None" },
+        { "id": "user-input", "title": "Python User Input" },
+        { "id": "virtualenv", "title": "Python VirtualEnv" }
+      ]
+    },
+
+    {
+      "title": "Python Classes",
+      "lessons": [
+        { "id": "oop", "title": "Python OOP" },
+        { "id": "classes-objects", "title": "Python Classes/Objects" },
+        { "id": "init", "title": "Python __init__ Method" },
+        { "id": "self", "title": "Python self Parameter" },
+        { "id": "class-properties", "title": "Python Class Properties" },
+        { "id": "class-methods", "title": "Python Class Methods" },
+        { "id": "inheritance", "title": "Python Inheritance" },
+        { "id": "polymorphism", "title": "Python Polymorphism" },
+        { "id": "encapsulation", "title": "Python Encapsulation" },
+        { "id": "inner-classes", "title": "Python Inner Classes" }
+      ]
+    },
+
+    {
+      "title": "File Handling",
+      "lessons": [
+        { "id": "file-handling", "title": "Python File Handling" },
+        { "id": "read-files", "title": "Python Read Files" },
+        { "id": "write-files", "title": "Python Write/Create Files" },
+        { "id": "delete-files", "title": "Python Delete Files" }
+      ]
+    },
+
+    {
+      "title": "Python Libraries",
+      "lessons": [
+        { "id": "numpy", "title": "NumPy Tutorial" },
+        { "id": "pandas", "title": "Pandas Tutorial" },
+        { "id": "scipy", "title": "SciPy Tutorial" },
+        { "id": "django", "title": "Django Tutorial" }
+      ]
+    },
+
+    {
+      "title": "Matplotlib",
+      "lessons": [
+        { "id": "mpl-intro", "title": "Matplotlib Intro" },
+        { "id": "mpl-get-started", "title": "Matplotlib Get Started" },
+        { "id": "mpl-pyplot", "title": "Matplotlib Pyplot" },
+        { "id": "mpl-plotting", "title": "Matplotlib Plotting" },
+        { "id": "mpl-markers", "title": "Matplotlib Markers" },
+        { "id": "mpl-line", "title": "Matplotlib Line" },
+        { "id": "mpl-labels", "title": "Matplotlib Labels" },
+        { "id": "mpl-grid", "title": "Matplotlib Grid" },
+        { "id": "mpl-subplot", "title": "Matplotlib Subplot" },
+        { "id": "mpl-scatter", "title": "Matplotlib Scatter" },
+        { "id": "mpl-bars", "title": "Matplotlib Bars" },
+        { "id": "mpl-hist", "title": "Matplotlib Histograms" },
+        { "id": "mpl-pie", "title": "Matplotlib Pie Charts" }
+      ]
+    },
+
+    {
+      "title": "Machine Learning",
+      "lessons": [
+        { "id": "ml-get-started", "title": "Getting Started" },
+        { "id": "mean-median-mode", "title": "Mean Median Mode" },
+        { "id": "std-dev", "title": "Standard Deviation" },
+        { "id": "percentile", "title": "Percentile" },
+        { "id": "data-distribution", "title": "Data Distribution" },
+        { "id": "normal-dist", "title": "Normal Data Distribution" },
+        { "id": "scatter-plot", "title": "Scatter Plot" },
+        { "id": "linear-regression", "title": "Linear Regression" },
+        { "id": "polynomial-regression", "title": "Polynomial Regression" },
+        { "id": "multiple-regression", "title": "Multiple Regression" },
+        { "id": "scale", "title": "Scale" },
+        { "id": "train-test", "title": "Train/Test" },
+        { "id": "decision-tree", "title": "Decision Tree" },
+        { "id": "confusion-matrix", "title": "Confusion Matrix" },
+        { "id": "hierarchical-clustering", "title": "Hierarchical Clustering" },
+        { "id": "logistic-regression", "title": "Logistic Regression" },
+        { "id": "grid-search", "title": "Grid Search" },
+        { "id": "categorical-data", "title": "Categorical Data" },
+        { "id": "kmeans", "title": "K-means" },
+        { "id": "bagging", "title": "Bootstrap Aggregation" },
+        { "id": "cross-validation", "title": "Cross Validation" },
+        { "id": "auc-roc", "title": "AUC - ROC Curve" },
+        { "id": "knn", "title": "K-nearest neighbors" }
+      ]
+    },
+
+    {
+      "title": "Python DSA",
+      "lessons": [
+        { "id": "dsa-intro", "title": "Python DSA" },
+        { "id": "lists-arrays", "title": "Lists and Arrays" },
+        { "id": "stacks", "title": "Stacks" },
+        { "id": "queues", "title": "Queues" },
+        { "id": "linked-lists", "title": "Linked Lists" },
+        { "id": "hash-tables", "title": "Hash Tables" },
+        { "id": "trees", "title": "Trees" },
+        { "id": "binary-trees", "title": "Binary Trees" },
+        { "id": "bst", "title": "Binary Search Trees" },
+        { "id": "avl", "title": "AVL Trees" },
+        { "id": "graphs", "title": "Graphs" },
+        { "id": "linear-search", "title": "Linear Search" },
+        { "id": "binary-search", "title": "Binary Search" },
+        { "id": "bubble-sort", "title": "Bubble Sort" },
+        { "id": "selection-sort", "title": "Selection Sort" },
+        { "id": "insertion-sort", "title": "Insertion Sort" },
+        { "id": "quick-sort", "title": "Quick Sort" },
+        { "id": "counting-sort", "title": "Counting Sort" },
+        { "id": "radix-sort", "title": "Radix Sort" },
+        { "id": "merge-sort", "title": "Merge Sort" }
+      ]
+    }
+  ],
+
+  "content": {
+
+  "home": {
+  "title": "Learn Python",
+  "paragraphs": [
+    "Python is a popular programming language.",
+    "Python can be used on a server to create web applications.",
+    "Start learning Python now »",
+    "Tip: Sign in to track your progress."
+  ],
+  "sections": [
+    {
+      "heading": "Learning by Examples",
+      "paragraphs": [
+        "With our \"Try it Yourself\" editor, you can edit Python code and view the result."
+      ],
+      "example": "print(\"Hello, World!\")"
+    },
+    {
+      "heading": "Python File Handling",
+      "paragraphs": [
+        "In our File Handling section you will learn how to open, read, write, and delete files."
+      ],
+      "links": [
+        "Python File Handling"
+      ]
+    },
+    {
+      "heading": "Python Database Handling",
+      "paragraphs": [
+        "In our database section you will learn how to access and work with MySQL and MongoDB databases."
+      ],
+      "links": [
+        "Python MySQL Tutorial",
+        "Python MongoDB Tutorial"
+      ]
+    },
+    {
+      "heading": "Python Exercises",
+      "paragraphs": [
+        "Many chapters in this tutorial end with an exercise where you can check your level of knowledge."
+      ],
+      "exercise": {
+        "question": "What is a correct way to declare a Python variable?",
+        "options": [
+          "var x = 5",
+          "#x = 5",
+          "$x = 5",
+          "x = 5"
+        ],
+        "answer": "x = 5"
+      }
+    },
+    {
+      "heading": "Python Examples",
+      "paragraphs": [
+        "Learn by examples! This tutorial supplements all explanations with clarifying examples."
+      ],
+      "links": [
+        "Python Examples"
+      ]
+    },
+    {
+      "heading": "Python Quiz",
+      "paragraphs": [
+        "Test your Python skills with a quiz."
+      ]
+    },
+    {
+      "heading": "Track Your Progress",
+      "paragraphs": [
+        "Create a W3Schools account and get access to more features and learning materials:",
+        "Note: This is an optional feature. You can study without creating an account."
+      ],
+      "list": [
+        "View your completed tutorials, exercises, and quizzes",
+        "Keep an eye on your progress and daily streaks",
+        "Join the leaderboard and compete with others",
+        "Get your own avatar and unlock new skins",
+        "Create your own personal website"
+      ]
+    },
+    {
+      "heading": "Python Reference",
+      "paragraphs": [
+        "You will also find complete function and method references."
+      ],
+      "list": [
+        "Built-in Functions",
+        "String Methods",
+        "List / Array Methods",
+        "Dictionary Methods",
+        "Tuple Methods",
+        "Set Methods",
+        "File Methods",
+        "Python Keywords",
+        "Python Exceptions",
+        "Python Glossary"
+      ]
+    },
+    {
+      "heading": "Download Python",
+      "paragraphs": [
+        "Download Python from the official Python website: https://python.org"
+      ]
+    },
+    {
+      "heading": "Get Certified",
+      "paragraphs": [
+        "Kickstart your career",
+        "Get certified by completing the PYTHON course"
+      ]
+    }
+  ]
+}
+
+}
+}

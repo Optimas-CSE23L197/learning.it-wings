@@ -2476,7 +2476,586 @@
       ]
     }
   ]
+} ,
+"crypto": {
+  "title": "Node.js Crypto Module",
+  "paragraphs": [
+    "The Crypto module provides cryptographic functionality in Node.js.",
+    "It wraps the OpenSSL library to offer secure and tested algorithms."
+  ],
+  "sections": [
+    {
+      "heading": "Why Crypto",
+      "list": [
+        "Secure password storage",
+        "Data integrity verification",
+        "Encryption and decryption",
+        "Digital signatures",
+        "Secure random data"
+      ]
+    },
+    {
+      "heading": "Main Features",
+      "list": [
+        "Hash functions",
+        "HMAC",
+        "Symmetric encryption",
+        "Asymmetric encryption",
+        "Digital signatures",
+        "Random number generation"
+      ]
+    },
+    {
+      "heading": "Hash Functions",
+      "paragraphs": [
+        "Hashes transform data into fixed-length strings.",
+        "They are one-way and deterministic."
+      ],
+      "examples": [
+        "crypto.createHash('sha256')",
+        "crypto.createHash('sha512')"
+      ]
+    },
+    {
+      "heading": "Common Hash Algorithms",
+      "list": [
+        "MD5 (not secure)",
+        "SHA-1 (not secure)",
+        "SHA-256",
+        "SHA-384",
+        "SHA-512"
+      ]
+    },
+    {
+      "heading": "Password Security",
+      "list": [
+        "Never store plain passwords",
+        "Always use salting",
+        "Use key stretching",
+        "Prefer scrypt, bcrypt, argon2"
+      ]
+    },
+    {
+      "heading": "Salting and Scrypt",
+      "examples": [
+        "crypto.randomBytes()",
+        "crypto.scryptSync()"
+      ]
+    },
+    {
+      "heading": "HMAC",
+      "paragraphs": [
+        "HMAC verifies message integrity using a secret key.",
+        "It does not encrypt data."
+      ],
+      "examples": [
+        "crypto.createHmac('sha256', key)"
+      ]
+    },
+    {
+      "heading": "Symmetric Encryption",
+      "paragraphs": [
+        "Uses the same key for encryption and decryption.",
+        "Best for bulk data."
+      ],
+      "list": [
+        "AES-256",
+        "ChaCha20",
+        "3DES (legacy)",
+        "Blowfish (legacy)"
+      ]
+    },
+    {
+      "heading": "AES Encryption",
+      "examples": [
+        "crypto.createCipheriv()",
+        "crypto.createDecipheriv()"
+      ]
+    },
+    {
+      "heading": "Asymmetric Encryption",
+      "paragraphs": [
+        "Uses public and private key pairs.",
+        "Slower but more secure for key exchange."
+      ],
+      "list": [
+        "RSA",
+        "ECDSA",
+        "Ed25519"
+      ]
+    },
+    {
+      "heading": "RSA",
+      "examples": [
+        "crypto.generateKeyPairSync()",
+        "crypto.publicEncrypt()",
+        "crypto.privateDecrypt()"
+      ]
+    },
+    {
+      "heading": "Digital Signatures",
+      "paragraphs": [
+        "Verify authenticity and integrity of messages."
+      ],
+      "examples": [
+        "crypto.createSign()",
+        "crypto.createVerify()"
+      ]
+    },
+    {
+      "heading": "Random Data",
+      "paragraphs": [
+        "Used for keys, salts and IVs."
+      ],
+      "examples": [
+        "crypto.randomBytes()"
+      ]
+    },
+    {
+      "heading": "Security Best Practices",
+      "list": [
+        "Avoid MD5 and SHA-1",
+        "Never hardcode keys",
+        "Use random IVs",
+        "Use timingSafeEqual",
+        "Rotate keys",
+        "Use authenticated encryption"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "Crypto enables secure data handling in Node.js.",
+        "It supports hashing, encryption, authentication, and signatures."
+      ]
+    }
+  ]
+} ,
+
+"timers": {
+  "title": "Node.js Timers Module",
+  "paragraphs": [
+    "The Timers module allows scheduling code execution at specific times or intervals.",
+    "Timer functions are available globally in Node.js without requiring explicit import."
+  ],
+  "sections": [
+    {
+      "heading": "Key Features",
+      "list": [
+        "Delayed execution",
+        "Repeated execution",
+        "Immediate execution",
+        "Promise-based timers"
+      ]
+    },
+    {
+      "heading": "Main Timer Functions",
+      "list": [
+        "setTimeout()",
+        "setInterval()",
+        "setImmediate()",
+        "process.nextTick()"
+      ]
+    },
+    {
+      "heading": "setTimeout",
+      "paragraphs": [
+        "Executes a function once after a specified delay.",
+        "Returns an ID used to cancel the timer."
+      ],
+      "examples": [
+        "setTimeout(callback, delay)",
+        "clearTimeout(id)"
+      ]
+    },
+    {
+      "heading": "setInterval",
+      "paragraphs": [
+        "Executes a function repeatedly at fixed intervals.",
+        "Returns an ID used to stop execution."
+      ],
+      "examples": [
+        "setInterval(callback, delay)",
+        "clearInterval(id)"
+      ]
+    },
+    {
+      "heading": "setImmediate",
+      "paragraphs": [
+        "Executes a callback in the next event loop iteration.",
+        "Runs after I/O events but before timers."
+      ],
+      "examples": [
+        "setImmediate(callback)",
+        "clearImmediate(id)"
+      ]
+    },
+    {
+      "heading": "process.nextTick",
+      "paragraphs": [
+        "Executes a callback before any I/O or timers.",
+        "Has higher priority than setImmediate."
+      ]
+    },
+    {
+      "heading": "Promise-based Timers",
+      "paragraphs": [
+        "Available via timers/promises module.",
+        "Works with async/await."
+      ],
+      "examples": [
+        "require('timers/promises')",
+        "await setTimeout(ms)"
+      ]
+    },
+    {
+      "heading": "Common Use Cases",
+      "list": [
+        "Delaying tasks",
+        "Polling systems",
+        "Retry mechanisms",
+        "Heartbeat services",
+        "UI updates"
+      ]
+    },
+    {
+      "heading": "Advanced Patterns",
+      "list": [
+        "Debouncing",
+        "Throttling",
+        "Sequential execution",
+        "Zero-delay chunking"
+      ]
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Always clear unused timers",
+        "Avoid blocking the event loop",
+        "Be careful with closures",
+        "Use promise-based timers when possible"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "Timers control when and how often code runs.",
+        "They are essential for scheduling, async flows, and performance management."
+      ]
+    }
+  ]
+} ,
+"dns": {
+  "title": "Node.js DNS Module",
+  "paragraphs": [
+    "The DNS module provides functionality for name resolution in Node.js.",
+    "It allows converting domain names into IP addresses and performing reverse lookups."
+  ],
+  "sections": [
+    {
+      "heading": "APIs",
+      "list": [
+        "Callback-based API",
+        "Promise-based API (dns.promises)"
+      ]
+    },
+    {
+      "heading": "Key Features",
+      "list": [
+        "Resolve domain names to IP addresses",
+        "Reverse DNS lookups",
+        "Query DNS records",
+        "Custom DNS resolvers",
+        "Programmatic DNS configuration"
+      ]
+    },
+    {
+      "heading": "Main Methods",
+      "list": [
+        "dns.lookup()",
+        "dns.resolve4()",
+        "dns.resolve6()",
+        "dns.resolveMx()",
+        "dns.resolveTxt()",
+        "dns.reverse()"
+      ]
+    },
+    {
+      "heading": "lookup vs resolve",
+      "paragraphs": [
+        "dns.lookup() uses the operating system for resolution.",
+        "dns.resolve() performs real network DNS queries."
+      ]
+    },
+    {
+      "heading": "Record Types",
+      "list": [
+        "A (IPv4)",
+        "AAAA (IPv6)",
+        "MX (Mail)",
+        "TXT (Text)",
+        "CNAME (Alias)",
+        "NS (Name servers)",
+        "PTR (Reverse lookup)"
+      ]
+    },
+    {
+      "heading": "Custom Resolver",
+      "paragraphs": [
+        "Custom resolvers allow using specific DNS servers.",
+        "Useful for bypassing system DNS or improving reliability."
+      ]
+    },
+    {
+      "heading": "Error Handling",
+      "list": [
+        "ENOTFOUND",
+        "ETIMEDOUT",
+        "ENODATA",
+        "ESERVFAIL"
+      ]
+    },
+    {
+      "heading": "Performance Optimization",
+      "list": [
+        "DNS caching",
+        "Parallel lookups",
+        "Custom resolvers",
+        "Timeout handling"
+      ]
+    },
+    {
+      "heading": "Common Use Cases",
+      "list": [
+        "Networking applications",
+        "API gateways",
+        "Email validation",
+        "Load balancing",
+        "Security verification"
+      ]
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Use promise-based API",
+        "Implement caching",
+        "Handle DNS errors",
+        "Avoid excessive lookups",
+        "Use custom resolvers if needed"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "The DNS module enables domain resolution and DNS queries.",
+        "It is essential for network-based Node.js applications."
+      ]
+    }
+  ]
+} ,
+"assert": {
+  "title": "Node.js Assert Module",
+  "paragraphs": [
+    "The Assert module provides a set of assertion tests for validating conditions in Node.js.",
+    "It is a core module used mainly for simple testing and debugging."
+  ],
+  "sections": [
+    {
+      "heading": "Key Features",
+      "list": [
+        "Truthy and falsy assertions",
+        "Strict and loose equality checks",
+        "Deep object and array comparison",
+        "Error testing",
+        "Async assertion support"
+      ]
+    },
+    {
+      "heading": "Importing",
+      "list": [
+        "require('assert')",
+        "require('assert').strict",
+        "ESM import from 'assert'"
+      ]
+    },
+    {
+      "heading": "Basic Assertions",
+      "list": [
+        "assert(value)",
+        "assert.ok(value)",
+        "assert.fail(message)"
+      ]
+    },
+    {
+      "heading": "Equality Checks",
+      "list": [
+        "assert.equal()",
+        "assert.strictEqual()",
+        "assert.notEqual()",
+        "assert.notStrictEqual()"
+      ]
+    },
+    {
+      "heading": "Deep Comparison",
+      "list": [
+        "assert.deepEqual()",
+        "assert.deepStrictEqual()",
+        "assert.notDeepEqual()",
+        "assert.notDeepStrictEqual()"
+      ]
+    },
+    {
+      "heading": "Error Handling",
+      "list": [
+        "assert.throws()",
+        "assert.doesNotThrow()"
+      ]
+    },
+    {
+      "heading": "Async Testing",
+      "list": [
+        "assert.rejects()",
+        "assert.doesNotReject()"
+      ]
+    },
+    {
+      "heading": "Pattern Matching",
+      "list": [
+        "assert.match(string, regex)"
+      ]
+    },
+    {
+      "heading": "Strict Mode",
+      "paragraphs": [
+        "Strict mode enforces strict equality by default.",
+        "It is recommended for predictable and safe assertions."
+      ]
+    },
+    {
+      "heading": "When to Use",
+      "list": [
+        "Quick testing",
+        "Small utilities",
+        "Internal modules",
+        "Debugging logic"
+      ]
+    },
+    {
+      "heading": "When Not to Use",
+      "list": [
+        "Large projects",
+        "Complex test suites",
+        "Need for mocks and reports"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "The Assert module is a lightweight testing tool built into Node.js.",
+        "It is best suited for simple validations and learning purposes."
+      ]
+    }
+  ]
+} ,
+
+"util": {
+  "title": "Node.js Util Module",
+  "paragraphs": [
+    "The Util module provides a collection of utility functions for common Node.js tasks.",
+    "It acts like a Swiss Army knife for formatting, debugging, type checking, and working with async code."
+  ],
+  "sections": [
+    {
+      "heading": "Key Features",
+      "list": [
+        "String formatting",
+        "Object inspection",
+        "Callback to Promise conversion",
+        "Promise to callback conversion",
+        "Type checking utilities",
+        "Deprecation handling",
+        "Debug logging"
+      ]
+    },
+    {
+      "heading": "Importing",
+      "list": [
+        "require('util')",
+        "Destructured imports",
+        "ES module import from 'util'"
+      ]
+    },
+    {
+      "heading": "String Formatting",
+      "list": [
+        "util.format()",
+        "%s, %d, %i, %f, %j, %o, %% placeholders"
+      ]
+    },
+    {
+      "heading": "Object Inspection",
+      "list": [
+        "util.inspect()",
+        "Custom inspect with util.inspect.custom",
+        "Handles circular references"
+      ]
+    },
+    {
+      "heading": "Async Utilities",
+      "list": [
+        "util.promisify()",
+        "util.callbackify()",
+        "util.promisify.custom"
+      ]
+    },
+    {
+      "heading": "Type Checking",
+      "list": [
+        "util.types.isDate()",
+        "util.types.isPromise()",
+        "util.types.isRegExp()",
+        "Buffer.isBuffer()",
+        "Better than typeof"
+      ]
+    },
+    {
+      "heading": "Deprecation",
+      "list": [
+        "util.deprecate()",
+        "Shows warnings for old APIs",
+        "Supports deprecation codes"
+      ]
+    },
+    {
+      "heading": "Debug Logging",
+      "list": [
+        "util.debuglog()",
+        "Controlled by NODE_DEBUG",
+        "Lightweight logging system"
+      ]
+    },
+    {
+      "heading": "Best Practices",
+      "list": [
+        "Use destructured imports",
+        "Prefer util.types over old helpers",
+        "Use promisify for legacy APIs",
+        "Avoid heavy logging in production"
+      ]
+    },
+    {
+      "heading": "Summary",
+      "paragraphs": [
+        "The Util module provides essential helper functions for everyday Node.js development.",
+        "It improves debugging, async handling, and type safety without external libraries."
+      ]
+    }
+  ]
 }
+
+
+
+
 
   }
 }

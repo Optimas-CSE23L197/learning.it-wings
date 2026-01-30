@@ -894,6 +894,2215 @@
           "paragraphs": ["Video: Java Type Casting"]
         }
       ]
+    },
+
+
+
+
+
+
+
+    
+
+    "java_projects": {
+      "title": "Java Projects",
+      "intro": [
+        "Learn how to apply your Java knowledge to real-world projects.",
+        "This section focuses on building small applications using concepts learned throughout the tutorial."
+      ],
+      "sections": [
+        {
+          "heading": "Why Build Projects?",
+          "paragraphs": [
+            "Projects are an essential part of learning Java.",
+            "Start small and gradually add more features to improve understanding."
+          ],
+          "list": [
+            "Understand how real programs are structured",
+            "Practice combining concepts like methods, loops, and file handling",
+            "Improve debugging and problem-solving skills",
+            "Prepare for job interviews and practical exercises"
+          ],
+          "tip": "The more you build, the better you understand."
+        },
+        {
+          "heading": "Beginner Project Ideas",
+          "paragraphs": [
+            "Start with very small projects that use basic input and output."
+          ],
+          "examples": [
+            "Ask for the user's name",
+            "Ask for the user's age",
+            "Print: Hi <name>! You will turn <age+1> next year."
+          ]
+        },
+        {
+          "heading": "Intermediate Project Ideas",
+          "paragraphs": [
+            "Once comfortable, combine loops, conditions, and arrays."
+          ],
+          "list": [
+            "Shopping list program",
+            "Guess a Number game",
+            "Student average calculator"
+          ]
+        },
+        {
+          "heading": "Advanced Project Ideas",
+          "paragraphs": [
+            "Move on to projects that use methods, classes, and file handling."
+          ],
+          "list": [
+            "Simple calculator",
+            "Address book",
+            "To-do list",
+            "Quiz game"
+          ]
+        },
+        {
+          "heading": "Project: Calculate a Student's Average",
+          "description": [
+            "This project calculates the average of multiple grades entered by the user.",
+            "It then displays the average and a corresponding letter grade."
+          ],
+          "key_concepts": [
+            "Loops",
+            "Methods",
+            "Conditions",
+            "User input with Scanner",
+            "Basic program logic"
+          ],
+          "example_code": "import java.util.Scanner;\n\npublic class Main {\n\n  static char gradeFunction(double avg) {\n    if (avg >= 90) return 'A';\n    else if (avg >= 80) return 'B';\n    else if (avg >= 70) return 'C';\n    else if (avg >= 60) return 'D';\n    else return 'F';\n  }\n\n  public static void main(String[] args) {\n    Scanner scanner = new Scanner(System.in);\n\n    System.out.print(\"How many grades (1 to 5)? \");\n    int count = scanner.nextInt();\n\n    if (count < 1 || count > 5) {\n      System.out.println(\"Invalid number. You must enter between 1 and 5 grades.\");\n      scanner.close();\n      return;\n    }\n\n    double sum = 0.0;\n    for (int i = 1; i <= count; i++) {\n      System.out.print(\"Enter grade \" + i + \": \");\n      sum += scanner.nextDouble();\n    }\n\n    double avg = sum / count;\n    System.out.println(\"Average: \" + avg);\n    System.out.println(\"Letter grade: \" + gradeFunction(avg));\n\n    scanner.close();\n  }\n}"
+        },
+        {
+          "heading": "Practice Challenge",
+          "challenge": [
+            "Ask the user to enter up to 5 shopping items",
+            "Store the items in an array",
+            "Print the full shopping list",
+            "Count how many items were entered"
+          ],
+          "extra_challenge": "Add a search feature that checks whether an item exists in the list."
+        },
+        {
+          "heading": "Tips for Practice",
+          "paragraphs": [
+            "Use your favorite Java IDE such as IntelliJ IDEA or VS Code.",
+            "Start small, add one feature at a time, and test your code often.",
+            "Use Java How To pages for step-by-step guidance."
+          ]
+        }
+      ]
+    },
+    "java-reference": {
+      "title": "Java Reference Documentation",
+      "sections": [
+        {
+          "heading": "Overview",
+          "paragraphs": [
+            "This section contains Java reference documentation.",
+            "It provides quick access to Java keywords and commonly used classes and methods."
+          ]
+        },
+        {
+          "heading": "Java Reference Index",
+          "lists": [
+            {
+              "title": "Keywords & Core References",
+              "items": [
+                "Java Keywords",
+                "String Methods",
+                "Math Methods",
+                "Output Methods",
+                "Arrays Methods"
+              ]
+            },
+            {
+              "title": "Collections & Data Structures",
+              "items": [
+                "ArrayList Methods",
+                "LinkedList Methods",
+                "HashMap Methods",
+                "Iterator Methods",
+                "Collections Methods"
+              ]
+            },
+            {
+              "title": "Input / Output",
+              "items": [
+                "Scanner Methods",
+                "File Methods",
+                "FileInputStream",
+                "FileOutputStream",
+                "BufferedReader",
+                "BufferedWriter"
+              ]
+            },
+            {
+              "title": "System & Errors",
+              "items": ["System Methods", "Errors & Exceptions"]
+            }
+          ]
+        }
+      ]
+    },
+    "java-keywords": {
+      "title": "Java Reserved Keywords",
+      "sections": [
+        {
+          "heading": "Java Keywords",
+          "paragraphs": [
+            "Java has a set of reserved keywords that cannot be used as identifiers such as variable names, method names, or class names."
+          ]
+        },
+        {
+          "heading": "Reserved Keywords List",
+          "table": [
+            {
+              "keyword": "abstract",
+              "description": "Used with classes and methods that are incomplete and must be implemented by subclasses"
+            },
+            {
+              "keyword": "assert",
+              "description": "Used for debugging purposes"
+            },
+            {
+              "keyword": "boolean",
+              "description": "Data type that stores true or false"
+            },
+            {
+              "keyword": "break",
+              "description": "Terminates a loop or switch statement"
+            },
+            {
+              "keyword": "byte",
+              "description": "Data type for whole numbers from -128 to 127"
+            },
+            {
+              "keyword": "case",
+              "description": "Defines a branch in a switch statement"
+            },
+            {
+              "keyword": "catch",
+              "description": "Handles exceptions thrown in try blocks"
+            },
+            {
+              "keyword": "char",
+              "description": "Data type for a single character"
+            },
+            { "keyword": "class", "description": "Used to declare a class" },
+            {
+              "keyword": "continue",
+              "description": "Skips the current loop iteration"
+            },
+            {
+              "keyword": "default",
+              "description": "Defines the default block in a switch statement"
+            },
+            { "keyword": "do", "description": "Used in a do-while loop" },
+            {
+              "keyword": "double",
+              "description": "Floating-point data type with double precision"
+            },
+            {
+              "keyword": "else",
+              "description": "Defines an alternative branch in conditionals"
+            },
+            { "keyword": "enum", "description": "Declares an enumerated type" },
+            {
+              "keyword": "extends",
+              "description": "Indicates inheritance from another class"
+            },
+            {
+              "keyword": "final",
+              "description": "Prevents modification or inheritance"
+            },
+            {
+              "keyword": "finally",
+              "description": "Block that executes whether an exception occurs or not"
+            },
+            { "keyword": "float", "description": "Floating-point data type" },
+            { "keyword": "for", "description": "Creates a for loop" },
+            {
+              "keyword": "if",
+              "description": "Executes code when a condition is true"
+            },
+            {
+              "keyword": "implements",
+              "description": "Implements an interface"
+            },
+            {
+              "keyword": "import",
+              "description": "Imports classes or packages"
+            },
+            { "keyword": "instanceof", "description": "Tests object type" },
+            { "keyword": "int", "description": "Integer data type" },
+            { "keyword": "interface", "description": "Declares an interface" },
+            { "keyword": "long", "description": "Long integer data type" },
+            { "keyword": "new", "description": "Creates a new object" },
+            {
+              "keyword": "package",
+              "description": "Groups related classes and interfaces"
+            },
+            {
+              "keyword": "private",
+              "description": "Restricts access within the same class"
+            },
+            {
+              "keyword": "protected",
+              "description": "Allows access in the same package or subclasses"
+            },
+            {
+              "keyword": "public",
+              "description": "Allows access from anywhere"
+            },
+            {
+              "keyword": "return",
+              "description": "Returns a value from a method"
+            },
+            {
+              "keyword": "static",
+              "description": "Belongs to the class rather than objects"
+            },
+            {
+              "keyword": "super",
+              "description": "Refers to the parent class object"
+            },
+            {
+              "keyword": "switch",
+              "description": "Selects execution paths based on value"
+            },
+            {
+              "keyword": "this",
+              "description": "Refers to the current object"
+            },
+            { "keyword": "throw", "description": "Throws a custom exception" },
+            {
+              "keyword": "throws",
+              "description": "Declares exceptions a method may pass up"
+            },
+            {
+              "keyword": "try",
+              "description": "Wraps code that may cause exceptions"
+            },
+            {
+              "keyword": "var",
+              "description": "Type inference for local variables (Java 10+)"
+            },
+            { "keyword": "void", "description": "Specifies no return value" },
+            {
+              "keyword": "volatile",
+              "description": "Ensures variable visibility across threads"
+            },
+            { "keyword": "while", "description": "Creates a while loop" }
+          ]
+        },
+        {
+          "heading": "Notes",
+          "paragraphs": [
+            "true, false, and null are literals, not keywords, but they are reserved and cannot be used as identifiers."
+          ]
+        }
+      ]
+    },
+    "string-methods": {
+      "title": "Java String Methods",
+      "sections": [
+        {
+          "heading": "String Class",
+          "paragraphs": [
+            "The String class provides a rich set of built-in methods that can be used to manipulate and examine strings."
+          ]
+        },
+        {
+          "heading": "All String Methods",
+          "table": [
+            {
+              "method": "charAt()",
+              "description": "Returns the character at the specified index",
+              "returnType": "char"
+            },
+            {
+              "method": "codePointAt()",
+              "description": "Returns the Unicode of the character at the specified index",
+              "returnType": "int"
+            },
+            {
+              "method": "codePointBefore()",
+              "description": "Returns the Unicode of the character before the specified index",
+              "returnType": "int"
+            },
+            {
+              "method": "codePointCount()",
+              "description": "Returns the number of Unicode values in a string",
+              "returnType": "int"
+            },
+            {
+              "method": "compareTo()",
+              "description": "Compares two strings lexicographically",
+              "returnType": "int"
+            },
+            {
+              "method": "compareToIgnoreCase()",
+              "description": "Compares two strings lexicographically, ignoring case",
+              "returnType": "int"
+            },
+            {
+              "method": "concat()",
+              "description": "Appends a string to another string",
+              "returnType": "String"
+            },
+            {
+              "method": "contains()",
+              "description": "Checks whether a string contains a sequence of characters",
+              "returnType": "boolean"
+            },
+            {
+              "method": "contentEquals()",
+              "description": "Checks whether two character sequences are equal",
+              "returnType": "boolean"
+            },
+            {
+              "method": "copyValueOf()",
+              "description": "Returns a String representing the characters of a char array",
+              "returnType": "String"
+            },
+            {
+              "method": "endsWith()",
+              "description": "Checks whether a string ends with specified characters",
+              "returnType": "boolean"
+            },
+            {
+              "method": "equals()",
+              "description": "Compares two strings for equality",
+              "returnType": "boolean"
+            },
+            {
+              "method": "equalsIgnoreCase()",
+              "description": "Compares two strings ignoring case",
+              "returnType": "boolean"
+            },
+            {
+              "method": "format()",
+              "description": "Returns a formatted string",
+              "returnType": "String"
+            },
+            {
+              "method": "getBytes()",
+              "description": "Converts a string into a byte array",
+              "returnType": "byte[]"
+            },
+            {
+              "method": "getChars()",
+              "description": "Copies characters into a char array",
+              "returnType": "void"
+            },
+            {
+              "method": "hashCode()",
+              "description": "Returns the hash code of the string",
+              "returnType": "int"
+            },
+            {
+              "method": "indexOf()",
+              "description": "Returns the index of the first occurrence of a substring",
+              "returnType": "int"
+            },
+            {
+              "method": "intern()",
+              "description": "Returns the canonical representation of the string",
+              "returnType": "String"
+            },
+            {
+              "method": "isEmpty()",
+              "description": "Checks whether the string is empty",
+              "returnType": "boolean"
+            },
+            {
+              "method": "join()",
+              "description": "Joins strings using a delimiter",
+              "returnType": "String"
+            },
+            {
+              "method": "lastIndexOf()",
+              "description": "Returns the index of the last occurrence of a substring",
+              "returnType": "int"
+            },
+            {
+              "method": "length()",
+              "description": "Returns the length of the string",
+              "returnType": "int"
+            },
+            {
+              "method": "matches()",
+              "description": "Checks if the string matches a regular expression",
+              "returnType": "boolean"
+            },
+            {
+              "method": "offsetByCodePoints()",
+              "description": "Returns index offset by Unicode code points",
+              "returnType": "int"
+            },
+            {
+              "method": "regionMatches()",
+              "description": "Tests if two string regions are equal",
+              "returnType": "boolean"
+            },
+            {
+              "method": "replace()",
+              "description": "Replaces occurrences of a value in a string",
+              "returnType": "String"
+            },
+            {
+              "method": "replaceAll()",
+              "description": "Replaces substrings matching a regex",
+              "returnType": "String"
+            },
+            {
+              "method": "replaceFirst()",
+              "description": "Replaces the first substring matching a regex",
+              "returnType": "String"
+            },
+            {
+              "method": "split()",
+              "description": "Splits a string into an array",
+              "returnType": "String[]"
+            },
+            {
+              "method": "startsWith()",
+              "description": "Checks whether a string starts with specified characters",
+              "returnType": "boolean"
+            },
+            {
+              "method": "subSequence()",
+              "description": "Returns a subsequence of the string",
+              "returnType": "CharSequence"
+            },
+            {
+              "method": "substring()",
+              "description": "Returns a substring",
+              "returnType": "String"
+            },
+            {
+              "method": "toCharArray()",
+              "description": "Converts the string to a char array",
+              "returnType": "char[]"
+            },
+            {
+              "method": "toLowerCase()",
+              "description": "Converts string to lowercase",
+              "returnType": "String"
+            },
+            {
+              "method": "toString()",
+              "description": "Returns the string itself",
+              "returnType": "String"
+            },
+            {
+              "method": "toUpperCase()",
+              "description": "Converts string to uppercase",
+              "returnType": "String"
+            },
+            {
+              "method": "trim()",
+              "description": "Removes whitespace from both ends",
+              "returnType": "String"
+            },
+            {
+              "method": "valueOf()",
+              "description": "Returns string representation of a value",
+              "returnType": "String"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": ["Java Strings Tutorial"]
+        }
+      ]
+    },
+    "math-methods": {
+      "title": "Java Math Methods",
+      "sections": [
+        {
+          "heading": "Math Class",
+          "paragraphs": [
+            "The Java Math class provides static methods to perform mathematical operations on numbers."
+          ]
+        },
+        {
+          "heading": "All Math Methods",
+          "table": [
+            {
+              "method": "abs(x)",
+              "description": "Returns the absolute value of x",
+              "returnType": "double|float|int|long"
+            },
+            {
+              "method": "acos(x)",
+              "description": "Returns the arccosine of x (radians)",
+              "returnType": "double"
+            },
+            {
+              "method": "addExact(x, y)",
+              "description": "Returns the sum of x and y",
+              "returnType": "int|long"
+            },
+            {
+              "method": "asin(x)",
+              "description": "Returns the arcsine of x (radians)",
+              "returnType": "double"
+            },
+            {
+              "method": "atan(x)",
+              "description": "Returns the arctangent of x",
+              "returnType": "double"
+            },
+            {
+              "method": "atan2(y, x)",
+              "description": "Converts rectangular coordinates to polar angle",
+              "returnType": "double"
+            },
+            {
+              "method": "cbrt(x)",
+              "description": "Returns the cube root of x",
+              "returnType": "double"
+            },
+            {
+              "method": "ceil(x)",
+              "description": "Rounds x up to the nearest integer",
+              "returnType": "double"
+            },
+            {
+              "method": "copySign(x, y)",
+              "description": "Returns x with the sign of y",
+              "returnType": "double|float"
+            },
+            {
+              "method": "cos(x)",
+              "description": "Returns the cosine of x (radians)",
+              "returnType": "double"
+            },
+            {
+              "method": "cosh(x)",
+              "description": "Returns the hyperbolic cosine",
+              "returnType": "double"
+            },
+            {
+              "method": "decrementExact(x)",
+              "description": "Returns x − 1",
+              "returnType": "int|long"
+            },
+            {
+              "method": "exp(x)",
+              "description": "Returns e raised to the power of x",
+              "returnType": "double"
+            },
+            {
+              "method": "expm1(x)",
+              "description": "Returns e^x − 1",
+              "returnType": "double"
+            },
+            {
+              "method": "floor(x)",
+              "description": "Rounds x down to the nearest integer",
+              "returnType": "double"
+            },
+            {
+              "method": "floorDiv(x, y)",
+              "description": "Returns floor division of x by y",
+              "returnType": "int|long"
+            },
+            {
+              "method": "floorMod(x, y)",
+              "description": "Returns the floor modulus of x and y",
+              "returnType": "int|long"
+            },
+            {
+              "method": "getExponent(x)",
+              "description": "Returns the unbiased exponent of x",
+              "returnType": "int"
+            },
+            {
+              "method": "hypot(x, y)",
+              "description": "Returns sqrt(x² + y²)",
+              "returnType": "double"
+            },
+            {
+              "method": "IEEEremainder(x, y)",
+              "description": "Returns the IEEE 754 remainder",
+              "returnType": "double"
+            },
+            {
+              "method": "incrementExact(x)",
+              "description": "Returns x + 1",
+              "returnType": "int|long"
+            },
+            {
+              "method": "log(x)",
+              "description": "Returns the natural logarithm of x",
+              "returnType": "double"
+            },
+            {
+              "method": "log10(x)",
+              "description": "Returns the base-10 logarithm of x",
+              "returnType": "double"
+            },
+            {
+              "method": "log1p(x)",
+              "description": "Returns ln(x + 1)",
+              "returnType": "double"
+            },
+            {
+              "method": "max(x, y)",
+              "description": "Returns the greater value",
+              "returnType": "double|float|int|long"
+            },
+            {
+              "method": "min(x, y)",
+              "description": "Returns the smaller value",
+              "returnType": "double|float|int|long"
+            },
+            {
+              "method": "multiplyExact(x, y)",
+              "description": "Returns x multiplied by y",
+              "returnType": "int|long"
+            },
+            {
+              "method": "negateExact(x)",
+              "description": "Returns the negation of x",
+              "returnType": "int|long"
+            },
+            {
+              "method": "nextAfter(x, y)",
+              "description": "Returns adjacent floating-point value toward y",
+              "returnType": "double|float"
+            },
+            {
+              "method": "nextDown(x)",
+              "description": "Returns adjacent floating-point value downward",
+              "returnType": "double|float"
+            },
+            {
+              "method": "nextUp(x)",
+              "description": "Returns adjacent floating-point value upward",
+              "returnType": "double|float"
+            },
+            {
+              "method": "pow(x, y)",
+              "description": "Returns x raised to the power of y",
+              "returnType": "double"
+            },
+            {
+              "method": "random()",
+              "description": "Returns a random number between 0 and 1",
+              "returnType": "double"
+            },
+            {
+              "method": "rint(x)",
+              "description": "Returns the closest integer value as double",
+              "returnType": "double"
+            },
+            {
+              "method": "round(x)",
+              "description": "Rounds x to the nearest integer",
+              "returnType": "int|long"
+            },
+            {
+              "method": "scalb(x, y)",
+              "description": "Returns x × 2^y",
+              "returnType": "double|float"
+            },
+            {
+              "method": "signum(x)",
+              "description": "Returns the sign of x",
+              "returnType": "double|float"
+            },
+            {
+              "method": "sin(x)",
+              "description": "Returns the sine of x (radians)",
+              "returnType": "double"
+            },
+            {
+              "method": "sinh(x)",
+              "description": "Returns the hyperbolic sine",
+              "returnType": "double"
+            },
+            {
+              "method": "sqrt(x)",
+              "description": "Returns the square root of x",
+              "returnType": "double"
+            },
+            {
+              "method": "subtractExact(x, y)",
+              "description": "Returns x − y",
+              "returnType": "int|long"
+            },
+            {
+              "method": "tan(x)",
+              "description": "Returns the tangent of x",
+              "returnType": "double"
+            },
+            {
+              "method": "tanh(x)",
+              "description": "Returns the hyperbolic tangent",
+              "returnType": "double"
+            },
+            {
+              "method": "toDegrees(x)",
+              "description": "Converts radians to degrees",
+              "returnType": "double"
+            },
+            {
+              "method": "toIntExact(x)",
+              "description": "Converts long to int exactly",
+              "returnType": "int"
+            },
+            {
+              "method": "toRadians(x)",
+              "description": "Converts degrees to radians",
+              "returnType": "double"
+            },
+            {
+              "method": "ulp(x)",
+              "description": "Returns the unit in the last place of x",
+              "returnType": "double|float"
+            }
+          ]
+        },
+        {
+          "heading": "Notes",
+          "paragraphs": ["All Math methods are static."]
+        },
+        {
+          "heading": "Related Pages",
+          "links": ["Java Math Tutorial"]
+        }
+      ]
+    },
+    "output-methods": {
+      "title": "Java Output Methods",
+      "sections": [
+        {
+          "heading": "Output Methods",
+          "paragraphs": [
+            "The System.out stream (short for \"output\") is used with different methods to output values or print text to the console."
+          ],
+          "table": [
+            {
+              "method": "print()",
+              "description": "Prints text or values to the console"
+            },
+            {
+              "method": "printf()",
+              "description": "Prints formatted text or values to the console"
+            },
+            {
+              "method": "println()",
+              "description": "Prints text or values to the console, followed by a new line"
+            }
+          ]
+        }
+      ]
+    },
+    "arrays-class": {
+      "title": "Java Arrays Class",
+      "sections": [
+        {
+          "heading": "Arrays Class",
+          "paragraphs": [
+            "The Java Arrays class (found in java.util) provides static methods that allow you to manipulate arrays."
+          ]
+        },
+        {
+          "heading": "Arrays Methods",
+          "paragraphs": [
+            "A list of popular methods of the Arrays class can be found in the table below."
+          ],
+          "table": [
+            { "method": "compare()", "description": "Compares two arrays" },
+            {
+              "method": "copyOf()",
+              "description": "Creates a copy of an array with a new length"
+            },
+            {
+              "method": "deepEquals()",
+              "description": "Compares two multidimensional arrays for deep equality"
+            },
+            {
+              "method": "equals()",
+              "description": "Checks if two arrays are equal"
+            },
+            {
+              "method": "fill()",
+              "description": "Fills an array with a specified value"
+            },
+            {
+              "method": "mismatch()",
+              "description": "Returns the index of the first mismatch between two arrays"
+            },
+            {
+              "method": "sort()",
+              "description": "Sorts an array in ascending order"
+            }
+          ]
+        },
+        {
+          "heading": "Properties",
+          "paragraphs": [
+            "The length property is a built-in Java property and does not belong to the Arrays class."
+          ],
+          "table": [
+            {
+              "property": "length",
+              "description": "Returns the length of an array"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": ["Java Arrays Tutorial"]
+        }
+      ]
+    },
+    "arraylist-methods": {
+      "title": "Java ArrayList Methods",
+      "sections": [
+        {
+          "heading": "All ArrayList Methods",
+          "paragraphs": [
+            "A list of all ArrayList methods can be found in the table below.",
+            "Some methods use the type of the ArrayList's items as a parameter or return value. This type is referred to as T."
+          ],
+          "table": [
+            {
+              "method": "add()",
+              "description": "Add an item to the list",
+              "returnType": "boolean | void"
+            },
+            {
+              "method": "addAll()",
+              "description": "Add a collection of items to the list",
+              "returnType": "boolean"
+            },
+            {
+              "method": "clear()",
+              "description": "Remove all items from the list",
+              "returnType": "void"
+            },
+            {
+              "method": "clone()",
+              "description": "Create a copy of the ArrayList",
+              "returnType": "Object"
+            },
+            {
+              "method": "contains()",
+              "description": "Checks whether an item exists in the list",
+              "returnType": "boolean"
+            },
+            {
+              "method": "ensureCapacity()",
+              "description": "Increase the capacity to fit a specified number of items",
+              "returnType": "void"
+            },
+            {
+              "method": "forEach()",
+              "description": "Perform an action on every item in the list",
+              "returnType": "void"
+            },
+            {
+              "method": "get()",
+              "description": "Return the item at a specific position in the list",
+              "returnType": "T"
+            },
+            {
+              "method": "indexOf()",
+              "description": "Return the position of the first occurrence of an item",
+              "returnType": "int"
+            },
+            {
+              "method": "isEmpty()",
+              "description": "Checks whether the list is empty",
+              "returnType": "boolean"
+            },
+            {
+              "method": "iterator()",
+              "description": "Return an Iterator object for the ArrayList",
+              "returnType": "Iterator"
+            },
+            {
+              "method": "lastIndexOf()",
+              "description": "Return the position of the last occurrence of an item",
+              "returnType": "int"
+            },
+            {
+              "method": "listIterator()",
+              "description": "Return a ListIterator object for the ArrayList",
+              "returnType": "ListIterator"
+            },
+            {
+              "method": "remove()",
+              "description": "Remove an item from the list",
+              "returnType": "boolean | T"
+            },
+            {
+              "method": "removeAll()",
+              "description": "Remove a collection of items from the list",
+              "returnType": "boolean"
+            },
+            {
+              "method": "removeIf()",
+              "description": "Remove all items that meet a specified condition",
+              "returnType": "boolean"
+            },
+            {
+              "method": "replaceAll()",
+              "description": "Replace each item with the result of an operation",
+              "returnType": "void"
+            },
+            {
+              "method": "retainAll()",
+              "description": "Remove all elements not belonging to a specified collection",
+              "returnType": "boolean"
+            },
+            {
+              "method": "set()",
+              "description": "Replace an item at a specified position",
+              "returnType": "T"
+            },
+            {
+              "method": "size()",
+              "description": "Return the number of items in the list",
+              "returnType": "int"
+            },
+            {
+              "method": "sort()",
+              "description": "Sort the list",
+              "returnType": "void"
+            },
+            {
+              "method": "spliterator()",
+              "description": "Return a Spliterator object for the ArrayList",
+              "returnType": "Spliterator"
+            },
+            {
+              "method": "subList()",
+              "description": "Return a sublist for a specified range",
+              "returnType": "List"
+            },
+            {
+              "method": "toArray()",
+              "description": "Return an array containing the list's items",
+              "returnType": "Object[]"
+            },
+            {
+              "method": "trimToSize()",
+              "description": "Reduce the capacity to match the number of items",
+              "returnType": "void"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": ["Java Arrays Tutorial", "Java ArrayList Tutorial"]
+        }
+      ]
+    },
+    "linkedlist-methods": {
+      "title": "Java LinkedList Methods",
+      "sections": [
+        {
+          "heading": "All LinkedList Methods",
+          "paragraphs": [
+            "A list of all LinkedList methods can be found in the table below.",
+            "Some methods use the type of the LinkedList's items as a parameter or return value. This type is referred to as T."
+          ],
+          "table": [
+            {
+              "method": "add()",
+              "description": "Add an item to the list",
+              "returnType": "boolean | void"
+            },
+            {
+              "method": "addAll()",
+              "description": "Add a collection of items to the list",
+              "returnType": "boolean"
+            },
+            {
+              "method": "addFirst()",
+              "description": "Adds an item to the beginning of the list",
+              "returnType": "void"
+            },
+            {
+              "method": "addLast()",
+              "description": "Adds an item to the end of the list",
+              "returnType": "void"
+            },
+            {
+              "method": "clear()",
+              "description": "Remove all items from the list",
+              "returnType": "void"
+            },
+            {
+              "method": "clone()",
+              "description": "Create a copy of the LinkedList",
+              "returnType": "Object"
+            },
+            {
+              "method": "contains()",
+              "description": "Checks whether an item exists in the list",
+              "returnType": "boolean"
+            },
+            {
+              "method": "descendingIterator()",
+              "description": "Returns an iterator to loop through the list in reverse order",
+              "returnType": "Iterator"
+            },
+            {
+              "method": "element()",
+              "description": "Retrieves the first item in the list (similar to getFirst())",
+              "returnType": "T"
+            },
+            {
+              "method": "forEach()",
+              "description": "Perform an action on every item in the list",
+              "returnType": "void"
+            },
+            {
+              "method": "get()",
+              "description": "Return the item at a specific position in the list",
+              "returnType": "T"
+            },
+            {
+              "method": "getFirst()",
+              "description": "Returns the first item in the list",
+              "returnType": "T"
+            },
+            {
+              "method": "getLast()",
+              "description": "Returns the last item in the list",
+              "returnType": "T"
+            },
+            {
+              "method": "indexOf()",
+              "description": "Return the position of the first occurrence of an item",
+              "returnType": "int"
+            },
+            {
+              "method": "isEmpty()",
+              "description": "Checks whether the list is empty",
+              "returnType": "boolean"
+            },
+            {
+              "method": "iterator()",
+              "description": "Return an Iterator object for the LinkedList",
+              "returnType": "Iterator"
+            },
+            {
+              "method": "lastIndexOf()",
+              "description": "Return the position of the last occurrence of an item",
+              "returnType": "int"
+            },
+            {
+              "method": "listIterator()",
+              "description": "Return a ListIterator object for the LinkedList",
+              "returnType": "ListIterator"
+            },
+            {
+              "method": "offer()",
+              "description": "Adds an item at the end of the list",
+              "returnType": "boolean"
+            },
+            {
+              "method": "offerFirst()",
+              "description": "Adds an item at the beginning of the list",
+              "returnType": "boolean"
+            },
+            {
+              "method": "offerLast()",
+              "description": "Adds an item at the end of the list",
+              "returnType": "boolean"
+            },
+            {
+              "method": "peek()",
+              "description": "Retrieves the first item (similar to getFirst())",
+              "returnType": "T"
+            },
+            {
+              "method": "peekFirst()",
+              "description": "Retrieves the first item (similar to peek())",
+              "returnType": "T"
+            },
+            {
+              "method": "peekLast()",
+              "description": "Retrieves the last item in the list",
+              "returnType": "T"
+            },
+            {
+              "method": "poll()",
+              "description": "Retrieves and removes the first item in the list",
+              "returnType": "T"
+            },
+            {
+              "method": "pollFirst()",
+              "description": "Retrieves and removes the first item (similar to poll())",
+              "returnType": "T"
+            },
+            {
+              "method": "pollLast()",
+              "description": "Retrieves and removes the last item in the list",
+              "returnType": "T"
+            },
+            {
+              "method": "pop()",
+              "description": "Returns and removes the first element (similar to removeFirst())",
+              "returnType": "T"
+            },
+            {
+              "method": "push()",
+              "description": "Adds an item to the beginning of the list (similar to addFirst())",
+              "returnType": "void"
+            },
+            {
+              "method": "remove()",
+              "description": "Remove an item from the list",
+              "returnType": "boolean | T"
+            },
+            {
+              "method": "removeAll()",
+              "description": "Remove a collection of items from the list",
+              "returnType": "boolean"
+            },
+            {
+              "method": "removeFirst()",
+              "description": "Removes the first item in the list",
+              "returnType": "T"
+            },
+            {
+              "method": "removeFirstOccurrence()",
+              "description": "Removes the first occurrence of a specified item",
+              "returnType": "boolean"
+            },
+            {
+              "method": "removeIf()",
+              "description": "Remove all items that meet a specified condition",
+              "returnType": "boolean"
+            },
+            {
+              "method": "removeLast()",
+              "description": "Removes the last item in the list",
+              "returnType": "T"
+            },
+            {
+              "method": "removeLastOccurrence()",
+              "description": "Removes the last occurrence of a specified item",
+              "returnType": "boolean"
+            },
+            {
+              "method": "replaceAll()",
+              "description": "Replace each item with the result of an operation",
+              "returnType": "void"
+            },
+            {
+              "method": "retainAll()",
+              "description": "Remove all elements not belonging to a specified collection",
+              "returnType": "boolean"
+            },
+            {
+              "method": "set()",
+              "description": "Replace an item at a specified position",
+              "returnType": "T"
+            },
+            {
+              "method": "size()",
+              "description": "Return the number of items in the list",
+              "returnType": "int"
+            },
+            {
+              "method": "sort()",
+              "description": "Sort the list",
+              "returnType": "void"
+            },
+            {
+              "method": "spliterator()",
+              "description": "Return a Spliterator object for the LinkedList",
+              "returnType": "Spliterator"
+            },
+            {
+              "method": "subList()",
+              "description": "Return a sublist for a specified range",
+              "returnType": "List"
+            },
+            {
+              "method": "toArray()",
+              "description": "Return an array containing the list's items",
+              "returnType": "Object[]"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": [
+            "Java Arrays Tutorial",
+            "Java LinkedList Tutorial",
+            "Java ArrayList Tutorial"
+          ]
+        }
+      ]
+    },
+    "hashmap-methods": {
+      "title": "Java HashMap Methods",
+      "sections": [
+        {
+          "heading": "All HashMap Methods",
+          "paragraphs": [
+            "A list of all HashMap methods can be found in the table below.",
+            "Some methods use the type of the HashMap's entries as a parameter or return value. The type of the key is referred to as K and the type of the value is referred to as V."
+          ],
+          "table": [
+            {
+              "method": "clear()",
+              "description": "Remove all entries from the map.",
+              "returnType": "void"
+            },
+            {
+              "method": "clone()",
+              "description": "Create a copy of the HashMap.",
+              "returnType": "Object"
+            },
+            {
+              "method": "compute()",
+              "description": "Compute a value for an entry based on its key and the current value (if it has one)",
+              "returnType": "V"
+            },
+            {
+              "method": "computeIfAbsent()",
+              "description": "Compute a value for an entry based on its key only if an entry using the key does not already exist",
+              "returnType": "V"
+            },
+            {
+              "method": "computeIfPresent()",
+              "description": "Compute a new value for an entry based on its key and current value but only if an entry with the key already exists",
+              "returnType": "V"
+            },
+            {
+              "method": "containsKey()",
+              "description": "Indicate if an entry with the specified key exists in the map",
+              "returnType": "boolean"
+            },
+            {
+              "method": "containsValue()",
+              "description": "Indicate if an entry with the specified value exists in the map",
+              "returnType": "boolean"
+            },
+            {
+              "method": "entrySet()",
+              "description": "Return a set of all entries in the map",
+              "returnType": "Set<Map.Entry<K,V>>"
+            },
+            {
+              "method": "forEach()",
+              "description": "Perform an action on every entry in the map",
+              "returnType": "void"
+            },
+            {
+              "method": "get()",
+              "description": "Return the value of the entry with a specified key",
+              "returnType": "V"
+            },
+            {
+              "method": "getOrDefault()",
+              "description": "Return the value of the entry with a specified key or a default value if the entry is not found",
+              "returnType": "V"
+            },
+            {
+              "method": "isEmpty()",
+              "description": "Indicate whether the map is empty",
+              "returnType": "boolean"
+            },
+            {
+              "method": "keySet()",
+              "description": "Return a set of all keys in the map",
+              "returnType": "Set<K>"
+            },
+            {
+              "method": "merge()",
+              "description": "Compute a value for an entry based on its key and value or write a specific value if the entry does not yet exist",
+              "returnType": "V"
+            },
+            {
+              "method": "put()",
+              "description": "Write an entry into the map",
+              "returnType": "V"
+            },
+            {
+              "method": "putAll()",
+              "description": "Write all of the entries from another map into this one",
+              "returnType": "void"
+            },
+            {
+              "method": "putIfAbsent()",
+              "description": "Write an entry into the map but only if an entry with the same key does not already exist",
+              "returnType": "V"
+            },
+            {
+              "method": "remove()",
+              "description": "Remove an entry from the map",
+              "returnType": "V | boolean"
+            },
+            {
+              "method": "replace()",
+              "description": "Write to an entry in the map only if it exists",
+              "returnType": "V | boolean"
+            },
+            {
+              "method": "replaceAll()",
+              "description": "Replaces the value of every entry with the result of an operation",
+              "returnType": "void"
+            },
+            {
+              "method": "size()",
+              "description": "Return the number of entries in the map",
+              "returnType": "int"
+            },
+            {
+              "method": "values()",
+              "description": "Return a collection containing all of the values in the map",
+              "returnType": "Collection<V>"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": ["Java HashMap Tutorial"]
+        }
+      ]
+    },
+    "scanner-methods": {
+      "title": "Java Scanner Methods",
+      "sections": [
+        {
+          "heading": "Scanner Methods",
+          "paragraphs": [
+            "The Scanner class can be used to obtain data from the keyboard, files and strings.",
+            "A list of useful Scanner methods can be found in the table below."
+          ],
+          "table": [
+            {
+              "method": "close()",
+              "description": "Close the scanner object",
+              "returnType": "void"
+            },
+            {
+              "method": "delimiter()",
+              "description": "Return the delimiter used to separate tokens",
+              "returnType": "Pattern"
+            },
+            {
+              "method": "findInLine()",
+              "description": "Return a string which matches a regular expression in the current line",
+              "returnType": "String"
+            },
+            {
+              "method": "findWithinHorizon()",
+              "description": "Return a string which matches a regular expression within a specified number of characters",
+              "returnType": "String"
+            },
+            {
+              "method": "hasNext()",
+              "description": "Return true if another token can be found",
+              "returnType": "boolean"
+            },
+            {
+              "method": "hasNextBoolean()",
+              "description": "Return true if the next token represents a boolean value",
+              "returnType": "boolean"
+            },
+            {
+              "method": "hasNextByte()",
+              "description": "Return true if the next token represents a byte value",
+              "returnType": "boolean"
+            },
+            {
+              "method": "hasNextDouble()",
+              "description": "Return true if the next token represents a number",
+              "returnType": "boolean"
+            },
+            {
+              "method": "hasNextFloat()",
+              "description": "Return true if the next token represents a number",
+              "returnType": "boolean"
+            },
+            {
+              "method": "hasNextInt()",
+              "description": "Return true if the next token represents an int value",
+              "returnType": "boolean"
+            },
+            {
+              "method": "hasNextLine()",
+              "description": "Return true if another line of text is available in the scanner",
+              "returnType": "boolean"
+            },
+            {
+              "method": "hasNextLong()",
+              "description": "Return true if the next token represents a long value",
+              "returnType": "boolean"
+            },
+            {
+              "method": "hasNextShort()",
+              "description": "Return true if the next token represents a short value",
+              "returnType": "boolean"
+            },
+            {
+              "method": "locale()",
+              "description": "Return the scanner's locale",
+              "returnType": "Locale"
+            },
+            {
+              "method": "next()",
+              "description": "Return the next token in the scanner",
+              "returnType": "String"
+            },
+            {
+              "method": "nextBoolean()",
+              "description": "Return the boolean value of the next token in the scanner",
+              "returnType": "boolean"
+            },
+            {
+              "method": "nextByte()",
+              "description": "Return the byte value of the next token in the scanner",
+              "returnType": "byte"
+            },
+            {
+              "method": "nextDouble()",
+              "description": "Return the double value of the next token in the scanner",
+              "returnType": "double"
+            },
+            {
+              "method": "nextFloat()",
+              "description": "Return the float value of the next token in the scanner",
+              "returnType": "float"
+            },
+            {
+              "method": "nextInt()",
+              "description": "Return the int value of the next token in the scanner",
+              "returnType": "int"
+            },
+            {
+              "method": "nextLine()",
+              "description": "Return the next line of text in the scanner",
+              "returnType": "String"
+            },
+            {
+              "method": "nextLong()",
+              "description": "Return the long value of the next token in the scanner",
+              "returnType": "long"
+            },
+            {
+              "method": "nextShort()",
+              "description": "Return the short value of the next token in the scanner",
+              "returnType": "long"
+            },
+            {
+              "method": "radix()",
+              "description": "Return the scanner's radix",
+              "returnType": "int"
+            },
+            {
+              "method": "reset()",
+              "description": "Reset the scanner's configuration",
+              "returnType": "int"
+            },
+            {
+              "method": "useDelimiter()",
+              "description": "Set the delimiter used by the scanner to separate tokens",
+              "returnType": "Scanner"
+            },
+            {
+              "method": "useLocale()",
+              "description": "Set the locale used by the scanner",
+              "returnType": "Scanner"
+            },
+            {
+              "method": "useRadix()",
+              "description": "Set the radix used by the scanner",
+              "returnType": "Scanner"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": ["Java User Input Tutorial", "Java Read Files Tutorial"]
+        }
+      ]
+    },
+    "file-class-methods": {
+      "title": "Java File Class Methods",
+      "sections": [
+        {
+          "heading": "File Class Methods",
+          "paragraphs": [
+            "The File class (from java.io) is used to work with file and directory paths. It lets you create, delete, and get information about files and folders, but it does not read or write the contents."
+          ],
+          "table": [
+            {
+              "method": "createNewFile()",
+              "description": "Creates a new, empty file if it does not already exist",
+              "returnType": "boolean"
+            },
+            {
+              "method": "delete()",
+              "description": "Deletes the file or directory",
+              "returnType": "boolean"
+            },
+            {
+              "method": "exists()",
+              "description": "Tests whether the file or directory exists",
+              "returnType": "boolean"
+            },
+            {
+              "method": "canRead()",
+              "description": "Tests whether the application can read the file",
+              "returnType": "boolean"
+            },
+            {
+              "method": "canWrite()",
+              "description": "Tests whether the application can write to the file",
+              "returnType": "boolean"
+            },
+            {
+              "method": "isFile()",
+              "description": "Returns true if the path represents a file",
+              "returnType": "boolean"
+            },
+            {
+              "method": "isDirectory()",
+              "description": "Returns true if the path represents a directory",
+              "returnType": "boolean"
+            },
+            {
+              "method": "length()",
+              "description": "Returns the size of the file in bytes",
+              "returnType": "long"
+            },
+            {
+              "method": "getName()",
+              "description": "Returns the name of the file or directory",
+              "returnType": "String"
+            },
+            {
+              "method": "getAbsolutePath()",
+              "description": "Returns the absolute pathname string",
+              "returnType": "String"
+            },
+            {
+              "method": "getPath()",
+              "description": "Returns the pathname string",
+              "returnType": "String"
+            },
+            {
+              "method": "getParent()",
+              "description": "Returns the pathname string of the parent directory",
+              "returnType": "String"
+            },
+            {
+              "method": "list()",
+              "description": "Returns an array of names of files and directories in a directory",
+              "returnType": "String[]"
+            },
+            {
+              "method": "listFiles()",
+              "description": "Returns an array of File objects in a directory",
+              "returnType": "File[]"
+            },
+            {
+              "method": "mkdir()",
+              "description": "Creates a directory",
+              "returnType": "boolean"
+            },
+            {
+              "method": "mkdirs()",
+              "description": "Creates a directory and any missing parent directories",
+              "returnType": "boolean"
+            },
+            {
+              "method": "renameTo()",
+              "description": "Renames the file or directory",
+              "returnType": "boolean"
+            },
+            {
+              "method": "setReadOnly()",
+              "description": "Marks the file as read-only",
+              "returnType": "boolean"
+            },
+            {
+              "method": "setWritable()",
+              "description": "Sets the writable permission",
+              "returnType": "boolean"
+            },
+            {
+              "method": "setReadable()",
+              "description": "Sets the readable permission",
+              "returnType": "boolean"
+            },
+            {
+              "method": "setExecutable()",
+              "description": "Sets the executable permission",
+              "returnType": "boolean"
+            },
+            {
+              "method": "canExecute()",
+              "description": "Tests whether the application can execute the file",
+              "returnType": "boolean"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": ["Java File Handling Tutorial"]
+        }
+      ]
+    },
+    "fileinputstream-methods": {
+      "title": "Java FileInputStream Methods",
+      "sections": [
+        {
+          "heading": "FileInputStream Methods",
+          "paragraphs": [
+            "The FileInputStream class provides methods to read data (as bytes) from a file:"
+          ],
+          "table": [
+            {
+              "method": "available()",
+              "description": "Returns the number of bytes that can be read without blocking",
+              "returnType": "int"
+            },
+            {
+              "method": "close()",
+              "description": "Closes the stream and releases system resources",
+              "returnType": "void"
+            },
+            {
+              "method": "read()",
+              "description": "Reads one byte of data",
+              "returnType": "int"
+            },
+            {
+              "method": "read(byte[] b, int off, int len)",
+              "description": "Reads bytes into an array or a portion of an array",
+              "returnType": "int"
+            },
+            {
+              "method": "skip()",
+              "description": "Skips over and discards n bytes of data",
+              "returnType": "long"
+            },
+            {
+              "method": "getFD()",
+              "description": "Returns the file descriptor object associated with the stream",
+              "returnType": "FileDescriptor"
+            },
+            {
+              "method": "getChannel()",
+              "description": "Returns the unique FileChannel object for this stream",
+              "returnType": "FileChannel"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": [
+            "Java I/O Streams Tutorial",
+            "Java FileInputStream Tutorial"
+          ]
+        }
+      ]
+    },
+    "fileoutputstream-methods": {
+      "title": "Java FileOutputStream Methods",
+      "sections": [
+        {
+          "heading": "FileOutputStream Methods",
+          "paragraphs": [
+            "The FileOutputStream class provides methods to write data (as bytes) to a file:"
+          ],
+          "table": [
+            {
+              "method": "close()",
+              "description": "Closes the stream and releases system resources",
+              "returnType": "void"
+            },
+            {
+              "method": "flush()",
+              "description": "Flushes the stream and forces any buffered output bytes to be written immediately",
+              "returnType": "void"
+            },
+            {
+              "method": "write()",
+              "description": "Writes one byte, an array of bytes, or part of an array to the file",
+              "returnType": "void"
+            },
+            {
+              "method": "getFD()",
+              "description": "Returns the file descriptor object associated with the stream",
+              "returnType": "FileDescriptor"
+            },
+            {
+              "method": "getChannel()",
+              "description": "Returns the unique FileChannel object for this stream",
+              "returnType": "FileChannel"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": [
+            "Java I/O Streams Tutorial",
+            "Java FileOutputStream Tutorial"
+          ]
+        }
+      ]
+    },
+    "bufferedreader-methods": {
+      "title": "Java BufferedReader Methods",
+      "sections": [
+        {
+          "heading": "BufferedReader Methods",
+          "paragraphs": [
+            "The BufferedReader class provides methods to read text efficiently:"
+          ],
+          "table": [
+            {
+              "method": "close()",
+              "description": "Closes the stream and releases system resources",
+              "returnType": "void"
+            },
+            {
+              "method": "mark()",
+              "description": "Marks the current position in the stream",
+              "returnType": "void"
+            },
+            {
+              "method": "markSupported()",
+              "description": "Checks if mark() and reset() are supported",
+              "returnType": "boolean"
+            },
+            {
+              "method": "read()",
+              "description": "Reads a single character",
+              "returnType": "int"
+            },
+            {
+              "method": "read(char[] cbuf, int off, int len)",
+              "description": "Reads characters into an array or a portion of an array",
+              "returnType": "int"
+            },
+            {
+              "method": "readLine()",
+              "description": "Reads one full line of text",
+              "returnType": "String"
+            },
+            {
+              "method": "ready()",
+              "description": "Checks if the stream is ready to be read",
+              "returnType": "boolean"
+            },
+            {
+              "method": "reset()",
+              "description": "Resets the stream to the last marked position",
+              "returnType": "void"
+            },
+            {
+              "method": "skip()",
+              "description": "Skips over characters in the stream",
+              "returnType": "long"
+            },
+            {
+              "method": "lines()",
+              "description": "Returns a Stream<String> of all lines",
+              "returnType": "Stream<String>"
+            },
+            {
+              "method": "transferTo()",
+              "description": "Reads all characters and writes them to the given writer",
+              "returnType": "long"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": ["Java I/O Streams Tutorial", "Java BufferedReader Tutorial"]
+        }
+      ]
+    },
+    "bufferedwriter-methods": {
+      "title": "Java BufferedWriter Methods",
+      "sections": [
+        {
+          "heading": "BufferedWriter Methods",
+          "paragraphs": [
+            "The BufferedWriter class provides methods to write text efficiently:"
+          ],
+          "table": [
+            {
+              "method": "close()",
+              "description": "Closes the stream, flushing it first",
+              "returnType": "void"
+            },
+            {
+              "method": "flush()",
+              "description": "Forces any buffered output to be written immediately",
+              "returnType": "void"
+            },
+            {
+              "method": "newLine()",
+              "description": "Writes the system's line separator",
+              "returnType": "void"
+            },
+            {
+              "method": "write()",
+              "cription": "Writes a single character, an array, a portion of an array, a string, or part of a string",
+              "returnType": "void"
+            },
+            {
+              "method": "append()",
+              "description": "Appends characters or character sequences to the writer",
+              "returnType": "Writer"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": ["Java I/O Streams Tutorial", "Java BufferedWriter Tutorial"]
+        }
+      ]
+    },
+    "iterator-methods": {
+      "title": "Java Iterator Interface",
+      "sections": [
+        {
+          "heading": "Iterator Methods",
+          "paragraphs": [
+            "The Iterator interface provides methods to access and iterate through collections:"
+          ],
+          "table": [
+            {
+              "method": "hasNext()",
+              "description": "Returns true if there are more elements in the iteration",
+              "returnType": "boolean"
+            },
+            {
+              "method": "next()",
+              "description": "Returns the next element in the iteration",
+              "returnType": "T"
+            },
+            {
+              "method": "remove()",
+              "description": "Removes the last element returned by next()",
+              "returnType": "void"
+            }
+          ],
+          "note": "Note: The next() method uses the type of the iterator's items as its return value. This type is referred to as T in the table."
+        },
+        {
+          "heading": "Related Pages",
+          "links": ["Java Iterator Tutorial", "Java Data Structures Tutorial"]
+        }
+      ]
+    },
+    "collections-methods": {
+      "title": "Java Collections Class Methods",
+      "sections": [
+        {
+          "heading": "Collections Methods",
+          "paragraphs": [
+            "The Collections class (in java.util) contains several useful methods for working with collections like ArrayList, HashSet, and HashMap."
+          ],
+          "table": [
+            {
+              "method": "sort()",
+              "description": "Sorts the list in ascending order (according to natural ordering)",
+              "returnType": "void"
+            },
+            {
+              "method": "binarySearch()",
+              "description": "Searches for a key in a sorted list and returns its index (otherwise < 0)",
+              "returnType": "int"
+            },
+            {
+              "method": "reverse()",
+              "description": "Reverses the order of elements in a list",
+              "returnType": "void"
+            },
+            {
+              "method": "reverseOrder()",
+              "description": "Returns a comparator that imposes the reverse of natural ordering",
+              "returnType": "Comparator"
+            },
+            {
+              "method": "shuffle()",
+              "description": "Randomly permutes the elements of a list",
+              "returnType": "void"
+            },
+            {
+              "method": "swap()",
+              "description": "Swaps the elements at the specified positions in a list",
+              "returnType": "void"
+            },
+            {
+              "method": "frequency()",
+              "description": "Returns the number of elements equal to the specified object",
+              "returnType": "int"
+            },
+            {
+              "method": "max()",
+              "description": "Returns the maximum element of a collection (according to natural ordering)",
+              "returnType": "T"
+            },
+            {
+              "method": "min()",
+              "description": "Returns the minimum element of a collection (according to natural ordering)",
+              "returnType": "T"
+            },
+            {
+              "method": "disjoint()",
+              "description": "Checks if two collections have no elements in common",
+              "returnType": "boolean"
+            },
+            {
+              "method": "copy()",
+              "description": "Copies all elements from one list into another",
+              "returnType": "void"
+            },
+            {
+              "method": "fill()",
+              "description": "Replaces all elements of the list with the specified object",
+              "returnType": "void"
+            },
+            {
+              "method": "replaceAll()",
+              "description": "Replaces all occurrences of one value with another in a list",
+              "returnType": "boolean"
+            },
+            {
+              "method": "unmodifiableList()",
+              "description": "Returns an unmodifiable (read-only) view of the specified list",
+              "returnType": "List"
+            },
+            {
+              "method": "unmodifiableSet()",
+              "description": "Returns an unmodifiable (read-only) view of the specified set",
+              "returnType": "Set"
+            },
+            {
+              "method": "unmodifiableMap()",
+              "description": "Returns an unmodifiable (read-only) view of the specified map",
+              "returnType": "Map"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": ["Java Algorithms Tutorial", "Java Data Structures Tutorial"]
+        }
+      ]
+    },
+    "system-methods": {
+      "title": "Java System Methods",
+      "sections": [
+        {
+          "heading": "System Methods",
+          "paragraphs": [
+            "The System class contains several useful methods for input, output, properties, time, and memory management."
+          ],
+          "table": [
+            {
+              "method": "currentTimeMillis()",
+              "description": "Returns the current time in milliseconds since January 1, 1970 (Unix epoch)",
+              "returnType": "long"
+            },
+            {
+              "method": "nanoTime()",
+              "description": "Returns the current value of the most precise available system timer, in nanoseconds",
+              "returnType": "long"
+            },
+            {
+              "method": "exit()",
+              "description": "Terminates the running Java program. A nonzero status indicates abnormal termination",
+              "returnType": "void"
+            },
+            {
+              "method": "gc()",
+              "description": "Suggests that the Java Virtual Machine run the garbage collector",
+              "returnType": "void"
+            },
+            {
+              "method": "getProperty()",
+              "description": "Gets the system property indicated by the key, or returns the default value if not found",
+              "returnType": "String"
+            },
+            {
+              "method": "getProperties()",
+              "description": "Returns all system properties as a Properties object",
+              "returnType": "Properties"
+            },
+            {
+              "method": "setProperty()",
+              "description": "Sets the system property indicated by the key",
+              "returnType": "String"
+            },
+            {
+              "method": "clearProperty()",
+              "description": "Removes the system property indicated by the key",
+              "returnType": "String"
+            },
+            {
+              "method": "arraycopy()",
+              "description": "Copies elements from the source array into the destination array",
+              "returnType": "void"
+            },
+            {
+              "method": "identityHashCode()",
+              "description": "Returns the default hash code of the given object (even if hashCode() is overridden)",
+              "returnType": "int"
+            },
+            {
+              "method": "lineSeparator()",
+              "description": "Returns the system-dependent line separator string (e.g. \\\"\\\\n\\\" on Linux, \\\"\\\\r\\\\n\\\" on Windows)",
+              "returnType": "String"
+            },
+            {
+              "method": "getenv()",
+              "description": "Returns an unmodifiable map of the system environment variables",
+              "returnType": "Map<String, String>"
+            },
+            {
+              "method": "getenv(String name)",
+              "description": "Returns the value of the specified environment variable, or null if it does not exist",
+              "returnType": "String"
+            },
+            {
+              "field": "in",
+              "description": "Standard input stream (usually the keyboard)",
+              "type": "InputStream"
+            },
+            {
+              "field": "out",
+              "description": "Standard output stream (usually the console). Often used with println()",
+              "type": "PrintStream"
+            },
+            {
+              "field": "err",
+              "description": "Standard error output stream (usually the console)",
+              "type": "PrintStream"
+            }
+          ]
+        }
+      ]
+    },
+    "errors-exceptions": {
+      "title": "Java Errors and Exception Types",
+      "sections": [
+        {
+          "heading": "Errors and Exception Types",
+          "paragraphs": [
+            "The table below shows a list of common Error and Exception types in Java:"
+          ],
+          "table": [
+            {
+              "name": "ArithmeticError",
+              "description": "Occurs when a numeric calculation goes wrong"
+            },
+            {
+              "name": "ArrayIndexOutOfBoundsException",
+              "description": "Occurs when trying to access an index number that does not exist in an array"
+            },
+            {
+              "name": "ClassFormatError",
+              "description": "Occurs when a class file cannot be accessed"
+            },
+            {
+              "name": "ClassNotFoundException",
+              "description": "Occurs when trying to access a class that does not exist"
+            },
+            {
+              "name": "ConcurrentModificationException",
+              "description": "Occurs when an element is added or removed from iterables"
+            },
+            {
+              "name": "FileNotFoundException",
+              "description": "Occurs when a file cannot be accessed"
+            },
+            {
+              "name": "IncompatibleClassChangeError",
+              "description": "Occurs when there's been a change in a base class after a child class has already been initialized"
+            },
+            {
+              "name": "InputMismatchException",
+              "description": "Occurs when entering wrong input (e.g. text in a numerical input)"
+            },
+            {
+              "name": "InterruptedException",
+              "description": "Occurs when a Thread is interrupted while waiting or sleeping"
+            },
+            {
+              "name": "InvalidClassException",
+              "description": "Occurs when the Serialization runtime observes a problem with a class"
+            },
+            {
+              "name": "IOException",
+              "description": "Occurs when an input or output operation fails"
+            },
+            {
+              "name": "NegativeArraySizeException",
+              "description": "Occurs when trying to create an array with negative size"
+            },
+            {
+              "name": "NoClassDefFoundError",
+              "description": "Occurs when the class is not found at runtime"
+            },
+            {
+              "name": "NoSuchFieldException",
+              "description": "Occurs when trying to access a class field or variable that does not exist"
+            },
+            {
+              "name": "NoSuchMethodException",
+              "description": "Occurs when trying to access a class method that does not exist"
+            },
+            {
+              "name": "NullPointerException",
+              "description": "Occurs when trying to access an object reference that is null"
+            },
+            {
+              "name": "NumberFormatException",
+              "description": "Occurs when it is not possible to convert a specified string to a numeric type"
+            },
+            {
+              "name": "RuntimeException",
+              "description": "Occurs when an exception occurs at runtime"
+            },
+            {
+              "name": "StringIndexOutOfBoundsException",
+              "description": "Occurs when trying to access a character in a String that does not exist"
+            },
+            {
+              "name": "TypeNotPresentException",
+              "description": "Occurs when a type cannot be found"
+            },
+            {
+              "name": "IllegalArgumentException",
+              "description": "Occurs when an illegal argument is passed to a method"
+            },
+            {
+              "name": "IllegalStateException",
+              "description": "Occurs when a method is called at an illegal time"
+            }
+          ]
+        },
+        {
+          "heading": "Related Pages",
+          "links": ["Java Errors Tutorial", "Java Exception Handling Tutorial"]
+        }
+      ]
     }
   }
 }

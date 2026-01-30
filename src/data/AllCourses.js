@@ -28,7 +28,7 @@ const allCourses = [
   { id: 20, title: "PHP", path: "/php" }, // pending
   { id: 21, title: "Java", path: "/java" }, // pending
   { id: 22, title: "C", path: "/c" }, // pending
-  { id: 23, title: "C++", path: "/cpp" }, // pending
+  { id: 23, title: "C++", path: "/cpp" }, // done
   { id: 24, title: "C#", path: "/csharp" }, // done
   { id: 25, title: "R", path: "/r" }, // done
   { id: 26, title: "Kotlin", path: "/kotlin" }, // done

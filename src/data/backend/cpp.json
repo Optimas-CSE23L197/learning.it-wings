@@ -1016,11 +1016,1989 @@
         }
       ]
     },
+    "switch": {
+      "title": "C++ Switch Statements",
+      "paragraphs": [
+        "C++ Switch Statements",
+        "The switch statement is used to select one of many code blocks to be executed.",
+        "It is often used as an alternative to multiple if...else statements."
+      ],
+      "sections": [
+        {
+          "heading": "Switch Syntax",
+          "paragraphs": [
+            "The switch expression is evaluated once.",
+            "The result is compared with each case value.",
+            "If a match is found, the corresponding code block runs."
+          ],
+          "syntax": "switch(expression) {\n  case x:\n    // code block\n    break;\n  case y:\n    // code block\n    break;\n  default:\n    // code block\n}"
+        },
+        {
+          "heading": "How Switch Works",
+          "list": [
+            "The expression is evaluated once",
+            "Each case is compared with the expression value",
+            "Matching case code is executed",
+            "break stops further execution",
+            "default runs if no case matches"
+          ]
+        },
+        {
+          "heading": "Example: Weekday Selector",
+          "example": "int day = 4;\n\nswitch (day) {\n  case 1:\n    cout << \"Monday\";\n    break;\n  case 2:\n    cout << \"Tuesday\";\n    break;\n  case 3:\n    cout << \"Wednesday\";\n    break;\n  case 4:\n    cout << \"Thursday\";\n    break;\n  case 5:\n    cout << \"Friday\";\n    break;\n  case 6:\n    cout << \"Saturday\";\n    break;\n  case 7:\n    cout << \"Sunday\";\n    break;\n}",
+          "result": "Thursday"
+        },
+        {
+          "heading": "The break Keyword",
+          "paragraphs": [
+            "The break keyword exits the switch block.",
+            "It prevents the execution of other cases.",
+            "Using break improves performance and avoids unexpected behavior."
+          ]
+        },
+        {
+          "heading": "The default Keyword",
+          "paragraphs": [
+            "The default keyword runs code when no case matches.",
+            "It is optional but recommended for handling unexpected values."
+          ],
+          "example": "int day = 4;\n\nswitch (day) {\n  case 6:\n    cout << \"Today is Saturday\";\n    break;\n  case 7:\n    cout << \"Today is Sunday\";\n    break;\n  default:\n    cout << \"Looking forward to the Weekend\";\n}",
+          "result": "Looking forward to the Weekend"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword to handle cases that are not matched.",
+            "code": "switch (day) {\n  case 1:\n    cout << \"Monday\";\n    break;\n  ___:\n    cout << \"Another day\";\n}",
+            "options": ["default", "else", "case", "break"],
+            "answer": "default"
+          }
+        }
+      ]
+    },
+    "while-loop": {
+      "title": "C++ While Loop",
+      "paragraphs": [
+        "C++ Loops",
+        "Loops can execute a block of code as long as a specified condition is true.",
+        "They help save time, reduce errors, and make code more readable."
+      ],
+      "sections": [
+        {
+          "heading": "What is a While Loop?",
+          "paragraphs": [
+            "The while loop runs a block of code repeatedly as long as a condition remains true."
+          ],
+          "syntax": "while (condition) {\n  // code block to be executed\n}"
+        },
+        {
+          "heading": "Basic While Loop Example",
+          "paragraphs": [
+            "This example prints numbers from 0 to 4.",
+            "The loop stops when the condition becomes false."
+          ],
+          "example": "int i = 0;\nwhile (i < 5) {\n  cout << i << \"\\n\";\n  i++;\n}",
+          "result": ["0", "1", "2", "3", "4"]
+        },
+        {
+          "heading": "Important Note",
+          "paragraphs": [
+            "Always update the loop variable inside the loop.",
+            "Otherwise, the loop will never end (infinite loop)."
+          ]
+        },
+        {
+          "heading": "Why Use the Variable Name i?",
+          "paragraphs": [
+            "The letter i is commonly used as a counter variable.",
+            "It stands for index or iterator and is a common convention in loops."
+          ]
+        },
+        {
+          "heading": "Countdown Example",
+          "paragraphs": [
+            "This example counts down from 3 and prints a message at the end."
+          ],
+          "example": "int countdown = 3;\n\nwhile (countdown > 0) {\n  cout << countdown << \"\\n\";\n  countdown--;\n}\n\ncout << \"Happy New Year!!\\n\";",
+          "result": ["3", "2", "1", "Happy New Year!!"]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword to start a loop that runs while the condition is true.",
+            "code": "int i = 0;\n___ (i < 5) {\n  cout << i << \" \";\n  i++;\n}",
+            "options": ["while", "for", "do", "true"],
+            "answer": "while"
+          }
+        }
+      ]
+    },
+    "for-loop": {
+      "title": "C++ For Loop",
+      "paragraphs": [
+        "C++ For Loop",
+        "Use a for loop when you know exactly how many times you want to repeat a block of code.",
+        "It is often more compact and readable than a while loop for fixed iterations."
+      ],
+      "sections": [
+        {
+          "heading": "For Loop Syntax",
+          "paragraphs": [
+            "The for loop has three statements inside parentheses.",
+            "Each statement controls a different part of the loop execution."
+          ],
+          "syntax": "for (statement1; statement2; statement3) {\n  // code block to be executed\n}"
+        },
+        {
+          "heading": "How the For Loop Works",
+          "paragraphs": [
+            "Statement 1 runs once before the loop starts.",
+            "Statement 2 defines the condition for running the loop.",
+            "Statement 3 runs after each loop iteration."
+          ],
+          "list": [
+            "Statement 1: Initialize loop variable",
+            "Statement 2: Loop condition",
+            "Statement 3: Update loop variable"
+          ]
+        },
+        {
+          "heading": "Print Numbers",
+          "paragraphs": ["This example prints numbers from 0 to 4."],
+          "example": "for (int i = 0; i < 5; i++) {\n  cout << i << \"\\n\";\n}",
+          "result": ["0", "1", "2", "3", "4"]
+        },
+        {
+          "heading": "Print Even Numbers",
+          "paragraphs": ["This example prints even numbers between 0 and 10."],
+          "example": "for (int i = 0; i <= 10; i = i + 2) {\n  cout << i << \"\\n\";\n}",
+          "result": ["0", "2", "4", "6", "8", "10"]
+        },
+        {
+          "heading": "Sum of Numbers",
+          "paragraphs": [
+            "This example calculates the sum of numbers from 1 to 5."
+          ],
+          "example": "int sum = 0;\nfor (int i = 1; i <= 5; i++) {\n  sum = sum + i;\n}\ncout << \"Sum is \" << sum;",
+          "result": "Sum is 15"
+        },
+        {
+          "heading": "Countdown Example",
+          "paragraphs": ["This example prints a countdown from 5 to 1."],
+          "example": "for (int i = 5; i > 0; i--) {\n  cout << i << \"\\n\";\n}",
+          "result": ["5", "4", "3", "2", "1"]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword to create a loop that runs exactly 5 times.",
+            "code": "___ (int i = 1; i <= 5; i++) {\n  cout << i << \" \";\n}",
+            "options": ["for", "while", "do", "run"],
+            "answer": "for"
+          }
+        }
+      ]
+    },
+    "break-continue": {
+      "title": "C++ Break and Continue",
+      "paragraphs": [
+        "The break and continue statements are used to control loop execution.",
+        "They allow you to stop a loop early or skip specific iterations."
+      ],
+      "sections": [
+        {
+          "heading": "C++ break Statement",
+          "paragraphs": [
+            "The break statement is used to exit a loop immediately.",
+            "Execution continues with the first statement after the loop."
+          ],
+          "example": "for (int i = 0; i < 10; i++) {\n  if (i == 4) {\n    break;\n  }\n  cout << i << \"\\n\";\n}",
+          "result": ["0", "1", "2", "3"]
+        },
+        {
+          "heading": "C++ continue Statement",
+          "paragraphs": [
+            "The continue statement skips the current iteration and moves to the next one.",
+            "The loop itself does not stop."
+          ],
+          "example": "for (int i = 0; i < 10; i++) {\n  if (i == 4) {\n    continue;\n  }\n  cout << i << \"\\n\";\n}",
+          "result": ["0", "1", "2", "3", "5", "6", "7", "8", "9"]
+        },
+        {
+          "heading": "Break in While Loop",
+          "paragraphs": [
+            "The break statement can also be used inside while loops."
+          ],
+          "example": "int i = 0;\nwhile (i < 10) {\n  cout << i << \"\\n\";\n  i++;\n  if (i == 4) {\n    break;\n  }\n}",
+          "result": ["0", "1", "2", "3"]
+        },
+        {
+          "heading": "Continue in While Loop",
+          "paragraphs": [
+            "When using continue in a while loop, make sure the loop variable is updated to avoid infinite loops."
+          ],
+          "example": "int i = 0;\nwhile (i < 10) {\n  if (i == 4) {\n    i++;\n    continue;\n  }\n  cout << i << \"\\n\";\n  i++;\n}",
+          "result": ["0", "1", "2", "3", "5", "6", "7", "8", "9"]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword to exit the loop immediately when i is 3.",
+            "code": "for (int i = 0; i < 5; i++) {\n  if (i == 3) {\n    ___;\n  }\n  cout << i << \" \";\n}",
+            "options": ["break", "continue", "exit", "stop"],
+            "answer": "break"
+          }
+        }
+      ]
+    },
+    "arrays": {
+      "title": "C++ Arrays",
+      "paragraphs": [
+        "Arrays are used to store multiple values in a single variable instead of declaring separate variables for each value."
+      ],
+      "sections": [
+        {
+          "heading": "Declaring Arrays",
+          "paragraphs": [
+            "To declare an array, define the variable type, specify the array name, and the number of elements it should store."
+          ],
+          "example": "string cars[4];"
+        },
+        {
+          "heading": "Initializing Arrays",
+          "paragraphs": [
+            "You can assign values to an array using a comma-separated list inside curly braces."
+          ],
+          "example": "string cars[4] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\n\nint myNum[3] = {10, 20, 30};"
+        },
+        {
+          "heading": "Accessing Array Elements",
+          "paragraphs": [
+            "You access an array element by referring to its index number.",
+            "Array indexes start with 0."
+          ],
+          "example": "string cars[4] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\ncout << cars[0];",
+          "result": "Volvo"
+        },
+        {
+          "heading": "Changing Array Elements",
+          "paragraphs": [
+            "To change the value of a specific element, refer to its index."
+          ],
+          "example": "string cars[4] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\ncars[0] = \"Opel\";\ncout << cars[0];",
+          "result": "Opel"
+        },
+        {
+          "heading": "Important Notes",
+          "points": [
+            "Arrays use zero-based indexing",
+            "The first element is index 0",
+            "The last element index is size - 1"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct index number to print Kasper from the array.",
+            "code": "string names[4] = {\"Liam\", \"Jenny\", \"Angie\", \"Kasper\"};\ncout << names[___];",
+            "options": ["0", "1", "2", "3"],
+            "answer": "3"
+          }
+        }
+      ]
+    },
+    "structures": {
+      "title": "C++ Structures (struct)",
+      "paragraphs": [
+        "Structures (also called structs) are used to group several related variables into one place.",
+        "Each variable in a structure is called a member.",
+        "Unlike arrays, structures can store variables of different data types."
+      ],
+      "sections": [
+        {
+          "heading": "Creating a Structure",
+          "paragraphs": [
+            "To create a structure, use the struct keyword and define its members inside curly braces.",
+            "After the declaration, specify the structure variable name."
+          ],
+          "example": "struct {\n  int myNum;\n  string myString;\n} myStructure;"
+        },
+        {
+          "heading": "Accessing Structure Members",
+          "paragraphs": [
+            "Use the dot (.) operator to access structure members."
+          ],
+          "example": "struct {\n  int myNum;\n  string myString;\n} myStructure;\n\nmyStructure.myNum = 1;\nmyStructure.myString = \"Hello World!\";\n\ncout << myStructure.myNum << \"\\n\";\ncout << myStructure.myString << \"\\n\";"
+        },
+        {
+          "heading": "Using One Structure with Multiple Variables",
+          "paragraphs": [
+            "You can create multiple variables from the same structure using commas."
+          ],
+          "example": "struct {\n  string brand;\n  string model;\n  int year;\n} myCar1, myCar2;\n\nmyCar1.brand = \"BMW\";\nmyCar1.model = \"X5\";\nmyCar1.year = 1999;\n\nmyCar2.brand = \"Ford\";\nmyCar2.model = \"Mustang\";\nmyCar2.year = 1969;\n\ncout << myCar1.brand << \" \" << myCar1.model << \" \" << myCar1.year << \"\\n\";\ncout << myCar2.brand << \" \" << myCar2.model << \" \" << myCar2.year << \"\\n\";"
+        },
+        {
+          "heading": "Named Structures",
+          "paragraphs": [
+            "By giving a structure a name, you can reuse it as a data type anywhere in the program."
+          ],
+          "example": "struct car {\n  string brand;\n  string model;\n  int year;\n};\n\ncar myCar1;\nmyCar1.brand = \"BMW\";\nmyCar1.model = \"X5\";\nmyCar1.year = 1999;"
+        },
+        {
+          "heading": "Challenge Task",
+          "challenge": {
+            "task": "Create a structure to represent a student.",
+            "requirements": ["name (string)", "age (int)", "grade (char)"],
+            "expectedOutput": ["Name: Liam", "Age: 35", "Grade: A"]
+          }
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword to define an integer member named age.",
+            "code": "struct Person {\n  string name;\n  ___ age;\n};",
+            "options": ["int", "string", "double", "char"],
+            "answer": "int"
+          }
+        }
+      ]
+    },
+    "references": {
+      "title": "C++ References",
+      "paragraphs": [
+        "A reference variable is an alias for an existing variable.",
+        "References are created using the & operator and point to the same memory location as the original variable."
+      ],
+      "sections": [
+        {
+          "heading": "Creating References",
+          "paragraphs": [
+            "A reference is created using the & operator and must be initialized when declared.",
+            "Both the reference and the original variable refer to the same value."
+          ],
+          "example": "string food = \"Pizza\";\nstring &meal = food;\n\ncout << food << \"\\n\";\ncout << meal << \"\\n\";"
+        },
+        {
+          "heading": "How References Work",
+          "paragraphs": [
+            "The reference does not create a copy of the variable.",
+            "Changing the reference also changes the original variable."
+          ],
+          "example": "string food = \"Pizza\";\nstring &meal = food;\n\nmeal = \"Burger\";\n\ncout << food << \"\\n\";\ncout << meal << \"\\n\";"
+        },
+        {
+          "heading": "Key Points About References",
+          "list": [
+            "A reference must be initialized when declared",
+            "A reference cannot be changed to refer to another variable",
+            "References share the same memory address as the original variable"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct variable name so that destination refers to city.",
+            "code": "string city = \"Paris\";\nstring &destination = ___;",
+            "options": ["city", "destination", "Paris", "&city"],
+            "answer": "city"
+          }
+        }
+      ]
+    },
+    "pointers": {
+      "title": "C++ Pointers",
+      "paragraphs": [
+        "A pointer is a variable that stores the memory address of another variable.",
+        "Pointers are created using the * operator and store addresses obtained with the & operator."
+      ],
+      "sections": [
+        {
+          "heading": "Creating Pointers",
+          "paragraphs": [
+            "You can get the memory address of a variable by using the & operator.",
+            "A pointer variable stores this memory address as its value."
+          ],
+          "example": "string food = \"Pizza\";\n\ncout << food;\ncout << &food;"
+        },
+        {
+          "heading": "Pointer Variables",
+          "paragraphs": [
+            "A pointer variable is declared using the * operator.",
+            "The pointer type must match the type of the variable it points to."
+          ],
+          "example": "string food = \"Pizza\";\nstring* ptr = &food;\n\ncout << food << \"\\n\";\ncout << &food << \"\\n\";\ncout << ptr << \"\\n\";"
+        },
+        {
+          "heading": "How Pointers Work",
+          "paragraphs": [
+            "The pointer stores the memory address of the variable.",
+            "Using the pointer gives access to the variable's location in memory."
+          ],
+          "list": [
+            "Pointers store memory addresses",
+            "Pointer type must match variable type",
+            "Pointers are created using the * operator"
+          ]
+        },
+        {
+          "heading": "Pointer Declaration Styles",
+          "paragraphs": [
+            "There are multiple ways to declare pointers, but the first style is preferred."
+          ],
+          "example": "string* myString; // Preferred\nstring *myString;\nstring * myString;"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct symbol to declare a pointer to num.",
+            "code": "int num = 42;\nint ___ ptr = &num;",
+            "options": ["%", "&", "++", "*", "#"],
+            "answer": "*"
+          }
+        }
+      ]
+    },
+    "memory_management": {
+      "title": "C++ Memory Management",
+      "paragraphs": [
+        "Memory management is the process of controlling how much memory your program uses and how it is used.",
+        "This includes creating memory, using it efficiently, and releasing it when it is no longer needed."
+      ],
+      "sections": [
+        {
+          "heading": "Memory in C++",
+          "paragraphs": [
+            "When you create a variable in C++, the compiler automatically reserves space in memory for it.",
+            "For normal variables, you do not need to manually manage memory."
+          ],
+          "example": "int myNumber = 10;"
+        },
+        {
+          "heading": "Getting Memory Size",
+          "paragraphs": [
+            "You can check how much memory a variable type uses with the sizeof operator.",
+            "Knowing memory sizes helps write more efficient programs."
+          ],
+          "example": "#include <iostream>\nusing namespace std;\n\nint main() {\n  int myInt;\n  float myFloat;\n  double myDouble;\n  char myChar;\n\n  cout << sizeof(myInt) << \"\\n\";\n  cout << sizeof(myFloat) << \"\\n\";\n  cout << sizeof(myDouble) << \"\\n\";\n  cout << sizeof(myChar) << \"\\n\";\n  return 0;\n}"
+        },
+        {
+          "heading": "Automatic vs Manual Memory Management",
+          "paragraphs": [
+            "For normal variables, C++ automatically handles memory allocation and cleanup.",
+            "When memory is created dynamically at runtime, the programmer must manage it manually.",
+            "Failing to release unused memory can lead to performance issues or crashes."
+          ],
+          "list": [
+            "Automatic memory is handled by the compiler",
+            "Dynamic memory must be managed manually",
+            "Unused memory should always be released"
+          ]
+        },
+        {
+          "heading": "Pointers and Memory",
+          "paragraphs": [
+            "Pointers allow direct access to memory locations.",
+            "This provides powerful control, but incorrect usage can corrupt memory."
+          ]
+        },
+        {
+          "heading": "What's Next",
+          "paragraphs": [
+            "C++ allows manual memory allocation using the new keyword.",
+            "Allocated memory must be released using delete to avoid memory leaks."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "In C++, when you create a variable like int x = 10;, who handles the memory allocation?",
+            "options": [
+              "The programmer",
+              "The compiler automatically",
+              "The operating system only",
+              "A separate memory manager library"
+            ],
+            "answer": "The compiler automatically"
+          }
+        }
+      ]
+    },
+    "functions": {
+      "title": "C++ Functions",
+      "paragraphs": [
+        "Functions",
+        "A function is a block of code that runs only when it is called.",
+        "Functions are used to perform actions and to reuse code efficiently."
+      ],
+      "sections": [
+        {
+          "heading": "What is a Function?",
+          "paragraphs": [
+            "Functions allow you to define code once and use it many times.",
+            "You can pass data into functions using parameters."
+          ]
+        },
+        {
+          "heading": "Create a Function",
+          "paragraphs": [
+            "C++ provides built-in functions such as main().",
+            "You can also create your own functions to perform specific tasks."
+          ],
+          "syntax": "void myFunction() {\n  // code to be executed\n}"
+        },
+        {
+          "heading": "Example Explained",
+          "paragraphs": [
+            "myFunction() is the function name.",
+            "void means the function does not return a value.",
+            "The function body contains the code to be executed."
+          ]
+        },
+        {
+          "heading": "Call a Function",
+          "paragraphs": [
+            "Functions are not executed until they are called.",
+            "To call a function, write its name followed by parentheses."
+          ],
+          "example": "// Create a function\nvoid myFunction() {\n  cout << \"I just got executed!\";\n}\n\nint main() {\n  myFunction();\n  return 0;\n}",
+          "result": "I just got executed!"
+        },
+        {
+          "heading": "Calling a Function Multiple Times",
+          "paragraphs": ["A function can be called more than once."],
+          "example": "void myFunction() {\n  cout << \"I just got executed!\\n\";\n}\n\nint main() {\n  myFunction();\n  myFunction();\n  myFunction();\n  return 0;\n}",
+          "result": [
+            "I just got executed!",
+            "I just got executed!",
+            "I just got executed!"
+          ]
+        },
+        {
+          "heading": "Function Declaration and Definition",
+          "paragraphs": [
+            "A function consists of two parts:",
+            "Declaration: return type, function name, and parameters.",
+            "Definition: the body of the function."
+          ],
+          "example": "void myFunction() {\n  // function body\n}"
+        },
+        {
+          "heading": "Declaration Before main()",
+          "paragraphs": [
+            "If a function is declared after main(), an error occurs unless it is declared earlier.",
+            "You can separate declaration and definition for better code organization."
+          ],
+          "example": "// Function declaration\nvoid myFunction();\n\nint main() {\n  myFunction();\n  return 0;\n}\n\n// Function definition\nvoid myFunction() {\n  cout << \"I just got executed!\";\n}"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct return type so this function takes no parameters and returns nothing.",
+            "code": "___ greet() {\n  cout << \"Hello!\";\n}",
+            "options": ["void", "int", "string", "return"],
+            "answer": "void"
+          }
+        }
+      ]
+    },
+    "function-parameters": {
+      "title": "C++ Function Parameters",
+      "paragraphs": [
+        "Parameters and Arguments",
+        "Information can be passed to functions as parameters.",
+        "Parameters act as variables inside the function."
+      ],
+      "sections": [
+        {
+          "heading": "Function Parameters",
+          "paragraphs": [
+            "Parameters are specified after the function name, inside parentheses.",
+            "You can define multiple parameters by separating them with commas."
+          ],
+          "syntax": "void functionName(parameter1, parameter2, parameter3) {\n  // code to be executed\n}"
+        },
+        {
+          "heading": "Example: Using Parameters",
+          "paragraphs": [
+            "The following example shows a function that takes a string parameter.",
+            "The argument value is printed together with a last name."
+          ],
+          "example": "void myFunction(string fname) {\n  cout << fname << \" Refsnes\\n\";\n}\n\nint main() {\n  myFunction(\"Liam\");\n  myFunction(\"Jenny\");\n  myFunction(\"Anja\");\n  return 0;\n}",
+          "result": ["Liam Refsnes", "Jenny Refsnes", "Anja Refsnes"]
+        },
+        {
+          "heading": "Parameters vs Arguments",
+          "paragraphs": [
+            "A parameter is the variable listed in the function definition.",
+            "An argument is the actual value passed to the function when it is called."
+          ],
+          "examples": [
+            "fname is a parameter",
+            "Liam, Jenny, and Anja are arguments"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct parameter name to complete the function definition.",
+            "code": "void greet(string ___) {\n  cout << \"Hello, \" << name;\n}\n\nint main() {\n  greet(\"Jenny\");\n  return 0;\n}",
+            "options": ["name", "Jenny", "greet", "\"Jenny\""],
+            "answer": "name"
+          }
+        }
+      ]
+    },
+    "function-overloading": {
+      "title": "C++ Function Overloading",
+      "paragraphs": [
+        "Function Overloading",
+        "Function overloading allows multiple functions to have the same name as long as their parameters differ in type or number.",
+        "It lets you reuse a function name for similar tasks."
+      ],
+      "sections": [
+        {
+          "heading": "What is Function Overloading?",
+          "paragraphs": [
+            "Multiple functions can share the same name.",
+            "The compiler determines which function to call based on the arguments provided."
+          ],
+          "example": "int myFunction(int x);\nfloat myFunction(float x);\ndouble myFunction(double x, double y);"
+        },
+        {
+          "heading": "Without Function Overloading",
+          "paragraphs": [
+            "Without overloading, you must create different function names for similar logic."
+          ],
+          "example": "int plusFuncInt(int x, int y) {\n  return x + y;\n}\n\ndouble plusFuncDouble(double x, double y) {\n  return x + y;\n}\n\nint main() {\n  int myNum1 = plusFuncInt(8, 5);\n  double myNum2 = plusFuncDouble(4.3, 6.26);\n\n  cout << \"Int: \" << myNum1 << \"\\n\";\n  cout << \"Double: \" << myNum2;\n  return 0;\n}"
+        },
+        {
+          "heading": "Using Function Overloading",
+          "paragraphs": [
+            "Instead of separate names, overload a single function.",
+            "This improves readability and reduces duplication."
+          ],
+          "example": "int plusFunc(int x, int y) {\n  return x + y;\n}\n\ndouble plusFunc(double x, double y) {\n  return x + y;\n}\n\nint main() {\n  int myNum1 = plusFunc(8, 5);\n  double myNum2 = plusFunc(4.3, 6.26);\n\n  cout << \"Int: \" << myNum1 << \"\\n\";\n  cout << \"Double: \" << myNum2;\n  return 0;\n}"
+        },
+        {
+          "heading": "Overloading by Number of Parameters",
+          "paragraphs": [
+            "Functions can also be overloaded by using a different number of parameters."
+          ],
+          "example": "int plusFunc(int x, int y) {\n  return x + y;\n}\n\nint plusFunc(int x, int y, int z) {\n  return x + y + z;\n}\n\nint main() {\n  int result1 = plusFunc(3, 7);\n  int result2 = plusFunc(1, 2, 3);\n\n  cout << \"Sum of 2 numbers: \" << result1 << \"\\n\";\n  cout << \"Sum of 3 numbers: \" << result2;\n  return 0;\n}"
+        },
+        {
+          "heading": "Important Notes",
+          "paragraphs": [
+            "Functions must differ by parameter type or count.",
+            "Return type alone is not enough for overloading."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct argument to call the overloaded function that greets by name.",
+            "code": "void greet() {\n  cout << \"Hello!\";\n}\n\nvoid greet(string name) {\n  cout << \"Hello, \" << name;\n}\n\nint main() {\n  greet(___);\n  return 0;\n}",
+            "options": ["\"Jenny\"", "Hello!", "name", "greet"],
+            "answer": "\"Jenny\""
+          }
+        }
+      ]
+    },
+    "variable-scope": {
+      "title": "C++ Variable Scope",
+      "paragraphs": [
+        "Variable Scope",
+        "In C++, variables are only accessible inside the region where they are created.",
+        "This region is called the variable's scope."
+      ],
+      "sections": [
+        {
+          "heading": "Understanding Scope",
+          "paragraphs": [
+            "Scope defines where a variable can be accessed in a program.",
+            "C++ mainly uses local scope and global scope."
+          ]
+        },
+        {
+          "heading": "Local Scope",
+          "paragraphs": [
+            "A variable declared inside a function belongs to the local scope.",
+            "It can only be used inside that function."
+          ],
+          "example": "void myFunction() {\n  int x = 5; // Local variable\n  cout << x;\n}\n\nint main() {\n  myFunction();\n  return 0;\n}"
+        },
+        {
+          "heading": "Local Scope Limitation",
+          "paragraphs": [
+            "A local variable cannot be accessed outside the function it belongs to.",
+            "Trying to do so will result in an error."
+          ],
+          "example": "void myFunction() {\n  int x = 5;\n}\n\nint main() {\n  myFunction();\n  cout << x; // Error: x is not accessible here\n  return 0;\n}"
+        },
+        {
+          "heading": "Global Scope",
+          "paragraphs": [
+            "A variable declared outside of all functions is a global variable.",
+            "Global variables can be accessed from any function."
+          ],
+          "example": "// Global variable\nint x = 5;\n\nvoid myFunction() {\n  cout << x << \"\\n\";\n}\n\nint main() {\n  myFunction();\n  cout << x;\n  return 0;\n}"
+        },
+        {
+          "heading": "Same Variable Name in Different Scopes",
+          "paragraphs": [
+            "Local and global variables can have the same name.",
+            "The local variable takes priority inside its function."
+          ],
+          "example": "// Global variable\nint x = 5;\n\nvoid myFunction() {\n  int x = 22; // Local variable\n  cout << x << \"\\n\";\n}\n\nint main() {\n  myFunction();\n  cout << x;\n  return 0;\n}"
+        },
+        {
+          "heading": "Be Careful with Global Variables",
+          "paragraphs": [
+            "Global variables can be modified from any function.",
+            "This can lead to bugs and unexpected behavior."
+          ],
+          "example": "int x = 5;\n\nvoid myFunction() {\n  cout << ++x << \"\\n\";\n}\n\nint main() {\n  myFunction();\n  cout << x;\n  return 0;\n}"
+        },
+        {
+          "heading": "Conclusion",
+          "paragraphs": [
+            "Prefer local variables whenever possible.",
+            "They make code easier to understand and maintain.",
+            "Understanding scope is essential when working with larger C++ programs."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct variable name to declare a local variable inside myFunction and print it.",
+            "code": "void myFunction() {\n  int ___ = 5;\n  cout << x;\n}",
+            "options": ["x", "local", "global", "main"],
+            "answer": "x"
+          }
+        }
+      ]
+    },
+    "recursion": {
+      "title": "C++ Recursion",
+      "paragraphs": [
+        "Recursion",
+        "Recursion is a technique where a function calls itself.",
+        "It helps break complex problems into smaller, easier problems."
+      ],
+      "sections": [
+        {
+          "heading": "Understanding Recursion",
+          "paragraphs": [
+            "Recursion can be difficult to understand at first.",
+            "The best way to learn recursion is by experimenting with examples.",
+            "A recursive function must have a condition that stops it from calling itself endlessly."
+          ]
+        },
+        {
+          "heading": "Recursion Example",
+          "paragraphs": [
+            "Recursion can be used to add a range of numbers by breaking the problem into smaller steps."
+          ],
+          "example": "int sum(int k) {\n  if (k > 0) {\n    return k + sum(k - 1);\n  } else {\n    return 0;\n  }\n}\n\nint main() {\n  int result = sum(10);\n  cout << result;\n  return 0;\n}"
+        },
+        {
+          "heading": "Example Explained",
+          "paragraphs": [
+            "The function adds k to the sum of all smaller numbers.",
+            "When k becomes 0, the function stops calling itself.",
+            "This stopping condition is called the base case."
+          ],
+          "steps": [
+            "10 + sum(9)",
+            "10 + (9 + sum(8))",
+            "10 + (9 + (8 + sum(7)))",
+            "...",
+            "10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + 0"
+          ]
+        },
+        {
+          "heading": "Why Be Careful with Recursion?",
+          "paragraphs": [
+            "Incorrect recursion can cause infinite loops.",
+            "It can also use excessive memory or processing power.",
+            "When written correctly, recursion can be efficient and elegant."
+          ]
+        },
+        {
+          "heading": "Countdown Example",
+          "paragraphs": [
+            "This example demonstrates recursion using a countdown."
+          ],
+          "example": "void countdown(int n) {\n  if (n > 0) {\n    cout << n << \" \";\n    countdown(n - 1);\n  }\n}\n\nint main() {\n  countdown(5);\n}"
+        },
+        {
+          "heading": "Factorial Example",
+          "paragraphs": [
+            "Recursion can be used to calculate the factorial of a number.",
+            "Factorial means multiplying a number by every number below it down to 1."
+          ],
+          "example": "int factorial(int n) {\n  if (n > 1) {\n    return n * factorial(n - 1);\n  } else {\n    return 1;\n  }\n}\n\nint main() {\n  cout << \"Factorial of 5 is \" << factorial(5);\n  return 0;\n}"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct argument so the function calls itself with a value decreased by one.",
+            "code": "void countdown(int n) {\n  if (n > 0) {\n    cout << n << \" \";\n    countdown(___);\n  }\n}",
+            "options": ["n - 1", "n", "countdown", "0"],
+            "answer": "n - 1"
+          }
+        }
+      ]
+    },
+    "lambda-functions": {
+      "title": "C++ Lambda Functions",
+      "paragraphs": [
+        "Lambda Functions",
+        "A lambda function is a small, anonymous function written directly in the code.",
+        "It is useful for short tasks where defining a full function is unnecessary."
+      ],
+      "sections": [
+        {
+          "heading": "Lambda Syntax",
+          "paragraphs": [
+            "The basic syntax of a lambda function is:",
+            "[capture] (parameters) { code };",
+            "The capture clause controls access to variables outside the lambda."
+          ]
+        },
+        {
+          "heading": "Basic Lambda Example",
+          "example": "int main() {\n  auto message = []() {\n    cout << \"Hello World!\\n\";\n  };\n\n  message();\n  return 0;\n}",
+          "result": "Hello World!"
+        },
+        {
+          "heading": "Lambda with Parameters",
+          "paragraphs": [
+            "Lambda functions can accept parameters just like regular functions."
+          ],
+          "example": "#include <iostream>\nusing namespace std;\n\nint main() {\n  auto add = [](int a, int b) {\n    return a + b;\n  };\n\n  cout << add(3, 4);\n  return 0;\n}",
+          "result": "7"
+        },
+        {
+          "heading": "Passing Lambdas to Functions",
+          "paragraphs": [
+            "Lambdas can be passed as arguments to other functions.",
+            "This is useful when you want to pass behavior instead of data."
+          ],
+          "example": "#include <iostream>\n#include <functional>\nusing namespace std;\n\nvoid myFunction(function<void()> func) {\n  func();\n  func();\n}\n\nint main() {\n  auto message = []() {\n    cout << \"Hello World!\\n\";\n  };\n\n  myFunction(message);\n  return 0;\n}",
+          "note": "The <functional> library is required when using std::function."
+        },
+        {
+          "heading": "Using Lambdas in Loops",
+          "paragraphs": [
+            "Lambda functions can be defined and executed inside loops."
+          ],
+          "example": "#include <iostream>\nusing namespace std;\n\nint main() {\n  for (int i = 1; i <= 3; i++) {\n    auto show = [i]() {\n      cout << \"Number: \" << i << \"\\n\";\n    };\n    show();\n  }\n  return 0;\n}",
+          "result": ["Number: 1", "Number: 2", "Number: 3"]
+        },
+        {
+          "heading": "Capture Clause",
+          "paragraphs": [
+            "The capture clause [ ] gives a lambda access to variables outside it.",
+            "Capturing by value creates a copy of the variable."
+          ],
+          "example": "int main() {\n  int x = 10;\n  auto show = [x]() {\n    cout << x;\n  };\n\n  show();\n  return 0;\n}",
+          "note": "Changing x later will not affect the value inside the lambda."
+        },
+        {
+          "heading": "Capture by Reference",
+          "paragraphs": [
+            "Using [&] captures variables by reference.",
+            "The lambda accesses the original variable, not a copy."
+          ],
+          "example": "int main() {\n  int x = 10;\n\n  auto show = [&x]() {\n    cout << x;\n  };\n\n  x = 20;\n  show();\n  return 0;\n}",
+          "result": "20"
+        },
+        {
+          "heading": "Lambda vs Regular Functions",
+          "paragraphs": [
+            "Use regular functions when logic is complex or reused.",
+            "Use lambda functions for short, one-time logic or callbacks."
+          ],
+          "examples": {
+            "regularFunction": "int add(int a, int b) {\n  return a + b;\n}",
+            "lambdaFunction": "auto add = [](int a, int b) {\n  return a + b;\n};"
+          }
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Fill in the correct syntax to declare a basic lambda function with no parameters.",
+            "code": "auto message = ___ {\n  cout << \"Hello World!\\n\";\n};",
+            "options": ["[]()", "[ ]", "()", "{}"],
+            "answer": "[]()"
+          }
+        }
+      ]
+    },
+    "oop": {
+      "title": "C++ OOP",
+      "paragraphs": [
+        "C++ What is OOP?",
+        "OOP stands for Object-Oriented Programming.",
+        "Object-oriented programming is about creating objects that contain both data and functions that operate on that data."
+      ],
+      "sections": [
+        {
+          "heading": "Advantages of OOP",
+          "list": [
+            "Provides a clear structure to programs",
+            "Makes code easier to maintain, reuse, and debug",
+            "Helps keep code DRY (Don't Repeat Yourself)",
+            "Enables reusable applications with less code and faster development"
+          ],
+          "note": "The DRY principle means you should avoid writing the same code more than once. Move repeated code into functions or classes and reuse it."
+        },
+        {
+          "heading": "Classes and Objects",
+          "paragraphs": [
+            "Classes and objects are the two main aspects of object-oriented programming.",
+            "A class defines what an object should look like, and an object is created based on that class.",
+            "When an object is created from a class, it inherits all variables and functions defined in that class."
+          ],
+          "table": {
+            "headers": ["Class", "Objects"],
+            "rows": [
+              ["Fruit", "Apple, Banana, Mango"],
+              ["Car", "Volvo, Audi, Toyota"]
+            ]
+          }
+        },
+        {
+          "heading": "What You Will Learn",
+          "list": [
+            "Define a class",
+            "Create objects",
+            "Access class members",
+            "Build reusable programs"
+          ]
+        },
+        {
+          "heading": "Procedural vs Object-Oriented Programming",
+          "paragraphs": [
+            "Procedural programming focuses on functions that operate on data.",
+            "Object-oriented programming focuses on objects that contain both data and functions.",
+            "In procedural programming, code is organized around functions.",
+            "In object-oriented programming, code is organized around objects."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "The DRY principle in programming stands for \"Don't ___ Yourself\".",
+            "options": ["Repeat", "Reset", "Reuse", "Rename", "Run"],
+            "answer": "Repeat"
+          }
+        }
+      ]
+    },
+    "classes-objects": {
+      "title": "C++ Classes and Objects",
+      "paragraphs": [
+        "C++ is an object-oriented programming language.",
+        "Everything in C++ is associated with classes and objects, along with their attributes and methods.",
+        "A class works as a blueprint for creating objects."
+      ],
+      "sections": [
+        {
+          "heading": "What Are Classes and Objects?",
+          "paragraphs": [
+            "In real life, a car is an object with attributes like weight and color, and methods like drive and brake.",
+            "In C++, attributes and methods are variables and functions that belong to a class.",
+            "These are commonly referred to as class members."
+          ]
+        },
+        {
+          "heading": "Create a Class",
+          "paragraphs": ["To create a class in C++, use the class keyword."],
+          "example": "class MyClass {\n  public:\n    int myNum;       // Attribute\n    string myString; // Attribute\n};"
+        },
+        {
+          "heading": "Create an Object",
+          "paragraphs": [
+            "An object is created from a class.",
+            "Use the class name followed by the object name to create an object.",
+            "Access class members using the dot (.) operator."
+          ],
+          "example": "class MyClass {\n  public:\n    int myNum;\n    string myString;\n};\n\nint main() {\n  MyClass myObj;\n  myObj.myNum = 15;\n  myObj.myString = \"Some text\";\n\n  cout << myObj.myNum << \"\\n\";\n  cout << myObj.myString;\n  return 0;\n}"
+        },
+        {
+          "heading": "Multiple Objects",
+          "paragraphs": [
+            "You can create multiple objects from the same class.",
+            "Each object has its own copy of the attributes."
+          ],
+          "example": "class Car {\n  public:\n    string brand;\n    string model;\n    int year;\n};\n\nint main() {\n  Car carObj1;\n  carObj1.brand = \"BMW\";\n  carObj1.model = \"X5\";\n  carObj1.year = 1999;\n\n  Car carObj2;\n  carObj2.brand = \"Ford\";\n  carObj2.model = \"Mustang\";\n  carObj2.year = 1969;\n\n  cout << carObj1.brand << \" \" << carObj1.model << \" \" << carObj1.year << \"\\n\";\n  cout << carObj2.brand << \" \" << carObj2.model << \" \" << carObj2.year << \"\\n\";\n  return 0;\n}"
+        },
+        {
+          "heading": "Challenge Task",
+          "paragraphs": [
+            "Create a class called Book with attributes title, author, and year.",
+            "Create two objects of the class and print their attribute values."
+          ],
+          "expectedOutput": [
+            "Matilda, Roald Dahl, 1988",
+            "The Giving Tree, Shel Silverstein, 1964"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "In C++, a class is like a ___ for creating objects.",
+            "options": ["loop", "variable", "method", "blueprint"],
+            "answer": "blueprint"
+          }
+        }
+      ]
+    },
+    "class-methods": {
+      "title": "C++ Class Methods",
+      "paragraphs": [
+        "Class Methods",
+        "Methods are functions that belong to a class.",
+        "They define the behavior of objects created from the class."
+      ],
+      "sections": [
+        {
+          "heading": "Defining Methods",
+          "paragraphs": [
+            "There are two ways to define methods in a class:",
+            "Inside the class definition",
+            "Outside the class definition"
+          ]
+        },
+        {
+          "heading": "Define a Method Inside the Class",
+          "paragraphs": [
+            "A method can be defined directly inside the class.",
+            "Methods are accessed using an object and the dot (.) operator."
+          ],
+          "example": "class MyClass {\n  public:\n    void myMethod() {\n      cout << \"Hello World!\";\n    }\n};\n\nint main() {\n  MyClass myObj;\n  myObj.myMethod();\n  return 0;\n}"
+        },
+        {
+          "heading": "Define a Method Outside the Class",
+          "paragraphs": [
+            "Methods can be declared inside the class and defined later outside.",
+            "This is commonly used in larger programs.",
+            "The scope resolution operator :: is used with the class name."
+          ],
+          "example": "class MyClass {\n  public:\n    void myMethod();\n};\n\nvoid MyClass::myMethod() {\n  cout << \"Hello World!\";\n}\n\nint main() {\n  MyClass myObj;\n  myObj.myMethod();\n  return 0;\n}"
+        },
+        {
+          "heading": "Methods with Parameters",
+          "paragraphs": [
+            "Methods can accept parameters just like regular functions.",
+            "Parameters allow methods to operate on input values."
+          ],
+          "example": "#include <iostream>\nusing namespace std;\n\nclass Car {\n  public:\n    int speed(int maxSpeed);\n};\n\nint Car::speed(int maxSpeed) {\n  return maxSpeed;\n}\n\nint main() {\n  Car myObj;\n  cout << myObj.speed(200);\n  return 0;\n}"
+        },
+        {
+          "heading": "Challenge Task",
+          "paragraphs": [
+            "Create a class Dog with a method bark() that prints \"Woof!\".",
+            "Call the method from main() using an object of the class."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "To define a method outside a class in C++, you use the ___ operator with the class name.",
+            "options": [".", "::", "&&", "++"],
+            "answer": "::"
+          }
+        }
+      ]
+    },
+    "constructors": {
+      "title": "C++ Constructors",
+      "paragraphs": [
+        "Constructors",
+        "A constructor is a special method that is automatically called when an object of a class is created.",
+        "Constructors are used to initialize objects when they are created."
+      ],
+      "sections": [
+        {
+          "heading": "Basic Constructor",
+          "paragraphs": [
+            "A constructor has the same name as the class.",
+            "It has no return type, not even void.",
+            "It is usually declared public.",
+            "It is automatically called when an object is created."
+          ],
+          "example": "class MyClass {\n  public:\n    MyClass() {  // Constructor\n      cout << \"Hello World!\";\n    }\n};\n\nint main() {\n  MyClass myObj;  // Constructor is called here\n  return 0;\n}"
+        },
+        {
+          "heading": "Constructor with Parameters",
+          "paragraphs": [
+            "Constructors can take parameters, just like regular functions.",
+            "They are commonly used to assign initial values to class attributes."
+          ],
+          "example": "class Car {\n  public:\n    string brand;\n    string model;\n    int year;\n\n    Car(string x, string y, int z) {\n      brand = x;\n      model = y;\n      year = z;\n    }\n};\n\nint main() {\n  Car carObj1(\"BMW\", \"X5\", 1999);\n  Car carObj2(\"Ford\", \"Mustang\", 1969);\n\n  cout << carObj1.brand << \" \" << carObj1.model << \" \" << carObj1.year << \"\\n\";\n  cout << carObj2.brand << \" \" << carObj2.model << \" \" << carObj2.year << \"\\n\";\n  return 0;\n}"
+        },
+        {
+          "heading": "Constructor Defined Outside the Class",
+          "paragraphs": [
+            "A constructor can be declared inside the class and defined outside using the scope resolution operator ::."
+          ],
+          "example": "class Car {\n  public:\n    string brand;\n    string model;\n    int year;\n    Car(string x, string y, int z); // Constructor declaration\n};\n\nCar::Car(string x, string y, int z) {\n  brand = x;\n  model = y;\n  year = z;\n}\n\nint main() {\n  Car carObj1(\"BMW\", \"X5\", 1999);\n  Car carObj2(\"Ford\", \"Mustang\", 1969);\n\n  cout << carObj1.brand << \" \" << carObj1.model << \" \" << carObj1.year << \"\\n\";\n  cout << carObj2.brand << \" \" << carObj2.model << \" \" << carObj2.year << \"\\n\";\n  return 0;\n}"
+        },
+        {
+          "heading": "Why Constructors Are Useful",
+          "paragraphs": [
+            "Constructors automatically run when an object is created.",
+            "They ensure objects are properly initialized before use."
+          ],
+          "list": [
+            "Automatic initialization",
+            "Cleaner and safer code",
+            "Ensures objects are ready to use immediately"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "In C++, a constructor is defined using the ___ name followed by parentheses.",
+            "options": ["class", "object", "method", "variable", "struct"],
+            "answer": "class"
+          }
+        }
+      ]
+    },
+    "access-specifiers": {
+      "title": "C++ Access Specifiers",
+      "paragraphs": [
+        "Access Specifiers",
+        "Access specifiers control how the members (attributes and methods) of a class can be accessed.",
+        "They help protect data and organize code so that only the right parts can be seen or changed."
+      ],
+      "sections": [
+        {
+          "heading": "Using Access Specifiers",
+          "paragraphs": [
+            "The public keyword is an access specifier.",
+            "Public members can be accessed and modified from outside the class."
+          ],
+          "example": "class MyClass {\n  public:        // Access specifier\n    // class members go here\n};"
+        },
+        {
+          "heading": "Types of Access Specifiers",
+          "list": [
+            "public – members are accessible from outside the class",
+            "private – members cannot be accessed from outside the class",
+            "protected – members cannot be accessed from outside the class, but can be accessed in inherited classes"
+          ]
+        },
+        {
+          "heading": "Private Members",
+          "paragraphs": [
+            "Members declared as private cannot be accessed from outside the class.",
+            "The example below demonstrates the difference between public and private members."
+          ],
+          "example": "class MyClass {\n  public:\n    int x;   // Public attribute\n\n  private:\n    int y;   // Private attribute\n};\n\nint main() {\n  MyClass myObj;\n  myObj.x = 25;  // Allowed (public)\n  myObj.y = 50;  // Not allowed (private)\n  return 0;\n}"
+        },
+        {
+          "heading": "Default Access Specifier",
+          "paragraphs": [
+            "By default, all members of a class are private if no access specifier is specified."
+          ],
+          "example": "class MyClass {\n  int x;  // Private attribute\n  int y;  // Private attribute\n};"
+        },
+        {
+          "heading": "Protected Members",
+          "paragraphs": [
+            "Protected members cannot be accessed from outside the class.",
+            "They can be accessed by derived (child) classes through inheritance."
+          ]
+        },
+        {
+          "heading": "Real-Life Example",
+          "list": [
+            "Public: Like the front door of your house — anyone can enter",
+            "Private: Like a locked drawer — only the owner can open it",
+            "Protected: Like a family-only room — children (subclasses) can enter"
+          ]
+        },
+        {
+          "heading": "Best Practice",
+          "paragraphs": [
+            "It is considered good practice to declare class attributes as private whenever possible.",
+            "This reduces errors and supports the concept of encapsulation."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "In C++, access specifiers define how class members can be ___.",
+            "options": [
+              "accessed",
+              "created",
+              "deleted",
+              "compiled",
+              "printed"
+            ],
+            "answer": "accessed"
+          }
+        }
+      ]
+    },
+    "encapsulation": {
+      "title": "C++ Encapsulation",
+      "paragraphs": [
+        "Encapsulation",
+        "Encapsulation means hiding sensitive data from users.",
+        "This is achieved by declaring class variables as private and controlling access through public methods."
+      ],
+      "sections": [
+        {
+          "heading": "How Encapsulation Works",
+          "paragraphs": [
+            "Class variables (attributes) are declared as private, so they cannot be accessed directly from outside the class.",
+            "To allow controlled access, public getter and setter methods are used."
+          ]
+        },
+        {
+          "heading": "Real-Life Example",
+          "paragraphs": [
+            "Think of an employee's salary.",
+            "The salary is private and cannot be changed directly by the employee.",
+            "Only authorized methods (such as those used by a manager) can update or reveal it.",
+            "Encapsulation works the same way in C++."
+          ]
+        },
+        {
+          "heading": "Access Private Members",
+          "paragraphs": [
+            "To access a private attribute, use public get and set methods."
+          ],
+          "example": "#include <iostream>\nusing namespace std;\n\nclass Employee {\n  private:\n    int salary;\n\n  public:\n    // Setter\n    void setSalary(int s) {\n      salary = s;\n    }\n\n    // Getter\n    int getSalary() {\n      return salary;\n    }\n};\n\nint main() {\n  Employee myObj;\n  myObj.setSalary(50000);\n  cout << myObj.getSalary();\n  return 0;\n}"
+        },
+        {
+          "heading": "Example Explained",
+          "list": [
+            "salary is private and cannot be accessed directly",
+            "setSalary() assigns a value to salary",
+            "getSalary() returns the value",
+            "Public methods control how private data is accessed"
+          ]
+        },
+        {
+          "heading": "Why Encapsulation?",
+          "list": [
+            "Improves control over data",
+            "Increases security of sensitive information",
+            "Allows changes to implementation without affecting other parts of the code",
+            "Promotes cleaner and more maintainable code"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the main purpose of encapsulation in C++?",
+            "options": [
+              "To create multiple instances of a class",
+              "To perform complex calculations within a class",
+              "To ensure that sensitive data is hidden from users",
+              "To increase code readability"
+            ],
+            "answer": "To ensure that sensitive data is hidden from users"
+          }
+        }
+      ]
+    },
+    "friend-functions": {
+      "title": "C++ Friend Functions",
+      "paragraphs": [
+        "C++ The Friend Keyword",
+        "Normally, private members of a class can only be accessed using public methods like getters and setters.",
+        "In some cases, a special function called a friend function can be used to access private members directly."
+      ],
+      "sections": [
+        {
+          "heading": "What is a Friend Function?",
+          "paragraphs": [
+            "A friend function is not a member of a class.",
+            "Even though it is not part of the class, it is allowed to access the class's private and protected members."
+          ]
+        },
+        {
+          "heading": "Example",
+          "example": "class Employee {\n  private:\n    int salary;\n\n  public:\n    Employee(int s) {\n      salary = s;\n    }\n\n    // Declare friend function\n    friend void displaySalary(Employee emp);\n};\n\nvoid displaySalary(Employee emp) {\n  cout << \"Salary: \" << emp.salary;\n}\n\nint main() {\n  Employee myEmp(50000);\n  displaySalary(myEmp);\n  return 0;\n}"
+        },
+        {
+          "heading": "Example Explained",
+          "list": [
+            "The friend function displaySalary() is declared inside the Employee class.",
+            "The function is defined outside of the class.",
+            "Although it is not a member of the class, it can access the private member salary.",
+            "The friend function is called like a normal function in main()."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword to declare a friend function.",
+            "code": "class Employee {\n  private:\n    int salary;\n\n  public:\n    Employee(int s) { salary = s; }\n    ___ void displaySalary(Employee emp);\n};",
+            "options": ["extern", "private", "public", "protected", "friend"],
+            "answer": "friend"
+          }
+        }
+      ]
+    },
+    "inheritance": {
+      "title": "C++ Inheritance",
+      "paragraphs": [
+        "Inheritance",
+        "Inheritance allows one class to reuse attributes and methods from another class.",
+        "It helps you write cleaner and more efficient code by avoiding duplication."
+      ],
+      "sections": [
+        {
+          "heading": "Inheritance Concepts",
+          "list": [
+            "Derived class (child) – the class that inherits from another class",
+            "Base class (parent) – the class being inherited from"
+          ]
+        },
+        {
+          "heading": "How Inheritance Works",
+          "paragraphs": [
+            "To inherit from a class in C++, use the : symbol.",
+            "In the example below, the Car class inherits attributes and methods from the Vehicle class."
+          ]
+        },
+        {
+          "heading": "Example",
+          "example": "// Base class\nclass Vehicle {\n  public:\n    string brand = \"Ford\";\n    void honk() {\n      cout << \"Tuut, tuut! \\n\";\n    }\n};\n\n// Derived class\nclass Car : public Vehicle {\n  public:\n    string model = \"Mustang\";\n};\n\nint main() {\n  Car myCar;\n  myCar.honk();\n  cout << myCar.brand + \" \" + myCar.model;\n  return 0;\n}"
+        },
+        {
+          "heading": "Why Use Inheritance?",
+          "list": [
+            "Improves code reusability",
+            "Allows reuse of attributes and methods from existing classes",
+            "Makes code easier to maintain and extend"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "In C++, inheritance allows a class to ___ attributes and methods from another class.",
+            "options": ["print", "delete", "inherit", "remove"],
+            "answer": "inherit"
+          }
+        }
+      ]
+    },
+    "polymorphism": {
+      "title": "C++ Polymorphism",
+      "paragraphs": [
+        "Polymorphism",
+        "Polymorphism means \"many forms\", and it occurs when we have many classes that are related to each other by inheritance.",
+        "Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks, allowing one action to behave differently."
+      ],
+      "sections": [
+        {
+          "heading": "Explanation",
+          "paragraphs": [
+            "Imagine a base class Animal with a method called makeSound().",
+            "Derived classes like Pig, Dog, and Bird can override this method.",
+            "Every animal can make a sound, but each one sounds different.",
+            "This is polymorphism: the same action behaves differently for different objects."
+          ],
+          "examples": ["Pig: wee wee", "Dog: bow wow", "Bird: tweet tweet"]
+        },
+        {
+          "heading": "Example",
+          "example": "// Base class\nclass Animal {\n  public:\n    void animalSound() {\n      cout << \"The animal makes a sound \\n\";\n    }\n};\n\n// Derived class\nclass Pig : public Animal {\n  public:\n    void animalSound() {\n      cout << \"The pig says: wee wee \\n\";\n    }\n};\n\n// Derived class\nclass Dog : public Animal {\n  public:\n    void animalSound() {\n      cout << \"The dog says: bow wow \\n\";\n    }\n};"
+        },
+        {
+          "heading": "Using Polymorphism",
+          "paragraphs": [
+            "We can create objects of different derived classes and call the same method.",
+            "Each object responds in its own way by overriding the method."
+          ],
+          "example": "int main() {\n  Animal myAnimal;\n  Pig myPig;\n  Dog myDog;\n\n  myAnimal.animalSound();\n  myPig.animalSound();\n  myDog.animalSound();\n  return 0;\n}"
+        },
+        {
+          "heading": "Why Use Inheritance and Polymorphism?",
+          "list": [
+            "It improves code reusability",
+            "Reuse attributes and methods of existing classes",
+            "Makes code easier to maintain and extend"
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What does polymorphism mean in C++?",
+            "options": [
+              "Many forms",
+              "One form",
+              "Multiple inheritance",
+              "Single inheritance"
+            ],
+            "answer": "Many forms"
+          }
+        }
+      ]
+    },
+    "templates": {
+      "title": "C++ Templates",
+      "sections": [
+        {
+          "heading": "C++ Templates",
+          "paragraphs": [
+            "Templates let you write functions or classes that work with different data types.",
+            "They help avoid repeating code and make programs more flexible."
+          ]
+        },
+        {
+          "heading": "C++ Function Templates",
+          "paragraphs": [
+            "You can create a function template by using the template keyword.",
+            "A template parameter (commonly named T) acts as a placeholder for a data type."
+          ],
+          "syntax": "template <typename T>\nreturn_type function_name(T parameter) {\n  // code\n}",
+          "example": {
+            "title": "Example",
+            "code": "template <typename T>\nT add(T a, T b) {\n  return a + b;\n}\n\nint main() {\n  cout << add<int>(5, 3) << \"\\n\";\n  cout << add<double>(2.5, 1.5) << \"\\n\";\n  return 0;\n}\n",
+            "cta": "Try it Yourself »"
+          },
+          "note": "add<int>(5, 3) uses int for T, while add<double>(2.5, 1.5) uses double."
+        },
+        {
+          "heading": "C++ Class Templates",
+          "paragraphs": [
+            "Templates can also be used to create classes that work with any data type."
+          ],
+          "syntax": "template <typename T>\nclass ClassName {\n  // members and methods using T\n};",
+          "example": {
+            "title": "Example",
+            "code": "template <typename T>\nclass Box {\npublic:\n  T value;\n  Box(T v) {\n    value = v;\n  }\n  void show() {\n    cout << \"Value: \" << value << \"\\n\";\n  }\n};\n\nint main() {\n  Box<int> intBox(50);\n  Box<string> strBox(\"Hello\");\n\n  intBox.show();\n  strBox.show();\n  return 0;\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Multiple Template Parameters",
+          "paragraphs": ["Templates can use more than one data type."],
+          "example": {
+            "title": "Example",
+            "code": "template <typename T1, typename T2>\nclass Pair {\npublic:\n  T1 first;\n  T2 second;\n\n  Pair(T1 a, T2 b) {\n    first = a;\n    second = b;\n  }\n\n  void display() {\n    cout << \"First: \" << first << \", Second: \" << second << \"\\n\";\n  }\n};\n\nint main() {\n  Pair<string, int> person(\"John\", 30);\n  Pair<int, double> score(51, 9.5);\n\n  person.display();\n  score.display();\n  return 0;\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Why Use Templates?",
+          "list": [
+            "Avoid repeating the same logic for different data types",
+            "Write cleaner, reusable code",
+            "Support generic programming"
+          ],
+          "note": "Templates must be defined in the same file where they are used (commonly header files)."
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct keyword to declare a function template.\n___ <typename T>\nT add(T a, T b) {\n  return a + b;\n}",
+            "options": ["class", "function", "template", "typename", "generic"],
+            "answer": "template",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    },
+    "files": {
+      "title": "C++ Files",
+      "sections": [
+        {
+          "heading": "C++ Files",
+          "paragraphs": [
+            "The fstream library allows us to work with files.",
+            "To use the fstream library, include both the <iostream> and <fstream> header files."
+          ],
+          "example": {
+            "title": "Example",
+            "code": "#include <iostream>\n#include <fstream>\n"
+          }
+        },
+        {
+          "heading": "fstream Classes",
+          "paragraphs": [
+            "The fstream library includes three main classes used for file handling:"
+          ],
+          "table": [
+            {
+              "class": "ofstream",
+              "description": "Creates and writes to files"
+            },
+            { "class": "ifstream", "description": "Reads from files" },
+            {
+              "class": "fstream",
+              "description": "Creates, reads, and writes to files"
+            }
+          ]
+        },
+        {
+          "heading": "Create and Write to a File",
+          "paragraphs": [
+            "To create a file, use the ofstream or fstream class and specify the file name.",
+            "To write to the file, use the insertion operator (<<)."
+          ],
+          "example": {
+            "title": "Example",
+            "code": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {\n  // Create and open a text file\n  ofstream MyFile(\"filename.txt\");\n\n  // Write to the file\n  MyFile << \"Files can be tricky, but it is fun enough!\";\n\n  // Close the file\n  MyFile.close();\n}\n"
+          },
+          "note": "Closing the file is good practice and helps clean up unnecessary memory."
+        },
+        {
+          "heading": "Read a File",
+          "paragraphs": [
+            "To read from a file, use the ifstream or fstream class.",
+            "Use a while loop with getline() to read the file line by line."
+          ],
+          "example": {
+            "title": "Example",
+            "code": "// Create a text string\nstring myText;\n\n// Read from the text file\nifstream MyReadFile(\"filename.txt\");\n\n// Read the file line by line\nwhile (getline(MyReadFile, myText)) {\n  cout << myText;\n}\n\n// Close the file\nMyReadFile.close();\n",
+            "cta": "Run example »"
+          }
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Which C++ library allows us to work with files?",
+            "options": ["filestreams", "fstream", "string", "vector"],
+            "answer": "fstream",
+            "cta": "Submit Answer »"
+          }
+        },
+        {
+          "heading": "Reference",
+          "paragraphs": [
+            "For a complete reference of <fstream> classes and functions, see the C++ fstream Reference."
+          ]
+        }
+      ]
+    },
+    "date-time": {
+      "title": "C++ Date and Time",
+      "sections": [
+        {
+          "heading": "Date and Time",
+          "paragraphs": [
+            "The <ctime> library allows us to work with dates and times.",
+            "To use it, you must include the <ctime> header file."
+          ],
+          "example": {
+            "title": "Example",
+            "code": "#include <ctime> // Import the ctime library\n"
+          }
+        },
+        {
+          "heading": "Display Current Date and Time",
+          "paragraphs": [
+            "The <ctime> library provides functions to measure dates and times.",
+            "The time() function gives a timestamp representing the current date and time.",
+            "The ctime() function converts a timestamp into a readable date and time."
+          ],
+          "example": {
+            "title": "Example",
+            "code": "// Get the timestamp for the current date and time\ntime_t timestamp;\ntime(&timestamp);\n\n// Display the date and time\ncout << ctime(&timestamp);\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Two Ways to Use time()",
+          "paragraphs": [
+            "The time() function writes the timestamp to a memory location, but it also returns the timestamp value.",
+            "You can pass NULL and use the return value directly:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "time_t timestamp = time(NULL);\n"
+          }
+        },
+        {
+          "heading": "Date and Time Data Types",
+          "paragraphs": ["Two main data types are used for date and time:"],
+          "list": [
+            "time_t – stores timestamps as a single number",
+            "struct tm – stores individual date and time components"
+          ]
+        },
+        {
+          "heading": "struct tm Members",
+          "list": [
+            "tm_sec – seconds after the minute",
+            "tm_min – minutes after the hour",
+            "tm_hour – hours since midnight (0–23)",
+            "tm_mday – day of the month",
+            "tm_mon – months since January (0–11)",
+            "tm_year – years since 1900",
+            "tm_wday – days since Sunday (0–6)",
+            "tm_yday – days since January 1 (0–365)",
+            "tm_isdst – daylight saving time flag"
+          ]
+        },
+        {
+          "heading": "Important Notes",
+          "list": [
+            "Hours use 24-hour format (23 = 11 PM)",
+            "Months range from 0 to 11",
+            "Years are counted from 1900 (2024 = 124)"
+          ]
+        },
+        {
+          "heading": "Creating Timestamps",
+          "paragraphs": [
+            "The time() function only creates timestamps for the current date.",
+            "To create a timestamp for a specific date, use the mktime() function.",
+            "The mktime() function converts a struct tm into a timestamp."
+          ],
+          "example": {
+            "title": "Example",
+            "code": "struct tm datetime;\ntime_t timestamp;\n\ndatetime.tm_year = 2023 - 1900;\ndatetime.tm_mon = 12 - 1;\ndatetime.tm_mday = 17;\ndatetime.tm_hour = 12;\ndatetime.tm_min = 30;\ndatetime.tm_sec = 1;\ndatetime.tm_isdst = -1;\n\ntimestamp = mktime(&datetime);\n\ncout << ctime(&timestamp);\n",
+            "cta": "Try it Yourself »"
+          }
+        }
+      ]
+    },
+    "errors": {
+      "title": "C++ Errors",
+      "sections": [
+        {
+          "heading": "Errors",
+          "paragraphs": [
+            "Even experienced C++ developers make mistakes. The key is learning how to spot and fix them!",
+            "This section covers common errors and helpful tips to understand what is going wrong and how to fix it."
+          ]
+        },
+        {
+          "heading": "Common Compile-Time Errors",
+          "paragraphs": [
+            "Compile-time errors are mistakes that prevent your program from compiling."
+          ]
+        },
+        {
+          "heading": "Missing Semicolon",
+          "example": {
+            "title": "Example",
+            "code": "int x = 5\n",
+            "result": "error: expected ',' or ';' before 'cout'"
+          }
+        },
+        {
+          "heading": "Using Undeclared Variables",
+          "example": {
+            "title": "Example",
+            "code": "cout << myVar;\n",
+            "result": "error: 'myVar' was not declared in this scope"
+          }
+        },
+        {
+          "heading": "Mismatched Types",
+          "paragraphs": [
+            "Trying to assign a value of the wrong type to a variable:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int x = \"Hello\";\n",
+            "result": "error: invalid conversion from 'const char*' to 'int'"
+          }
+        },
+        {
+          "heading": "Common Runtime Errors",
+          "paragraphs": [
+            "Runtime errors occur when the program compiles successfully but crashes or behaves unexpectedly while running."
+          ]
+        },
+        {
+          "heading": "Dividing by Zero",
+          "example": {
+            "title": "Example",
+            "code": "int a = 10;\nint b = 0;\nint result = a / b;\ncout << result;\n"
+          }
+        },
+        {
+          "heading": "Out-of-Bounds Array Access",
+          "example": {
+            "title": "Example",
+            "code": "int numbers[3] = {1, 2, 3};\ncout << numbers[8];\n"
+          }
+        },
+        {
+          "heading": "Dangling Pointer",
+          "example": {
+            "title": "Example",
+            "code": "int* ptr = new int(10);\ndelete ptr;\ncout << *ptr;\n"
+          }
+        },
+        {
+          "heading": "Good Habits to Avoid Errors",
+          "list": [
+            "Always initialize your variables",
+            "Use meaningful variable names",
+            "Keep your code clean and well indented",
+            "Keep functions short and focused",
+            "Check loops and conditions carefully",
+            "Read error messages carefully — they often point to the exact problem"
+          ]
+        },
+        {
+          "heading": "Next Step",
+          "paragraphs": [
+            "In the next chapter, you will learn how to debug your code and fix errors effectively."
+          ]
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct symbol to fix the code.\nint x = 5 \ncout << x;",
+            "options": [".", ";", ":", ","],
+            "answer": ";",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    },
+    "debugging": {
+      "title": "C++ Debugging",
+      "sections": [
+        {
+          "heading": "Debugging",
+          "paragraphs": [
+            "Debugging is the process of finding and fixing errors (bugs) in your program.",
+            "Bugs are mistakes that make your program crash, behave incorrectly, or give the wrong output."
+          ]
+        },
+        {
+          "heading": "Write Clean Code First",
+          "paragraphs": [
+            "Before you start debugging, make sure your code is clean and organized:"
+          ],
+          "list": [
+            "Use proper indentation to keep the structure clear",
+            "Give your variables clear, meaningful names"
+          ],
+          "note": "Clean code is easier to read and easier to debug."
+        },
+        {
+          "heading": "1. Print Debugging",
+          "paragraphs": [
+            "Use cout to print values at different points in your code to see what is going wrong:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int x = 10;\nint y = 0;\ncout << \"Before division\\n\";\nint z = x / y; // Crashes!\ncout << \"After division\\n\";\n"
+          },
+          "note": "If you do not see the second message, the program crashed at the division."
+        },
+        {
+          "heading": "2. Check Variable Values",
+          "paragraphs": [
+            "Print variables to verify that they contain the expected values:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int x = 10;\nint y = 5;\nint result = x - y;\ncout << \"Result: \" << result << \"\\n\";\n"
+          },
+          "note": "If the result is wrong, the program logic needs to be fixed."
+        },
+        {
+          "heading": "3. Use a Debugger Tool",
+          "paragraphs": [
+            "IDEs like Visual Studio, Code::Blocks, and VS Code include debugging tools that allow you to:"
+          ],
+          "list": [
+            "Pause execution using breakpoints",
+            "Step through code line by line",
+            "Watch variables and detect unexpected values"
+          ],
+          "tip": "Start with print debugging, then move on to debugger tools."
+        },
+        {
+          "heading": "4. Learn from Error Messages",
+          "paragraphs": [
+            "Compiler and runtime error messages often tell you what went wrong and where."
+          ],
+          "example": {
+            "title": "Example",
+            "code": "error: expected ';' before 'return'\n"
+          },
+          "note": "This usually means a semicolon is missing."
+        },
+        {
+          "heading": "Debugging vs Exception Handling",
+          "paragraphs": [
+            "Debugging focuses on finding and fixing errors in your code.",
+            "Exception handling allows your program to respond to errors while it is running."
+          ],
+          "cta": "Learn about Exception Handling in the next chapter"
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "Drag and drop the correct operator to fix the logic so that result is 15.\nint x = 10;\nint y = 5;\nint result = x ___ y;\ncout << \"Result: \" << result;",
+            "options": ["+", "-", "*", "/"],
+            "answer": "+",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    },
+    "exceptions": {
+      "title": "C++ Exceptions",
+      "sections": [
+        {
+          "heading": "Exceptions",
+          "paragraphs": [
+            "Different types of errors can occur while running a program, such as coding mistakes, invalid input, or unexpected situations.",
+            "When an error occurs, C++ will normally stop and generate an error message. This is called throwing an exception."
+          ]
+        },
+        {
+          "heading": "Exception Handling (try and catch)",
+          "paragraphs": [
+            "Exception handling lets you catch and handle errors during runtime so your program does not crash.",
+            "It uses three keywords:"
+          ],
+          "list": [
+            "try – defines the code to test",
+            "throw – triggers an exception",
+            "catch – handles the error"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "try {\n  // Code that may throw an exception\n  throw 505;\n}\ncatch (int errorCode) {\n  cout << \"Error occurred: \" << errorCode;\n}\n"
+          },
+          "note": "The program throws an exception with the value 505, which is caught and handled in the catch block."
+        },
+        {
+          "heading": "Real-Life Example: Age Check",
+          "paragraphs": [
+            "Exception handling can be used to check if a user is old enough:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "try {\n  int age = 15;\n  if (age >= 18) {\n    cout << \"Access granted - you are old enough.\";\n  } else {\n    throw age;\n  }\n}\ncatch (int myNum) {\n  cout << \"Access denied - You must be at least 18 years old.\\n\";\n  cout << \"Age is: \" << myNum;\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Example Explained",
+          "paragraphs": [
+            "The try block tests code that may fail. If the age is less than 18, an exception is thrown.",
+            "The catch block receives the thrown value and handles the error.",
+            "If no error occurs, the catch block is skipped."
+          ]
+        },
+        {
+          "heading": "Using Custom Error Codes",
+          "paragraphs": [
+            "You can also throw a custom error number for organizing purposes:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "try {\n  int age = 15;\n  if (age >= 18) {\n    cout << \"Access granted - you are old enough.\";\n  } else {\n    throw 505;\n  }\n}\ncatch (int myNum) {\n  cout << \"Access denied - You must be at least 18 years old.\\n\";\n  cout << \"Error number: \" << myNum;\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Handle Any Type of Exception",
+          "paragraphs": [
+            "If you do not know the exception type, you can use (...) to catch any exception:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "try {\n  int age = 15;\n  if (age >= 18) {\n    cout << \"Access granted - you are old enough.\";\n  } else {\n    throw 505;\n  }\n}\ncatch (...) {\n  cout << \"Access denied - You must be at least 18 years old.\";\n}\n",
+            "cta": "Try it Yourself »"
+          }
+        },
+        {
+          "heading": "Exercise",
+          "exercise": {
+            "question": "What is the purpose of exception handling in C++?",
+            "options": [
+              "To execute code faster",
+              "To handle errors and execute code when an error occurs",
+              "To ignore errors during execution",
+              "To organize code into classes and objects"
+            ],
+            "answer": "To handle errors and execute code when an error occurs",
+            "cta": "Submit Answer »"
+          }
+        }
+      ]
+    },
+    "input-validation": {
+      "title": "C++ Input Validation",
+      "sections": [
+        {
+          "heading": "Input Validation",
+          "paragraphs": [
+            "When users enter data into a program, they might type something unexpected.",
+            "Input validation makes sure the input is correct before your program continues.",
+            "Without validation, your program might crash or behave incorrectly!",
+            "The examples below show simple ways to check if the user's input is valid."
+          ]
+        },
+        {
+          "heading": "Validate Integer Input",
+          "paragraphs": [
+            "Make sure the user enters a number. If they enter something else (like a letter), ask again:"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int number;\ncout << \"Enter a number: \";\nwhile (!(cin >> number)) {\n  cout << \"Invalid input. Try again: \";\n  cin.clear();        // Reset input errors\n  cin.ignore(10000, '\\n'); // Remove bad input\n}\ncout << \"You entered: \" << number;\n"
+          },
+          "result": [
+            "Enter a number: f",
+            "Invalid input. Try again: 3",
+            "You entered: 3"
+          ]
+        },
+        {
+          "heading": "Validate Number Range",
+          "paragraphs": [
+            "Check if the number is within an allowed range (e.g. 1 to 5):"
+          ],
+          "example": {
+            "title": "Example",
+            "code": "int number;\ndo {\n  cout << \"Choose a number between 1 and 5: \";\n  cin >> number;\n} while (number < 1 || number > 5);\n\ncout << \"You chose: \" << number;\n"
+          },
+          "result": [
+            "Choose a number between 1 and 5: 8",
+            "Choose a number between 1 and 5: -2",
+            "Choose a number between 1 and 5: 4",
+            "You chose: 4"
+          ]
+        },
+        {
+          "heading": "Validate Text Input",
+          "paragraphs": ["Check that a name is not empty:"],
+          "example": {
+            "title": "Example",
+            "code": "string name;\ndo {\n  cout << \"Enter your name: \";\n  getline(cin, name);\n} while (name.empty());\n\ncout << \"Hello, \" << name;\n"
+          },
+          "result": [
+            "Enter your name:",
+            "Enter your name:",
+            "Enter your name: John",
+            "Hello, John"
+          ]
+        },
+        {
+          "heading": "Tip",
+          "paragraphs": [
+            "Tip: You can read more about the cin object in our <iostream> library reference."
+          ]
+        }
+      ]
+    },
 
-
-
-
-    
     "cpp_data_structures_and_stl": {
       "title": "C++ Data Structures and STL",
       "overview": {
